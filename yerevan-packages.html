@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Dubai-Packages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="left">
+                <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+                <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
+            </div>
+            <div class="right">
+                <span><img src="https://flagcdn.com/in.svg" alt="India Flag"> IND</span>
+                <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
+            </div>
+        </div>
+
+        <!-- Main Nav -->
+        <nav class="navbar">
+            <div class="logo"><img src="images/image 8916.png" alt="" class="logo"></div>
+            </div>
+
+            <div class="menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="Destination.html"><i class="fas fa-search-location"></i> Destination</a>
+                <a href="Hotdeal.html"><i class="fas fa-suitcase-rolling"></i> Hot Deal</a>
+                <div class="dropdownn">
+                    <a href="Themes.html" class="dropbtn">
+                        <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="Themes.html">Adventure Tours</a>
+                        <a href="Themes.html">Luxury Tours</a>
+                        <a href="Themes.html">Honey moon</a>
+                        <a href="Themes.html">Weekend</a>
+                        <a href="Themes.html">Safari</a>
+                        <a href="Themes.html">Family with Kids</a>
+                        <a href="Themes.html">Nature</a>
+                        <a href="Themes.html">Wild Life</a>
+                        <a href="Themes.html">Beach</a>
+                    </div>
+                </div>
+                <a href="Visa.html"><i class="fas fa-passport"></i> Visa</a>
+                <a href="About us.html"><i class="fas fa-info-circle"></i> About</a>
+                <a href="Contact.html"><i class="fas fa-users"></i> Contact</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="destination-carousel">
+        <div id="carouselDest" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://wallpaperaccess.com/full/461967.jpg" class="d-block w-100" alt="Destination 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://wallpaperaccess.com/full/255781.jpg" class="d-block w-100" alt="Destination 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://discoveryourvietnam.com/wp-content/uploads/2022/10/Trang_An_Boat_Trip.jpg"
+                        class="d-block w-100" alt="Destination 3">
+                </div>
+            </div>
+
+            <!-- Optional: arrows -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDest" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDest" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <!-- Overlay text -->
+            <div class="carousel-caption-custom">
+                <h1>Yerevan Tour Packages</h1>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container py-5">
+        <div class="row" id="card-container">
+            <!-- Repeat cards -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="tour-card">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://discoveryourvietnam.com/wp-content/uploads/2022/10/Trang_An_Boat_Trip.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://idsb.tmgrup.com.tr/ly/uploads/images/2021/05/26/117390.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://cdn.pixabay.com/photo/2021/08/04/02/54/hoi-an-6520902_960_720.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="tour-title">Armenia Tour</div>
+                            <span class="badge bg-success">4D / 3N</span>
+                        </div>
+                        <div class="tour-tags my-2">
+                            <span>Adventure</span>
+                            <span>Luxury</span>
+                            <span>Nature</span>
+                        </div>
+                        <div class="tour-features">
+                            🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🎵 Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
+                        </div>
+                        <div class="tour-price">
+                            price on request
+                            <!-- <span class="price-original">AED 160</span><span class="price-final">AED
+                                140</span> -->
+                        </div>
+                        <div class="tour-buttons mt-3">
+                            <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
+                                Enquire Now
+                            </button>
+                            <a href="Dubai-Fully-Loaded.html" class="btn btn-outline-danger w-50">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more cards by duplicating the above col-lg-4 block -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="tour-card">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images4.alphacoders.com/598/thumb-1920-598743.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.rjtravelagency.com/wp-content/uploads/2019/07/Uzbekistan-Tour.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://wallpaperbat.com/img/96070-download-photohop-pyramids-egypt-night-wallpaper-2560x1440.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="tour-title">Wonderful Armenia</div>
+                            <span class="badge bg-success">4D / 3N</span>
+                        </div>
+                        <div class="tour-tags my-2">
+                            <span>Adventure</span>
+                            <span>Luxury</span>
+                            <span>Nature</span>
+                        </div>
+                        <div class="tour-features">
+                            🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🎵 Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
+                        </div>
+                        <div class="tour-price">
+                            price on request <!-- <span class="price-original">AED 160</span><span class="price-final">AED
+                                140</span> -->
+                        </div>
+                        <div class="tour-buttons mt-3">
+                            <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
+                                Enquire Now
+                            </button> <button class="btn btn-outline-danger w-50">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="tour-card">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images4.alphacoders.com/598/thumb-1920-598743.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.rjtravelagency.com/wp-content/uploads/2019/07/Uzbekistan-Tour.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://wallpaperbat.com/img/96070-download-photohop-pyramids-egypt-night-wallpaper-2560x1440.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="tour-title">Memorable Armenia</div>
+                            <span class="badge bg-success">5D / 4N</span>
+                        </div>
+                        <div class="tour-tags my-2">
+                            <span>Adventure</span>
+                            <span>Luxury</span>
+                            <span>Nature</span>
+                        </div>
+                        <div class="tour-features">
+                            🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🎵 Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
+                        </div>
+                        <div class="tour-price">
+                            price on request
+                            <!-- <span class="price-original">AED 160</span><span class="price-final">AED
+                                140</span> -->
+                        </div>
+                        <div class="tour-buttons mt-3">
+                            <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
+                                Enquire Now
+                            </button> <button class="btn btn-outline-danger w-50">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content text-center">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-danger" id="enquireModalLabel">Book Your Yerevan Experience Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                        <img src="https://static.vecteezy.com/system/resources/previews/012/994/656/original/call-center-agent-of-customer-service-or-hotline-operator-with-headsets-and-computers-in-flat-cartoon-hand-drawn-templates-illustration-vector.jpg"
+                            alt="popup-img">
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Mobile Number">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email ID">
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100">Continue</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <article class="heading">
+        <h1>Other Country Packages</h1>
+    </article>
+
+
+    <div class="container py-5">
+        <div class="row" id="card-container">
+            <!-- Repeat cards -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="tour-card">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://wallpaperaccess.com/full/441168.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://wallpaperaccess.com/full/21973.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://wallsdesk.com/wp-content/uploads/2017/01/Bali-HD-Desktop.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="tour-title">Dubai Fully Loaded</div>
+                            <span class="badge bg-success">5D / 4N</span>
+                        </div>
+                        <div class="tour-tags my-2">
+                            <span>Adventure</span>
+                            <span>Luxury</span>
+                            <span>Nature</span>
+                        </div>
+                        <div class="tour-features">
+                            🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🎵 Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
+                        </div>
+                        <div class="tour-price">
+                            Starting Price: <span class="price-original">AED 160</span><span class="price-final">AED
+                                140</span>
+                        </div>
+                        <div class="tour-buttons mt-3">
+                            <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
+                                Enquire Now
+                            </button>
+                            <button class="btn btn-outline-danger w-50">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more cards by duplicating the above col-lg-4 block -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="tour-card">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://wallpaperaccess.com/full/512798.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://idsb.tmgrup.com.tr/ly/uploads/images/2021/05/26/117390.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://vitalrecord.tamhsc.edu/wp-content/uploads/2018/11/Vietnam-rice-terraces-e1541631445941.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="tour-title">Dubai Fully Loaded</div>
+                            <span class="badge bg-success">5D / 4N</span>
+                        </div>
+                        <div class="tour-tags my-2">
+                            <span>Adventure</span>
+                            <span>Luxury</span>
+                            <span>Nature</span>
+                        </div>
+                        <div class="tour-features">
+                            🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🎵 Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
+                        </div>
+                        <div class="tour-price">
+                            Starting Price: <span class="price-original">AED 160</span><span class="price-final">AED
+                                140</span>
+                        </div>
+                        <div class="tour-buttons mt-3">
+                            <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
+                                Enquire Now
+                            </button> <button class="btn btn-outline-danger w-50">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="tour-card">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images4.alphacoders.com/598/thumb-1920-598743.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.rjtravelagency.com/wp-content/uploads/2019/07/Uzbekistan-Tour.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://wallpaperbat.com/img/96070-download-photohop-pyramids-egypt-night-wallpaper-2560x1440.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="tour-title">Dubai Fully Loaded</div>
+                            <span class="badge bg-success">5D / 4N</span>
+                        </div>
+                        <div class="tour-tags my-2">
+                            <span>Adventure</span>
+                            <span>Luxury</span>
+                            <span>Nature</span>
+                        </div>
+                        <div class="tour-features">
+                            🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🎵 Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
+                        </div>
+                        <div class="tour-price">
+                            Starting Price: <span class="price-original">AED 160</span><span class="price-final">AED
+                                140</span>
+                        </div>
+                        <div class="tour-buttons mt-3">
+                            <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
+                                Enquire Now
+                            </button> <button class="btn btn-outline-danger w-50">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="tour-card">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images4.alphacoders.com/598/thumb-1920-598743.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.rjtravelagency.com/wp-content/uploads/2019/07/Uzbekistan-Tour.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://wallpaperbat.com/img/96070-download-photohop-pyramids-egypt-night-wallpaper-2560x1440.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="tour-title">Dubai Fully Loaded</div>
+                            <span class="badge bg-success">5D / 4N</span>
+                        </div>
+                        <div class="tour-tags my-2">
+                            <span>Adventure</span>
+                            <span>Luxury</span>
+                            <span>Nature</span>
+                        </div>
+                        <div class="tour-features">
+                            🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🎵 Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
+                        </div>
+                        <div class="tour-price">
+                            Starting Price: <span class="price-original">AED 160</span><span class="price-final">AED
+                                140</span>
+                        </div>
+                        <div class="tour-buttons mt-3">
+                            <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
+                                Enquire Now
+                            </button> <button class="btn btn-outline-danger w-50">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="tour-card">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images4.alphacoders.com/598/thumb-1920-598743.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.rjtravelagency.com/wp-content/uploads/2019/07/Uzbekistan-Tour.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://wallpaperbat.com/img/96070-download-photohop-pyramids-egypt-night-wallpaper-2560x1440.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="tour-title">Dubai Fully Loaded</div>
+                            <span class="badge bg-success">5D / 4N</span>
+                        </div>
+                        <div class="tour-tags my-2">
+                            <span>Adventure</span>
+                            <span>Luxury</span>
+                            <span>Nature</span>
+                        </div>
+                        <div class="tour-features">
+                            🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🎵 Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
+                        </div>
+                        <div class="tour-price">
+                            Starting Price: <span class="price-original">AED 160</span><span class="price-final">AED
+                                140</span>
+                        </div>
+                        <div class="tour-buttons mt-3">
+                            <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
+                                Enquire Now
+                            </button> <button class="btn btn-outline-danger w-50">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content text-center">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-danger" id="enquireModalLabel">Book Your vietnam Experience Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                        <img src="https://static.vecteezy.com/system/resources/previews/012/994/656/original/call-center-agent-of-customer-service-or-hotline-operator-with-headsets-and-computers-in-flat-cartoon-hand-drawn-templates-illustration-vector.jpg"
+                            alt="popup-img">
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Mobile Number">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email ID">
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100">Continue</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Dubai-Packages.js"></script>
+
+</body>
+
+</html>

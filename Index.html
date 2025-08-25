@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+
+</head>
+
+<body>
+  <header>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="left">
+        <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+        <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
+      </div>
+      <div class="right">
+        <span><img src="https://flagcdn.com/in.svg" alt="India Flag"> IND</span>
+        <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
+      </div>
+    </div>
+
+    <!-- Main Nav -->
+    <nav class="navbar">
+      <div class="logo"><img src="images/image 8916.png" alt="" class="logo"></div>
+      </div>
+
+      <div class="menu-btn" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="Destination.html"><i class="fas fa-search-location"></i> Destination</a>
+        <a href="Hotdeal.html"><i class="fas fa-suitcase-rolling"></i> Hot Deal</a>
+        <div class="dropdown">
+          <a href="Themes.html" class="dropbtn">
+            <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="Themes.html">Adventure Tours</a>
+            <a href="Themes.html">Luxury Tours</a>
+            <a href="Themes.html">Honey moon</a>
+            <a href="Themes.html">Weekend</a>
+            <a href="Themes.html">Safari</a>
+            <a href="Themes.html">Family with Kids</a>
+            <a href="Themes.html">Nature</a>
+            <a href="Themes.html">Wild Life</a>
+            <a href="Themes.html">Beach</a>
+          </div>
+        </div>
+        <a href="Visa.html"><i class="fas fa-passport"></i> Visa</a>
+        <a href="About us.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="Contact.html"><i class="fas fa-users"></i> Contact</a>
+      </div>
+    </nav>
+  </header>
+  <section class="hero-section">
+    <div class="hero">
+      <div class="carousel">
+        <img src="images/image 8965.png" alt="Background" />
+      </div>
+      <div class="content">
+        <h1 class="welcome">WELCOME TO CITY ONE TOURISM & TRAVEL</h1>
+        <p class="ptag">Discover. Explore. Experience the World with Us.</p>
+
+        <div class="tabs">
+          <div class="tab">Destinations</div>
+          <div class="tab">Packages</div>
+          <div class="tab">Visa</div>
+          <div class="tab">Flight</div>
+        </div>
+
+        <div class="search-box">
+          <input type="text" id="destinationInput" placeholder="Enter destinations" />
+          <select id="themeSelect">
+            <option value="">Select theme</option>
+            <option value="adventure">Adventure</option>
+            <option value="honeymoon">Honey Moon</option>
+            <option value="luxury">Luxury</option>
+            <option value="safari">Safari</option>
+            <option value="wildlife">Wild Life</option>
+          </select>
+          <input type="date" id="dateInput" />
+          <button onclick="handleSearch()">Search</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <article class="heading">
+    <h1>Trending destinations</h1>
+  </article>
+
+  <section class="hey">
+    <div class="scroller-wrapper">
+      <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button>
+
+      <div class="country-scroller" id="scrollContainer">
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Paris" />
+          <h4>Paris</h4>
+          <p>100+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Singapore" />
+          <h4>Singapore</h4>
+          <p>300+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Rome" />
+          <h4>Rome</h4>
+          <p>400+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Bali" />
+          <h4>Bali</h4>
+          <p>600+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Tokyo" />
+          <h4>Tokyo</h4>
+          <p>700+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Phuket" />
+          <h4>Phuket</h4>
+          <p>200+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Cappadocia" />
+          <h4>Cappadocia</h4>
+          <p>900+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Paris" />
+          <h4>Paris</h4>
+          <p>100+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Singapore" />
+          <h4>Singapore</h4>
+          <p>300+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Rome" />
+          <h4>Rome</h4>
+          <p>400+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Bali" />
+          <h4>Bali</h4>
+          <p>600+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Tokyo" />
+          <h4>Tokyo</h4>
+          <p>700+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Phuket" />
+          <h4>Phuket</h4>
+          <p>200+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Cappadocia" />
+          <h4>Cappadocia</h4>
+          <p>900+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Paris" />
+          <h4>Paris</h4>
+          <p>100+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Singapore" />
+          <h4>Singapore</h4>
+          <p>300+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Rome" />
+          <h4>Rome</h4>
+          <p>400+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Bali" />
+          <h4>Bali</h4>
+          <p>600+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Tokyo" />
+          <h4>Tokyo</h4>
+          <p>700+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Phuket" />
+          <h4>Phuket</h4>
+          <p>200+ Tours</p>
+        </div>
+        <div class="country-card">
+          <img src="http://127.0.0.1:5500/images/image%208965.png" alt="Cappadocia" />
+          <h4>Cappadocia</h4>
+          <p>900+ Tours</p>
+        </div>
+      </div>
+
+      <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
+    </div>
+  </section>
+
+  <article class="heading">
+    <h1>Find Your Perfect Trip Style</h1>
+  </article>
+
+  <section>
+
+    <div class="category-buttons">
+      <button class="active" onclick="filterCards('adventure', event)">Adventure</button>
+      <button onclick="filterCards('luxury', event)">Luxury</button>
+      <button onclick="filterCards('honeymoon', event)">Honey Moon</button>
+      <button onclick="filterCards('family', event)">Family With Kids</button>
+    </div>
+
+    <div class="cards-container" id="cardGrid">
+      <!-- Cards will be injected here -->
+    </div>
+    <div class="view">
+      <button class="viewall">
+        <span class="transition"></span>
+        <span class="gradient"></span>
+        <span class="label">View all</span>
+      </button>
+
+    </div>
+  </section>
+  <article class="heading">
+    <h1>Exclusive Deals You Can’t Miss</h1>
+  </article>
+  <section>
+    <div class="banner-row">
+      <div class="banner-card">
+        <img src="https://images.ixigo.com/image/upload/img/b08b77b94d5826c986a7f0334dfaed89-yvlip.png" alt="Card 1">
+      </div>
+      <div class="banner-card">
+        <img src="https://images.ixigo.com/image/upload/73/c0d96cc0a8c4a035ccabbe2db480cda0-lnsmq.png" alt="Card 2">
+      </div>
+      <div class="banner-card">
+        <img src="https://images.ixigo.com/image/upload/offers_and_deals/fcfaaff53aed1ea954c8cd464fe9761e-lkvhw.png"
+          alt="Card 3">
+      </div>
+    </div>
+  </section>
+  <section class="Certificate">
+    <div class="certificates-container">
+      <div class="certificates-text">
+        <h2>CERTIFICATES</h2>
+        <p>City One Tourism and Travel is a proud recipient of 2018 Certificate of Excellence from the world’s largest
+          travel guidance platform – TripAdvisor and also became a nominee for 2017 World’s Travel Awards.</p>
+      </div>
+      <div class="certificates-image">
+        <img src="images/Frame 1707478339.png" alt="Certificates Image" />
+      </div>
+    </div>
+  </section>
+  <article class="heading">
+    <h1>Where to go When The Best time to travel...</h1>
+  </article>
+  <section>
+    <div class="month-buttons" id="monthButtons"></div>
+    <div class="card-container" id="cardContainer"></div>
+    <div class="view">
+      <button class="viewall">
+        <span class="transition"></span>
+        <span class="gradient"></span>
+        <span class="label">View all</span>
+      </button>
+
+    </div>
+  </section>
+  <section class="visa-wrapper">
+    <div class="carouselll">
+      <img src="images/image 8965.png" alt="Background" />
+    </div>
+    <h2 class="visa-title">Visa Services</h2>
+
+    <div class="visa-tabs" id="visaTabs"></div>
+
+    <div class="visa-card-grid" id="visaCards"></div>
+    <div class="visa-viewall">
+      <button class="viewall">
+        <span class="transition"></span>
+        <span class="gradient"></span>
+        <span class="label">View all</span>
+      </button>
+    </div>
+  </section>
+
+  <div class="stats-section" id="statsSection">
+    <div class="stats-bg">
+      <img src="images/Background.png" alt="Background" />
+    </div>
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-number" data-target="168000">0</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="45000">0</div>
+        <div class="stat-label">Destinations</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="149000">0</div>
+        <div class="stat-label">Visa Approvals</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="26000">0</div>
+        <div class="stat-label">Campaigns</div>
+      </div>
+    </div>
+  </div>
+  <article class="heading">
+    <h1>Travel to more than 40+ Countries Now</h1>
+  </article>
+  <div class="flag-carousel-container">
+    <div class="flag-carousel">
+      <!-- Flag images repeated twice for seamless scroll -->
+      <img src="https://flagcdn.com/w40/us.png" alt="USA" />
+      <img src="https://flagcdn.com/w40/gb.png" alt="UK" />
+      <img src="https://flagcdn.com/w40/au.png" alt="Australia" />
+      <img src="https://flagcdn.com/w40/ae.png" alt="UAE" />
+      <img src="https://flagcdn.com/w40/th.png" alt="Thailand" />
+      <img src="https://flagcdn.com/w40/lk.png" alt="Sri Lanka" />
+      <img src="https://flagcdn.com/w40/sg.png" alt="Singapore" />
+      <img src="https://flagcdn.com/w40/ke.png" alt="Kenya" />
+      <img src="https://flagcdn.com/w40/it.png" alt="Italy" />
+      <img src="https://flagcdn.com/w40/id.png" alt="Indonesia" />
+      <img src="https://flagcdn.com/w40/fr.png" alt="France" />
+      <img src="https://flagcdn.com/w40/eg.png" alt="Egypt" />
+      <img src="https://flagcdn.com/w40/dk.png" alt="Denmark" />
+      <img src="https://flagcdn.com/w40/cz.png" alt="Czech Republic" />
+      <img src="https://flagcdn.com/w40/kh.png" alt="Cambodia" />
+      <img src="https://flagcdn.com/w40/be.png" alt="Belgium" />
+      <img src="https://flagcdn.com/w40/in.png" alt="India" />
+      <img src="https://flagcdn.com/w40/jp.png" alt="Japan" />
+      <img src="https://flagcdn.com/w40/ch.png" alt="Switzerland" />
+      <img src="https://flagcdn.com/w40/za.png" alt="South Africa" />
+
+      <!-- Repeat for seamless loop -->
+      <img src="https://flagcdn.com/w40/us.png" alt="USA" />
+      <img src="https://flagcdn.com/w40/gb.png" alt="UK" />
+      <img src="https://flagcdn.com/w40/au.png" alt="Australia" />
+      <img src="https://flagcdn.com/w40/ae.png" alt="UAE" />
+      <img src="https://flagcdn.com/w40/th.png" alt="Thailand" />
+      <img src="https://flagcdn.com/w40/lk.png" alt="Sri Lanka" />
+      <img src="https://flagcdn.com/w40/sg.png" alt="Singapore" />
+      <img src="https://flagcdn.com/w40/ke.png" alt="Kenya" />
+      <img src="https://flagcdn.com/w40/it.png" alt="Italy" />
+      <img src="https://flagcdn.com/w40/id.png" alt="Indonesia" />
+      <img src="https://flagcdn.com/w40/fr.png" alt="France" />
+      <img src="https://flagcdn.com/w40/eg.png" alt="Egypt" />
+      <img src="https://flagcdn.com/w40/dk.png" alt="Denmark" />
+      <img src="https://flagcdn.com/w40/cz.png" alt="Czech Republic" />
+      <img src="https://flagcdn.com/w40/kh.png" alt="Cambodia" />
+      <img src="https://flagcdn.com/w40/be.png" alt="Belgium" />
+      <img src="https://flagcdn.com/w40/in.png" alt="India" />
+      <img src="https://flagcdn.com/w40/jp.png" alt="Japan" />
+      <img src="https://flagcdn.com/w40/ch.png" alt="Switzerland" />
+      <img src="https://flagcdn.com/w40/za.png" alt="South Africa" />
+    </div>
+  </div>
+
+  <article class="heading">
+    <h1>Customer Review</h1>
+  </article>
+  <section>
+    <div class="testimonial-container">
+      <div class="testimonial-track" id="testimonialTrack">
+        <!-- 9 cards -->
+        <div class="testimonial-card">
+          <div class="testimonial-box">
+            <img src="https://wallpapers.com/images/hd/krishna-hd-black-sky-kke0hc3lkrfzacyy.jpg"
+              class="testimonial-img">
+            <div class="testimonial-content">
+              <h4>Govinda</h4>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
+                We
+                Offer comprehensive travel programs to corporate and individual travelers with a variety of
+                custom-designed holidays and business travel with a great level of attention.</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-box">
+            <img src="https://wallpapers.com/images/hd/black-image-of-krishna-4k-8qm2m4dr8d912aqt.jpg"
+              class="testimonial-img">
+            <div class="testimonial-content">
+              <h4>Gopala</h4>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
+                We
+                Offer comprehensive travel programs to corporate and individual travelers with a variety of
+                custom-designed holidays and business travel with a great level of attention.</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-box">
+            <img src="https://wallpapers.com/images/hd/shri-krishna-day-and-night-silhouette-2j5guszveuuuhtwo.jpg"
+              class="testimonial-img">
+            <div class="testimonial-content">
+              <h4>Murlimanohar</h4>
+              <div class="testimonial-stars">★★★★☆</div>
+              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
+                We
+                Offer comprehensive travel programs to corporate and individual travelers with a variety of
+                custom-designed holidays and business travel with a great level of attention.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-box">
+            <img src="https://wallpapercave.com/wp/wp13025346.jpg" class="testimonial-img">
+            <div class="testimonial-content">
+              <h4>Madhava</h4>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
+                We
+                Offer comprehensive travel programs to corporate and individual travelers with a variety of
+                custom-designed holidays and business travel with a great level of attention.</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-box">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/56/54/20/1000_F_556542092_awK33mWRNOVaOT0Bf1I6jTYpsCqjNScb.jpg"
+              class="testimonial-img">
+            <div class="testimonial-content">
+              <h4>Keshava</h4>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
+                We
+                Offer comprehensive travel programs to corporate and individual travelers with a variety of
+                custom-designed holidays and business travel with a great level of attention.</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-box">
+            <img src="https://ghantee.com/wp-content/uploads/2023/12/krishna-wallpaper-for-desktop-4k-1.jpg"
+              class="testimonial-img">
+            <div class="testimonial-content">
+              <h4>Shyam</h4>
+              <div class="testimonial-stars">★★★★☆</div>
+              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
+                We
+                Offer comprehensive travel programs to corporate and individual travelers with a variety of
+                custom-designed holidays and business travel with a great level of attention.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-box">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.srN1OrK__7qMPFuYVqPjaAHaEK?pid=Api&P=0&h=180"
+              class="testimonial-img">
+            <div class="testimonial-content">
+              <h4>Vasudeva</h4>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
+                We
+                Offer comprehensive travel programs to corporate and individual travelers with a variety of
+                custom-designed holidays and business travel with a great level of attention.</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-box">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.2iN5Uk5zoRkhKlNpxUswqAHaFf?pid=Api&P=0&h=180"
+              class="testimonial-img">
+            <div class="testimonial-content">
+              <h4>Yashodanandanr</h4>
+              <div class="testimonial-stars">★★★★☆</div>
+              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
+                We
+                Offer comprehensive travel programs to corporate and individual travelers with a variety of
+                custom-designed holidays and business travel with a great level of attention.</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-box">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.M_0gICeQiDs14UTS6WHKvgHaEu?pid=Api&P=0&h=180"
+              class="testimonial-img">
+            <div class="testimonial-content">
+              <h4>Jagannatha</h4>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
+                We
+                Offer comprehensive travel programs to corporate and individual travelers with a variety of
+                custom-designed holidays and business travel with a great level of attention.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-dots" id="testimonialDots">
+        <span class="testimonial-dot active"></span>
+        <span class="testimonial-dot"></span>
+        <span class="testimonial-dot"></span>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <!-- FOOTER SECTION -->
+    <footer class="custom-footer text-white">
+      <div class="custom-footer-top">
+        <p class="custom-footer-connect">Get connected with us on social networks:</p>
+        <div class="custom-social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-google"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="custom-footer-main">
+        <div class="footer-box">
+          <img src="images/image 8916.png" alt="Company Logo" class="footer-logo" />
+          <h2 style="font-size: 18px; padding-bottom: 15px;">
+            City One Tourism and Travel L.L.C</h2>
+          <!-- <p>Address: Executive Heights - 702 - Barsha Heights - Dubai - United Arab Emirates</p> -->
+        </div>
+
+
+        <div class="footer-box">
+          <h5 class="footer-title">Useful Links</h5>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Hot Deal</a></li>
+            <li><a href="#">Themes</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h5 class="footer-title">Popular Destinations</h5>
+          <ul>
+            <li><a href="#">Dubai</a></li>
+            <li><a href="#">Mauritius</a></li>
+            <li><a href="#">Georgia</a></li>
+            <li><a href="#">Kenya</a></li>
+            <li><a href="#">More</a></li>
+
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h5 class="footer-title">CONTACT</h5>
+          <ul class="footer-contact">
+            <li><i class="fas fa-home"></i>Executive Heights - 702 - Barsha Heights - Dubai - United Arab Emirates</li>
+            <li><i class="fas fa-envelope"></i> info@cityonetours.com</li>
+            <li><i class="fas fa-phone"></i>+971 4252 5516</li>
+            <li><i class="fas fa-print"></i> +971 4392 2959</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="custom-footer-bottom">
+        <p>© 2025 Copyright: <a href="#">cityonetours.com/</a></p>
+      </div>
+    </footer>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
