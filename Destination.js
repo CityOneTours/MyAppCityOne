@@ -48,10 +48,10 @@ const destinations = [
     url: "vietnam-Packages.html"
   },
   {
-    name: "Yerevan",
+    name: "Armenia",
     rating: "4.9",
     image: "https://wallpapercave.com/wp/wp2292388.jpg",
-    url: "yerevan-packages.html"
+    url: "Armenia-packages.html"
   },
 
     {
@@ -166,24 +166,24 @@ const destinations = [
     image: "https://wallpapercave.com/wp/wp2292388.jpg",
     url: "kenya-packages.html"
   },
-      {
-    name: "Armenia",
-    rating: "4.9",
-    image: "https://wallpapercave.com/wp/wp2292388.jpg",
-    url: "Armenia-packages.html"
-  },
+  //     {
+  //   name: "Armenia",
+  //   rating: "4.9",
+  //   image: "https://wallpapercave.com/wp/wp2292388.jpg",
+  //   url: "Armenia-packages.html"
+  // },
       {
     name: "japan",
     rating: "4.9",
     image: "https://wallpapercave.com/wp/wp2292388.jpg",
     url: "japan-packages.html"
   },
-      {
-    name: "Indonesia",
-    rating: "4.9",
-    image: "https://wallpapercave.com/wp/wp2292388.jpg",
-    url: "Indonesia-packages.html"
-  },
+  //     {
+  //   name: "Indonesia",
+  //   rating: "4.9",
+  //   image: "https://wallpapercave.com/wp/wp2292388.jpg",
+  //   url: "Indonesia-packages.html"
+  // },
       {
     name: "India",
     rating: "4.9",
