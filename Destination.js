@@ -125,10 +125,10 @@ const destinations = [
     url: "Srilanka-packages.html"
   },
     {
-    name: "Kyrgystan",
+    name: "Kyrgyzstan",
     rating: "4.9",
     image: "https://wallpapercave.com/wp/wp2292388.jpg",
-    url: "Kyrgystan-packages.html"
+    url: "Kyrgyzstan-packages.html"
   },
     {
     name: "Uzbekistan",
@@ -154,18 +154,18 @@ const destinations = [
     image: "https://wallpapercave.com/wp/wp2292388.jpg",
     url: "Singapore-packages.html"
   },
-      {
-    name: "Georgia",
-    rating: "4.9",
-    image: "https://wallpapercave.com/wp/wp2292388.jpg",
-    url: "Georgia-packages.html"
-  },
-      {
-    name: "kenya",
-    rating: "4.9",
-    image: "https://wallpapercave.com/wp/wp2292388.jpg",
-    url: "kenya-packages.html"
-  },
+  //     {
+  //   name: "Georgia",
+  //   rating: "4.9",
+  //   image: "https://wallpapercave.com/wp/wp2292388.jpg",
+  //   url: "Georgia-packages.html"
+  // },
+  //     {
+  //   name: "kenya",
+  //   rating: "4.9",
+  //   image: "https://wallpapercave.com/wp/wp2292388.jpg",
+  //   url: "kenya-packages.html"
+  // },
   //     {
   //   name: "Armenia",
   //   rating: "4.9",
@@ -190,12 +190,12 @@ const destinations = [
     image: "https://wallpapercave.com/wp/wp2292388.jpg",
     url: "india-packages.html"
   },
-      {
-    name: "Azerbaijan",
-    rating: "4.9",
-    image: "https://wallpapercave.com/wp/wp2292388.jpg",
-    url: "Azerbaijan-packages.html"
-  },
+  //     {
+  //   name: "Azerbaijan",
+  //   rating: "4.9",
+  //   image: "https://wallpapercave.com/wp/wp2292388.jpg",
+  //   url: "Azerbaijan-packages.html"
+  // },
       {
     name: "croatia",
     rating: "4.9",
@@ -214,12 +214,12 @@ const destinations = [
     image: "https://wallpapercave.com/wp/wp2292388.jpg",
     url: "prague-packages.html"
   },
-        {
-    name: "moroco",
-    rating: "4.9",
-    image: "https://wallpapercave.com/wp/wp2292388.jpg",
-    url: "morocco-packages.html"
-  },
+  //       {
+  //   name: "moroco",
+  //   rating: "4.9",
+  //   image: "https://wallpapercave.com/wp/wp2292388.jpg",
+  //   url: "morocco-packages.html"
+  // },
         {
     name: "united arab emirates",
     rating: "4.9",
