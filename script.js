@@ -33,14 +33,14 @@ const cardData = {
       price: "AED 60"
     },
     {
-      title: "Dubai",
+      title: "Maldives",
       rating: "4.96",
       img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Golden_Bridge_(Vietnam).jpg",
       info: "2 days 3 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
       price: "AED 60"
     },
     {
-      title: "Georgia",
+      title: "Armenia",
       rating: "4.96",
       img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Golden_Bridge_(Vietnam).jpg",
       info: "2 days 3 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
@@ -49,21 +49,21 @@ const cardData = {
   ],
   luxury: [
     {
-      title: "Bali",
+      title: "Azerbaijan",
       rating: "4.98",
       img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg",
       info: "3 days 2 nights | <i class='fas fa-hotel'></i> 5* Resort",
       price: "AED 200"
     },
     {
-      title: "Maldives",
+      title: "Kyrgyzstan",
       rating: "5.0",
       img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg",
       info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
       price: "AED 350"
     },
     {
-      title: "Bali",
+      title: "Armenia",
       rating: "4.98",
       img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg",
       info: "3 days 2 nights | <i class='fas fa-hotel'></i> 5* Resort",
@@ -79,7 +79,7 @@ const cardData = {
   ],
   honeymoon: [
     {
-      title: "Paris",
+      title: "Vietnam",
       rating: "4.95",
       img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/6dddf165fec7167b45a3e1a7c66f8bca.jpg",
       info: "3 days 3 nights | <i class='fas fa-hotel'></i> Romantic Hotels",
@@ -93,14 +93,14 @@ const cardData = {
       price: "AED 200"
     },
     {
-      title: "Maldives",
+      title: "Singapore",
       rating: "5.0",
       img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/6dddf165fec7167b45a3e1a7c66f8bca.jpg",
       info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
       price: "AED 350"
     },
     {
-      title: "Maldives",
+      title: "switzerland",
       rating: "5.0",
       img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/6dddf165fec7167b45a3e1a7c66f8bca.jpg",
       info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
@@ -109,21 +109,21 @@ const cardData = {
   ],
   family: [
     {
-      title: "Orlando",
+      title: "Dubai",
       rating: "4.89",
       img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/6dddf165fec7167b45a3e1a7c66f8bca.jpg",
       info: "3 nights | <i class='fas fa-hotel'></i> Theme Park Package",
       price: "AED 220"
     },
     {
-      title: "Bali",
+      title: "Malaysia",
       rating: "4.98",
       img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg",
       info: "3 days 2 nights | <i class='fas fa-hotel'></i> 5* Resort",
       price: "AED 200"
     },
     {
-      title: "Maldives",
+      title: "saudi arabia",
       rating: "5.0",
       img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg",
       info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
@@ -176,86 +176,86 @@ window.onload = () => filterCards('adventure');
 
 const monthData = {
   Jan: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Golden_Bridge_(Vietnam).jpg', country: 'Dubai' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Golden_Bridge_(Vietnam).jpg', country: 'Egypt' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/9b7361b0dfbd5ffaf4f92928a2f554ed.jpg', country: 'Bali' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/9b7361b0dfbd5ffaf4f92928a2f554ed.jpg', country: 'Bali' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Golden_Bridge_(Vietnam).jpg', country: 'Dubai',link: 'Dubai-packagess/Dubai-packages-two.html'  },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Golden_Bridge_(Vietnam).jpg', country: 'Maldives',link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/9b7361b0dfbd5ffaf4f92928a2f554ed.jpg', country: 'India' ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/9b7361b0dfbd5ffaf4f92928a2f554ed.jpg', country: 'Thailand' ,link: 'Dubai-packagess/Dubai-packages-two.html'},
 
   ],
   Feb: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Thailand' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TL0750-cover.jpg.jpg', country: 'UAE' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TL0750-cover.jpg.jpg', country: 'Sri Lanka' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TL0750-cover.jpg.jpg', country: 'Sri Lanka' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Bali' ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TL0750-cover.jpg.jpg', country: 'Vietnam' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TL0750-cover.jpg.jpg', country: 'Armenia' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TL0750-cover.jpg.jpg', country: 'Kenya' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
 
   ],
   Mar: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/6dddf165fec7167b45a3e1a7c66f8bca.jpg', country: 'Turkey' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Italy' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/cdc1afa876c0a873aa296eb68be18e2c.jpg', country: 'Kenya' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/cdc1afa876c0a873aa296eb68be18e2c.jpg', country: 'Kenya' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/6dddf165fec7167b45a3e1a7c66f8bca.jpg', country: 'Bali' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Azerbaijan' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/cdc1afa876c0a873aa296eb68be18e2c.jpg', country: 'Turkey' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/cdc1afa876c0a873aa296eb68be18e2c.jpg', country: 'Morocco' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
 
   ],
   Apr: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Japan' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Vietnam' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'France' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'France' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Kazakhstan' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Uzbekistan' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Egypt' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Malaysia'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
 
   ],
   May: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Maldives' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg', country: 'Switzerland' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg', country: 'Indonesia' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg', country: 'Indonesia' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Singapore'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg', country: 'japan'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg', country: 'India'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg', country: 'croatia' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
 
   ],
   Jun: [
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Singapore' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Malaysia' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'UK' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'UK' },
+    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'prague' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'switzerland'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'scandinavia'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'seychelles' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
 
   ],
   Jul: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/a073d98cebc37f5c1ba94388cde4bc42.jpg', country: 'Dubai' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TL0750-cover.jpg.jpg', country: 'Sri Lanka' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Holy-Trinity-Cathedral-Tbilisi-shutterstock_2126337365.jpg.jpg', country: 'Dubai' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/11753a282bbfc8e8e9283294e3a2dae2.jpg', country: 'Sri Lanka' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/a073d98cebc37f5c1ba94388cde4bc42.jpg', country: 'south africa' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TL0750-cover.jpg.jpg', country: 'Sri Lanka' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Holy-Trinity-Cathedral-Tbilisi-shutterstock_2126337365.jpg.jpg', country: 'saudi arabia'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/11753a282bbfc8e8e9283294e3a2dae2.jpg', country: 'switzerland'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
   ],
   Aug: [
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Greece' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Jordan' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'USA' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'USA' },
+    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Greece'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Jordan'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'seychelles'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'greece' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
 
   ],
   Sep: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Canada' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Mexico' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Brazil' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Brazil' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Kyrgyzstan' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Jordan' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Kazakhstan' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Malaysia' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
 
   ],
   Oct: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'New Zealand' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Australia' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Chile' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Chile' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'prague' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'scandinavia'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'south africa'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'greece'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
 
   ],
   Nov: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Spain' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Portugal' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Morocco' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Morocco' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Dubai' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Kenya' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Maldives' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Morocco' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
 
   ],
   Dec: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Finland' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Russia' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'South Africa' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'South Africa' },
+    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Bali' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Azerbaijan' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'South Africa' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Turkey'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
 
   ]
 };
@@ -283,21 +283,24 @@ function loadCards(month) {
     const cardEl = document.createElement('div');
     cardEl.className = 'carddd';
     cardEl.innerHTML = `
-          <img src="${card.image}" alt="${card.country}" />
-          <div class="country-name">${card.country}</div>
-        `;
+      <a href="${card.link}" class="card-link">
+        <img src="${card.image}" alt="${card.country}" />
+        <div class="country-name">${card.country}</div>
+      </a>
+    `;
     cardContainer.appendChild(cardEl);
   });
 }
+
 
 // Initial load for July
 loadCards('Jul');
 
 const visaData = {
   Dubai: [
-    { title: 'AZERBAIJAN STAMPED VISA', image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/tdyerevan004.jpg', price: 'AED 300.00' },
-    { title: 'AZERBAIJAN E-VISA', image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/tdyerevan004.jpg', price: 'AED 300.00' },
-    { title: 'AZERBAIJAN E-VISA', image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/tdyerevan004.jpg', price: 'AED 300.00' }
+    { title: 'Dubai VISA', image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/tdyerevan004.jpg', price: 'AED 300.00' },
+    { title: 'Georgia', image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/tdyerevan004.jpg', price: 'AED 300.00' },
+    { title: 'Kazakhstan', image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/tdyerevan004.jpg', price: 'AED 300.00' }
 
   ],
   Vietnam: [

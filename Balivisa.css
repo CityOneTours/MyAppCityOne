@@ -170,6 +170,16 @@ header {
     .banner-card {
         width: calc(50% - 20px);
     }
+        .tnc-accordion {
+      display: grid;
+      width: 700px !important;
+    }
+        .tnc-wrap {
+
+      width: 800px !important;
+
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -234,6 +244,17 @@ header {
 
     .Countries {
         padding: 20px !important;
+
+    }
+
+        
+        .tnc-accordion {
+      display: grid;
+      width: 400px !important;
+    }
+        .tnc-wrap {
+
+      width: 450px !important;
 
     }
 }
@@ -564,6 +585,16 @@ h4 {
     width: 90%;
     height: 200px;
   }
+          
+        .tnc-accordion {
+      display: grid;
+      width: 300px !important;
+    }
+        .tnc-wrap {
+
+      width: 350px !important;
+
+    }
 }
 
 
@@ -632,3 +663,244 @@ h4 {
     transform: scale(0.97);
 }
 
+
+
+
+
+ .tnc-shell {
+      min-height: 100svh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    /* Header */
+    .tnc-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      background: linear-gradient(to bottom, rgba(15,23,42,.9), rgba(15,23,42,.6));
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+
+    .tnc-nav {
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: none;
+      align-items: center;
+      gap: 14px;
+      justify-content: space-between;
+    }
+
+    .tnc-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: .3px;
+    }
+
+    .tnc-brand .tnc-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--tnc-accent), var(--tnc-accent-2));
+      box-shadow: var(--shadow-sm);
+      display: grid;
+      place-items: center;
+      color: #051923;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .tnc-nav a {
+      text-decoration: none;
+      color: var(--tnc-text);
+      opacity: .85;
+    }
+
+    /* Hero */
+    .tnc-wrap {
+      max-width: var(--content-max);
+      margin: 28px auto 64px;
+      padding: 0 20px;
+      background-color: #ffecec;
+      width: 1200px;
+      border: 2px solid rgba(0, 0, 0, 0.212);
+      border-radius: 16px;
+    }
+
+    .tnc-hero {
+      display: grid;
+      gap: 18px;
+      margin: 22px 0 10px;
+    }
+
+    .tnc-title {
+      font-size: clamp(1.8rem, 1.2rem + 2.2vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: .2px;
+      margin: 0;
+    }
+
+    .tnc-subline {
+      color: var(--tnc-dim);
+      font-size: .98rem;
+    }
+
+    .tnc-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .875rem;
+      background: rgba(56,189,248,.12);
+      border: 1px solid rgba(56,189,248,.25);
+      color: #c6f1ff;
+      padding: 8px 12px;
+      border-radius: 999px;
+    }
+
+    /* Card */
+    .tnc-card {
+      margin-top: 24px;
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border: 1px solid rgba(255,255,255,.08);
+      box-shadow: var(--shadow-lg);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+    }
+
+    .tnc-card-header {
+      padding: 22px 22px 16px;
+      background: linear-gradient(135deg, rgba(56,189,248,.08), transparent 60%);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+
+    .tnc-effective {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 18px;
+      color: var(--tnc-dim);
+      font-size: .95rem;
+    }
+
+    .tnc-effective strong {
+      color: var(--tnc-text);
+    }
+
+    .tnc-card-body {
+      padding: 0;
+    }
+
+    /* Accordion using <details> */
+    .tnc-accordion {
+      display: grid;
+      width: 1100px;
+    }
+
+    details.tnc-section {
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      background: linear-gradient(180deg, rgba(255,255,255,.015), rgba(255,255,255,0));
+    }
+
+    details.tnc-section[open] {
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0));
+    }
+
+    summary.tnc-summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 18px 22px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 12px;
+      font-weight: 600;
+    }
+
+    summary.tnc-summary::-webkit-details-marker { display: none; }
+
+    .tnc-num {
+      width: 32px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      /* background: rgba(34,211,238,.15); */
+      background-color: #eb222a;
+      border: 1px solid rgba(2, 2, 2, 0.156);
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .tnc-sect-title {
+      font-size: 1rem;
+      letter-spacing: .2px;
+    }
+
+    .tnc-chevron {
+      transform: rotate(0deg);
+      transition: transform .25s ease;
+      opacity: .75;
+      font-size: 18px;
+    }
+
+    details[open] .tnc-chevron { transform: rotate(180deg); }
+
+    .tnc-content {
+      padding: 0 22px 20px 64px; /* leave space for the number badge */
+      color: var(--tnc-text);
+      opacity: .95;
+    }
+
+    .tnc-content p { margin: 0 0 10px; }
+
+    .tnc-bullets {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+
+    .tnc-bullets li { margin: 6px 0; }
+
+    /* Footer */
+    .tnc-footer {
+      max-width: var(--content-max);
+      margin: 40px auto 80px;
+      padding: 0 20px;
+      color: var(--tnc-dim);
+      font-size: .92rem;
+      display: grid;
+      gap: 10px;
+    }
+
+    .tnc-divider { height: 1px; background: rgba(255,255,255,.08); margin: 22px 0; }
+
+    .tnc-accept {
+      display: grid;
+      grid-template-columns: 18px 1fr;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .tnc-toplink { text-decoration: none; color: var(--tnc-accent); }
+
+    /* Print-friendly */
+    @media print {
+      .tnc-header { position: static; background: transparent; border: none; }
+      .tnc-card, body { background: #fff; color: #000; box-shadow: none; }
+      .tnc-card, .tnc-card * { border-color: #e5e7eb !important; }
+      .tnc-num { background: #eef2ff; border-color: #c7d2fe; color: #111; }
+      summary.tnc-summary { cursor: default; }
+      details[open] .tnc-chevron, .tnc-chevron { display: none; }
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 640px) {
+      .tnc-content { padding: 0 16px 18px 22px; }
+      .tnc-num { width: 28px; height: 28px; font-size: .9rem; }
+      summary.tnc-summary { padding: 16px; gap: 10px; }
+      .tnc-wrap { margin-top: 18px; }
+    }

@@ -707,8 +707,12 @@
         color: white;
       }
 
+      .visaaa {
+        padding-top: 50px;
+      }
+
       .visa-tabs {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         justify-content: center;
         gap: 12px;

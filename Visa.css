@@ -628,7 +628,7 @@ header {
     background: #ffe5e5;
     border: 2px solid #e3cfcf;
     border-radius: 12px;
-    width: 180px;
+    width: 220px;
     padding: 20px 10px 10px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
@@ -668,6 +668,7 @@ header {
 .visa-price {
     color: #15803d;
     /* Tailwind green-700 */
+    font-size: 14px !important;
 }
 
 /* Responsive */

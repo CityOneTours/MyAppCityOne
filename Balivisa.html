@@ -2,203 +2,434 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Balivisa.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Balivisa.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
 <body>
-    <header>
-        <!-- Top Bar -->
-        <div class="top-bar">
-            <div class="left">
-                <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-                <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
-            </div>
-            <div class="right">
-                <span><img src="https://flagcdn.com/in.svg" alt="India Flag"> IND</span>
-                <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
-            </div>
+  <header>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="left">
+        <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+        <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
+      </div>
+      <div class="right">
+        <span><img src="https://flagcdn.com/in.svg" alt="India Flag"> IND</span>
+        <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
+      </div>
+    </div>
+
+    <!-- Main Nav -->
+    <nav class="navbar">
+      <div class="logo"> <a href="index.html">
+          <img src="images/image 8916.png" alt="" class="logo"> </a></div>
+      </div>
+
+      <div class="menu-btn" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="Destination.html"><i class="fas fa-search-location"></i> Destination</a>
+        <a href="Hotdeal.html"><i class="fas fa-suitcase-rolling"></i> Hot Deal</a>
+        <div class="dropdown">
+          <a href="Themes.html" class="dropbtn">
+            <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="Themes.html">Adventure Tours</a>
+            <a href="Themes.html">Luxury Tours</a>
+            <a href="Themes.html">Honey moon</a>
+            <a href="Themes.html">Weekend</a>
+            <a href="Themes.html">Safari</a>
+            <a href="Themes.html">Family with Kids</a>
+            <a href="Themes.html">Nature</a>
+            <a href="Themes.html">Wild Life</a>
+            <a href="Themes.html">Beach</a>
+          </div>
         </div>
-
-        <!-- Main Nav -->
-        <nav class="navbar">
-            <div class="logo"> <a href="index.html">
-                    <img src="images/image 8916.png" alt="" class="logo"> </a></div>
-            </div>
-
-            <div class="menu-btn" onclick="toggleMenu()">
-                <i class="fas fa-bars"></i>
-            </div>
-
-            <div class="nav-links" id="navLinks">
-                <a href="Destination.html"><i class="fas fa-search-location"></i> Destination</a>
-                <a href="Hotdeal.html"><i class="fas fa-suitcase-rolling"></i> Hot Deal</a>
-                <div class="dropdown">
-                    <a href="Themes.html" class="dropbtn">
-                        <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-menu">
-                        <a href="Themes.html">Adventure Tours</a>
-                        <a href="Themes.html">Luxury Tours</a>
-                        <a href="Themes.html">Honey moon</a>
-                        <a href="Themes.html">Weekend</a>
-                        <a href="Themes.html">Safari</a>
-                        <a href="Themes.html">Family with Kids</a>
-                        <a href="Themes.html">Nature</a>
-                        <a href="Themes.html">Wild Life</a>
-                        <a href="Themes.html">Beach</a>
-                    </div>
-                </div>
-                <a href="Visa.html"><i class="fas fa-passport"></i> Visa</a>
-                <a href="About us.html"><i class="fas fa-info-circle"></i> About</a>
-                <a href="Contact.html"><i class="fas fa-users"></i> Contact</a>
-            </div>
-        </nav>
-    </header>
+        <a href="Visa.html"><i class="fas fa-passport"></i> Visa</a>
+        <a href="About us.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="Contact.html"><i class="fas fa-users"></i> Contact</a>
+      </div>
+    </nav>
+  </header>
 
 
-    <section class="destination-carousel">
-        <div id="carouselDest" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/10/16154037/cappadocia.jpeg"
-                        class="d-block w-100" alt="Destination 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://wallpaperaccess.com/full/1431621.jpg" class="d-block w-100" alt="Destination 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://wallpapercave.com/wp/wp3394397.jpg" class="d-block w-100" alt="Destination 3">
-                </div>
-            </div>
-
-            <!-- Optional: arrows -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDest" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselDest" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-
-            <!-- Overlay text -->
-            <div class="carousel-caption-custom">
-                <h1>Bali visa</h1>
-                <h4>
-                    <i class="fas fa-check-circle" style="color: #FFD700;"></i>
-                    90.2% Visas Approved before Time
-                </h4>
-
-
-
-            </div>
+  <section class="destination-carousel">
+    <div id="carouselDest" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/10/16154037/cappadocia.jpeg"
+            class="d-block w-100" alt="Destination 1">
         </div>
-    </section>
-
-    <article class="heading">
-        <h1>Visa Types</h1>
-    </article>
-    <section class="visa-section">
-        <!-- Visa Types -->
-        <div class="visa-types">
-            <div class="visa-card">
-                <img src="https://img.icons8.com/emoji/48/000000/sun-behind-small-cloud.png" alt="Tourist Visa">
-                <h3>Tourist Visa</h3>
-                <p>Explore Dubai for leisure or to visit friends and family. Flexible stay durations to match your
-                    travel plans.</p>
-            </div>
-            <div class="visa-card">
-                <img src="https://img.icons8.com/emoji/48/000000/airplane-emoji.png" alt="Transit Visa">
-                <h3>Transit Visa</h3>
-                <p>Short layover in Dubai? Get a quick visa to explore the city while you wait for your next flight.</p>
-            </div>
-            <div class="visa-card">
-                <img src="https://img.icons8.com/emoji/48/000000/confetti-ball.png" alt="Business Visa">
-                <h3>Business Visa</h3>
-                <p>Travel to Dubai for meetings, exhibitions, or official events. Hassle-free entry for professional
-                    purposes.</p>
-            </div>
-            <div class="visa-card">
-                <img src="https://img.icons8.com/color/48/passport.png" alt="Multiple Entry Visa">
-                <h3>Multiple Entry Visa</h3>
-                <p>Ideal for frequent travelers. Enter and exit Dubai multiple times within the visa validity period.
-                </p>
-            </div>
+        <div class="carousel-item">
+          <img src="https://wallpaperaccess.com/full/1431621.jpg" class="d-block w-100" alt="Destination 2">
         </div>
+        <div class="carousel-item">
+          <img src="https://wallpapercave.com/wp/wp3394397.jpg" class="d-block w-100" alt="Destination 3">
+        </div>
+      </div>
 
-        <!-- Form Section -->
-        <div class="form-container">
-            <h2>Simplifying your Visa process with City One!</h2>
-            <p>Our team will contact you shortly to plan your trip.</p>
+      <!-- Optional: arrows -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDest" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDest" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
 
-            <div class="form-group">
-                <label>Name</label>
-                <input type="text" placeholder="First name">
-            </div>
+      <!-- Overlay text -->
+      <div class="carousel-caption-custom">
+        <h1>Bali visa</h1>
+        <h4>
+          <i class="fas fa-check-circle" style="color: #FFD700;"></i>
+          99.2% Visas Approved before Time
+        </h4>
 
-            <div class="form-group">
-                <label>Mobile Number</label>
-                <div class="mobile-input">
-                    <!-- <span class="country-code">🇮🇳 +91</span> -->
-                    <input type="tel" placeholder="Enter your 10 digit Mobile number">
-                </div>
-            </div>
 
-            <div class="form-group">
+
+      </div>
+    </div>
+  </section>
+
+  <article class="heading">
+    <h1>Visa Types</h1>
+  </article>
+  <section class="visa-section">
+    <!-- Visa Types -->
+    <div class="visa-types">
+      <div class="visa-card">
+        <img src="https://img.icons8.com/emoji/48/000000/sun-behind-small-cloud.png" alt="Tourist Visa">
+        <h3>Tourist Visa</h3>
+        <p>Explore Dubai for leisure or to visit friends and family. Flexible stay durations to match your
+          travel plans.</p>
+      </div>
+      <div class="visa-card">
+        <img src="https://img.icons8.com/emoji/48/000000/airplane-emoji.png" alt="Transit Visa">
+        <h3>Transit Visa</h3>
+        <p>Short layover in Dubai? Get a quick visa to explore the city while you wait for your next flight.</p>
+      </div>
+      <div class="visa-card">
+        <img src="https://img.icons8.com/emoji/48/000000/confetti-ball.png" alt="Business Visa">
+        <h3>Business Visa</h3>
+        <p>Travel to Dubai for meetings, exhibitions, or official events. Hassle-free entry for professional
+          purposes.</p>
+      </div>
+      <div class="visa-card">
+        <img src="https://img.icons8.com/color/48/passport.png" alt="Multiple Entry Visa">
+        <h3>Multiple Entry Visa</h3>
+        <p>Ideal for frequent travelers. Enter and exit Dubai multiple times within the visa validity period.
+        </p>
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="form-container">
+      <h2>Simplifying your Visa process with City One!</h2>
+      <p>Our team will contact you shortly to plan your trip.</p>
+
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" placeholder="First name">
+      </div>
+
+      <div class="form-group">
+        <label>Mobile Number</label>
+        <div class="mobile-input">
+          <!-- <span class="country-code">🇮🇳 +91</span> -->
+          <input type="tel" placeholder="Enter your 10 digit Mobile number">
+        </div>
+      </div>
+
+      <!-- <div class="form-group">
                 <label>Address</label>
                 <input type="text" placeholder="From">
-            </div>
+            </div> -->
 
-            <div class="form-group">
-                <label>Looking for</label>
-                <select>
-                    <option>Select visa type</option>
-                    <option>Tourist Visa</option>
-                    <option>Business Visa</option>
-                    <option>Transit Visa</option>
-                    <option>Multiple Entry Visa</option>
-                </select>
-            </div>
+      <div class="form-group">
+        <label>Looking for</label>
+        <select>
+          <option>Select visa type</option>
+          <option>Tourist Visa</option>
+          <option>Business Visa</option>
+          <option>Transit Visa</option>
+          <option>Multiple Entry Visa</option>
+        </select>
+      </div>
 
-            <div class="form-group">
-                <label>Visa for</label>
-                <select>
-                    <option>Select Country</option>
-                    <option>Dubai</option>
-                    <option>Qatar</option>
-                    <option>Singapore</option>
-                </select>
-            </div>
+      <div class="form-group">
+        <label for="visaCountry">Visa for</label>
+        <input list="countries" id="visaCountry" name="visaCountry" placeholder="Type or select a country">
+        <datalist id="countries">
+          <option value="India"></option>
+          <option value="Georgia"></option>
+          <option value="Albania"></option>
+          <option value="Armenia"></option>
+          <option value="Azerbaijan"></option>
+          <option value="Seychelles"></option>
+          <option value="Thailand"></option>
+          <option value="Oman"></option>
+          <option value="Saudi Arabia"></option>
+          <option value="Bahrain"></option>
+          <option value="Uganda"></option>
+          <option value="Tanzania"></option>
+          <option value="Indonesia"></option>
+          <option value="Nepal"></option>
+          <option value="Ethiopia"></option>
+          <option value="Nigeria"></option>
+          <option value="Egypt"></option>
+          <option value="Turkey"></option>
+          <option value="Uzbekistan"></option>
+          <option value="Vietnam"></option>
+          <option value="Sri Lanka"></option>
+          <option value="Qatar"></option>
+          <option value="Tajikistan"></option>
+          <option value="Moldova"></option>
+          <option value="Kenya"></option>
+          <option value="Singapore"></option>
+          <option value="Japan"></option>
+          <option value="Colombia"></option>
+          <option value="Australia"></option>
+          
+        </datalist>
+      </div>
 
-            <button class="submit-btn">Continue</button>
-        </div>
-    </section>
+
+      <button class="submit-btn">Continue</button>
+    </div>
+  </section>
 
 
-      <section class="tourist-doc-card">
+  <section class="tourist-doc-card">
     <div class="tourist-doc-container">
       <h2 class="tourist-doc-title">Documents Required: Tourist</h2>
       <ol class="tourist-doc-list">
-        <li>Original passport and copy of passport (Valid for more than 3 months from date of exit from Schengen Area) (with at least 2 blank pages side by side)</li>
+        <li>Original passport and copy of passport (Valid for more than 3 months from date of exit from Schengen Area)
+          (with at least 2 blank pages side by side)</li>
         <li>Application form. (We will do it For You)</li>
         <li>Copies of previous Schengen Visas.</li>
         <li>Two recent passport pictures with white background, not older than 6 months.</li>
         <li>UAE Residence Visa copy (Valid for more than 3 months from date of exit from Schengen Area)</li>
         <li>Copy of Emirates ID.</li>
-        <li>Original Employer NOC stating designation, salary, date of joining, purpose and date of travel, financial sponsorship. Valid for 1 month from date of issue with Original sign and Original stamp on it.</li>
+        <li>Original Employer NOC stating designation, salary, date of joining, purpose and date of travel, financial
+          sponsorship. Valid for 1 month from date of issue with Original sign and Original stamp on it.</li>
         <li>Company Trade License (If Business Owner)</li>
         <li>Hotel and air ticket reservations. (We will do it For you)</li>
-        <li>Proof of valid Travel health insurance covered in Schengen Area for a minimum of Euro 30,000 medical expenses. (We will do it for You)</li>
+        <li>Proof of valid Travel health insurance covered in Schengen Area for a minimum of Euro 30,000 medical
+          expenses. (We will do it for You)</li>
         <li>Last 3 months personal bank statement Original printed from Bank and Original Stamped by the Bank.</li>
         <li>Confirmed Appointment for Document submission and Biometrics (We will book for you)</li>
       </ol>
     </div>
   </section>
+
+
+  <section class="tourist-doc-card">
+    <div class="tourist-doc-container">
+      <h2 class="tourist-doc-title">Disclaimer</h2>
+      <ol class="tourist-doc-list">
+        <li>We are a private company offering visa assistance services and are not associated with any government or
+          immigration department. Visa decisions are made solely by the respective consulates or immigration
+          authorities.</li>
+
+      </ol>
+    </div>
+  </section>
+
+
+
+  <div class="tnc-shell" id="top">
+
+
+    <!-- Main Content -->
+    <section class="tnc-wrap" role="main">
+      <section class="tnc-hero" aria-labelledby="terms-title">
+        <!-- <span class="tnc-badge" aria-label="Document Type">Terms & Conditions</span> -->
+        <!-- <h1 id="terms-title" class="tnc-title">Terms & Conditions</h1> -->
+        <h2 class="tourist-doc-title">Terms & Conditions</h2>
+
+        <p class="tnc-subline">By using our website and availing visa assistance services through City One Tourism &
+          Travel, you agree to the following terms and conditions:
+
+        </p>
+      </section>
+
+      <article class="tnc-card" aria-label="Terms Container">
+        <!-- <div class="tnc-card-header">
+          <div class="tnc-effective">
+            <div><strong>Effective Date:</strong> 23/05/2025</div>
+            <div>Jurisdiction: United Arab Emirates</div>
+          </div>
+        </div> -->
+
+        <div class="tnc-card-body">
+          <div class="tnc-accordion" role="list">
+
+
+            <!-- 1. No Guarantee of Visa Issuance -->
+            <details class="tnc-section">
+              <summary class="tnc-summary">
+                <span class="tnc-num" aria-hidden="true">01</span>
+                <span class="tnc-sect-title">Independent Visa Service Provider</span>
+                <span class="tnc-chevron" aria-hidden="true">⌄</span>
+              </summary>
+              <div class="tnc-content">
+                <p>City One Tourism & Travel is a private visa consultancy and is not affiliated with any government,
+                  embassy, or consulate. We act solely as facilitators for visa application processing and support
+                  services.</p>
+
+              </div>
+            </details>
+
+            <!-- 2. No Guarantee of Visa Issuance -->
+            <details class="tnc-section">
+              <summary class="tnc-summary">
+                <span class="tnc-num" aria-hidden="true">02</span>
+                <span class="tnc-sect-title">No Guarantee of Visa Issuance</span>
+                <span class="tnc-chevron" aria-hidden="true">⌄</span>
+              </summary>
+              <div class="tnc-content">
+                <p>All visa applications are subject to approval by the respective immigration authorities. We do not
+                  guarantee:</p>
+                <ul class="tnc-bullets">
+                  <li>Visa approval</li>
+                  <li>Processing timelines</li>
+                  <li>Entry into any country</li>
+                </ul>
+                <p>The final decision rests solely with the embassy/immigration department.</p>
+              </div>
+            </details>
+
+            <!-- 3. Client Responsibilities -->
+            <details class="tnc-section">
+              <summary class="tnc-summary">
+                <span class="tnc-num" aria-hidden="true">03</span>
+                <span class="tnc-sect-title">Client Responsibilities</span>
+                <span class="tnc-chevron" aria-hidden="true">⌄</span>
+              </summary>
+              <div class="tnc-content">
+                <p>You agree to:</p>
+                <ul class="tnc-bullets">
+                  <li>Provide complete, accurate, and truthful information</li>
+                  <li>Submit required documentation on time</li>
+                  <li>Ensure passport validity and eligibility before applying</li>
+                </ul>
+                <p>City One is not responsible for rejections due to incorrect or incomplete information.</p>
+              </div>
+            </details>
+
+            <!-- 4. Fees & Refund Policy -->
+            <details class="tnc-section">
+              <summary class="tnc-summary">
+                <span class="tnc-num" aria-hidden="true">04</span>
+                <span class="tnc-sect-title">Fees & Refund Policy</span>
+                <span class="tnc-chevron" aria-hidden="true">⌄</span>
+              </summary>
+              <div class="tnc-content">
+                <p>Visa application charges may include government/embassy fees (if applicable), service charges, and
+                  any third-party processing fees. Once a visa application is submitted for processing, fees are
+                  non-refundable, regardless of outcome.</p>
+              </div>
+            </details>
+
+            <!-- 5. Processing Time -->
+            <details class="tnc-section">
+              <summary class="tnc-summary">
+                <span class="tnc-num" aria-hidden="true">05</span>
+                <span class="tnc-sect-title">Processing Time</span>
+                <span class="tnc-chevron" aria-hidden="true">⌄</span>
+              </summary>
+              <div class="tnc-content">
+                <p>Visa processing durations mentioned on our website are estimates and may vary. Delays may occur due
+                  to embassy workload, holidays, or additional verification.</p>
+              </div>
+            </details>
+
+            <!-- 6. Use of Services -->
+            <details class="tnc-section">
+              <summary class="tnc-summary">
+                <span class="tnc-num" aria-hidden="true">06</span>
+                <span class="tnc-sect-title">Use of Services</span>
+                <span class="tnc-chevron" aria-hidden="true">⌄</span>
+              </summary>
+              <div class="tnc-content">
+                <p>You agree not to misuse, duplicate, or replicate any part of the application process or information
+                  provided on our platform. Use of our services does not constitute a binding legal agreement until a
+                  confirmation email or receipt is issued.</p>
+              </div>
+            </details>
+
+            <!-- 7. Limitation of Liability -->
+            <details class="tnc-section">
+              <summary class="tnc-summary">
+                <span class="tnc-num" aria-hidden="true">07</span>
+                <span class="tnc-sect-title">Limitation of Liability</span>
+                <span class="tnc-chevron" aria-hidden="true">⌄</span>
+              </summary>
+              <div class="tnc-content">
+                <p>City One shall not be held liable for:</p>
+                <ul class="tnc-bullets">
+                  <li>Visa rejections</li>
+                  <li>Travel delays or losses</li>
+                  <li>Changes in government policy</li>
+                  <li>Indirect or incidental damages due to service use</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- 8. Privacy & Data Protection -->
+            <details class="tnc-section">
+              <summary class="tnc-summary">
+                <span class="tnc-num" aria-hidden="true">08</span>
+                <span class="tnc-sect-title">Privacy & Data Protection</span>
+                <span class="tnc-chevron" aria-hidden="true">⌄</span>
+              </summary>
+              <div class="tnc-content">
+                <p>We respect your privacy. All data shared with us is used only for visa processing and stored
+                  securely. Please refer to our full Privacy Policy for details.</p>
+              </div>
+            </details>
+
+            <!-- 9. Modifications to Services or Terms -->
+            <details class="tnc-section">
+              <summary class="tnc-summary">
+                <span class="tnc-num" aria-hidden="true">09</span>
+                <span class="tnc-sect-title">Modifications to Services or Terms</span>
+                <span class="tnc-chevron" aria-hidden="true">⌄</span>
+              </summary>
+              <div class="tnc-content">
+                <p>We reserve the right to modify, suspend, or update these terms at any time. Continued use of our
+                  services indicates acceptance of the updated terms.</p>
+              </div>
+            </details>
+
+            <!-- 10. Jurisdiction -->
+            <details class="tnc-section">
+              <summary class="tnc-summary">
+                <span class="tnc-num" aria-hidden="true">10</span>
+                <span class="tnc-sect-title">Jurisdiction</span>
+                <span class="tnc-chevron" aria-hidden="true">⌄</span>
+              </summary>
+              <div class="tnc-content">
+                <p>These terms shall be governed by the laws of the United Arab Emirates. Any disputes shall be resolved
+                  exclusively in UAE courts.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </article>
+      </main>
+  </div>
+
+
 
   <article class="heading">
     <h1>Easy Visa Countries</h1>
@@ -251,7 +482,7 @@
       </a>
     </div>
   </section>
-    <script src="Balivisa.js"></script>
+  <script src="Balivisa.js"></script>
 
 </body>
 
