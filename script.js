@@ -20,122 +20,150 @@ const cardData = {
   adventure: [
     {
       title: "Dubai",
-      rating: "4.96",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Golden_Bridge_(Vietnam).jpg",
-      info: "2 days 3 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
-      price: "AED 60"
+      rating: "4.9",
+      img: "Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg",
+      info: "8 days 7 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
+      price: "AED 4499",
+      link: "Dubai-packagess/Dubai-packages-one.html"
     },
     {
       title: "Georgia",
-      rating: "4.96",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Golden_Bridge_(Vietnam).jpg",
-      info: "2 days 3 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
-      price: "AED 60"
+      rating: "4.2",
+      img: "Georgia-images/9.jpg",
+      info: "6 days 5 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
+      price: "AED 1685",
+      link: "Georgia-packages-list/Georgia-four.html"
+
     },
     {
       title: "Maldives",
-      rating: "4.96",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Golden_Bridge_(Vietnam).jpg",
-      info: "2 days 3 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
-      price: "AED 60"
+      rating: "4.4",
+      img: "Maldives-images/Depositphotos_4474251_L (2).jpg",
+      info: "5 days 4 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
+      price: "AED 7680",
+      link: "Maldives-Packages-list/Maldives-two.html"
+
     },
     {
       title: "Armenia",
-      rating: "4.96",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Golden_Bridge_(Vietnam).jpg",
-      info: "2 days 3 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
-      price: "AED 60"
+      rating: "4.3",
+      img: "Armenia-images/1.jpeg",
+      info: "7 days 6 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
+      price: "AED 2500",
+      link: "Armenia-packages-list/Armenia-four.html"
     }
   ],
   luxury: [
     {
-      title: "Azerbaijan",
-      rating: "4.98",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg",
-      info: "3 days 2 nights | <i class='fas fa-hotel'></i> 5* Resort",
-      price: "AED 200"
+      title: "vietnam",
+      rating: "4.8",
+      img: "Vietnam-images/Depositphotos_66882175_L.jpg",
+      info: "6 days 5 nights | <i class='fas fa-hotel'></i> 5* Resort",
+      price: "AED 2699",
+      link: "vietnam-packages-list/vietnam-one.html"
+
     },
     {
       title: "Kyrgyzstan",
-      rating: "5.0",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg",
+      rating: "4.0",
+      img: "Kyrgyzstan-packages-list/Kyrgyzstan-images/20230523151501_Pb_KyrgyzstanGallery2.jpg",
       info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
-      price: "AED 350"
+      price: "AED 2070",
+      link: "Kyrgyzstan-packages-list/Kyrgyzstan-one.html"
+
     },
     {
-      title: "Armenia",
+      title: "Thailand",
       rating: "4.98",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg",
-      info: "3 days 2 nights | <i class='fas fa-hotel'></i> 5* Resort",
-      price: "AED 200"
+      img: "Thailand-images/Depositphotos_12420435_L.jpg",
+      info: "8 days 7 nights | <i class='fas fa-hotel'></i> 5* Resort",
+      price: "AED 2699",
+      link: "Thailand-packages-list/Thailand-one.html"
+
     },
     {
-      title: "Maldives",
-      rating: "5.0",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg",
-      info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
-      price: "AED 350"
-    }
+      title: "Dubai",
+      rating: "4.9",
+      img: "Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg",
+      info: "8 days 7 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
+      price: "AED 4499",
+      link: "Dubai-packagess/Dubai-packages-one.html"
+    },
   ],
   honeymoon: [
     {
-      title: "Vietnam",
-      rating: "4.95",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/6dddf165fec7167b45a3e1a7c66f8bca.jpg",
-      info: "3 days 3 nights | <i class='fas fa-hotel'></i> Romantic Hotels",
-      price: "AED 180"
+      title: "Maldives",
+      rating: "4.4",
+      img: "Maldives-images/Depositphotos_4474251_L (2).jpg",
+      info: "5 days 4 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
+      price: "AED 7680",
+      link: "Maldives-Packages-list/Maldives-two.html"
+
     },
     {
       title: "Bali",
-      rating: "4.98",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/6dddf165fec7167b45a3e1a7c66f8bca.jpg",
-      info: "3 days 2 nights | <i class='fas fa-hotel'></i> 5* Resort",
-      price: "AED 200"
+      rating: "4.9",
+      img: "Bali-images/Depositphotos_8364139_L.jpg",
+      info: "4 days 3 nights | <i class='fas fa-hotel'></i> 5* Resort",
+      price: "AED 1250",
+      link: "Bali-Packages-list/Bali-one.html"
+
     },
     {
-      title: "Singapore",
-      rating: "5.0",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/6dddf165fec7167b45a3e1a7c66f8bca.jpg",
-      info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
-      price: "AED 350"
+      title: "vietnam",
+      rating: "4.8",
+      img: "Vietnam-images/Depositphotos_66882175_L.jpg",
+      info: " days  nights | <i class='fas fa-hotel'></i> 5* Resort",
+      price: "AED 2699",
+      link: "vietnam-packages-list/vietnam-one.html"
+
     },
     {
       title: "switzerland",
-      rating: "5.0",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/6dddf165fec7167b45a3e1a7c66f8bca.jpg",
-      info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
-      price: "AED 350"
+      rating: "4.4",
+      img: "switzerland-packages-list/Switzerland-images/Depositphotos_26387041_L.jpg",
+      info: "5 days 4 nights | <i class='fas fa-hotel'></i> Water Villas",
+      price: "AED 3420",
+      link: "switzerland-packages-list/switzerland-one.html"
+
     }
   ],
   family: [
     {
       title: "Dubai",
-      rating: "4.89",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/6dddf165fec7167b45a3e1a7c66f8bca.jpg",
-      info: "3 nights | <i class='fas fa-hotel'></i> Theme Park Package",
-      price: "AED 220"
+      rating: "4.9",
+      img: "Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg",
+      info: "8 days 7 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
+      price: "AED 4499",
+      link: "Dubai-packagess/Dubai-packages-one.html"
     },
     {
-      title: "Malaysia",
-      rating: "4.98",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg",
-      info: "3 days 2 nights | <i class='fas fa-hotel'></i> 5* Resort",
-      price: "AED 200"
+      title: "Turkey ",
+      rating: "4.8",
+      img: "Turkey-images/Depositphotos_94663096_L.jpg",
+      info: "6 days 5 nights | <i class='fas fa-hotel'></i> 5* Resort",
+      price: "AED 2350",
+      link: "Turkey-packages-list/Turkey-one.html"
+
     },
     {
       title: "saudi arabia",
       rating: "5.0",
       img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg",
       info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
-      price: "AED 350"
+      price: "AED 3130",
+      link: "Saudi-arabia-packages-list/saudiarabia-one.html"
+
     },
     {
       title: "Maldives",
-      rating: "5.0",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg",
-      info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
-      price: "AED 350"
-    }
+      rating: "4.4",
+      img: "Maldives-images/Depositphotos_4474251_L (2).jpg",
+      info: "5 days 4 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
+      price: "AED 7680",
+      link: "Maldives-Packages-list/Maldives-two.html"
+
+    },
   ]
 };
 
@@ -151,23 +179,23 @@ function filterCards(type, event) {
     const cardEl = document.createElement('div');
     cardEl.className = 'card';
     cardEl.innerHTML = `
-          <div style="position: relative;">
-            <img src="${card.img}" alt="${card.title}" />
+        <div style="position: relative;">
+          <img src="${card.img}" alt="${card.title}" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <div class="card-title">${card.title}</div>
+            <div class="rating"><i class="fas fa-star"></i> ${card.rating}</div>
           </div>
-          <div class="card-body">
-            <div class="card-header">
-              <div class="card-title">${card.title}</div>
-              <div class="rating"><i class="fas fa-star"></i> ${card.rating}</div>
-            </div>
-            <div class="info"><i class="fas fa-clock"></i> ${card.info}</div>
-            <div class="price-row">
-              <div class="price">${card.price}</div>
-              <button class="know-more">Know More</button>
-            </div>
-          </div>`;
-
+          <div class="info"><i class="fas fa-clock"></i> ${card.info}</div>
+          <div class="price-row">
+            <div class="price">${card.price}</div>
+            <a href="${card.link}" class="know-more">Know More</a>
+          </div>
+        </div>`;
     container.appendChild(cardEl);
   });
+
 }
 
 window.onload = () => filterCards('adventure');
@@ -176,86 +204,87 @@ window.onload = () => filterCards('adventure');
 
 const monthData = {
   Jan: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Golden_Bridge_(Vietnam).jpg', country: 'Dubai',link: 'Dubai-packagess/Dubai-packages-two.html'  },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Golden_Bridge_(Vietnam).jpg', country: 'Maldives',link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/9b7361b0dfbd5ffaf4f92928a2f554ed.jpg', country: 'India' ,link: 'Dubai-packagess/Dubai-packages-two.html'},
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/9b7361b0dfbd5ffaf4f92928a2f554ed.jpg', country: 'Thailand' ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg', country: 'Dubai', link: 'Dubai-packages.html' },
+    { image: 'Maldives-images/Depositphotos_4474251_L (2).jpg', country: 'Maldives', link: 'Maldives-packages.html' },
+    { image: 'India-packages-list/India-images/Depositphotos_7932088_L.jpg', country: 'India', link: 'India-packages.html' },
+    { image: 'Thailand-images/Depositphotos_12420435_L.jpg', country: 'Thailand', link: 'Thailand-packages.html' },
 
   ],
   Feb: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Bali' ,link: 'Dubai-packagess/Dubai-packages-two.html'},
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TL0750-cover.jpg.jpg', country: 'Vietnam' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TL0750-cover.jpg.jpg', country: 'Armenia' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TL0750-cover.jpg.jpg', country: 'Kenya' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'Bali-images/Depositphotos_3587328_L.jpg', country: 'Bali', link: 'Bali-packages.html' },
+    { image: 'Vietnam-images/Depositphotos_66882175_L.jpg', country: 'Vietnam', link: 'Vietnam-packages.html' },
+    { image: 'Armenia-images/1.jpeg', country: 'Armenia', link: 'Armenia-packages.html' },
+    { image: 'Kenya-images/Depositphotos_17643137_L.jpg', country: 'Kenya', link: 'Kenya-packages.html' },
 
   ],
   Mar: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/6dddf165fec7167b45a3e1a7c66f8bca.jpg', country: 'Bali' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Azerbaijan' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/cdc1afa876c0a873aa296eb68be18e2c.jpg', country: 'Turkey' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/cdc1afa876c0a873aa296eb68be18e2c.jpg', country: 'Morocco' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'Bali-images/Depositphotos_3587328_L.jpg', country: 'Bali', link: 'Bali-packages.html' },
+    { image: 'Azerbaijan-images/BKU_510_aspect16x9.jpg', country: 'Azerbaijan', link: 'Azerbaijan-packages.html' },
+    { image: 'Turkey-images/Depositphotos_94663096_L.jpg', country: 'Turkey', link: 'Turkey-packages.html' },
+    { image: 'Morocco-images/Depositphotos_23937101_L.jpg', country: 'Morocco', link: 'Morocco-packages.html' },
 
   ],
   Apr: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Kazakhstan' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Uzbekistan' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Egypt' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Malaysia'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'Kazakhstan-packages-list/Kazakhstan-images/20241104123324_5.jpg', country: 'Kazakhstan', link: 'Kazakhstan-packages.html' },
+    { image: 'Uzbekistan-packages-list/Uzbekistan-images/20220919115721_Us_ScandinaviListing.jpg', country: 'Uzbekistan', link: 'Uzbekistan-packages.html' },
+    { image: 'Egypt-packages-list/Egypt-images/Depositphotos_1656452_L.jpg', country: 'Egypt', link: 'Egypt-packages.html' },
+    { image: 'Malaysia-packages-list/Malaysia-images/Depositphotos_5477401_L.jpg', country: 'Malaysia', link: 'Malaysia-packages.html' },
 
   ],
   May: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Singapore'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg', country: 'japan'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg', country: 'India'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg', country: 'croatia' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'Singapore-packages-list/Singapore-images/Depositphotos_312559308_L.jpg', country: 'Singapore', link: 'Singapore-packages.html' },
+    { image: 'Japan-images/Depositphotos_8607019_L.jpg', country: 'japan', link: 'Japan-packages.html' },
+    { image: 'India-packages-list/India-images/Depositphotos_7932088_L.jpg', country: 'India', link: 'India-packages.html' },
+    { image: 'croatia-packages-list/Croatia-images/20220619095511_Px_CroatiaGallery5.jpg', country: 'croatia', link: 'croatia-packages.html' },
 
   ],
   Jun: [
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'prague' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'switzerland'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'scandinavia'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'seychelles' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'Prague-packages-list/Prague-images/Depositphotos_47797195_L.jpg', country: 'prague', link: 'prague-packages.html' },
+    { image: 'switzerland-packages-list/Switzerland-images/Depositphotos_181378152_L.jpg', country: 'switzerland', link: 'switzerland-packages.html' },
+    { image: 'scandinavia-packages-list/Scandinavia-images/20220919115721_Us_ScandinaviListing.jpg', country: 'scandinavia', link: 'scandinavia-packages.html' },
+    { image: 'seychelles-packages-list/Seychelles-images/20241114082355_SeychellesItineraries 1.jpg', country: 'seychelles', link: 'seychelles-packages.html' },
 
   ],
   Jul: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/a073d98cebc37f5c1ba94388cde4bc42.jpg', country: 'south africa' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TL0750-cover.jpg.jpg', country: 'Sri Lanka' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/Holy-Trinity-Cathedral-Tbilisi-shutterstock_2126337365.jpg.jpg', country: 'saudi arabia'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/11753a282bbfc8e8e9283294e3a2dae2.jpg', country: 'switzerland'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'Southafrica-packages-list/Southafrica-images/Depositphotos_13890331_L.jpg', country: 'south africa', link: 'southafrica-packages.html' },
+    { image: 'Srilanka-images/dambulla-2516649_1920.jpg', country: 'Sri Lanka', link: 'Srilanka-packages.html' },
+    { image: 'Saudi-arabia-packages-list/Saudiarabia-images/20230107055235_Pb_SaudiRiyadhGallery5.jpg', country: 'saudi arabia', link: 'saudiarabia-packages.html' },
+    { image: 'switzerland-packages-list/Switzerland-images/Depositphotos_181378152_L.jpg', country: 'switzerland', link: 'switzerland-packages.html' },
   ],
   Aug: [
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Greece'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Jordan'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'seychelles'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'greece' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'Prague-packages-list/Prague-images/Depositphotos_47797195_L.jpg', country: 'prague', link: 'prague-packages.html' },
+    { image: 'Jordan-packages-list/Jordan-images/20240302100402_Jordaniti2.jpg', country: 'Jordan', link: 'Jordan-packages.html' },
+    { image: 'seychelles-packages-list/Seychelles-images/20241114082355_SeychellesItineraries 1.jpg', country: 'seychelles', link: 'seychelles-packages.html' },
+    { image: 'Greece-packages-list/Greece-images/20220620045024_Pb_GreeceGallery.jpg', country: 'greece', link: 'greece-packages.html' },
 
   ],
   Sep: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Kyrgyzstan' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Jordan' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Kazakhstan' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Malaysia' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'Kyrgyzstan-packages-list/Kyrgyzstan-images/20230523151501_Pb_KyrgyzstanGallery2.jpg', country: 'Kyrgyzstan', link: 'Kyrgyzstan-packages.html' },
+    { image: 'Jordan-packages-list/Jordan-images/20240302100402_Jordaniti2.jpg', country: 'Jordan', link: 'Jordan-packages.html' },
+    { image: 'Kazakhstan-packages-list/Kazakhstan-images/20241104123324_5.jpg', country: 'Kazakhstan', link: 'Kazakhstan-packages.html' },
+    { image: 'Malaysia-packages-list/Malaysia-images/Depositphotos_5477401_L.jpg', country: 'Malaysia', link: 'Malaysia-packages.html' },
 
   ],
   Oct: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'prague' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'scandinavia'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'south africa'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'greece'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'Prague-packages-list/Prague-images/Depositphotos_47797195_L.jpg', country: 'prague', link: 'prague-packages.html' },
+    { image: 'scandinavia-packages-list/Scandinavia-images/20220919115721_Us_ScandinaviListing.jpg', country: 'scandinavia', link: 'scandinavia-packages.html' },
+    { image: 'Southafrica-packages-list/Southafrica-images/Depositphotos_13890331_L.jpg', country: 'south africa', link: 'southafrica-packages.html' },
+    { image: 'Greece-packages-list/Greece-images/20220620045024_Pb_GreeceGallery.jpg', country: 'greece', link: 'greece-packages.html' },
 
   ],
   Nov: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Dubai' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Kenya' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Maldives' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Morocco' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
+    { image: 'Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg', country: 'Dubai', link: 'Dubai-packages.html' },
+
+    { image: 'Kenya-images/Depositphotos_17643137_L.jpg', country: 'Kenya', link: 'Kenya-packages.html' },
+    { image: 'Maldives-images/Depositphotos_4474251_L (2).jpg', country: 'Maldives', link: 'Maldives-packages.html' },
+    { image: 'Morocco-images/Depositphotos_23937101_L.jpg', country: 'Morocco', link: 'Morocco-packages.html' },
 
   ],
   Dec: [
-    { image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg', country: 'Bali' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://i.imgur.com/8R8hKHQ.jpeg', country: 'Azerbaijan' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'South Africa' ,link: 'Dubai-packagess/Dubai-packages-two.html' },
-    { image: 'https://i.imgur.com/6oKfFvY.jpeg', country: 'Turkey'  ,link: 'Dubai-packagess/Dubai-packages-two.html'},
+    { image: 'Bali-images/Depositphotos_3587328_L.jpg', country: 'Bali', link: 'Bali-packages.html' },
+    { image: 'Azerbaijan-images/BKU_510_aspect16x9.jpg', country: 'Azerbaijan', link: 'Azerbaijan-packages.html' },
+    { image: 'Southafrica-packages-list/Southafrica-images/Depositphotos_13890331_L.jpg', country: 'south africa', link: 'southafrica-packages.html' },
+    { image: 'Turkey-images/Depositphotos_94663096_L.jpg', country: 'Turkey', link: 'Turkey-packages.html' },
 
   ]
 };
@@ -268,7 +297,7 @@ const months = Object.keys(monthData);
 months.forEach((month, index) => {
   const btn = document.createElement('button');
   btn.innerText = month;
-  if (index === 6) btn.classList.add('active'); // Jul default
+  if (index === 8) btn.classList.add('active'); // Jul default
   btn.addEventListener('click', () => {
     document.querySelectorAll('.month-buttons button').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
@@ -294,13 +323,15 @@ function loadCards(month) {
 
 
 // Initial load for July
-loadCards('Jul');
+loadCards('Sep');
 
 const visaData = {
   Dubai: [
-    { title: 'Dubai VISA', image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/tdyerevan004.jpg', price: 'AED 300.00' },
-    { title: 'Georgia', image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/tdyerevan004.jpg', price: 'AED 300.00' },
-    { title: 'Kazakhstan', image: 'https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/tdyerevan004.jpg', price: 'AED 300.00' }
+    { title: 'Georgia', image: 'Georgia-images/9.jpg',link: 'visa-countries-list/Georgia-visa.html'  },
+    { title: 'Armenia', image: 'Armenia-images/1.jpeg', link: 'visa-countries-list/Armenia-visa.html'},
+    { title: 'Azerbaijan', image: 'Azerbaijan-images/BKU_510_aspect16x9.jpg',link: 'visa-countries-list/Azerbaijan-visa.html' },
+    { title: 'Vietnam', image: 'Vietnam-images/Depositphotos_66882175_L.jpg',link: 'visa-countries-list/Vietnam-visa.html' }
+
 
   ],
   Vietnam: [
@@ -334,34 +365,34 @@ const visaData = {
 const tabsContainer = document.getElementById('visaTabs');
 const cardsContainer = document.getElementById('visaCards');
 
-const countries = Object.keys(visaData);
+// const countries = Object.keys(visaData);
 
-countries.forEach((country, index) => {
-  const button = document.createElement('button');
-  button.className = 'visa-tab-button';
-  button.textContent = country;
-  if (index === 0) button.classList.add('active');
+// countries.forEach((country, index) => {
+//   const button = document.createElement('button');
+//   button.className = 'visa-tab-button';
+//   button.textContent = country;
+//   if (index === 0) button.classList.add('active');
 
-  button.addEventListener('click', () => {
-    document.querySelectorAll('.visa-tab-button').forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-    loadVisaCards(country);
-  });
+//   button.addEventListener('click', () => {
+//     document.querySelectorAll('.visa-tab-button').forEach(btn => btn.classList.remove('active'));
+//     button.classList.add('active');
+//     loadVisaCards(country);
+//   });
 
-  tabsContainer.appendChild(button);
-});
+//   tabsContainer.appendChild(button);
+// });
 
 function loadVisaCards(country) {
   cardsContainer.innerHTML = '';
   visaData[country].forEach(card => {
-    const cardEl = document.createElement('div');
+    const cardEl = document.createElement('a');
+    cardEl.href = card.link || "#";
     cardEl.className = 'visa-card';
     cardEl.innerHTML = `
           <img class="visa-card-img" src="${card.image}" alt="${card.title}">
           <div class="visa-card-body">
-            <div class="visa-card-title">${card.title}</div>
             <div class="visa-card-footer">
-              <div class="visa-price">${card.price}</div>
+              <div class="visa-card-title">${card.title}</div>
               <div class="visa-arrow">&#8594;</div>
             </div>
           </div>
@@ -370,65 +401,66 @@ function loadVisaCards(country) {
   });
 }
 
+
 // Load default country
 loadVisaCards('Dubai');
 
- const counters = document.querySelectorAll('.stat-number');
-    let hasCounted = false;
+const counters = document.querySelectorAll('.stat-number');
+let hasCounted = false;
 
-    function animateCounters() {
-      if (hasCounted) return;
-      counters.forEach(counter => {
-        const target = +counter.getAttribute('data-target');
-        let count = 0;
-        const speed = target / 600; // control speed
-        const update = () => {
-          if (count < target) {
-            count += Math.ceil(speed);
-            counter.textContent = count.toLocaleString();
-            requestAnimationFrame(update);
-          } else {
-            counter.textContent = target.toLocaleString();
-          }
-        };
-        update();
-      });
-      hasCounted = true;
-    }
-
-    // Trigger animation on scroll into view
-    function isInViewport(element) {
-      const rect = element.getBoundingClientRect();
-      return (
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight)
-      );
-    }
-
-    function checkScroll() {
-      const section = document.getElementById('statsSection');
-      if (isInViewport(section)) {
-        animateCounters();
-        window.removeEventListener('scroll', checkScroll);
+function animateCounters() {
+  if (hasCounted) return;
+  counters.forEach(counter => {
+    const target = +counter.getAttribute('data-target');
+    let count = 0;
+    const speed = target / 600; // control speed
+    const update = () => {
+      if (count < target) {
+        count += Math.ceil(speed);
+        counter.textContent = count.toLocaleString();
+        requestAnimationFrame(update);
+      } else {
+        counter.textContent = target.toLocaleString();
       }
-    }
+    };
+    update();
+  });
+  hasCounted = true;
+}
 
-    window.addEventListener('scroll', checkScroll);
-    window.addEventListener('load', checkScroll);
+// Trigger animation on scroll into view
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
 
-      const track = document.getElementById('testimonialTrack');
-  const cardCount = 9;
-  const visibleCards = 3;
-  let index = 0;
-
-  function slideCards() {
-    const cardWidth = track.querySelector('.testimonial-card').offsetWidth;
-    index = (index + 1) % (Math.ceil(cardCount / visibleCards));
-    track.style.transform = `translateX(-${index * cardWidth * visibleCards}px)`;
+function checkScroll() {
+  const section = document.getElementById('statsSection');
+  if (isInViewport(section)) {
+    animateCounters();
+    window.removeEventListener('scroll', checkScroll);
   }
+}
 
-  setInterval(slideCards, 4000);
+window.addEventListener('scroll', checkScroll);
+window.addEventListener('load', checkScroll);
 
-  (function () {
+const track = document.getElementById('testimonialTrack');
+const cardCount = 9;
+const visibleCards = 3;
+let index = 0;
+
+function slideCards() {
+  const cardWidth = track.querySelector('.testimonial-card').offsetWidth;
+  index = (index + 1) % (Math.ceil(cardCount / visibleCards));
+  track.style.transform = `translateX(-${index * cardWidth * visibleCards}px)`;
+}
+
+setInterval(slideCards, 4000);
+
+(function () {
   const track = document.getElementById('testimonialTrack');
   const dots = document.querySelectorAll('.testimonial-dot');
   const totalSlides = 3; // 9 reviews / 3 per view
@@ -458,17 +490,82 @@ loadVisaCards('Dubai');
 
 // Search bar
 function handleSearch() {
-    const destination = document.getElementById("destinationInput").value.trim();
+  const destination = document.getElementById("destinationInput").value.trim();
+  const theme = document.getElementById("themeSelect").value;
+  const date = document.getElementById("dateInput").value;
+
+  if (!destination || !theme || !date) {
+    alert("Please fill all fields before searching.");
+    return;
+  }
+
+  // Example redirect to themes.html with query params
+  const url = `themes.html?destination=${encodeURIComponent(destination)}&theme=${theme}&date=${date}`;
+  window.location.href = url;
+}
+// Search bar End 
+
+
+
+
+  // Declare only ONCE
+  const countries = [
+    "Dubai",
+    // "Thailand",
+    // "Malaysia",
+    // "Georgia",
+    // "Armenia",
+    // "Uzbekistan",
+    // "Vietnam",
+    // "South Africa"
+  ];
+
+  const destinationInput = document.getElementById("destinationInput");
+  const countryList = document.getElementById("countryList");
+
+  function showList() {
+    countryList.style.display = "block";
+    countryList.innerHTML = "";
+    countries.forEach(c => {
+      const div = document.createElement("div");
+      div.innerText = c;
+      div.onclick = () => {
+        destinationInput.value = c;
+        countryList.style.display = "none";
+      };
+      countryList.appendChild(div);
+    });
+  }
+
+  function filterCountries() {
+    const filter = destinationInput.value.toLowerCase();
+    countryList.innerHTML = "";
+    const filtered = countries.filter(c => c.toLowerCase().includes(filter));
+
+    filtered.forEach(c => {
+      const div = document.createElement("div");
+      div.innerText = c;
+      div.onclick = () => {
+        destinationInput.value = c;
+        countryList.style.display = "none";
+      };
+      countryList.appendChild(div);
+    });
+
+    countryList.style.display = filtered.length ? "block" : "none";
+  }
+
+  function handleSearch() {
+    const destination = destinationInput.value.trim();
     const theme = document.getElementById("themeSelect").value;
     const date = document.getElementById("dateInput").value;
 
     if (!destination || !theme || !date) {
-      alert("Please fill all fields before searching.");
+      alert("Please select destination, theme, and date!");
       return;
     }
 
-    // Example redirect to themes.html with query params
-    const url = `themes.html?destination=${encodeURIComponent(destination)}&theme=${theme}&date=${date}`;
+    // Navigate to that country's packages page
+    const url = destination.toLowerCase().replace(/\s+/g, '-') + "-packages.html";
     window.location.href = url;
   }
-  // Search bar End 

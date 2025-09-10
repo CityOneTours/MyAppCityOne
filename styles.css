@@ -703,7 +703,7 @@
         margin-bottom: 30px;
         font-weight: 600;
         font-size: 28px;
-        padding-top: 40px;
+        padding-top: 60px;
         color: white;
       }
 
@@ -941,7 +941,7 @@
 
         .card {
           width: 90%;
-          height: 280px;
+          height: 340px;
         }
 
         .visa-card {
@@ -1337,3 +1337,39 @@
       .custom-footer-bottom p {
         color: #ffffff;
       }
+
+
+      .know-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 8px;
+  background-color: #fff;
+  border: 2px solid #6865652e;
+  border-radius: 25px;
+  color: #575555;
+  font-weight: bold;
+  text-decoration: none; /* ✅ removes underline */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 34px;
+}
+
+.know-more:hover {
+  background-color: #eb222a;
+  color: #fff;
+}
+.visa-card {
+  display: block;              /* makes the link behave like a card */
+  text-decoration: none;       /* ✅ removes underline */
+  color: inherit;              /* ✅ keeps text color normal */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.visa-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}

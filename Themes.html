@@ -44,7 +44,7 @@
             <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
           </a>
           <div class="dropdown-menu">
-            <a href="Themes.html">Adventure Tours</a>
+            <a href="Themes.html">Adventure</a>
             <a href="Themes.html">Luxury Tours</a>
             <a href="Themes.html">Honey moon</a>
             <a href="Themes.html">Weekend</a>
@@ -97,25 +97,20 @@
 
   <div class="theme-filters">
     <button class="theme-btn" onclick="filterTheme('Adventure')">
-      <img src="https://platinumlist.net/guide/wp-content/uploads/2023/02/sky-dive-dubai-3-scaled.jpg" />
+      <img src="Armenia-images/1.jpeg" />
       <span>Adventure</span>
     </button>
     <button class="theme-btn" onclick="filterTheme('Honey Moon')">
-      <img
-        src="https://www.honeymoondreams.co.uk/wp-content/uploads/2015/06/12-things-do-experience-on-your-honeymoon-luxury-travel-blog-sunset-beach-dinner.jpg"
-        alt="Honey Moon" />
+      <img src="Bali-images\BALI 2.jpg" alt="Honey Moon" />
       <span>Honey Moon</span>
     </button>
     <button class="theme-btn" onclick="filterTheme('Luxury')">
-      <img
-        src="https://res.cloudinary.com/ocean-holidays-test/image/upload/c_scale,w_auto,f_auto,dpr_auto/WingedBoots/MagazineArticle/1527/paq4qvct7x06fbcoohda.jpg"
-        alt="Luxury" />
+      <img src="Maldives-images/Depositphotos_10094269_L (1).jpg" alt="Luxury" />
       <span>Luxury</span>
     </button>
-    <button class="theme-btn" onclick="filterTheme('Safari')">
-      <img src="https://www.gorillasafaridiscovery.com/wp-content/uploads/2020/05/Game-viewing-1024x515.jpg"
-        alt="Safari" />
-      <span>Safari</span>
+    <button class="theme-btn" onclick="filterTheme('Family With Kids')">
+      <img src="Dubai Images/2.jpg" alt="Safari" />
+      <span>Family With Kids</span>
     </button>
   </div>
 
@@ -123,9 +118,9 @@
     <input type="text" id="searchBox" placeholder="Search country" oninput="filterSearch()">
     <select onchange="filterPrice(this.value)">
       <option value="">Price</option>
-      <option value="100">Below 100</option>
-      <option value="140">Below 140</option>
-      <option value="160">Below 160</option>
+      <option value="1000">Below 1000</option>
+      <option value="2000">Below 2000</option>
+      <option value="3000">Below 3000</option>
     </select>
     <select onchange="filterDuration(this.value)">
       <option value="">Duration</option>
@@ -133,6 +128,13 @@
       <option value="5">5 Days</option>
       <option value="6">6 Days</option>
       <option value="7">7 Days</option>
+      <option value="8">8 Days</option>
+      <option value="9">9 Days</option>
+      <option value="10">10 Days</option>
+      <option value="11">11 Days</option>
+      <option value="12">12 Days</option>
+      <option value="13">13 Days</option>
+      <option value="14">14 Days</option>
     </select>
     <button onclick="openPopup()">Custom Tour</button>
   </div>
@@ -157,15 +159,6 @@
       <p>Our team will contact you shortly to plan your trip.</p>
 
       <input type="text" id="userName" placeholder="First name" required />
-
-      <!-- <select id="userCountry" required>
-      <option value="">Select Country</option>
-      <option value="India">India</option>
-      <option value="UAE">UAE</option>
-      <option value="Vietnam">Vietnam</option>
-      <option value="Bali">Bali</option>
-    </select> -->
-
       <input type="tel" id="userPhone" placeholder="Enter your 10 digit Mobile number" required />
       <input type="email" id="userEmail" placeholder="Enter your email id" required />
 

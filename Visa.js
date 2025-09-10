@@ -11,7 +11,7 @@ let hasCounted = false;
 const countries = [
     'India', 'Georgia', 'Albania', 'Armenia', 'Azerbaijan', 'Seychelles', 'Thailand',
     'Oman', 'Saudi Arabia', 'Uganda', 'Tanzania', 'Indonesia', 'Nepal', 'Ethiopia', 'Nigeria',
-    'Egypt', 'Turkey', 'Uzbekistan', 'Vietnam', 'Sri Lanka', 'Qatar', 'Tajikistan', 'Moldova', 'Kenya ',
+    'Egypt', 'Turkey', 'Uzbekistan', 'Vietnam', 'Srilanka', 'Qatar', 'Tajikistan', 'Moldova', 'Kenya ',
     'Singapore', 'Malaysia', 'Colombia', 'Australia',
 ];
 
@@ -33,11 +33,17 @@ function populateDropdown(filteredCountries) {
 
 // Function to navigate to visa page
 function navigateToVisaPage(country) {
-    const countrySlug = country.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-    window.location.href = `${countrySlug}-visa.html`;
+    const countrySlug = country
+        .toLowerCase()
+        .replace(/\s+/g, '-')          // replace spaces with hyphen
+        .replace(/[^a-z0-9-]/g, '');   // remove special characters
+
+    window.location.href = `visa-countries-list/${countrySlug}-visa.html`;
+
     dropdown.classList.remove('active');
     searchInput.value = '';
 }
+
 
 
 // Event listeners

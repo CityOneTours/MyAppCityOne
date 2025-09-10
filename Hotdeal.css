@@ -523,6 +523,7 @@ header {
     max-width: 800px;
     max-height: 90vh;
     overflow-y: auto;
+        padding-top: 60px;
     position: relative;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     animation: modalSlideIn 0.3s ease-out;
@@ -1176,3 +1177,9 @@ header {
     color: #d60000;
     font-weight: bold;
 }
+
+
+
+
+
+

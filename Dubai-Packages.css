@@ -489,3 +489,91 @@ header {
   color: #d60000;
   font-weight: bold;
 }
+
+
+
+  .travel-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .travel-card {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      background: #000;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .travel-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .travel-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .travel-rating {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: white;
+      color: #333;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 20px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .travel-rating span {
+      color: gold;
+      font-size: 16px;
+    }
+
+    .travel-name {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .travel-name i {
+      background: white;
+      color: black;
+      border-radius: 50%;
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .travel-card img {
+        height: 200px;
+      }
+      .travel-name {
+        font-size: 16px;
+      }
+          .other-packages{
+        padding: 20px 20px 20px 20px;
+    }
+    }
+
+    .other-packages{
+        padding: 40px 80px 40px 80px;
+    }

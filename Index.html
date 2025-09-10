@@ -45,7 +45,7 @@
             <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
           </a>
           <div class="dropdown-menu">
-            <a href="Themes.html">Adventure Tours</a>
+            <a href="Themes.html">Adventure</a>
             <a href="Themes.html">Luxury Tours</a>
             <a href="Themes.html">Honey moon</a>
             <a href="Themes.html">Weekend</a>
@@ -53,7 +53,7 @@
             <a href="Themes.html">Family with Kids</a>
             <a href="Themes.html">Nature</a>
             <a href="Themes.html">Wild Life</a>
-            <a href="Themes.html">Beach</a>
+            <a href="">Beach</a>
           </div>
         </div>
         <a href="Visa.html"><i class="fas fa-passport"></i> Visa</a>
@@ -65,32 +65,49 @@
   <section class="hero-section">
     <div class="hero">
       <div class="carousel">
-        <img src="images/image 8965.png" alt="Background" />
+        <img src="Dubai Images\burj-khalifa-779040_1920.jpg" alt="Background" />
       </div>
       <div class="content">
         <h1 class="welcome">WELCOME TO CITY ONE TOURISM & TRAVEL</h1>
         <p class="ptag">Discover. Explore. Experience the World with Us.</p>
 
         <div class="tabs">
-          <div class="tab">Destinations</div>
-          <div class="tab">Packages</div>
-          <div class="tab">Visa</div>
-          <div class="tab">Flight</div>
+          <div class="tab" onclick="window.location.href='Destination.html'">Destinations</div>
+          <div class="tab" onclick="window.location.href='Hotdeal.html'">Hot Deal</div>
+          <div class="tab" onclick="window.location.href='Visa.html'">Visa</div>
+          <div class="tab" onclick="window.location.href='flight.html'">Flight</div>
+
         </div>
 
-        <div class="search-box">
+        <!-- <div class="search-box">
           <input type="text" id="destinationInput" placeholder="Enter destinations" />
           <select id="themeSelect">
             <option value="">Select theme</option>
             <option value="adventure">Adventure</option>
             <option value="honeymoon">Honey Moon</option>
             <option value="luxury">Luxury</option>
-            <option value="safari">Safari</option>
-            <option value="wildlife">Wild Life</option>
+            <option value="safari">Family with kids</option>
           </select>
           <input type="date" id="dateInput" />
           <button onclick="handleSearch()">Search</button>
-        </div>
+        </div> -->
+
+
+        <div class="search-box">
+  <input type="text" id="destinationInput" placeholder="Enter destination" onkeyup="filterCountries()" onclick="showList()" />
+  <div id="countryList"></div>
+
+  <select id="themeSelect">
+    <option value="">Select theme</option>
+    <option value="adventure">Adventure</option>
+    <option value="honeymoon">Honey Moon</option>
+    <option value="luxury">Luxury</option>
+    <option value="family">Family with kids</option>
+  </select>
+
+  <input type="date" id="dateInput" />
+  <button onclick="handleSearch()">Search</button>
+</div>
 
       </div>
     </div>
@@ -105,159 +122,153 @@
 
       <div class="country-scroller" id="scrollContainer">
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Paris" />
+          <img src="Dubai Images\dubai-2057583_1920.jpg" alt="Paris" />
           <h4>Dubai</h4>
           <p>1000+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Singapore" />
+          <img src="Vietnam-images\Depositphotos_37768795_L.jpg" alt="Singapore" />
           <h4>Vietnam</h4>
           <p>400+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Rome" />
+          <img src="Armenia-images\armenia-3716853_1920.jpg" alt="Rome" />
           <h4>Armenia</h4>
           <p>700+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Bali" />
+          <img src="Kenya-images\Depositphotos_3964728_L.jpg" alt="Bali" />
           <h4>Kenya</h4>
           <p>600+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Tokyo" />
+          <img src="Maldives-images\Depositphotos_4474251_L (2).jpg" alt="Tokyo" />
           <h4>Maldives</h4>
           <p>800+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Phuket" />
+          <img src="Georgia-images\9.jpg" alt="Phuket" />
           <h4>Georgia</h4>
           <p>900+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Cappadocia" />
-          <h4>Cappadocia</h4>
-          <p>900+ Tours</p>
-        </div>
-        <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Paris" />
+          <img src="Bali-images\Depositphotos_3587328_L.jpg" alt="Paris" />
           <h4>Bali</h4>
           <p>800+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Singapore" />
+          <img src="Azerbaijan-images\BKU_510_aspect16x9.jpg" alt="Singapore" />
           <h4>Azerbaijan</h4>
           <p>400+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Rome" />
+          <img src="Turkey-images\Depositphotos_94663096_L.jpg" alt="Rome" />
           <h4>Turkey</h4>
           <p>400+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Bali" />
+          <img src="Morocco-images\Depositphotos_25885511_L.jpg" alt="Bali" />
           <h4>Morocco</h4>
           <p>200+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Tokyo" />
+          <img src="Kazakhstan-packages-list\Kazakhstan-images\20241104124630_4.jpg" alt="Tokyo" />
           <h4>Kazakhstan</h4>
           <p>600+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Phuket" />
+          <img src="Jordan-packages-list\Jordan-images\20240302100402_Jordaniti2.jpg" alt="Phuket" />
           <h4>Jordan</h4>
           <p>500+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Cappadocia" />
+          <img src="Thailand-images\Depositphotos_12420435_L.jpg" alt="Cappadocia" />
           <h4>Thailand</h4>
           <p>900+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Paris" />
+          <img src="Srilanka-images\dambulla-2516649_1920.jpg" alt="Paris" />
           <h4>Sri Lanka</h4>
           <p>500+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Singapore" />
+          <img src="Kyrgyzstan-packages-list\Kyrgyzstan-images\20250428082756_KyrgyzstannewItinerary8 (1).jpg"
+            alt="Singapore" />
           <h4>Kyrgyzstan</h4>
           <p>400+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Rome" />
+          <img src="Uzbekistan-packages-list\Uzbekistan-images\20241104105031_Listing4.jpg" alt="Rome" />
           <h4>Uzbekistan</h4>
           <p>300+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Bali" />
+          <img src="Egypt-packages-list\Egypt-images\Depositphotos_23268152_L.jpg" alt="Bali" />
           <h4>Egypt</h4>
           <p>400+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Tokyo" />
+          <img src="Malaysia-packages-list\Malaysia-images\Depositphotos_5477401_L.jpg" alt="Tokyo" />
           <h4>Malaysia</h4>
           <p>200+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Phuket" />
+          <img src="Singapore-packages-list\Singapore-images\Depositphotos_312559308_L.jpg" alt="Phuket" />
           <h4>Singapore</h4>
           <p>300+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Cappadocia" />
+          <img src="Japan-images\Depositphotos_8607019_L.jpg" alt="Cappadocia" />
           <h4>japan</h4>
-          <p>100+ Tours</p>
+          <p>100+ Tours  </p>
         </div>
 
-        <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Cappadocia" />
-          <h4>India</h4>
-          <p>100+ Tours</p>
-        </div>
 
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Cappadocia" />
+          <img src="India-packages-list\India-images\Depositphotos_7932088_L.jpg" alt="Cappadocia" />
           <h4>India</h4>
           <p>200+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Cappadocia" />
+          <img src="croatia-packages-list\Croatia-images\20220619084845_Px_CroatiaListing.jpg" alt="Cappadocia" />
           <h4>croatia</h4>
           <p>100+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Cappadocia" />
+          <img src="Greece-packages-list\Greece-images\20220620045024_Pb_GreeceGallery.jpg" alt="Cappadocia" />
           <h4>greece</h4>
           <p>100+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Cappadocia" />
+          <img src="Prague-packages-list\Prague-images\Depositphotos_47797237_L.jpg" alt="Cappadocia" />
           <h4>prague</h4>
           <p>100+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Cappadocia" />
+          <img src="switzerland-packages-list\Switzerland-images\Depositphotos_58674555_XL.jpg" alt="Cappadocia" />
           <h4>switzerland</h4>
           <p>400+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Cappadocia" />
+          <img src="scandinavia-packages-list\Scandinavia-images\20220919115721_Us_ScandinaviListing.jpg"
+            alt="Cappadocia" />
           <h4>scandinavia</h4>
           <p>100+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Cappadocia" />
+          <img src="seychelles-packages-list\Seychelles-images\20241114082544_Seychellesitineraries3.jpg"
+            alt="Cappadocia" />
           <h4>seychelles</h4>
           <p>100+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Cappadocia" />
+          <img src="Southafrica-packages-list\Southafrica-images\Depositphotos_13890331_L.jpg" alt="Cappadocia" />
           <h4>south africa</h4>
           <p>200+ Tours</p>
         </div>
         <div class="country-card">
-          <img src="Japan-images/Depositphotos_8607019_L.jpg" alt="Cappadocia" />
+          <img src="Saudi-arabia-packages-list\Saudiarabia-images\20230107052216_Pb_SaudiRiyadhIti5.jpg"
+            alt="Cappadocia" />
           <h4>saudi arabia</h4>
           <p>100+ Tours</p>
         </div>
@@ -267,11 +278,11 @@
     </div>
   </section>
 
-  <article class="heading">
+  <article class="heading" data-aos="fade-up" data-aos-duration="5000">
     <h1>Find Your Perfect Trip Style</h1>
   </article>
 
-  <section>
+  <section data-aos="fade-up" data-aos-duration="5000">
 
     <div class="category-buttons">
       <button class="active" onclick="filterCards('adventure', event)">Adventure</button>
@@ -292,10 +303,10 @@
 
     </div>
   </section>
-  <article class="heading">
+  <article class="heading" data-aos="fade-up" data-aos-duration="5000">
     <h1>Exclusive Deals You Can’t Miss</h1>
   </article>
-  <section>
+  <section data-aos="fade-up" data-aos-duration="5000">
     <div class="banner-row">
       <div class="banner-card">
         <img src="https://images.ixigo.com/image/upload/img/b08b77b94d5826c986a7f0334dfaed89-yvlip.png" alt="Card 1">
@@ -309,7 +320,7 @@
       </div>
     </div>
   </section>
-  <section class="Certificate">
+  <section class="Certificate" data-aos="fade-up" data-aos-duration="5000">
     <div class="certificates-container">
       <div class="certificates-text">
         <h2>CERTIFICATES</h2>
@@ -321,22 +332,22 @@
       </div>
     </div>
   </section>
-  <article class="heading">
+  <article class="heading" data-aos="fade-up" data-aos-duration="5000">
     <h1>Where to go When The Best time to travel...</h1>
   </article>
-  <section>
+  <section data-aos="fade-up" data-aos-duration="5000">
     <div class="month-buttons" id="monthButtons"></div>
     <div class="card-container" id="cardContainer"></div>
-    <div class="view">
+    <!-- <div class="view">
       <button class="viewall">
         <span class="transition"></span>
         <span class="gradient"></span>
         <span class="label">View all</span>
       </button>
 
-    </div>
+    </div> -->
   </section>
-  <section class="visa-wrapper">
+  <section class="visa-wrapper" data-aos="fade-up" data-aos-duration="5000">
     <div class="carouselll">
       <img src="images/image 8965.png" alt="Background" />
     </div>
@@ -353,7 +364,8 @@
       </button>
     </div>
   </section>
-  <section class="visaaa">
+  <br> <br>
+  <section class="visaaa" data-aos="fade-up" data-aos-duration="5000">
     <div class="stats-section" id="statsSection">
       <div class="stats-bg">
         <img src="images/Background.png" alt="Background" />
@@ -379,7 +391,7 @@
     </div>
   </section>
 
-  <article class="heading">
+  <article class="heading" data-aos="fade-up" data-aos-duration="5000">
     <h1>Travel to more than 40+ Countries Now</h1>
   </article>
   <div class="flag-carousel-container">
