@@ -426,7 +426,7 @@ window.onload = () => {
 
 //     const baseURL = window.location.origin;
 //     let path = "";
-//     const homeItem = `<li><a href="${baseURL}/index.html">Home</a></li>`;
+//     const homeItem = `<li><a href="${baseURL}/../index.html">Home</a></li>`;
 //     breadcrumbList.innerHTML += homeItem;
 
 //     for (let i = 0; i < pathArray.length; i++) {
