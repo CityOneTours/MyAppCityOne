@@ -23,7 +23,7 @@
         <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
       </div>
       <div class="right">
-        <span><img src="https://flagcdn.com/in.svg" alt="India Flag"> IND</span>
+        <!-- <span><img src="https://flagcdn.com/in.svg" alt="India Flag"> IND</span> -->
         <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
       </div>
     </div>
@@ -48,7 +48,7 @@
             <a href="Themes.html">Adventure</a>
             <a href="Themes.html">Luxury Tours</a>
             <a href="Themes.html">Honey moon</a>
-            <a href="Themes.html">Weekend</a>
+            <a href="Themes.html">Family with Kids</a>
             <a href="Themes.html">Safari</a>
             <a href="Themes.html">Family with Kids</a>
             <a href="Themes.html">Nature</a>
@@ -64,8 +64,14 @@
   </header>
   <section class="hero-section">
     <div class="hero">
-      <div class="carousel">
-        <img src="Dubai Images\burj-khalifa-779040_1920.jpg" alt="Background" />
+      <div class="carousel-slide">
+        <img src="Dubai Images\dubai-3720069_1920.jpg" alt="Dubai Burj Al Arab" />
+      </div>
+      <div class="carousel-slide active">
+        <img src="Armenia-images\1.jpeg" alt="Dubai Burj Khalifa" />
+      </div>
+      <div class="carousel-slide">
+        <img src="Thailand-images\Depositphotos_86940690_L.jpg" alt="Dubai Marina" />
       </div>
       <div class="content">
         <h1 class="welcome">WELCOME TO CITY ONE TOURISM & TRAVEL</h1>
@@ -75,8 +81,8 @@
           <div class="tab" onclick="window.location.href='Destination.html'">Destinations</div>
           <div class="tab" onclick="window.location.href='Hotdeal.html'">Hot Deal</div>
           <div class="tab" onclick="window.location.href='Visa.html'">Visa</div>
+          <div class="tab" onclick="window.location.href='flight.html'">Hotel </div>
           <div class="tab" onclick="window.location.href='flight.html'">Flight</div>
-
         </div>
 
         <!-- <div class="search-box">
@@ -94,31 +100,40 @@
 
 
         <div class="search-box">
-  <input type="text" id="destinationInput" placeholder="Enter destination" onkeyup="filterCountries()" onclick="showList()" />
-  <div id="countryList"></div>
+          <input type="text" id="destinationInput" placeholder="Enter destination" onkeyup="filterCountries()"
+            onclick="showList()" />
+          <div id="countryList"></div>
 
-  <select id="themeSelect">
-    <option value="">Select theme</option>
-    <option value="adventure">Adventure</option>
-    <option value="honeymoon">Honey Moon</option>
-    <option value="luxury">Luxury</option>
-    <option value="family">Family with kids</option>
-  </select>
+          <select id="themeSelect">
+            <option value="">Select theme</option>
+            <option value="adventure">Adventure</option>
+            <option value="honeymoon">Honey Moon</option>
+            <option value="luxury">Luxury</option>
+            <option value="family">Family with kids</option>
+          </select>
 
-  <input type="date" id="dateInput" />
-  <button onclick="handleSearch()">Search</button>
-</div>
+          <input type="date" id="dateInput" />
+          <button onclick="handleSearch()">Search</button>
+        </div>
 
       </div>
     </div>
   </section>
+
+  <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+
+  <button id="backToTop">↑</button>
+
+
   <article class="heading">
     <h1>Trending destinations</h1>
   </article>
 
   <section class="hey">
     <div class="scroller-wrapper">
-      <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button>
+      <!-- <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button> -->
 
       <div class="country-scroller" id="scrollContainer">
         <div class="country-card">
@@ -220,7 +235,7 @@
         <div class="country-card">
           <img src="Japan-images\Depositphotos_8607019_L.jpg" alt="Cappadocia" />
           <h4>japan</h4>
-          <p>100+ Tours  </p>
+          <p>100+ Tours </p>
         </div>
 
 
@@ -274,7 +289,7 @@
         </div>
       </div>
 
-      <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
+      <!-- <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button> -->
     </div>
   </section>
 
@@ -295,13 +310,13 @@
       <!-- Cards will be injected here -->
     </div>
     <div class="view">
-      <button class="viewall">
+      <button class="viewall" onclick="window.location.href='Themes.html'">
         <span class="transition"></span>
         <span class="gradient"></span>
         <span class="label">View all</span>
       </button>
-
     </div>
+
   </section>
   <article class="heading" data-aos="fade-up" data-aos-duration="5000">
     <h1>Exclusive Deals You Can’t Miss</h1>
@@ -356,13 +371,14 @@
     <div class="visa-tabs" id="visaTabs"></div>
 
     <div class="visa-card-grid" id="visaCards"></div>
-    <div class="visa-viewall">
-      <button class="viewall">
+    <div class="view">
+      <button class="viewall" onclick="window.location.href='Visacountries.html'">
         <span class="transition"></span>
         <span class="gradient"></span>
         <span class="label">View all</span>
       </button>
     </div>
+
   </section>
   <br> <br>
   <section class="visaaa" data-aos="fade-up" data-aos-duration="5000">
@@ -372,19 +388,19 @@
       </div>
       <div class="stats-container">
         <div class="stat-item">
-          <div class="stat-number" data-target="168000">0</div>
+          <div class="stat-number" data-target="10000">0 +</div>
           <div class="stat-label">Happy Clients</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number" data-target="45000">0</div>
+          <div class="stat-number" data-target="45">0</div>
           <div class="stat-label">Destinations</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number" data-target="149000">0</div>
+          <div class="stat-number" data-target="12000">0</div>
           <div class="stat-label">Visa Approvals</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number" data-target="26000">0</div>
+          <div class="stat-number" data-target="200">0</div>
           <div class="stat-label">Campaigns</div>
         </div>
       </div>
@@ -451,128 +467,121 @@
         <!-- 9 cards -->
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="https://wallpapers.com/images/hd/krishna-hd-black-sky-kke0hc3lkrfzacyy.jpg"
-              class="testimonial-img">
+            <img src="Maldives-images/Depositphotos_4474251_L (2).jpg" class="testimonial-img">
             <div class="testimonial-content">
-              <h4>Govinda</h4>
+              <h4>Merrouche A</h4>
               <div class="testimonial-stars">★★★★★</div>
-              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
-                We
-                Offer comprehensive travel programs to corporate and individual travelers with a variety of
-                custom-designed holidays and business travel with a great level of attention.</p>
+              <p class="testimonial-text">I had an excellent experience with Aatika Zeeshan from City One Tourism and
+                Travel LLC. She provided outstanding service in helping me obtain a Dubai visa in less than 24 hours!
+                Aatika was extremely helpful, responsive, kind throughout the entire process. Her professionalism and
+                dedication made everything smooth and stress-free. Highly recommended!</p>
             </div>
           </div>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="https://wallpapers.com/images/hd/black-image-of-krishna-4k-8qm2m4dr8d912aqt.jpg"
-              class="testimonial-img">
+            <img src="Bali-images/Depositphotos_8364139_L.jpg" class="testimonial-img">
             <div class="testimonial-content">
-              <h4>Gopala</h4>
+              <h4>noora a</h4>
               <div class="testimonial-stars">★★★★★</div>
-              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
-                We
-                Offer comprehensive travel programs to corporate and individual travelers with a variety of
-                custom-designed holidays and business travel with a great level of attention.</p>
+              <p class="testimonial-text">A big thank you to Khaled for his outstanding service and professionalism. He
+                was incredibly helpful, responsive, and made the entire booking process smooth and stress-free. His
+                support and attention to detail gave me complete confidence. I highly recommend working with him—he
+                truly deserves all the praise..</p>
             </div>
           </div>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="https://wallpapers.com/images/hd/shri-krishna-day-and-night-silhouette-2j5guszveuuuhtwo.jpg"
-              class="testimonial-img">
+            <img src="Vietnam-images/Depositphotos_66882175_L.jpg" class="testimonial-img">
             <div class="testimonial-content">
-              <h4>Murlimanohar</h4>
+              <h4>Simon P</h4>
               <div class="testimonial-stars">★★★★☆</div>
-              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
-                We
-                Offer comprehensive travel programs to corporate and individual travelers with a variety of
-                custom-designed holidays and business travel with a great level of attention.</p>
+              <p class="testimonial-text">I booked a Family with Kids tour of Armenia through Abdul Hameed,
+
+                Hameed was extremely efficient and found me a great tour, he was very attentive to my requirements and
+                found the exactly what I was looking for as a trip.
+
+                I would certainly recommend Hameed as well as City One tourism to anyone looking to book their next tour
+                👌</p>
             </div>
           </div>
         </div>
 
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="https://wallpapercave.com/wp/wp13025346.jpg" class="testimonial-img">
+            <img src="switzerland-packages-list/Switzerland-images/Depositphotos_26387041_L.jpg"
+              class="testimonial-img">
             <div class="testimonial-content">
-              <h4>Madhava</h4>
-              <div class="testimonial-stars">★★★★★</div>
-              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
-                We
-                Offer comprehensive travel programs to corporate and individual travelers with a variety of
-                custom-designed holidays and business travel with a great level of attention.</p>
+              <h4>Sunita J</h4>
+              <div class="testimonial-stars">★★★ ★</div>
+              <p class="testimonial-text">Great service, excellent driver and a wonderful experience of the Desert
+                Safari, the quad and the evening at the camp. Great experience.</p>
             </div>
           </div>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="https://as1.ftcdn.net/v2/jpg/05/56/54/20/1000_F_556542092_awK33mWRNOVaOT0Bf1I6jTYpsCqjNScb.jpg"
-              class="testimonial-img">
+            <img src="Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg" class="testimonial-img">
             <div class="testimonial-content">
-              <h4>Keshava</h4>
+              <h4>Dina</h4>
               <div class="testimonial-stars">★★★★★</div>
-              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
-                We
-                Offer comprehensive travel programs to corporate and individual travelers with a variety of
-                custom-designed holidays and business travel with a great level of attention.</p>
+              <p class="testimonial-text">Thanks Aatika Zeeshan for all the effort . She was really professional ,
+                understandable and patient.
+                She facilitate my service and she was always there for me.</p>
             </div>
           </div>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="https://ghantee.com/wp-content/uploads/2023/12/krishna-wallpaper-for-desktop-4k-1.jpg"
-              class="testimonial-img">
+            <img src="Turkey-images/Depositphotos_94663096_L.jpg" class="testimonial-img">
             <div class="testimonial-content">
-              <h4>Shyam</h4>
+              <h4>Amigo_Akbar</h4>
               <div class="testimonial-stars">★★★★☆</div>
-              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
-                We
-                Offer comprehensive travel programs to corporate and individual travelers with a variety of
-                custom-designed holidays and business travel with a great level of attention.</p>
+              <p class="testimonial-text">Two weeks ago, my wife and I booked a staycation in Khor Fakkan through City
+                One Tours and Travels to celebrate her birthday. To our delight, upon arrival, we were upgraded to a
+                stunning sea-view room—a gesture made possible by City One’s excellent relationship with the hotel. From
+                the moment we left home to the time we returned, the City One team ensured everything was seamless,
+                making our stay truly peaceful and enjoyable.</p>
             </div>
           </div>
         </div>
 
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="https://tse4.mm.bing.net/th/id/OIP.srN1OrK__7qMPFuYVqPjaAHaEK?pid=Api&P=0&h=180"
-              class="testimonial-img">
+            <img src="Maldives-images/Depositphotos_4474251_L (2).jpg" class="testimonial-img">
             <div class="testimonial-content">
-              <h4>Vasudeva</h4>
+              <h4>Selva nizanth S</h4>
               <div class="testimonial-stars">★★★★★</div>
-              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
-                We
-                Offer comprehensive travel programs to corporate and individual travelers with a variety of
-                custom-designed holidays and business travel with a great level of attention.</p>
+              <p class="testimonial-text">Mr.Masons Mohamed Mustafa devised an excellent plan(itinerary) and executed
+                everything precisely.he was very patient to listen all our requirements and devised a plan according to
+                it .Thank you !!
+
+                Mr.Qaisar Bhai was our driver on trip and he too was punctual while picking up from hotel and guiding us
+                to Events/venues and dropping off .Thanks !!</p>
             </div>
           </div>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="https://tse1.mm.bing.net/th/id/OIP.2iN5Uk5zoRkhKlNpxUswqAHaFf?pid=Api&P=0&h=180"
-              class="testimonial-img">
+            <img src="Vietnam-images/Depositphotos_66882175_L.jpg" class="testimonial-img">
             <div class="testimonial-content">
-              <h4>Yashodanandanr</h4>
+              <h4>DADK2014</h4>
               <div class="testimonial-stars">★★★★☆</div>
-              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
-                We
-                Offer comprehensive travel programs to corporate and individual travelers with a variety of
-                custom-designed holidays and business travel with a great level of attention.</p>
+              <p class="testimonial-text">Helped with Japan Visa processing. Great team and prompt response. Highly
+                recommend them to anyone who needs assistance.</p>
             </div>
           </div>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="https://tse1.mm.bing.net/th/id/OIP.M_0gICeQiDs14UTS6WHKvgHaEu?pid=Api&P=0&h=180"
+            <img src="Kyrgyzstan-packages-list/Kyrgyzstan-images/20230523151501_Pb_KyrgyzstanGallery2.jpg"
               class="testimonial-img">
             <div class="testimonial-content">
-              <h4>Jagannatha</h4>
+              <h4>LUBULWA V</h4>
               <div class="testimonial-stars">★★★★★</div>
-              <p class="testimonial-text">A destination management company based in the UAE and headquartered in Dubai.
-                We
-                Offer comprehensive travel programs to corporate and individual travelers with a variety of
-                custom-designed holidays and business travel with a great level of attention.</p>
+              <p class="testimonial-text">The desert was an amazing experience which was made even better by Khalid
+                whose hands on approach to hosting made our trip all the better. Will recommend others to try.</p>
             </div>
           </div>
         </div>
@@ -591,12 +600,12 @@
       <div class="custom-footer-top">
         <p class="custom-footer-connect">Get connected with us on social networks:</p>
         <div class="custom-social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-google"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/cityonetours"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/cityonetourism"><i class="fab fa-twitter"></i></a>
+          <!-- <a href=""><i class="fab fa-google"></i></a> -->
+          <a href="https://www.instagram.com/cityonetours/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/cityonetourism/"><i class="fab fa-linkedin"></i></a>
+          <!-- <a href="#"><i class="fab fa-github"></i></a> -->
         </div>
       </div>
 
@@ -604,7 +613,7 @@
         <div class="footer-box">
           <img src="images/image 8916.png" alt="Company Logo" class="footer-logo" />
           <h2 style="font-size: 18px; padding-bottom: 15px;">
-            City One Tourism and Travel L.L.C</h2>
+            City One Tourism and Travel</h2>
           <!-- <p>Address: Executive Heights - 702 - Barsha Heights - Dubai - United Arab Emirates</p> -->
         </div>
 
@@ -612,22 +621,22 @@
         <div class="footer-box">
           <h5 class="footer-title">Useful Links</h5>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Destination</a></li>
-            <li><a href="#">Hot Deal</a></li>
-            <li><a href="#">Themes</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="About us.html">About</a></li>
+            <li><a href="Destination.html">Destination</a></li>
+            <li><a href="Hotdeal.html">Hot Deal</a></li>
+            <li><a href="Themes.html">Themes</a></li>
+            <li><a href="Contact.html">Contact</a></li>
           </ul>
         </div>
 
         <div class="footer-box">
           <h5 class="footer-title">Popular Destinations</h5>
           <ul>
-            <li><a href="#">Dubai</a></li>
-            <li><a href="#">Mauritius</a></li>
-            <li><a href="#">Georgia</a></li>
-            <li><a href="#">Kenya</a></li>
-            <li><a href="#">More</a></li>
+            <li><a href="Dubai-Packages.html">Dubai</a></li>
+            <li><a href="vietnam-packages.html">Vietnam</a></li>
+            <li><a href="Georgia-packages.html">Georgia</a></li>
+            <li><a href="Kenya-packages.html">Kenya</a></li>
+            <li><a href="Destination.html">More</a></li>
 
           </ul>
         </div>

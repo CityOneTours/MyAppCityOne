@@ -569,3 +569,84 @@ function handleSearch() {
     const url = destination.toLowerCase().replace(/\s+/g, '-') + "-packages.html";
     window.location.href = url;
   }
+
+
+
+
+      const backToTop = document.getElementById("backToTop");
+
+    // Show button when scrolling down
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        backToTop.classList.add("show");
+      } else {
+        backToTop.classList.remove("show");
+      }
+    });
+
+    // Smooth scroll to top
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
+
+
+
+    (() => {
+  // Grab all the slides inside the carousel
+  const slides = document.querySelectorAll<HTMLDivElement>('.carousel .slide');
+  let currentSlide = 0;
+
+  // Change slides every 4 seconds
+  setInterval(() => {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }, 4000);
+})();
+
+
+
+        // Carousel functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            // Remove active class from all slides and dots
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Add active class to current slide and dot
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            showSlide(currentSlide);
+        }
+
+        // Auto-play carousel
+        function startCarousel() {
+            setInterval(nextSlide, 4000); // Change slide every 4 seconds
+        }
+
+        // Add click event listeners to dots
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => goToSlide(index));
+        });
+
+        // Start the carousel when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            startCarousel();
+        });

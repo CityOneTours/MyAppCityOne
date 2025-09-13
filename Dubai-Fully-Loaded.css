@@ -817,3 +817,236 @@ h4 {
     height: 280px !important;
     width: 100%;
 }
+
+
+
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+
+
+
+    /* Back to top button */
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;   /* Left side */
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 1000;
+    }
+
+    #backToTop.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+
+
+
+        
+.custom-footer {
+    background-color: #1c2331;
+    border-radius: 40px 40px 0px 0px;
+    /* font-family: Arial, sans-serif; */
+}
+
+.custom-footer-top {
+    background-color: #eb222a;
+    border-radius: 40px 40px 0px 0px;
+
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-footer-connect {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+}
+
+.custom-social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.custom-social-icons a:hover {
+    color: #ddd;
+}
+
+.custom-footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #111;
+    color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.footer-box {
+    flex: 1 1 220px;
+    margin: 10px;
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eb222944;
+    padding-bottom: 15px;
+}
+
+.footer-logo {
+    max-width: 160px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-contact i {
+    width: 18px;
+}
+
+.custom-footer-bottom {
+    background-color: #0d0d0d;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.custom-footer-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.custom-footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.custom-footer-bottom p {
+    color: #ffffff;
+}
+
+footer {
+    padding-top: 40px;
+    background-color: white !important;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px 20px 20px;
+}
+
+
+.breadcrumb-container {
+  background-color: #f5f6f8;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-list li {
+  color: #555;
+}
+
+.breadcrumb-list li + li::before {
+  content: "›";
+  color: #aaa;
+  margin: 0 8px;
+}
+
+.breadcrumb-list a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.breadcrumb-list a:hover {
+  color: #d60000;
+}
+
+.breadcrumb-list .active {
+  color: #d60000;
+  font-weight: bold;
+}

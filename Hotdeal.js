@@ -63,16 +63,38 @@ document.addEventListener("DOMContentLoaded", function () {
     breadcrumbList.innerHTML += homeItem;
 
     for (let i = 0; i < pathArray.length; i++) {
-      path += "/" + pathArray[i];
-      const name = decodeURIComponent(pathArray[i])
-        .replace(/-/g, " ")
-        .replace(".html", "")
-        .replace(/\b\w/g, l => l.toUpperCase());
+        path += "/" + pathArray[i];
+        const name = decodeURIComponent(pathArray[i])
+            .replace(/-/g, " ")
+            .replace(".html", "")
+            .replace(/\b\w/g, l => l.toUpperCase());
 
-      if (i === pathArray.length - 1) {
-        breadcrumbList.innerHTML += `<li class="active">${name}</li>`;
-      } else {
-        breadcrumbList.innerHTML += `<li><a href="${baseURL}${path}">${name}</a></li>`;
-      }
+        if (i === pathArray.length - 1) {
+            breadcrumbList.innerHTML += `<li class="active">${name}</li>`;
+        } else {
+            breadcrumbList.innerHTML += `<li><a href="${baseURL}${path}">${name}</a></li>`;
+        }
     }
-  });
+});
+
+
+
+
+const backToTop = document.getElementById("backToTop");
+
+// Show button when scrolling down
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        backToTop.classList.add("show");
+    } else {
+        backToTop.classList.remove("show");
+    }
+});
+
+// Smooth scroll to top
+backToTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
