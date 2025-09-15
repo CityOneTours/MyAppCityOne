@@ -56,7 +56,7 @@ const destinations = [
 
     {
     name: "Kenya",
-    rating: "5.0",
+    rating: "4.2",
     image: "Kenya-images/Depositphotos_17643137_L.jpg",
     url: "kenya-packages.html"
   },
@@ -68,7 +68,7 @@ const destinations = [
   },
   {
     name: "Georgia",
-    rating: "4.9",
+    rating: "4.7",
     image: "Georgia-images/mostafa-meraji-b0GGTup0Ar4-unsplash.jpg",
     url: "Georgia-packages.html"
   },
@@ -87,7 +87,7 @@ const destinations = [
   },
   {
     name: "Turkey",
-    rating: "4.9",
+    rating: "4.4",
     image: "Turkey-images/Depositphotos_116860468_L.jpg",
     url: "Turkey-packages.html"
   },
@@ -96,7 +96,7 @@ const destinations = [
 
     {
     name: "Morocco",
-    rating: "4.9",
+    rating: "4.3",
     image: "Morocco-images/Depositphotos_23937101_L.jpg",
     url: "morocco-packages.html"
   },
@@ -108,7 +108,7 @@ const destinations = [
   },
     {
     name: "Jordan",
-    rating: "4.9",
+    rating: "4.7",
     image: "Jordan-packages-list/Jordan-images/20240302100402_Jordaniti2.jpg",
     url: "Jordan-packages.html"
   },
@@ -120,7 +120,7 @@ const destinations = [
   },
     {
     name: "Sri Lanka ",
-    rating: "4.9",
+    rating: "4.2",
     image: "Srilanka-images/dambulla-2516649_1920.jpg",
     url: "Srilanka-packages.html"
   },
@@ -132,25 +132,25 @@ const destinations = [
   },
     {
     name: "Uzbekistan",
-    rating: "4.9",
+    rating: "4.8",
     image: "Uzbekistan-packages-list/Uzbekistan-images/20220921142611_Pb_Scandinaviaiti4.jpg",
     url: "Uzbekistan-packages.html"
   },
     {
     name: "Egypt",
-    rating: "4.9",
+    rating: "4.3",
     image: "Egypt-packages-list/Egypt-images/Depositphotos_86960092_L.jpg",
     url: "Egypt-packages.html"
   },
     {
     name: "Malaysia",
-    rating: "4.9",
+    rating: "4.5",
     image: "Malaysia-packages-list/Malaysia-images/Depositphotos_4749897_L.jpg",
     url: "Malaysia-packages.html"
   },
       {
     name: "Singapore ",
-    rating: "4.9",
+    rating: "4.7",
     image: "Singapore-packages-list/Singapore-images/Depositphotos_312559308_L.jpg",
     url: "Singapore-packages.html"
   },
@@ -198,19 +198,19 @@ const destinations = [
   // },
       {
     name: "croatia",
-    rating: "4.9",
+    rating: "4.7",
     image: "croatia-packages-list/Croatia-images/20220620022236_Pb_CroatiaIti11.jpg",
     url: "croatia-packages.html"
   },
         {
     name: "greece",
-    rating: "4.9",
+    rating: "4.6",
     image: "Greece-packages-list/Greece-images/20220620074417_Pb_GreeceIti8.jpg",
     url: "greece-packages.html"
   },
         {
     name: "prague",
-    rating: "4.9",
+    rating: "4.1",
     image: "Prague-packages-list/Prague-images/Depositphotos_47797195_L.jpg",
     url: "prague-packages.html"
   },
@@ -228,25 +228,25 @@ const destinations = [
   },
         {
     name: "switzerland",
-    rating: "4.9",
+    rating: "4.7",
     image: "switzerland-packages-list/Switzerland-images/Depositphotos_213220710_L.jpg",
     url: "switzerland-packages.html"
   },
         {
     name: "scandinavia",
-    rating: "4.9",
+    rating: "4.5",
     image: "scandinavia-packages-list/Scandinavia-images/20220921142249_Us_Scandinaviaiti.jpg",
     url: "scandinavia-packages.html"
   },
         {
     name: "seychelles",
-    rating: "4.9",
+    rating: "4.6",
     image: "seychelles-packages-list/Seychelles-images/20241114083248_SEYCHELLESgalary3.jpg",
     url: "seychelles-packages.html"
   },
         {
     name: "south africa",
-    rating: "4.9",
+    rating: "4.1",
     image: "Southafrica-packages-list/Southafrica-images/Depositphotos_13890331_L.jpg",
     url: "southafrica-packages.html"
   },
