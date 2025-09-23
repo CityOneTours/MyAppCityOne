@@ -107,7 +107,9 @@ function renderCards(data) {
             </div>
             <div style="display: flex; justify-content: space-between; margin: 8px 0;">
               <p><strong>Duration:</strong> ${pkg.duration} Days</p>
-              <p><strong>Price:</strong> <span class="price">AED ${pkg.price}</span></p>
+              <p><strong>Price:</strong>
+                 <span class="price-amount" data-aed="${pkg.price}">AED ${pkg.price}</span>
+              </p>
             </div>
           </div>
           <div class="card-actions">
@@ -118,7 +120,11 @@ function renderCards(data) {
       </a>
     `;
   });
+
+  // After creating the cards, immediately format them in the saved currency
+  if (typeof updateAllPrices === 'function') updateAllPrices();
 }
+
 
 
 
@@ -192,4 +198,10 @@ backToTop.addEventListener("click", () => {
         top: 0,
         behavior: "smooth"
     });
+});
+
+
+
+document.querySelector(".help-btn").addEventListener("click", function () {
+  document.querySelector(".help-container").classList.toggle("active");
 });

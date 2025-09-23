@@ -18,10 +18,19 @@
     <header>
         <!-- Top Bar -->
         <div class="top-bar">
-            <div class="left">
-                <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-                <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
-            </div>
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+          <!-- Working mailto link -->
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
+        </div>
+      </div>
+
             <div class="right">
                 <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
             </div>
@@ -56,6 +65,14 @@
                 <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
                 <a href="../About us.html"><i class="fas fa-info-circle"></i> About</a>
                 <a href="../Contact.html"><i class="fas fa-users"></i> Contact</a>
+
+                <div class="currency-switcher">
+                    <select id="currencySelect">
+                        <option value="AED">AED</option>
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </div>
             </div>
         </nav>
     </header>
@@ -135,7 +152,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽 Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 2080</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="2080">AED 2080</span><span class="price-final price-amount" data-aed="2070">AED
                                 2070</span>
                         </div>
                         <div class="tour-buttons mt-3">
@@ -188,7 +205,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽 Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 2450</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="2450">AED 2450</span><span class="price-final price-amount" data-aed="2490">AED
                                 2490</span>
                         </div>
                         <div class="tour-buttons mt-3">
@@ -241,7 +258,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽 Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 3200</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="3200">AED 3200</span><span class="price-final price-amount" data-aed="3195">AED
                                 3195</span>
                         </div>
                         <div class="tour-buttons mt-3">
@@ -294,7 +311,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽 Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 3750</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="3750">AED 3750</span><span class="price-final price-amount" data-aed="3699">AED
                                 3699</span>
                         </div>
                         <div class="tour-buttons mt-3">
@@ -479,6 +496,7 @@
         </footer>
     </footer>
     <script src="Dubai-Packages.js"></script>
+<script src="../currency.js"></script>
 
 </body>
 

@@ -1,3 +1,10 @@
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  nav.classList.toggle("active");
+}
+const scrollContainer = document.getElementById('scrollContainer');
+
+
 function initMap() {
   const companyLocation = { lat: 25.122319, lng: 55.377324 }; // Palace Tower TI
 
@@ -33,4 +40,9 @@ backToTop.addEventListener("click", () => {
     top: 0,
     behavior: "smooth"
   });
+});
+
+
+document.querySelector(".help-btn").addEventListener("click", function () {
+  document.querySelector(".help-container").classList.toggle("active");
 });

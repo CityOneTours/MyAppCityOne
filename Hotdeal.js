@@ -98,3 +98,52 @@ backToTop.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const exchangeRates = {
+//   AED_TO_INR: 24.02,
+//   AED_TO_USD: 0.2712
+// };
+
+// let userCurrency = 'AED';
+
+// function formatPrice(aed) {
+//   if (userCurrency === 'AED') return `AED ${aed}`;
+//   if (userCurrency === 'INR') return `₹ ${(aed * exchangeRates.AED_TO_INR).toFixed(0)}`;
+//   if (userCurrency === 'USD') return `$ ${(aed * exchangeRates.AED_TO_USD).toFixed(0)}`;
+// }
+
+// function updateAllPrices() {
+//   document.querySelectorAll('.price-amount').forEach(el => {
+//     const aed = parseFloat(el.dataset.aed);
+//     el.textContent = formatPrice(aed);
+//   });
+// }
+
+// document.getElementById('currencySelect').addEventListener('change', e => {
+//   userCurrency = e.target.value;
+//   updateAllPrices();
+// });
+
+// updateAllPrices(); 
+
+
+document.querySelector(".help-btn").addEventListener("click", function () {
+  document.querySelector(".help-container").classList.toggle("active");
+});

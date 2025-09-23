@@ -18,10 +18,19 @@
     <header>
         <!-- Top Bar -->
         <div class="top-bar">
-            <div class="left">
-                <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-                <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
-            </div>
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+          <!-- Working mailto link -->
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
+        </div>
+      </div>
+
             <div class="right">
                 <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
             </div>
@@ -49,16 +58,22 @@
                         <a href="../Themes.html">Luxury Tours</a>
                         <a href="../Themes.html">Honey moon</a>
                         <a href="../Themes.html">Family with Kids</a>
-                         
+
                         <a href="../Themes.html">Family with Kids</a>
-                          
-                           
-                            
+
+
+
                     </div>
                 </div>
                 <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
                 <a href="../About us.html"><i class="fas fa-info-circle"></i> About</a>
                 <a href="../Contact.html"><i class="fas fa-users"></i> Contact</a>
+
+                <select id="currencySelect">
+                    <option value="AED">AED</option>
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                </select>
             </div>
         </nav>
     </header>
@@ -102,7 +117,7 @@
             <div style="flex: 1;">
                 <div class="space">
                     <h2>Turkey Istanbul and Cappadocia</h2>
-                    <h4>AED 2350</h2>
+                    <h4 class="price-final price-amount" data-aed="1250">AED 2350</h2>
 
                 </div>
                 <p>5 Nights | 6 Days </p>
@@ -352,15 +367,15 @@
                     <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../Turkey-images/Depositphotos_201339860_L.jpg"  class="imagess" alt="..."
+                                <img src="../Turkey-images/Depositphotos_201339860_L.jpg" class="imagess" alt="..."
                                     alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Turkey-images\Depositphotos_94671008_L.jpg"  class="imagess" alt="..."
+                                <img src="../Turkey-images\Depositphotos_94671008_L.jpg" class="imagess" alt="..."
                                     alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Turkey-images\Depositphotos_219422168_XL.jpg"  class="imagess" alt="..."
+                                <img src="../Turkey-images\Depositphotos_219422168_XL.jpg" class="imagess" alt="..."
                                     alt="...">
                             </div>
                         </div>
@@ -385,7 +400,8 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 1799</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="1799">AED
+                                1799</span><span class="price-final price-amount" data-aed="1699">AED
                                 1699</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -435,7 +451,8 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 1600</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="1600">AED
+                                1600</span><span class="price-final price-amount" data-aed="1500">AED
                                 1500</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -484,7 +501,8 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 3699</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="3699">AED
+                                3699</span><span class="price-final price-amount" data-aed="3499">AED
                                 3499</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -537,7 +555,7 @@
 
 
 
-        <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
     </a>
 
@@ -608,6 +626,7 @@
         </footer>
     </footer>
     <script src="../Dubai-Fully-Loaded.js"></script>
+    <script src="../currency.js"></script>
 
 </body>
 

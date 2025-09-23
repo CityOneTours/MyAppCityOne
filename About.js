@@ -96,3 +96,9 @@ backToTop.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
+
+
+document.querySelector(".help-btn").addEventListener("click", function () {
+  document.querySelector(".help-container").classList.toggle("active");
+});

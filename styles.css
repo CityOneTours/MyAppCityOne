@@ -244,7 +244,7 @@
       .search-box input,
       .search-box select {
         flex: 1 1 200px;
-        margin: 10px;
+        margin: 5px;
         padding: 15px;
         border-radius: 10px;
         border: 1px solid #ddd;
@@ -828,7 +828,7 @@
       }
 
 
-      /* Responsive */
+      /* ===== Horizontal scroll for category buttons on mobile ===== */
 
       @media (max-width: 1280px) {
         .banner-card {
@@ -867,7 +867,7 @@
         }
 
         .top-bar {
-          padding: 15px;
+          padding: 0px 8px 0px 8px;
           font-size: 12px;
         }
 
@@ -918,7 +918,7 @@
           z-index: 10;
           text-align: center;
           color: white;
-          padding-top: 30vh;
+          padding-top: 18vh;
         }
 
         .card {
@@ -962,11 +962,147 @@
         }
 
         .stats-bg {
-          height: 700px !important;
+          height: 580px !important;
         }
 
         .stats-bg img {
-          height: 700px !important;
+          height: 580px !important;
+        }
+
+
+
+        .tabs {
+          display: block !important;
+          overflow-x: auto !important;
+          overflow-y: hidden !important;
+          white-space: nowrap !important;
+          -webkit-overflow-scrolling: touch !important;
+          padding-bottom: 8px !important;
+        }
+
+        .tabs .tab {
+          display: inline-block !important;
+          padding: 10px 16px !important;
+          margin-right: 6px !important;
+          white-space: nowrap !important;
+        }
+
+        .category-buttons {
+          display: block !important;
+          overflow-x: auto !important;
+          overflow-y: hidden !important;
+          white-space: nowrap !important;
+          -webkit-overflow-scrolling: touch !important;
+          padding-bottom: 8px !important;
+          padding-left: 10px;
+        }
+
+        .category-buttons button {
+          display: inline-block !important;
+          margin-right: 2px !important;
+          white-space: nowrap !important;
+        }
+
+
+
+        /* Month buttons row */
+        #monthButtons,
+        .month-buttons {
+          /* cover both id & class usage */
+          display: block !important;
+          overflow-x: auto !important;
+          /* enable sideways scroll */
+          overflow-y: hidden !important;
+          white-space: nowrap !important;
+          -webkit-overflow-scrolling: touch !important;
+          padding-bottom: 8px !important;
+          /* space for scrollbar */
+        }
+
+        #monthButtons button,
+        .month-buttons button {
+          display: inline-block !important;
+          /* line up horizontally */
+          margin-right: 12px !important;
+          white-space: nowrap !important;
+        }
+
+        /* Month cards container */
+        #cardContainer {
+          display: block !important;
+          /* override any grid/flex */
+          overflow-x: auto !important;
+          overflow-y: hidden !important;
+          white-space: nowrap !important;
+          -webkit-overflow-scrolling: touch !important;
+          padding-bottom: 10px !important;
+          padding-left: 20px;
+        }
+
+        #cardContainer .carddd {
+          display: inline-block !important;
+          /* arrange cards side by side */
+          width: 80% !important;
+          /* adjust as needed */
+          margin-right: 16px !important;
+          vertical-align: top !important;
+        }
+
+
+        #visaTabs {
+          display: block !important;
+          overflow-x: auto !important;
+          overflow-y: hidden !important;
+          white-space: nowrap !important;
+          -webkit-overflow-scrolling: touch !important;
+          padding-bottom: 8px !important;
+        }
+
+        #visaTabs .visa-tab-button {
+          display: inline-block !important;
+          margin-right: 12px !important;
+          white-space: nowrap !important;
+        }
+
+        #visaCards {
+          display: block !important;
+          overflow-x: auto !important;
+          overflow-y: hidden !important;
+          white-space: nowrap !important;
+          -webkit-overflow-scrolling: touch !important;
+          padding-bottom: 10px !important;
+          padding-left: 10px;
+        }
+
+        #visaCards .visa-card {
+          display: inline-block !important;
+          width: 80% !important;
+          margin-right: 16px !important;
+          vertical-align: top !important;
+        }
+
+        .visa-title {
+          padding-top: 10px;
+        }
+
+        .visa-tabs {
+          margin-bottom: 0px;
+        }
+
+        .visa-wrapper {
+          height: 480px !important;
+        }
+
+        .carouselll {
+          height: 480px !important;
+        }
+
+        .carouselll img {
+          height: 480px !important;
+        }
+
+        .whatsapp-float {
+          display: none !important;
         }
       }
 
@@ -984,7 +1120,7 @@
         }
 
         .category-buttons button {
-          width: 160px;
+          width: 120px;
         }
 
         .cards-container {
@@ -1215,11 +1351,11 @@
         }
 
         .hero-section {
-          height: 900px;
+          height: 750px;
         }
 
         .hero {
-          height: 900px;
+          height: 750px;
         }
       }
 
@@ -1260,7 +1396,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 40px 20px;
+        padding: 10px 20px;
         background-color: #111;
         color: white;
       }
@@ -1552,5 +1688,377 @@
         display: block;
         text-decoration: none;
         color: inherit;
-        /* keep text colors */
+      }
+
+      /* 
+@media (max-width: 768px) {
+  #cardGrid {
+    display: flex !important;              
+    overflow-x: auto !important;           
+    gap: 16px !important;                  
+    padding: 0 12px !important;           
+    scroll-snap-type: x mandatory; 
+  }
+
+  #cardGrid::-webkit-scrollbar {
+    display: none;
+  }
+
+  #cardGrid .card {
+    flex: 0 0 80%;             
+    min-width: 250px;          
+    scroll-snap-align: start; 
+  }
+} */
+
+
+
+      @media (max-width: 768px) {
+        #cardGrid {
+          display: block !important;
+          overflow-x: auto !important;
+          overflow-y: hidden !important;
+          white-space: nowrap !important;
+          -webkit-overflow-scrolling: touch !important;
+        }
+
+        #cardGrid .card {
+          display: inline-block !important;
+          width: 80% !important;
+          margin-right: 16px !important;
+          vertical-align: top !important;
+        }
+
+        .heading h1 {
+          font-size: 18px;
+        }
+
+        .heading {
+          padding-top: 10px;
+        }
+      }
+
+
+
+      @media (max-width: 768px) {
+        .help-container {
+          display: block;
+          position: relative;
+        }
+
+        .help-btn {
+          width: 100%;
+          background: #0074aa00;
+          color: #fff;
+          padding: 10px;
+          border: none;
+          text-align: left;
+          font-size: 14px;
+          cursor: pointer;
+          display: flex !important;
+
+        }
+
+        .help-dropdown {
+          display: none;
+          background: #f9f9f9;
+          border: 1px solid #ddd;
+          padding: 10px;
+        }
+
+        .help-dropdown span {
+          display: block;
+          margin: 5px 0;
+          font-size: 14px;
+          color: #000;
+        }
+
+        .help-container.active .help-dropdown {
+          display: block;
+        }
+
+
+        .carousel-slide {
+          height: 100%;
+        }
+
+        .stats-section {
+          margin: 0px auto;
+        }
+      }
+
+      .help-btn {
+        display: none;
+      }
+
+
+      @media (max-width: 768px) {
+
+        .content {
+          padding-top: 20vh;
+        }
+
+        .visaaa {
+          padding-top: 0px;
+          height: 650px;
+        }
+
+        .stats-container {
+          gap: 10px;
+
+          padding-top: 20px;
+        }
+      }
+
+
+
+      .certificate {
+        padding: 50px 20px;
+        background: #fff;
+      }
+
+      .certificates-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .certificates-text {
+        flex: 1 1 40%;
+        min-width: 280px;
+      }
+
+      .certificates-text h2 {
+        color: red;
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .certificates-text p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .certificates-scroll {
+        flex: 1 1 55%;
+        overflow: hidden;
+        position: relative;
+        min-width: 280px;
+      }
+
+      .scroll-track {
+        display: flex;
+        gap: 20px;
+        animation: scroll-left 25s linear infinite;
+      }
+
+      .scroll-track img {
+        height: 120px;
+        width: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      @keyframes scroll-left {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .certificates-container {
+          flex-direction: column;
+          align-items: start;
+          text-align: center;
+        }
+
+        .certificates-text {
+          flex: 1 1 100%;
+        }
+
+        .certificates-scroll {
+          flex: 1 1 100%;
+          margin-top: 20px;
+        }
+
+        .scroll-track img {
+          height: 80px;
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+      /* Pills container */
+      .month-pills {
+        display: flex;
+        gap: 8px;
+        padding: 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        /* smooth scrolling on iOS */
+        scrollbar-width: thin;
+        align-items: center;
+      }
+
+      /* Pill buttons */
+      .month-pill {
+        flex: 0 0 auto;
+        border: none;
+        background: #f1f1f1;
+        padding: 8px 14px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 14px;
+        white-space: nowrap;
+        cursor: pointer;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        transition: transform .12s ease, background .12s ease;
+      }
+
+      .month-pill:active {
+        transform: scale(.98);
+      }
+
+      .month-pill:focus {
+        outline: 3px solid rgba(0, 123, 255, 0.18);
+        outline-offset: 2px;
+      }
+
+      /* Active state */
+      .month-pill.active {
+        background: #e84335;
+        /* change to your brand color */
+        color: #fff;
+      }
+
+      /* Layout for package cards (simple example) */
+      .packages {
+        padding: 12px;
+        display: grid;
+        gap: 10px;
+      }
+
+      .package-card {
+        padding: 12px;
+        background: #fff;
+        border-radius: 8px;
+        border: 1px solid #ececec;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+      }
+
+      /* Show the selector only on mobile screens */
+      @media (max-width: 768px) {
+        .mobile-month-selector {
+          display: block;
+          background: #fff;
+          border-bottom: 1px solid #eee;
+        }
+      }
+
+
+
+
+      /* Hide by default */
+      .mobile-bottom-nav {
+        display: none;
+      }
+
+      /* Show only on mobile */
+      @media (max-width: 768px) {
+        .mobile-bottom-nav {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(0, 0, 0, 0.85);
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 8px 0;
+          z-index: 9999;
+          border-radius: 12px 12px 0 0;
+        }
+
+        .mobile-bottom-nav .nav-item {
+          color: #fff;
+          text-align: center;
+          flex: 1;
+          text-decoration: none;
+          font-family: sans-serif;
+        }
+
+        .mobile-bottom-nav .nav-item i {
+          font-size: 20px;
+          display: block;
+          margin-bottom: 4px;
+        }
+
+        .mobile-bottom-nav .nav-item span {
+          font-size: 14px;
+        }
+      }
+
+
+      @media (max-width: 768px) {
+        .footer-box ul {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          /* 2 columns per row */
+          gap: 8px 16px;
+          /* row & column gaps */
+          padding: 0;
+          margin: 0;
+          list-style: none;
+        }
+
+        .footer-box ul li {
+          margin: 0;
+          /* remove default list spacing */
+          text-align: start;
+          padding-bottom: 2px;
+          /* optional: center the link text */
+        }
+
+        .footer-contact {
+          display: block !important;
+          gap: 10px !important;
+        }
+
+        .footer-boxss {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+
+        .footer-logo {
+          width: 100px;
+        }
+
+        .footer-boxss img h2 {
+          font-size: 12px !important;
+        }
+
+        .font-awesome {
+          font-size: 14px !important;
+        }
+      }
+
+      .footer-boxss {
+        padding-top: 20px;
+        padding-right: 20px;
       }

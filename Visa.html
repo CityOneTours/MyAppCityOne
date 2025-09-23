@@ -15,9 +15,17 @@
   <header>
     <!-- Top Bar -->
     <div class="top-bar">
-      <div class="left">
-        <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-        <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+          <!-- Working mailto link -->
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
+        </div>
       </div>
       <div class="right">
         <!-- <span><img src="https://flagcdn.com/in.svg" alt="India Flag"> IND</span> -->
@@ -130,6 +138,20 @@
   <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
   </a>
+  <div class="mobile-bottom-nav">
+    <a href="/" class="nav-item">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="https://wa.me/97143922959" target="_blank" class="nav-item">
+      <i class="fab fa-whatsapp"></i>
+      <span>Whatsapp</span>
+    </a>
+    <a href="tel:+97143922959" class="nav-item">
+      <i class="fas fa-phone"></i>
+      <span>Contact</span>
+    </a>
+  </div>
 
   <button id="backToTop">↑</button>
 
@@ -455,9 +477,9 @@
       </div>
 
       <div class="custom-footer-main">
-        <div class="footer-box">
+        <div class="footer-boxss">
           <img src="images/image 8916.png" alt="Company Logo" class="footer-logo" />
-          <h2 style="font-size: 18px; padding-bottom: 15px;">
+          <h2 style="font-size: 18px; padding-bottom: 15px;" class="font-awesome">
             City One Tourism and Travel</h2>
           <!-- <p>Address: Executive Heights - 702 - Barsha Heights - Dubai - United Arab Emirates</p> -->
         </div>

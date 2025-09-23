@@ -18,10 +18,19 @@
     <header>
         <!-- Top Bar -->
         <div class="top-bar">
-            <div class="left">
-                <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-                <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
-            </div>
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+          <!-- Working mailto link -->
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
+        </div>
+      </div>
+
             <div class="right">
                 <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
             </div>
@@ -59,6 +68,12 @@
                 <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
                 <a href="../About us.html"><i class="fas fa-info-circle"></i> About</a>
                 <a href="../Contact.html"><i class="fas fa-users"></i> Contact</a>
+
+                <select id="currencySelect">
+                    <option value="AED">AED</option>
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                </select>
             </div>
         </nav>
     </header>
@@ -102,8 +117,8 @@
         <div class="price-box">
             <div style="flex: 1;">
                 <div class="space">
-                    <h2>Armenia</h2>
-                    <h4>AED 2500 </h2>
+                    <h2 >Armenia</h2>
+                    <h4 class="price-final price-amount" data-aed="2500">AED 2500 </h2>
 
                 </div>
                 <p>6 Nights | 7 Days </p>
@@ -399,7 +414,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 1350</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="1350">AED 1350</span><span class="price-final price-amount" data-aed="1250">AED
                                 1250</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -497,7 +512,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 2600</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="2600">AED 2600</span><span class="price-final price-amount" data-aed="2500">AED
                                 2500</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -620,6 +635,7 @@
         </footer>
     </footer>
     <script src="../Dubai-Fully-Loaded.js"></script>
+    <script src="../currency.js"></script>
 
 </body>
 

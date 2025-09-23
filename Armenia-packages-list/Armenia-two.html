@@ -18,10 +18,19 @@
     <header>
         <!-- Top Bar -->
         <div class="top-bar">
-            <div class="left">
-                <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-                <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
-            </div>
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+          <!-- Working mailto link -->
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
+        </div>
+      </div>
+
             <div class="right">
                 <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
             </div>
@@ -49,16 +58,21 @@
                         <a href="../Themes.html">Luxury Tours</a>
                         <a href="../Themes.html">Honey moon</a>
                         <a href="../Themes.html">Family with Kids</a>
-                         
+
                         <a href="../Themes.html">Family with Kids</a>
-                          
-                           
-                            
+
+
+
                     </div>
                 </div>
                 <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
                 <a href="../About us.html"><i class="fas fa-info-circle"></i> About</a>
                 <a href="../Contact.html"><i class="fas fa-users"></i> Contact</a>
+                <select id="currencySelect">
+                    <option value="AED">AED</option>
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                </select>
             </div>
         </nav>
     </header>
@@ -103,7 +117,7 @@
             <div style="flex: 1;">
                 <div class="space">
                     <h2>Armenia</h2>
-                    <h4>AED 1682 </h2>
+                    <h4 class="price-final price-amount" data-aed="1682">AED 1682 </h2>
 
                 </div>
                 <p>4 Nights | 5 Days </p>
@@ -342,8 +356,7 @@
                                 <img src="../Armenia-images/4.jpg" class="imagess " alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Armenia-images\cathedral-1781012.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Armenia-images\cathedral-1781012.jpg" class="imagess" alt="...">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -367,7 +380,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 1350</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="1350">AED 1350</span><span class="price-final price-amount" data-aed="1250">AED
                                 1250</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -388,11 +401,11 @@
                                 <img src="../Armenia-images/1.jpeg" class="imagess" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Armenia-images/architecture-bright-building-2990775.jpg" class="imagess " alt="...">
+                                <img src="../Armenia-images/architecture-bright-building-2990775.jpg" class="imagess "
+                                    alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Armenia-images\touch armenia.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Armenia-images\touch armenia.jpg" class="imagess" alt="...">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -416,7 +429,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 2395</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="2395">AED 2395</span><span class="price-final price-amount" data-aed="2195">AED
                                 2195</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -440,8 +453,7 @@
                                 <img src="../Armenia-images\armenia 1.jpg" class="imagess " alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Armenia-images\lake sevan.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Armenia-images\lake sevan.jpg" class="imagess" alt="...">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -465,7 +477,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 2600</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="2600">AED 2600</span><span class="price-final price-amount" data-aed="2500">AED
                                 2500</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -515,7 +527,7 @@
     </div>
 
 
-        <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
     </a>
 
@@ -586,6 +598,7 @@
         </footer>
     </footer>
     <script src="../Dubai-Fully-Loaded.js"></script>
+    <script src="../currency.js"></script>
 
 </body>
 

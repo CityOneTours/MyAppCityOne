@@ -23,7 +23,7 @@ const cardData = {
       rating: "4.9",
       img: "Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg",
       info: "8 days 7 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
-      price: "AED 4499",
+      priceAED: 4499,   // <— pure number, no "AED"
       link: "Dubai-packagess/Dubai-packages-one.html"
     },
     {
@@ -31,7 +31,7 @@ const cardData = {
       rating: "4.2",
       img: "Georgia-images/9.jpg",
       info: "6 days 5 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
-      price: "AED 1685",
+      priceAED: "1685",
       link: "Georgia-packages-list/Georgia-four.html"
 
     },
@@ -40,7 +40,7 @@ const cardData = {
       rating: "4.4",
       img: "Maldives-images/Depositphotos_4474251_L (2).jpg",
       info: "5 days 4 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
-      price: "AED 7680",
+      priceAED: "7680",
       link: "Maldives-Packages-list/Maldives-two.html"
 
     },
@@ -49,7 +49,7 @@ const cardData = {
       rating: "4.3",
       img: "Armenia-images/1.jpeg",
       info: "7 days 6 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
-      price: "AED 2500",
+      priceAED: "2500",
       link: "Armenia-packages-list/Armenia-four.html"
     }
   ],
@@ -59,7 +59,7 @@ const cardData = {
       rating: "4.8",
       img: "Vietnam-images/Depositphotos_66882175_L.jpg",
       info: "6 days 5 nights | <i class='fas fa-hotel'></i> 5* Resort",
-      price: "AED 2699",
+      priceAED: "2699",
       link: "vietnam-packages-list/vietnam-one.html"
 
     },
@@ -68,7 +68,7 @@ const cardData = {
       rating: "4.0",
       img: "Kyrgyzstan-packages-list/Kyrgyzstan-images/20230523151501_Pb_KyrgyzstanGallery2.jpg",
       info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
-      price: "AED 2070",
+      priceAED: "2070",
       link: "Kyrgyzstan-packages-list/Kyrgyzstan-one.html"
 
     },
@@ -77,7 +77,7 @@ const cardData = {
       rating: "4.98",
       img: "Thailand-images/Depositphotos_12420435_L.jpg",
       info: "8 days 7 nights | <i class='fas fa-hotel'></i> 5* Resort",
-      price: "AED 2699",
+      priceAED: "2699",
       link: "Thailand-packages-list/Thailand-one.html"
 
     },
@@ -86,7 +86,7 @@ const cardData = {
       rating: "4.9",
       img: "Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg",
       info: "8 days 7 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
-      price: "AED 4499",
+      priceAED: "4499",
       link: "Dubai-packagess/Dubai-packages-one.html"
     },
   ],
@@ -96,7 +96,7 @@ const cardData = {
       rating: "4.4",
       img: "Maldives-images/Depositphotos_4474251_L (2).jpg",
       info: "5 days 4 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
-      price: "AED 7680",
+      priceAED: "7680",
       link: "Maldives-Packages-list/Maldives-two.html"
 
     },
@@ -105,7 +105,7 @@ const cardData = {
       rating: "4.9",
       img: "Bali-images/Depositphotos_8364139_L.jpg",
       info: "4 days 3 nights | <i class='fas fa-hotel'></i> 5* Resort",
-      price: "AED 1250",
+      priceAED: "1250",
       link: "Bali-Packages-list/Bali-one.html"
 
     },
@@ -114,7 +114,7 @@ const cardData = {
       rating: "4.8",
       img: "Vietnam-images/Depositphotos_66882175_L.jpg",
       info: " days  nights | <i class='fas fa-hotel'></i> 5* Resort",
-      price: "AED 2699",
+      priceAED: "2699",
       link: "vietnam-packages-list/vietnam-one.html"
 
     },
@@ -123,7 +123,7 @@ const cardData = {
       rating: "4.4",
       img: "switzerland-packages-list/Switzerland-images/Depositphotos_26387041_L.jpg",
       info: "5 days 4 nights | <i class='fas fa-hotel'></i> Water Villas",
-      price: "AED 3420",
+      priceAED: "3420",
       link: "switzerland-packages-list/switzerland-one.html"
 
     }
@@ -134,7 +134,7 @@ const cardData = {
       rating: "4.9",
       img: "Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg",
       info: "8 days 7 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
-      price: "AED 4499",
+      priceAED: "4499",
       link: "Dubai-packagess/Dubai-packages-one.html"
     },
     {
@@ -142,7 +142,7 @@ const cardData = {
       rating: "4.8",
       img: "Turkey-images/Depositphotos_94663096_L.jpg",
       info: "6 days 5 nights | <i class='fas fa-hotel'></i> 5* Resort",
-      price: "AED 2350",
+      priceAED: "2350",
       link: "Turkey-packages-list/Turkey-one.html"
 
     },
@@ -151,7 +151,7 @@ const cardData = {
       rating: "5.0",
       img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg",
       info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
-      price: "AED 3130",
+      priceAED: "3130",
       link: "Saudi-arabia-packages-list/saudiarabia-one.html"
 
     },
@@ -160,7 +160,7 @@ const cardData = {
       rating: "4.4",
       img: "Maldives-images/Depositphotos_4474251_L (2).jpg",
       info: "5 days 4 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
-      price: "AED 7680",
+      priceAED: "7680",
       link: "Maldives-Packages-list/Maldives-two.html"
 
     },
@@ -176,27 +176,28 @@ function filterCards(type, event) {
   container.innerHTML = '';
 
   cardData[type].forEach(card => {
+    const price = Number(card.priceAED); // make sure it's a number
     const cardEl = document.createElement('div');
     cardEl.className = 'card';
     cardEl.innerHTML = `
-        <div style="position: relative;">
-          <img src="${card.img}" alt="${card.title}" />
+      <div style="position: relative;">
+        <img src="${card.img}" alt="${card.title}" />
+      </div>
+      <div class="card-body">
+        <div class="card-header">
+          <div class="card-title">${card.title}</div>
+          <div class="rating"><i class="fas fa-star"></i> ${card.rating}</div>
         </div>
-        <div class="card-body">
-          <div class="card-header">
-            <div class="card-title">${card.title}</div>
-            <div class="rating"><i class="fas fa-star"></i> ${card.rating}</div>
-          </div>
-          <div class="info"><i class="fas fa-clock"></i> ${card.info}</div>
-          <div class="price-row">
-            <div class="price">${card.price}</div>
-            <a href="${card.link}" class="know-more">Know More</a>
-          </div>
-        </div>`;
+        <div class="info"><i class="fas fa-clock"></i> ${card.info}</div>
+        <div class="price-row">
+          <div class="price">AED ${price}</div>
+          <a href="${card.link}" class="know-more">Know More</a>
+        </div>
+      </div>`;
     container.appendChild(cardEl);
   });
-
 }
+
 
 window.onload = () => filterCards('adventure');
 
@@ -327,10 +328,10 @@ loadCards('Sep');
 
 const visaData = {
   Dubai: [
-    { title: 'Georgia', image: 'Georgia-images/9.jpg',link: 'visa-countries-list/Georgia-visa.html'  },
-    { title: 'Armenia', image: 'Armenia-images/1.jpeg', link: 'visa-countries-list/Armenia-visa.html'},
-    { title: 'Azerbaijan', image: 'Azerbaijan-images/BKU_510_aspect16x9.jpg',link: 'visa-countries-list/Azerbaijan-visa.html' },
-    { title: 'Vietnam', image: 'Vietnam-images/Depositphotos_66882175_L.jpg',link: 'visa-countries-list/Vietnam-visa.html' }
+    { title: 'Georgia', image: 'Georgia-images/9.jpg', link: 'visa-countries-list/Georgia-visa.html' },
+    { title: 'Armenia', image: 'Armenia-images/1.jpeg', link: 'visa-countries-list/Armenia-visa.html' },
+    { title: 'Azerbaijan', image: 'Azerbaijan-images/BKU_510_aspect16x9.jpg', link: 'visa-countries-list/Azerbaijan-visa.html' },
+    { title: 'Vietnam', image: 'Vietnam-images/Depositphotos_66882175_L.jpg', link: 'visa-countries-list/Vietnam-visa.html' }
 
 
   ],
@@ -401,6 +402,11 @@ function loadVisaCards(country) {
   });
 }
 
+function formatPrice(aedPrice) {
+  if (userCurrency === 'AED') return `AED ${aedPrice}`;
+  if (userCurrency === 'INR') return `₹ ${(aedPrice * exchangeRates.AED_TO_INR).toFixed(0)}`;
+  return `$ ${(aedPrice * exchangeRates.AED_TO_USD).toFixed(0)}`;
+}
 
 // Load default country
 loadVisaCards('Dubai');
@@ -508,96 +514,96 @@ function handleSearch() {
 
 
 
-  // Declare only ONCE
-  const countries = [
-    "Dubai",
-    // "Thailand",
-    // "Malaysia",
-    // "Georgia",
-    // "Armenia",
-    // "Uzbekistan",
-    // "Vietnam",
-    // "South Africa"
-  ];
+// Declare only ONCE
+const countries = [
+  "Dubai",
+  // "Thailand",
+  // "Malaysia",
+  // "Georgia",
+  // "Armenia",
+  // "Uzbekistan",
+  // "Vietnam",
+  // "South Africa"
+];
 
-  const destinationInput = document.getElementById("destinationInput");
-  const countryList = document.getElementById("countryList");
+const destinationInput = document.getElementById("destinationInput");
+const countryList = document.getElementById("countryList");
 
-  function showList() {
-    countryList.style.display = "block";
-    countryList.innerHTML = "";
-    countries.forEach(c => {
-      const div = document.createElement("div");
-      div.innerText = c;
-      div.onclick = () => {
-        destinationInput.value = c;
-        countryList.style.display = "none";
-      };
-      countryList.appendChild(div);
-    });
+function showList() {
+  countryList.style.display = "block";
+  countryList.innerHTML = "";
+  countries.forEach(c => {
+    const div = document.createElement("div");
+    div.innerText = c;
+    div.onclick = () => {
+      destinationInput.value = c;
+      countryList.style.display = "none";
+    };
+    countryList.appendChild(div);
+  });
+}
+
+function filterCountries() {
+  const filter = destinationInput.value.toLowerCase();
+  countryList.innerHTML = "";
+  const filtered = countries.filter(c => c.toLowerCase().includes(filter));
+
+  filtered.forEach(c => {
+    const div = document.createElement("div");
+    div.innerText = c;
+    div.onclick = () => {
+      destinationInput.value = c;
+      countryList.style.display = "none";
+    };
+    countryList.appendChild(div);
+  });
+
+  countryList.style.display = filtered.length ? "block" : "none";
+}
+
+function handleSearch() {
+  const destination = destinationInput.value.trim();
+  const theme = document.getElementById("themeSelect").value;
+  const date = document.getElementById("dateInput").value;
+
+  if (!destination || !theme || !date) {
+    alert("Please select destination, theme, and date!");
+    return;
   }
 
-  function filterCountries() {
-    const filter = destinationInput.value.toLowerCase();
-    countryList.innerHTML = "";
-    const filtered = countries.filter(c => c.toLowerCase().includes(filter));
+  // Navigate to that country's packages page
+  const url = destination.toLowerCase().replace(/\s+/g, '-') + "-packages.html";
+  window.location.href = url;
+}
 
-    filtered.forEach(c => {
-      const div = document.createElement("div");
-      div.innerText = c;
-      div.onclick = () => {
-        destinationInput.value = c;
-        countryList.style.display = "none";
-      };
-      countryList.appendChild(div);
-    });
 
-    countryList.style.display = filtered.length ? "block" : "none";
+
+
+const backToTop = document.getElementById("backToTop");
+
+// Show button when scrolling down
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    backToTop.classList.add("show");
+  } else {
+    backToTop.classList.remove("show");
   }
+});
 
-  function handleSearch() {
-    const destination = destinationInput.value.trim();
-    const theme = document.getElementById("themeSelect").value;
-    const date = document.getElementById("dateInput").value;
-
-    if (!destination || !theme || !date) {
-      alert("Please select destination, theme, and date!");
-      return;
-    }
-
-    // Navigate to that country's packages page
-    const url = destination.toLowerCase().replace(/\s+/g, '-') + "-packages.html";
-    window.location.href = url;
-  }
+// Smooth scroll to top
+backToTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
 
 
 
 
-      const backToTop = document.getElementById("backToTop");
-
-    // Show button when scrolling down
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 200) {
-        backToTop.classList.add("show");
-      } else {
-        backToTop.classList.remove("show");
-      }
-    });
-
-    // Smooth scroll to top
-    backToTop.addEventListener("click", () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    });
-
-
-
-
-    (() => {
+(() => {
   // Grab all the slides inside the carousel
-  const slides = document.querySelectorAll<HTMLDivElement>('.carousel .slide');
+  const slides = document.querySelectorAll < HTMLDivElement > ('.carousel .slide');
   let currentSlide = 0;
 
   // Change slides every 4 seconds
@@ -610,43 +616,109 @@ function handleSearch() {
 
 
 
-        // Carousel functionality
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carousel-slide');
-        const dots = document.querySelectorAll('.dot');
-        const totalSlides = slides.length;
+// Carousel functionality
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const dots = document.querySelectorAll('.dot');
+const totalSlides = slides.length;
 
-        function showSlide(index) {
-            // Remove active class from all slides and dots
-            slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-            
-            // Add active class to current slide and dot
-            slides[index].classList.add('active');
-            dots[index].classList.add('active');
-        }
+function showSlide(index) {
+  // Remove active class from all slides and dots
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
 
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            showSlide(currentSlide);
-        }
+  // Add active class to current slide and dot
+  slides[index].classList.add('active');
+  dots[index].classList.add('active');
+}
 
-        function goToSlide(index) {
-            currentSlide = index;
-            showSlide(currentSlide);
-        }
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  showSlide(currentSlide);
+}
 
-        // Auto-play carousel
-        function startCarousel() {
-            setInterval(nextSlide, 4000); // Change slide every 4 seconds
-        }
+function goToSlide(index) {
+  currentSlide = index;
+  showSlide(currentSlide);
+}
 
-        // Add click event listeners to dots
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => goToSlide(index));
-        });
+// Auto-play carousel
+function startCarousel() {
+  setInterval(nextSlide, 4000); // Change slide every 4 seconds
+}
 
-        // Start the carousel when page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            startCarousel();
-        });
+// Add click event listeners to dots
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => goToSlide(index));
+});
+
+// Start the carousel when page loads
+document.addEventListener('DOMContentLoaded', function () {
+  startCarousel();
+});
+
+
+
+const exchangeRates = {
+  AED_TO_INR: 24.02,
+  AED_TO_USD: 0.2712
+};
+
+let userCurrency = 'AED';
+
+function formatPrice(aedPrice) {
+  if (userCurrency === 'AED') return `AED ${aedPrice}`;
+  if (userCurrency === 'INR') return `₹ ${(aedPrice * exchangeRates.AED_TO_INR).toFixed(0)}`;
+  return `$ ${(aedPrice * exchangeRates.AED_TO_USD).toFixed(0)}`;
+}
+
+function filterCards(type, event) {
+  const buttons = document.querySelectorAll('.category-buttons button');
+  buttons.forEach(btn => btn.classList.remove('active'));
+  if (event) event.target.classList.add('active');
+
+  const container = document.getElementById('cardGrid');
+  container.innerHTML = '';
+
+  cardData[type].forEach(card => {
+    const aed = Number(card.priceAED);
+    const cardEl = document.createElement('div');
+    cardEl.className = 'card';
+    cardEl.innerHTML = `
+          <div style="position: relative;">
+            <img src="${card.img}" alt="${card.title}" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <div class="card-title">${card.title}</div>
+              <div class="rating"><i class="fas fa-star"></i> ${card.rating}</div>
+            </div>
+            <div class="info"><i class="fas fa-clock"></i> ${card.info}</div>
+            <div class="price-row">
+              <div class="price">${formatPrice(aed)}</div>
+              <a href="${card.link}" class="know-more">Know More</a>
+            </div>
+          </div>`;
+    container.appendChild(cardEl);
+  });
+}
+
+window.onload = () => {
+  filterCards('adventure');
+
+  const currencySelect = document.getElementById('currencySelect');
+  currencySelect.addEventListener('change', e => {
+    userCurrency = e.target.value;
+    const activeBtn = document.querySelector('.category-buttons button.active');
+    const currentType = activeBtn ? activeBtn.dataset.type : 'adventure';
+    filterCards(currentType);
+  });
+};
+
+
+
+document.querySelector(".help-btn").addEventListener("click", function () {
+  document.querySelector(".help-container").classList.toggle("active");
+});
+
+

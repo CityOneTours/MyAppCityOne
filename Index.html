@@ -18,10 +18,19 @@
   <header>
     <!-- Top Bar -->
     <div class="top-bar">
-      <div class="left">
-        <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-        <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+          <!-- Working mailto link -->
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
+        </div>
       </div>
+
       <div class="right">
         <!-- <span><img src="https://flagcdn.com/in.svg" alt="India Flag"> IND</span> -->
         <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
@@ -59,6 +68,14 @@
         <a href="Visa.html"><i class="fas fa-passport"></i> Visa</a>
         <a href="About us.html"><i class="fas fa-info-circle"></i> About</a>
         <a href="Contact.html"><i class="fas fa-users"></i> Contact</a>
+
+        <select id="currencySelect">
+          <option value="AED">AED</option>
+          <option value="INR">INR</option>
+          <option value="USD">USD</option>
+        </select>
+
+
       </div>
     </nav>
   </header>
@@ -123,7 +140,20 @@
   <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
   </a>
-
+  <div class="mobile-bottom-nav">
+    <a href="/" class="nav-item">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="https://wa.me/97143922959" target="_blank" class="nav-item">
+      <i class="fab fa-whatsapp"></i>
+      <span>Whatsapp</span>
+    </a>
+    <a href="tel:+97143922959" class="nav-item">
+      <i class="fas fa-phone"></i>
+      <span>Contact</span>
+    </a>
+  </div>
   <button id="backToTop">↑</button>
 
 
@@ -383,10 +413,10 @@
   <section data-aos="fade-up" data-aos-duration="5000">
 
     <div class="category-buttons">
-      <button class="active" onclick="filterCards('adventure', event)">Adventure</button>
-      <button onclick="filterCards('luxury', event)">Luxury</button>
-      <button onclick="filterCards('honeymoon', event)">Honey Moon</button>
-      <button onclick="filterCards('family', event)">Family With Kids</button>
+      <button data-type="adventure" class="active" onclick="filterCards('adventure', event)">Adventure</button>
+      <button data-type="luxury" onclick="filterCards('luxury', event)">Luxury</button>
+      <button data-type="honeymoon" onclick="filterCards('honeymoon', event)">Honeymoon</button>
+      <button data-type="family" onclick="filterCards('family', event)">Family</button>
     </div>
 
     <div class="cards-container" id="cardGrid">
@@ -418,7 +448,7 @@
       </div>
     </div>
   </section> -->
-  <section class="Certificate" data-aos="fade-up" data-aos-duration="5000">
+  <!-- <section class="Certificate" data-aos="fade-up" data-aos-duration="5000">
     <div class="certificates-container">
       <div class="certificates-text">
         <h2>CERTIFICATES</h2>
@@ -429,8 +459,44 @@
         <img src="images/Frame 1707478339.png" alt="Certificates Image" />
       </div>
     </div>
+  </section> -->
+
+
+  <section class="certificate" data-aos="fade-up" data-aos-duration="5000">
+    <div class="certificates-container">
+      <!-- Left Text -->
+      <div class="certificates-text">
+        <h2>CERTIFICATES</h2>
+        <p>
+          City One Tourism and Travel is a proud recipient of 2018 Certificate of Excellence
+          from the world’s largest travel guidance platform – TripAdvisor and also became a
+          nominee for 2017 World’s Travel Awards.
+        </p>
+      </div>
+
+      <!-- Right Scrolling Images -->
+      <div class="certificates-scroll">
+        <div class="scroll-track">
+          <!-- Add your 10 images -->
+          <img src="images/award 1 .jpg" alt="Award 1">
+          <img src="images/award 2 .jpg" alt="Award 2">
+          <img src="images/award 3 .jpg" alt="Award 3">
+          <img src="images/award 4 .jpg" alt="Award 4">
+          <img src="images/award 5 .jpg" alt="Award 5">
+          <img src="images/award 6 .jpg" alt="Award 6">
+          <img src="images/award 7 .jpg" alt="Award 7">
+          <img src="images/award 8 .jpg" alt="Award 8">
+          <img src="images/award 9 .jpg" alt="Award 9">
+          <img src="images/award 10 .jpg" alt="Award 10">
+          <!-- Duplicate for seamless loop -->
+          <img src="Vietnam-images/Depositphotos_184422954_L.jpg" alt="Award 1">
+          <img src="Vietnam-images/Depositphotos_184422954_L.jpg" alt="Award 2">
+          <img src="Vietnam-images/Depositphotos_184422954_L.jpg" alt="Award 3">
+        </div>
+      </div>
+    </div>
   </section>
-  <article class="heading" data-aos="fade-up" data-aos-duration="5000">
+  <article class="heading">
     <h1>Where to go When The Best time to travel...</h1>
   </article>
   <section data-aos="fade-up" data-aos-duration="5000">
@@ -445,6 +511,9 @@
 
     </div> -->
   </section>
+
+
+
   <section class="visa-wrapper" data-aos="fade-up" data-aos-duration="5000">
     <div class="carouselll">
       <img src="images/image 8965.png" alt="Background" />
@@ -471,7 +540,7 @@
       </div>
       <div class="stats-container">
         <div class="stat-item">
-          <div class="stat-number" data-target="10000">0 +</div>
+          <div class="stat-number" data-target="120000">0 +</div>
           <div class="stat-label">Happy Clients</div>
         </div>
         <div class="stat-item">
@@ -479,7 +548,7 @@
           <div class="stat-label">Destinations</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number" data-target="12000">0</div>
+          <div class="stat-number" data-target="140000">0</div>
           <div class="stat-label">Visa Approvals</div>
         </div>
         <div class="stat-item">
@@ -693,9 +762,9 @@
       </div>
 
       <div class="custom-footer-main">
-        <div class="footer-box">
+        <div class="footer-boxss">
           <img src="images/image 8916.png" alt="Company Logo" class="footer-logo" />
-          <h2 style="font-size: 18px; padding-bottom: 15px;">
+          <h2 style="font-size: 18px; padding-bottom: 15px;" class="font-awesome">
             City One Tourism and Travel</h2>
           <!-- <p>Address: Executive Heights - 702 - Barsha Heights - Dubai - United Arab Emirates</p> -->
         </div>
@@ -745,6 +814,7 @@
   <script>
     AOS.init();
   </script>
+
 </body>
 
 </html>

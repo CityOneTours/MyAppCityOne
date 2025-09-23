@@ -18,10 +18,19 @@
     <header>
         <!-- Top Bar -->
         <div class="top-bar">
-            <div class="left">
-                <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-                <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
-            </div>
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+          <!-- Working mailto link -->
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
+        </div>
+      </div>
+
             <div class="right">
                 <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
             </div>
@@ -49,16 +58,22 @@
                         <a href="../Themes.html">Luxury Tours</a>
                         <a href="../Themes.html">Honey moon</a>
                         <a href="../Themes.html">Family with Kids</a>
-                         
+
                         <a href="../Themes.html">Family with Kids</a>
-                          
-                           
-                            
+
+
+
                     </div>
                 </div>
-                                <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
+                <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
                 <a href="../About us.html"><i class="fas fa-info-circle"></i> About</a>
                 <a href="../Contact.html"><i class="fas fa-users"></i> Contact</a>
+
+                <select id="currencySelect">
+                    <option value="AED">AED</option>
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                </select>
             </div>
         </nav>
     </header>
@@ -68,17 +83,16 @@
         <div id="carouselDest" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                                <img src="../Singapore-packages-list/Singapore-images/sc1.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../Singapore-packages-list\Singapore-images\singapore 3.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../Singapore-packages-list\Singapore-images\singapore 4.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
+                    <img src="../Singapore-packages-list/Singapore-images/sc1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Singapore-packages-list\Singapore-images\singapore 3.jpg" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Singapore-packages-list\Singapore-images\singapore 4.jpg" class="d-block w-100"
+                        alt="...">
+                </div>
             </div>
 
             <!-- Optional: arrows -->
@@ -105,7 +119,7 @@
             <div style="flex: 1;">
                 <div class="space">
                     <h2>Best of Singapore </h2>
-                    <h4>AED 2100</h2>
+                    <h4 class="price-final price-amount" data-aed="2100">AED 2100</h2>
 
                 </div>
                 <p>4 Nights | 5 Days </p>
@@ -199,8 +213,7 @@
         <div class="tour-day">
             <div class="tour-icon">2</div>
             <div class="tour-image">
-                <img src="../Singapore-packages-list\Singapore-images\Depositphotos_312559308_L.jpg"
-                    alt="City Tour">
+                <img src="../Singapore-packages-list\Singapore-images\Depositphotos_312559308_L.jpg" alt="City Tour">
             </div>
             <div class="tour-details">
                 <div class="tour-title">Singapore CITY TOUR</div>
@@ -219,7 +232,8 @@
         <div class="tour-day">
             <div class="tour-icon">3</div>
             <div class="tour-image">
-                <img src="../Singapore-packages-list\Singapore-images\Depositphotos_147242211_L.jpg" alt="Shopping Tour">
+                <img src="../Singapore-packages-list\Singapore-images\Depositphotos_147242211_L.jpg"
+                    alt="Shopping Tour">
             </div>
             <div class="tour-details">
                 <div class="tour-title">Singapore CITY TOUR</div>
@@ -267,7 +281,7 @@
                 </div>
             </div>
         </div>
-        
+
 
 
 
@@ -338,14 +352,16 @@
                     <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../Singapore-packages-list\Singapore-images\sc4.jpg" class="imagess" alt="...">
+                                <img src="../Singapore-packages-list\Singapore-images\sc4.jpg" class="imagess"
+                                    alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Singapore-packages-list\Singapore-images\sc5.jpg" class="imagess " alt="...">
+                                <img src="../Singapore-packages-list\Singapore-images\sc5.jpg" class="imagess "
+                                    alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Singapore-packages-list\Singapore-images\sc5.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Singapore-packages-list\Singapore-images\sc5.jpg" class="imagess"
+                                    alt="...">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -370,7 +386,7 @@
                         </div>
                         <div class="tour-price">
                             price on request
-                             <!-- <span class="price-original">AED 1300</span><span class="price-final">AED
+                            <!-- <span class="price-original">AED 1300</span><span class="price-final">AED
                                 1200</span> -->
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -390,14 +406,16 @@
                     <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../Singapore-packages-list\Singapore-images\Depositphotos_312559308_L.jpg" class="imagess" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../Singapore-packages-list\Singapore-images\sc3.jpg" class="imagess " alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../Singapore-packages-list\Singapore-images\Singapore 1.jpg"
+                                <img src="../Singapore-packages-list\Singapore-images\Depositphotos_312559308_L.jpg"
                                     class="imagess" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../Singapore-packages-list\Singapore-images\sc3.jpg" class="imagess "
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../Singapore-packages-list\Singapore-images\Singapore 1.jpg" class="imagess"
+                                    alt="...">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -422,7 +440,7 @@
                         </div>
                         <div class="tour-price">
                             price on request
-                             <!-- <span class="price-original">AED 1300</span><span class="price-final">AED
+                            <!-- <span class="price-original">AED 1300</span><span class="price-final">AED
                                 1200</span> -->
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -475,7 +493,7 @@
     </div>
 
 
-        <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
     </a>
 
@@ -546,6 +564,7 @@
         </footer>
     </footer>
     <script src="../Dubai-Fully-Loaded.js"></script>
+    <script src="../currency.js"></script>
 
 </body>
 

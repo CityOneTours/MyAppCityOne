@@ -18,10 +18,19 @@
     <header>
         <!-- Top Bar -->
         <div class="top-bar">
-            <div class="left">
-                <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-                <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
-            </div>
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+          <!-- Working mailto link -->
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
+        </div>
+      </div>
+
             <div class="right">
                 <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
             </div>
@@ -49,16 +58,22 @@
                         <a href="../Themes.html">Luxury Tours</a>
                         <a href="../Themes.html">Honey moon</a>
                         <a href="../Themes.html">Family with Kids</a>
-                         
+
                         <a href="../Themes.html">Family with Kids</a>
-                          
-                           
-                            
+
+
+
                     </div>
                 </div>
                 <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
                 <a href="../About us.html"><i class="fas fa-info-circle"></i> About</a>
                 <a href="../Contact.html"><i class="fas fa-users"></i> Contact</a>
+
+                <select id="currencySelect">
+                    <option value="AED">AED</option>
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                </select>
             </div>
         </nav>
     </header>
@@ -104,7 +119,7 @@
             <div style="flex: 1;">
                 <div class="space">
                     <h2>Vibrant Thailand</h2>
-                    <h4>AED 2699</h2>
+                    <h4 class="price-final price-amount" data-aed="2699">AED 2699</h2>
 
                 </div>
                 <p>7 Nights | 8 Days </p>
@@ -394,7 +409,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 1500</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="1500">AED 1500</span><span class="price-final price-amount" data-aed="1450">AED
                                 1450</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -444,7 +459,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 2750</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="2750">AED 2750</span><span class="price-final price-amount" data-aed="2720">AED
                                 2720</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -493,7 +508,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 1460</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="1460">AED 1460</span><span class="price-final price-amount" data-aed="1450">AED
                                 1450</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -544,7 +559,7 @@
     </div>
 
 
-        <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
     </a>
 
@@ -615,6 +630,7 @@
         </footer>
     </footer>
     <script src="../Dubai-Fully-Loaded.js"></script>
+    <script src="../currency.js"></script>
 
 </body>
 

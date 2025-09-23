@@ -18,10 +18,19 @@
     <header>
         <!-- Top Bar -->
         <div class="top-bar">
-            <div class="left">
-                <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-                <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
-            </div>
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+          <!-- Working mailto link -->
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
+        </div>
+      </div>
+
             <div class="right">
                 <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
             </div>
@@ -53,9 +62,16 @@
 
                     </div>
                 </div>
-                                <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
+                <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
                 <a href="../About us.html"><i class="fas fa-info-circle"></i> About</a>
                 <a href="../Contact.html"><i class="fas fa-users"></i> Contact</a>
+                <div class="currency-switcher">
+                    <select id="currencySelect">
+                        <option value="AED">AED</option>
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </div>
             </div>
         </nav>
     </header>
@@ -65,10 +81,12 @@
         <div id="carouselDest" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="Uzbekistan-packages-list\Uzbekistan-images\20241104105059_Listing5.jpg" class="d-block w-100" alt="Destination 1">
+                    <img src="Uzbekistan-packages-list\Uzbekistan-images\20241104105059_Listing5.jpg"
+                        class="d-block w-100" alt="Destination 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="Uzbekistan-packages-list\Uzbekistan-images\20241104105031_Listing4.jpg" class="d-block w-100" alt="Destination 2">
+                    <img src="Uzbekistan-packages-list\Uzbekistan-images\20241104105031_Listing4.jpg"
+                        class="d-block w-100" alt="Destination 2">
                 </div>
                 <div class="carousel-item">
                     <img src="Uzbekistan-packages-list\Uzbekistan-images\20241104112022_Uzbekistan Itineraries3.jpg"
@@ -134,14 +152,16 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽 Breakfast
                         </div>
                         <div class="tour-price">
-                            <span class="price-original">AED 1699</span><span class="price-final">AED
+                            <span class="price-original price-amount" data-aed="1699">AED 1699</span><span
+                                class="price-final price-amount" data-aed="1599">AED
                                 1599</span>
                         </div>
                         <div class="tour-buttons mt-3">
                             <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
                                 Enquire Now
                             </button>
-                            <a href="Uzbekistan-packages-list/Uzbekistan-one.html" class="btn btn-outline-danger w-50">View Details</a>
+                            <a href="Uzbekistan-packages-list/Uzbekistan-one.html"
+                                class="btn btn-outline-danger w-50">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -174,7 +194,7 @@
                     </div>
                     <div class="tour-content">
                         <div class="d-flex justify-content-between align-items-center">
-                            <div class="tour-title">Uzbekistan Tour  </div>
+                            <div class="tour-title">Uzbekistan Tour </div>
                             <span class="badge bg-success">5D / 4N</span>
                         </div>
                         <div class="tour-tags my-2">
@@ -186,14 +206,16 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽 Breakfast
                         </div>
                         <div class="tour-price">
-                            <span class="price-original">AED 2510</span><span class="price-final">AED
+                            <span class="price-original price-amount" data-aed="2510">AED 2510</span><span
+                                class="price-final price-amount" data-aed="2410">AED
                                 2410</span>
                         </div>
                         <div class="tour-buttons mt-3">
                             <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
                                 Enquire Now
-                            </button> 
-                            <a href="Uzbekistan-packages-list/Uzbekistan-two.html" class="btn btn-outline-danger w-50">View Details</a>
+                            </button>
+                            <a href="Uzbekistan-packages-list/Uzbekistan-two.html"
+                                class="btn btn-outline-danger w-50">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -238,14 +260,16 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽 Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 2750</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="2750">AED
+                                2750</span><span class="price-final price-amount" data-aed="2640">AED
                                 2640</span>
                         </div>
                         <div class="tour-buttons mt-3">
                             <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
                                 Enquire Now
-                            </button> 
-                            <a href="Uzbekistan-packages-list/Uzbekistan-three.html" class="btn btn-outline-danger w-50">View Details</a>
+                            </button>
+                            <a href="Uzbekistan-packages-list/Uzbekistan-three.html"
+                                class="btn btn-outline-danger w-50">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -290,21 +314,23 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽 Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 3440</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="3440">AED
+                                3440</span><span class="price-final price-amount" data-aed="3340">AED
                                 3340</span>
                         </div>
                         <div class="tour-buttons mt-3">
                             <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
                                 Enquire Now
-                            </button> 
-                            <a href="Uzbekistan-packages-list/Uzbekistan-four.html" class="btn btn-outline-danger w-50">View Details</a>
+                            </button>
+                            <a href="Uzbekistan-packages-list/Uzbekistan-four.html"
+                                class="btn btn-outline-danger w-50">View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            
+
         </div>
     </div>
 
@@ -345,7 +371,7 @@
     </article>
 
 
-        <section class="other-packages">
+    <section class="other-packages">
         <div class="travel-container">
             <a href="vietnam-packages.html" class="travel-card">
                 <img src="Vietnam-images/Depositphotos_184422954_L.jpg" alt="Yerevan">
@@ -479,7 +505,7 @@
         </footer>
     </footer>
     <script src="Dubai-Packages.js"></script>
-
+    <script src="../currency.js"></script>
 </body>
 
 </html>

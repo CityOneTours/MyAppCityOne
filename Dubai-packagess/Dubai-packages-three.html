@@ -18,10 +18,19 @@
     <header>
         <!-- Top Bar -->
         <div class="top-bar">
-            <div class="left">
-                <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-                <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
-            </div>
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+          <!-- Working mailto link -->
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
+        </div>
+      </div>
+
             <div class="right">
                 <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
             </div>
@@ -49,16 +58,23 @@
                         <a href="../Themes.html">Luxury Tours</a>
                         <a href="../Themes.html">Honey moon</a>
                         <a href="../Themes.html">Family with Kids</a>
-                         
+
                         <a href="../Themes.html">Family with Kids</a>
-                          
-                           
-                            
+
+
+
                     </div>
                 </div>
-                                <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
+                <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
                 <a href="../About us.html"><i class="fas fa-info-circle"></i> About</a>
                 <a href="../Contact.html"><i class="fas fa-users"></i> Contact</a>
+                <div class="currency-switcher">
+                    <select id="currencySelect">
+                        <option value="AED">AED</option>
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </div>
             </div>
         </nav>
     </header>
@@ -68,14 +84,14 @@
         <div id="carouselDest" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                                <img src="../Dubai Images/the-palm-962785_1920.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../Dubai Images/dubai-1514540_1920.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../Dubai Images/Dubai 7.jpg" class="d-block w-100" alt="...">
-                            </div>
+                    <img src="../Dubai Images/the-palm-962785_1920.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Dubai Images/dubai-1514540_1920.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Dubai Images/Dubai 7.jpg" class="d-block w-100" alt="...">
+                </div>
             </div>
 
             <!-- Optional: arrows -->
@@ -102,7 +118,7 @@
             <div style="flex: 1;">
                 <div class="space">
                     <h2>Museum of the Future</h2>
-                    <h4>AED 4279</h2>
+                    <h4 class="price-final price-amount" data-aed="4279">AED 4279</h2>
 
                 </div>
                 <p>6 Nights | 7 Days </p>
@@ -197,8 +213,7 @@
         <div class="tour-day">
             <div class="tour-icon">2</div>
             <div class="tour-image">
-                <img src="../Dubai Images\dubai-1514540_1920.jpg"
-                    alt="City Tour">
+                <img src="../Dubai Images\dubai-1514540_1920.jpg" alt="City Tour">
             </div>
             <div class="tour-details">
                 <div class="tour-title">DUBAI CITY TOUR</div>
@@ -285,7 +300,8 @@
         <div class="tour-day">
             <div class="tour-icon">7</div>
             <div class="tour-image">
-                <img src="https://media.cntraveler.com/photos/599dd39ae74489198b4e3080/master/w_1200,c_limit/Flight-Deals_GettyImages-126346910.jpg" alt="Shopping Tour">
+                <img src="https://media.cntraveler.com/photos/599dd39ae74489198b4e3080/master/w_1200,c_limit/Flight-Deals_GettyImages-126346910.jpg"
+                    alt="Shopping Tour">
             </div>
             <div class="tour-details">
                 <div class="tour-title">DUBAI CITY TOUR</div>
@@ -375,8 +391,7 @@
                                 <img src="../Dubai Images/mosque-1853223_1920.jpg" class="imagess " alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Dubai Images/dubai-3457885_1920.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Dubai Images/dubai-3457885_1920.jpg" class="imagess" alt="...">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -400,7 +415,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 4599</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="4599">AED 4599</span><span class="price-final price-amount" data-aed="4499">AED
                                 4499</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -424,12 +439,10 @@
                                 <img src="../Dubai Images/dubai-2057583_1920.jpg" class="imagess" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Dubai Images/city-3161105_1920.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Dubai Images/city-3161105_1920.jpg" class="imagess" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Dubai Images/dubai-3720069_1920.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Dubai Images/dubai-3720069_1920.jpg" class="imagess" alt="...">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -453,7 +466,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 2480</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="2480">AED 2480</span><span class="price-final price-amount" data-aed="2380">AED
                                 2380</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -569,6 +582,7 @@
         </footer>
     </footer>
     <script src="../Dubai-Fully-Loaded.js"></script>
+    <script src="../currency.js"></script>
 
 </body>
 

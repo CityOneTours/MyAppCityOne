@@ -18,10 +18,19 @@
     <header>
         <!-- Top Bar -->
         <div class="top-bar">
-            <div class="left">
-                <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-                <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
-            </div>
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+          <!-- Working mailto link -->
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
+        </div>
+      </div>
+
             <div class="right">
                 <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
             </div>
@@ -49,16 +58,18 @@
                         <a href="../Themes.html">Luxury Tours</a>
                         <a href="../Themes.html">Honey moon</a>
                         <a href="../Themes.html">Family with Kids</a>
-                         
                         <a href="../Themes.html">Family with Kids</a>
-                          
-                           
-                            
                     </div>
                 </div>
-                                <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
+                <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
                 <a href="../About us.html"><i class="fas fa-info-circle"></i> About</a>
                 <a href="../Contact.html"><i class="fas fa-users"></i> Contact</a>
+
+                <select id="currencySelect">
+                    <option value="AED">AED</option>
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                </select>
             </div>
         </nav>
     </header>
@@ -102,8 +113,8 @@
         <div class="price-box">
             <div style="flex: 1;">
                 <div class="space">
-                    <h2>Georgia City</h2>
-                    <h4>AED 949</h2>
+                    <h2 >Georgia City</h2>
+                    <h4 class="price-final price-amount" data-aed="949">AED 949</h2>
 
                 </div>
                 <p>3 Nights | 4 Days </p>
@@ -319,8 +330,7 @@
                                 <img src="../Georgia-images\georgia4.jpg" class="imagess " alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Georgia-images\gergeti-3098469_1920.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Georgia-images\gergeti-3098469_1920.jpg" class="imagess" alt="...">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -344,14 +354,15 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 1020</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="1020">AED 1020</span><span class="price-final price-amount" data-aed="920">AED
                                 920</span>
                         </div>
                         <div class="tour-buttonss mt-3">
                             <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
                                 Enquire Now
                             </button>
-                            <a href="../Georgia-packages-list/Georgia-two.html" class="btn btn-outline-danger w-50">View Details</a>
+                            <a href="../Georgia-packages-list/Georgia-two.html" class="btn btn-outline-danger w-50">View
+                                Details</a>
                         </div>
                     </div>
                 </div>
@@ -366,12 +377,11 @@
                                 <img src="../Georgia-images\tbilisi-3410421_1920.jpg" class="imagess" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Georgia-images\church-4096193_1920.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Georgia-images\church-4096193_1920.jpg" class="imagess" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Georgia-images\michael-bourgault-2DbTbIGPcEY-unsplash.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Georgia-images\michael-bourgault-2DbTbIGPcEY-unsplash.jpg" class="imagess"
+                                    alt="...">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -395,14 +405,15 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 1825</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="1825">AED 1825</span><span class="price-final price-amount" data-aed="1625">AED
                                 1625</span>
                         </div>
                         <div class="tour-buttonss mt-3">
                             <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
                                 Enquire Now
-                            </button> 
-                            <a href="../Georgia-packages-list/Grorgia-three.html" class="btn btn-outline-danger w-50">View Details</a>
+                            </button>
+                            <a href="../Georgia-packages-list/Grorgia-three.html"
+                                class="btn btn-outline-danger w-50">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -418,12 +429,12 @@
                                 <img src="../Georgia-images\tbilisi-2253280_1920.jpg" class="imagess" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Georgia-images\katerina-kerdi-BsURvd0ktFE-unsplash.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Georgia-images\katerina-kerdi-BsURvd0ktFE-unsplash.jpg" class="imagess"
+                                    alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Georgia-images\mostafa-meraji-b0GGTup0Ar4-unsplash.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Georgia-images\mostafa-meraji-b0GGTup0Ar4-unsplash.jpg" class="imagess"
+                                    alt="...">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -446,21 +457,22 @@
                         <div class="tour-features">
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
-                        <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 1785</span><span class="price-final">AED
+                        <div class="tour-price"> 
+                            Starting Price: <span class="price-original price-amount" data-aed="1785">AED 1785</span><span class="price-final price-amount" data-aed="1685">AED
                                 1685</span>
                         </div>
                         <div class="tour-buttonss mt-3">
                             <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
                                 Enquire Now
-                            </button> 
-                            <a href="../Georgia-packages-list/Georgia-four.html" class="btn btn-outline-danger w-50">View Details</a>
+                            </button>
+                            <a href="../Georgia-packages-list/Georgia-four.html"
+                                class="btn btn-outline-danger w-50">View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            
+
         </div>
     </div>
 
@@ -497,7 +509,7 @@
     </div>
 
 
-        <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
     </a>
 
@@ -568,6 +580,7 @@
         </footer>
     </footer>
     <script src="../Dubai-Fully-Loaded.js"></script>
+    <script src="../currency.js"></script>
 
 </body>
 

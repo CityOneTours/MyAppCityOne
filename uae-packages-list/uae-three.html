@@ -18,10 +18,19 @@
     <header>
         <!-- Top Bar -->
         <div class="top-bar">
-            <div class="left">
-                <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-                <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
-            </div>
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+          <!-- Working mailto link -->
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
+        </div>
+      </div>
+
             <div class="right">
                 <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
             </div>
@@ -59,6 +68,12 @@
                 <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
                 <a href="../About us.html"><i class="fas fa-info-circle"></i> About</a>
                 <a href="../Contact.html"><i class="fas fa-users"></i> Contact</a>
+
+                <select id="currencySelect">
+                    <option value="AED">AED</option>
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                </select>
             </div>
         </nav>
     </header>
@@ -102,7 +117,7 @@
             <div style="flex: 1;">
                 <div class="space">
                     <h2>UAE 6 Nights</h2>
-                    <h4>AED 4279</h2>
+                    <h4 class="price-final price-amount" data-aed="4279">AED 4279</h2>
 
                 </div>
                 <p>6 Nights | 7 Days </p>
@@ -406,7 +421,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 4599</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="4599">AED 4599</span><span class="price-final price-amount" data-aed="4499">AED
                                 4499</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -458,7 +473,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 2480</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="2480">AED 2480</span><span class="price-final price-amount" data-aed="2380">AED
                                 2380</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -511,7 +526,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 4969</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="4969">AED 4969</span><span class="price-final price-amount" data-aed="4869">AED
                                 4869</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -564,7 +579,7 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 5448</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="5448">AED 5448</span><span class="price-final price-amount" data-aed="5348">AED
                                 5348</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -684,6 +699,7 @@
         </footer>
     </footer>
     <script src="../Dubai-Fully-Loaded.js"></script>
+    <script src="../currency.js"></script>
 
 </body>
 

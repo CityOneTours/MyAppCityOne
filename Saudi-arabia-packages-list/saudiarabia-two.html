@@ -18,10 +18,19 @@
     <header>
         <!-- Top Bar -->
         <div class="top-bar">
-            <div class="left">
-                <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-                <span><i class="fas fa-envelope"></i> info@cityonetours.com</span>
-            </div>
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+          <!-- Working mailto link -->
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
+        </div>
+      </div>
+
             <div class="right">
                 <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
             </div>
@@ -49,16 +58,22 @@
                         <a href="../Themes.html">Luxury Tours</a>
                         <a href="../Themes.html">Honey moon</a>
                         <a href="../Themes.html">Family with Kids</a>
-                         
+
                         <a href="../Themes.html">Family with Kids</a>
-                          
-                           
-                            
+
+
+
                     </div>
                 </div>
                 <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
                 <a href="../About us.html"><i class="fas fa-info-circle"></i> About</a>
                 <a href="../Contact.html"><i class="fas fa-users"></i> Contact</a>
+
+                <select id="currencySelect">
+                    <option value="AED">AED</option>
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                </select>
             </div>
         </nav>
     </header>
@@ -105,7 +120,7 @@
             <div style="flex: 1;">
                 <div class="space">
                     <h2>A Memorable Adventure Across Riyadh</h2>
-                    <h4>AED 2690</h2>
+                    <h4 class="price-final price-amount" data-aed="2690">AED 2690</h2>
 
                 </div>
                 <p>3 Nights | 4 Days </p>
@@ -219,7 +234,8 @@
         <div class="tour-day">
             <div class="tour-icon">3</div>
             <div class="tour-image">
-                <img src="../Saudi-arabia-packages-list\Saudiarabia-images\20230106045445_Us_SaudiGallery3.jpg" alt="Shopping Tour">
+                <img src="../Saudi-arabia-packages-list\Saudiarabia-images\20230106045445_Us_SaudiGallery3.jpg"
+                    alt="Shopping Tour">
             </div>
             <div class="tour-details">
                 <div class="tour-title">Saudi arabia- CITY TOUR</div>
@@ -236,7 +252,8 @@
         <div class="tour-day">
             <div class="tour-icon">4</div>
             <div class="tour-image">
-                <img src="../Saudi-arabia-packages-list\Saudiarabia-images\20230107052216_Pb_SaudiRiyadhIti5.jpg" alt="Shopping Tour">
+                <img src="../Saudi-arabia-packages-list\Saudiarabia-images\20230107052216_Pb_SaudiRiyadhIti5.jpg"
+                    alt="Shopping Tour">
             </div>
             <div class="tour-details">
                 <div class="tour-title">Saudi arabia- CITY TOUR</div>
@@ -322,10 +339,12 @@
                     <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../Saudi-arabia-packages-list/Saudiarabia-images\20230106045414_Us_SaudiGallery.jpg" class="imagess" alt="...">
+                                <img src="../Saudi-arabia-packages-list/Saudiarabia-images\20230106045414_Us_SaudiGallery.jpg"
+                                    class="imagess" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Saudi-arabia-packages-list/Saudiarabia-images\20230106045445_Us_SaudiGallery3 (1).jpg" class="imagess " alt="...">
+                                <img src="../Saudi-arabia-packages-list/Saudiarabia-images\20230106045445_Us_SaudiGallery3 (1).jpg"
+                                    class="imagess " alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="../Saudi-arabia-packages-list/Saudiarabia-images\20230107055235_Pb_SaudiRiyadhGallery5.jpg"
@@ -354,7 +373,8 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 5590</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="5590">AED
+                                5590</span><span class="price-final price-amount" data-aed="5550">AED
                                 5550</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -374,10 +394,12 @@
                     <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../Saudi-arabia-packages-list/Saudiarabia-images\20230106040705_Pb_SaudiIti2.jpg" class="imagess" alt="...">
+                                <img src="../Saudi-arabia-packages-list/Saudiarabia-images\20230106040705_Pb_SaudiIti2.jpg"
+                                    class="imagess" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Saudi-arabia-packages-list/Saudiarabia-images\20230107052216_Pb_SaudiRiyadhIti5.jpg" class="imagess " alt="...">
+                                <img src="../Saudi-arabia-packages-list/Saudiarabia-images\20230107052216_Pb_SaudiRiyadhIti5.jpg"
+                                    class="imagess " alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="../Saudi-arabia-packages-list/Saudiarabia-images\20230107055307_Us_SaudiRiyadhGallery7.jpg"
@@ -405,7 +427,8 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original">AED 3150</span><span class="price-final">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="3150">AED
+                                3150</span><span class="price-final price-amount" data-aed="3130">AED
                                 3130</span>
                         </div>
                         <div class="tour-buttonss mt-3">
@@ -418,13 +441,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
         </div>
     </div>
 
@@ -462,7 +478,7 @@
 
 
 
-        <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
     </a>
 
@@ -533,6 +549,7 @@
         </footer>
     </footer>
     <script src="../Dubai-Fully-Loaded.js"></script>
+    <script src="../currency.js"></script>
 
 </body>
 

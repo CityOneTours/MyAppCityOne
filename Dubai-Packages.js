@@ -95,3 +95,18 @@ backToTop.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const helpBtn = document.querySelector(".help-btn");
+  const helpContainer = document.querySelector(".help-container");
+
+  if (helpBtn && helpContainer) {
+    helpBtn.addEventListener("click", () => {
+      helpContainer.classList.toggle("active");
+    });
+  } else {
+    console.error("help-btn or help-container not found in the DOM");
+  }
+});
