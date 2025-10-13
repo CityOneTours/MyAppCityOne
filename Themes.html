@@ -29,9 +29,32 @@
         </div>
       </div>
       <div class="right">
-        <!-- <span><img src="https://flagcdn.com/in.svg" alt="India Flag"> IND</span> -->
-        <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
-      </div>
+                <span id="enquiryBtn"><i class="fas fa-envelope"></i> Enquiry now</span>
+            </div>
+
+            <!-- Popup Modal -->
+            <div id="enquiryModal" class="modal">
+                <div class="modal-content">
+                    <div class="display-flex">
+                        <h2 class="text-colour">Enquiry Form</h2>
+                        <span class="close">&times;</span>
+
+                    </div>
+
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" placeholder="Your Phone" required>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
     </div>
 
     <!-- Main Nav -->
@@ -59,7 +82,8 @@
 
           </div>
         </div>
-        <a href="Visa.html"><i class="fas fa-passport"></i> Visa</a>
+                <a href="Visa.html"><i class="fas fa-passport"></i> Visa</a>
+        <a href="Hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
         <a href="About us.html"><i class="fas fa-info-circle"></i> About</a>
         <a href="Contact.html"><i class="fas fa-users"></i> Contact</a>
         <div class="currency-switcher">
@@ -185,7 +209,7 @@
     ">&times;</span>
 
       <h2>Let Us Plan Your Trip</h2>
-      <p>Our team will contact you shortly to plan your trip.</p>
+      <p>Our team will Contact you shortly to plan your trip.</p>
 
       <input type="text" id="userName" placeholder="First name" required />
       <input type="tel" id="userPhone" placeholder="Enter your 10 digit Mobile number" required />
@@ -199,7 +223,7 @@
       <span class="close-btn" onclick="closePopup()">×</span>
       <div class="form-left">
         <h2>One Step Closer to Your Dream Trip</h2>
-        <p>Complete the form and one of our travel specialists will contact you with the best options tailored to your
+        <p>Complete the form and one of our travel specialists will Contact you with the best options tailored to your
           needs.</p>
         <form onsubmit="submitForm(event)">
           <label>Name</label>
@@ -294,8 +318,8 @@
         </div>
 
         <div class="footer-box">
-          <h5 class="footer-title">CONTACT</h5>
-          <ul class="footer-contact">
+          <h5 class="footer-title">Contact</h5>
+          <ul class="footer-Contact">
             <li><i class="fas fa-home"></i>Executive Heights - 702 - Barsha Heights - Dubai - United Arab
               Emirates</li>
             <li><i class="fas fa-envelope"></i> info@cityonetours.com</li>

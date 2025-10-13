@@ -32,14 +32,37 @@
       </div>
 
       <div class="right">
-        <!-- <span><img src="https://flagcdn.com/in.svg" alt="India Flag"> IND</span> -->
-        <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
+        <span id="enquiryBtn"><i class="fas fa-envelope"></i> Enquiry now</span>
+      </div>
+
+      <!-- Popup Modal -->
+      <div id="enquiryModal" class="modal">
+        <div class="modal-content">
+          <div class="display-flex">
+            <h2 class="text-colour">Enquiry Form</h2>
+            <span class="close">&times;</span>
+
+          </div>
+
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="Your Phone" required>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
 
     <!-- Main Nav -->
     <nav class="navbar">
-      <div class="logo"><img src="images/image 8916.png" alt="" class="logo"></div>
+      <div class="logo"><img src="images/CT1 logo High resolution.png" alt="" class="logo"></div>
       </div>
 
       <div class="menu-btn" onclick="toggleMenu()">
@@ -66,6 +89,9 @@
           </div>
         </div>
         <a href="Visa.html"><i class="fas fa-passport"></i> Visa</a>
+        <a href="Hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
+        <a href="Hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
+
         <a href="About us.html"><i class="fas fa-info-circle"></i> About</a>
         <a href="Contact.html"><i class="fas fa-users"></i> Contact</a>
 
@@ -98,7 +124,7 @@
           <div class="tab" onclick="window.location.href='Destination.html'">Destinations</div>
           <div class="tab" onclick="window.location.href='Hotdeal.html'">Hot Deal</div>
           <div class="tab" onclick="window.location.href='Visa.html'">Visa</div>
-          <div class="tab" onclick="window.location.href='flight.html'">Hotel </div>
+          <div class="tab" onclick="window.location.href='Hotels.html'">Hotel </div>
           <div class="tab" onclick="window.location.href='flight.html'">Flight</div>
         </div>
 
@@ -319,7 +345,7 @@
           <a href="japan-packages.html" class="country-card">
 
             <img src="Japan-images\Depositphotos_8607019_L.jpg" alt="Cappadocia" />
-            <h4>japan</h4>
+            <h4>Japan</h4>
             <p>100+ Tours </p>
           </a>
         </div>
@@ -337,7 +363,7 @@
           <a href="croatia-packages.html" class="country-card">
 
             <img src="croatia-packages-list\Croatia-images\20220619084845_Px_CroatiaListing.jpg" alt="Cappadocia" />
-            <h4>croatia</h4>
+            <h4>Groatia</h4>
             <p>100+ Tours</p>
           </a>
         </div>
@@ -345,7 +371,7 @@
           <a href="greece-packages.html" class="country-card">
 
             <img src="Greece-packages-list\Greece-images\20220620045024_Pb_GreeceGallery.jpg" alt="Cappadocia" />
-            <h4>greece</h4>
+            <h4>Greece</h4>
             <p>100+ Tours</p>
           </a>
         </div>
@@ -353,7 +379,7 @@
           <a href="prague-packages.html" class="country-card">
 
             <img src="Prague-packages-list\Prague-images\Depositphotos_47797237_L.jpg" alt="Cappadocia" />
-            <h4>prague</h4>
+            <h4>Prague</h4>
             <p>100+ Tours</p>
           </a>
         </div>
@@ -361,7 +387,7 @@
           <a href="switzerland-packages.html" class="country-card">
 
             <img src="switzerland-packages-list\Switzerland-images\Depositphotos_58674555_XL.jpg" alt="Cappadocia" />
-            <h4>switzerland</h4>
+            <h4>Switzerland</h4>
             <p>400+ Tours</p>
           </a>
         </div>
@@ -370,7 +396,7 @@
 
             <img src="scandinavia-packages-list\Scandinavia-images\20220919115721_Us_ScandinaviListing.jpg"
               alt="Cappadocia" />
-            <h4>scandinavia</h4>
+            <h4>Scandinavia</h4>
             <p>100+ Tours</p>
           </a>
         </div>
@@ -379,7 +405,7 @@
 
             <img src="seychelles-packages-list\Seychelles-images\20241114082544_Seychellesitineraries3.jpg"
               alt="Cappadocia" />
-            <h4>seychelles</h4>
+            <h4>Seychelles</h4>
             <p>100+ Tours</p>
           </a>
         </div>
@@ -387,7 +413,7 @@
           <a href="southafrica-packages.html" class="country-card">
 
             <img src="Southafrica-packages-list\Southafrica-images\Depositphotos_13890331_L.jpg" alt="Cappadocia" />
-            <h4>south africa</h4>
+            <h4>South africa</h4>
             <p>200+ Tours</p>
           </a>
         </div>
@@ -396,7 +422,7 @@
 
             <img src="Saudi-arabia-packages-list\Saudiarabia-images\20230107052216_Pb_SaudiRiyadhIti5.jpg"
               alt="Cappadocia" />
-            <h4>saudi arabia</h4>
+            <h4>Saudi arabia</h4>
             <p>100+ Tours</p>
           </a>
         </div>
@@ -468,9 +494,10 @@
       <div class="certificates-text">
         <h2>CERTIFICATES</h2>
         <p>
-          City One Tourism and Travel is a proud recipient of 2018 Certificate of Excellence
-          from the world’s largest travel guidance platform – TripAdvisor and also became a
-          nominee for 2017 World’s Travel Awards.
+
+          City One Tourism & Travel — proud winner of the Tripadvisor Certificate of Excellence and nominee for the
+          World Travel Awards. Trusted by global travelers for Dubai city tours, desert safaris, luxury cruises, and
+          holiday packages that deliver unforgettable experiences.
         </p>
       </div>
 
@@ -478,17 +505,16 @@
       <div class="certificates-scroll">
         <div class="scroll-track">
           <!-- Add your 10 images -->
-          <img src="images/award 1 .jpg" alt="Award 1">
-          <img src="images/award 2 .jpg" alt="Award 2">
-          <img src="images/award 3 .jpg" alt="Award 3">
-          <img src="images/award 4 .jpg" alt="Award 4">
-          <img src="images/award 5 .jpg" alt="Award 5">
-          <img src="images/award 6 .jpg" alt="Award 6">
+          <img src="images/award-12.jpg" alt="Award 1">
+          <img src="images/award-13.jpg" alt="Award 2">
+          <img src="images/award-15.jpg" alt="Award 3">
+          <img src="images/award-16.jpg" alt="Award 4">
+          <img src="images/award-17.jpg" alt="Award 5">
+          <img src="images/award-19.jpg" alt="Award 6">
           <img src="images/award 7 .jpg" alt="Award 7">
           <img src="images/award 8 .jpg" alt="Award 8">
           <img src="images/award 9 .jpg" alt="Award 9">
           <img src="images/award 10 .jpg" alt="Award 10">
-          <!-- Duplicate for seamless loop -->
           <img src="Vietnam-images/Depositphotos_184422954_L.jpg" alt="Award 1">
           <img src="Vietnam-images/Depositphotos_184422954_L.jpg" alt="Award 2">
           <img src="Vietnam-images/Depositphotos_184422954_L.jpg" alt="Award 3">
@@ -794,8 +820,8 @@
         </div>
 
         <div class="footer-box">
-          <h5 class="footer-title">CONTACT</h5>
-          <ul class="footer-contact">
+          <h5 class="footer-title">Contact</h5>
+          <ul class="footer-Contact">
             <li><i class="fas fa-home"></i>Executive Heights - 702 - Barsha Heights - Dubai - United Arab Emirates</li>
             <li><i class="fas fa-envelope"></i> info@cityonetours.com</li>
             <li><i class="fas fa-phone"></i>+971 4252 5516</li>

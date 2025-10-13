@@ -57,7 +57,7 @@ const destinations = [
   {
     name: "Kenya",
     rating: "4.2",
-    image: "Kenya-images/Depositphotos_17643137_L.jpg",
+    image: "Kenya-images/Depositphotos_189284048_L.jpg",
     url: "kenya-packages.html"
   },
   {
@@ -173,7 +173,7 @@ const destinations = [
   //   url: "Armenia-packages.html"
   // },
   {
-    name: "japan",
+    name: "Japan",
     rating: "4.9",
     image: "Japan-images/Depositphotos_8607019_L.jpg",
     url: "japan-packages.html"
@@ -197,19 +197,19 @@ const destinations = [
   //   url: "Azerbaijan-packages.html"
   // },
   {
-    name: "croatia",
+    name: "Croatia",
     rating: "4.7",
     image: "croatia-packages-list/Croatia-images/20220620022236_Pb_CroatiaIti11.jpg",
     url: "croatia-packages.html"
   },
   {
-    name: "greece",
+    name: "Greece",
     rating: "4.6",
     image: "Greece-packages-list/Greece-images/20220620074417_Pb_GreeceIti8.jpg",
     url: "greece-packages.html"
   },
   {
-    name: "prague",
+    name: "Prague",
     rating: "4.1",
     image: "Prague-packages-list/Prague-images/Depositphotos_47797195_L.jpg",
     url: "prague-packages.html"
@@ -220,38 +220,38 @@ const destinations = [
   //   image: "https://wallpapercave.com/wp/wp2292388.jpg",
   //   url: "morocco-packages.html"
   // },
+  // {
+  //   name: "United arab emirates",
+  //   rating: "4.9",
+  //   image: "Dubai Images/city-3161105_1920.jpg",
+  //   url: "uae-packages.html"
+  // },
   {
-    name: "united arab emirates",
-    rating: "4.9",
-    image: "Dubai Images/city-3161105_1920.jpg",
-    url: "uae-packages.html"
-  },
-  {
-    name: "switzerland",
+    name: "Switzerland",
     rating: "4.7",
     image: "switzerland-packages-list/Switzerland-images/Depositphotos_213220710_L.jpg",
     url: "switzerland-packages.html"
   },
   {
-    name: "scandinavia",
+    name: "Scandinavia",
     rating: "4.5",
     image: "scandinavia-packages-list/Scandinavia-images/20220921142249_Us_Scandinaviaiti.jpg",
     url: "scandinavia-packages.html"
   },
   {
-    name: "seychelles",
+    name: "Seychelles",
     rating: "4.6",
     image: "seychelles-packages-list/Seychelles-images/20241114083248_SEYCHELLESgalary3.jpg",
     url: "seychelles-packages.html"
   },
   {
-    name: "south africa",
+    name: "South africa",
     rating: "4.1",
     image: "Southafrica-packages-list/Southafrica-images/Depositphotos_13890331_L.jpg",
     url: "southafrica-packages.html"
   },
   {
-    name: "saudi arabia",
+    name: "Saudi arabia",
     rating: "4.9",
     image: "Saudi-arabia-packages-list/Saudiarabia-images/20230107051803_Pb_SaudiRiyadhIti4.jpg",
     url: "saudiarabia-packages.html"
@@ -320,3 +320,13 @@ backToTop.addEventListener("click", () => {
 document.querySelector(".help-btn").addEventListener("click", function () {
   document.querySelector(".help-container").classList.toggle("active");
 });
+
+
+
+const modal = document.getElementById('enquiryModal');
+const btn = document.getElementById('enquiryBtn');
+const close = document.querySelector('.close');
+
+btn.onclick = () => modal.style.display = 'flex';
+close.onclick = () => modal.style.display = 'none';
+window.onclick = (e) => { if (e.target === modal) modal.style.display = 'none'; };

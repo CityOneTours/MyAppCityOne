@@ -31,7 +31,31 @@
       </div>
 
             <div class="right">
-                <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
+                <span id="enquiryBtn"><i class="fas fa-envelope"></i> Enquiry now</span>
+            </div>
+
+            <!-- Popup Modal -->
+            <div id="enquiryModal" class="modal">
+                <div class="modal-content">
+                    <div class="display-flex">
+                        <h2 class="text-colour">Enquiry Form</h2>
+                        <span class="close">&times;</span>
+
+                    </div>
+
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" placeholder="Your Phone" required>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -61,7 +85,8 @@
 
                     </div>
                 </div>
-                                <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
+                                        <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
+        <a href="../Hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
                 <a href="../About us.html"><i class="fas fa-info-circle"></i> About</a>
                 <a href="../Contact.html"><i class="fas fa-users"></i> Contact</a>
             </div>
@@ -187,7 +212,7 @@
                     alt="Flight Arrival">
             </div>
             <div class="tour-details">
-                <div class="tour-title">DUBAI CITY TOUR & LA PERLE SHOW - Dubai</div>
+                <div class="tour-title">Dubai city tour & LA PERLE SHOW - Dubai</div>
                 <ul class="tour-info">
                     <li>Arrival at Dubai International Airport.</li>
                     <li>Transfer to the hotel.</li>
@@ -204,10 +229,10 @@
             <div class="tour-icon">2</div>
             <div class="tour-image">
                 <img src="https://www.setaswall.com/wp-content/uploads/2017/03/Burj-Al-Arab-Dubai-UAE-Wallpaper-1600x1200.jpg"
-                    alt="City Tour">
+                    alt="city tour">
             </div>
             <div class="tour-details">
-                <div class="tour-title">DUBAI CITY TOUR & LA PERLE SHOW - Dubai</div>
+                <div class="tour-title">Dubai city tour & LA PERLE SHOW - Dubai</div>
                 <ul class="tour-info">
                     <li>City sightseeing of Dubai.</li>
                     <li>Burj Khalifa, Atlantis, Marina, etc.</li>
@@ -228,7 +253,7 @@
                 <img src="https://images.hdqwalls.com/wallpapers/dubai-popular-hotel-4k.jpg" alt="Shopping Tour">
             </div>
             <div class="tour-details">
-                <div class="tour-title">DUBAI CITY TOUR & LA PERLE SHOW - Dubai</div>
+                <div class="tour-title">Dubai city tour & LA PERLE SHOW - Dubai</div>
                 <ul class="tour-info">
                     <li>Shopping tour and Dubai malls.</li>
                     <li>Souks and boutiques.</li>
@@ -246,7 +271,7 @@
                 <img src="https://images.hdqwalls.com/wallpapers/dubai-popular-hotel-4k.jpg" alt="Shopping Tour">
             </div>
             <div class="tour-details">
-                <div class="tour-title">DUBAI CITY TOUR & LA PERLE SHOW - Dubai</div>
+                <div class="tour-title">Dubai city tour & LA PERLE SHOW - Dubai</div>
                 <ul class="tour-info">
                     <li>Shopping tour and Dubai malls.</li>
                     <li>Souks and boutiques.</li>
@@ -264,7 +289,7 @@
                 <img src="https://images.hdqwalls.com/wallpapers/dubai-popular-hotel-4k.jpg" alt="Shopping Tour">
             </div>
             <div class="tour-details">
-                <div class="tour-title">DUBAI CITY TOUR & LA PERLE SHOW - Dubai</div>
+                <div class="tour-title">Dubai city tour & LA PERLE SHOW - Dubai</div>
                 <ul class="tour-info">
                     <li>Shopping tour and Dubai malls.</li>
                     <li>Souks and boutiques.</li>
@@ -627,9 +652,23 @@
 
 
 
-    <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
+     <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
     </a>
+    <div class="mobile-bottom-nav">
+        <a href="/" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="https://wa.me/97143922959" target="_blank" class="nav-item">
+            <i class="fab fa-whatsapp"></i>
+            <span>Whatsapp</span>
+        </a>
+        <a href="tel:+97143922959" class="nav-item">
+            <i class="fas fa-phone"></i>
+            <span>Contact</span>
+        </a>
+    </div>
 
     <button id="backToTop">↑</button>
 
@@ -681,8 +720,8 @@
                 </div>
 
                 <div class="footer-box">
-                    <h5 class="footer-title">CONTACT</h5>
-                    <ul class="footer-contact">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-Contact">
                         <li><i class="fas fa-home"></i>Executive Heights - 702 - Barsha Heights - Dubai - United Arab
                             Emirates</li>
                         <li><i class="fas fa-envelope"></i> info@cityonetours.com</li>

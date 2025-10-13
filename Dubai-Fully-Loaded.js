@@ -53,3 +53,27 @@ backToTop.addEventListener("click", () => {
 document.querySelector(".help-btn").addEventListener("click", function () {
   document.querySelector(".help-container").classList.toggle("active");
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal   = document.getElementById('enquiryBox');    // popup container
+  const trigger = document.getElementById('enquiryOpen');   // button to open
+  const closeBtn = document.querySelector('.popup-close');  // X icon
+
+  // Open modal
+  trigger.addEventListener('click', () => {
+    modal.style.display = 'flex';
+  });
+
+  // Close modal when clicking the X
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  // Close modal when clicking outside the content
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+});

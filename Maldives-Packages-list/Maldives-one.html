@@ -18,21 +18,45 @@
     <header>
         <!-- Top Bar -->
         <div class="top-bar">
-      <div class="help-container">
-        <button class="help-btn">Help &#9662;</button>
-        <div class="help-dropdown">
-          <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-          <!-- Working mailto link -->
-          <span>
-            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
-              <i class="fas fa-envelope"></i> info@cityonetours.com
-            </a>
-          </span>
-        </div>
-      </div>
+            <div class="help-container">
+                <button class="help-btn">Help &#9662;</button>
+                <div class="help-dropdown">
+                    <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
+                    <!-- Working mailto link -->
+                    <span>
+                        <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+                            <i class="fas fa-envelope"></i> info@cityonetours.com
+                        </a>
+                    </span>
+                </div>
+            </div>
 
             <div class="right">
-                <span><i class="fas fa-user-circle"></i> LOGIN/SIGN UP</span>
+                <span data-bs-toggle="modal" data-bs-target="#enquireModal"><i class="fas fa-envelope"></i> Enquiry now</span>
+            </div>
+
+            <!-- Popup Modal -->
+            <div id="enquiryModal" class="modal">
+                <div class="modal-content">
+                    <div class="display-flex">
+                        <h2 class="text-colour">Enquiry Form</h2>
+                        <span class="close">&times;</span>
+
+                    </div>
+
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" placeholder="Your Phone" required>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -58,14 +82,15 @@
                         <a href="../Themes.html">Luxury Tours</a>
                         <a href="../Themes.html">Honey moon</a>
                         <a href="../Themes.html">Family with Kids</a>
-                         
+
                         <a href="../Themes.html">Family with Kids</a>
-                          
-                           
-                            
+
+
+
                     </div>
                 </div>
-                                <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
+                        <a href="../Visa.html"><i class="fas fa-passport"></i> Visa</a>
+        <a href="../Hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
                 <a href="../About us.html"><i class="fas fa-info-circle"></i> About</a>
                 <a href="../Contact.html"><i class="fas fa-users"></i> Contact</a>
 
@@ -83,11 +108,11 @@
         <div id="carouselDest" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="..\Maldives-images/maldives-666122_1920.jpg"
-                        class="d-block w-100" alt="Destination 1">
+                    <img src="..\Maldives-images/maldives-666122_1920.jpg" class="d-block w-100" alt="Destination 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="..\Maldives-images\Depositphotos_4474251_L (1).jpg" class="d-block w-100" alt="Destination 1">
+                    <img src="..\Maldives-images\Depositphotos_4474251_L (1).jpg" class="d-block w-100"
+                        alt="Destination 1">
                 </div>
                 <div class="carousel-item">
                     <img src="..\Maldives-images\maldives-1532172_1920.jpg" class="d-block w-100" alt="Destination 1">
@@ -117,7 +142,7 @@
         <div class="price-box">
             <div style="flex: 1;">
                 <div class="space">
-                    <h2 >Republic Of Maldives</h2>
+                    <h2>Republic Of Maldives</h2>
                     <h4 class="price-final price-amount" data-aed="6230">AED 6230</h2>
 
                 </div>
@@ -193,11 +218,10 @@
         <div class="tour-day">
             <div class="tour-icon">1</div>
             <div class="tour-image">
-                <img src="..\Maldives-images\Depositphotos_4474251_L (1).jpg"
-                    alt="Flight Arrival">
+                <img src="..\Maldives-images\Depositphotos_4474251_L (1).jpg" alt="Flight Arrival">
             </div>
             <div class="tour-details">
-                <div class="tour-title">Maldives CITY TOUR </div>
+                <div class="tour-title">Maldives city tour </div>
                 <ul class="tour-info">
                     <li>Arrive at Male Airport</li>
                     <li>Transfer to the hotel.</li>
@@ -213,13 +237,12 @@
         <div class="tour-day">
             <div class="tour-icon">2</div>
             <div class="tour-image">
-                <img src="..\Maldives-images\Depositphotos_17822859_L.jpg"
-                    alt="City Tour">
+                <img src="..\Maldives-images\Depositphotos_17822859_L.jpg" alt="city tour">
             </div>
             <div class="tour-details">
-                <div class="tour-title">Maldives CITY TOUR</div>
+                <div class="tour-title">Maldives city tour</div>
                 <ul class="tour-info">
-                    <li>Maldives CITY TOUR </li>
+                    <li>Maldives city tour </li>
 
                 </ul>
                 <div class="tour-buttons">
@@ -236,9 +259,9 @@
                 <img src="..\Maldives-images\Depositphotos_32883253_L.jpg" alt="Shopping Tour">
             </div>
             <div class="tour-details">
-                <div class="tour-title">Maldives CITY TOUR</div>
+                <div class="tour-title">Maldives city tour</div>
                 <ul class="tour-info">
-                    <li>Maldives City Tour</li>
+                    <li>Maldives city tour</li>
 
                 </ul>
                 <div class="tour-buttons">
@@ -253,7 +276,7 @@
                 <img src="..\Maldives-images\beach-hut-237489_1920.jpg" alt="Shopping Tour">
             </div>
             <div class="tour-details">
-                <div class="tour-title">Maldives CITY TOUR</div>
+                <div class="tour-title">Maldives city tour</div>
                 <ul class="tour-info">
                     <li>Maldives</li>
 
@@ -336,8 +359,7 @@
                                 <img src="../Maldives-images\maldives-3220702_1920.jpg" class="imagess " alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Maldives-images\maldives-1532172_1920.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Maldives-images\maldives-1532172_1920.jpg" class="imagess" alt="...">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -361,14 +383,16 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original price-amount" data-aed="7780">AED 7780</span><span class="price-final price-amount" data-aed="7680">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="7780">AED
+                                7780</span><span class="price-final price-amount" data-aed="7680">AED
                                 7680</span>
                         </div>
                         <div class="tour-buttonss mt-3">
                             <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
                                 Enquire Now
                             </button>
-                            <a href="../Maldives-Packages-list/Maldives-one.html" class="btn btn-outline-danger w-50">View Details</a>
+                            <a href="../Maldives-Packages-list/Maldives-one.html"
+                                class="btn btn-outline-danger w-50">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -383,12 +407,10 @@
                                 <img src="../Maldives-images/beach-hut-237489_1920.jpg" class="imagess" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Maldives-images/Depositphotos_9186147_L.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Maldives-images/Depositphotos_9186147_L.jpg" class="imagess" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Maldives-images/Depositphotos_17822859_L.jpg"
-                                    class="imagess" alt="...">
+                                <img src="../Maldives-images/Depositphotos_17822859_L.jpg" class="imagess" alt="...">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -412,21 +434,23 @@
                             🏨 3*/4*/5* Hotels &nbsp;&nbsp; 🏞️ Sightseeing &nbsp;&nbsp; 🍽️ Breakfast
                         </div>
                         <div class="tour-price">
-                            Starting Price: <span class="price-original price-amount" data-aed="2765">AED 2765</span><span class="price-final price-amount" data-aed="2655">AED
+                            Starting Price: <span class="price-original price-amount" data-aed="2765">AED
+                                2765</span><span class="price-final price-amount" data-aed="2655">AED
                                 2655</span>
                         </div>
                         <div class="tour-buttonss mt-3">
                             <button class="btn btn-danger w-50" data-bs-toggle="modal" data-bs-target="#enquireModal">
                                 Enquire Now
-                            </button> 
-                            <a href="../Maldives-Packages-list/Maldives-three.html" class="btn btn-outline-danger w-50">View Details</a>
+                            </button>
+                            <a href="../Maldives-Packages-list/Maldives-three.html"
+                                class="btn btn-outline-danger w-50">View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            
+
         </div>
     </div>
 
@@ -463,9 +487,23 @@
     </div>
 
 
-        <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
     </a>
+    <div class="mobile-bottom-nav">
+        <a href="/" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="https://wa.me/97143922959" target="_blank" class="nav-item">
+            <i class="fab fa-whatsapp"></i>
+            <span>Whatsapp</span>
+        </a>
+        <a href="tel:+97143922959" class="nav-item">
+            <i class="fas fa-phone"></i>
+            <span>Contact</span>
+        </a>
+    </div>
 
     <button id="backToTop">↑</button>
 
@@ -517,8 +555,8 @@
                 </div>
 
                 <div class="footer-box">
-                    <h5 class="footer-title">CONTACT</h5>
-                    <ul class="footer-contact">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-Contact">
                         <li><i class="fas fa-home"></i>Executive Heights - 702 - Barsha Heights - Dubai - United Arab
                             Emirates</li>
                         <li><i class="fas fa-envelope"></i> info@cityonetours.com</li>
@@ -534,7 +572,7 @@
         </footer>
     </footer>
     <script src="../Dubai-Fully-Loaded.js"></script>
-        <script src="../currency.js"></script>
+    <script src="../currency.js"></script>
 
 
 </body>

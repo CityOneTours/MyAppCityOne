@@ -33,7 +33,7 @@ document.getElementById('bookingModal').addEventListener('click', function (e) {
 // Form submission handler
 document.getElementById('bookingForm').addEventListener('submit', function (e) {
     e.preventDefault();
-    alert('Form submitted! Our travel specialist will contact you soon.');
+    alert('Form submitted! Our travel specialist will Contact you soon.');
     closeModal();
 });
 
@@ -147,3 +147,29 @@ backToTop.addEventListener("click", () => {
 document.querySelector(".help-btn").addEventListener("click", function () {
   document.querySelector(".help-container").classList.toggle("active");
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal   = document.getElementById('enquiryBox');    // popup container
+  const trigger = document.getElementById('enquiryOpen');   // button to open
+  const closeBtn = document.querySelector('.popup-close');  // X icon
+
+  // Open modal
+  trigger.addEventListener('click', () => {
+    modal.style.display = 'flex';
+  });
+
+  // Close modal when clicking the X
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  // Close modal when clicking outside the content
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+});
+

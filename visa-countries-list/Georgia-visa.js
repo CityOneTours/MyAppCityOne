@@ -1,4 +1,4 @@
- function toggleMenu() {
+function toggleMenu() {
   const nav = document.getElementById("navLinks");
   nav.classList.toggle("active");
 }
@@ -7,7 +7,6 @@ const scrollContainer = document.getElementById('scrollContainer');
 
 const counters = document.querySelectorAll('.stat-number');
 let hasCounted = false;
-
 const backToTop = document.getElementById("backToTop");
 
 // Show button when scrolling down
@@ -26,3 +25,17 @@ backToTop.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
+
+
+document.querySelector(".help-btn").addEventListener("click", function () {
+  document.querySelector(".help-container").classList.toggle("active");
+});
+
+const modal = document.getElementById('enquiryModal');
+const btn = document.getElementById('enquiryBtn');
+const close = document.querySelector('.close');
+
+btn.onclick = () => modal.style.display = 'flex';
+close.onclick = () => modal.style.display = 'none';
+window.onclick = (e) => { if (e.target === modal) modal.style.display = 'none'; };
