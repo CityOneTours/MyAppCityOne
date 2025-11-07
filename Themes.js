@@ -95,7 +95,7 @@ function renderCards(data) {
     container.innerHTML += `
       <a href="${pkg.link}" class="card-link" style="text-decoration: none; color: inherit;">
         <div class="card">
-          <img src="${pkg.img}" alt="${pkg.title}" />
+          <img src="${pkg.img}" alt="${pkg.title}" loading="lazy"/>
           <div class="card-body">
             <h3>${pkg.title}</h3>
             <div class="tags">

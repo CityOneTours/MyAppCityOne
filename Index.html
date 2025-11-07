@@ -16,13 +16,11 @@
 
 <body>
   <header>
-    <!-- Top Bar -->
     <div class="top-bar">
       <div class="help-container">
         <button class="help-btn">Help &#9662;</button>
         <div class="help-dropdown">
           <span><i class="fas fa-phone"></i> +971 42 52 5516</span>
-          <!-- Working mailto link -->
           <span>
             <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
               <i class="fas fa-envelope"></i> info@cityonetours.com
@@ -30,45 +28,33 @@
           </span>
         </div>
       </div>
-
       <div class="right">
         <span id="enquiryBtn"><i class="fas fa-envelope"></i> Enquiry now</span>
       </div>
-
-      <!-- Popup Modal -->
       <div id="enquiryModal" class="modal">
         <div class="modal-content">
           <div class="display-flex">
             <h2 class="text-colour">Enquiry Form</h2>
             <span class="close">&times;</span>
-
           </div>
-
           <form>
             <label for="name">Name</label>
             <input type="text" id="name" placeholder="Your Name" required>
-
             <label for="email">Email</label>
             <input type="email" id="email" placeholder="Your Email" required>
-
             <label for="phone">Phone</label>
             <input type="tel" id="phone" placeholder="Your Phone" required>
-
             <button type="submit">Submit</button>
           </form>
         </div>
       </div>
     </div>
-
-    <!-- Main Nav -->
     <nav class="navbar">
-      <div class="logo"><img src="images/CT1 logo High resolution.png" alt="" class="logo"></div>
+      <div class="logo"><img src="images/CT1 logo High resolution.png" alt="" class="logo" loading="lazy"></div>
       </div>
-
       <div class="menu-btn" onclick="toggleMenu()">
         <i class="fas fa-bars"></i>
       </div>
-
       <div class="nav-links" id="navLinks">
         <a href="Destination.html"><i class="fas fa-search-location"></i> Destination</a>
         <a href="Hotdeal.html"><i class="fas fa-suitcase-rolling"></i> Hot Deal</a>
@@ -91,35 +77,30 @@
         <a href="Visa.html"><i class="fas fa-passport"></i> Visa</a>
         <a href="Hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
         <a href="Hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
-
         <a href="About us.html"><i class="fas fa-info-circle"></i> About</a>
         <a href="Contact.html"><i class="fas fa-users"></i> Contact</a>
-
         <select id="currencySelect">
           <option value="AED">AED</option>
           <option value="INR">INR</option>
           <option value="USD">USD</option>
         </select>
-
-
       </div>
     </nav>
   </header>
   <section class="hero-section">
     <div class="hero">
       <div class="carousel-slide">
-        <img src="Dubai Images\dubai-3720069_1920.jpg" alt="Dubai Burj Al Arab" />
+        <img src="images/Home image/dubai-3720069_1920.jpg" alt="Dubai Burj Al Arab" loading="lazy" />
       </div>
       <div class="carousel-slide active">
-        <img src="Armenia-images\1.jpeg" alt="Dubai Burj Khalifa" />
+        <img src="images/Home image/1.jpg" alt="Dubai Burj Khalifa" loading="lazy" />
       </div>
       <div class="carousel-slide">
-        <img src="Thailand-images\Depositphotos_86940690_L.jpg" alt="Dubai Marina" />
+        <img src="images/Home image/Depositphotos_86940690_L.jpg" alt="Dubai Marina" loading="lazy" />
       </div>
       <div class="content">
         <h1 class="welcome">WELCOME TO CITY ONE TOURISM & TRAVEL</h1>
         <p class="ptag">Discover. Explore. Experience the World with Us.</p>
-
         <div class="tabs">
           <div class="tab" onclick="window.location.href='Destination.html'">Destinations</div>
           <div class="tab" onclick="window.location.href='Hotdeal.html'">Hot Deal</div>
@@ -127,26 +108,10 @@
           <div class="tab" onclick="window.location.href='Hotels.html'">Hotel </div>
           <div class="tab" onclick="window.location.href='flight.html'">Flight</div>
         </div>
-
-        <!-- <div class="search-box">
-          <input type="text" id="destinationInput" placeholder="Enter destinations" />
-          <select id="themeSelect">
-            <option value="">Select theme</option>
-            <option value="adventure">Adventure</option>
-            <option value="honeymoon">Honey Moon</option>
-            <option value="luxury">Luxury</option>
-            <option value="safari">Family with kids</option>
-          </select>
-          <input type="date" id="dateInput" />
-          <button onclick="handleSearch()">Search</button>
-        </div> -->
-
-
         <div class="search-box">
           <input type="text" id="destinationInput" placeholder="Enter destination" onkeyup="filterCountries()"
             onclick="showList()" />
           <div id="countryList"></div>
-
           <select id="themeSelect">
             <option value="">Select theme</option>
             <option value="adventure">Adventure</option>
@@ -154,17 +119,14 @@
             <option value="luxury">Luxury</option>
             <option value="family">Family with kids</option>
           </select>
-
           <input type="date" id="dateInput" />
           <button onclick="handleSearch()">Search</button>
         </div>
-
       </div>
     </div>
   </section>
-
   <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" loading="lazy" />
   </a>
   <div class="mobile-bottom-nav">
     <a href="/" class="nav-item">
@@ -181,59 +143,48 @@
     </a>
   </div>
   <button id="backToTop">↑</button>
-
-
   <article class="heading">
     <h1>Trending destinations</h1>
   </article>
-
   <section class="hey">
     <div class="scroller-wrapper">
-      <!-- <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button> -->
-
       <div class="country-scroller" id="scrollContainer">
         <a href="Dubai-Packages.html" class="country-card">
-          <img src="Dubai Images/dubai-2057583_1920.jpg" alt="Dubai" />
+          <img src="images/Home image/dubai-2057583_1920.jpg" alt="Dubai" loading="lazy" />
           <h4>Dubai</h4>
           <p>1000+ Tours</p>
         </a>
-
         <div class="country-card">
           <a href="vietnam-packages.html" class="country-card">
-
-            <img src="Vietnam-images\Depositphotos_37768795_L.jpg" alt="Singapore" />
+            <img src="images/Home image/Depositphotos_37768795_L.jpg" alt="Singapore" loading="lazy" />
             <h4>Vietnam</h4>
             <p>400+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Armenia-packages.html" class="country-card">
-
-            <img src="Armenia-images\armenia-3716853_1920.jpg" alt="Rome" />
+            <img src="images/Home image/armenia-3716853_1920.jpg" alt="Rome" loading="lazy" />
             <h4>Armenia</h4>
             <p>700+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Armenia-packages.html" class="country-card">
-
-            <img src="Kenya-images\Depositphotos_3964728_L.jpg" alt="Bali" />
+            <img src="images/Home image/Depositphotos_3964728_L.jpg" alt="Bali" loading="lazy" />
             <h4>Kenya</h4>
             <p>600+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Maldives-packages.html" class="country-card">
-
-            <img src="Maldives-images\Depositphotos_4474251_L (2).jpg" alt="Tokyo" />
+            <img src="images/Home image/Depositphotos_4474251_L (2).jpg" alt="Tokyo" loading="lazy" />
             <h4>Maldives</h4>
             <p>800+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Georgia-packages.html" class="country-card">
-
-            <img src="Georgia-images\9.jpg" alt="Phuket" />
+            <img src="images/Home image/9.jpg" alt="Phuket" loading="lazy" />
             <h4>Georgia</h4>
             <p>900+ Tours</p>
           </a>
@@ -241,102 +192,92 @@
         <div class="country-card">
           <a href="Bali-packages.html" class="country-card">
 
-            <img src="Bali-images\Depositphotos_3587328_L.jpg" alt="Paris" />
+            <img src="images/Home image/Depositphotos_3587328_L.jpg" alt="Paris" loading="lazy" />
             <h4>Bali</h4>
             <p>800+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Azerbaijan-packages.html" class="country-card">
-
-            <img src="Azerbaijan-images\BKU_510_aspect16x9.jpg" alt="Singapore" />
+            <img src="images/Home image/BKU_510_aspect16x9.jpg" alt="Singapore" loading="lazy" />
             <h4>Azerbaijan</h4>
             <p>400+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Turkey-packages.html" class="country-card">
-
-            <img src="Turkey-images\Depositphotos_94663096_L.jpg" alt="Rome" />
+            <img src="images/Home image/Depositphotos_94663096_L.jpg" alt="Rome" loading="lazy" />
             <h4>Turkey</h4>
             <p>400+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="morocco-packages.html" class="country-card">
-
-            <img src="Morocco-images\Depositphotos_25885511_L.jpg" alt="Bali" />
+            <img src="images/Home image/Depositphotos_25885511_L.jpg" alt="Bali" loading="lazy" />
             <h4>Morocco</h4>
             <p>200+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Kazakhstan-packages.html" class="country-card">
-
-            <img src="Kazakhstan-packages-list\Kazakhstan-images\20241104124630_4.jpg" alt="Tokyo" />
+            <img src="images/Home image/20241104124630_4.jpg" alt="Tokyo" loading="lazy" />
             <h4>Kazakhstan</h4>
             <p>600+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Jordan-packages.html" class="country-card">
-
-            <img src="Jordan-packages-list\Jordan-images\20240302100402_Jordaniti2.jpg" alt="Phuket" />
+            <img src="images/Home image/20240302100402_Jordaniti2.jpg" alt="Phuket" loading="lazy" />
             <h4>Jordan</h4>
             <p>500+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Thailand-packages.html" class="country-card">
-            <img src="Thailand-images\Depositphotos_12420435_L.jpg" alt="Cappadocia" />
+            <img src="images/Home image/Depositphotos_12420435_L.jpg" alt="Cappadocia" loading="lazy" />
             <h4>Thailand</h4>
             <p>900+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Srilanka-packages.html" class="country-card">
-            <img src="Srilanka-images\dambulla-2516649_1920.jpg" alt="Paris" />
+            <img src="images/Home image/dambulla-2516649_1920.jpg" alt="Paris" loading="lazy" />
             <h4>Sri Lanka</h4>
             <p>500+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Kazakhstan-packages.html" class="country-card">
-
-            <img src="Kyrgyzstan-packages-list\Kyrgyzstan-images\20250428082756_KyrgyzstannewItinerary8 (1).jpg"
-              alt="Singapore" />
+            <img src="images/Home image/20250428082756_KyrgyzstannewItinerary8 (1).jpg" alt="Singapore"
+              loading="lazy" />
             <h4>Kyrgyzstan</h4>
             <p>400+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Uzbekistan-packages.html" class="country-card">
-
-            <img src="Uzbekistan-packages-list\Uzbekistan-images\20241104105031_Listing4.jpg" alt="Rome" />
+            <img src="images/Home image/20241104124630_4.jpg" alt="Rome" loading="lazy" />
             <h4>Uzbekistan</h4>
             <p>300+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Egypt-packages.html" class="country-card">
-
-            <img src="Egypt-packages-list\Egypt-images\Depositphotos_23268152_L.jpg" alt="Bali" />
+            <img src="images/Home image/Depositphotos_23268152_L.jpg" alt="Bali" loading="lazy" />
             <h4>Egypt</h4>
             <p>400+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Malaysia-packages.html" class="country-card">
-
-            <img src="Malaysia-packages-list\Malaysia-images\Depositphotos_5477401_L.jpg" alt="Tokyo" />
+            <img src="images/Home image/Depositphotos_5477401_L.jpg" alt="Tokyo" loading="lazy" />
             <h4>Malaysia</h4>
             <p>200+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="Singapore-packages.html" class="country-card">
-
-            <img src="Singapore-packages-list\Singapore-images\Depositphotos_312559308_L.jpg" alt="Phuket" />
+            <img src="images/Home image/Depositphotos_312559308_L.jpg" alt="Phuket" loading="lazy" />
             <h4>Singapore</h4>
             <p>300+ Tours</p>
           </a>
@@ -344,17 +285,15 @@
         <div class="country-card">
           <a href="japan-packages.html" class="country-card">
 
-            <img src="Japan-images\Depositphotos_8607019_L.jpg" alt="Cappadocia" />
+            <img src="images/Home image/Depositphotos_8607019_L.jpg" alt="Cappadocia" loading="lazy" />
             <h4>Japan</h4>
             <p>100+ Tours </p>
           </a>
         </div>
-
-
         <div class="country-card">
           <a href="india-packages.html" class="country-card">
 
-            <img src="India-packages-list\India-images\Depositphotos_7932088_L.jpg" alt="Cappadocia" />
+            <img src="images/Home image/Depositphotos_7932088_L.jpg" alt="Cappadocia" loading="lazy" />
             <h4>India</h4>
             <p>200+ Tours</p>
           </a>
@@ -362,15 +301,15 @@
         <div class="country-card">
           <a href="croatia-packages.html" class="country-card">
 
-            <img src="croatia-packages-list\Croatia-images\20220619084845_Px_CroatiaListing.jpg" alt="Cappadocia" />
-            <h4>Groatia</h4>
+            <img src="images/Home image/20220619084845_Px_CroatiaListing.jpg" alt="Cappadocia" loading="lazy" />
+            <h4>Croatia</h4>
             <p>100+ Tours</p>
           </a>
         </div>
         <div class="country-card">
           <a href="greece-packages.html" class="country-card">
 
-            <img src="Greece-packages-list\Greece-images\20220620045024_Pb_GreeceGallery.jpg" alt="Cappadocia" />
+            <img src="images/Home image/20220620045024_Pb_GreeceGallery.jpg" alt="Cappadocia" loading="lazy" />
             <h4>Greece</h4>
             <p>100+ Tours</p>
           </a>
@@ -378,7 +317,7 @@
         <div class="country-card">
           <a href="prague-packages.html" class="country-card">
 
-            <img src="Prague-packages-list\Prague-images\Depositphotos_47797237_L.jpg" alt="Cappadocia" />
+            <img src="images/Home image/Depositphotos_47797237_L.jpg" alt="Cappadocia" loading="lazy" />
             <h4>Prague</h4>
             <p>100+ Tours</p>
           </a>
@@ -386,7 +325,7 @@
         <div class="country-card">
           <a href="switzerland-packages.html" class="country-card">
 
-            <img src="switzerland-packages-list\Switzerland-images\Depositphotos_58674555_XL.jpg" alt="Cappadocia" />
+            <img src="images/Home image/Depositphotos_58674555_XL.jpg" alt="Cappadocia" loading="lazy" />
             <h4>Switzerland</h4>
             <p>400+ Tours</p>
           </a>
@@ -394,8 +333,7 @@
         <div class="country-card">
           <a href="scandinavia-packages.html" class="country-card">
 
-            <img src="scandinavia-packages-list\Scandinavia-images\20220919115721_Us_ScandinaviListing.jpg"
-              alt="Cappadocia" />
+            <img src="images/Home image/20220919115721_Us_ScandinaviListing.jpg" alt="Cappadocia" loading="lazy" />
             <h4>Scandinavia</h4>
             <p>100+ Tours</p>
           </a>
@@ -403,8 +341,7 @@
         <div class="country-card">
           <a href="seychelles-packages.html" class="country-card">
 
-            <img src="seychelles-packages-list\Seychelles-images\20241114082544_Seychellesitineraries3.jpg"
-              alt="Cappadocia" />
+            <img src="images/Home image/20241114082544_Seychellesitineraries3.jpg" alt="Cappadocia" loading="lazy" />
             <h4>Seychelles</h4>
             <p>100+ Tours</p>
           </a>
@@ -412,7 +349,7 @@
         <div class="country-card">
           <a href="southafrica-packages.html" class="country-card">
 
-            <img src="Southafrica-packages-list\Southafrica-images\Depositphotos_13890331_L.jpg" alt="Cappadocia" />
+            <img src="images/Home image/Depositphotos_13890331_L.jpg" alt="Cappadocia" loading="lazy" />
             <h4>South africa</h4>
             <p>200+ Tours</p>
           </a>
@@ -420,33 +357,25 @@
         <div class="country-card">
           <a href="saudiarabia-packages.html" class="country-card">
 
-            <img src="Saudi-arabia-packages-list\Saudiarabia-images\20230107052216_Pb_SaudiRiyadhIti5.jpg"
-              alt="Cappadocia" />
+            <img src="images/Home image/20230107052216_Pb_SaudiRiyadhIti5.jpg" alt="Cappadocia" loading="lazy" />
             <h4>Saudi arabia</h4>
             <p>100+ Tours</p>
           </a>
         </div>
       </div>
-
-      <!-- <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button> -->
     </div>
   </section>
-
   <article class="heading" data-aos="fade-up" data-aos-duration="5000">
     <h1>Find Your Perfect Trip Style</h1>
   </article>
-
   <section data-aos="fade-up" data-aos-duration="5000">
-
     <div class="category-buttons">
       <button data-type="adventure" class="active" onclick="filterCards('adventure', event)">Adventure</button>
       <button data-type="luxury" onclick="filterCards('luxury', event)">Luxury</button>
       <button data-type="honeymoon" onclick="filterCards('honeymoon', event)">Honeymoon</button>
       <button data-type="family" onclick="filterCards('family', event)">Family</button>
     </div>
-
     <div class="cards-container" id="cardGrid">
-      <!-- Cards will be injected here -->
     </div>
     <div class="view">
       <button class="viewall" onclick="window.location.href='Themes.html'">
@@ -455,69 +384,26 @@
         <span class="label">View all</span>
       </button>
     </div>
-
   </section>
-  <!-- <article class="heading" data-aos="fade-up" data-aos-duration="5000">
-    <h1>Exclusive Deals You Can’t Miss</h1>
-  </article>
-  <section data-aos="fade-up" data-aos-duration="5000">
-    <div class="banner-row">
-      <div class="banner-card">
-        <img src="images\4ab9fb7f02198784c6feb230f9c15c04.jpg" alt="Card 1">
-      </div>
-      <div class="banner-card">
-        <img src="images\Vietnam final Ok.jpg" alt="Card 2">
-      </div>
-      <div class="banner-card">
-        <img src="images\5930805e-7cf8-40dc-b2f1-ac9ca30f9c09.png"
-          alt="Card 3">
-      </div>
-    </div>
-  </section> -->
-  <!-- <section class="Certificate" data-aos="fade-up" data-aos-duration="5000">
-    <div class="certificates-container">
-      <div class="certificates-text">
-        <h2>CERTIFICATES</h2>
-        <p>City One Tourism and Travel is a proud recipient of 2018 Certificate of Excellence from the world’s largest
-          travel guidance platform – TripAdvisor and also became a nominee for 2017 World’s Travel Awards.</p>
-      </div>
-      <div class="certificates-image">
-        <img src="images/Frame 1707478339.png" alt="Certificates Image" />
-      </div>
-    </div>
-  </section> -->
-
-
   <section class="certificate" data-aos="fade-up" data-aos-duration="5000">
     <div class="certificates-container">
       <!-- Left Text -->
       <div class="certificates-text">
         <h2>CERTIFICATES</h2>
         <p>
-
           City One Tourism & Travel — proud winner of the Tripadvisor Certificate of Excellence and nominee for the
           World Travel Awards. Trusted by global travelers for Dubai city tours, desert safaris, luxury cruises, and
           holiday packages that deliver unforgettable experiences.
         </p>
       </div>
-
-      <!-- Right Scrolling Images -->
       <div class="certificates-scroll">
         <div class="scroll-track">
-          <!-- Add your 10 images -->
-          <img src="images/award-12.jpg" alt="Award 1">
-          <img src="images/award-13.jpg" alt="Award 2">
-          <img src="images/award-15.jpg" alt="Award 3">
-          <img src="images/award-16.jpg" alt="Award 4">
-          <img src="images/award-17.jpg" alt="Award 5">
-          <img src="images/award-19.jpg" alt="Award 6">
-          <img src="images/award 7 .jpg" alt="Award 7">
-          <img src="images/award 8 .jpg" alt="Award 8">
-          <img src="images/award 9 .jpg" alt="Award 9">
-          <img src="images/award 10 .jpg" alt="Award 10">
-          <img src="Vietnam-images/Depositphotos_184422954_L.jpg" alt="Award 1">
-          <img src="Vietnam-images/Depositphotos_184422954_L.jpg" alt="Award 2">
-          <img src="Vietnam-images/Depositphotos_184422954_L.jpg" alt="Award 3">
+          <img src="images/Awards image/20250523_152323 copy.png" alt="Award 1 " loading="lazy">
+          <img src="images/Awards image/20250523_152459 copy.png" alt="Award 2" loading="lazy">
+          <img src="images/Awards image/20250523_152556 copy.png" alt="Award 3" loading="lazy">
+          <img src="images/Awards image/20250523_152618 11.png" alt="Award 4" loading="lazy">
+          <img src="images/Awards image/20250523_152817 copy.png" alt="Award 5" loading="lazy">
+          <img src="images/Awards image/20250523_152929 copy.png" alt="Award 6" loading="lazy">
         </div>
       </div>
     </div>
@@ -528,21 +414,10 @@
   <section data-aos="fade-up" data-aos-duration="5000">
     <div class="month-buttons" id="monthButtons"></div>
     <div class="card-container" id="cardContainer"></div>
-    <!-- <div class="view">
-      <button class="viewall">
-        <span class="transition"></span>
-        <span class="gradient"></span>
-        <span class="label">View all</span>
-      </button>
-
-    </div> -->
   </section>
-
-
-
   <section class="visa-wrapper" data-aos="fade-up" data-aos-duration="5000">
     <div class="carouselll">
-      <img src="images/image 8965.png" alt="Background" />
+      <img src="images/image 8965.png" alt="Background" loading="lazy" />
     </div>
     <h2 class="visa-title">Visa Services</h2>
 
@@ -562,7 +437,7 @@
   <section class="visaaa" data-aos="fade-up" data-aos-duration="5000">
     <div class="stats-section" id="statsSection">
       <div class="stats-bg">
-        <img src="images/Background.png" alt="Background" />
+        <img src="images/Home image/Background.jpg" alt="Background" loading="lazy" />
       </div>
       <div class="stats-container">
         <div class="stat-item">
@@ -590,52 +465,48 @@
   </article>
   <div class="flag-carousel-container">
     <div class="flag-carousel">
-      <!-- Flag images repeated twice for seamless scroll -->
-      <img src="https://flagcdn.com/w40/us.png" alt="USA" />
-      <img src="https://flagcdn.com/w40/gb.png" alt="UK" />
-      <img src="https://flagcdn.com/w40/au.png" alt="Australia" />
-      <img src="https://flagcdn.com/w40/ae.png" alt="UAE" />
-      <img src="https://flagcdn.com/w40/th.png" alt="Thailand" />
-      <img src="https://flagcdn.com/w40/lk.png" alt="Sri Lanka" />
-      <img src="https://flagcdn.com/w40/sg.png" alt="Singapore" />
-      <img src="https://flagcdn.com/w40/ke.png" alt="Kenya" />
-      <img src="https://flagcdn.com/w40/it.png" alt="Italy" />
-      <img src="https://flagcdn.com/w40/id.png" alt="Indonesia" />
-      <img src="https://flagcdn.com/w40/fr.png" alt="France" />
-      <img src="https://flagcdn.com/w40/eg.png" alt="Egypt" />
-      <img src="https://flagcdn.com/w40/dk.png" alt="Denmark" />
-      <img src="https://flagcdn.com/w40/cz.png" alt="Czech Republic" />
-      <img src="https://flagcdn.com/w40/kh.png" alt="Cambodia" />
-      <img src="https://flagcdn.com/w40/be.png" alt="Belgium" />
-      <img src="https://flagcdn.com/w40/in.png" alt="India" />
-      <img src="https://flagcdn.com/w40/jp.png" alt="Japan" />
-      <img src="https://flagcdn.com/w40/ch.png" alt="Switzerland" />
-      <img src="https://flagcdn.com/w40/za.png" alt="South Africa" />
-
-      <!-- Repeat for seamless loop -->
-      <img src="https://flagcdn.com/w40/us.png" alt="USA" />
-      <img src="https://flagcdn.com/w40/gb.png" alt="UK" />
-      <img src="https://flagcdn.com/w40/au.png" alt="Australia" />
-      <img src="https://flagcdn.com/w40/ae.png" alt="UAE" />
-      <img src="https://flagcdn.com/w40/th.png" alt="Thailand" />
-      <img src="https://flagcdn.com/w40/lk.png" alt="Sri Lanka" />
-      <img src="https://flagcdn.com/w40/sg.png" alt="Singapore" />
-      <img src="https://flagcdn.com/w40/ke.png" alt="Kenya" />
-      <img src="https://flagcdn.com/w40/it.png" alt="Italy" />
-      <img src="https://flagcdn.com/w40/id.png" alt="Indonesia" />
-      <img src="https://flagcdn.com/w40/fr.png" alt="France" />
-      <img src="https://flagcdn.com/w40/eg.png" alt="Egypt" />
-      <img src="https://flagcdn.com/w40/dk.png" alt="Denmark" />
-      <img src="https://flagcdn.com/w40/cz.png" alt="Czech Republic" />
-      <img src="https://flagcdn.com/w40/kh.png" alt="Cambodia" />
-      <img src="https://flagcdn.com/w40/be.png" alt="Belgium" />
-      <img src="https://flagcdn.com/w40/in.png" alt="India" />
-      <img src="https://flagcdn.com/w40/jp.png" alt="Japan" />
-      <img src="https://flagcdn.com/w40/ch.png" alt="Switzerland" />
-      <img src="https://flagcdn.com/w40/za.png" alt="South Africa" />
+      <img src="https://flagcdn.com/w40/us.png" alt="USA" loading="lazy" />
+      <img src="https://flagcdn.com/w40/gb.png" alt="UK" loading="lazy" />
+      <img src="https://flagcdn.com/w40/au.png" alt="Australia" loading="lazy" />
+      <img src="https://flagcdn.com/w40/ae.png" alt="UAE" loading="lazy" />
+      <img src="https://flagcdn.com/w40/th.png" alt="Thailand" loading="lazy" />
+      <img src="https://flagcdn.com/w40/lk.png" alt="Sri Lanka" loading="lazy" />
+      <img src="https://flagcdn.com/w40/sg.png" alt="Singapore" loading="lazy" />
+      <img src="https://flagcdn.com/w40/ke.png" alt="Kenya" loading="lazy" />
+      <img src="https://flagcdn.com/w40/it.png" alt="Italy" loading="lazy" />
+      <img src="https://flagcdn.com/w40/id.png" alt="Indonesia" loading="lazy" />
+      <img src="https://flagcdn.com/w40/fr.png" alt="France" loading="lazy" />
+      <img src="https://flagcdn.com/w40/eg.png" alt="Egypt" loading="lazy" />
+      <img src="https://flagcdn.com/w40/dk.png" alt="Denmark" loading="lazy" />
+      <img src="https://flagcdn.com/w40/cz.png" alt="Czech Republic" loading="lazy" />
+      <img src="https://flagcdn.com/w40/kh.png" alt="Cambodia" loading="lazy" />
+      <img src="https://flagcdn.com/w40/be.png" alt="Belgium" loading="lazy" />
+      <img src="https://flagcdn.com/w40/in.png" alt="India" loading="lazy" />
+      <img src="https://flagcdn.com/w40/jp.png" alt="Japan" loading="lazy" />
+      <img src="https://flagcdn.com/w40/ch.png" alt="Switzerland" loading="lazy" />
+      <img src="https://flagcdn.com/w40/za.png" alt="South Africa" loading="lazy" />
+      <img src="https://flagcdn.com/w40/us.png" alt="USA" loading="lazy" />
+      <img src="https://flagcdn.com/w40/gb.png" alt="UK" loading="lazy" />
+      <img src="https://flagcdn.com/w40/au.png" alt="Australia" loading="lazy" />
+      <img src="https://flagcdn.com/w40/ae.png" alt="UAE" loading="lazy" />
+      <img src="https://flagcdn.com/w40/th.png" alt="Thailand" loading="lazy" />
+      <img src="https://flagcdn.com/w40/lk.png" alt="Sri Lanka" loading="lazy" />
+      <img src="https://flagcdn.com/w40/sg.png" alt="Singapore" loading="lazy" />
+      <img src="https://flagcdn.com/w40/ke.png" alt="Kenya" loading="lazy" />
+      <img src="https://flagcdn.com/w40/it.png" alt="Italy" loading="lazy" />
+      <img src="https://flagcdn.com/w40/id.png" alt="Indonesia" loading="lazy" />
+      <img src="https://flagcdn.com/w40/fr.png" alt="France" loading="lazy" />
+      <img src="https://flagcdn.com/w40/eg.png" alt="Egypt" loading="lazy" />
+      <img src="https://flagcdn.com/w40/dk.png" alt="Denmark" loading="lazy" />
+      <img src="https://flagcdn.com/w40/cz.png" alt="Czech Republic" loading="lazy" />
+      <img src="https://flagcdn.com/w40/kh.png" alt="Cambodia" loading="lazy" />
+      <img src="https://flagcdn.com/w40/be.png" alt="Belgium" loading="lazy" />
+      <img src="https://flagcdn.com/w40/in.png" alt="India" loading="lazy" />
+      <img src="https://flagcdn.com/w40/jp.png" alt="Japan" loading="lazy" />
+      <img src="https://flagcdn.com/w40/ch.png" alt="Switzerland" loading="lazy" />
+      <img src="https://flagcdn.com/w40/za.png" alt="South Africa" loading="lazy" />
     </div>
   </div>
-
   <article class="heading">
     <h1>Customer Review</h1>
   </article>
@@ -645,7 +516,7 @@
         <!-- 9 cards -->
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="Maldives-images/Depositphotos_4474251_L (2).jpg" class="testimonial-img">
+            <img src="images/Home image/Depositphotos_4474251_L (2).jpg" class="testimonial-img" loading="lazy">
             <div class="testimonial-content">
               <h4>Merrouche A</h4>
               <div class="testimonial-stars">★★★★★</div>
@@ -658,7 +529,7 @@
         </div>
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="Bali-images/Depositphotos_8364139_L.jpg" class="testimonial-img">
+            <img src="images/Home image/Depositphotos_8364139_L.jpg" class="testimonial-img" loading="lazy">
             <div class="testimonial-content">
               <h4>noora a</h4>
               <div class="testimonial-stars">★★★★★</div>
@@ -671,7 +542,7 @@
         </div>
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="Vietnam-images/Depositphotos_66882175_L.jpg" class="testimonial-img">
+            <img src="images/Home image/Depositphotos_66882175_L.jpg" class="testimonial-img" loading="lazy">
             <div class="testimonial-content">
               <h4>Simon P</h4>
               <div class="testimonial-stars">★★★★☆</div>
@@ -685,11 +556,9 @@
             </div>
           </div>
         </div>
-
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="switzerland-packages-list/Switzerland-images/Depositphotos_26387041_L.jpg"
-              class="testimonial-img">
+            <img src="images/Home image/Depositphotos_26387041_L.jpg" class="testimonial-img" loading="lazy">
             <div class="testimonial-content">
               <h4>Sunita J</h4>
               <div class="testimonial-stars">★★★ ★</div>
@@ -700,7 +569,7 @@
         </div>
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg" class="testimonial-img">
+            <img src="images/Home image/burj-al-arab-2624317_1920 - Copy.jpg" class="testimonial-img" loading="lazy">
             <div class="testimonial-content">
               <h4>Dina</h4>
               <div class="testimonial-stars">★★★★★</div>
@@ -712,7 +581,7 @@
         </div>
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="Turkey-images/Depositphotos_94663096_L.jpg" class="testimonial-img">
+            <img src="images/Home image/Depositphotos_94663096_L.jpg" class="testimonial-img" loading="lazy">
             <div class="testimonial-content">
               <h4>Amigo_Akbar</h4>
               <div class="testimonial-stars">★★★★☆</div>
@@ -727,7 +596,7 @@
 
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="Maldives-images/Depositphotos_4474251_L (2).jpg" class="testimonial-img">
+            <img src="images/Home image/Depositphotos_4474251_L (2).jpg" class="testimonial-img" loading="lazy">
             <div class="testimonial-content">
               <h4>Selva nizanth S</h4>
               <div class="testimonial-stars">★★★★★</div>
@@ -742,7 +611,7 @@
         </div>
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="Vietnam-images/Depositphotos_66882175_L.jpg" class="testimonial-img">
+            <img src="images/Home image/Depositphotos_66882175_L.jpg" class="testimonial-img" loading="lazy">
             <div class="testimonial-content">
               <h4>DADK2014</h4>
               <div class="testimonial-stars">★★★★☆</div>
@@ -753,8 +622,8 @@
         </div>
         <div class="testimonial-card">
           <div class="testimonial-box">
-            <img src="Kyrgyzstan-packages-list/Kyrgyzstan-images/20230523151501_Pb_KyrgyzstanGallery2.jpg"
-              class="testimonial-img">
+            <img src="images/Home image/Kyrgyzstan-images/20230523151501_Pb_KyrgyzstanGallery2.jpg"
+              class="testimonial-img" loading="lazy">
             <div class="testimonial-content">
               <h4>LUBULWA V</h4>
               <div class="testimonial-stars">★★★★★</div>
@@ -764,7 +633,6 @@
           </div>
         </div>
       </div>
-
       <div class="testimonial-dots" id="testimonialDots">
         <span class="testimonial-dot active"></span>
         <span class="testimonial-dot"></span>
@@ -786,16 +654,13 @@
           <!-- <a href="#"><i class="fab fa-github"></i></a> -->
         </div>
       </div>
-
       <div class="custom-footer-main">
         <div class="footer-boxss">
-          <img src="images/image 8916.png" alt="Company Logo" class="footer-logo" />
+          <img src="images/image 8916.png" alt="Company Logo" class="footer-logo" loading="lazy" />
           <h2 style="font-size: 18px; padding-bottom: 15px;" class="font-awesome">
             City One Tourism and Travel</h2>
           <!-- <p>Address: Executive Heights - 702 - Barsha Heights - Dubai - United Arab Emirates</p> -->
         </div>
-
-
         <div class="footer-box">
           <h5 class="footer-title">Useful Links</h5>
           <ul>
@@ -806,7 +671,6 @@
             <li><a href="../Contact.html">Contact</a></li>
           </ul>
         </div>
-
         <div class="footer-box">
           <h5 class="footer-title">Popular Destinations</h5>
           <ul>
@@ -818,7 +682,6 @@
 
           </ul>
         </div>
-
         <div class="footer-box">
           <h5 class="footer-title">Contact</h5>
           <ul class="footer-Contact">
@@ -829,7 +692,6 @@
           </ul>
         </div>
       </div>
-
       <div class="custom-footer-bottom">
         <p>© 2025 Copyright: <a href="#">cityonetours.com/</a></p>
       </div>
@@ -840,7 +702,6 @@
   <script>
     AOS.init();
   </script>
-
 </body>
 
 </html>

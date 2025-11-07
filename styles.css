@@ -1578,49 +1578,6 @@
       }
 
 
-      /* Carousel Styles */
-      /* .carousel {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 5 !important;
-
-        overflow: hidden;
-        background-color: #000 !important;
-      }
-
-      .carousel-container {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        opacity: 9;
-        background-color: #000 !important;
-
-      }
-
-      .carousel-slide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 9 !important;
-        transition: opacity 1s ease-in-out;
-      }
-
-      .carousel-slide.active {
-        opacity: 1;
-      }
-
-      .carousel-slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-      } */
-
 
 
       .carousel {
@@ -1690,26 +1647,7 @@
         color: inherit;
       }
 
-      /* 
-@media (max-width: 768px) {
-  #cardGrid {
-    display: flex !important;              
-    overflow-x: auto !important;           
-    gap: 16px !important;                  
-    padding: 0 12px !important;           
-    scroll-snap-type: x mandatory; 
-  }
-
-  #cardGrid::-webkit-scrollbar {
-    display: none;
-  }
-
-  #cardGrid .card {
-    flex: 0 0 80%;             
-    min-width: 250px;          
-    scroll-snap-align: start; 
-  }
-} */
+      
 
 
 

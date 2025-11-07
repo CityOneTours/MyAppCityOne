@@ -21,7 +21,7 @@ const cardData = {
     {
       title: "Dubai",
       rating: "4.9",
-      img: "Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg",
+      img: "images/Home image/dubai-3720069_1920.jpg",
       info: "8 days 7 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
       priceAED: 4499,   // <— pure number, no "AED"
       link: "Dubai-packagess/Dubai-packages-one.html"
@@ -29,7 +29,7 @@ const cardData = {
     {
       title: "Georgia",
       rating: "4.2",
-      img: "Georgia-images/9.jpg",
+      img: "images/Home image/9.jpg",
       info: "6 days 5 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
       priceAED: "1685",
       link: "Georgia-packages-list/Georgia-four.html"
@@ -38,7 +38,7 @@ const cardData = {
     {
       title: "Maldives",
       rating: "4.4",
-      img: "Maldives-images/Depositphotos_4474251_L (2).jpg",
+      img: "images/Home image/Depositphotos_4474251_L (2).jpg",
       info: "5 days 4 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
       priceAED: "7680",
       link: "Maldives-Packages-list/Maldives-two.html"
@@ -47,7 +47,7 @@ const cardData = {
     {
       title: "Armenia",
       rating: "4.3",
-      img: "Armenia-images/1.jpeg",
+      img: "images/Home image/armenia-3716853_1920.jpg",
       info: "7 days 6 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
       priceAED: "2500",
       link: "Armenia-packages-list/Armenia-four.html"
@@ -57,7 +57,7 @@ const cardData = {
     {
       title: "vietnam",
       rating: "4.8",
-      img: "Vietnam-images/Depositphotos_66882175_L.jpg",
+      img: "images/Home image/Depositphotos_37768795_L.jpg",
       info: "6 days 5 nights | <i class='fas fa-hotel'></i> 5* Resort",
       priceAED: "2699",
       link: "vietnam-packages-list/vietnam-one.html"
@@ -66,7 +66,7 @@ const cardData = {
     {
       title: "Kyrgyzstan",
       rating: "4.0",
-      img: "Kyrgyzstan-packages-list/Kyrgyzstan-images/20230523151501_Pb_KyrgyzstanGallery2.jpg",
+      img: "images/Home image/20250428082756_KyrgyzstannewItinerary8 (1).jpg",
       info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
       priceAED: "2070",
       link: "Kyrgyzstan-packages-list/Kyrgyzstan-one.html"
@@ -75,7 +75,7 @@ const cardData = {
     {
       title: "Thailand",
       rating: "4.98",
-      img: "Thailand-images/Depositphotos_12420435_L.jpg",
+      img: "images/Home image/Depositphotos_12420435_L.jpg",
       info: "8 days 7 nights | <i class='fas fa-hotel'></i> 5* Resort",
       priceAED: "2699",
       link: "Thailand-packages-list/Thailand-one.html"
@@ -84,7 +84,7 @@ const cardData = {
     {
       title: "Dubai",
       rating: "4.9",
-      img: "Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg",
+      img: "images/Home image/dubai-2057583_1920.jpg",
       info: "8 days 7 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
       priceAED: "4499",
       link: "Dubai-packagess/Dubai-packages-one.html"
@@ -94,7 +94,7 @@ const cardData = {
     {
       title: "Maldives",
       rating: "4.4",
-      img: "Maldives-images/Depositphotos_4474251_L (2).jpg",
+      img: "images/Home image/Depositphotos_4474251_L (2).jpg",
       info: "5 days 4 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
       priceAED: "7680",
       link: "Maldives-Packages-list/Maldives-two.html"
@@ -103,7 +103,7 @@ const cardData = {
     {
       title: "Bali",
       rating: "4.9",
-      img: "Bali-images/Depositphotos_8364139_L.jpg",
+      img: "images/Home image/Depositphotos_3587328_L.jpg",
       info: "4 days 3 nights | <i class='fas fa-hotel'></i> 5* Resort",
       priceAED: "1250",
       link: "Bali-Packages-list/Bali-one.html"
@@ -112,7 +112,7 @@ const cardData = {
     {
       title: "vietnam",
       rating: "4.8",
-      img: "Vietnam-images/Depositphotos_66882175_L.jpg",
+      img: "images/Home image/Depositphotos_37768795_L.jpg",
       info: " days  nights | <i class='fas fa-hotel'></i> 5* Resort",
       priceAED: "2699",
       link: "vietnam-packages-list/vietnam-one.html"
@@ -121,7 +121,7 @@ const cardData = {
     {
       title: "switzerland",
       rating: "4.4",
-      img: "switzerland-packages-list/Switzerland-images/Depositphotos_26387041_L.jpg",
+      img: "images/Home image/Depositphotos_58674555_XL.jpg",
       info: "5 days 4 nights | <i class='fas fa-hotel'></i> Water Villas",
       priceAED: "3420",
       link: "switzerland-packages-list/switzerland-one.html"
@@ -132,7 +132,7 @@ const cardData = {
     {
       title: "Dubai",
       rating: "4.9",
-      img: "Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg",
+      img: "images/Home image/dubai-2057583_1920.jpg",
       info: "8 days 7 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
       priceAED: "4499",
       link: "Dubai-packagess/Dubai-packages-one.html"
@@ -140,7 +140,7 @@ const cardData = {
     {
       title: "Turkey ",
       rating: "4.8",
-      img: "Turkey-images/Depositphotos_94663096_L.jpg",
+      img: "images/Home image/Depositphotos_94663096_L.jpg",
       info: "6 days 5 nights | <i class='fas fa-hotel'></i> 5* Resort",
       priceAED: "2350",
       link: "Turkey-packages-list/Turkey-one.html"
@@ -149,7 +149,7 @@ const cardData = {
     {
       title: "saudi arabia",
       rating: "5.0",
-      img: "https://sys.cityonetours.com/UploadFiles/CityImages/CityImageOriginal/d7ad5de12f9d20db09bd9eb86e39a70d.jpg",
+      img: "images/Home image/20230107052216_Pb_SaudiRiyadhIti5.jpg",
       info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
       priceAED: "3130",
       link: "Saudi-arabia-packages-list/saudiarabia-one.html"
@@ -158,7 +158,7 @@ const cardData = {
     {
       title: "Maldives",
       rating: "4.4",
-      img: "Maldives-images/Depositphotos_4474251_L (2).jpg",
+      img: "images/Home image/Depositphotos_4474251_L (2).jpg",
       info: "5 days 4 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
       priceAED: "7680",
       link: "Maldives-Packages-list/Maldives-two.html"
@@ -205,87 +205,87 @@ window.onload = () => filterCards('adventure');
 
 const monthData = {
   Jan: [
-    { image: 'Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg', country: 'Dubai', link: 'Dubai-packages.html' },
-    { image: 'Maldives-images/Depositphotos_4474251_L (2).jpg', country: 'Maldives', link: 'Maldives-packages.html' },
-    { image: 'India-packages-list/India-images/Depositphotos_7932088_L.jpg', country: 'India', link: 'India-packages.html' },
-    { image: 'Thailand-images/Depositphotos_12420435_L.jpg', country: 'Thailand', link: 'Thailand-packages.html' },
+    { image: 'images/Home image/dubai-2057583_1920.jpg', country: 'Dubai', link: 'Dubai-packages.html' },
+    { image: 'images/Home image/Depositphotos_4474251_L (2).jpg', country: 'Maldives', link: 'Maldives-packages.html' },
+    { image: 'images/Home image/Depositphotos_7932088_L.jpg', country: 'India', link: 'India-packages.html' },
+    { image: 'images/Home image/Depositphotos_12420435_L.jpg', country: 'Thailand', link: 'Thailand-packages.html' },
 
   ],
   Feb: [
-    { image: 'Bali-images/Depositphotos_3587328_L.jpg', country: 'Bali', link: 'Bali-packages.html' },
-    { image: 'Vietnam-images/Depositphotos_66882175_L.jpg', country: 'Vietnam', link: 'Vietnam-packages.html' },
-    { image: 'Armenia-images/1.jpeg', country: 'Armenia', link: 'Armenia-packages.html' },
-    { image: 'Kenya-images/Depositphotos_17643137_L.jpg', country: 'Kenya', link: 'Kenya-packages.html' },
+    { image: 'images/Home image/Depositphotos_3587328_L.jpg', country: 'Bali', link: 'Bali-packages.html' },
+    { image: 'images/Home image/Depositphotos_37768795_L.jpg', country: 'Vietnam', link: 'Vietnam-packages.html' },
+    { image: 'images/Home image/armenia-3716853_1920.jpg', country: 'Armenia', link: 'Armenia-packages.html' },
+    { image: 'images/Home image/Depositphotos_3964728_L.jpg', country: 'Kenya', link: 'Kenya-packages.html' },
 
   ],
   Mar: [
-    { image: 'Bali-images/Depositphotos_3587328_L.jpg', country: 'Bali', link: 'Bali-packages.html' },
-    { image: 'Azerbaijan-images/BKU_510_aspect16x9.jpg', country: 'Azerbaijan', link: 'Azerbaijan-packages.html' },
-    { image: 'Turkey-images/Depositphotos_94663096_L.jpg', country: 'Turkey', link: 'Turkey-packages.html' },
-    { image: 'Morocco-images/Depositphotos_23937101_L.jpg', country: 'Morocco', link: 'Morocco-packages.html' },
+    { image: 'images/Home image/Depositphotos_3587328_L.jpg', country: 'Bali', link: 'Bali-packages.html' },
+    { image: 'images/Home image/BKU_510_aspect16x9.jpg', country: 'Azerbaijan', link: 'Azerbaijan-packages.html' },
+    { image: 'images/Home image/Depositphotos_94663096_L.jpg', country: 'Turkey', link: 'Turkey-packages.html' },
+    { image: 'images/Home image/Depositphotos_25885511_L.jpg', country: 'Morocco', link: 'Morocco-packages.html' },
 
   ],
   Apr: [
-    { image: 'Kazakhstan-packages-list/Kazakhstan-images/20241104123324_5.jpg', country: 'Kazakhstan', link: 'Kazakhstan-packages.html' },
-    { image: 'Uzbekistan-packages-list/Uzbekistan-images/20220919115721_Us_ScandinaviListing.jpg', country: 'Uzbekistan', link: 'Uzbekistan-packages.html' },
-    { image: 'Egypt-packages-list/Egypt-images/Depositphotos_1656452_L.jpg', country: 'Egypt', link: 'Egypt-packages.html' },
-    { image: 'Malaysia-packages-list/Malaysia-images/Depositphotos_5477401_L.jpg', country: 'Malaysia', link: 'Malaysia-packages.html' },
+    { image: 'images/Home image/20241104124630_4.jpg', country: 'Kazakhstan', link: 'Kazakhstan-packages.html' },
+    { image: 'images/Home image/20241104124630_4.jpg', country: 'Uzbekistan', link: 'Uzbekistan-packages.html' },
+    { image: 'images/Home image/Depositphotos_23268152_L.jpg', country: 'Egypt', link: 'Egypt-packages.html' },
+    { image: 'images/Home image/Depositphotos_5477401_L.jpg', country: 'Malaysia', link: 'Malaysia-packages.html' },
 
   ],
   May: [
-    { image: 'Singapore-packages-list/Singapore-images/Depositphotos_312559308_L.jpg', country: 'Singapore', link: 'Singapore-packages.html' },
-    { image: 'Japan-images/Depositphotos_8607019_L.jpg', country: 'japan', link: 'Japan-packages.html' },
-    { image: 'India-packages-list/India-images/Depositphotos_7932088_L.jpg', country: 'India', link: 'India-packages.html' },
-    { image: 'croatia-packages-list/Croatia-images/20220619095511_Px_CroatiaGallery5.jpg', country: 'croatia', link: 'croatia-packages.html' },
+    { image: 'images/Home image/Depositphotos_312559308_L.jpg', country: 'Singapore', link: 'Singapore-packages.html' },
+    { image: 'images/Home image/Depositphotos_8607019_L.jpg', country: 'japan', link: 'Japan-packages.html' },
+    { image: 'images/Home image/Depositphotos_7932088_L.jpg', country: 'India', link: 'India-packages.html' },
+    { image: 'images/Home image/20220619084845_Px_CroatiaListing.jpg', country: 'croatia', link: 'croatia-packages.html' },
 
   ],
   Jun: [
-    { image: 'Prague-packages-list/Prague-images/Depositphotos_47797195_L.jpg', country: 'prague', link: 'prague-packages.html' },
-    { image: 'switzerland-packages-list/Switzerland-images/Depositphotos_181378152_L.jpg', country: 'switzerland', link: 'switzerland-packages.html' },
-    { image: 'scandinavia-packages-list/Scandinavia-images/20220919115721_Us_ScandinaviListing.jpg', country: 'scandinavia', link: 'scandinavia-packages.html' },
-    { image: 'seychelles-packages-list/Seychelles-images/20241114082355_SeychellesItineraries 1.jpg', country: 'seychelles', link: 'seychelles-packages.html' },
+    { image: 'images/Home image/Depositphotos_47797237_L.jpg', country: 'prague', link: 'prague-packages.html' },
+    { image: 'images/Home image/Depositphotos_58674555_XL.jpg', country: 'switzerland', link: 'switzerland-packages.html' },
+    { image: 'images/Home image/20220919115721_Us_ScandinaviListing.jpg', country: 'scandinavia', link: 'scandinavia-packages.html' },
+    { image: 'images/Home image/20241114082544_Seychellesitineraries3.jpg', country: 'seychelles', link: 'seychelles-packages.html' },
 
   ],
   Jul: [
-    { image: 'Southafrica-packages-list/Southafrica-images/Depositphotos_13890331_L.jpg', country: 'south africa', link: 'southafrica-packages.html' },
-    { image: 'Srilanka-images/dambulla-2516649_1920.jpg', country: 'Sri Lanka', link: 'Srilanka-packages.html' },
-    { image: 'Saudi-arabia-packages-list/Saudiarabia-images/20230107055235_Pb_SaudiRiyadhGallery5.jpg', country: 'saudi arabia', link: 'saudiarabia-packages.html' },
-    { image: 'switzerland-packages-list/Switzerland-images/Depositphotos_181378152_L.jpg', country: 'switzerland', link: 'switzerland-packages.html' },
+    { image: 'images/Home image/Depositphotos_13890331_L.jpg', country: 'south africa', link: 'southafrica-packages.html' },
+    { image: 'images/Home image/dambulla-2516649_1920.jpg', country: 'Sri Lanka', link: 'Srilanka-packages.html' },
+    { image: 'images/Home image/20230107052216_Pb_SaudiRiyadhIti5.jpg', country: 'saudi arabia', link: 'saudiarabia-packages.html' },
+    { image: 'images/Home image/Depositphotos_58674555_XL.jpg', country: 'switzerland', link: 'switzerland-packages.html' },
   ],
   Aug: [
-    { image: 'Prague-packages-list/Prague-images/Depositphotos_47797195_L.jpg', country: 'prague', link: 'prague-packages.html' },
-    { image: 'Jordan-packages-list/Jordan-images/20240302100402_Jordaniti2.jpg', country: 'Jordan', link: 'Jordan-packages.html' },
-    { image: 'seychelles-packages-list/Seychelles-images/20241114082355_SeychellesItineraries 1.jpg', country: 'seychelles', link: 'seychelles-packages.html' },
-    { image: 'Greece-packages-list/Greece-images/20220620045024_Pb_GreeceGallery.jpg', country: 'greece', link: 'greece-packages.html' },
+    { image: 'images/Home image/Depositphotos_47797237_L.jpg', country: 'prague', link: 'prague-packages.html' },
+    { image: 'images/Home image/20240302100402_Jordaniti2.jpg', country: 'Jordan', link: 'Jordan-packages.html' },
+    { image: 'images/Home image/20241114082544_Seychellesitineraries3.jpg', country: 'seychelles', link: 'seychelles-packages.html' },
+    { image: 'images/Home image/20220620045024_Pb_GreeceGallery.jpg', country: 'greece', link: 'greece-packages.html' },
 
   ],
   Sep: [
-    { image: 'Kyrgyzstan-packages-list/Kyrgyzstan-images/20230523151501_Pb_KyrgyzstanGallery2.jpg', country: 'Kyrgyzstan', link: 'Kyrgyzstan-packages.html' },
-    { image: 'Jordan-packages-list/Jordan-images/20240302100402_Jordaniti2.jpg', country: 'Jordan', link: 'Jordan-packages.html' },
-    { image: 'Kazakhstan-packages-list/Kazakhstan-images/20241104123324_5.jpg', country: 'Kazakhstan', link: 'Kazakhstan-packages.html' },
-    { image: 'Malaysia-packages-list/Malaysia-images/Depositphotos_5477401_L.jpg', country: 'Malaysia', link: 'Malaysia-packages.html' },
+    { image: 'images/Home image/20250428082756_KyrgyzstannewItinerary8 (1).jpg', country: 'Kyrgyzstan', link: 'Kyrgyzstan-packages.html' },
+    { image: 'images/Home image/20240302100402_Jordaniti2.jpg', country: 'Jordan', link: 'Jordan-packages.html' },
+    { image: 'images/Home image/20250428082756_KyrgyzstannewItinerary8 (1).jpg', country: 'Kazakhstan', link: 'Kazakhstan-packages.html' },
+    { image: 'images/Home image/Depositphotos_5477401_L.jpg', country: 'Malaysia', link: 'Malaysia-packages.html' },
 
   ],
   Oct: [
-    { image: 'Prague-packages-list/Prague-images/Depositphotos_47797195_L.jpg', country: 'prague', link: 'prague-packages.html' },
-    { image: 'scandinavia-packages-list/Scandinavia-images/20220919115721_Us_ScandinaviListing.jpg', country: 'scandinavia', link: 'scandinavia-packages.html' },
-    { image: 'Southafrica-packages-list/Southafrica-images/Depositphotos_13890331_L.jpg', country: 'south africa', link: 'southafrica-packages.html' },
-    { image: 'Greece-packages-list/Greece-images/20220620045024_Pb_GreeceGallery.jpg', country: 'greece', link: 'greece-packages.html' },
+    { image: 'images/Home image/Depositphotos_47797237_L.jpg', country: 'prague', link: 'prague-packages.html' },
+    { image: 'images/Home image/20220919115721_Us_ScandinaviListing.jpg', country: 'scandinavia', link: 'scandinavia-packages.html' },
+    { image: 'images/Home image/Depositphotos_13890331_L.jpg', country: 'south africa', link: 'southafrica-packages.html' },
+    { image: 'images/Home image/20220620045024_Pb_GreeceGallery.jpg', country: 'greece', link: 'greece-packages.html' },
 
   ],
   Nov: [
-    { image: 'Dubai Images/burj-al-arab-2624317_1920 - Copy.jpg', country: 'Dubai', link: 'Dubai-packages.html' },
+    { image: 'images/Home image/dubai-2057583_1920.jpg', country: 'Dubai', link: 'Dubai-packages.html' },
 
-    { image: 'Kenya-images/Depositphotos_17643137_L.jpg', country: 'Kenya', link: 'Kenya-packages.html' },
-    { image: 'Maldives-images/Depositphotos_4474251_L (2).jpg', country: 'Maldives', link: 'Maldives-packages.html' },
-    { image: 'Morocco-images/Depositphotos_23937101_L.jpg', country: 'Morocco', link: 'Morocco-packages.html' },
+    { image: 'images/Home image/Depositphotos_3964728_L.jpg', country: 'Kenya', link: 'Kenya-packages.html' },
+    { image: 'images/Home image/Depositphotos_4474251_L (2).jpg', country: 'Maldives', link: 'Maldives-packages.html' },
+    { image: 'images/Home image/Depositphotos_25885511_L.jpg', country: 'Morocco', link: 'Morocco-packages.html' },
 
   ],
   Dec: [
-    { image: 'Bali-images/Depositphotos_3587328_L.jpg', country: 'Bali', link: 'Bali-packages.html' },
-    { image: 'Azerbaijan-images/BKU_510_aspect16x9.jpg', country: 'Azerbaijan', link: 'Azerbaijan-packages.html' },
-    { image: 'Southafrica-packages-list/Southafrica-images/Depositphotos_13890331_L.jpg', country: 'south africa', link: 'southafrica-packages.html' },
-    { image: 'Turkey-images/Depositphotos_94663096_L.jpg', country: 'Turkey', link: 'Turkey-packages.html' },
+    { image: 'images/Home image/Depositphotos_3587328_L.jpg', country: 'Bali', link: 'Bali-packages.html' },
+    { image: 'images/Home image/BKU_510_aspect16x9.jpg', country: 'Azerbaijan', link: 'Azerbaijan-packages.html' },
+    { image: 'images/Home image/Depositphotos_13890331_L.jpg', country: 'south africa', link: 'southafrica-packages.html' },
+    { image: 'images/Home image/Depositphotos_94663096_L.jpg', country: 'Turkey', link: 'Turkey-packages.html' },
 
   ]
 };
@@ -366,22 +366,7 @@ const visaData = {
 const tabsContainer = document.getElementById('visaTabs');
 const cardsContainer = document.getElementById('visaCards');
 
-// const countries = Object.keys(visaData);
 
-// countries.forEach((country, index) => {
-//   const button = document.createElement('button');
-//   button.className = 'visa-tab-button';
-//   button.textContent = country;
-//   if (index === 0) button.classList.add('active');
-
-//   button.addEventListener('click', () => {
-//     document.querySelectorAll('.visa-tab-button').forEach(btn => btn.classList.remove('active'));
-//     button.classList.add('active');
-//     loadVisaCards(country);
-//   });
-
-//   tabsContainer.appendChild(button);
-// });
 
 function loadVisaCards(country) {
   cardsContainer.innerHTML = '';
@@ -390,7 +375,7 @@ function loadVisaCards(country) {
     cardEl.href = card.link || "#";
     cardEl.className = 'visa-card';
     cardEl.innerHTML = `
-          <img class="visa-card-img" src="${card.image}" alt="${card.title}">
+          <img class="visa-card-img" src="${card.image}" alt="${card.title} "loading="lazy">
           <div class="visa-card-body">
             <div class="visa-card-footer">
               <div class="visa-card-title">${card.title}</div>
@@ -505,25 +490,16 @@ function handleSearch() {
     return;
   }
 
-  // Example redirect to themes.html with query params
   const url = `themes.html?destination=${encodeURIComponent(destination)}&theme=${theme}&date=${date}`;
   window.location.href = url;
 }
-// Search bar End 
 
 
 
 
-// Declare only ONCE
 const countries = [
   "Dubai",
-  // "Thailand",
-  // "Malaysia",
-  // "Georgia",
-  // "Armenia",
-  // "Uzbekistan",
-  // "Vietnam",
-  // "South Africa"
+
 ];
 
 const destinationInput = document.getElementById("destinationInput");
@@ -729,3 +705,30 @@ const close = document.querySelector('.close');
 btn.onclick = () => modal.style.display = 'flex';
 close.onclick = () => modal.style.display = 'none';
 window.onclick = (e) => { if (e.target === modal) modal.style.display = 'none'; };
+
+
+
+
+// imageloading
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('img[loading="lazy"]');
+  
+  if ('IntersectionObserver' in window) {
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src || img.src;
+          img.classList.add('loaded');
+          observer.unobserve(img);
+        }
+      });
+    }, {
+      rootMargin: '50px' // Start loading 50px before image appears
+    });
+    
+    images.forEach(img => imageObserver.observe(img));
+  }
+});
