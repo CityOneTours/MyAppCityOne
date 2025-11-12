@@ -14,57 +14,57 @@ const destinations = [
   {
     name: "Dubai",
     rating: "5.0",
-    image: "images/Home image/dubai-2057583_1920.jpg",
+    image: "images/Home image/dubai-2057583_1920.webp",
     url: "Dubai-Packages.html"
   },
   {
     name: "Vietnam",
     rating: "4.8",
-    image: "images/Home image/Depositphotos_37768795_L.jpg",
+    image: "images/Home image/Depositphotos_37768795_L.webp",
     url: "vietnam-Packages.html"
   },
   {
     name: "Armenia",
     rating: "4.9",
-    image: "images/Home image/armenia-3716853_1920.jpg",
+    image: "images/Home image/armenia-3716853_1920.webp",
     url: "Armenia-packages.html"
   },
 
   {
     name: "Kenya",
     rating: "4.2",
-    image: "images/Home image/Depositphotos_3964728_L.jpg",
+    image: "images/Home image/Depositphotos_3964728_L.webp",
     url: "kenya-packages.html"
   },
   {
     name: "Maldives",
     rating: "4.8",
-    image: "images/Home image/Depositphotos_4474251_L (2).jpg",
+    image: "images/Home image/Depositphotos_4474251_L (2).webp",
     url: "Maldives-packages.html"
   },
   {
     name: "Georgia",
     rating: "4.7",
-    image: "images/Home image/9.jpg",
+    image: "images/Home image/9.webp",
     url: "Georgia-packages.html"
   },
 
   {
     name: "Bali",
     rating: "5.0",
-    image: "images/Home image/Depositphotos_3587328_L.jpg",
+    image: "images/Home image/Depositphotos_3587328_L.webp",
     url: "Bali-packages.html"
   },
   {
     name: "Azerbaijan",
     rating: "4.8",
-    image: "images/Home image/BKU_510_aspect16x9.jpg",
+    image: "images/Home image/BKU_510_aspect16x9.webp",
     url: "Azerbaijan-packages.html"
   },
   {
     name: "Turkey",
     rating: "4.4",
-    image: "images/Home image/Depositphotos_94663096_L.jpg",
+    image: "images/Home image/Depositphotos_94663096_L.webp",
     url: "Turkey-packages.html"
   },
 
@@ -73,125 +73,125 @@ const destinations = [
   {
     name: "Morocco",
     rating: "4.3",
-    image: "images/Home image/Depositphotos_25885511_L.jpg",
+    image: "images/Home image/Depositphotos_25885511_L.webp",
     url: "morocco-packages.html"
   },
   {
     name: "Kazakhstan",
     rating: "4.9",
-    image: "images/Home image/20241104124630_4.jpg",
+    image: "images/Home image/20241104124630_4.webp",
     url: "Kazakhstan-packages.html"
   },
   {
     name: "Jordan",
     rating: "4.7",
-    image: "images/Home image/20240302100402_Jordaniti2.jpg",
+    image: "images/Home image/20240302100402_Jordaniti2.webp",
     url: "Jordan-packages.html"
   },
   {
     name: "Thailand",
     rating: "4.9",
-    image: "images/Home image/Depositphotos_12420435_L.jpg",
+    image: "images/Home image/Depositphotos_12420435_L.webp",
     url: "Thailand-packages.html"
   },
   {
     name: "Sri Lanka ",
     rating: "4.2",
-    image: "images/Home image/dambulla-2516649_1920.jpg",
+    image: "images/Home image/dambulla-2516649_1920.webp",
     url: "Srilanka-packages.html"
   },
   {
     name: "Kyrgyzstan",
     rating: "4.9",
-    image: "images/Home image/20250428082756_KyrgyzstannewItinerary8 (1).jpg",
+    image: "images/Home image/20250428082756_KyrgyzstannewItinerary8 (1).webp",
     url: "Kyrgyzstan-packages.html"
   },
   {
     name: "Uzbekistan",
     rating: "4.8",
-    image: "images/Home image/20241104124630_4.jpg",
+    image: "images/Home image/20241104124630_4.webp",
     url: "Uzbekistan-packages.html"
   },
   {
     name: "Egypt",
     rating: "4.3",
-    image: "images/Home image/Depositphotos_23268152_L.jpg",
+    image: "images/Home image/Depositphotos_23268152_L.webp",
     url: "Egypt-packages.html"
   },
   {
     name: "Malaysia",
     rating: "4.5",
-    image: "images/Home image/Depositphotos_5477401_L.jpg",
+    image: "images/Home image/Depositphotos_5477401_L.webp",
     url: "Malaysia-packages.html"
   },
   {
     name: "Singapore ",
     rating: "4.7",
-    image: "images/Home image/Depositphotos_312559308_L.jpg",
+    image: "images/Home image/Depositphotos_312559308_L.webp",
     url: "Singapore-packages.html"
   },
 
   {
     name: "Japan",
     rating: "4.9",
-    image: "images/Home image/Depositphotos_8607019_L.jpg",
+    image: "images/Home image/Depositphotos_8607019_L.webp",
     url: "japan-packages.html"
   },
 
   {
     name: "India",
     rating: "4.9",
-    image: "images/Home image/Depositphotos_7932088_L.jpg",
+    image: "images/Home image/Depositphotos_7932088_L.webp",
     url: "india-packages.html"
   },
 
   {
     name: "Croatia",
     rating: "4.7",
-    image: "images/Home image/20220619084845_Px_CroatiaListing.jpg",
+    image: "images/Home image/20220619084845_Px_CroatiaListing.webp",
     url: "croatia-packages.html"
   },
   {
     name: "Greece",
     rating: "4.6",
-    image: "images/Home image/20220620045024_Pb_GreeceGallery.jpg",
+    image: "images/Home image/20220620045024_Pb_GreeceGallery.webp",
     url: "greece-packages.html"
   },
   {
     name: "Prague",
     rating: "4.1",
-    image: "images/Home image/Depositphotos_47797237_L.jpg",
+    image: "images/Home image/Depositphotos_47797237_L.webp",
     url: "prague-packages.html"
   },
 
   {
     name: "Switzerland",
     rating: "4.7",
-    image: "images/Home image/Depositphotos_58674555_XL.jpg",
+    image: "images/Home image/Depositphotos_58674555_XL.webp",
     url: "switzerland-packages.html"
   },
   {
     name: "Scandinavia",
     rating: "4.5",
-    image: "images/Home image/20220919115721_Us_ScandinaviListing.jpg",
+    image: "images/Home image/20220919115721_Us_ScandinaviListing.webp",
     url: "scandinavia-packages.html"
   },
   {
     name: "Seychelles",
     rating: "4.6",
-    image: "images/Home image/20241114082544_Seychellesitineraries3.jpg",
+    image: "images/Home image/20241114082544_Seychellesitineraries3.webp",
     url: "seychelles-packages.html"
   },
   {
     name: "South africa",
     rating: "4.1",
-    image: "images/Home image/Depositphotos_13890331_L.jpg",
+    image: "images/Home image/Depositphotos_13890331_L.webp",
     url: "southafrica-packages.html"
   },
   {
     name: "Saudi arabia",
     rating: "4.9",
-    image: "images/Home image/20230107052216_Pb_SaudiRiyadhIti5.jpg",
+    image: "images/Home image/20230107052216_Pb_SaudiRiyadhIti5.webp",
     url: "saudiarabia-packages.html"
   },
 
