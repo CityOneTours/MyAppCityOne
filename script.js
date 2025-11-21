@@ -547,9 +547,11 @@ function handleSearch() {
     return;
   }
 
-  // Navigate to that country's packages page
+  // Convert destination name to lowercase and create file name
   const url = destination.toLowerCase().replace(/\s+/g, '-') + "-packages.html";
-  window.location.href = url;
+
+  // Always go to root (fix for live server)
+  window.location.href = "/" + url;
 }
 
 

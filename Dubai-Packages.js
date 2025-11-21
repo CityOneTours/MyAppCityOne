@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const baseURL = window.location.origin;
   let path = "";
-  const homeItem = `<li><a href="${baseURL}/../index.html">Home</a></li>`;
+  const homeItem = `<li><a href="${baseURL}//">Home</a></li>`;
   breadcrumbList.innerHTML += homeItem;
 
   for (let i = 0; i < pathArray.length; i++) {
