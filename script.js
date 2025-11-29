@@ -60,7 +60,7 @@ const cardData = {
       img: "images/Home image/Depositphotos_37768795_L.webp",
       info: "6 days 5 nights | <i class='fas fa-hotel'></i> 5* Resort",
       priceAED: "2699",
-      link: "vietnam-packages-list/vietnam-one.html"
+      link: "Vietnam-Packages-List/Vietnam-one.html"
 
     },
     {
@@ -106,7 +106,7 @@ const cardData = {
       img: "images/Home image/Depositphotos_3587328_L.webp",
       info: "4 days 3 nights | <i class='fas fa-hotel'></i> 5* Resort",
       priceAED: "1250",
-      link: "Bali-Packages-list/Bali-one.html"
+      link: "Bali-packages-list/Bali-one.html"
 
     },
     {
@@ -115,7 +115,7 @@ const cardData = {
       img: "images/Home image/Depositphotos_37768795_L.webp",
       info: " days  nights | <i class='fas fa-hotel'></i> 5* Resort",
       priceAED: "2699",
-      link: "vietnam-packages-list/vietnam-one.html"
+      link: "Vietnam-Packages-List/Vietnam-one.html"
 
     },
     {
@@ -205,15 +205,15 @@ window.onload = () => filterCards('adventure');
 
 const monthData = {
   Jan: [
-    { image: 'images/Home image/dubai-2057583_1920.webp', country: 'Dubai', link: 'Dubai-packages.html' },
+    { image: 'images/Home image/dubai-2057583_1920.webp', country: 'Dubai', link: 'Dubai-Packages.html' },
     { image: 'images/Home image/Depositphotos_4474251_L (2).webp', country: 'Maldives', link: 'Maldives-packages.html' },
-    { image: 'images/Home image/Depositphotos_7932088_L.webp', country: 'India', link: 'India-packages.html' },
+    { image: 'images/Home image/Depositphotos_7932088_L.webp', country: 'India', link: 'india-packages.html' },
     { image: 'images/Home image/Depositphotos_12420435_L.webp', country: 'Thailand', link: 'Thailand-packages.html' },
 
   ],
   Feb: [
     { image: 'images/Home image/Depositphotos_3587328_L.webp', country: 'Bali', link: 'Bali-packages.html' },
-    { image: 'images/Home image/Depositphotos_37768795_L.webp', country: 'Vietnam', link: 'Vietnam-packages.html' },
+    { image: 'images/Home image/Depositphotos_37768795_L.webp', country: 'Vietnam', link: 'vietnam-packages.html' },
     { image: 'images/Home image/armenia-3716853_1920.webp', country: 'Armenia', link: 'Armenia-packages.html' },
     { image: 'images/Home image/Depositphotos_3964728_L.webp', country: 'Kenya', link: 'Kenya-packages.html' },
 
@@ -222,7 +222,7 @@ const monthData = {
     { image: 'images/Home image/Depositphotos_3587328_L.webp', country: 'Bali', link: 'Bali-packages.html' },
     { image: 'images/Home image/BKU_510_aspect16x9.webp', country: 'Azerbaijan', link: 'Azerbaijan-packages.html' },
     { image: 'images/Home image/Depositphotos_94663096_L.webp', country: 'Turkey', link: 'Turkey-packages.html' },
-    { image: 'images/Home image/Depositphotos_25885511_L.webp', country: 'Morocco', link: 'Morocco-packages.html' },
+    { image: 'images/Home image/Depositphotos_25885511_L.webp', country: 'Morocco', link: 'morocco-packages.html' },
 
   ],
   Apr: [
@@ -234,8 +234,8 @@ const monthData = {
   ],
   May: [
     { image: 'images/Home image/Depositphotos_312559308_L.webp', country: 'Singapore', link: 'Singapore-packages.html' },
-    { image: 'images/Home image/Depositphotos_8607019_L.webp', country: 'japan', link: 'Japan-packages.html' },
-    { image: 'images/Home image/Depositphotos_7932088_L.webp', country: 'India', link: 'India-packages.html' },
+    { image: 'images/Home image/Depositphotos_8607019_L.webp', country: 'japan', link: 'japan-packages.html' },
+    { image: 'images/Home image/Depositphotos_7932088_L.webp', country: 'India', link: 'india-packages.html' },
     { image: 'images/Home image/20220619084845_Px_CroatiaListing.webp', country: 'croatia', link: 'croatia-packages.html' },
 
   ],
@@ -274,11 +274,11 @@ const monthData = {
 
   ],
   Nov: [
-    { image: 'images/Home image/dubai-2057583_1920.webp', country: 'Dubai', link: 'Dubai-packages.html' },
+    { image: 'images/Home image/dubai-2057583_1920.webp', country: 'Dubai', link: 'Dubai-Packages.html' },
 
     { image: 'images/Home image/Depositphotos_3964728_L.webp', country: 'Kenya', link: 'Kenya-packages.html' },
     { image: 'images/Home image/Depositphotos_4474251_L (2).webp', country: 'Maldives', link: 'Maldives-packages.html' },
-    { image: 'images/Home image/Depositphotos_25885511_L.webp', country: 'Morocco', link: 'Morocco-packages.html' },
+    { image: 'images/Home image/Depositphotos_25885511_L.webp', country: 'Morocco', link: 'morocco-packages.html' },
 
   ],
   Dec: [
@@ -547,12 +547,16 @@ function handleSearch() {
     return;
   }
 
-  // Convert destination name to lowercase and create file name
-  const url = destination.toLowerCase().replace(/\s+/g, '-') + "-packages.html";
+  // Capitalize First Letter
+  const formattedDestination =
+    destination.charAt(0).toUpperCase() + destination.slice(1);
 
-  // Always go to root (fix for live server)
-  window.location.href = "/" + url;
+  const url =
+    "/" + formattedDestination.replace(/\s+/g, '-') + "-Packages.html";
+
+  window.location.href = url;
 }
+
 
 
 
@@ -714,9 +718,9 @@ window.onclick = (e) => { if (e.target === modal) modal.style.display = 'none'; 
 // imageloading
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const images = document.querySelectorAll('img[loading="lazy"]');
-  
+
   if ('IntersectionObserver' in window) {
     const imageObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
@@ -730,7 +734,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, {
       rootMargin: '50px' // Start loading 50px before image appears
     });
-    
+
     images.forEach(img => imageObserver.observe(img));
   }
 });

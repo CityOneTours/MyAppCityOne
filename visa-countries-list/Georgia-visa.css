@@ -310,9 +310,9 @@ header {
     font-size: 28px;
   }
 
-  .carousel-item img {
+  /* .carousel-item img {
     height: 60vh;
-  }
+  } */
 }
 
 h4 {

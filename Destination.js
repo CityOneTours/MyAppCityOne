@@ -34,7 +34,8 @@ const destinations = [
     name: "Kenya",
     rating: "4.2",
     image: "images/Home image/Depositphotos_3964728_L.webp",
-    url: "/kenya-packages.html"
+    url: "/Kenya-packages.html"
+    
   },
   {
     name: "Maldives",
