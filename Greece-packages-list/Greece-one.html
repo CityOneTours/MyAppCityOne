@@ -328,18 +328,32 @@
                             alt="popup-img">
                     </div>
                     <div class="col-md-6">
-                        <form>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="First Name">
-                            </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Mobile Number">
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email ID">
-                            </div>
-                            <button type="submit" class="btn btn-danger w-100">Continue</button>
-                        </form>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+    <input type="hidden" name="subject" value="Enquiry from Popup Modal Form">
+
+    <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="First Name" required>
+    </div>
+
+    <div class="mb-3">
+        <input type="tel" name="phone" class="form-control" placeholder="Mobile Number" required>
+    </div>
+
+    <div class="mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Email ID" required>
+    </div>
+
+    <div class="mb-3">
+        <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-danger w-100">Continue</button>
+
+</form>
+
                     </div>
                 </div>
             </div>

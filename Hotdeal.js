@@ -173,3 +173,39 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+       function showPopup(packageName) {
+            const overlay = document.getElementById('modalOverlay');
+            const popup = document.getElementById('enquiryPopup');
+            const heading = document.getElementById('chosenPackage');
+            const field = document.getElementById('packageField');
+            
+            heading.textContent = packageName;
+            field.value = packageName;
+            
+            overlay.classList.add('show');
+            popup.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function hidePopup() {
+            const overlay = document.getElementById('modalOverlay');
+            const popup = document.getElementById('enquiryPopup');
+            
+            overlay.classList.remove('show');
+            popup.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            alert('Thank you for your enquiry! We will contact you soon.');
+            hidePopup();
+            event.target.reset();
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                hidePopup();
+            }
+        });

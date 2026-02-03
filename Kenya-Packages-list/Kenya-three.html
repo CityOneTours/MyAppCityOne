@@ -190,15 +190,31 @@
         <h1>ITINERARY</h1>
     </article>
     <!-- Enquiry/Book Form Popup -->
-    <div class="popup" id="formPopup">
+        <div class="popup" id="formPopup">
         <div class="popup-content">
             <button class="close" onclick="closePopup()">&times;</button>
             <h3>Enquiry Form</h3>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Mobile Number">
-            <input type="email" placeholder="Email ID">
-            <button
-                style="background: red; color: white; padding: 10px 20px; border: none; border-radius: 10px; width: 100%;">Submit</button>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+                <input type="hidden" name="subject" value="Enquiry from Custom Popup Form">
+
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="tel" name="phone" placeholder="Mobile Number" required>
+                <input type="email" name="email" placeholder="Email ID" required>
+
+                <textarea name="message" placeholder="Your Message" required
+                    style="width:100%; height:120px; padding:12px 14px; border-radius:8px; border:1px solid #ccc; font-size:15px; font-family:inherit; resize:none; outline:none; margin-bottom:15px;">
+</textarea>
+
+                <button type="submit"
+                    style="background: red; color: white; padding: 10px 20px; border: none; border-radius: 10px; width: 100%;">
+                    Submit
+                </button>
+
+            </form>
         </div>
     </div>
 
@@ -504,18 +520,32 @@
                             alt="popup-img">
                     </div>
                     <div class="col-md-6">
-                        <form>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="First Name">
-                            </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Mobile Number">
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email ID">
-                            </div>
-                            <button type="submit" class="btn btn-danger w-100">Continue</button>
-                        </form>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+    <input type="hidden" name="subject" value="Enquiry from Popup Modal Form">
+
+    <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="First Name" required>
+    </div>
+
+    <div class="mb-3">
+        <input type="tel" name="phone" class="form-control" placeholder="Mobile Number" required>
+    </div>
+
+    <div class="mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Email ID" required>
+    </div>
+
+    <div class="mb-3">
+        <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-danger w-100">Continue</button>
+
+</form>
+
                     </div>
                 </div>
             </div>

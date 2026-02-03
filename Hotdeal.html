@@ -31,9 +31,13 @@
           </span>
         </div>
       </div>
-      <div class="enquiry-trigger">
-        <span id="enquiryOpen"><i class="fas fa-envelope"></i> Enquiry now</span>
+      <div class="right">
+        <a href="contact.html" id="enquiryBtn"
+          style="text-decoration:none; display:inline-block;  color:#ffffff; border-radius:5px; font-size:14px; font-weight:600; cursor:pointer;">
+          <i class="fas fa-envelope" style="margin-right:6px;"></i> Enquiry Now
+        </a>
       </div>
+
 
       <!-- Popup Modal -->
       <div id="enquiryBox" class="popup-overlay">
@@ -85,7 +89,7 @@
 
           </div>
         </div>
-                <a href="Visa.html"><i class="fas fa-passport"></i> Visa</a>
+        <a href="Visa.html"><i class="fas fa-passport"></i> Visa</a>
         <a href="Hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
         <a href="About us.html"><i class="fas fa-info-circle"></i> About</a>
         <a href="Contact.html"><i class="fas fa-users"></i> Contact</a>
@@ -105,14 +109,15 @@
     <div id="carouselDest" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/Home image/dubai-3720069_1920.webp " class="d-block w-100" alt="Destination 1" loading="lazy">
+          <img src="images/Home image/dubai-3720069_1920.webp " class="d-block w-100" alt="Destination 1"
+            loading="lazy">
         </div>
         <div class="carousel-item">
           <img src="images/Home image/1.webp" class="d-block w-100" alt="Destination 2" loading="lazy">
         </div>
         <div class="carousel-item">
-          <img src="images/Home image/Depositphotos_86940690_L.webp" class="d-block w-100"
-            alt="Destination 3" loading="lazy">
+          <img src="images/Home image/Depositphotos_86940690_L.webp" class="d-block w-100" alt="Destination 3"
+            loading="lazy">
         </div>
       </div>
 
@@ -153,288 +158,165 @@
     <ol id="dynamicBreadcrumb" class="breadcrumb-list"></ol>
   </nav> -->
 
-  <div class="travel-container">
-    <!-- First Row -->
-    <div class="package-grid">
-      <!-- Dubai Package -->
-      <div class="destination-card">
-        <div class="promo-header">
-          <span class="location-name">Dubai</span>
-          <span class="discount-text">Up to 15% OFF on Dubai tour packages</span>
-        </div>
-        <div class="card-content">
-          <div class="image-section">
-            <img src="images/Home image/dubai-3720069_1920.webp" alt="Dubai Skyline" class="destination-image" loading="lazy">
-          </div>
-          <div class="info-section">
-            <div class="tour-header">
-              <h3 class="tour-title">DUBAI CITY</h3>
-              <span class="duration-badge">5D / 4N</span>
-
-            </div>
-            <div class="price-info">
-              <div class="starting-price">
-                Starting Price : <span class="price-amount" data-aed="2380">AED 2380</span>
-              </div>
-            </div>
-            <div class="amenities-row">
-              <div class="amenity-item">
-                <span class="fas fa-hotel"></span>
-                <span>3* / 4* / 5* Hotels</span>
-              </div>
-              <div class="amenity-item">
-                <span class="fas fa-utensils"></span>
-                <span>Breakfast</span>
-              </div>
-            </div>
-
-            <div class="attractions-list">
-              <span class="attraction-tag">Adventure</span>
-              <span class="attraction-tag">Luxury</span>
-              <span class="attraction-tag">honey moon</span>
-              <span class="attraction-tag more-tag">More</span>
-            </div>
-
-            <div class="card-footer">
-              <div class="expiry-info">
-                <span class="clock-icon"></span>
-                <span>Expires in 2 months 3 weeks</span>
-              </div>
-              <button class="inquiry-btn" onclick="openModal('Dubai')">Enquire Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bali Package -->
-      <div class="destination-card">
-        <div class="promo-header">
-          <span class="location-name">Bali</span>
-          <span class="discount-text">Up to 15% OFF on Bali tour packages</span>
-        </div>
-        <div class="card-content">
-          <div class="image-section">
-            <img src="images/Home image/Depositphotos_3587328_L.webp" alt="Bali Temple" class="destination-image" loading="lazy">
-          </div>
-          <div class="info-section">
-            <div class="tour-header">
-              <h3 class="tour-title">Romantic Bali</h3>
-              <span class="duration-badge">4D / 3N</span>
-
-            </div>
-            <div class="price-info">
-              <div class="starting-price">Starting Price : <span class="price-amount" data-aed="1250">AED 1250</span>
-              </div>
-            </div>
-            <div class="amenities-row">
-              <div class="amenity-item">
-                <span class="fas fa-hotel"></span>
-                <span>3* / 4* / 5* Hotels</span>
-              </div>
-              <div class="amenity-item">
-                <span class="fas fa-utensils"></span>
-                <span>Breakfast</span>
-              </div>
-            </div>
-
-            <div class="attractions-list">
-              <span class="attraction-tag">Nature</span>
-              <span class="attraction-tag">Luxury</span>
-              <span class="attraction-tag">honey moon</span>
-              <span class="attraction-tag more-tag">More</span>
-            </div>
-
-            <div class="card-footer">
-              <div class="expiry-info">
-                <span class="clock-icon"></span>
-                <span>Expires in 2 months</span>
-              </div>
-              <button class="inquiry-btn" onclick="openModal('Bali')">Enquire Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="main-wrapper">
+    <div class="title-section">
+      <h1 class="primary-heading">
+        <span class="flame-emoji"></span>Limited time offers on exclusive packages
+      </h1>
+      <!-- <p class="subtitle-text">Limited time offers on exclusive packages</p> -->
     </div>
 
-    <!-- Second Row -->
-    <div class="package-grid">
-      <!-- Uzbekistan Package -->
-      <div class="destination-card">
-        <div class="promo-header">
-          <span class="location-name">Uzbekistan</span>
-          <span class="discount-text">Up to 15% OFF on Uzbekistan tour packages</span>
+    <div class="offers-grid">
+      <!-- First Package -->
+      <div class="trip-box">
+        <div class="photo-container">
+          <img src="images/dubai1.jpg" alt="Dubai Winter Package"
+            onerror="this.src='https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80'">
+          <div class="nights-label">3 Nights</div>
         </div>
-        <div class="card-content">
-          <div class="image-section">
-            <img src="images/Home image/20241104124630_4.webp"
-              alt="Uzbekistan Architecture" class="destination-image" loading="lazy">
-          </div>
-          <div class="info-section">
-            <div class="tour-header">
-              <h3 class="tour-title">Uzbekistan Budget Friendly</h3>
-              <span class="duration-badge">5D / 4N</span>
 
-            </div>
-            <div class="price-info">
-              <div class="starting-price">Starting Price : <span class="price-amount" data-aed="1599">AED 1599</span>
-              </div>
-            </div>
-            <div class="amenities-row">
-              <div class="amenity-item">
-                <span class="fas fa-hotel"></span>
-                <span>3* / 4* / 5* Hotels</span>
-              </div>
-              <div class="amenity-item">
-                <span class="fas fa-utensils"></span>
-                <span>Breakfast</span>
-              </div>
-            </div>
+        <div class="info-section">
+          <h3 class="package-name">Winter Package Dubai</h3>
+          <p class="package-details">
+            03/04/05 Star Hotels • UAE Visa • Transfers
+          </p>
 
-            <div class="attractions-list">
-              <span class="attraction-tag">Adventure</span>
-              <span class="attraction-tag">Luxury</span>
-              <span class="attraction-tag">honey moon</span>
-              <span class="attraction-tag more-tag">More</span>
-            </div>
+          <ul class="inclusions-list">
+            <li>Marina Dhow Cruise with Dinner</li>
+            <li>Burj Khalifa + City Tour</li>
+            <li>Desert Safari with BBQ Dinner</li>
+          </ul>
 
-            <div class="card-footer">
-              <div class="expiry-info">
-                <span class="clock-icon"></span>
-                <span>Expires in 2 months 3 weeks</span>
-              </div>
-              <button class="inquiry-btn" onclick="openModal('Uzbekistan')">Enquire Now</button>
+          <div class="cost-box">
+            <div class="cost-label">Starting From</div>
+            <div class="cost-value price-amount" data-aed="1550">
+              ₹33,199 <span class="per-person">/ Person</span>
             </div>
           </div>
+
+
+          <button class="action-button" onclick="showPopup('Winter Package Dubai - 3 Nights')">
+            Enquire Now
+          </button>
         </div>
       </div>
 
-      <!-- Egypt Package -->
-      <div class="destination-card">
-        <div class="promo-header">
-          <span class="location-name">Egypt</span>
-          <span class="discount-text">Up to 15% OFF on Egypt tour packages</span>
+      <!-- Second Package -->
+      <div class="trip-box">
+        <div class="photo-container">
+          <img src="images/dubai2.jpg" alt="Dubai Holiday Package"
+            onerror="this.src='https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?w=600&q=80'">
+          <div class="nights-label">4 Nights</div>
         </div>
-        <div class="card-content">
-          <div class="image-section">
-            <img src="images/Home image/Depositphotos_23268152_L.webp" alt="Egypt Pyramids"
-              class="destination-image" loading="lazy">
-          </div>
-          <div class="info-section">
-            <div class="tour-header">
-              <h3 class="tour-title">Egypt city tour</h3>
-              <span class="duration-badge">4D / 3N</span>
 
-            </div>
-            <div class="price-info">
-              <div class="starting-price">Starting Price : <span class="price-amount" data-aed="1530">AED 1530</span>
-              </div>
-            </div>
-            <div class="amenities-row">
-              <div class="amenity-item">
-                <span class="fas fa-hotel"></span>
-                <span>3* / 4* / 5* Hotels</span>
-              </div>
-              <div class="amenity-item">
-                <span class="fas fa-utensils"></span>
-                <span>Breakfast</span>
-              </div>
-            </div>
+        <div class="info-section">
+          <h3 class="package-name">Celebrate Holidays in Dubai</h3>
+          <p class="package-details">
+            Abu Dhabi Tour • 03/04/05 Star Hotels
+          </p>
 
-            <div class="attractions-list">
-              <span class="attraction-tag">Historical </span>
-              <span class="attraction-tag">Luxury</span>
-              <span class="attraction-tag">honey moon</span>
-              <span class="attraction-tag more-tag">More</span>
-            </div>
+          <ul class="inclusions-list">
+            <li>Dhow Cruise with Dinner</li>
+            <li>Burj Khalifa + City Tour</li>
+            <li>Desert Safari + Abu Dhabi Tour</li>
+          </ul>
 
-            <div class="card-footer">
-              <div class="expiry-info">
-                <span class="clock-icon"></span>
-                <span>Expires in 3 months</span>
-              </div>
-              <button class="inquiry-btn" onclick="openModal('Egypt')">Enquire Now</button>
-            </div>
-          </div>
+<div class="cost-box">
+    <div class="cost-label">Starting From</div>
+    <div class="cost-value price-amount" data-aed="1550">
+        ₹33,199 <span class="per-person">/ Person</span>
+    </div>
+</div>
+
+
+          <button class="action-button" onclick="showPopup('Holiday Package Dubai - 4 Nights')">
+            Enquire Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Third Package -->
+      <div class="trip-box">
+        <div class="photo-container">
+          <img src="images/dubai3.jpg" alt="Dubai Luxury Package"
+            onerror="this.src='https://images.unsplash.com/photo-1518684079-3c830dcef090?w=600&q=80'">
+          <div class="nights-label">5 Nights</div>
+        </div>
+
+        <div class="info-section">
+          <h3 class="package-name">Dubai Luxury Experience</h3>
+          <p class="package-details">
+            5 Star Hotels • Full Board • Premium Tours
+          </p>
+
+          <ul class="inclusions-list">
+            <li>Premium Dhow Cruise Dinner</li>
+            <li>Burj Khalifa At The Top SKY</li>
+            <li>VIP Desert Safari Experience</li>
+          </ul>
+
+<div class="cost-box">
+    <div class="cost-label">Starting From</div>
+    <div class="cost-value price-amount" data-aed="1550">
+        ₹33,199 <span class="per-person">/ Person</span>
+    </div>
+</div>
+
+
+          <button class="action-button" onclick="showPopup('Dubai Luxury Experience - 5 Nights')">
+            Enquire Now
+          </button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Booking Modal -->
-  <div class="modal-overlay" id="bookingModal">
-    <div class="booking-modal">
-      <div class="modal-header">
-        <button class="close-modal" onclick="closeModal()">×</button>
-      </div>
+  <!-- Modal Overlay -->
+  <div class="overlay" id="modalOverlay" onclick="hidePopup()"></div>
 
-      <div class="modal-content">
-        <div class="form-section">
-          <h2 class="modal-title" id="modalTitle">Discover New Destinations with Us</h2>
-          <p class="modal-subtitle">Complete the form and one of our travel specialists will Contact you with
-            the best options tailored to your needs.</p>
+  <!-- Modal Popup -->
+  <div class="popup-container" id="enquiryPopup">
+    <div class="popup-top">
+      <button class="close-icon" onclick="hidePopup()">&times;</button>
+      <h3 class="popup-heading" id="chosenPackage">Dubai Package</h3>
+    </div>
 
-          <form id="bookingForm">
-            <div class="form-group">
-              <label class="form-label">Name</label>
-              <input type="text" class="form-input" placeholder="First name" required>
-            </div>
+    <div class="popup-main">
+      <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+        <!-- Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
 
-            <div class="form-group">
-              <label class="form-label">Mobile Number</label>
-              <div class="phone-input-group">
-                <div class="country-code">
-                  <div class="flag-icon"></div>
-                  <span>+91</span>
-                </div>
-                <input type="tel" class="form-input phone-input" placeholder="Enter your 10 digit Mobile number"
-                  required>
-              </div>
-            </div>
+        <!-- Package Name -->
+        <input type="hidden" name="package" id="packageField">
 
-            <div class="form-group">
-              <label class="form-label">Email id</label>
-              <input type="email" class="form-input" placeholder="Enter your email id here" required>
-            </div>
-
-            <button type="submit" class="continue-btn">Continue</button>
-          </form>
+        <div class="input-wrapper">
+          <label class="input-title">Full Name</label>
+          <input type="text" name="name" class="text-field" placeholder="Enter your name" required>
         </div>
 
-        <div class="illustration-section">
-          <div class="illustration-container">
-            <div class="floating-elements">
-              <div class="float-circle float-1"></div>
-              <div class="float-circle float-2"></div>
-              <div class="float-circle float-3"></div>
-            </div>
-
-            <div class="phone-device">
-              <div class="phone-screen">📞</div>
-            </div>
-
-            <div class="business-person">
-              <div class="person-head">
-                <div class="person-hair"></div>
-              </div>
-              <div class="person-body">
-                <div class="person-tie"></div>
-                <div class="person-arms">
-                  <div class="arm-left"></div>
-                  <div class="arm-right"></div>
-                </div>
-              </div>
-              <div class="person-legs"></div>
-            </div>
-          </div>
+        <div class="input-wrapper">
+          <label class="input-title">Phone Number</label>
+          <input type="tel" name="phone" class="text-field" placeholder="Enter your mobile number" required>
         </div>
-      </div>
+
+        <div class="input-wrapper">
+          <label class="input-title">Email ID</label>
+          <input type="email" name="email" class="text-field" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-wrapper">
+          <label class="input-title">Message</label>
+          <textarea name="message" class="text-field message-field" placeholder="Tell us about your requirements..."
+            required></textarea>
+        </div>
+
+        <!-- Optional: redirect after submit -->
+        <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you.html">
+
+        <button type="submit" class="send-button">Submit Enquiry</button>
+      </form>
     </div>
   </div>
-
-
-
-
-
 
   <article class="heading">
     <h1>Budget Friendly Packages</h1>
@@ -451,13 +333,16 @@
           <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="Dubai Images/dubai-2057583_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Dubai Images/dubai-2057583_1920.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Dubai Images/city-3161105_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Dubai Images/city-3161105_1920.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Dubai Images/dubai-3720069_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Dubai Images/dubai-3720069_1920.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
             </div>
             <div class="carousel-indicators">
@@ -498,13 +383,16 @@
           <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="Vietnam-images\Depositphotos_43100157_L.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Vietnam-images\Depositphotos_43100157_L.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Vietnam-images\Depositphotos_70359503_L.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Vietnam-images\Depositphotos_70359503_L.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Vietnam-images\Depositphotos_86940690_L.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Vietnam-images\Depositphotos_86940690_L.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
             </div>
             <div class="carousel-indicators">
@@ -544,13 +432,15 @@
           <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="Armenia-images\armenia4_cropped_1550750178.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Armenia-images\armenia4_cropped_1550750178.webp" class="d-block w-100" alt="..."
+                  loading="lazy" loading="lazy">
               </div>
               <div class="carousel-item">
                 <img src="Armenia-images/4.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Armenia-images\cathedral-1781012.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Armenia-images\cathedral-1781012.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
             </div>
             <div class="carousel-indicators">
@@ -590,13 +480,15 @@
           <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="Georgia-images\giorgi-gvilava-ZTTjG9CS0c0-unsplash.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Georgia-images\giorgi-gvilava-ZTTjG9CS0c0-unsplash.webp" class="d-block w-100" alt="..."
+                  loading="lazy" loading="lazy">
               </div>
               <div class="carousel-item">
                 <img src="Georgia-images\9.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Georgia-images\tbilisi-4467916_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Georgia-images\tbilisi-4467916_1920.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
             </div>
             <div class="carousel-indicators">
@@ -636,13 +528,15 @@
           <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="Georgia-images\georgia-3706946_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Georgia-images\georgia-3706946_1920.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
                 <img src="Georgia-images\georgia4.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Georgia-images\gergeti-3098469_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Georgia-images\gergeti-3098469_1920.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
             </div>
             <div class="carousel-indicators">
@@ -681,14 +575,17 @@
           <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="Bali-images\Depositphotos_48098009_L.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Bali-images\Depositphotos_48098009_L.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Bali-images\Depositphotos_263543976_L.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Bali-images\Depositphotos_263543976_L.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
                 <img src="Bali-images\Depositphotos_3587328_L.webp"
-                  https://wallpaperbat.com/img/96070-download-photohop-py class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                  https://wallpaperbat.com/img/96070-download-photohop-py class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
             </div>
             <div class="carousel-indicators">
@@ -730,7 +627,8 @@
                 <img src="Bali-images\BALI 1.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Bali-images\Depositphotos_2933175_XL.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Bali-images\Depositphotos_2933175_XL.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
                 <img src="Bali-images\BALI 2.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
@@ -772,10 +670,12 @@
           <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="Azerbaijan-images\gubernator garden.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Azerbaijan-images\gubernator garden.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Azerbaijan-images\maiden tower.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Azerbaijan-images\maiden tower.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
                 <img src="Azerbaijan-images\Shahdag.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
@@ -826,7 +726,8 @@
                 <img src="Azerbaijan-images\baku.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Azerbaijan-images\Qabala  Tufandag hotel.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Azerbaijan-images\Qabala  Tufandag hotel.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
             </div>
             <div class="carousel-indicators">
@@ -869,13 +770,16 @@
           <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="Turkey-images\Depositphotos_104844232_L.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Turkey-images\Depositphotos_104844232_L.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Turkey-images\Depositphotos_198369812_L.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Turkey-images\Depositphotos_198369812_L.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Turkey-images\Depositphotos_116860468_L.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Turkey-images\Depositphotos_116860468_L.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
             </div>
             <div class="carousel-indicators">
@@ -918,13 +822,16 @@
           <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="Thailand-images\Depositphotos_11539101_L.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Thailand-images\Depositphotos_11539101_L.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Thailand-images\Depositphotos_183537784_L.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Thailand-images\Depositphotos_183537784_L.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Thailand-images\Depositphotos_4087689_L.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Thailand-images\Depositphotos_4087689_L.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
             </div>
             <div class="carousel-indicators">
@@ -967,13 +874,16 @@
           <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="Srilanka-images\dambulla-1024350_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Srilanka-images\dambulla-1024350_1920.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Srilanka-images\sigiriya-459197_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Srilanka-images\sigiriya-459197_1920.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
               <div class="carousel-item">
-                <img src="Srilanka-images\sri-lanka-289803_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                <img src="Srilanka-images\sri-lanka-289803_1920.webp" class="d-block w-100" alt="..." loading="lazy"
+                  loading="lazy">
               </div>
             </div>
             <div class="carousel-indicators">
@@ -1253,10 +1163,10 @@ Murooshed AImheiri Building 307, Oud Metha, Dubai - U.A.E</p> -->
           <h5 class="footer-title">Contact</h5>
           <ul class="footer-Contact">
             <li><i class="fas fa-home"></i>Shop S-006, Saeed Mohammed Saeed
-Murooshed AImheiri Building 307, Oud Metha, Dubai - U.A.E</li>
+              Murooshed AImheiri Building 307, Oud Metha, Dubai - U.A.E</li>
             <li><i class="fas fa-envelope"></i> info@cityonetours.com</li>
-             <li><i class="fas fa-phone"></i>+971 4 392 2959</li>
-           </ul>
+            <li><i class="fas fa-phone"></i>+971 4 392 2959</li>
+          </ul>
         </div>
       </div>
 

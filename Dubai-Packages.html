@@ -22,8 +22,8 @@
                 <button class="help-btn">Help &#9662;</button>
                 <div class="help-dropdown">
                     <span onclick="window.location.href='tel:+97143922959'" style="cursor:pointer;">
-            <i class="fas fa-phone"></i> +971 4 392 2959
-          </span>
+                        <i class="fas fa-phone"></i> +971 4 392 2959
+                    </span>
                     <!-- Working mailto link -->
                     <span>
                         <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
@@ -111,7 +111,8 @@
                     <img src="Dubai Images/2.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
                 </div>
                 <div class="carousel-item">
-                    <img src="Dubai Images/dubai-1514540_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                    <img src="Dubai Images/dubai-1514540_1920.webp" class="d-block w-100" alt="..." loading="lazy"
+                        loading="lazy">
                 </div>
                 <div class="carousel-item">
                     <img src="Dubai Images/Aq2.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
@@ -141,13 +142,16 @@
                     <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="Dubai Images/dubai-2650364_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                                <img src="Dubai Images/dubai-2650364_1920.webp" class="d-block w-100" alt="..."
+                                    loading="lazy" loading="lazy">
                             </div>
                             <div class="carousel-item">
-                                <img src="Dubai Images/mosque-1853223_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                                <img src="Dubai Images/mosque-1853223_1920.webp" class="d-block w-100" alt="..."
+                                    loading="lazy" loading="lazy">
                             </div>
                             <div class="carousel-item">
-                                <img src="Dubai Images/dubai-3457885_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                                <img src="Dubai Images/dubai-3457885_1920.webp" class="d-block w-100" alt="..."
+                                    loading="lazy" loading="lazy">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -192,13 +196,16 @@
                     <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="Dubai Images/dubai-2057583_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                                <img src="Dubai Images/dubai-2057583_1920.webp" class="d-block w-100" alt="..."
+                                    loading="lazy" loading="lazy">
                             </div>
                             <div class="carousel-item">
-                                <img src="Dubai Images/city-3161105_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                                <img src="Dubai Images/city-3161105_1920.webp" class="d-block w-100" alt="..."
+                                    loading="lazy" loading="lazy">
                             </div>
                             <div class="carousel-item">
-                                <img src="Dubai Images/dubai-3720069_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                                <img src="Dubai Images/dubai-3720069_1920.webp" class="d-block w-100" alt="..."
+                                    loading="lazy" loading="lazy">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -243,13 +250,16 @@
                     <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="Dubai Images/the-palm-962785_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                                <img src="Dubai Images/the-palm-962785_1920.webp" class="d-block w-100" alt="..."
+                                    loading="lazy" loading="lazy">
                             </div>
                             <div class="carousel-item">
-                                <img src="Dubai Images/dubai-1514540_1920.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                                <img src="Dubai Images/dubai-1514540_1920.webp" class="d-block w-100" alt="..."
+                                    loading="lazy" loading="lazy">
                             </div>
                             <div class="carousel-item">
-                                <img src="Dubai Images/Dubai 7.webp" class="d-block w-100" alt="..." loading="lazy" loading="lazy">
+                                <img src="Dubai Images/Dubai 7.webp" class="d-block w-100" alt="..." loading="lazy"
+                                    loading="lazy">
                             </div>
                         </div>
                         <div class="carousel-indicators">
@@ -307,18 +317,34 @@
                             alt="popup-img" loading="lazy">
                     </div>
                     <div class="col-md-6">
-                        <form>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+
+                            <!-- Web3Forms Access Key -->
+                            <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+                            <input type="hidden" name="subject" value="Enquiry from Popup Modal Form">
+
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="First Name">
+                                <input type="text" name="name" class="form-control" placeholder="First Name" required>
                             </div>
+
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Mobile Number">
+                                <input type="tel" name="phone" class="form-control" placeholder="Mobile Number"
+                                    required>
                             </div>
+
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email ID">
+                                <input type="email" name="email" class="form-control" placeholder="Email ID" required>
                             </div>
+
+                            <div class="mb-3">
+                                <textarea name="message" class="form-control" rows="4" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+
                             <button type="submit" class="btn btn-danger w-100">Continue</button>
+
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -369,18 +395,32 @@
                             alt="popup-img" loading="lazy">
                     </div>
                     <div class="col-md-6">
-                        <form>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="First Name">
-                            </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Mobile Number">
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email ID">
-                            </div>
-                            <button type="submit" class="btn btn-danger w-100">Continue</button>
-                        </form>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+    <input type="hidden" name="subject" value="Enquiry from Popup Modal Form">
+
+    <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="First Name" required>
+    </div>
+
+    <div class="mb-3">
+        <input type="tel" name="phone" class="form-control" placeholder="Mobile Number" required>
+    </div>
+
+    <div class="mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Email ID" required>
+    </div>
+
+    <div class="mb-3">
+        <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-danger w-100">Continue</button>
+
+</form>
+
                     </div>
                 </div>
             </div>
@@ -390,7 +430,7 @@
 
 
     <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" loading="lazy"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" loading="lazy" />
     </a>
     <div class="mobile-bottom-nav">
         <a href="/" class="nav-item">

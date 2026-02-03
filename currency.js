@@ -1,18 +1,35 @@
 const exchangeRates = {
-  AED_TO_INR: 24.02,
-  AED_TO_USD: 0.2712
+  AED_TO_INR: 24.62,
+  AED_TO_USD: 0.2723
 };
 
-let userCurrency = 'AED';   // default
+let userCurrency = 'AED';
 
-// Format the price based on the current userCurrency
-function formatPrice(aed) {
-  if (userCurrency === 'AED') return `AED ${aed}`;
-  if (userCurrency === 'INR') return `₹ ${(aed * exchangeRates.AED_TO_INR).toFixed(0)}`;
-  if (userCurrency === 'USD') return `$ ${(aed * exchangeRates.AED_TO_USD).toFixed(0)}`;
+// Format numbers with commas
+function numberFormat(num) {
+  return num.toLocaleString('en-IN', {
+    maximumFractionDigits: 2
+  });
 }
 
-// Update every element that has class="price-amount"
+// Format price
+function formatPrice(aed) {
+  if (userCurrency === 'AED') {
+    return `AED ${numberFormat(aed)}`;
+  }
+
+  if (userCurrency === 'INR') {
+    const inr = aed * exchangeRates.AED_TO_INR;
+    return `₹ ${numberFormat(inr)}`;
+  }
+
+  if (userCurrency === 'USD') {
+    const usd = aed * exchangeRates.AED_TO_USD;
+    return `$ ${numberFormat(usd)}`;
+  }
+}
+
+// Update prices
 function updateAllPrices() {
   document.querySelectorAll('.price-amount').forEach(el => {
     const aed = parseFloat(el.dataset.aed);
@@ -20,25 +37,23 @@ function updateAllPrices() {
   });
 }
 
-// Change currency and remember the choice
+// Change currency
 function setCurrency(currency) {
   userCurrency = currency;
-  localStorage.setItem('selectedCurrency', currency); // 🔑 persists across pages
+  localStorage.setItem('selectedCurrency', currency);
   updateAllPrices();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Restore saved currency when any page loads
   const saved = localStorage.getItem('selectedCurrency');
   if (saved) {
     userCurrency = saved;
     const select = document.getElementById('currencySelect');
-    if (select) select.value = saved; // keep dropdown in sync
+    if (select) select.value = saved;
   }
 
   updateAllPrices();
 
-  // Listen for dropdown changes in the navbar
   const select = document.getElementById('currencySelect');
   if (select) {
     select.addEventListener('change', e => setCurrency(e.target.value));
