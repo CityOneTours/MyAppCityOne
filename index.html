@@ -12,6 +12,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7VYMPTPGB3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7VYMPTPGB3');
+</script>
 </head>
 
 <body>
@@ -90,43 +98,181 @@
     </nav>
   </header>
   <section class="hero-section">
-    <div class="hero">
-      <div class="carousel-slide">
-        <img src="images/Home image/dubai-3720069_1920.webp" alt="Dubai Burj Al Arab" loading="lazy" />
+    <!-- Background Carousel -->
+    <div class="hero-bg-carousel">
+      <div class="hero-bg-slide"></div>
+      <div class="hero-bg-slide"></div>
+      <div class="hero-bg-slide"></div>
+    </div>
+    <div class="hero-content">
+      <!-- Welcome Title -->
+      <h1 class="welcome-title">Welcome to City One Tourism & Travel</h1>
+
+      <!-- Most Popular Label -->
+      <div class="most-popular-label">
+        MOST POPULAR
+        <a href="destination.html" class="popular-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+
       </div>
-      <div class="carousel-slide active">
-        <img src="images/Home image/1.webp" alt="Dubai Burj Khalifa" loading="lazy" />
-      </div>
-      <div class="carousel-slide">
-        <img src="images/Home image/Depositphotos_86940690_L.webp" alt="Dubai Marina" loading="lazy" />
-      </div>
-      <div class="content">
-        <h1 class="welcome">WELCOME TO CITY ONE TOURISM & TRAVEL</h1>
-        <p class="ptag">Discover. Explore. Experience the World with Us.</p>
-        <div class="tabs">
-          <div class="tab" onclick="window.location.href='destination.html'">Destinations</div>
-          <div class="tab" onclick="window.location.href='hotdeal.html'">Hot Deal</div>
-          <div class="tab" onclick="window.location.href='visa.html'">Visa</div>
-          <div class="tab" onclick="window.location.href='hotels.html'">Hotel </div>
-          <div class="tab" onclick="window.location.href='flight.html'">Flight</div>
+
+
+      <!-- Destination Cards -->
+<div class="destination-cards">
+
+  <a href="Dubai-Packages.html" style="text-decoration: none; color: inherit;">
+    <div class="destination-card">
+      <img src="Dubai Images/burj-al-arab-2624317_1920 - Copy.webp" alt="Scotland">
+      <div class="destination-label">Trip To Dubai</div>
+    </div>
+  </a>
+
+  <a href="Egypt-packages.html" style="text-decoration: none; color: inherit;">
+    <div class="destination-card">
+      <img src="https://images.unsplash.com/photo-1539768942893-daf53e448371?w=400&q=80" alt="Egypt">
+      <div class="destination-label">Trip To Egypt</div>
+    </div>
+  </a>
+
+  <a href="vietnam-packages.html" style="text-decoration: none; color: inherit;">
+    <div class="destination-card">
+      <img src="Vietnam-images/Depositphotos_37768795_L.webp" alt="Greece">
+      <div class="destination-label">Trip To Vietnam</div>
+    </div>
+  </a>
+
+</div>
+
+
+      <!-- Search Wrapper -->
+      <div class="search-wrapper">
+        <!-- Tab Navigation -->
+        <div class="tab-navigation">
+          <div class="nav-tab active">Flight</div>
+          <div class="nav-tab">Holidays</div>
+          <div class="nav-tab">Packages</div>
+          <div class="nav-tab">Destinations</div>
+          <div class="nav-tab">Visa</div>
         </div>
-        <div class="search-box">
-          <input type="text" id="destinationInput" placeholder="Enter destination" onkeyup="filterCountries()"
-            onclick="showList()" />
-          <div id="countryList"></div>
-          <select id="themeSelect">
+
+        <!-- Search Form -->
+        <form class="search-form" onsubmit="handleSearch(event)">
+          <input type="text" class="search-input" placeholder="Enter destinations" id="destinationInput">
+
+          <select class="search-select" id="themeSelect">
             <option value="">Select theme</option>
             <option value="adventure">Adventure</option>
-            <option value="honeymoon">Honey Moon</option>
+            <option value="honeymoon">Honeymoon</option>
             <option value="luxury">Luxury</option>
-            <option value="family">Family with kids</option>
+            <option value="family">Family with Kids</option>
+            <!-- <option value="beach">Beach & Relaxation</option>
+            <option value="cultural">Cultural Tours</option> -->
           </select>
-          <input type="date" id="dateInput" />
-          <button onclick="handleSearch()">Search</button>
-        </div>
+
+          <input type="date" class="search-input" id="dateInput" placeholder="Enter Date">
+
+          <button type="submit" class="search-button">Search</button>
+        </form>
       </div>
     </div>
   </section>
+
+
+  <!-- Mobile Image Carousel Start -->
+  <section class="mobile-banner-wrapper">
+    <div class="mobile-banner-carousel">
+
+      <div class="mobile-slide active">
+        <a href="Dubai-Packages.html">
+          <img src="images/Home image/banner.png.png" alt="Dubai Package">
+        </a>
+      </div>
+
+      <div class="mobile-slide">
+        <a href="Bali-packages.html">
+          <img src="images/Home image/Group 1707478687 (1).jpg" alt="Bali Package">
+        </a>
+      </div>
+
+      <div class="mobile-slide">
+        <a href="Dubai-Packages.html">
+          <img src="images/Home image/banner.png (1).png" alt="Vietnam Package">
+        </a>
+      </div>
+
+      <div class="mobile-slide">
+        <a href="vietnam-packages.html">
+          <img src="images/Home image/Group 1707478687 (2).jpg" alt="Ramadan Dubai">
+        </a>
+      </div>
+
+
+      <div class="mobile-dots">
+        <span class="mobile-dot active" onclick="mobileGoToSlide(0)"></span>
+        <span class="mobile-dot" onclick="mobileGoToSlide(1)"></span>
+        <span class="mobile-dot" onclick="mobileGoToSlide(2)"></span>
+        <span class="mobile-dot" onclick="mobileGoToSlide(3)"></span>
+      </div>
+
+    </div>
+  </section>
+  <!-- Mobile Image Carousel End -->
+  <div class="promo-section-wrapper">
+    <div class="promo-carousel-container">
+      <button class="nav-arrow-button nav-prev-button" onclick="scrollCarousel('left')" aria-label="Previous">
+        ‹
+      </button>
+
+      <div class="promo-scroll-area" id="offerScrollWrapper">
+        <!-- Card 1 -->
+        <div class="offer-card-item">
+          <img src="https://b2c-admin-storage.s3-ap-southeast-1.amazonaws.com/CMSPRD/OfferPageBannerNew/OFFERPAGEBANNERabudhabi.jpg" alt="Offer 1"
+            class="card-background-image">
+        </div>
+
+        <!-- Card 2 -->
+        <div class="offer-card-item">
+          <img src="https://b2c-admin-storage.s3-ap-southeast-1.amazonaws.com/CMSPRD/OfferPageBannerNew/OFFERPAGEBANNERs.jpg" alt="Offer 2"
+            class="card-background-image">
+        </div>
+
+        <!-- Card 3 -->
+        <div class="offer-card-item">
+          <img src="https://b2c-admin-storage.s3-ap-southeast-1.amazonaws.com/CMSPRD/OfferPageBannerNew/OFFERPAGEBANNERSRILANKA.jpg" alt="Offer 3"
+            class="card-background-image">
+        </div>
+
+        <!-- Card 4 -->
+        <div class="offer-card-item">
+          <img src="https://b2c-admin-storage.s3-ap-southeast-1.amazonaws.com/CMSPRD/OfferPageBannerNew/OFFERPAGEBANNERmorocco.jpg" alt="Offer 4"
+            class="card-background-image">
+        </div>
+
+        <!-- Card 5 -->
+        <div class="offer-card-item">
+          <img src="https://b2c-admin-storage.s3-ap-southeast-1.amazonaws.com/CMSPRD/OfferPageBannerNew/OFFERPAGEBANNERTHAILAND.jpg" alt="Offer 5"
+            class="card-background-image">
+        </div>
+
+        <!-- Card 6 -->
+        <div class="offer-card-item">
+          <img src="https://b2c-admin-storage.s3-ap-southeast-1.amazonaws.com/CMSPRD/OfferPageBannerNew/OFFERPAGEBANNERphilippines.jpg" alt="Offer 6"
+            class="card-background-image">
+        </div>
+
+        <!-- Card 7 -->
+        <div class="offer-card-item">
+          <img src="https://b2c-admin-storage.s3-ap-southeast-1.amazonaws.com/CMSPRD/OfferPageBannerNew/OFFERPAGEBANNERv.jpg" alt="Offer 7"
+            class="card-background-image">
+        </div>
+      </div>
+
+      <button class="nav-arrow-button nav-next-button" onclick="scrollCarousel('right')" aria-label="Next">
+        ›
+      </button>
+    </div>
+  </div>
   <a href="https://wa.me/97143922959" class="whatsapp-float" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" loading="lazy" />
   </a>
@@ -367,7 +513,7 @@
       </div>
     </div>
   </section>
-  <article class="heading" data-aos="fade-up" data-aos-duration="5000">
+  <article class="heading">
     <h1>Find Your Perfect Trip Style</h1>
   </article>
   <section data-aos="fade-up" data-aos-duration="5000">

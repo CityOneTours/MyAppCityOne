@@ -738,3 +738,131 @@ document.addEventListener('DOMContentLoaded', function () {
     images.forEach(img => imageObserver.observe(img));
   }
 });
+
+   // Tab Navigation
+    const tabs = document.querySelectorAll('.nav-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        tabs.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        console.log('Selected tab:', this.textContent);
+      });
+    });
+
+    // Destination Cards
+    const cards = document.querySelectorAll('.destination-card');
+    cards.forEach(card => {
+      card.addEventListener('click', function() {
+        const destination = this.querySelector('.destination-label').textContent;
+        const destinationInput = document.getElementById('destinationInput');
+        destinationInput.value = destination.replace('Trip To ', '');
+        console.log('Selected destination:', destination);
+      });
+    });
+
+    // Search Handler
+    function handleSearch(event) {
+  event.preventDefault();
+
+  const destination = document.getElementById("destinationInput").value.trim();
+  const theme = document.getElementById("themeSelect").value;
+  const date = document.getElementById("dateInput").value;
+
+  if (!destination || !theme || !date) {
+    alert("Please select destination, theme, and date!");
+    return;
+  }
+
+  // Format destination (First Letter Capital)
+  const formattedDestination =
+    destination.charAt(0).toUpperCase() + destination.slice(1).toLowerCase();
+
+  // Create page URL
+  const url = formattedDestination.replace(/\s+/g, '-') + "-Packages.html";
+
+  // Navigate
+  window.location.href = url;
+}
+    // Set minimum date to today
+    const dateInput = document.getElementById('dateInput');
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute('min', today);
+
+
+    let mobileCurrentIndex = 0;
+const mobileSlides = document.querySelectorAll('.mobile-slide');
+const mobileDots = document.querySelectorAll('.mobile-dot');
+const mobileTotal = mobileSlides.length;
+
+function mobileShowSlide(index) {
+  mobileSlides.forEach(slide => slide.classList.remove('active'));
+  mobileDots.forEach(dot => dot.classList.remove('active'));
+
+  mobileSlides[index].classList.add('active');
+  mobileDots[index].classList.add('active');
+}
+
+
+function mobileNextSlide() {
+  mobileCurrentIndex = (mobileCurrentIndex + 1) % mobileTotal;
+  mobileShowSlide(mobileCurrentIndex);
+}
+
+function mobileGoToSlide(index) {
+  mobileCurrentIndex = index;
+  mobileShowSlide(mobileCurrentIndex);
+}
+
+setInterval(mobileNextSlide, 4000);
+
+
+
+
+
+   function scrollCarousel(direction) {
+            const offerScrollWrapper = document.getElementById('offerScrollWrapper');
+            // Responsive scroll amount
+            const cardWidth = window.innerWidth <= 480 ? 240 : (window.innerWidth <= 768 ? 280 : 350);
+            const gapWidth = window.innerWidth <= 480 ? 16 : 24;
+            const scrollAmount = cardWidth + gapWidth;
+            
+            if (direction === 'left') {
+                offerScrollWrapper.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            } else {
+                offerScrollWrapper.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Optional: Auto-hide arrows at scroll boundaries
+        const promoScrollElement = document.getElementById('offerScrollWrapper');
+        const prevArrowBtn = document.querySelector('.nav-prev-button');
+        const nextArrowBtn = document.querySelector('.nav-next-button');
+
+        promoScrollElement.addEventListener('scroll', function() {
+            // Hide/show prev button
+            if (promoScrollElement.scrollLeft <= 0) {
+                prevArrowBtn.style.opacity = '0.5';
+                prevArrowBtn.style.cursor = 'not-allowed';
+            } else {
+                prevArrowBtn.style.opacity = '1';
+                prevArrowBtn.style.cursor = 'pointer';
+            }
+
+            // Hide/show next button
+            if (promoScrollElement.scrollLeft >= promoScrollElement.scrollWidth - promoScrollElement.clientWidth - 10) {
+                nextArrowBtn.style.opacity = '0.5';
+                nextArrowBtn.style.cursor = 'not-allowed';
+            } else {
+                nextArrowBtn.style.opacity = '1';
+                nextArrowBtn.style.cursor = 'pointer';
+            }
+        });
+
+        // Initial check
+        promoScrollElement.dispatchEvent(new Event('scroll'));
