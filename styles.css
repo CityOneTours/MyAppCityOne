@@ -2703,10 +2703,9 @@
             .nav-arrow-button {
                 width: 35px;
                 height: 35px;
-                font-size: 14px;
+                font-size: 14px !important;
             }
         }
 
 
 
-        
