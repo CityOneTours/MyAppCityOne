@@ -177,26 +177,25 @@
                 </div>
             </div>
 
-            <!-- Right Form Panel -->
-            <div class="Contact-form">
-                <form action="https://api.web3forms.com/submit" method="POST">
+<form action="https://api.web3forms.com/submit" method="POST">
 
-                    <!-- Web3Forms Access Key -->
-                    <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+  <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+  <input type="hidden" name="subject" value="General Enquiry - City One Website">
 
-                    <div class="form-row">
-                        <input type="text" name="name" placeholder="Your Name *" required>
-                        <input type="tel" name="phone" placeholder="Your Phone *" required>
-                        <input type="email" name="email" placeholder="Your Email *" required>
-                    </div>
+  <label>Name</label>
+  <input type="text" name="name" required>
 
-                    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+  <label>Email</label>
+  <input type="email" name="email" required>
 
-                    <br>
-                    <button type="submit" class="form-btn">Send Message</button>
+  <label>Phone</label>
+  <input type="tel" name="phone" required>
 
-                </form>
-            </div>
+  <textarea name="message" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
 
         </div>
     </section>

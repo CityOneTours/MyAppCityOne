@@ -866,3 +866,42 @@ setInterval(mobileNextSlide, 4000);
 
         // Initial check
         promoScrollElement.dispatchEvent(new Event('scroll'));
+
+
+
+        (function () {
+  const scroller = document.getElementById("scrollContainer");
+  if (!scroller) return;
+
+  let speed = 1.5; // lower = slower & smoother
+  let animationId;
+  let isPaused = false;
+
+  function smoothScroll() {
+    if (!isPaused) {
+      scroller.scrollLeft += speed;
+
+      if (
+        scroller.scrollLeft + scroller.clientWidth >=
+        scroller.scrollWidth
+      ) {
+        scroller.scrollLeft = 0;
+      }
+    }
+
+    animationId = requestAnimationFrame(smoothScroll);
+  }
+
+  // Start animation
+  smoothScroll();
+
+  // Pause on hover
+  scroller.addEventListener("mouseenter", () => {
+    isPaused = true;
+  });
+
+  // Resume on leave
+  scroller.addEventListener("mouseleave", () => {
+    isPaused = false;
+  });
+})();

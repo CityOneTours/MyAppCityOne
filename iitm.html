@@ -1,0 +1,2434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Summer Delights – IITM Ahmedabad</title>
+        <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --gold: #C9A84C;
+            --gold-lt: #F0D080;
+            --navy: #08162A;
+            --navy2: #0E2340;
+            --cream: #FAF7F2;
+            --sand: #EEE4CF;
+            --text: #222;
+            --muted: #6B7280;
+            --red: #E63946;
+            --green: #1E8E3E;
+            --white: #fff;
+            --r: 14px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: var(--cream);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        /* TICKER */
+        .ticker {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            background: linear-gradient(90deg, #b71c1c, var(--red));
+            padding: 9px 0;
+            overflow: hidden;
+        }
+
+        .ticker-track {
+            display: flex;
+            animation: tickRun 22s linear infinite;
+            white-space: nowrap;
+        }
+
+        .t-item {
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 0 28px;
+            flex-shrink: 0;
+        }
+
+        .t-sep {
+            color: var(--gold-lt);
+            padding: 0 4px;
+            flex-shrink: 0;
+        }
+
+        @keyframes tickRun {
+            0% {
+                transform: translateX(0)
+            }
+
+            100% {
+                transform: translateX(-50%)
+            }
+        }
+
+        /* FLOATING ENQUIRY BTN */
+        .enq-float {
+            position: fixed;
+            bottom: 22px;
+            right: 18px;
+            z-index: 8000;
+            background: linear-gradient(135deg, var(--gold), #a8832a);
+            color: #fff;
+            border: none;
+            padding: 13px 20px;
+            border-radius: 50px;
+            font-family: 'Roboto', sans-serif;
+            font-size: .88rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 6px 22px rgba(201, 168, 76, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all .3s;
+            animation: floatIn .7s 1s cubic-bezier(.175, .885, .32, 1.275) backwards;
+        }
+
+        .enq-float:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(201, 168, 76, 0.6);
+        }
+
+        @keyframes floatIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        /* MODAL BACKDROP */
+        .mbk {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(8, 22, 42, 0.78);
+            backdrop-filter: blur(5px);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+            padding: 14px;
+        }
+
+        .mbk.open {
+            display: flex;
+        }
+
+        .mbox {
+            background: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+            overflow: hidden;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+            animation: mIn .32s cubic-bezier(.175, .885, .32, 1.275) both;
+        }
+
+        @keyframes mIn {
+            from {
+                opacity: 0;
+                transform: scale(.86) translateY(28px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        .mhd {
+            background: linear-gradient(135deg, var(--navy), var(--navy2));
+            padding: 26px 26px 22px;
+            position: relative;
+        }
+
+        .mhd h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.45rem;
+            color: #fff;
+            margin-bottom: 3px;
+        }
+
+        .mhd p {
+            color: rgba(255, 255, 255, .58);
+            font-size: .84rem;
+        }
+
+        .mclose {
+            position: absolute;
+            top: 14px;
+            right: 16px;
+            background: rgba(255, 255, 255, .12);
+            border: none;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background .2s;
+        }
+
+        .mclose:hover {
+            background: rgba(255, 255, 255, .25);
+        }
+
+        .mgold {
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .mbody {
+            padding: 24px;
+        }
+
+        .fg {
+            margin-bottom: 16px;
+        }
+
+        .fg label {
+            display: block;
+            font-size: .78rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 5px;
+            letter-spacing: .4px;
+            text-transform: uppercase;
+        }
+
+        .fg input,
+        .fg select,
+        .fg textarea {
+            width: 100%;
+            border: 1.5px solid #e0ddd6;
+            border-radius: 9px;
+            padding: 11px 13px;
+            font-family: 'Roboto', sans-serif;
+            font-size: .92rem;
+            color: var(--text);
+            background: var(--cream);
+            outline: none;
+            transition: border .2s, box-shadow .2s;
+        }
+
+        .fg input:focus,
+        .fg select:focus,
+        .fg textarea:focus {
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(201, 168, 76, .13);
+        }
+
+        .fg textarea {
+            resize: vertical;
+            min-height: 72px;
+        }
+
+        .frow {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .fsubmit {
+            width: 100%;
+            background: linear-gradient(135deg, var(--gold), #a8832a);
+            color: #fff;
+            border: none;
+            padding: 13px;
+            border-radius: 9px;
+            font-family: 'Roboto', sans-serif;
+            font-size: .95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all .3s;
+            margin-top: 2px;
+        }
+
+        .fsubmit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(201, 168, 76, .4);
+        }
+
+        .msuccess {
+            display: none;
+            text-align: center;
+            padding: 38px 26px;
+        }
+
+        .msuccess .tick {
+            font-size: 3.2rem;
+            margin-bottom: 14px;
+        }
+
+        .msuccess h4 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--green);
+            margin-bottom: 7px;
+        }
+
+        .msuccess p {
+            color: var(--muted);
+            font-size: .92rem;
+            line-height: 1.6;
+        }
+
+        /* LIGHTBOX */
+        .lbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .93);
+            z-index: 11000;
+            align-items: center;
+            justify-content: center;
+            padding: 14px;
+        }
+
+        .lbox.open {
+            display: flex;
+        }
+
+        .lb-in {
+            position: relative;
+            max-width: 880px;
+            width: 100%;
+        }
+
+        .lb-img {
+            width: 100%;
+            max-height: 78vh;
+            object-fit: contain;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .lb-x {
+            position: absolute;
+            top: -13px;
+            right: -13px;
+            background: #fff;
+            border: none;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .3);
+        }
+
+        .lb-arrows {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+        }
+
+        .lb-arr {
+            pointer-events: all;
+            background: rgba(255, 255, 255, .15);
+            backdrop-filter: blur(6px);
+            border: none;
+            color: #fff;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background .2s;
+        }
+
+        .lb-arr:hover {
+            background: rgba(201, 168, 76, .5);
+        }
+
+        .lb-cap {
+            text-align: center;
+            margin-top: 11px;
+            color: rgba(255, 255, 255, .75);
+            font-size: .87rem;
+        }
+
+        .lb-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .lb-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .35);
+            cursor: pointer;
+            transition: background .2s;
+        }
+
+        .lb-dot.on {
+            background: var(--gold);
+        }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 640px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 36px;
+            overflow: hidden;
+        }
+
+        .hero video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .hero-ov {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(155deg, rgba(8, 22, 42, .9) 0%, rgba(8, 22, 42, .62) 55%, rgba(201, 168, 76, .2) 100%);
+            z-index: 1;
+        }
+
+        .hero-c {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 20px 16px;
+            max-width: 1080px;
+            width: 100%;
+        }
+
+        .h-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: rgba(201, 168, 76, .14);
+            border: 1.5px solid var(--gold);
+            color: var(--gold);
+            padding: 6px 20px;
+            border-radius: 28px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            animation: fup .9s ease both;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.4rem, 9vw, 6rem);
+            font-weight: 900;
+            color: #fff;
+            line-height: 1.05;
+            margin-bottom: 11px;
+            text-shadow: 0 4px 28px rgba(0, 0, 0, .6);
+            animation: fup .9s .14s ease both;
+        }
+
+        .hero h1 em {
+            color: var(--gold);
+            font-style: normal;
+        }
+
+        .hero-sub {
+            font-size: clamp(1rem, 2.5vw, 1.35rem);
+            color: rgba(255, 255, 255, .78);
+            font-weight: 300;
+            margin-bottom: 28px;
+            animation: fup .9s .28s ease both;
+        }
+
+        .h-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            justify-content: center;
+            animation: fup .9s .42s ease both;
+        }
+
+        .chip {
+            background: rgba(255, 255, 255, .12);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, .22);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 22px;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all .3s;
+        }
+
+        .chip:hover {
+            background: rgba(201, 168, 76, .28);
+            border-color: var(--gold);
+        }
+
+        .h-enq {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            background: var(--gold);
+            color: var(--navy);
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-size: .95rem;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 24px;
+            transition: all .3s;
+            animation: fup .9s .56s ease both;
+            box-shadow: 0 6px 22px rgba(201, 168, 76, .38);
+        }
+
+        .h-enq:hover {
+            background: var(--gold-lt);
+            transform: translateY(-2px);
+        }
+
+        .scroll-dn {
+            position: absolute;
+            bottom: 26px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            cursor: pointer;
+            animation: bounce 2.2s infinite;
+        }
+
+        .scroll-dn span {
+            display: block;
+            width: 25px;
+            height: 42px;
+            border: 2px solid rgba(201, 168, 76, .6);
+            border-radius: 16px;
+            position: relative;
+        }
+
+        .scroll-dn span::after {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 8px;
+            background: var(--gold);
+            border-radius: 2px;
+            animation: sdot 1.6s ease-in-out infinite;
+        }
+
+        /* SECTIONS */
+        .sec {
+            padding: 68px 16px;
+        }
+
+        .sw {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .sh {
+            text-align: center;
+            margin-bottom: 46px;
+        }
+
+        .sh h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 5vw, 2.9rem);
+            font-weight: 900;
+            color: var(--navy);
+            display: inline-block;
+            position: relative;
+            margin-bottom: 8px;
+        }
+
+        .sh h2::after {
+            content: '';
+            position: absolute;
+            bottom: -9px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .sh p {
+            color: var(--muted);
+            font-size: clamp(.9rem, 2vw, 1.02rem);
+            max-width: 540px;
+            margin: 18px auto 0;
+            line-height: 1.7;
+        }
+
+        /* URGENT BANNER */
+        .urgent {
+            background: linear-gradient(90deg, #b71c1c, var(--red), #b71c1c);
+            padding: 16px 18px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .urgent::before {
+            content: '';
+            position: absolute;
+            top: -70%;
+            right: -5%;
+            width: 240px;
+            height: 240px;
+            background: radial-gradient(circle, rgba(255, 255, 255, .1), transparent 70%);
+            border-radius: 50%;
+            animation: upulse 3.2s ease-in-out infinite;
+        }
+
+        .urg-in {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .urg-txt {
+            color: #fff;
+            font-size: clamp(.92rem, 3vw, 1.2rem);
+            font-weight: 700;
+            letter-spacing: .4px;
+            text-align: center;
+        }
+
+        .urg-tag {
+            background: var(--gold-lt);
+            color: #7a4500;
+            padding: 2px 11px;
+            border-radius: 5px;
+            font-size: .78em;
+            font-weight: 900;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .bell {
+            font-size: 1.5rem;
+            animation: bellr 1.4s ease-in-out infinite;
+        }
+
+        .urg-enq {
+            background: #fff;
+            color: var(--red);
+            border: none;
+            padding: 9px 20px;
+            border-radius: 24px;
+            font-family: 'Roboto', sans-serif;
+            font-size: .87rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all .25s;
+            flex-shrink: 0;
+        }
+
+        .urg-enq:hover {
+            background: var(--gold-lt);
+            color: #7a4500;
+        }
+
+        @keyframes upulse {
+
+            0%,
+            100% {
+                transform: scale(1)
+            }
+
+            50% {
+                transform: scale(1.2)
+            }
+        }
+
+        @keyframes bellr {
+
+            0%,
+            100% {
+                transform: rotate(-8deg)
+            }
+
+            50% {
+                transform: rotate(8deg)
+            }
+        }
+
+        /* PACKAGES */
+        .pkg-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .pkg-card {
+            background: #fff;
+            border-radius: var(--r);
+            overflow: hidden;
+            box-shadow: 0 6px 28px rgba(0, 0, 0, .09);
+            transition: transform .4s, box-shadow .4s;
+        }
+
+        .pkg-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 48px rgba(201, 168, 76, .24);
+        }
+
+        .pkg-img {
+            position: relative;
+            height: 190px;
+            overflow: hidden;
+        }
+
+        .pkg-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .5s;
+        }
+
+        .pkg-card:hover .pkg-img img {
+            transform: scale(1.06);
+        }
+
+        .pkg-img-ov {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(8, 22, 42, .65) 0%, transparent 55%);
+        }
+
+        .pkg-star {
+            position: absolute;
+            top: 11px;
+            right: 11px;
+            background: var(--gold);
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 16px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .pkg-body {
+            padding: 18px 20px 20px;
+        }
+
+        .pkg-body h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--navy);
+            margin-bottom: 3px;
+        }
+
+        .pkg-hotel {
+            color: var(--gold);
+            font-size: .82rem;
+            font-weight: 600;
+            margin-bottom: 14px;
+        }
+
+        .ptbl {
+            background: linear-gradient(135deg, var(--sand), var(--cream));
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(201, 168, 76, .16);
+        }
+
+        .prow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 13px;
+            border-bottom: 1px dashed rgba(0, 0, 0, .07);
+        }
+
+        .prow:last-child {
+            border-bottom: none;
+        }
+
+        .plbl {
+            font-size: .85rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .pval {
+            text-align: right;
+        }
+
+        .pval .amt {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--navy);
+        }
+
+        .pval .pp {
+            font-size: .68rem;
+            color: var(--muted);
+            display: block;
+        }
+
+        .pkg-note {
+            text-align: center;
+            font-size: .78rem;
+            color: var(--muted);
+            margin: 11px 0 0;
+            line-height: 1.5;
+        }
+
+        .pkg-note b {
+            color: var(--navy);
+        }
+
+        .pkg-btns {
+            display: flex;
+            gap: 9px;
+            margin-top: 13px;
+        }
+
+        .btn-wa {
+            flex: 1;
+            background: #25D366;
+            color: #fff;
+            border: none;
+            padding: 11px;
+            border-radius: 9px;
+            font-family: 'Roboto', sans-serif;
+            font-size: .87rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all .3s;
+        }
+
+        .btn-wa:hover {
+            background: #1ebe57;
+            transform: translateY(-2px);
+        }
+
+        .btn-eq {
+            flex: 1;
+            background: transparent;
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            padding: 11px;
+            border-radius: 9px;
+            font-family: 'Roboto', sans-serif;
+            font-size: .87rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all .3s;
+        }
+
+        .btn-eq:hover {
+            background: var(--gold);
+            color: #fff;
+        }
+
+        /* HOTELS */
+        .htl-sec {
+            background: var(--navy);
+            padding: 68px 16px;
+        }
+
+        .htl-sec .sh h2 {
+            color: #fff;
+        }
+
+        .htl-sec .sh p {
+            color: rgba(255, 255, 255, .52);
+        }
+
+        .htl-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+            gap: 20px;
+        }
+
+        .htl-card {
+            background: rgba(255, 255, 255, .07);
+            border: 1px solid rgba(201, 168, 76, .16);
+            border-radius: var(--r);
+            overflow: hidden;
+            transition: all .3s;
+        }
+
+        .htl-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+            box-shadow: 0 14px 34px rgba(201, 168, 76, .17);
+        }
+
+        .htl-img-w {
+            height: 185px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .htl-img-w img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .5s;
+        }
+
+        .htl-card:hover .htl-img-w img {
+            transform: scale(1.05);
+        }
+
+        .htl-sb {
+            position: absolute;
+            bottom: 9px;
+            left: 9px;
+            background: rgba(8, 22, 42, .85);
+            backdrop-filter: blur(5px);
+            color: var(--gold);
+            padding: 3px 9px;
+            border-radius: 16px;
+            font-size: 10px;
+            font-weight: 700;
+            border: 1px solid var(--gold);
+        }
+
+        .htl-info {
+            padding: 14px 16px 16px;
+        }
+
+        .htl-info h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.05rem;
+            color: #fff;
+            margin-bottom: 3px;
+        }
+
+        .htl-loc {
+            color: rgba(255, 255, 255, .46);
+            font-size: .79rem;
+            margin-bottom: 9px;
+        }
+
+        .htl-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .htl-tag {
+            background: rgba(201, 168, 76, .1);
+            color: var(--gold-lt);
+            padding: 2px 8px;
+            border-radius: 16px;
+            font-size: .7rem;
+            font-weight: 500;
+            border: 1px solid rgba(201, 168, 76, .16);
+        }
+
+        /* ══════════════════════════════════════
+   ITINERARY – HORIZONTAL CARD STYLE
+   Matching the reference screenshot
+══════════════════════════════════════ */
+        .itin-sec {
+            background: #fff;
+            padding: 68px 16px;
+        }
+
+        .itin-sec .sh h2 {
+            color: var(--navy);
+        }
+
+        .itin-wrap {
+            max-width: 920px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* vertical timeline line */
+        .itin-wrap::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 10px;
+            bottom: 10px;
+            width: 2px;
+            background: linear-gradient(to bottom, #ddd 0%, #ddd 100%);
+        }
+
+        .itin-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 0;
+            margin-bottom: 28px;
+            position: relative;
+        }
+
+        .itin-row:last-child {
+            margin-bottom: 0;
+        }
+
+        /* circle number */
+        .itin-num {
+            width: 62px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 18px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .i-circle {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--red);
+            color: #fff;
+            font-size: .95rem;
+            font-weight: 900;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 12px rgba(230, 57, 70, .38);
+            border: 3px solid #fff;
+        }
+
+        /* card – horizontal layout */
+        .itin-card {
+            flex: 1;
+            background: #fff;
+            border: 1.5px solid #f0ece4;
+            border-radius: 14px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0 3px 18px rgba(0, 0, 0, .07);
+            transition: box-shadow .3s, transform .3s;
+            min-height: 160px;
+        }
+
+        .itin-card:hover {
+            box-shadow: 0 10px 32px rgba(201, 168, 76, .17);
+            transform: translateY(-3px);
+        }
+
+        /* left image panel */
+        .itin-img {
+            width: 280px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .itin-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform .5s;
+        }
+
+        .itin-card:hover .itin-img img {
+            transform: scale(1.05);
+        }
+
+        /* right content panel */
+        .itin-cnt {
+            flex: 1;
+            padding: 16px 18px 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: #fff;
+        }
+
+        .itin-cnt h4 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 9px;
+            line-height: 1.4;
+        }
+
+        .itin-pts {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 10px;
+            flex: 1;
+        }
+
+        .itin-pts li {
+            font-size: .83rem;
+            color: #555;
+            line-height: 1.5;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .itin-pts li::before {
+            content: '•';
+            color: var(--red);
+            font-size: 1rem;
+            line-height: 1.3;
+            flex-shrink: 0;
+        }
+
+        .itin-tip {
+            background: #fef9ee;
+            border-left: 3px solid var(--gold);
+            border-radius: 0 6px 6px 0;
+            padding: 6px 11px;
+            font-size: .76rem;
+            color: #7a5c00;
+            margin-bottom: 11px;
+            line-height: 1.5;
+        }
+
+        .itin-foot {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .day-badge {
+            background: var(--green);
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 22px;
+            font-size: .75rem;
+            font-weight: 700;
+            letter-spacing: .4px;
+        }
+
+        .view-btn {
+            background: #fde8e8;
+            color: var(--red);
+            border: 1.5px solid #f5b8b8;
+            padding: 5px 14px;
+            border-radius: 22px;
+            font-family: 'Roboto', sans-serif;
+            font-size: .75rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .25s;
+        }
+
+        .view-btn:hover {
+            background: var(--red);
+            color: #fff;
+            border-color: var(--red);
+        }
+
+        .enq-btn {
+            background: transparent;
+            color: var(--gold);
+            border: 1.5px solid var(--gold);
+            padding: 5px 13px;
+            border-radius: 22px;
+            font-family: 'Roboto', sans-serif;
+            font-size: .75rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .25s;
+        }
+
+        .enq-btn:hover {
+            background: var(--gold);
+            color: #fff;
+        }
+
+        /* MOBILE: stack image on top */
+        @media(max-width:600px) {
+            .itin-card {
+                flex-direction: column;
+            }
+
+            .itin-img {
+                width: 100%;
+                height: 170px;
+            }
+
+            .itin-wrap::before {
+                left: 20px;
+            }
+
+            .itin-num {
+                width: 44px;
+                padding-top: 14px;
+            }
+
+            .i-circle {
+                width: 36px;
+                height: 36px;
+                font-size: .8rem;
+            }
+            .h-enq{
+                display: none;
+            }
+            .urg-enq{
+                display: none;
+            }
+            .mhd{
+                display: none;
+            }
+            .btn-eq {
+                display: none;
+            }
+        }
+
+        /* INCLUSIONS */
+        .inc-sec {
+            background: var(--navy2);
+            padding: 68px 16px;
+        }
+
+        .inc-sec .sh h2 {
+            color: #fff;
+        }
+
+        .inc-sec .sh p {
+            color: rgba(255, 255, 255, .48);
+        }
+
+        .inc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 16px;
+        }
+
+        .inc-card {
+            background: rgba(255, 255, 255, .07);
+            border: 1px solid rgba(255, 255, 255, .07);
+            border-radius: 12px;
+            padding: 18px;
+            display: flex;
+            align-items: flex-start;
+            gap: 13px;
+            transition: all .3s;
+            opacity: 0;
+            transform: translateY(14px);
+        }
+
+        .inc-card.vis {
+            opacity: 1;
+            transform: none;
+        }
+
+        .inc-card:hover {
+            background: rgba(201, 168, 76, .14);
+            border-color: var(--gold);
+            transform: translateY(-3px);
+        }
+
+        .inc-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 9px;
+            background: rgba(201, 168, 76, .14);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+            border: 1px solid rgba(201, 168, 76, .22);
+        }
+
+        .inc-txt h5 {
+            color: #fff;
+            font-size: .88rem;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .inc-txt p {
+            color: rgba(255, 255, 255, .42);
+            font-size: .75rem;
+            line-height: 1.5;
+        }
+
+        /* STATS */
+        .stats {
+            background: linear-gradient(135deg, var(--gold), #a8832a);
+            padding: 36px 16px;
+        }
+
+        .stats-in {
+            max-width: 980px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+            gap: 18px;
+            text-align: center;
+        }
+
+        .stat .n {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #fff;
+            line-height: 1;
+        }
+
+        .stat .l {
+            font-size: .77rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, .84);
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+        }
+
+        /* CONTACT */
+        .contact-sec {
+            background: var(--navy);
+            padding: 74px 16px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-sec::before {
+            content: '';
+            position: absolute;
+            top: -40%;
+            left: -18%;
+            width: 620px;
+            height: 620px;
+            background: radial-gradient(circle, rgba(201, 168, 76, .09), transparent 65%);
+            border-radius: 50%;
+        }
+
+        .cw {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cw h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.7rem, 5vw, 2.7rem);
+            color: #fff;
+            margin-bottom: 9px;
+        }
+
+        .csub {
+            color: var(--gold);
+            font-size: 1rem;
+            margin-bottom: 34px;
+        }
+
+        .cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 36px;
+        }
+
+        .cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            padding: 13px 26px;
+            border-radius: 46px;
+            font-size: .9rem;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            transition: all .3s;
+            letter-spacing: .2px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .cta-wa {
+            background: #25D366;
+            color: #fff;
+            box-shadow: 0 4px 18px rgba(37, 211, 102, .28);
+        }
+
+        .cta-wa:hover {
+            background: #1ebe57;
+            transform: translateY(-3px);
+        }
+
+        .cta-call {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        .cta-call:hover {
+            background: var(--gold-lt);
+            transform: translateY(-3px);
+        }
+
+        .cta-mail {
+            background: transparent;
+            border: 2px solid var(--gold) !important;
+            color: var(--gold);
+        }
+
+        .cta-mail:hover {
+            background: var(--gold);
+            color: var(--navy);
+            transform: translateY(-3px);
+        }
+
+        .cta-enq {
+            background: #fff;
+            color: var(--navy);
+        }
+
+        .cta-enq:hover {
+            background: var(--gold-lt);
+            transform: translateY(-3px);
+        }
+
+        .cc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 13px;
+        }
+
+        .cc {
+            background: rgba(255, 255, 255, .07);
+            border: 1px solid rgba(255, 255, 255, .09);
+            border-radius: 11px;
+            padding: 16px;
+            backdrop-filter: blur(6px);
+        }
+
+        .cc strong {
+            color: var(--gold);
+            font-size: .72rem;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .cc span {
+            color: #fff;
+            font-size: .92rem;
+            font-weight: 500;
+        }
+
+        /* TERMS & FOOTER */
+        .terms {
+            background: var(--sand);
+            padding: 42px 16px;
+            text-align: center;
+        }
+
+        .terms-w {
+            max-width: 740px;
+            margin: 0 auto;
+        }
+
+        .terms h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.35rem;
+            color: var(--navy);
+            margin-bottom: 14px;
+        }
+
+        .terms p {
+            color: var(--muted);
+            font-size: .84rem;
+            line-height: 1.8;
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            background: var(--navy);
+            padding: 34px 16px;
+            text-align: center;
+        }
+
+        .f-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 9px;
+            font-weight: 700;
+        }
+
+        .f-txt {
+            color: rgba(255, 255, 255, .42);
+            font-size: .8rem;
+            line-height: 1.7;
+        }
+
+        .f-soc {
+            display: flex;
+            justify-content: center;
+            gap: 13px;
+            margin-top: 16px;
+        }
+
+        .f-soc a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .07);
+            border: 1px solid rgba(255, 255, 255, .1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .95rem;
+            text-decoration: none;
+            transition: all .3s;
+        }
+
+        .f-soc a:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            transform: translateY(-3px);
+        }
+
+        /* ANIMATIONS */
+        @keyframes fup {
+            from {
+                opacity: 0;
+                transform: translateY(22px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateX(-50%) translateY(0)
+            }
+
+            40% {
+                transform: translateX(-50%) translateY(-10px)
+            }
+
+            60% {
+                transform: translateX(-50%) translateY(-5px)
+            }
+        }
+
+        @keyframes sdot {
+            0% {
+                opacity: 0;
+                top: 6px
+            }
+
+            40% {
+                opacity: 1
+            }
+
+            80%,
+            100% {
+                opacity: 0;
+                top: 20px
+            }
+        }
+
+        .fiu {
+            opacity: 0;
+            transform: translateY(22px);
+            transition: opacity .62s ease, transform .62s ease;
+        }
+
+        .fiu.vis {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px) {
+            .cta-row {
+                flex-direction: column;
+            }
+
+            .cta {
+                justify-content: center;
+            }
+
+            .pkg-btns {
+                flex-direction: column;
+            }
+
+            /* .frow {
+                grid-template-columns: 1fr;
+            } */
+        }
+
+        @media(max-width:480px) {
+            .hero h1 {
+                font-size: 2.1rem;
+            }
+
+            .itin-cnt {
+                padding: 12px 13px;
+            }
+
+            .itin-cnt h4 {
+                font-size: .92rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="top-bar">
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span onclick="window.location.href='tel:+97143922959'" style="cursor:pointer;">
+            <i class="fas fa-phone"></i> +971 4 392 2959
+          </span>
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
+        </div>
+      </div>
+      <div class="right">
+        <span id="enquiryBtn"><i class="fas fa-envelope"></i> Enquiry now</span>
+      </div>
+      <div id="enquiryModal" class="modal">
+        <div class="modal-content">
+          <div class="display-flex">
+            <h2 class="text-colour">Enquiry Form</h2>
+            <span class="close">&times;</span>
+          </div>
+<form action="https://api.web3forms.com/submit" method="POST">
+
+  <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+
+  <input type="hidden" name="subject" value="✈️ IITM Ahmedabad Enquiry Form">
+  <input type="hidden" name="from_name" value="IITM Ahmedabad Website">
+
+  <label>Name</label>
+  <input type="text" name="name" required>
+
+  <label>Email</label>
+  <input type="email" name="email" required>
+
+  <label>Phone</label>
+  <input type="tel" name="phone" required>
+
+  <!-- Reply To Customer Email -->
+  <input type="hidden" name="replyto" value="">
+
+  <button type="submit">Submit</button>
+
+</form>
+
+
+        </div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="logo"><img src="images/CT1 logo High resolution.png" alt="" class="logo" loading="lazy"></div>
+      </div>
+      <div class="menu-btn" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="destination.html"><i class="fas fa-search-location"></i> Destination</a>
+        <a href="hotdeal.html"><i class="fas fa-suitcase-rolling"></i> Hot Deal</a>
+        <div class="dropdown">
+          <a href="themes.html" class="dropbtn">
+            <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="themes.html">Adventure</a>
+            <a href="themes.html">Luxury Tours</a>
+            <a href="themes.html">Honey moon</a>
+            <a href="themes.html">Family with Kids</a>
+            <a href="themes.html">Safari</a>
+            <a href="themes.html">Family with Kids</a>
+            <a href="themes.html">Nature</a>
+            <a href="themes.html">Wild Life</a>
+            <a href="">Beach</a>
+          </div>
+        </div>
+        <a href="visa.html"><i class="fas fa-passport"></i> Visa</a>
+        <a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="contact.html"><i class="fas fa-users"></i> Contact</a>
+        <!-- <select id="currencySelect">
+          <option value="AED">AED</option>
+          <option value="INR">INR</option>
+          <option value="USD">USD</option>
+        </select> -->
+      </div>
+    </nav>
+  </header>
+    <!-- TICKER -->
+
+
+    <!-- FLOATING ENQUIRY BUTTON -->
+    <button class="enq-float" onclick="openEnq('Floating Button')">📋 Enquire Now</button>
+
+    <!-- ENQUIRY MODAL -->
+    <div class="mbk" id="enqModal" onclick="closeMbk(event)">
+        <div class="mbox">
+            <div class="mhd">
+                <h3>✈️ Book Your Dubai Trip</h3>
+                <p>Fill in details – our team calls back within 2 hours!</p>
+                <button class="mclose" onclick="closeEnq()">✕</button>
+            </div>
+            <div class="mgold"></div>
+ <form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+    <input type="hidden" name="subject" value="✈️ Dubai Trip Enquiry">
+    <input type="hidden" name="from_name" value="City One Website">
+
+    <div class="frow">
+        <div class="fg">
+            <label>Full Name *</label>
+            <input type="text" name="name" placeholder="Your name" required>
+        </div>
+        <div class="fg">
+            <label>Mobile / WhatsApp *</label>
+            <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required>
+        </div>
+    </div>
+
+    <div class="fg">
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="your@email.com">
+    </div>
+
+    <div class="frow">
+        <div class="fg">
+            <label>Package Interest</label>
+            <select name="package">
+                <option value="">Select Package</option>
+                <option value="3star">3★ Classic – Fortune Pearl Deira</option>
+                <option value="4star">4★ Premium – Omega / Jacobs Garden</option>
+                <option value="both">Both Options</option>
+            </select>
+        </div>
+        <div class="fg">
+            <label>Group Size</label>
+            <select name="group_size">
+                <option value="">Select</option>
+                <option>2 Persons</option>
+                <option>4 Persons</option>
+                <option>6 Persons</option>
+                <option>More than 6</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="fg">
+        <label>Travel Month</label>
+        <select name="travel_month">
+            <option value="">Select Month</option>
+            <option>April 2025</option>
+            <option>May 2025</option>
+            <option>June 2025</option>
+            <option>July 2025</option>
+            <option>August 2025</option>
+        </select>
+    </div>
+
+    <div class="fg">
+        <label>Message / Special Requirements</label>
+        <textarea name="message" placeholder="Any questions or special requests..."></textarea>
+    </div>
+
+    <button type="submit" class="fsubmit">🚀 Submit Enquiry</button>
+
+</form>
+
+        </div>
+    </div>
+
+    <!-- IMAGE LIGHTBOX -->
+    <div class="lbox" id="lbox" onclick="closeLb(event)">
+        <div class="lb-in">
+            <button class="lb-x" onclick="closeLbBtn()">✕</button>
+            <div style="position:relative;">
+                <img class="lb-img" id="lbImg" src="" alt="">
+                <div class="lb-arrows">
+                    <button class="lb-arr" onclick="lbNav(-1)">‹</button>
+                    <button class="lb-arr" onclick="lbNav(1)">›</button>
+                </div>
+            </div>
+            <p class="lb-cap" id="lbCap"></p>
+            <div class="lb-dots" id="lbDots"></div>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="images/31956-389724705_tiny.mp4" type="video/mp4">
+        </video>
+        <div class="hero-ov"></div>
+        <div class="hero-c">
+            <div class="h-badge">✈️ &nbsp; IITM Ahmedabad Presents</div>
+            <h1>Dubai <em>Summer</em><br>Delights</h1>
+            <p class="hero-sub">Experience Luxury &amp; Adventure in the City of Gold</p>
+            <div class="h-chips">
+                <span class="chip">🏨 3★ &amp; 4★ Hotels</span>
+                <span class="chip">🛂 UAE Visa Included</span>
+                <span class="chip">🌆 4 Nights / 5 Days</span>
+                <span class="chip">🍽️ 02 Dinners Included</span>
+                <span class="chip">💰 VAT Included</span>
+            </div>
+            <button class="h-enq" onclick="openEnq('Hero')">📋 &nbsp; Enquire Now – Limited Seats!</button>
+        </div>
+        <div class="scroll-dn" onclick="document.getElementById('urgent').scrollIntoView({behavior:'smooth'})">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- URGENT BANNER -->
+    <div class="urgent" id="urgent">
+        <div class="urg-in">
+            <span class="bell">🔔</span>
+            <p class="urg-txt">🔥 LIMITED SEATS AVAILABLE – BOOK NOW! <span class="urg-tag">SUMMER OFFER</span></p>
+            <button class="urg-enq" onclick="openEnq('Urgent Banner')">📋 Enquire Now</button>
+            <span class="bell">🔔</span>
+        </div>
+    </div>
+    <div class="ticker">
+        <div class="ticker-track" id="ticker">
+            <span class="t-item">🔥 LIMITED SEATS AVAILABLE – BOOK NOW!</span><span class="t-sep"> ✦ </span>
+            <span class="t-item">⭐ UAE Visa Included in Package</span><span class="t-sep"> ✦ </span>
+            <span class="t-item">☀️ Summer Special – 4 Nights / 5 Days</span><span class="t-sep"> ✦ </span>
+            <span class="t-item">🍽️ 02 Dinners + Daily Breakfast Included</span><span class="t-sep"> ✦ </span>
+            <span class="t-item">🔥 LIMITED SEATS AVAILABLE – BOOK NOW!</span><span class="t-sep"> ✦ </span>
+            <span class="t-item">⭐ UAE Visa Included in Package</span><span class="t-sep"> ✦ </span>
+            <span class="t-item">☀️ Summer Special – 4 Nights / 5 Days</span><span class="t-sep"> ✦ </span>
+            <span class="t-item">🍽️ 02 Dinners + Daily Breakfast Included</span><span class="t-sep"> ✦ </span>
+        </div>
+    </div>
+    <!-- PACKAGES -->
+    <section class="sec" id="packages" style="background:var(--cream);">
+        <div class="sw">
+            <div class="sh fiu">
+                <h2>Choose Your Package</h2>
+                <p>Specially curated 3★ &amp; 4★ hotel packages – all inclusions, all memories</p>
+            </div>
+            <div class="pkg-grid">
+                <!-- 3 STAR -->
+                <div class="pkg-card fiu">
+                    <div class="pkg-img">
+                        <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/560097149.jpg?k=9ea7de9e6caf0a0d958ae11d62ea25cad19964e89beba1caca72e26614017456&o="
+                            alt="3 Star Hotel" loading="lazy">
+                        <div class="pkg-img-ov"></div>
+                        <span class="pkg-star">⭐⭐⭐ Package</span>
+                    </div>
+                    <div class="pkg-body">
+                        <h3>Classic Comfort</h3>
+                        <p class="pkg-hotel">🏨 Fortune Pearl Deira or Similar · Breakfast Included</p>
+                        <div class="ptbl">
+                            <div class="prow"><span class="plbl">👫 2 Persons</span>
+                                <div class="pval"><span class="amt">₹34,399</span><span class="pp">per person / DBL
+                                        sharing</span></div>
+                            </div>
+                            <div class="prow"><span class="plbl">👨‍👩‍👧‍👦 4 Persons</span>
+                                <div class="pval"><span class="amt">₹32,499</span><span class="pp">per person / DBL
+                                        sharing</span></div>
+                            </div>
+                            <div class="prow"><span class="plbl">👨‍👩‍👧‍👦 6 Persons</span>
+                                <div class="pval"><span class="amt">₹31,799</span><span class="pp">per person / DBL
+                                        sharing</span></div>
+                            </div>
+                        </div>
+                        <p class="pkg-note"><b>4 Nights BB Stay · VAT &amp; UAE Visa Included</b></p>
+                        <div class="pkg-btns">
+                            <button class="btn-wa"
+                                onclick="window.open('https://wa.me/+97143922959?text=Hi, interested in 3 Star Dubai package','_blank')">💬
+                                WhatsApp</button>
+                            <button class="btn-eq" onclick="openEnq('3 Star Package')">📋 Enquire</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 STAR -->
+                <div class="pkg-card fiu">
+                    <div class="pkg-img">
+                        <img src="https://r1imghtlak.mmtcdn.com/42e19524157711e9a3b80242ac110002.jpg?&output-quality=75&downsize=520:350&crop=520:350;2,0&output-format=jpg"
+                            alt="4 Star Hotel" loading="lazy">
+                        <div class="pkg-img-ov"></div>
+                        <span class="pkg-star" style="background:#C9A84C;">⭐⭐⭐⭐ Premium</span>
+                    </div>
+                    <div class="pkg-body">
+                        <h3>Luxury Experience</h3>
+                        <p class="pkg-hotel">🏨 Omega / Jacobs Garden Bur Dubai or Similar · BB</p>
+                        <div class="ptbl">
+                            <div class="prow"><span class="plbl">👫 2 Persons</span>
+                                <div class="pval"><span class="amt">₹36,999</span><span class="pp">per person / DBL
+                                        sharing</span></div>
+                            </div>
+                            <div class="prow"><span class="plbl">👨‍👩‍👧‍👦 4 Persons</span>
+                                <div class="pval"><span class="amt">₹35,099</span><span class="pp">per person / DBL
+                                        sharing</span></div>
+                            </div>
+                            <div class="prow"><span class="plbl">👨‍👩‍👧‍👦 6 Persons</span>
+                                <div class="pval"><span class="amt">₹34,399</span><span class="pp">per person / DBL
+                                        sharing</span></div>
+                            </div>
+                        </div>
+                        <p class="pkg-note"><b>4 Nights BB Stay · VAT &amp; UAE Visa Included</b></p>
+                        <div class="pkg-btns">
+                            <button class="btn-wa"
+                                onclick="window.open('https://wa.me/+97143922959?text=Hi, interested in 4 Star Dubai package','_blank')">💬
+                                WhatsApp</button>
+                            <button class="btn-eq" onclick="openEnq('4 Star Package')">📋 Enquire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOTELS -->
+    <section class="htl-sec" id="hotels">
+        <div class="sw">
+            <div class="sh fiu">
+                <h2>Your Perfect Stay in Dubai</h2>
+                <p>Handpicked 3★ &amp; 4★ properties in prime locations</p>
+            </div>
+            <div class="htl-grid">
+                <div class="htl-card fiu">
+                    <div class="htl-img-w"><img
+                            src="https://tse3.mm.bing.net/th/id/OIP.LqTNu1L1ithZ7uTiw2ygnAHaFM?rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="Fortune Pearl" loading="lazy"><span class="htl-sb">⭐⭐⭐ 3-Star</span></div>
+                    <div class="htl-info">
+                        <h4>Fortune Pearl Deira</h4>
+                        <p class="htl-loc">📍 Deira, Dubai – Central Location</p>
+                        <div class="htl-tags"><span class="htl-tag">Free Breakfast</span><span
+                                class="htl-tag">Wi-Fi</span><span class="htl-tag">AC Rooms</span><span
+                                class="htl-tag">24hr Desk</span></div>
+                    </div>
+                </div>
+                <div class="htl-card fiu">
+                    <div class="htl-img-w"><img
+                            src="https://dubaitraveldmc.com/wp-content/uploads/2023/05/Omega-1.jpg"
+                            alt="4 Star Hotel" loading="lazy"><span class="htl-sb"
+                            style="color:var(--gold-lt);border-color:var(--gold-lt);">⭐⭐⭐⭐ 4-Star</span></div>
+                    <div class="htl-info">
+                        <h4>Omega / Jacobs Garden Hotel</h4>
+                        <p class="htl-loc">📍 Bur Dubai – Heritage District</p>
+                        <div class="htl-tags"><span class="htl-tag">Breakfast</span><span
+                                class="htl-tag">Pool</span><span class="htl-tag">Gym</span><span
+                                class="htl-tag">Wi-Fi</span><span class="htl-tag">Restaurant</span></div>
+                    </div>
+                </div>
+                <div class="htl-card fiu">
+                    <div class="htl-img-w"><img
+                            src="https://r1imghtlak.mmtcdn.com/42e19524157711e9a3b80242ac110002.jpg?&output-quality=75&downsize=520:350&crop=520:350;2,0&output-format=jpg"
+                            alt="Hotel Pool" loading="lazy"><span class="htl-sb">Similar Properties</span></div>
+                    <div class="htl-info">
+                        <h4>Or Similar Properties</h4>
+                        <p class="htl-loc">📍 Prime Dubai Locations</p>
+                        <div class="htl-tags"><span class="htl-tag">Same Category</span><span class="htl-tag">All
+                                Amenities</span><span class="htl-tag">Guaranteed</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ITINERARY – HORIZONTAL CARD LAYOUT -->
+    <section class="itin-sec" id="itinerary">
+        <div class="sw">
+            <div class="sh fiu">
+                <h2>Day-by-Day Itinerary</h2>
+                <p>Every moment carefully crafted for maximum joy and memories</p>
+            </div>
+            <div class="itin-wrap">
+
+                <!-- DAY 1 -->
+                <div class="itin-row fiu">
+                    <div class="itin-num">
+                        <div class="i-circle">1</div>
+                    </div>
+                    <div class="itin-card">
+                        <div class="itin-img">
+                            <img src="https://hdqwalls.com/download/plane-taking-off-2048x1152.jpg"
+                                alt="Dubai Marina Dhow Cruise" loading="lazy">
+                        </div>
+                        <div class="itin-cnt">
+                            <div>
+                                <h4>Dubai Arrival &amp; Marina Dhow Cruise</h4>
+                                <ul class="itin-pts">
+                                    <li>Arrival at Dubai International Airport</li>
+                                    <li>Meet &amp; greet by our representative</li>
+                                    <li>Transfer to hotel &amp; check-in</li>
+                                    <li><strong>Evening Marina Dhow Cruise</strong> with dinner &amp; live entertainment
+                                        shows</li>
+                                </ul>
+                                <div class="itin-tip">💡 Dress smart-casual. Keep camera ready for Marina skyline shots!
+                                </div>
+                            </div>
+                            <div class="itin-foot">
+                                <span class="day-badge">Day - 1</span>
+                                <button class="view-btn" onclick="openLb(0)">🖼️ View Images</button>
+                                <button class="enq-btn" onclick="openEnq('Day 1 Enquiry')">📋 Enquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 2 -->
+                <div class="itin-row fiu">
+                    <div class="itin-num">
+                        <div class="i-circle">2</div>
+                    </div>
+                    <div class="itin-card">
+                        <div class="itin-img">
+                            <img src="https://th.bing.com/th/id/R.cb5c8ede71656f8ff0c0d2a315f5d72f?rik=WBmL4Jp02vKlvg&riu=http%3a%2f%2fwww.hdwallpapers.in%2fdownload%2fburj_khalifa_tower_dubai-1280x1024.jpg&ehk=ZENDPfH98T3QRC1dP8nLw3ubegqgfGAji6mxLSYHgNc%3d&risl=&pid=ImgRaw&r=0"
+                                alt="Burj Khalifa" loading="lazy">
+                        </div>
+                        <div class="itin-cnt">
+                            <div>
+                                <h4>Dubai City Tour + Burj Khalifa 124th &amp; 125th Floor (Peak Hours Access)</h4>
+                                <ul class="itin-pts">
+                                    <li><strong>Half Day Dubai City Tour</strong> – Jumeirah, Burj Al Arab, Palm, Creek
+                                        &amp; Gold Souk</li>
+                                    <li><strong>Burj Khalifa "At The Top"</strong> – 124th &amp; 125th floor 360°
+                                        panoramic views</li>
+                                    <li>Non-peak hours: <strong>08:00–11:30</strong> OR <strong>20:30–23:00 hrs</strong>
+                                    </li>
+                                    <li>Free time at Dubai Mall – world's largest shopping centre</li>
+                                </ul>
+                                <div class="itin-tip">💡 Evening slot gives spectacular city-lights views from the top!
+                                </div>
+                            </div>
+                            <div class="itin-foot">
+                                <span class="day-badge">Day - 2</span>
+                                <button class="view-btn" onclick="openLb(1)">🖼️ View Images</button>
+                                <button class="enq-btn" onclick="openEnq('Day 2 Enquiry')">📋 Enquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 3 -->
+                <div class="itin-row fiu">
+                    <div class="itin-num">
+                        <div class="i-circle">3</div>
+                    </div>
+                    <div class="itin-card">
+                        <div class="itin-img">
+                            <img src="images/desaert safari background.jpg.jpeg"
+                                alt="Desert Safari" loading="lazy">
+                        </div>
+                        <div class="itin-cnt">
+                            <div>
+                                <h4>Afternoon Desert Safari with BBQ Dinner</h4>
+                                <ul class="itin-pts">
+                                    <li><strong>Red Dunes Safari</strong> – thrilling dune bashing in 4×4 vehicles</li>
+                                    <li>Camel rides, sandboarding &amp; henna painting at Standard Camp</li>
+                                    <li><strong>BBQ Dinner</strong> under the stars – unlimited buffet (Dinner 2 of 2)
+                                    </li>
+                                    <li>Live Tanoura dance, belly dance &amp; fire show entertainment</li>
+                                </ul>
+                                <div class="itin-tip">💡 Temperatures drop in desert at night – carry a light jacket!
+                                </div>
+                            </div>
+                            <div class="itin-foot">
+                                <span class="day-badge">Day - 3</span>
+                                <button class="view-btn" onclick="openLb(2)">🖼️ View Images</button>
+                                <button class="enq-btn" onclick="openEnq('Day 3 Enquiry')">📋 Enquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 4 -->
+                <div class="itin-row fiu">
+                    <div class="itin-num">
+                        <div class="i-circle">4</div>
+                    </div>
+                    <div class="itin-card">
+                        <div class="itin-img">
+                            <img src="https://nooralhayattourism.com/wp-content/uploads/2024/01/TFMWN_gallery_2143-scaled.jpg"
+                                alt="Grand Mosque" loading="lazy">
+                        </div>
+                        <div class="itin-cnt">
+                            <div>
+                                <h4>Abu Dhabi – Grand Mosque, BAPS Temple &amp; Ferrari World</h4>
+                                <ul class="itin-pts">
+                                    <li><strong>Sheikh Zayed Grand Mosque</strong> – one of world's most beautiful
+                                        mosques</li>
+                                    <li><strong>BAPS Swaminarayan Mandir</strong> – stunning Hindu temple in Abu Dhabi
+                                    </li>
+                                    <li><strong>Ferrari World Photo Stop</strong> – iconic red dome exterior</li>
+                                    <li>Abu Dhabi Corniche &amp; Etihad Towers scenic photo stops</li>
+                                </ul>
+                                <div class="itin-tip">💡 Carry an abaya/scarf for Grand Mosque. Available to borrow
+                                    on-site.</div>
+                            </div>
+                            <div class="itin-foot">
+                                <span class="day-badge">Day - 4</span>
+                                <button class="view-btn" onclick="openLb(3)">🖼️ View Images</button>
+                                <button class="enq-btn" onclick="openEnq('Day 4 Enquiry')">📋 Enquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 5 -->
+                <div class="itin-row fiu">
+                    <div class="itin-num">
+                        <div class="i-circle">5</div>
+                    </div>
+                    <div class="itin-card">
+                        <div class="itin-img">
+                            <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=500&q=80"
+                                alt="Dubai Airport" loading="lazy">
+                        </div>
+                        <div class="itin-cnt">
+                            <div>
+                                <h4>Hotel Check-Out &amp; Departure</h4>
+                                <ul class="itin-pts">
+                                    <li>Enjoy final morning breakfast at the hotel</li>
+                                    <li>Hotel check-out by 12:00 noon</li>
+                                    <li>Transfer assistance to Dubai International Airport</li>
+                                    <li>Depart with unforgettable Dubai memories! ✈️</li>
+                                </ul>
+                                <div class="itin-tip">💡 Keep 3–4 hrs buffer before flight. Dubai Duty Free for
+                                    last-minute shopping!</div>
+                            </div>
+                            <div class="itin-foot">
+                                <span class="day-badge">Day - 5</span>
+                                <button class="view-btn" onclick="openLb(4)">🖼️ View Images</button>
+                                <button class="enq-btn" onclick="openEnq('Day 5 Enquiry')">📋 Enquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /itin-wrap -->
+        </div>
+    </section>
+
+    <!-- INCLUSIONS -->
+    <section class="inc-sec" id="inclusions">
+        <div class="sw">
+            <div class="sh fiu">
+                <h2>Everything That's Included</h2>
+                <p>Zero hidden costs – what you see is what you pay</p>
+            </div>
+            <div class="inc-grid">
+                <div class="inc-card">
+                    <div class="inc-icon">✈️</div>
+                    <div class="inc-txt">
+                        <h5>Airport Transfers</h5>
+                        <p>Arrival pick-up &amp; departure drop-off</p>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-icon">🏨</div>
+                    <div class="inc-txt">
+                        <h5>4 Nights Hotel Stay</h5>
+                        <p>Daily breakfast at 3★ or 4★ hotel</p>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-icon">🚢</div>
+                    <div class="inc-txt">
+                        <h5>Marina Dhow Cruise</h5>
+                        <p>Dinner &amp; entertainment shows included</p>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-icon">🏙️</div>
+                    <div class="inc-txt">
+                        <h5>Half Day City Tour</h5>
+                        <p>All major Dubai landmarks covered</p>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-icon">🏗️</div>
+                    <div class="inc-txt">
+                        <h5>Burj Khalifa 124 &amp; 125</h5>
+                        <p>Non-peak hours entry (08:00–11:30 / 20:30–23:00)</p>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-icon">🏜️</div>
+                    <div class="inc-txt">
+                        <h5>Desert Safari + BBQ</h5>
+                        <p>Red dunes 4×4, camel ride &amp; shows</p>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-icon">🕌</div>
+                    <div class="inc-txt">
+                        <h5>Abu Dhabi City Tour</h5>
+                        <p>Grand Mosque &amp; BAPS Temple visit</p>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-icon">🏎️</div>
+                    <div class="inc-txt">
+                        <h5>Ferrari World Photo Stop</h5>
+                        <p>Iconic Ferrari World exterior photo op</p>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-icon">🍽️</div>
+                    <div class="inc-txt">
+                        <h5>02 Dinners Included</h5>
+                        <p>Dhow Cruise + Desert Safari BBQ</p>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-icon">🛂</div>
+                    <div class="inc-txt">
+                        <h5>UAE Visa Included</h5>
+                        <p>Full visa processing in package</p>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-icon">💰</div>
+                    <div class="inc-txt">
+                        <h5>VAT Included</h5>
+                        <p>No surprise taxes at all</p>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-icon">🛡️</div>
+                    <div class="inc-txt">
+                        <h5>Expert Guidance</h5>
+                        <p>IITM Ahmedabad trusted team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats">
+        <div class="stats-in">
+            <div class="stat">
+                <div class="n">4</div>
+                <div class="l">Nights Stay</div>
+            </div>
+            <div class="stat">
+                <div class="n">5</div>
+                <div class="l">Days Tour</div>
+            </div>
+            <div class="stat">
+                <div class="n">02</div>
+                <div class="l">Dinners</div>
+            </div>
+            <!-- <div class="stat">
+                <div class="n">6+</div>
+                <div class="l">Activities</div>
+            </div> -->
+            <div class="stat">
+                <div class="n">100%</div>
+                <div class="l">Visa Covered</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section class="contact-sec" id="contact">
+        <div class="cw">
+            <div class="sh fiu" style="margin-bottom:8px;">
+                <h2 style="color:#fff;">Ready to Book?</h2>
+            </div>
+            <p class="csub fiu">Contact us now – Limited Seats Available! 🔥</p>
+            <div class="cta-row fiu">
+                <a href="https://wa.me/+97143922959" class="cta cta-wa" target="_blank">💬 WhatsApp Us</a>
+                <a href="tel:+97143922959" class="cta cta-call">📞 Call Now</a>
+                <a href="mailto:info@cityonetours.com" class="cta cta-mail">✉️ Email Us</a>
+                <button class="cta cta-enq" onclick="openEnq('Contact Section')">📋 Enquire Online</button>
+            </div>
+            <div class="cc-grid fiu">
+                <div class="cc"><strong>WhatsApp / Call</strong><span>+971 4 392 2959</span></div>
+                <div class="cc"><strong>Email</strong><span>info@cityonetours.com</span></div>
+                <div class="cc"><strong>Office</strong><span>Dubai - U.A.E</span></div>
+                <div class="cc"><strong>Timings</strong><span>Mon–Sat · 9AM–7PM</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TERMS -->
+    <section class="terms">
+        <div class="terms-w">
+            <h3>⚠️ Terms &amp; Conditions</h3>
+            <p><strong>LIMITED SEATS – Booking subject to availability &amp; confirmation.</strong></p>
+            <p>All prices per person on double sharing basis. Inclusive of VAT &amp; UAE Visa.</p>
+            <p>Hotel check-in: 2:00 PM | Check-out: 12:00 PM | Similar hotels in same category may apply.</p>
+            <p>Desert safari subject to weather. Burj Khalifa non-peak hours only (08:00–11:30 / 20:30–23:00).</p>
+            <p style="margin-top:9px;font-size:.78rem;">Prices valid for summer season. T&amp;C apply. IITM Ahmedabad
+                reserves the right to modify itinerary.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="f-logo">IITM Ahmedabad</div>
+        <p class="f-txt">Your trusted travel partner for unforgettable Dubai experiences<br>© 2025 IITM Ahmedabad. All
+            rights reserved.</p>
+        <!-- <div class="f-soc">
+            <a href="https://wa.me/919876543210" title="WhatsApp">💬</a>
+            <a href="#" title="Instagram">📸</a>
+            <a href="#" title="Facebook">📘</a>
+            <a href="#" title="YouTube">▶️</a>
+        </div> -->
+    </footer>
+
+    <script>
+        /* ── Enquiry Modal ── */
+        function openEnq(src) {
+            document.getElementById('enqModal').classList.add('open');
+            document.getElementById('mForm').style.display = 'block';
+            document.getElementById('mSuccess').style.display = 'none';
+            document.body.style.overflow = 'hidden';
+            const sel = document.getElementById('fpkg');
+            if (src.includes('3 Star')) sel.value = '3star';
+            else if (src.includes('4 Star')) sel.value = '4star';
+        }
+        function closeEnq() {
+            document.getElementById('enqModal').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+        function closeMbk(e) { if (e.target === document.getElementById('enqModal')) closeEnq(); }
+        function submitEnq() {
+            const n = document.getElementById('fn').value.trim();
+            const p = document.getElementById('fp').value.trim();
+            if (!n || !p) { alert('Please enter your name and phone number.'); return; }
+            document.getElementById('mForm').style.display = 'none';
+            document.getElementById('mSuccess').style.display = 'block';
+        }
+
+        /* ── Lightbox ── */
+        const imgs = [
+            { src: 'https://hdqwalls.com/download/plane-taking-off-2048x1152.jpg', cap: 'Day 1 – Dubai Marina Dhow Cruise' },
+            { src: 'https://th.bing.com/th/id/R.cb5c8ede71656f8ff0c0d2a315f5d72f?rik=WBmL4Jp02vKlvg&riu=http%3a%2f%2fwww.hdwallpapers.in%2fdownload%2fburj_khalifa_tower_dubai-1280x1024.jpg&ehk=ZENDPfH98T3QRC1dP8nLw3ubegqgfGAji6mxLSYHgNc%3d&risl=&pid=ImgRaw&r=0', cap: 'Day 2 – Burj Khalifa At The Top' },
+            { src: 'images/desaert safari background.jpg.jpeg', cap: 'Day 3 – Red Dunes Desert Safari' },
+            { src: 'https://nooralhayattourism.com/wp-content/uploads/2024/01/TFMWN_gallery_2143-scaled.jpg', cap: 'Day 4 – Sheikh Zayed Grand Mosque' },
+            { src: 'https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=900&q=85', cap: 'Day 5 – Dubai Airport Departure' }
+        ];
+        let cur = 0;
+        function openLb(i) { cur = i; document.getElementById('lbox').classList.add('open'); document.body.style.overflow = 'hidden'; renderLb(); }
+        function renderLb() {
+            document.getElementById('lbImg').src = imgs[cur].src;
+            document.getElementById('lbCap').textContent = imgs[cur].cap;
+            document.getElementById('lbDots').innerHTML = imgs.map((d, i) => `<div class="lb-dot${i === cur ? ' on' : ''}" onclick="cur=${i};renderLb()"></div>`).join('');
+        }
+        function lbNav(d) { cur = (cur + d + imgs.length) % imgs.length; renderLb(); }
+        function closeLbBtn() { document.getElementById('lbox').classList.remove('open'); document.body.style.overflow = ''; }
+        function closeLb(e) { if (e.target === document.getElementById('lbox')) closeLbBtn(); }
+
+        /* ── Keyboard shortcut ── */
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') { closeEnq(); closeLbBtn(); }
+            if (document.getElementById('lbox').classList.contains('open')) {
+                if (e.key === 'ArrowLeft') lbNav(-1);
+                if (e.key === 'ArrowRight') lbNav(1);
+            }
+        });
+
+        /* ── Scroll Animations ── */
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    if (e.target.classList.contains('inc-card')) {
+                        const idx = Array.from(e.target.parentElement.children).indexOf(e.target);
+                        setTimeout(() => e.target.classList.add('vis'), idx * 60);
+                    } else {
+                        e.target.classList.add('vis');
+                    }
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -45px 0px' });
+        document.querySelectorAll('.fiu,.inc-card').forEach(el => io.observe(el));
+    </script>
+        <script src="contact.js"></script>
+    
+</body>
+
+</html>
