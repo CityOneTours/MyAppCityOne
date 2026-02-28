@@ -1,0 +1,2185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Summer Escape 2026 — IITM Ahmedabad</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --gold: #c80a0a;
+            --gold-lt: #f03030;
+            --gold-pale: #FFF4E0;
+            --sand: #F8F3EB;
+            --cream: #FEFCF8;
+            --dark: #181410;
+            --gray: #6B5E50;
+            --muted: #A09080;
+            --white: #FFFFFF;
+            --sh-sm: 0 4px 16px rgba(100, 60, 10, .10);
+            --sh-md: 0 10px 40px rgba(100, 60, 10, .14);
+            --sh-lg: 0 24px 80px rgba(100, 60, 10, .18);
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--cream);
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        /* CURSOR */
+        .cur-dot {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: var(--gold);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform .15s ease;
+            mix-blend-mode: multiply;
+        }
+
+        .cur-ring {
+            position: fixed;
+            width: 36px;
+            height: 36px;
+            border: 1.5px solid var(--gold-lt);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9998;
+            opacity: .5;
+            transition: width .25s, height .25s;
+        }
+
+        @media(hover:none) {
+
+            .cur-dot,
+            .cur-ring {
+                display: none;
+            }
+        }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            min-height: 560px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-video-wrap {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .hero-video-wrap iframe,
+        .hero-video-wrap video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 177.78vh;
+            height: 100%;
+            min-width: 100%;
+            min-height: 56.25vw;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            border: none;
+        }
+
+        .hero-photo-fallback {
+            position: absolute;
+            inset: 0;
+            background: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1800&auto=format&fit=crop&q=85') center/cover no-repeat;
+            animation: kenBurns 20s ease-in-out infinite alternate;
+            z-index: 0;
+        }
+
+        @keyframes kenBurns {
+            from {
+                transform: scale(1.0);
+            }
+
+            to {
+                transform: scale(1.08) translateX(-1%);
+            }
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background: linear-gradient(233deg, rgb(0 0 0 / 82%) 0%, rgb(2 2 2 / 52%) 40%, rgb(0 0 0 / 82%) 100%);
+        }
+
+        .hero-grain {
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");
+            pointer-events: none;
+            opacity: .5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            padding: 0 1.5rem;
+            max-width: 700px;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .55rem;
+            background: rgba(255, 255, 255, .1);
+            border: 1px solid rgba(255, 255, 255, .25);
+            backdrop-filter: blur(10px);
+            border-radius: 100px;
+            padding: .35rem 1rem;
+            font-size: .68rem;
+            font-weight: 700;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .9);
+            margin-bottom: 1.4rem;
+            opacity: 0;
+            animation: riseIn .6s .2s ease forwards;
+        }
+
+        .badge-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--gold-lt);
+            border-radius: 50%;
+            animation: blinkDot 1.4s infinite;
+        }
+
+        @keyframes blinkDot {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: .25
+            }
+        }
+
+        .hero-title {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            font-size: clamp(2.4rem, 7.5vw, 6rem);
+            line-height: .97;
+            color: #fff;
+            letter-spacing: -.02em;
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: riseIn .8s .35s ease forwards;
+        }
+
+        .hero-title span {
+            display: block;
+            color: var(--gold-lt);
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: clamp(1rem, 3vw, 3rem);
+            letter-spacing: .0em;
+            margin-top: .2rem;
+        }
+
+        .hero-desc {
+            font-size: clamp(.85rem, 1.8vw, 1.05rem);
+            font-weight: 300;
+            color: rgba(255, 255, 255, .72);
+            line-height: 1.7;
+            max-width: 480px;
+            margin: 0 auto 2rem;
+            opacity: 0;
+            animation: riseIn .7s .5s ease forwards;
+        }
+
+        .hero-pills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: .5rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: riseIn .7s .65s ease forwards;
+        }
+
+        .h-pill {
+            display: flex;
+            align-items: center;
+            gap: .35rem;
+            background: rgba(255, 255, 255, .12);
+            border: 1px solid rgba(255, 255, 255, .22);
+            backdrop-filter: blur(8px);
+            border-radius: 100px;
+            padding: .32rem .85rem;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, .88);
+            transition: all .25s;
+        }
+
+        .h-pill:hover {
+            background: rgba(255, 255, 255, .2);
+            border-color: rgba(255, 255, 255, .4);
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: .85rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: riseIn .7s .8s ease forwards;
+        }
+
+        .btn-hero-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: .55rem;
+            background: linear-gradient(135deg, var(--gold), var(--gold-lt));
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: .88rem;
+            padding: .9rem 2rem;
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 8px 28px rgba(200, 120, 10, .4);
+            transition: all .3s;
+            text-decoration: none;
+        }
+
+        .btn-hero-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 40px rgba(200, 120, 10, .5);
+        }
+
+        .btn-hero-ghost {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            background: rgba(255, 255, 255, .1);
+            border: 1.5px solid rgba(255, 255, 255, .3);
+            backdrop-filter: blur(8px);
+            color: rgba(255, 255, 255, .9);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: .85rem;
+            padding: .9rem 1.8rem;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: all .28s;
+            text-decoration: none;
+        }
+
+        .btn-hero-ghost:hover {
+            background: rgba(255, 255, 255, .2);
+            border-color: rgba(255, 255, 255, .55);
+        }
+
+        .hero-scroll {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .4rem;
+            color: rgba(255, 255, 255, .45);
+            font-size: .58rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            opacity: 0;
+            animation: fadeShow .5s 1.4s forwards;
+        }
+
+        .scroll-bar {
+            width: 1px;
+            height: 38px;
+            background: linear-gradient(to bottom, var(--gold-lt), transparent);
+            animation: scrollAnim 1.8s infinite;
+        }
+
+        @keyframes scrollAnim {
+            0% {
+                transform: scaleY(0);
+                transform-origin: top;
+                opacity: 1;
+            }
+
+            50% {
+                transform: scaleY(1);
+                transform-origin: top;
+                opacity: 1;
+            }
+
+            100% {
+                transform: scaleY(1);
+                transform-origin: bottom;
+                opacity: 0;
+            }
+        }
+
+        @keyframes riseIn {
+            from {
+                opacity: 0;
+                transform: translateY(22px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeShow {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* STRIP */
+        .strip {
+            background: var(--dark);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .strip::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 100% at 20% 50%, rgba(200, 120, 10, .08) 0%, transparent 60%), radial-gradient(ellipse 40% 100% at 80% 50%, rgba(200, 120, 10, .06) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .strip-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .strip-block {
+            flex: 1;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            position: relative;
+        }
+
+        .strip-block:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 20%;
+            bottom: 20%;
+            width: 1px;
+            background: rgba(255, 255, 255, .08);
+        }
+
+        .strip-num {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--gold-lt);
+            line-height: 1;
+            margin-bottom: .4rem;
+        }
+
+        .strip-lbl {
+            font-size: .6rem;
+            font-weight: 700;
+            letter-spacing: .22em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .3);
+            margin-bottom: .35rem;
+        }
+
+        .strip-hotel {
+            font-size: .82rem;
+            font-weight: 300;
+            /* font-style: italic; */
+            color: rgba(255, 255, 255, .6);
+            line-height: 1.4;
+        }
+
+        .strip-op {
+            flex: 0 0 auto;
+            width: 48px;
+            text-align: center;
+        }
+
+        .strip-op-sym {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            font-size: 1.6rem;
+            color: rgba(200, 120, 10, .35);
+        }
+
+        @media(max-width:640px) {
+            .strip-inner {
+                flex-direction: column;
+                gap: 0;
+                padding: 2.5rem 1.5rem;
+            }
+
+            .strip-block {
+                width: 100%;
+                padding: 1.2rem 1rem;
+                border-bottom: 1px solid rgba(255, 255, 255, .07);
+            }
+
+            .strip-block:not(:last-child)::after {
+                display: none;
+            }
+
+            .strip-op {
+                width: 100%;
+                padding: .5rem 0;
+            }
+
+            .strip-op-sym {
+                font-size: 1.2rem;
+            }
+
+            .strip-num {
+                font-size: 2.8rem;
+            }
+        }
+
+        /* SECTION */
+        .s-wrap {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 5.5rem 1.5rem;
+        }
+
+        .s-full {
+            padding: 5.5rem 1.5rem;
+        }
+
+        .s-tag {
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+            margin-bottom: .7rem;
+        }
+
+        .s-tag-line {
+            width: 26px;
+            height: 2px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+        .s-tag-text {
+            font-size: .62rem;
+            font-weight: 700;
+            letter-spacing: .25em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        .s-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            color: var(--dark);
+            line-height: 1.1;
+            margin-bottom: .5rem;
+        }
+
+        .s-heading em {
+            /* font-style: italic; */
+            color: var(--gold);
+            font-weight: 300;
+        }
+
+        .s-sub {
+            font-size: .95rem;
+            font-weight: 300;
+            /* font-style: italic; */
+            color: var(--gray);
+            margin-bottom: 3rem;
+            max-width: 540px;
+            line-height: 1.65;
+        }
+
+        /* ITINERARY */
+        .itin-bg {
+            background: var(--sand);
+        }
+
+        .itin-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .itin-card {
+            display: grid;
+            grid-template-columns: 420px 1fr;
+            border-radius: 22px;
+            overflow: hidden;
+            background: var(--white);
+            box-shadow: var(--sh-md);
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity .65s ease, transform .65s ease, box-shadow .3s;
+        }
+
+        .itin-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .itin-card:hover {
+            box-shadow: var(--sh-lg);
+        }
+
+        .itin-card.flip {
+            grid-template-columns: 1fr 420px;
+        }
+
+        .itin-card.flip .itin-img {
+            order: 2;
+        }
+
+        .itin-card.flip .itin-body {
+            order: 1;
+        }
+
+        .itin-img {
+            position: relative;
+            overflow: hidden;
+            min-height: 300px;
+        }
+
+        .itin-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform .7s ease;
+        }
+
+        .itin-card:hover .itin-img img {
+            transform: scale(1.06);
+        }
+
+        .itin-chip {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(255, 255, 255, .95);
+            backdrop-filter: blur(8px);
+            border-radius: 100px;
+            padding: .25rem .85rem .25rem .35rem;
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, .16);
+            font-size: .65rem;
+            font-weight: 700;
+            letter-spacing: .07em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        .itin-chip-n {
+            width: 22px;
+            height: 22px;
+            background: var(--gold);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .7rem;
+            font-weight: 900;
+        }
+
+        .itin-shade {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background: linear-gradient(to top, rgba(0, 0, 0, .35), transparent);
+        }
+
+        .itin-body {
+            padding: 2.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .itin-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--dark);
+            margin-bottom: .65rem;
+            line-height: 1.25;
+        }
+
+        .itin-desc {
+            font-size: .84rem;
+            font-weight: 300;
+            color: var(--gray);
+            line-height: 1.75;
+            margin-bottom: 1.3rem;
+        }
+
+        .itin-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .4rem;
+        }
+
+        .itin-tag {
+            background: var(--gold-pale);
+            color: var(--gold);
+            font-size: .64rem;
+            font-weight: 700;
+            letter-spacing: .04em;
+            padding: .26rem .72rem;
+            border-radius: 100px;
+            border: 1px solid rgba(200, 120, 10, .2);
+        }
+
+        @media(max-width:768px) {
+
+            .itin-card,
+            .itin-card.flip {
+                grid-template-columns: 1fr;
+            }
+
+            .itin-card.flip .itin-img {
+                order: 0;
+            }
+
+            .itin-card.flip .itin-body {
+                order: 1;
+            }
+
+            .itin-img {
+                min-height: 220px;
+            }
+
+            .itin-body {
+                padding: 1.6rem;
+            }
+        }
+
+        /* PRICING */
+        .pricing-bg {
+            background: var(--white);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.3rem;
+            max-width: 920px;
+            margin: 0 auto;
+        }
+
+        .p-card {
+            background: var(--sand);
+            border: 1.5px solid rgba(200, 120, 10, .12);
+            border-radius: 22px;
+            padding: 2.3rem 1.6rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all .35s ease;
+            opacity: 0;
+            transform: translateY(26px);
+        }
+
+        .p-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .p-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-lt));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform .4s ease;
+        }
+
+        .p-card:hover {
+            transform: translateY(-7px);
+            border-color: var(--gold);
+            box-shadow: var(--sh-lg);
+        }
+
+        .p-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .p-card.best {
+            background: var(--gold-pale);
+            border-color: var(--gold);
+        }
+
+        .p-card.best::before {
+            transform: scaleX(1);
+        }
+
+        .p-best-tag {
+            position: absolute;
+            top: 1rem;
+            right: 0;
+            background: var(--gold);
+            color: #fff;
+            font-size: .56rem;
+            font-weight: 700;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            padding: .26rem .8rem .26rem .65rem;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .p-icon {
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-lt));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            margin: 0 auto .9rem;
+            box-shadow: 0 6px 18px rgba(200, 120, 10, .28);
+        }
+
+        .p-pax {
+            font-size: .65rem;
+            font-weight: 700;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: .4rem;
+        }
+
+        .p-amount {
+            font-weight: 900;
+            font-size: 2.6rem;
+            color: var(--dark);
+            line-height: 1;
+        }
+
+        .p-amount sup {
+            font-size: 1rem;
+            color: var(--gold);
+            vertical-align: super;
+        }
+
+        .p-rule {
+            width: 32px;
+            height: 1.5px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin: .7rem auto;
+        }
+
+        .p-note {
+            font-size: .68rem;
+            color: var(--muted);
+            margin-bottom: 1.6rem;
+        }
+
+        .p-card .btn-primary {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: .55rem;
+            background: linear-gradient(135deg, var(--gold), var(--gold-lt));
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: .84rem;
+            padding: .85rem 1.8rem;
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 6px 22px rgba(200, 120, 10, .3);
+            transition: all .3s;
+            text-decoration: none;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 36px rgba(200, 120, 10, .42);
+        }
+
+        @media(max-width:720px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 360px;
+            }
+        }
+
+        /* INCLUSIONS */
+        .inc-bg {
+            background: var(--sand);
+        }
+
+        .inc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 1rem;
+        }
+
+        .inc-card {
+            background: var(--white);
+            border-radius: 17px;
+            padding: 1.3rem;
+            display: flex;
+            gap: .85rem;
+            align-items: flex-start;
+            border: 1px solid rgba(200, 120, 10, .09);
+            transition: all .28s;
+            opacity: 0;
+            transform: translateY(16px);
+        }
+
+        .inc-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .inc-card:hover {
+            box-shadow: var(--sh-md);
+            border-color: rgba(200, 120, 10, .22);
+            transform: translateY(-3px);
+        }
+
+        .inc-ico {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, rgba(200, 120, 10, .1), rgba(240, 160, 48, .07));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            border: 1px solid rgba(200, 120, 10, .12);
+        }
+
+        .inc-lbl {
+            font-size: .58rem;
+            font-weight: 700;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: .15rem;
+        }
+
+        .inc-txt {
+            font-size: .78rem;
+            font-weight: 300;
+            color: var(--gray);
+            line-height: 1.5;
+        }
+
+        /* FOOTER CTA */
+        .fcta {
+            background: var(--dark);
+            padding: 6rem 1.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .fcta-bg {
+            position: absolute;
+            inset: 0;
+            background: url('https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=1400&auto=format&fit=crop&q=50') center/cover;
+            opacity: .09;
+        }
+
+        .fcta-inner {
+            position: relative;
+            z-index: 1;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .live-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            background: rgba(232, 93, 58, .12);
+            border: 1px solid rgba(232, 93, 58, .28);
+            color: #FF7B5E;
+            font-size: .65rem;
+            font-weight: 700;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            padding: .36rem 1rem;
+            border-radius: 100px;
+            margin-bottom: 1.8rem;
+            animation: livePulse 2s infinite;
+        }
+
+        @keyframes livePulse {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(232, 93, 58, 0)
+            }
+
+            60% {
+                box-shadow: 0 0 14px 5px rgba(232, 93, 58, .1)
+            }
+        }
+
+        .live-dot {
+            width: 6px;
+            height: 6px;
+            background: #FF7B5E;
+            border-radius: 50%;
+            animation: blinkDot 1s infinite;
+        }
+
+        .fcta h2 {
+            font-weight: 900;
+            font-size: clamp(2.2rem, 6vw, 4.5rem);
+            color: #fff;
+            line-height: 1.05;
+            margin-bottom: .9rem;
+        }
+
+        .fcta h2 em {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            color: var(--gold-lt);
+        }
+
+        .fcta p {
+            /* font-style: italic; */
+            font-weight: 300;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, .45);
+            margin-bottom: 2.2rem;
+        }
+
+        .fcta-btns {
+            display: flex;
+            gap: .9rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-white {
+            display: inline-flex;
+            align-items: center;
+            gap: .55rem;
+            background: #fff;
+            color: var(--dark);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: .88rem;
+            padding: .9rem 2rem;
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
+            transition: all .3s;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, .18);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, .25);
+        }
+
+        .btn-ghost-dark {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            background: transparent;
+            color: rgba(255, 255, 255, .72);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: .84rem;
+            padding: .9rem 1.7rem;
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, .18);
+            cursor: pointer;
+            transition: all .25s;
+            text-decoration: none;
+        }
+
+        .btn-ghost-dark:hover {
+            border-color: rgba(255, 255, 255, .45);
+            color: #fff;
+        }
+
+        /* WA */
+        .wa-btn {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 400;
+            width: 52px;
+            height: 52px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, .38);
+            cursor: pointer;
+            transition: all .3s;
+            text-decoration: none;
+            animation: waGlow 2.5s infinite;
+        }
+
+        .wa-btn:hover {
+            transform: scale(1.12);
+        }
+
+        @keyframes waGlow {
+
+            0%,
+            100% {
+                box-shadow: 0 8px 24px rgba(37, 211, 102, .38), 0 0 0 0 rgba(37, 211, 102, .18)
+            }
+
+            50% {
+                box-shadow: 0 8px 24px rgba(37, 211, 102, .38), 0 0 0 11px rgba(37, 211, 102, 0)
+            }
+        }
+
+        /* ══════════════════════════════════════
+           MODAL — ONLY ONE, CLEAN
+        ══════════════════════════════════════ */
+        .enq-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(24, 20, 16, .72);
+            backdrop-filter: blur(10px);
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .3s;
+        }
+
+        .enq-overlay.open {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .enq-modal {
+            background: #fff;
+            border-radius: 22px;
+            width: 100%;
+            max-width: 475px;
+            max-height: 92vh;
+            overflow-y: auto;
+            position: relative;
+            transform: scale(.93) translateY(18px);
+            transition: transform .35s cubic-bezier(.34, 1.56, .64, 1);
+            box-shadow: 0 40px 100px rgba(0, 0, 0, .28);
+        }
+
+        .enq-overlay.open .enq-modal {
+            transform: scale(1) translateY(0);
+        }
+
+        .enq-modal-head {
+            background: linear-gradient(140deg, #1C1810, #2e2012);
+            padding: 2.3rem 2.3rem 1.8rem;
+            border-radius: 22px 22px 0 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .enq-modal-head-photo {
+            position: absolute;
+            inset: 0;
+            background: url('https://images.unsplash.com/photo-1518684079-3c830dcef090?w=600&auto=format&fit=crop&q=60') center/cover;
+            opacity: .1;
+        }
+
+        .enq-modal-head-inner {
+            position: relative;
+            z-index: 1;
+        }
+
+        .enq-modal-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-lt));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto .9rem;
+            box-shadow: 0 8px 24px rgba(200, 120, 10, .38);
+        }
+
+        .enq-modal-title {
+            font-weight: 900;
+            font-size: 1.6rem;
+            color: #fff;
+            margin-bottom: .22rem;
+        }
+
+        .enq-modal-sub {
+            font-size: .65rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, .42);
+            letter-spacing: .18em;
+            text-transform: uppercase;
+        }
+
+        .enq-modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 30px;
+            height: 30px;
+            background: rgba(255, 255, 255, .1);
+            border: none;
+            border-radius: 50%;
+            color: rgba(255, 255, 255, .65);
+            font-size: .95rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .2s;
+            z-index: 10;
+        }
+
+        .enq-modal-close:hover {
+            background: rgba(255, 255, 255, .2);
+            color: #fff;
+        }
+
+        .enq-modal-body {
+            padding: 1.8rem 2.2rem 2.3rem;
+        }
+
+        .f-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: .75rem;
+        }
+
+        .f-group {
+            margin-bottom: .95rem;
+        }
+
+        .f-label {
+            display: block;
+            font-size: .62rem;
+            font-weight: 700;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: .38rem;
+        }
+
+        .f-input,
+        .f-select,
+        .f-textarea {
+            width: 100%;
+            background: var(--sand);
+            border: 1.5px solid rgba(200, 120, 10, .14);
+            border-radius: 11px;
+            padding: .75rem .9rem;
+            color: var(--dark);
+            font-family: 'Roboto', sans-serif;
+            font-size: .85rem;
+            font-weight: 400;
+            outline: none;
+            transition: all .22s;
+            appearance: none;
+        }
+
+        .f-input:focus,
+        .f-select:focus,
+        .f-textarea:focus {
+            border-color: var(--gold);
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(200, 120, 10, .1);
+        }
+
+        .f-select option {
+            background: #fff;
+        }
+
+        .f-textarea {
+            height: 78px;
+            resize: none;
+        }
+
+        .f-submit {
+            width: 100%;
+            background: linear-gradient(135deg, var(--gold), var(--gold-lt));
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: .88rem;
+            padding: .95rem;
+            border: none;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: all .3s;
+            margin-top: .3rem;
+            box-shadow: 0 6px 22px rgba(200, 120, 10, .3);
+        }
+
+        .f-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 36px rgba(200, 120, 10, .42);
+        }
+
+        .f-disc {
+            text-align: center;
+            font-size: .63rem;
+            color: rgba(107, 96, 80, .52);
+            margin-top: .65rem;
+        }
+
+        .enq-success-view {
+            display: none;
+            text-align: center;
+            padding: 2.8rem 2.2rem;
+        }
+
+        .enq-success-check {
+            width: 68px;
+            height: 68px;
+            background: linear-gradient(135deg, #22C55E, #16A34A);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.9rem;
+            margin: 0 auto 1.3rem;
+            animation: popBounce .5s cubic-bezier(.34, 1.56, .64, 1);
+        }
+
+        @keyframes popBounce {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        .enq-success-view h3 {
+            font-weight: 900;
+            font-size: 1.7rem;
+            color: var(--dark);
+            margin-bottom: .45rem;
+        }
+
+        .enq-success-view p {
+            font-size: .84rem;
+            font-weight: 300;
+            color: var(--gray);
+            line-height: 1.6;
+            margin-bottom: 1.6rem;
+        }
+
+        @media(max-width:480px) {
+            .f-row {
+                grid-template-columns: 1fr;
+            }
+
+            .enq-modal-body {
+                padding: 1.5rem 1.5rem 2rem;
+            }
+        }
+
+
+        /* ================= RELATED PACKAGES ================= */
+
+        .rp-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .rp-small-title {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #D62828;
+            margin-bottom: 8px;
+        }
+
+        .rp-main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            font-weight: 800;
+        }
+
+        .rp-main-title span {
+            color: #D62828;
+        }
+
+        .rp-line {
+            width: 60px;
+            height: 4px;
+            background: #D62828;
+            margin: 15px auto 50px;
+            border-radius: 4px;
+        }
+
+        /* GRID - 3 CARDS */
+        .rp-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        /* CARD */
+        .rp-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.35s ease;
+        }
+
+        .rp-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        /* IMAGE */
+        .rp-img {
+            height: 230px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .rp-img::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 60%);
+        }
+
+        .rp-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #D62828;
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            z-index: 2;
+        }
+
+        /* BODY */
+        .rp-body {
+            padding: 22px;
+        }
+
+        .rp-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .rp-hotel {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .rp-hotel i {
+            color: #D62828;
+            margin-right: 5px;
+        }
+
+        .rp-price {
+            font-size: 22px;
+            font-weight: 800;
+            color: #D62828;
+            margin-bottom: 18px;
+        }
+
+        .rp-price span {
+            font-size: 13px;
+            color: #777;
+            font-weight: 500;
+            margin-right: 5px;
+        }
+
+        .rp-price small {
+            font-size: 13px;
+            color: #777;
+        }
+
+        /* BUTTON */
+        .rp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            background: #D62828;
+            color: #fff;
+            padding: 10px 22px;
+            border-radius: 40px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .rp-btn:hover {
+            background: #A01818;
+            color: #fff;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 992px) {
+            .rp-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .rp-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="help-container">
+                <button class="help-btn">Help &#9662;</button>
+                <div class="help-dropdown">
+                    <span onclick="window.location.href='tel:+97143922959'" style="cursor:pointer;">
+                        <i class="fas fa-phone"></i> +971 4 392 2959
+                    </span>
+                    <span>
+                        <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+                            <i class="fas fa-envelope"></i> info@cityonetours.com
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="right">
+                <!-- ✅ FIXED: directly calls openEnqModal() -->
+                <span id="enquiryBtn" onclick="openEnqModal()" style="cursor:pointer;">
+                    <i class="fas fa-envelope"></i> Enquiry now
+                </span>
+            </div>
+        </div>
+        <nav class="navbar">
+      <div class="logo"> <a href="/">
+          <img src="images/image 8916.png" alt="" class="logo"> </a></div>
+      </div>            <div class="menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="destination.html"><i class="fas fa-search-location"></i> Destination</a>
+                <a href="hotdeal.html"><i class="fas fa-suitcase-rolling"></i> Hot Deal</a>
+                <div class="dropdown">
+                    <a href="themes.html" class="dropbtn">
+                        <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="themes.html">Adventure</a>
+                        <a href="themes.html">Luxury Tours</a>
+                        <a href="themes.html">Honey moon</a>
+                        <a href="themes.html">Family with Kids</a>
+                        <a href="themes.html">Safari</a>
+                        <a href="themes.html">Nature</a>
+                        <a href="themes.html">Wild Life</a>
+                        <a href="">Beach</a>
+                    </div>
+                </div>
+                <a href="visa.html"><i class="fas fa-passport"></i> Visa</a>
+                <a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
+                <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                <a href="contact.html"><i class="fas fa-users"></i> Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CURSORS -->
+    <div class="cur-dot" id="curDot"></div>
+    <div class="cur-ring" id="curRing"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-video-wrap" id="videoWrap">
+            <div class="hero-photo-fallback" id="photoBg"></div>
+            <div id="ytPlayer"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-grain"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <div class="badge-dot"></div>
+                Summer 2026 · IITM Ahmedabad Exclusive
+            </div>
+            <h1 class="hero-title">
+                DUBAI AWAITS
+                <span>Lapita Resort &amp; Water Parks</span>
+            </h1>
+            <p class="hero-desc">
+                4 nights · UAE Visa included.<br>
+                Starting from just <strong style="color:var(--gold-lt);font-weight:700;">₹36,799</strong> per person.
+            </p>
+            <div class="hero-pills">
+                <span class="h-pill">🛂 UAE Visa</span>
+                <span class="h-pill">🏨 2 Hotels</span>
+                <span class="h-pill">🎢 Free Park</span>
+                <span class="h-pill">🗼 Burj Khalifa</span>
+                <span class="h-pill">🏜️ Desert Safari</span>
+                <span class="h-pill">⛵ Dhow Cruise</span>
+            </div>
+            <div class="hero-btns">
+                <button class="btn-hero-primary" onclick="openEnqModal()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    Book This Package
+                </button>
+                <a href="#itinerary" class="btn-hero-ghost">View Itinerary ↓</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-bar"></div>
+            scroll
+        </div>
+    </section>
+
+    <!-- STRIP -->
+    <div class="strip">
+        <div class="strip-inner">
+            <div class="strip-block">
+                <div class="strip-num">03</div>
+                <div class="strip-lbl">Nights</div>
+                <div class="strip-hotel">Fortune Pearl Hotel, Deira</div>
+            </div>
+            <div class="strip-op">
+                <div class="strip-op-sym">+</div>
+            </div>
+            <div class="strip-block">
+                <div class="strip-num">01</div>
+                <div class="strip-lbl">Night</div>
+                <div class="strip-hotel">Lapita, Dubai Parks &amp; Resorts</div>
+            </div>
+            <div class="strip-op">
+                <div class="strip-op-sym">=</div>
+            </div>
+            <div class="strip-block">
+                <div class="strip-num">04</div>
+                <div class="strip-lbl">Total Nights</div>
+                <div class="strip-hotel">Full Dubai Experience</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ITINERARY -->
+    <section class="itin-bg s-full" id="itinerary">
+        <div class="s-wrap" style="padding-top:0;padding-bottom:0;">
+            <div class="s-tag">
+                <div class="s-tag-line"></div>
+                <div class="s-tag-text">Summer Special</div>
+            </div>
+            <h2 class="s-heading">IITM Ahmedabad <em>Dubai Promotion</em></h2>
+            <p class="s-sub">Lapita Resort Water Park Special — Limited Summer Seats Available</p>
+            <div class="itin-stack">
+                <div class="itin-card">
+                    <div class="itin-img">
+                        <img src="https://videocdn.cdnpk.net/videos/32bbca9b-1f9e-5530-9717-768e989ceab3/horizontal/thumbnails/large.jpg?semt=ais_hybrid&item_id=5777201&w=740&q=80"
+                            alt="Marina Dhow Cruise" loading="lazy">
+                        <div class="itin-chip">
+                            <div class="itin-chip-n">1</div>Arrival
+                        </div>
+                        <div class="itin-shade"></div>
+                    </div>
+                    <div class="itin-body">
+                        <div class="itin-title">Arrival in Dubai + Marina Dhow Cruise</div>
+                        <div class="itin-desc">Arrive at Dubai International Airport. Transfer to Fortune Pearl Hotel
+                            Deira for check-in. In the evening, enjoy Marina Dhow Cruise with buffet dinner and live
+                            entertainment shows.</div>
+                        <div class="itin-tags">
+                            <span class="itin-tag">Airport Transfer</span>
+                            <span class="itin-tag">Fortune Pearl Hotel BB</span>
+                            <span class="itin-tag">Dhow Cruise Dinner</span>
+                            <span class="itin-tag">Live Shows</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="itin-card flip">
+                    <div class="itin-img">
+                        <img src="https://media.istockphoto.com/id/183371461/photo/city-lights-in-dubai-at-sunset.jpg?s=612x612&w=0&k=20&c=zAkTw5NIWr3y2EhmIZwB-HW-pVMZqu3JXX21gQuHnB4="
+                            alt="Burj Khalifa" loading="lazy">
+                        <div class="itin-chip">
+                            <div class="itin-chip-n">2</div>Explore
+                        </div>
+                        <div class="itin-shade"></div>
+                    </div>
+                    <div class="itin-body">
+                        <div class="itin-title">Dubai City Tour + Burj Khalifa</div>
+                        <div class="itin-desc">Half-day Dubai city tour covering major landmarks. Visit Burj Khalifa –
+                            At The Top (124 & 125 floors) during non-peak hours (08:00–11:30 hrs & 20:30–23:00 hrs).
+                        </div>
+                        <div class="itin-tags">
+                            <span class="itin-tag">Half-Day City Tour</span>
+                            <span class="itin-tag">Burj Khalifa 124–125F</span>
+                            <span class="itin-tag">Non-Peak Hours</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="itin-card">
+                    <div class="itin-img">
+                        <img src="images/desaert safari background.jpg.jpeg" alt="Desert Safari" loading="lazy">
+                        <div class="itin-chip">
+                            <div class="itin-chip-n">3</div>Adventure
+                        </div>
+                        <div class="itin-shade"></div>
+                    </div>
+                    <div class="itin-body">
+                        <div class="itin-title">Red Dunes Desert Safari with BBQ Dinner</div>
+                        <div class="itin-desc">Afternoon Red Dunes Safari in 4x4 vehicle. Enjoy dune bashing followed by
+                            BBQ dinner at standard camp with cultural entertainment shows.</div>
+                        <div class="itin-tags">
+                            <span class="itin-tag">4x4 Desert Safari</span>
+                            <span class="itin-tag">BBQ Dinner</span>
+                            <span class="itin-tag">Entertainment Shows</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="itin-card flip">
+                    <div class="itin-img">
+                        <img src="https://cache.marriott.com/is/image/marriotts7prod/ak-dxbak-lapita-exterior-29198:Wide-Hor?wid=750&fit=constrain"
+                            alt="Lapita Resort" loading="lazy">
+                        <div class="itin-chip">
+                            <div class="itin-chip-n">4</div>Park Day
+                        </div>
+                        <div class="itin-shade"></div>
+                    </div>
+                    <div class="itin-body">
+                        <div class="itin-title">Transfer to Lapita Resort + Free Park Access</div>
+                        <div class="itin-desc">Check-out and inter-hotel transfer to Lapita, Dubai Parks And Resorts,
+                            Autograph Collection. Enjoy complimentary park access and water park attractions.</div>
+                        <div class="itin-tags">
+                            <span class="itin-tag">Inter-Hotel Transfer</span>
+                            <span class="itin-tag">Lapita Resort BB</span>
+                            <span class="itin-tag">Free Park Entry</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="itin-card">
+                    <div class="itin-img">
+                        <img src="https://videocdn.cdnpk.net/videos/32bbca9b-1f9e-5530-9717-768e989ceab3/horizontal/thumbnails/large.jpg?semt=ais_hybrid&item_id=5777201&w=740&q=80"
+                            alt="Departure" loading="lazy">
+                        <div class="itin-chip">
+                            <div class="itin-chip-n">5</div>Departure
+                        </div>
+                        <div class="itin-shade"></div>
+                    </div>
+                    <div class="itin-body">
+                        <div class="itin-title">Departure from Dubai</div>
+                        <div class="itin-desc">Breakfast at hotel. Check-out and transfer to Dubai International Airport
+                            for your return journey.</div>
+                        <div class="itin-tags">
+                            <span class="itin-tag">Airport Transfer</span>
+                            <span class="itin-tag">VAT Included</span>
+                            <span class="itin-tag">UAE Visa Included</span>
+                            <span class="itin-tag">02 Dinners Included</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing-bg s-full" id="pricing">
+        <div class="s-wrap" style="padding-top:0;padding-bottom:0;text-align:center;">
+            <div class="s-tag" style="justify-content:center;">
+                <div class="s-tag-line"></div>
+                <div class="s-tag-text">Package Pricing</div>
+                <div class="s-tag-line"></div>
+            </div>
+            <h2 class="s-heading">Choose Your <em>Group Size</em></h2>
+            <p class="s-sub" style="margin:0.4rem auto 2.5rem;">All prices per person · VAT &amp; UAE Visa included ·
+                Zero hidden charges</p>
+            <div class="pricing-grid">
+                <div class="p-card">
+                    <div class="p-icon">👫</div>
+                    <div class="p-pax">2 Persons</div>
+                    <div class="p-amount"><sup>₹</sup>41,860</div>
+                    <div class="p-rule"></div>
+                    <div class="p-note">per person · double sharing</div>
+                    <button class="btn-primary" onclick="openEnqModal('2')">Enquire Now →</button>
+                </div>
+                <div class="p-card best">
+                    <div class="p-best-tag">Best Value</div>
+                    <div class="p-icon">👨‍👩‍👧‍👦</div>
+                    <div class="p-pax">4 Persons</div>
+                    <div class="p-amount"><sup>₹</sup>38,010</div>
+                    <div class="p-rule"></div>
+                    <div class="p-note">per person · double sharing</div>
+                    <button class="btn-primary" onclick="openEnqModal('4')">Enquire Now →</button>
+                </div>
+                <div class="p-card">
+                    <div class="p-icon">🎉</div>
+                    <div class="p-pax">6 Persons</div>
+                    <div class="p-amount"><sup>₹</sup>36,799</div>
+                    <div class="p-rule"></div>
+                    <div class="p-note">per person · double sharing</div>
+                    <button class="btn-primary" onclick="openEnqModal('6')">Enquire Now →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INCLUSIONS -->
+    <section class="inc-bg s-full" id="inclusions">
+        <div class="s-wrap" style="padding-top:0;padding-bottom:0;">
+            <div class="s-tag">
+                <div class="s-tag-line"></div>
+                <div class="s-tag-text">What's Included</div>
+            </div>
+            <h2 class="s-heading">Everything <em>Taken Care Of</em></h2>
+            <p class="s-sub">Zero hidden charges — from visa to valediction, every detail is handled</p>
+            <div class="inc-grid">
+                <div class="inc-card">
+                    <div class="inc-ico">🛂</div>
+                    <div>
+                        <div class="inc-lbl">Visa</div>
+                        <div class="inc-txt">UAE Tourist Visa for all travellers</div>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-ico">🏨</div>
+                    <div>
+                        <div class="inc-lbl">Hotels</div>
+                        <div class="inc-txt">3N Fortune Pearl + 1N Lapita Resort on BB</div>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-ico">🚌</div>
+                    <div>
+                        <div class="inc-lbl">Transfers</div>
+                        <div class="inc-txt">Airport, inter-hotel, all tours &amp; departure</div>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-ico">⛵</div>
+                    <div>
+                        <div class="inc-lbl">Dhow Cruise</div>
+                        <div class="inc-txt">Evening Marina cruise with dinner &amp; shows</div>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-ico">🏙️</div>
+                    <div>
+                        <div class="inc-lbl">City Tour</div>
+                        <div class="inc-txt">Half-day Dubai city tour with expert guide</div>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-ico">🗼</div>
+                    <div>
+                        <div class="inc-lbl">Burj Khalifa</div>
+                        <div class="inc-txt">At The Top — floors 124 &amp; 125, non-peak</div>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-ico">🏜️</div>
+                    <div>
+                        <div class="inc-lbl">Desert Safari</div>
+                        <div class="inc-txt">Red dunes 4x4, BBQ dinner &amp; cultural shows</div>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-ico">🎡</div>
+                    <div>
+                        <div class="inc-lbl">Park Access</div>
+                        <div class="inc-txt">Free entry to Dubai Parks &amp; Resorts</div>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-ico">🍽️</div>
+                    <div>
+                        <div class="inc-lbl">Meals</div>
+                        <div class="inc-txt">2 dinners + daily breakfast at both hotels</div>
+                    </div>
+                </div>
+                <div class="inc-card">
+                    <div class="inc-ico">💸</div>
+                    <div>
+                        <div class="inc-lbl">Taxes</div>
+                        <div class="inc-txt">VAT fully included — zero hidden charges</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CTA -->
+    <section class="fcta">
+        <div class="fcta-bg"></div>
+        <div class="fcta-inner">
+            <div class="live-tag">
+                <div class="live-dot"></div>Limited Seats Available
+            </div>
+            <h2>Don't Let This<br><em>Summer Slip Away</em></h2>
+            <p>Seats fill fast — lock in your Dubai escape with a quick enquiry</p>
+            <div class="fcta-btns">
+                <button class="btn-white" onclick="openEnqModal()">🚀 &nbsp;Send Enquiry Now</button>
+                <a href="https://wa.me/+97143922959" class="btn-ghost-dark" target="_blank">💬 &nbsp;WhatsApp Us</a>
+            </div>
+        </div>
+    </section>
+    <!-- ================= RELATED PACKAGES ================= -->
+    <section class="rp-section">
+        <div class="container">
+            <div class="rp-head text-center">
+                <div class="rp-small-title">You May Also Like</div>
+                <h2 class="rp-main-title">Related <span>Dubai Packages</span></h2>
+                <div class="rp-line"></div>
+            </div>
+
+            <div class="rp-grid">
+
+                <!-- CARD 1 -->
+                <div class="rp-card">
+                    <div class="rp-img" style="background-image:url('images/desaert safari background.jpg.jpeg');">
+                        <div class="rp-badge">04N / 05D</div>
+                    </div>
+                    <div class="rp-body">
+                        <h3 class="rp-title">Super Summer Saver Dubai</h3>
+                        <p class="rp-hotel">
+                            <i class="fa-solid fa-hotel"></i>
+                            Majestic Premier / City Retreat
+                        </p>
+
+                        <div class="rp-price">
+                            <span>From</span>
+                            ₹32,000
+                            <small>/person</small>
+                        </div>
+
+                        <a href="package1.html" class="rp-btn">
+                            View Package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="rp-card">
+                    <div class="rp-img"
+                        style="background-image:url('https://cdn.wallpapersafari.com/9/78/9I0ucG.jpg');">
+                        <div class="rp-badge">04N / 05D</div>
+                    </div>
+                    <div class="rp-body">
+                        <h3 class="rp-title">Lapita Resort & Water Park</h3>
+                        <p class="rp-hotel">
+                            <i class="fa-solid fa-hotel"></i>
+                            Fortune Pearl + Lapita Resort
+                        </p>
+
+                        <div class="rp-price">
+                            <span>From</span>
+                            ₹36,799
+                            <small>/person</small>
+                        </div>
+
+                        <a href="package3.html" class="rp-btn">
+                            View Package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="rp-card">
+                    <div class="rp-img"
+                        style="background-image:url('https://uae.luxeglamp.com/wp-content/uploads/2025/07/image-11-scaled.png');">
+                        <div class="rp-badge">04N / 05D</div>
+                    </div>
+                    <div class="rp-body">
+                        <h3 class="rp-title">Summer Delights 3★ & 4★</h3>
+                        <p class="rp-hotel">
+                            <i class="fa-solid fa-hotel"></i>
+                            Fortune Pearl / Omega
+                        </p>
+
+                        <div class="rp-price">
+                            <span>From</span>
+                            ₹31,799
+                            <small>/person</small>
+                        </div>
+
+                        <a href="package4.html" class="rp-btn">
+                            View Package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- WA Float -->
+    <a href="https://wa.me/+97143922959" target="_blank" class="wa-btn">
+        <svg width="25" height="25" viewBox="0 0 24 24" fill="white">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <!-- ══════════════════════════════════════
+         THE ONE MODAL — uses enq-overlay / enq-modal
+         No conflicts with contact.css at all
+    ══════════════════════════════════════ -->
+    <div class="enq-overlay" id="enqOverlay" onclick="enqOverlayClick(event)">
+    <div class="enq-modal" id="enqModal">
+
+        <div class="enq-modal-head">
+            <div class="enq-modal-head-photo"></div>
+            <div class="enq-modal-head-inner">
+                <div class="enq-modal-icon">✈️</div>
+                <div class="enq-modal-title">Plan Your Escape</div>
+                <div class="enq-modal-sub">We'll reach you within 24 hours</div>
+            </div>
+            <button class="enq-modal-close" onclick="closeEnqModal()">✕</button>
+        </div>
+
+        <!-- FORM START -->
+        <form class="enq-modal-body" id="enqFormView"
+      action="https://api.web3forms.com/submit"
+      method="POST">
+
+    <!-- Web3Forms Hidden Fields -->
+    <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+    <input type="hidden" name="subject" value="✈️ Dubai Package Enquiry">
+    <input type="hidden" name="from_name" value="City One Website">
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+    <input type="checkbox" name="botcheck" style="display:none;">
+
+    <div class="f-group">
+        <label class="f-label">First Name</label>
+        <input class="f-input" name="first_name" type="text" placeholder="Rahul" required>
+    </div>
+
+    <div class="f-group">
+        <label class="f-label">WhatsApp / Mobile</label>
+        <input class="f-input" name="phone" type="tel" placeholder="+91 98765 43210" required>
+    </div>
+
+    <div class="f-group">
+        <label class="f-label">Email Address</label>
+        <input class="f-input" name="email" type="email" placeholder="rahul@email.com" required>
+    </div>
+
+    <div class="f-row">
+        <div class="f-group">
+            <label class="f-label">No. of Travellers</label>
+            <select class="f-select" name="travellers" required>
+                <option value="">Select</option>
+                <option value="2">2 Persons — ₹41,860/pp</option>
+                <option value="4">4 Persons — ₹38,010/pp</option>
+                <option value="6">6 Persons — ₹36,799/pp</option>
+            </select>
+        </div>
+
+        <div class="f-group">
+            <label class="f-label">Travel Month</label>
+            <select class="f-select" name="month">
+                <option value="">Select</option>
+                <option>April 2026</option>
+                <option>May 2026</option>
+                <option>June 2026</option>
+                <option>July 2026</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="f-group">
+        <label class="f-label">Message (Optional)</label>
+        <textarea class="f-textarea" name="message"
+            placeholder="Any special requirements..."></textarea>
+    </div>
+
+    <button class="f-submit" type="submit">🚀 Send My Enquiry</button>
+    <div class="f-disc">No spam. Our travel expert will contact you promptly.</div>
+
+</form>
+        <!-- FORM END -->
+
+        <!-- SUCCESS VIEW -->
+        <div class="enq-success-view" id="enqSuccessView" style="display:none;">
+            <div class="enq-success-check">✓</div>
+            <h3>Enquiry Sent!</h3>
+            <p>Our Dubai travel specialist will WhatsApp or call you within 24 hours.</p>
+            <button class="btn-primary" onclick="closeEnqModal()" style="margin:0 auto">Close Window</button>
+        </div>
+
+    </div>
+</div>>
+
+    <script>
+        /* ── YouTube ── */
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        document.head.appendChild(tag);
+
+        function onYouTubeIframeAPIReady() {
+            new YT.Player('ytPlayer', {
+                videoId: '08ydgZSEAcg',
+                playerVars: { autoplay: 1, mute: 1, controls: 0, showinfo: 0, modestbranding: 1, loop: 1, playlist: '08ydgZSEAcg', rel: 0, playsinline: 1 },
+                events: {
+                    onReady: function (e) {
+                        e.target.playVideo();
+                        setTimeout(function () { var p = document.getElementById('photoBg'); if (p) p.style.opacity = '0'; }, 1200);
+                    }
+                }
+            });
+        }
+
+        /* ── Cursor ── */
+        var dot = document.getElementById('curDot'), ring = document.getElementById('curRing');
+        var mx = 0, my = 0, rx = 0, ry = 0;
+        document.addEventListener('mousemove', function (e) { mx = e.clientX; my = e.clientY; dot.style.left = (mx - 5) + 'px'; dot.style.top = (my - 5) + 'px'; });
+        setInterval(function () { rx += (mx - rx) * .13; ry += (my - ry) * .13; ring.style.left = (rx - 18) + 'px'; ring.style.top = (ry - 18) + 'px'; }, 16);
+        document.querySelectorAll('button,a,.p-card,.inc-card,.itin-card').forEach(function (el) {
+            el.addEventListener('mouseenter', function () { dot.style.transform = 'scale(2.2)'; ring.style.width = '54px'; ring.style.height = '54px'; });
+            el.addEventListener('mouseleave', function () { dot.style.transform = 'scale(1)'; ring.style.width = '36px'; ring.style.height = '36px'; });
+        });
+
+        /* ── Scroll Reveal ── */
+        var obs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e, i) { if (e.isIntersecting) { setTimeout(function () { e.target.classList.add('visible'); }, i * 85); obs.unobserve(e.target); } });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.itin-card,.p-card,.inc-card').forEach(function (el) { obs.observe(el); });
+        document.querySelectorAll('.inc-card').forEach(function (c, i) { c.style.transitionDelay = (i * 50) + 'ms'; });
+
+        /* ══════════════════════════════════════
+           MODAL FUNCTIONS — all renamed enq*
+           Zero conflict with contact.css
+        ══════════════════════════════════════ */
+        function openEnqModal(pax) {
+            document.getElementById('enqOverlay').classList.add('open');
+            document.body.style.overflow = 'hidden';
+            if (pax) {
+                var s = document.getElementById('fPax');
+                for (var i = 0; i < s.options.length; i++) {
+                    if (s.options[i].value === pax) { s.value = pax; break; }
+                }
+            }
+        }
+
+        function closeEnqModal() {
+            document.getElementById('enqOverlay').classList.remove('open');
+            document.body.style.overflow = '';
+            setTimeout(function () {
+                document.getElementById('enqFormView').style.display = 'block';
+                document.getElementById('enqSuccessView').style.display = 'none';
+            }, 350);
+        }
+
+        function enqOverlayClick(e) {
+            if (e.target === document.getElementById('enqOverlay')) closeEnqModal();
+        }
+
+        function submitEnqForm() {
+            if (!document.getElementById('fName').value.trim() || !document.getElementById('fPhone').value.trim()) {
+                alert('Please enter your name and phone number to continue.');
+                return;
+            }
+            document.getElementById('enqFormView').style.display = 'none';
+            document.getElementById('enqSuccessView').style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

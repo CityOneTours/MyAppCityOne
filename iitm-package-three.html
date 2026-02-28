@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Summer Saver – Dubai 2026 | IITM Ahmedabad</title>
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --red: #D62828;
+            --red-dk: #A01818;
+            --red-lt: #FF6B6B;
+            --red-pale: #FFF0F0;
+            --gold: #C9A84C;
+            --gold-lt: #F0D080;
+            --cream: #FFFAF8;
+            --sand: #F5EDE0;
+            --navy: #08162A;
+            --text: #1A1A2E;
+            --muted: #6B7280;
+            --white: #fff;
+            --r: 14px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--cream);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        /* ─── HERO ─────────────────────────────────── */
+        .sp-hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            overflow: hidden;
+        }
+
+        .sp-carousel {
+            position: absolute;
+            inset: 0;
+        }
+
+        .sp-carousel-item {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1.2s ease;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sp-carousel-item.active {
+            opacity: 1;
+        }
+
+        .sp-carousel-item::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(8, 22, 42, .72) 0%, rgba(214, 40, 40, .28) 100%);
+        }
+
+        /* Slide backgrounds via inline gradient + unsplash */
+        .sp-slide1 {
+            background-image: url('https://cloud.famproperties.com/project/large/burj-khalifa-344498-114015.jpg');
+        }
+
+        .sp-slide2 {
+            background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/7a/20/74/desert-safari-with-quad.jpg?w=700&h=-1&s=1');
+        }
+
+        .sp-slide3 {
+            background-image: url('https://img.freepik.com/premium-photo/metro-railway-glass-skyscrapers-dubai-traffic-street-dubai-museum-future-dubai-cityscape-skyline-urban-background_1045819-891.jpg');
+        }
+
+        .sp-hero-content {
+            position: relative;
+            z-index: 10;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .sp-badge {
+            display: inline-block;
+            background: var(--red);
+            color: var(--white);
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: .75rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            padding: 6px 20px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            animation: badgePop .6s ease both;
+        }
+
+        .sp-hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 6vw, 5rem);
+            color: var(--white);
+            line-height: .95;
+            letter-spacing: .03em;
+            text-shadow: 0 4px 40px rgba(0, 0, 0, .4);
+            animation: slideUp .8s ease .2s both;
+        }
+
+        .sp-hero-title span {
+            color: var(--gold-lt);
+        }
+
+        .sp-hero-sub {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            color: rgba(255, 255, 255, .85);
+            margin-top: 14px;
+            font-weight: 400;
+            animation: slideUp .8s ease .4s both;
+        }
+
+        .sp-hero-dates {
+            margin-top: 10px;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: clamp(1.1rem, 3vw, 1.6rem);
+            color: var(--gold-lt);
+            animation: slideUp .8s ease .5s both;
+        }
+
+        .sp-enquire-btn {
+            margin-top: 36px;
+            background: var(--red);
+            color: var(--white);
+            border: none;
+            border-radius: 50px;
+            padding: 16px 44px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 8px 32px rgba(214, 40, 40, .45);
+            transition: transform .2s, box-shadow .2s, background .2s;
+            animation: slideUp .8s ease .6s both;
+        }
+
+        .sp-enquire-btn:hover {
+            background: var(--red-dk);
+            transform: translateY(-3px);
+            box-shadow: 0 14px 40px rgba(214, 40, 40, .55);
+        }
+
+        /* carousel dots */
+        .sp-dots {
+            position: absolute;
+            bottom: 28px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 20;
+        }
+
+        .sp-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .4);
+            cursor: pointer;
+            transition: background .3s, transform .3s;
+            border: none;
+        }
+
+        .sp-dot.active {
+            background: var(--gold-lt);
+            transform: scale(1.3);
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes badgePop {
+            from {
+                opacity: 0;
+                transform: scale(.7);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* ─── LIMITED STRIP ─────────────────────────── */
+        .sp-strip {
+            background: var(--red);
+            color: var(--white);
+            padding: 12px 0;
+            text-align: center;
+            font-weight: 700;
+            font-size: .9rem;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        .sp-strip i {
+            margin: 0 6px;
+            animation: pulse 1.4s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: .4;
+            }
+        }
+
+        /* ─── SECTION SHARED ─────────────────────────── */
+        .sp-section {
+            padding: 80px 0;
+        }
+
+        .sp-label {
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--red);
+            margin-bottom: 8px;
+        }
+
+        .sp-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 900;
+            color: var(--text);
+            line-height: 1.15;
+        }
+
+        .sp-heading span {
+            color: var(--red);
+        }
+
+        .sp-divider {
+            width: 56px;
+            height: 4px;
+            background: var(--red);
+            border-radius: 2px;
+            margin: 18px 0 28px;
+        }
+
+        .sp-divider.center {
+            margin: 18px auto 28px;
+        }
+
+        /* ─── PRICING ─────────────────────────────────── */
+        .sp-pricing-bg {
+            background: var(--sand);
+        }
+
+        .sp-price-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 36px 28px;
+            text-align: center;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, .07);
+            border: 2px solid transparent;
+            transition: border .3s, transform .3s, box-shadow .3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sp-price-card:hover {
+            border-color: var(--red);
+            transform: translateY(-6px);
+            box-shadow: 0 14px 40px rgba(214, 40, 40, .15);
+        }
+
+        .sp-price-card.popular {
+            border-color: var(--red);
+        }
+
+        .sp-popular-badge {
+            position: absolute;
+            top: 16px;
+            right: -22px;
+            background: var(--red);
+            color: var(--white);
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            padding: 4px 36px;
+            transform: rotate(38deg);
+        }
+
+        .sp-pax-icon {
+            font-size: 2rem;
+            color: var(--red);
+            margin-bottom: 12px;
+        }
+
+        .sp-pax-label {
+            font-size: .9rem;
+            color: var(--muted);
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        .sp-price-val {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3.2rem;
+            color: var(--red);
+            line-height: 1;
+        }
+
+        .sp-price-unit {
+            font-size: .8rem;
+            color: var(--muted);
+            margin-top: 4px;
+        }
+
+        /* ─── INCLUSIONS ──────────────────────────────── */
+        .sp-inc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .sp-inc-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 28px 24px;
+            border-left: 4px solid var(--red);
+            box-shadow: 0 2px 16px rgba(0, 0, 0, .06);
+            transition: transform .25s, box-shadow .25s;
+        }
+
+        .sp-inc-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 32px rgba(214, 40, 40, .12);
+        }
+
+        .sp-inc-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            background: var(--red-pale);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            color: var(--red);
+            margin-bottom: 16px;
+        }
+
+        .sp-inc-title {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: var(--text);
+        }
+
+        .sp-inc-desc {
+            font-size: .88rem;
+            color: var(--muted);
+            line-height: 1.55;
+        }
+
+        /* ─── ITINERARY ───────────────────────────────── */
+        .sp-itin-bg {
+            background: var(--sand);
+        }
+
+        .sp-itin-list {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .sp-itin-list::before {
+            content: '';
+            position: absolute;
+            left: 14px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--red), var(--gold));
+            border-radius: 2px;
+        }
+
+        .sp-itin-item {
+            position: relative;
+            margin-bottom: 32px;
+        }
+
+        .sp-itin-dot {
+            position: absolute;
+            left: -33px;
+            top: 4px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--red);
+            border: 3px solid var(--white);
+            box-shadow: 0 0 0 3px var(--red);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .6rem;
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .sp-itin-day {
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--red);
+            margin-bottom: 4px;
+        }
+
+        .sp-itin-title {
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+        }
+
+        .sp-itin-desc {
+            font-size: .9rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        /* ─── HIGHLIGHTS ──────────────────────────────── */
+        .sp-hl-card {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, .1);
+            position: relative;
+        }
+
+        .sp-hl-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sp-hl-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(8, 22, 42, .75) 0%, transparent 55%);
+        }
+
+        .sp-hl-label {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .sp-hl-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: var(--red);
+            color: var(--white);
+            font-size: .68rem;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 50px;
+        }
+
+        /* ─── TAGS ────────────────────────────────────── */
+        .sp-tag {
+            display: inline-block;
+            background: var(--red-pale);
+            color: var(--red);
+            border: 1px solid rgba(214, 40, 40, .25);
+            border-radius: 50px;
+            padding: 6px 18px;
+            font-size: .82rem;
+            font-weight: 600;
+            margin: 4px;
+        }
+
+        /* ─── CTA SECTION ─────────────────────────────── */
+        .sp-cta-section {
+            background: linear-gradient(135deg, var(--red-dk) 0%, var(--red) 60%, #FF8C42 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .sp-cta-title {
+            font-family: 'Playfair Display', serif;
+            /* font-style: italic; */
+            font-size: clamp(1.8rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .sp-cta-sub {
+            font-size: 1.05rem;
+            opacity: .9;
+            margin-bottom: 36px;
+        }
+
+        .sp-cta-btn {
+            background: var(--white);
+            color: var(--red);
+            border: none;
+            border-radius: 50px;
+            padding: 16px 50px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, .2);
+            transition: transform .2s, box-shadow .2s;
+        }
+
+        .sp-cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 40px rgba(0, 0, 0, .3);
+        }
+
+        /* ─── FOOTER ──────────────────────────────────── */
+        .sp-footer {
+            background: var(--navy) !important;
+            color: rgba(255, 255, 255, .7);
+            text-align: center;
+            padding: 32px 20px;
+        }
+
+        .sp-footer strong {
+            color: var(--gold-lt);
+        }
+
+        /* ─── MODAL ───────────────────────────────────── */
+        .sp-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(8, 22, 42, .65);
+            backdrop-filter: blur(6px);
+            z-index: 9998;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .35s;
+        }
+
+        .sp-overlay.show {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .sp-modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            z-index: 9999;
+            transform: translate(-50%, -48%) scale(.92);
+            background: var(--white);
+            border-radius: 24px;
+            width: min(560px, 94vw);
+            max-height: 92vh;
+            overflow-y: auto;
+            padding: 48px 40px 40px;
+            box-shadow: 0 24px 80px rgba(0, 0, 0, .25);
+            opacity: 0;
+            pointer-events: none;
+            transition: transform .35s cubic-bezier(.34, 1.56, .64, 1), opacity .35s;
+        }
+
+        .sp-modal.show {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .sp-modal-close {
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            background: var(--red-pale);
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            font-size: 1.1rem;
+            color: var(--red);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background .2s;
+        }
+
+        .sp-modal-close:hover {
+            background: rgba(214, 40, 40, .15);
+        }
+
+        .sp-modal-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+
+        .sp-modal-sub {
+            font-size: .9rem;
+            color: var(--muted);
+            margin-bottom: 28px;
+        }
+
+        .sp-form-group {
+            margin-bottom: 18px;
+        }
+
+        .sp-form-group label {
+            display: block;
+            font-size: .82rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 6px;
+            letter-spacing: .04em;
+        }
+
+        .sp-form-group input,
+        .sp-form-group select,
+        .sp-form-group textarea {
+            width: 100%;
+            border: 1.5px solid #E5E7EB;
+            border-radius: 10px;
+            padding: 12px 14px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: .95rem;
+            color: var(--text);
+            background: var(--cream);
+            outline: none;
+            transition: border .25s, box-shadow .25s;
+        }
+
+        .sp-form-group input:focus,
+        .sp-form-group select:focus,
+        .sp-form-group textarea:focus {
+            border-color: var(--red);
+            box-shadow: 0 0 0 3px rgba(214, 40, 40, .12);
+        }
+
+        .sp-form-group textarea {
+            resize: vertical;
+            min-height: 90px;
+        }
+
+        .sp-submit-btn {
+            width: 100%;
+            background: var(--red);
+            color: var(--white);
+            border: none;
+            border-radius: 50px;
+            padding: 15px;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 8px;
+            box-shadow: 0 6px 24px rgba(214, 40, 40, .35);
+            transition: background .2s, transform .2s;
+        }
+
+        .sp-submit-btn:hover {
+            background: var(--red-dk);
+            transform: translateY(-2px);
+        }
+
+        .sp-modal-contact {
+            margin-top: 22px;
+            padding-top: 22px;
+            border-top: 1px solid #F0E8E8;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .sp-contact-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--red-pale);
+            color: var(--red);
+            border-radius: 50px;
+            padding: 9px 18px;
+            font-weight: 600;
+            font-size: .88rem;
+            text-decoration: none;
+            transition: background .2s;
+        }
+
+        .sp-contact-link:hover {
+            background: rgba(214, 40, 40, .14);
+            color: var(--red);
+        }
+
+        .sp-success {
+            display: none;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .sp-success i {
+            font-size: 3rem;
+            color: var(--red);
+            margin-bottom: 12px;
+        }
+
+        .sp-success h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+        }
+
+        .sp-success p {
+            color: var(--muted);
+        }
+
+        /* responsive */
+        @media(max-width:576px) {
+            .sp-modal {
+                padding: 36px 24px 28px;
+            }
+
+            .sp-modal-title {
+                font-size: 1.4rem;
+            }
+        }
+
+
+
+        /* ================= RELATED PACKAGES ================= */
+
+.rp-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.rp-small-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #D62828;
+    margin-bottom: 8px;
+}
+
+.rp-main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.rp-main-title span {
+    color: #D62828;
+}
+
+.rp-line {
+    width: 60px;
+    height: 4px;
+    background: #D62828;
+    margin: 15px auto 50px;
+    border-radius: 4px;
+}
+
+/* GRID - 3 CARDS */
+.rp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.rp-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
+}
+
+.rp-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* IMAGE */
+.rp-img {
+    height: 230px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.rp-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), transparent 60%);
+}
+
+.rp-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #D62828;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+/* BODY */
+.rp-body {
+    padding: 22px;
+}
+
+.rp-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.rp-hotel {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.rp-hotel i {
+    color: #D62828;
+    margin-right: 5px;
+}
+
+.rp-price {
+    font-size: 22px;
+    font-weight: 800;
+    color: #D62828;
+    margin-bottom: 18px;
+}
+
+.rp-price span {
+    font-size: 13px;
+    color: #777;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.rp-price small {
+    font-size: 13px;
+    color: #777;
+}
+
+/* BUTTON */
+.rp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    background: #D62828;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.rp-btn:hover {
+    background: #A01818;
+    color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .rp-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .rp-grid {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+</head>
+
+<body>
+<header>
+        <div class="top-bar">
+            <div class="help-container">
+                <button class="help-btn">Help &#9662;</button>
+                <div class="help-dropdown">
+                    <span onclick="window.location.href='tel:+97143922959'" style="cursor:pointer;">
+                        <i class="fas fa-phone"></i> +971 4 392 2959
+                    </span>
+                    <span>
+                        <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+                            <i class="fas fa-envelope"></i> info@cityonetours.com
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="right">
+                <!-- ✅ FIXED: directly calls openEnqModal() -->
+                <span id="enquiryBtn" onclick="openEnqModal()" style="cursor:pointer;">
+                    <i class="fas fa-envelope"></i> Enquiry now
+                </span>
+            </div>
+        </div>
+        <nav class="navbar">
+      <div class="logo"> <a href="/">
+          <img src="images/image 8916.png" alt="" class="logo"> </a></div>
+      </div>            <div class="menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="destination.html"><i class="fas fa-search-location"></i> Destination</a>
+                <a href="hotdeal.html"><i class="fas fa-suitcase-rolling"></i> Hot Deal</a>
+                <div class="dropdown">
+                    <a href="themes.html" class="dropbtn">
+                        <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="themes.html">Adventure</a>
+                        <a href="themes.html">Luxury Tours</a>
+                        <a href="themes.html">Honey moon</a>
+                        <a href="themes.html">Family with Kids</a>
+                        <a href="themes.html">Safari</a>
+                        <a href="themes.html">Nature</a>
+                        <a href="themes.html">Wild Life</a>
+                        <a href="">Beach</a>
+                    </div>
+                </div>
+                <a href="visa.html"><i class="fas fa-passport"></i> Visa</a>
+                <a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
+                <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                <a href="contact.html"><i class="fas fa-users"></i> Contact</a>
+            </div>
+        </nav>
+    </header>
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <section class="sp-hero">
+        <div class="sp-carousel" id="spCarousel">
+            <div class="sp-carousel-item sp-slide1 active"></div>
+            <div class="sp-carousel-item sp-slide2"></div>
+            <div class="sp-carousel-item sp-slide3"></div>
+        </div>
+
+        <div class="sp-hero-content">
+            <div class="sp-badge"><i class="fa-solid fa-fire-flame-curved me-1"></i> Limited Seats Available</div>
+            <h1 class="sp-hero-title">Super Summer<br><span>Saver Dubai</span></h1>
+            <p class="sp-hero-sub">04 Nights · 05 Days · All-Inclusive Experience</p>
+            <p class="sp-hero-dates">May – August 2026 · Bur Dubai</p>
+            <button class="sp-enquire-btn" onclick="openModal()">
+                <i class="fa-solid fa-paper-plane me-2"></i> Enquire Now
+            </button>
+        </div>
+
+        <div class="sp-dots" id="spDots">
+            <button class="sp-dot active" onclick="goSlide(0)"></button>
+            <button class="sp-dot" onclick="goSlide(1)"></button>
+            <button class="sp-dot" onclick="goSlide(2)"></button>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ STRIP ═══════════════════ -->
+    <div class="sp-strip">
+        <i class="fa-solid fa-star"></i>
+        UAE VISA INCLUDED &nbsp;·&nbsp; VAT INCLUDED &nbsp;·&nbsp; 02 DINNERS INCLUDED &nbsp;·&nbsp; AIRPORT TRANSFERS
+        INCLUDED
+        <i class="fa-solid fa-star"></i>
+    </div>
+
+    <!-- ═══════════════════ PRICING ═══════════════════ -->
+    <section class="sp-section sp-pricing-bg">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="sp-label">Best Value Pricing</div>
+                <h2 class="sp-heading">Choose Your <span>Package</span></h2>
+                <div class="sp-divider center"></div>
+                <p class="text-muted">Per person on double sharing basis · Majestic Premier / City Retreat Hotel, Bur
+                    Dubai with Breakfast</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- 2 pax -->
+                <div class="col-md-4">
+                    <div class="sp-price-card h-100">
+                        <div class="sp-pax-icon"><i class="fa-solid fa-user-group"></i></div>
+                        <div class="sp-pax-label">02 Pax Package</div>
+                        <div class="sp-price-val">₹34,555</div>
+                        <div class="sp-price-unit">per person</div>
+                        <hr class="my-3">
+                        <p class="text-muted small">Ideal for couples & duos</p>
+                        <button class="sp-enquire-btn w-100 mt-3" style="font-size:.85rem;padding:12px;"
+                            onclick="openModal()">Book Now</button>
+                    </div>
+                </div>
+                <!-- 4 pax -->
+                <div class="col-md-4">
+                    <div class="sp-price-card h-100 popular">
+                        <div class="sp-popular-badge">Best Deal</div>
+                        <div class="sp-pax-icon"><i class="fa-solid fa-users"></i></div>
+                        <div class="sp-pax-label">04 Pax Package</div>
+                        <div class="sp-price-val">₹32,660</div>
+                        <div class="sp-price-unit">per person</div>
+                        <hr class="my-3">
+                        <p class="text-muted small">Perfect for families & groups of 4</p>
+                        <button class="sp-enquire-btn w-100 mt-3" style="font-size:.85rem;padding:12px;"
+                            onclick="openModal()">Book Now</button>
+                    </div>
+                </div>
+                <!-- 6 pax -->
+                <div class="col-md-4">
+                    <div class="sp-price-card h-100">
+                        <div class="sp-pax-icon"><i class="fa-solid fa-people-group"></i></div>
+                        <div class="sp-pax-label">06 Pax Package</div>
+                        <div class="sp-price-val">₹32,000</div>
+                        <div class="sp-price-unit">per person</div>
+                        <hr class="my-3">
+                        <p class="text-muted small">Best for large groups of 6+</p>
+                        <button class="sp-enquire-btn w-100 mt-3" style="font-size:.85rem;padding:12px;"
+                            onclick="openModal()">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ INCLUSIONS ═══════════════════ -->
+    <section class="sp-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="sp-label">What's Included</div>
+                <h2 class="sp-heading">Everything You <span>Need</span></h2>
+                <div class="sp-divider center"></div>
+            </div>
+            <div class="sp-inc-grid">
+                <div class="sp-inc-card">
+                    <div class="sp-inc-icon"><i class="fa-solid fa-plane-arrival"></i></div>
+                    <div class="sp-inc-title">Airport Transfers</div>
+                    <div class="sp-inc-desc">Dubai airport arrival and seamless check-in at your Bur Dubai hotel.</div>
+                </div>
+                <div class="sp-inc-card">
+                    <div class="sp-inc-icon"><i class="fa-solid fa-ship"></i></div>
+                    <div class="sp-inc-title">Marina Dhow Cruise</div>
+                    <div class="sp-inc-desc">Evening cruise with dinner & live entertainment shows on Dubai Marina.
+                    </div>
+                </div>
+                <div class="sp-inc-card">
+                    <div class="sp-inc-icon"><i class="fa-solid fa-city"></i></div>
+                    <div class="sp-inc-title">Dubai City Tour</div>
+                    <div class="sp-inc-desc">Half-day guided city tour covering all iconic Dubai landmarks.</div>
+                </div>
+                <div class="sp-inc-card">
+                    <div class="sp-inc-icon"><i class="fa-solid fa-building"></i></div>
+                    <div class="sp-inc-title">Burj Khalifa 124 & 125</div>
+                    <div class="sp-inc-desc">Non-peak hours access (8:00–11:30 AM or 8:30–11:00 PM) for comfortable
+                        visits.</div>
+                </div>
+                <div class="sp-inc-card">
+                    <div class="sp-inc-icon"><i class="fa-solid fa-truck-monster"></i></div>
+                    <div class="sp-inc-title">Desert Safari BBQ</div>
+                    <div class="sp-inc-desc">Red dunes 4x4 safari, standard camp, BBQ dinner & entertainment shows.
+                    </div>
+                </div>
+                <div class="sp-inc-card">
+                    <div class="sp-inc-icon"><i class="fa-solid fa-mosque"></i></div>
+                    <div class="sp-inc-title">Abu Dhabi City Tour</div>
+                    <div class="sp-inc-desc">Grand Mosque, BAPS Temple, and Ferrari World photo stop included.</div>
+                </div>
+                <div class="sp-inc-card">
+                    <div class="sp-inc-icon"><i class="fa-solid fa-passport"></i></div>
+                    <div class="sp-inc-title">UAE Visa Included</div>
+                    <div class="sp-inc-desc">Hassle-free UAE tourist visa included in the package price.</div>
+                </div>
+                <div class="sp-inc-card">
+                    <div class="sp-inc-icon"><i class="fa-solid fa-receipt"></i></div>
+                    <div class="sp-inc-title">VAT Included</div>
+                    <div class="sp-inc-desc">No hidden charges – VAT fully included. Price as quoted is what you pay.
+                    </div>
+                </div>
+                <div class="sp-inc-card">
+                    <div class="sp-inc-icon"><i class="fa-solid fa-utensils"></i></div>
+                    <div class="sp-inc-title">02 Dinners Included</div>
+                    <div class="sp-inc-desc">Two group dinners included – Dhow Cruise dinner & Desert Safari BBQ.</div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <span class="sp-tag"><i class="fa-solid fa-check me-1"></i> 4 Nights Hotel with Breakfast</span>
+                <span class="sp-tag"><i class="fa-solid fa-check me-1"></i> UAE Visa</span>
+                <span class="sp-tag"><i class="fa-solid fa-check me-1"></i> 2 Dinners</span>
+                <span class="sp-tag"><i class="fa-solid fa-check me-1"></i> All Tours</span>
+                <span class="sp-tag"><i class="fa-solid fa-check me-1"></i> All Transfers</span>
+                <span class="sp-tag"><i class="fa-solid fa-check me-1"></i> VAT Inclusive</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ ITINERARY ═══════════════════ -->
+    <section class="sp-section sp-itin-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="sp-label">Day by Day</div>
+                    <h2 class="sp-heading">Your Perfect <span>Itinerary</span></h2>
+                    <div class="sp-divider"></div>
+                    <p class="text-muted mb-4">Every detail planned so you can focus on making memories. 5 days of
+                        curated experiences across Dubai & Abu Dhabi.</p>
+                    <button class="sp-enquire-btn" onclick="openModal()">
+                        <i class="fa-solid fa-calendar-check me-2"></i> Reserve My Spot
+                    </button>
+                </div>
+                <div class="col-lg-7">
+                    <div class="sp-itin-list">
+                        <div class="sp-itin-item">
+                            <div class="sp-itin-dot">1</div>
+                            <div class="sp-itin-day">Day 1 · Arrival</div>
+                            <div class="sp-itin-title">Welcome to Dubai 🇦🇪</div>
+                            <div class="sp-itin-desc">Dubai airport arrival & hotel check-in · Evening Marina Dhow
+                                Cruise with dinner & entertainment shows</div>
+                        </div>
+                        <div class="sp-itin-item">
+                            <div class="sp-itin-dot">2</div>
+                            <div class="sp-itin-day">Day 2 · Sightseeing</div>
+                            <div class="sp-itin-title">Dubai City & Burj Khalifa 🏙️</div>
+                            <div class="sp-itin-desc">Half-day Dubai city tour · Burj Khalifa at the top (Floors 124 &
+                                125) in non-peak hours · Afternoon at leisure</div>
+                        </div>
+                        <div class="sp-itin-item">
+                            <div class="sp-itin-dot">3</div>
+                            <div class="sp-itin-day">Day 3 · Adventure</div>
+                            <div class="sp-itin-title">Red Dunes Desert Safari 🏜️</div>
+                            <div class="sp-itin-desc">Afternoon red dunes desert safari in 4x4 vehicles · Standard camp
+                                · BBQ dinner with cultural entertainment shows</div>
+                        </div>
+                        <div class="sp-itin-item">
+                            <div class="sp-itin-dot">4</div>
+                            <div class="sp-itin-day">Day 4 · Abu Dhabi</div>
+                            <div class="sp-itin-title">Abu Dhabi Full Day 🕌</div>
+                            <div class="sp-itin-desc">Abu Dhabi city tour · Sheikh Zayed Grand Mosque · BAPS Hindu
+                                Temple · Ferrari World photo stop</div>
+                        </div>
+                        <div class="sp-itin-item">
+                            <div class="sp-itin-dot">5</div>
+                            <div class="sp-itin-day">Day 5 · Departure</div>
+                            <div class="sp-itin-title">Farewell Dubai ✈️</div>
+                            <div class="sp-itin-desc">Hotel check-out · Transfer to Dubai airport for departure with
+                                beautiful memories</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ HIGHLIGHTS ═══════════════════ -->
+    <section class="sp-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="sp-label">Highlights</div>
+                <h2 class="sp-heading">Iconic <span>Experiences</span></h2>
+                <div class="sp-divider center"></div>
+            </div>
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="sp-hl-card">
+                        <div class="sp-hl-img"
+                            style="background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80');height:220px;">
+                        </div>
+                        <div class="sp-hl-overlay"></div>
+                        <div class="sp-hl-label">Burj Khalifa</div>
+                        <div class="sp-hl-badge">Included</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="sp-hl-card">
+                        <div class="sp-hl-img"
+                            style="background-image:url('images/desaert safari background.jpg.jpeg');height:220px;">
+                        </div>
+                        <div class="sp-hl-overlay"></div>
+                        <div class="sp-hl-label">Desert Safari</div>
+                        <div class="sp-hl-badge">Included</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="sp-hl-card">
+                        <div class="sp-hl-img"
+                            style="background-image:url('https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=600&q=80');height:220px;">
+                        </div>
+                        <div class="sp-hl-overlay"></div>
+                        <div class="sp-hl-label">Dhow Cruise</div>
+                        <div class="sp-hl-badge">Included</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="sp-hl-card">
+                        <div class="sp-hl-img"
+                            style="background-image:url('https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=600&q=80');height:220px;">
+                        </div>
+                        <div class="sp-hl-overlay"></div>
+                        <div class="sp-hl-label">Grand Mosque</div>
+                        <div class="sp-hl-badge">Included</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ================= RELATED PACKAGES ================= -->
+<section class="rp-section">
+    <div class="container">
+        <div class="rp-head text-center">
+            <div class="rp-small-title">You May Also Like</div>
+            <h2 class="rp-main-title">Related <span>Dubai Packages</span></h2>
+            <div class="rp-line"></div>
+        </div>
+
+        <div class="rp-grid">
+
+            <!-- CARD 1 -->
+            <div class="rp-card">
+                <div class="rp-img" style="background-image:url('images/desaert safari background.jpg.jpeg');">
+                    <div class="rp-badge">04N / 05D</div>
+                </div>
+                <div class="rp-body">
+                    <h3 class="rp-title">Super Summer Saver Dubai</h3>
+                    <p class="rp-hotel">
+                        <i class="fa-solid fa-hotel"></i>
+                        Majestic Premier / City Retreat
+                    </p>
+
+                    <div class="rp-price">
+                        <span>From</span>
+                        ₹32,000
+                        <small>/person</small>
+                    </div>
+
+                    <a href="package1.html" class="rp-btn">
+                        View Package
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="rp-card">
+                <div class="rp-img" style="background-image:url('https://cdn.wallpapersafari.com/9/78/9I0ucG.jpg');">
+                    <div class="rp-badge">04N / 05D</div>
+                </div>
+                <div class="rp-body">
+                    <h3 class="rp-title">Lapita Resort & Water Park</h3>
+                    <p class="rp-hotel">
+                        <i class="fa-solid fa-hotel"></i>
+                        Fortune Pearl + Lapita Resort
+                    </p>
+
+                    <div class="rp-price">
+                        <span>From</span>
+                        ₹36,799
+                        <small>/person</small>
+                    </div>
+
+                    <a href="package3.html" class="rp-btn">
+                        View Package
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="rp-card">
+                <div class="rp-img" style="background-image:url('https://uae.luxeglamp.com/wp-content/uploads/2025/07/image-11-scaled.png');">
+                    <div class="rp-badge">04N / 05D</div>
+                </div>
+                <div class="rp-body">
+                    <h3 class="rp-title">Summer Delights 3★ & 4★</h3>
+                    <p class="rp-hotel">
+                        <i class="fa-solid fa-hotel"></i>
+                        Fortune Pearl / Omega
+                    </p>
+
+                    <div class="rp-price">
+                        <span>From</span>
+                        ₹31,799
+                        <small>/person</small>
+                    </div>
+
+                    <a href="package4.html" class="rp-btn">
+                        View Package
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <!-- ═══════════════════ CTA ═══════════════════ -->
+    <section class="sp-cta-section">
+        <div class="sp-label" style="color:rgba(255,255,255,.65);">Don't Miss Out</div>
+        <h2 class="sp-cta-title">Your Dream Dubai Trip<br>Awaits This Summer</h2>
+        <p class="sp-cta-sub">Limited seats · May–August 2026 · Starting ₹32,000/person</p>
+        <button class="sp-cta-btn" onclick="openModal()">
+            <i class="fa-solid fa-paper-plane me-2"></i> Enquire Now
+        </button>
+        <p class="mt-4" style="font-size:.82rem;opacity:.7;">* Terms & Conditions Apply &nbsp;·&nbsp; Prices are per
+            person on double sharing basis</p>
+    </section>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer class="sp-footer">
+        <p><strong>IITM Ahmedabad</strong> &nbsp;|&nbsp; Super Summer Saver Dubai 2026</p>
+        <p class="mt-2" style="font-size:.82rem;">© 2026 IITM Ahmedabad. All rights reserved. Terms & Conditions Apply.
+        </p>
+    </footer>
+
+   <!-- ═══════════════════ ENQUIRY MODAL ═══════════════════ -->
+<div class="sp-overlay" id="spOverlay" onclick="closeModal()"></div>
+
+<div class="sp-modal" id="spModal" role="dialog" aria-modal="true">
+    <button class="sp-modal-close" onclick="closeModal()" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <form id="spFormWrap" action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Web3Forms Hidden Fields -->
+    <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+    <input type="hidden" name="subject" value="✈️ Dubai Summer Package Enquiry">
+    <input type="hidden" name="from_name" value="City One Website">
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+    <input type="checkbox" name="botcheck" style="display:none;">
+
+    <h2 class="sp-modal-title">Book Your Dubai Escape ✈️</h2>
+    <p class="sp-modal-sub">Fill in your details and our team will get back to you within 24 hours.</p>
+
+    <div class="sp-form-group">
+        <label>Full Name *</label>
+        <input type="text" name="name" placeholder="Your full name" required>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-6">
+            <div class="sp-form-group">
+                <label>Phone / WhatsApp *</label>
+                <input type="tel" name="phone" placeholder="+91 XXXXXXXXXX" required>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="sp-form-group">
+                <label>Email Address *</label>
+                <input type="email" name="email" placeholder="you@email.com" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-6">
+            <div class="sp-form-group">
+                <label>No. of Travellers *</label>
+                <select name="travellers" required>
+                    <option value="">Select</option>
+                    <option>02 Pax – ₹34,555/person</option>
+                    <option>04 Pax – ₹32,660/person</option>
+                    <option>06 Pax – ₹32,000/person</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="sp-form-group">
+                <label>Preferred Month</label>
+                <select name="month">
+                    <option value="">Select</option>
+                    <option>May 2026</option>
+                    <option>June 2026</option>
+                    <option>July 2026</option>
+                    <option>August 2026</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="sp-form-group">
+        <label>Message / Special Requests</label>
+        <textarea name="message" placeholder="Any questions or special requests..."></textarea>
+    </div>
+
+    <button class="sp-submit-btn" type="submit">
+        <i class="fa-solid fa-paper-plane me-2"></i> Send Enquiry
+    </button>
+
+    <div class="sp-modal-contact">
+        <a href="https://wa.me/919999999999" class="sp-contact-link" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+        </a>
+        <a href="mailto:info@iitmahmedabad.com" class="sp-contact-link">
+            <i class="fa-solid fa-envelope"></i> Email Us
+        </a>
+    </div>
+
+</form>
+    <!-- FORM END -->
+
+    <!-- SUCCESS MESSAGE -->
+    <div class="sp-success" id="spSuccess" style="display:none;">
+        <i class="fa-solid fa-circle-check"></i>
+        <h3>Enquiry Received!</h3>
+        <p>Thank you! Our team will contact you within 24 hours to confirm your Dubai booking.</p>
+        <button class="sp-enquire-btn mt-4" onclick="closeModal()"
+            style="margin:0 auto;display:inline-block;">Close</button>
+    </div>
+
+</div>
+    <script>
+        // ── Carousel ──
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.sp-carousel-item');
+        const dots = document.querySelectorAll('.sp-dot');
+        function goSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            currentSlide = n;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+        setInterval(() => goSlide((currentSlide + 1) % slides.length), 4500);
+
+        // ── Modal ──
+        function openModal() {
+            document.getElementById('spOverlay').classList.add('show');
+            document.getElementById('spModal').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            document.getElementById('spOverlay').classList.remove('show');
+            document.getElementById('spModal').classList.remove('show');
+            document.body.style.overflow = '';
+            // reset
+            setTimeout(() => {
+                document.getElementById('spFormWrap').style.display = 'block';
+                document.getElementById('spSuccess').style.display = 'none';
+            }, 400);
+        }
+        function submitForm() {
+            const name = document.getElementById('sp_name').value.trim();
+            const phone = document.getElementById('sp_phone').value.trim();
+            const email = document.getElementById('sp_email').value.trim();
+            const pax = document.getElementById('sp_pax').value;
+            if (!name || !phone || !email || !pax) { alert('Please fill all required fields.'); return; }
+            document.getElementById('spFormWrap').style.display = 'none';
+            document.getElementById('spSuccess').style.display = 'block';
+        }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    </script>
+</body>
+
+</html>

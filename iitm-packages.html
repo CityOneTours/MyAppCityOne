@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Summer Dubai Packages 2026 | IITM Ahmedabad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --hub-red: #D62828;
+            --hub-red-dk: #A01818;
+            --hub-red-lt: #FF6B6B;
+            --hub-red-pale: #FFF0F0;
+            --hub-gold: #C9A84C;
+            --hub-gold-lt: #F0D080;
+            --hub-cream: #FFFAF8;
+            --hub-sand: #F5EDE0;
+            --hub-navy: #08162A;
+            --hub-text: #1A1A2E;
+            --hub-muted: #6B7280;
+            --hub-white: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--hub-cream);
+            color: var(--hub-text);
+            overflow-x: hidden;
+        }
+
+        /* ─── HERO CAROUSEL ─────────────────────────── */
+        .hub-hero {
+            position: relative;
+            height: 100vh;
+            min-height: 620px;
+            overflow: hidden;
+        }
+
+        .hub-slides-wrap {
+            display: flex;
+            height: 100%;
+            transition: transform .9s cubic-bezier(.77, 0, .18, 1);
+        }
+
+        .hub-slide {
+            min-width: 100%;
+            height: 100%;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            flex-shrink: 0;
+        }
+
+        .hub-slide::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(8, 22, 42, .78) 0%, rgba(214, 40, 40, .22) 100%);
+        }
+
+        .hub-s1 {
+            background-image: url('images/desaert safari background.jpg.jpeg');
+        }
+
+        .hub-s2 {
+            background-image: url('https://m.media-amazon.com/images/I/71p3aB5wYAL.jpg');
+        }
+
+        .hub-s3 {
+            background-image: url('https://cdn.wallpapersafari.com/9/78/9I0ucG.jpg');
+        }
+
+        .hub-s4 {
+            background-image: url('https://uae.luxeglamp.com/wp-content/uploads/2025/07/image-11-scaled.png');
+        }
+
+        .hub-slide-content {
+            position: absolute;
+            inset: 0;
+            z-index: 5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hub-pkg-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            letter-spacing: .4em;
+            color: var(--hub-gold-lt);
+            margin-bottom: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all .6s ease .1s;
+        }
+
+        .hub-slide.hub-active .hub-pkg-num {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hub-slide-badge {
+            display: inline-block;
+            background: var(--hub-red);
+            color: var(--hub-white);
+            font-weight: 700;
+            font-size: .72rem;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            padding: 5px 18px;
+            border-radius: 50px;
+            margin-bottom: 16px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all .6s ease .15s;
+        }
+
+        .hub-slide.hub-active .hub-slide-badge {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hub-slide-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: clamp(1.8rem, 5.5vw, 4.2rem);
+            color: var(--hub-white);
+            line-height: 1.12;
+            max-width: 820px;
+            opacity: 0;
+            transform: translateY(25px);
+            transition: all .7s ease .25s;
+        }
+
+        .hub-slide.hub-active .hub-slide-title {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hub-slide-title em {
+            color: var(--hub-gold-lt);
+            font-style: normal;
+        }
+
+        .hub-slide-price {
+            margin-top: 14px;
+            font-size: clamp(.9rem, 2vw, 1.15rem);
+            color: rgba(255, 255, 255, .85);
+            font-weight: 500;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all .6s ease .35s;
+        }
+
+        .hub-slide.hub-active .hub-slide-price {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hub-slide-btns {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 28px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all .6s ease .45s;
+        }
+
+        .hub-slide.hub-active .hub-slide-btns {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hub-view-btn {
+            background: var(--hub-red);
+            color: var(--hub-white);
+            border: none;
+            border-radius: 50px;
+            padding: 14px 36px;
+            font-size: .95rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 8px 28px rgba(214, 40, 40, .45);
+            transition: background .2s, transform .2s, box-shadow .2s;
+        }
+
+        .hub-view-btn:hover {
+            background: var(--hub-red-dk);
+            transform: translateY(-3px);
+            color: var(--hub-white);
+            box-shadow: 0 14px 36px rgba(214, 40, 40, .55);
+        }
+
+        .hub-enquire-ghost {
+            background: transparent;
+            color: var(--hub-white);
+            border: 2px solid rgba(255, 255, 255, .65);
+            border-radius: 50px;
+            padding: 13px 32px;
+            font-size: .95rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background .2s, border-color .2s, transform .2s;
+        }
+
+        .hub-enquire-ghost:hover {
+            background: rgba(255, 255, 255, .12);
+            border-color: var(--hub-white);
+            color: var(--hub-white);
+            transform: translateY(-3px);
+        }
+
+        /* arrows */
+        .hub-arrow {
+            position: absolute;
+            top: 50%;
+            z-index: 20;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, .18);
+            backdrop-filter: blur(8px);
+            border: 2px solid rgba(255, 255, 255, .35);
+            color: var(--hub-white);
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background .2s, transform .3s;
+        }
+
+        .hub-arrow:hover {
+            background: var(--hub-red);
+            border-color: var(--hub-red);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .hub-arrow-prev {
+            left: 20px;
+        }
+
+        .hub-arrow-next {
+            right: 20px;
+        }
+
+        /* dots */
+        .hub-dots {
+            position: absolute;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 20;
+        }
+
+        .hub-dot {
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            height: 10px;
+            width: 10px;
+            background: rgba(255, 255, 255, .4);
+            transition: background .3s, width .4s;
+        }
+
+        .hub-dot.hub-active {
+            background: var(--hub-gold-lt);
+            width: 28px;
+            border-radius: 5px;
+        }
+
+        /* slide counter */
+        .hub-counter {
+            position: absolute;
+            top: 120px;
+            right: 28px;
+            z-index: 20;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, .65);
+            letter-spacing: .08em;
+        }
+
+        .hub-counter span {
+            color: var(--hub-white);
+            font-size: 1.5rem;
+        }
+
+        /* progress bar */
+        .hub-progress {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 4px;
+            background: var(--hub-red);
+            z-index: 25;
+            transition: width linear;
+        }
+
+        /* ─── URGENCY STRIP ─────────────────────────── */
+        .hub-strip {
+            background: var(--hub-red);
+            color: var(--hub-white);
+            padding: 11px 0;
+            text-align: center;
+            font-weight: 700;
+            font-size: .85rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            overflow: hidden;
+        }
+
+        .hub-strip-inner {
+            display: inline-flex;
+            gap: 48px;
+            white-space: nowrap;
+            animation: hubScroll 22s linear infinite;
+        }
+
+        @keyframes hubScroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .hub-strip-inner span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hub-strip-inner i {
+            color: var(--hub-gold-lt);
+        }
+
+        /* ─── SECTION ────────────────────────────────── */
+        .hub-section {
+            padding: 80px 0;
+        }
+
+        .hub-label {
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--hub-red);
+            margin-bottom: 8px;
+        }
+
+        .hub-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 900;
+            color: var(--hub-text);
+            line-height: 1.15;
+        }
+
+        .hub-heading span {
+            color: var(--hub-red);
+        }
+
+        .hub-divider {
+            width: 56px;
+            height: 4px;
+            background: var(--hub-red);
+            border-radius: 2px;
+            margin: 16px 0 28px;
+        }
+
+        .hub-divider.cx {
+            margin: 16px auto 28px;
+        }
+
+        /* ─── PACKAGE CARDS ─────────────────────────── */
+        .hub-pkg-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+            gap: 28px;
+        }
+
+        .hub-pkg-card {
+            background: var(--hub-white);
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, .08);
+            border: 2px solid transparent;
+            transition: border .3s, transform .35s, box-shadow .35s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .hub-pkg-card:hover {
+            border-color: var(--hub-red);
+            transform: translateY(-8px);
+            box-shadow: 0 18px 50px rgba(214, 40, 40, .15);
+        }
+
+        .hub-pkg-img {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .hub-pkg-img::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(8, 22, 42, .6) 0%, transparent 60%);
+        }
+
+        .hub-pkg-num-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            z-index: 5;
+            background: var(--hub-red);
+            color: var(--hub-white);
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.3rem;
+            letter-spacing: .1em;
+            padding: 4px 14px;
+            border-radius: 8px;
+        }
+
+        .hub-hot-badge {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            z-index: 5;
+            background: var(--hub-gold);
+            color: var(--hub-navy);
+            font-size: .68rem;
+            font-weight: 700;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 50px;
+        }
+
+        .hub-pkg-body {
+            padding: 24px;
+        }
+
+        .hub-pkg-nights {
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--hub-red);
+            margin-bottom: 6px;
+        }
+
+        .hub-pkg-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .hub-pkg-hotel {
+            font-size: .82rem;
+            color: var(--hub-muted);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .hub-price-from {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+
+        .hub-from-txt {
+            font-size: .78rem;
+            color: var(--hub-muted);
+            font-weight: 500;
+        }
+
+        .hub-from-price {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: var(--hub-red);
+        }
+
+        .hub-from-unit {
+            font-size: .75rem;
+            color: var(--hub-muted);
+        }
+
+        .hub-pkg-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 18px;
+        }
+
+        .hub-pkg-tag {
+            background: var(--hub-red-pale);
+            color: var(--hub-red);
+            border-radius: 50px;
+            padding: 4px 12px;
+            font-size: .72rem;
+            font-weight: 600;
+        }
+
+        .hub-view-pkg-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: var(--hub-red);
+            color: var(--hub-white);
+            border: none;
+            border-radius: 50px;
+            padding: 12px;
+            font-weight: 700;
+            font-size: .88rem;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 4px 18px rgba(214, 40, 40, .3);
+            transition: background .2s, transform .2s;
+        }
+
+        .hub-view-pkg-btn:hover {
+            background: var(--hub-red-dk);
+            transform: translateY(-2px);
+            color: var(--hub-white);
+        }
+
+        /* ─── FEATURES ───────────────────────────────── */
+        .hub-feat-bg {
+            background: var(--hub-sand);
+        }
+
+        .hub-feat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .hub-feat-item {
+            background: var(--hub-white);
+            border-radius: 16px;
+            padding: 24px 20px;
+            text-align: center;
+            box-shadow: 0 2px 14px rgba(0, 0, 0, .06);
+        }
+
+        .hub-feat-icon {
+            width: 54px;
+            height: 54px;
+            border-radius: 14px;
+            background: var(--hub-red-pale);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            color: var(--hub-red);
+            margin: 0 auto 14px;
+        }
+
+        .hub-feat-title {
+            font-weight: 700;
+            font-size: .95rem;
+            margin-bottom: 4px;
+        }
+
+        .hub-feat-desc {
+            font-size: .8rem;
+            color: var(--hub-muted);
+        }
+
+        /* ─── CTA ─────────────────────────────────────── */
+        .hub-cta {
+            background: linear-gradient(135deg, var(--hub-red-dk) 0%, var(--hub-red) 60%, #FF8C42 100%);
+            color: var(--hub-white);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hub-cta-title {
+            font-family: 'Playfair Display', serif;
+            /* font-style: italic; */
+            font-size: clamp(1.8rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        .hub-cta-sub {
+            font-size: 1rem;
+            opacity: .9;
+            margin-bottom: 36px;
+        }
+
+        .hub-cta-btn {
+            background: var(--hub-white);
+            color: var(--hub-red);
+            border: none;
+            border-radius: 50px;
+            padding: 16px 50px;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, .2);
+            transition: transform .2s, box-shadow .2s;
+        }
+
+        .hub-cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 40px rgba(0, 0, 0, .3);
+        }
+
+        /* ─── FOOTER ─────────────────────────────────── */
+        .hub-footer {
+            background: var(--hub-navy) !important;
+            color: rgba(255, 255, 255, .65);
+            text-align: center;
+            padding: 32px 20px;
+        }
+
+        .hub-footer strong {
+            color: var(--hub-gold-lt);
+        }
+
+        /* ─── MODAL ──────────────────────────────────── */
+        .hub-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(8, 22, 42, .6);
+            backdrop-filter: blur(7px);
+            z-index: 9998;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .35s;
+        }
+
+        .hub-overlay.hub-show {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .hub-modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            z-index: 9999;
+            transform: translate(-50%, -48%) scale(.9);
+            background: var(--hub-white);
+            border-radius: 24px;
+            width: min(560px, 94vw);
+            max-height: 92vh;
+            overflow-y: auto;
+            padding: 48px 40px 40px;
+            box-shadow: 0 24px 80px rgba(0, 0, 0, .28);
+            opacity: 0;
+            pointer-events: none;
+            transition: transform .4s cubic-bezier(.34, 1.56, .64, 1), opacity .35s;
+        }
+
+        .hub-modal.hub-show {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .hub-modal-close {
+            position: absolute;
+            top: 14px;
+            right: 18px;
+            background: var(--hub-red-pale);
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            font-size: 1rem;
+            color: var(--hub-red);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background .2s;
+        }
+
+        .hub-modal-close:hover {
+            background: rgba(214, 40, 40, .15);
+        }
+
+        .hub-modal-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: var(--hub-text);
+            margin-bottom: 5px;
+        }
+
+        .hub-modal-sub {
+            font-size: .88rem;
+            color: var(--hub-muted);
+            margin-bottom: 26px;
+        }
+
+        .hub-form-grp {
+            margin-bottom: 16px;
+        }
+
+        .hub-form-grp label {
+            display: block;
+            font-size: .8rem;
+            font-weight: 600;
+            color: var(--hub-text);
+            margin-bottom: 5px;
+            letter-spacing: .04em;
+        }
+
+        .hub-form-grp input,
+        .hub-form-grp select,
+        .hub-form-grp textarea {
+            width: 100%;
+            border: 1.5px solid #E5E7EB;
+            border-radius: 10px;
+            padding: 11px 13px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: .92rem;
+            color: var(--hub-text);
+            background: var(--hub-cream);
+            outline: none;
+            transition: border .25s, box-shadow .25s;
+        }
+
+        .hub-form-grp input:focus,
+        .hub-form-grp select:focus,
+        .hub-form-grp textarea:focus {
+            border-color: var(--hub-red);
+            box-shadow: 0 0 0 3px rgba(214, 40, 40, .1);
+        }
+
+        .hub-form-grp textarea {
+            resize: vertical;
+            min-height: 85px;
+        }
+
+        .hub-submit-btn {
+            width: 100%;
+            background: var(--hub-red);
+            color: var(--hub-white);
+            border: none;
+            border-radius: 50px;
+            padding: 14px;
+            font-size: .95rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 6px;
+            box-shadow: 0 6px 24px rgba(214, 40, 40, .32);
+            transition: background .2s, transform .2s;
+        }
+
+        .hub-submit-btn:hover {
+            background: var(--hub-red-dk);
+            transform: translateY(-2px);
+        }
+
+        .hub-modal-contact {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #F0E8E8;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .hub-contact-link {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            background: var(--hub-red-pale);
+            color: var(--hub-red);
+            border-radius: 50px;
+            padding: 8px 16px;
+            font-weight: 600;
+            font-size: .85rem;
+            text-decoration: none;
+            transition: background .2s;
+        }
+
+        .hub-contact-link:hover {
+            background: rgba(214, 40, 40, .14);
+            color: var(--hub-red);
+        }
+
+        .hub-success {
+            display: none;
+            text-align: center;
+            padding: 16px 0;
+        }
+
+        .hub-success i {
+            font-size: 2.8rem;
+            color: var(--hub-red);
+            margin-bottom: 12px;
+        }
+
+        .hub-success h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.35rem;
+            margin-bottom: 8px;
+        }
+
+        .hub-success p {
+            color: var(--hub-muted);
+            font-size: .9rem;
+        }
+
+        @media(max-width:576px) {
+            .hub-modal {
+                padding: 36px 20px 28px;
+            }
+
+            .hub-arrow {
+                display: none;
+            }
+
+            .hub-pkg-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+            }
+
+            .hub-pkg-num {
+
+                letter-spacing: .1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="help-container">
+                <button class="help-btn">Help &#9662;</button>
+                <div class="help-dropdown">
+                    <span onclick="window.location.href='tel:+97143922959'" style="cursor:pointer;">
+                        <i class="fas fa-phone"></i> +971 4 392 2959
+                    </span>
+                    <!-- <span>
+                            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+                                <i class="fas fa-envelope"></i> info@cityonetours.com
+                            </a>
+                        </span> -->
+                </div>
+            </div>
+            <div class="right">
+                <span><i i class="fas fa-envelope"></i> info@cityonetours.com</span>
+            </div>
+           
+        </div>
+        <nav class="navbar">
+      <div class="logo"> <a href="/">
+          <img src="images/image 8916.png" alt="" class="logo"> </a></div>
+      </div>
+            <div class="menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="destination.html"><i class="fas fa-search-location"></i> Destination</a>
+                <a href="hotdeal.html"><i class="fas fa-suitcase-rolling"></i> Hot Deal</a>
+                <div class="dropdown">
+                    <a href="themes.html" class="dropbtn">
+                        <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="themes.html">Adventure</a>
+                        <a href="themes.html">Luxury Tours</a>
+                        <a href="themes.html">Honey moon</a>
+                        <a href="themes.html">Family with Kids</a>
+                        <a href="themes.html">Safari</a>
+                        <a href="themes.html">Family with Kids</a>
+                        <a href="themes.html">Nature</a>
+                        <a href="themes.html">Wild Life</a>
+                        <a href="">Beach</a>
+                    </div>
+                </div>
+                <a href="visa.html"><i class="fas fa-passport"></i> Visa</a>
+                <a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
+                <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                <a href="contact.html"><i class="fas fa-users"></i> Contact</a>
+                <!-- <select id="currencySelect">
+            <option value="AED">AED</option>
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            </select> -->
+            </div>
+        </nav>
+    </header>
+    <!-- ══════════ HERO CAROUSEL ══════════ -->
+    <section class="hub-hero" id="hubHero">
+        <div class="hub-slides-wrap" id="hubSlidesWrap">
+
+            <!-- SLIDE 1 -->
+            <div class="hub-slide hub-s1 hub-active" data-idx="0">
+                <div class="hub-slide-content">
+                    <div class="hub-pkg-num">PACKAGE 01 OF 04</div>
+                    <div class="hub-slide-badge"><i class="fa-solid fa-fire me-1"></i> Limited Seats · May–Aug 2026
+                    </div>
+                    <h1 class="hub-slide-title"><em>Super Summer Saver</em><br>Dubai Package</h1>
+                    <p class="hub-slide-price"><i class="fa-solid fa-location-dot me-1"></i> 04 Nights · Majestic
+                        Premier / City Retreat · Bur Dubai &nbsp;·&nbsp; From ₹32,000/person</p>
+                    <div class="hub-slide-btns">
+                        <a href="iitm-package-three.html" class="hub-view-btn"><i class="fa-solid fa-eye me-2"></i>View
+                            Package</a>
+                        <button class="hub-enquire-ghost" onclick="openHubModal('Super Summer Saver Dubai')"><i
+                                class="fa-solid fa-paper-plane me-2"></i>Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="hub-slide hub-s2" data-idx="1">
+                <div class="hub-slide-content">
+                    <div class="hub-pkg-num">PACKAGE 02 OF 04</div>
+                    <div class="hub-slide-badge"><i class="fa-solid fa-fire me-1"></i> Limited Seats · May–Aug 2026
+                    </div>
+                    <h1 class="hub-slide-title"><em>Enjoy Summer in</em><br>Dubai &amp; Abu Dhabi</h1>
+                    <p class="hub-slide-price"><i class="fa-solid fa-location-dot me-1"></i> 03N Dubai + 01N Yas Island
+                        · Radisson Blu / Crowne Plaza &nbsp;·&nbsp; From ₹44,699/person</p>
+                    <div class="hub-slide-btns">
+                        <a href="iitm-package-two.html" class="hub-view-btn"><i class="fa-solid fa-eye me-2"></i>View
+                            Package</a>
+                        <button class="hub-enquire-ghost" onclick="openHubModal('Enjoy Summer in Dubai & Abu Dhabi')"><i
+                                class="fa-solid fa-paper-plane me-2"></i>Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE 3 -->
+
+            <div class="hub-slide hub-s3" data-idx="2">
+                <div class="hub-slide-content">
+                    <div class="hub-pkg-num">PACKAGE 03 OF 04</div>
+                    <div class="hub-slide-badge"><i class="fa-solid fa-fire me-1"></i> Limited Seats · May–Aug 2026
+                    </div>
+                    <h1 class="hub-slide-title"><em>Lapita Resort</em><br>with Water Park Special</h1>
+                    <p class="hub-slide-price"><i class="fa-solid fa-location-dot me-1"></i> 03N Dubai + 01N Lapita
+                        Resort · Dubai Parks &amp; Resorts &nbsp;·&nbsp; From ₹36,799/person</p>
+                    <div class="hub-slide-btns">
+                        <a href="iitm-package-four.html" class="hub-view-btn"><i class="fa-solid fa-eye me-2"></i>View
+                            Package</a>
+                        <button class="hub-enquire-ghost" onclick="openHubModal('Lapita Resort Water Park Special')"><i
+                                class="fa-solid fa-paper-plane me-2"></i>Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 4 -->
+            <div class="hub-slide hub-s4" data-idx="3">
+                <div class="hub-slide-content">
+                    <div class="hub-pkg-num">PACKAGE 04 OF 04</div>
+                    <div class="hub-slide-badge"><i class="fa-solid fa-fire me-1"></i> Limited Seats · May–Aug 2026
+                    </div>
+                    <h1 class="hub-slide-title"><em>Summer Delights</em><br>3★ &amp; 4★ Hotel Options</h1>
+                    <p class="hub-slide-price"><i class="fa-solid fa-location-dot me-1"></i> 04 Nights · Fortune Pearl /
+                        Omega &amp; Jacobs Garden &nbsp;·&nbsp; From ₹31,799/person</p>
+                    <div class="hub-slide-btns">
+                        <a href="iitm-package-one.html" class="hub-view-btn"><i class="fa-solid fa-eye me-2"></i>View
+                            Package</a>
+                        <button class="hub-enquire-ghost" onclick="openHubModal('Summer Delights 3★ & 4★ Hotels')"><i
+                                class="fa-solid fa-paper-plane me-2"></i>Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /slides-wrap -->
+
+        <!-- Arrows -->
+        <button class="hub-arrow hub-arrow-prev" onclick="hubSlide(-1)"><i
+                class="fa-solid fa-chevron-left"></i></button>
+        <button class="hub-arrow hub-arrow-next" onclick="hubSlide(1)"><i
+                class="fa-solid fa-chevron-right"></i></button>
+
+        <!-- Dots -->
+        <div class="hub-dots" id="hubDots">
+            <button class="hub-dot hub-active" onclick="hubGoTo(0)"></button>
+            <button class="hub-dot" onclick="hubGoTo(1)"></button>
+            <button class="hub-dot" onclick="hubGoTo(2)"></button>
+            <button class="hub-dot" onclick="hubGoTo(3)"></button>
+        </div>
+
+        <!-- Counter -->
+        <div class="hub-counter"><span id="hubCurr">01</span> / 04</div>
+
+        <!-- Progress -->
+        <div class="hub-progress" id="hubProgress"></div>
+    </section>
+
+    <!-- ══════════ STRIP ══════════ -->
+    <div class="hub-strip">
+        <div class="hub-strip-inner" id="hubStripInner">
+            <span><i class="fa-solid fa-passport"></i>UAE Visa Included</span>
+            <span><i class="fa-solid fa-receipt"></i>VAT Included</span>
+            <span><i class="fa-solid fa-utensils"></i>02 Dinners Included</span>
+            <span><i class="fa-solid fa-plane"></i>Airport Transfers</span>
+            <span><i class="fa-solid fa-building"></i>Burj Khalifa Visit</span>
+            <span><i class="fa-solid fa-truck-monster"></i>Desert Safari</span>
+            <span><i class="fa-solid fa-ship"></i>Marina Dhow Cruise</span>
+            <span><i class="fa-solid fa-star"></i>Limited Seats Only</span>
+            <span><i class="fa-solid fa-passport"></i>UAE Visa Included</span>
+            <span><i class="fa-solid fa-receipt"></i>VAT Included</span>
+            <span><i class="fa-solid fa-utensils"></i>02 Dinners Included</span>
+            <span><i class="fa-solid fa-plane"></i>Airport Transfers</span>
+            <span><i class="fa-solid fa-building"></i>Burj Khalifa Visit</span>
+            <span><i class="fa-solid fa-truck-monster"></i>Desert Safari</span>
+            <span><i class="fa-solid fa-ship"></i>Marina Dhow Cruise</span>
+            <span><i class="fa-solid fa-star"></i>Limited Seats Only</span>
+        </div>
+    </div>
+
+    <!-- ══════════ PACKAGES SECTION ══════════ -->
+    <section class="hub-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="hub-label">Summer 2026 · May – August</div>
+                <h2 class="hub-heading">Choose Your <span>Dream Package</span></h2>
+                <div class="hub-divider cx"></div>
+                <p class="text-muted">All packages by IITM Ahmedabad · Prices per person on double sharing basis</p>
+            </div>
+
+            <div class="hub-pkg-grid">
+
+                <!-- PKG 1 -->
+                <div class="hub-pkg-card" onclick="window.location='iitm-package-three.html'">
+                    <div class="hub-pkg-img hub-s1">
+                        <div class="hub-pkg-num-badge">PKG 01</div>
+                        <div class="hub-hot-badge"><i class="fa-solid fa-star me-1"></i>Popular</div>
+                    </div>
+                    <div class="hub-pkg-body">
+                        <div class="hub-pkg-nights"><i class="fa-solid fa-moon me-1"></i>04 Nights · 05 Days</div>
+                        <div class="hub-pkg-title">Super Summer Saver Dubai</div>
+                        <div class="hub-pkg-hotel"><i class="fa-solid fa-hotel"></i>Majestic Premier / City Retreat ·
+                            Bur Dubai</div>
+                        <div class="hub-price-from">
+                            <span class="hub-from-txt">From</span>
+                            <span class="hub-from-price">₹32,000</span>
+                            <span class="hub-from-unit">/person</span>
+                        </div>
+                        <div class="hub-pkg-tags">
+                            <span class="hub-pkg-tag">UAE Visa</span>
+                            <span class="hub-pkg-tag">Abu Dhabi Tour</span>
+                            <span class="hub-pkg-tag">Desert Safari</span>
+                            <span class="hub-pkg-tag">Burj Khalifa</span>
+                        </div>
+                        <a href="iitm-package-three.html" class="hub-view-pkg-btn"><i
+                                class="fa-solid fa-arrow-right me-2"></i>View Full Package</a>
+                    </div>
+                </div>
+
+                <!-- PKG 2 -->
+                <div class="hub-pkg-card" onclick="window.location='iitm-package-two.html'">
+                    <div class="hub-pkg-img hub-s2">
+                        <div class="hub-pkg-num-badge">PKG 02</div>
+                        <div class="hub-hot-badge"><i class="fa-solid fa-crown me-1"></i>Premium</div>
+                    </div>
+                    <div class="hub-pkg-body">
+                        <div class="hub-pkg-nights"><i class="fa-solid fa-moon me-1"></i>04 Nights · 05 Days</div>
+                        <div class="hub-pkg-title">Enjoy Summer – Dubai &amp; Abu Dhabi</div>
+                        <div class="hub-pkg-hotel"><i class="fa-solid fa-hotel"></i>Radisson Blu / Crowne Plaza · Yas
+                            Island</div>
+                        <div class="hub-price-from">
+                            <span class="hub-from-txt">From</span>
+                            <span class="hub-from-price">₹44,699</span>
+                            <span class="hub-from-unit">/person</span>
+                        </div>
+                        <div class="hub-pkg-tags">
+                            <span class="hub-pkg-tag">Yas Island</span>
+                            <span class="hub-pkg-tag">1 Free Park</span>
+                            <span class="hub-pkg-tag">Grand Mosque</span>
+                            <span class="hub-pkg-tag">BAPS Temple</span>
+                        </div>
+                        <a href="iitm-package-two.html" class="hub-view-pkg-btn"><i
+                                class="fa-solid fa-arrow-right me-2"></i>View Full Package</a>
+                    </div>
+                </div>
+
+                <!-- PKG 3 -->
+                <div class="hub-pkg-card" onclick="window.location='iitm-package-four.html'">
+                    <div class="hub-pkg-img hub-s3">
+                        <div class="hub-pkg-num-badge">PKG 03</div>
+                        <div class="hub-hot-badge"><i class="fa-solid fa-water me-1"></i>Water Park</div>
+                    </div>
+                    <div class="hub-pkg-body">
+                        <div class="hub-pkg-nights"><i class="fa-solid fa-moon me-1"></i>04 Nights · 05 Days</div>
+                        <div class="hub-pkg-title">Lapita Resort &amp; Water Park Special</div>
+                        <div class="hub-pkg-hotel"><i class="fa-solid fa-hotel"></i>Fortune Pearl + Lapita Autograph
+                            Collection</div>
+                        <div class="hub-price-from">
+                            <span class="hub-from-txt">From</span>
+                            <span class="hub-from-price">₹36,799</span>
+                            <span class="hub-from-unit">/person</span>
+                        </div>
+                        <div class="hub-pkg-tags">
+                            <span class="hub-pkg-tag">Lapita Resort</span>
+                            <span class="hub-pkg-tag">Free Park</span>
+                            <span class="hub-pkg-tag">Desert Safari</span>
+                            <span class="hub-pkg-tag">Dhow Cruise</span>
+                        </div>
+                        <a href="iitm-package-four.html" class="hub-view-pkg-btn"><i
+                                class="fa-solid fa-arrow-right me-2"></i>View Full Package</a>
+                    </div>
+                </div>
+
+                <!-- PKG 4 -->
+                <div class="hub-pkg-card" onclick="window.location='iitm-package-one.html'">
+                    <div class="hub-pkg-img hub-s4">
+                        <div class="hub-pkg-num-badge">PKG 04</div>
+                        <div class="hub-hot-badge"><i class="fa-solid fa-tag me-1"></i>Best Value</div>
+                    </div>
+                    <div class="hub-pkg-body">
+                        <div class="hub-pkg-nights"><i class="fa-solid fa-moon me-1"></i>04 Nights · 05 Days</div>
+                        <div class="hub-pkg-title">Summer Delights – 3★ &amp; 4★ Options</div>
+                        <div class="hub-pkg-hotel"><i class="fa-solid fa-hotel"></i>Fortune Pearl / Omega &amp; Jacobs
+                            Garden</div>
+                        <div class="hub-price-from">
+                            <span class="hub-from-txt">From</span>
+                            <span class="hub-from-price">₹31,799</span>
+                            <span class="hub-from-unit">/person</span>
+                        </div>
+                        <div class="hub-pkg-tags">
+                            <span class="hub-pkg-tag">3★ Option</span>
+                            <span class="hub-pkg-tag">4★ Option</span>
+                            <span class="hub-pkg-tag">Abu Dhabi</span>
+                            <span class="hub-pkg-tag">All Tours</span>
+                        </div>
+                        <a href="iitm-package-one.html" class="hub-view-pkg-btn"><i
+                                class="fa-solid fa-arrow-right me-2"></i>View Full Package</a>
+                    </div>
+                </div>
+
+            </div><!-- /grid -->
+        </div>
+    </section>
+
+    <!-- ══════════ COMMON INCLUSIONS ══════════ -->
+    <section class="hub-section hub-feat-bg">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="hub-label">All Packages Include</div>
+                <h2 class="hub-heading">Every Package <span>Includes</span></h2>
+                <div class="hub-divider cx"></div>
+            </div>
+            <div class="hub-feat-grid">
+                <div class="hub-feat-item">
+                    <div class="hub-feat-icon"><i class="fa-solid fa-plane-arrival"></i></div>
+                    <div class="hub-feat-title">Airport Transfers</div>
+                    <div class="hub-feat-desc">Arrival pickup & departure drop</div>
+                </div>
+                <div class="hub-feat-item">
+                    <div class="hub-feat-icon"><i class="fa-solid fa-ship"></i></div>
+                    <div class="hub-feat-title">Dhow Cruise Dinner</div>
+                    <div class="hub-feat-desc">Evening Marina cruise with entertainment</div>
+                </div>
+                <div class="hub-feat-item">
+                    <div class="hub-feat-icon"><i class="fa-solid fa-building"></i></div>
+                    <div class="hub-feat-title">Burj Khalifa 124–125</div>
+                    <div class="hub-feat-desc">Non-peak hours access included</div>
+                </div>
+                <div class="hub-feat-item">
+                    <div class="hub-feat-icon"><i class="fa-solid fa-truck-monster"></i></div>
+                    <div class="hub-feat-title">Desert Safari BBQ</div>
+                    <div class="hub-feat-desc">Red dunes 4x4 + BBQ dinner</div>
+                </div>
+                <div class="hub-feat-item">
+                    <div class="hub-feat-icon"><i class="fa-solid fa-passport"></i></div>
+                    <div class="hub-feat-title">UAE Visa</div>
+                    <div class="hub-feat-desc">Tourist visa included in price</div>
+                </div>
+                <div class="hub-feat-item">
+                    <div class="hub-feat-icon"><i class="fa-solid fa-receipt"></i></div>
+                    <div class="hub-feat-title">VAT Inclusive</div>
+                    <div class="hub-feat-desc">Zero hidden charges</div>
+                </div>
+                <div class="hub-feat-item">
+                    <div class="hub-feat-icon"><i class="fa-solid fa-utensils"></i></div>
+                    <div class="hub-feat-title">02 Dinners</div>
+                    <div class="hub-feat-desc">Dhow + Desert Safari dinners</div>
+                </div>
+                <div class="hub-feat-item">
+                    <div class="hub-feat-icon"><i class="fa-solid fa-hotel"></i></div>
+                    <div class="hub-feat-title">Breakfast Daily</div>
+                    <div class="hub-feat-desc">Buffet breakfast every morning</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ CTA ══════════ -->
+    <section class="hub-cta">
+        <div class="hub-label" style="color:rgba(255,255,255,.6);">Don't Miss Out · Limited Seats</div>
+        <h2 class="hub-cta-title">Ready for Your Dubai Adventure?</h2>
+        <p class="hub-cta-sub">Choose a package above or enquire now · May – August 2026</p>
+        <button class="hub-cta-btn" onclick="openHubModal('')"><i class="fa-solid fa-paper-plane me-2"></i>General
+            Enquiry</button>
+        <p class="mt-4" style="font-size:.78rem;opacity:.65;">* Terms & Conditions Apply · Prices per person on double
+            sharing basis</p>
+    </section>
+
+    <!-- ══════════ FOOTER ══════════ -->
+    <footer class="hub-footer">
+        <p><strong>IITM Ahmedabad</strong> &nbsp;|&nbsp; Summer Dubai Packages 2026</p>
+        <p class="mt-2" style="font-size:.8rem;">© 2026 IITM Ahmedabad. All rights reserved. Terms & Conditions Apply.
+        </p>
+    </footer>
+
+    <!-- ══════════ ENQUIRY MODAL ══════════ -->
+<div class="hub-overlay" id="hubOverlay" onclick="closeHubModal()"></div>
+
+<div class="hub-modal" id="hubModal" role="dialog" aria-modal="true">
+    <button class="hub-modal-close" onclick="closeHubModal()">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <!-- FORM START -->
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Web3Forms Hidden Fields -->
+        <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+        <input type="hidden" name="subject" value="Package Enquiry - IITM Website">
+
+        <h2 class="hub-modal-title">Enquire About Package ✈️</h2>
+        <p class="hub-modal-sub">Fill in your details – our team responds within 24 hours.</p>
+
+        <div class="hub-form-grp">
+            <label>Full Name *</label>
+            <input type="text" name="name" placeholder="Your full name" required>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-6">
+                <div class="hub-form-grp">
+                    <label>Phone / WhatsApp *</label>
+                    <input type="tel" name="phone" placeholder="+91 XXXXXXXXXX" required>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="hub-form-grp">
+                    <label>Email *</label>
+                    <input type="email" name="email" placeholder="you@email.com" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-6">
+                <div class="hub-form-grp">
+                    <label>Interested Package</label>
+                    <select name="package">
+                        <option value="">Select Package</option>
+                        <option>Pkg 1 – Super Summer Saver Dubai</option>
+                        <option>Pkg 2 – Dubai & Abu Dhabi</option>
+                        <option>Pkg 3 – Lapita Water Park</option>
+                        <option>Pkg 4 – Summer Delights 3★/4★</option>
+                        <option>Not Sure Yet</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="hub-form-grp">
+                    <label>No. of Travellers</label>
+                    <select name="travellers">
+                        <option value="">Select</option>
+                        <option>02 Pax</option>
+                        <option>04 Pax</option>
+                        <option>06 Pax</option>
+                        <option>More than 6</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="hub-form-grp">
+            <label>Preferred Month</label>
+            <select name="month">
+                <option value="">Select</option>
+                <option>May 2026</option>
+                <option>June 2026</option>
+                <option>July 2026</option>
+                <option>August 2026</option>
+            </select>
+        </div>
+
+        <div class="hub-form-grp">
+            <label>Message / Questions *</label>
+            <textarea name="message" placeholder="Any questions or special requests..." required></textarea>
+        </div>
+
+        <button class="hub-submit-btn" type="submit">
+            <i class="fa-solid fa-paper-plane me-2"></i>Send Enquiry
+        </button>
+
+        <!-- <div class="hub-modal-contact">
+            <a href="https://wa.me/919999999999" class="hub-contact-link" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>WhatsApp
+            </a>
+            <a href="mailto:info@iitmahmedabad.com" class="hub-contact-link">
+                <i class="fa-solid fa-envelope"></i>Email Us
+            </a>
+        </div> -->
+
+    </form>
+    <!-- FORM END   -->
+     
+</div>
+
+    <script>
+// ── CAROUSEL ──
+    let hubCur = 0, hubTotal = 4, hubTimer, hubProg, hubProgStart;
+    const INTERVAL = 5000;
+    const hubWrap = document.getElementById('hubSlidesWrap');
+    const hubDots = document.querySelectorAll('.hub-dot');
+    const hubSlides = document.querySelectorAll('.hub-slide');
+    const hubProgEl = document.getElementById('hubProgress');
+
+    function hubUpdateUI() {
+        hubWrap.style.transform = `translateX(-${hubCur * 100}%)`;
+        hubDots.forEach((d, i) => d.classList.toggle('hub-active', i === hubCur));
+        hubSlides.forEach((s, i) => s.classList.toggle('hub-active', i === hubCur));
+        document.getElementById('hubCurr').textContent = String(hubCur + 1).padStart(2, '0');
+    }
+    function hubGoTo(n) { hubCur = n; hubUpdateUI(); hubResetTimer(); }
+    function hubSlide(dir) { hubGoTo((hubCur + dir + hubTotal) % hubTotal); }
+
+    function hubResetTimer() {
+        clearInterval(hubTimer);
+        hubProgEl.style.transition = 'none'; hubProgEl.style.width = '0%';
+        setTimeout(() => {
+            hubProgEl.style.transition = `width ${INTERVAL}ms linear`;
+            hubProgEl.style.width = '100%';
+        }, 30);
+        hubTimer = setInterval(() => hubGoTo((hubCur + 1) % hubTotal), INTERVAL);
+    }
+    hubUpdateUI(); hubResetTimer();
+
+    // ── MODAL ──
+    function openHubModal(pkg) {
+        if (pkg) {
+            const s = document.querySelector('select[name="package"]');
+            if (s) {
+                for (let o of s.options) {
+                    if (o.text.toLowerCase().includes(pkg.toLowerCase().split(' ')[0].toLowerCase())) {
+                        s.value = o.value;
+                        break;
+                    }
+                }
+            }
+        }
+        document.getElementById('hubOverlay').classList.add('hub-show');
+        document.getElementById('hubModal').classList.add('hub-show');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeHubModal() {
+        document.getElementById('hubOverlay').classList.remove('hub-show');
+        document.getElementById('hubModal').classList.remove('hub-show');
+        document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', ev => { if (ev.key === 'Escape') closeHubModal(); });
+    </script>
+</body>
+
+</html>

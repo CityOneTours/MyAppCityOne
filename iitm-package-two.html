@@ -1,0 +1,2211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer in Dubai & Abu Dhabi | IITM Ahmedabad</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Roboto:wght@300;400;500;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --red: #ff1f3d;
+            --red-dark: #be051e;
+            --red-light: #a20016;
+            --red-pale: #FADBD8;
+            --gold: #C9A84C;
+            --gold-lt: #F0D080;
+            --cream: #FDF8F5;
+            --sand: #F5EDE0;
+            --white: #fff;
+            --text: #1A1A1A;
+            --muted: #6B5B52;
+            --navy: #1A0A0A;
+            --r: 14px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: var(--cream);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        /* ─── HERO / CAROUSEL ─── */
+        .promo-hero {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .promo-carousel {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .promo-carousel .carousel-item {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            transform: scale(1.08);
+            transition: transform 6s ease;
+        }
+
+        .carousel-item.active .slide-bg {
+            transform: scale(1);
+        }
+
+        .slide-1 .slide-bg {
+            background-image:
+                linear-gradient(135deg, rgba(0, 0, 0, 0.55) 0%, rgba(7, 7, 7, 0.7) 100%),
+                url('https://thetravelmum.com/content/uploads/2024/09/IMG_9095-1-e1727366610537.jpg');
+        }
+
+        .slide-2 .slide-bg {
+            background-image:
+                linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.45) 100%),
+                url('images/desaert safari background.jpg.jpeg');
+        }
+
+        .slide-3 .slide-bg {
+            background-image:
+                linear-gradient(135deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.6) 100%),
+                url('https://media.istockphoto.com/id/635478390/photo/burj-khalifa-with-dubai-downtown-towers-at-sunset.jpg?s=612x612&w=0&k=20&c=O13tOX3Da-2v2PRawTfYmxyOKXE1Ehd1tfbu4rvGGi4=');
+        }
+
+        .slide-4 .slide-bg {
+            background-image:
+                linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.4) 100%),
+                url('https://www.trawell.in/admin/images/upload/693333754Abu_dhabi_grand_mosque.jpg');
+        }
+
+        .slide-content {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            z-index: 2;
+        }
+
+        .slide-badge {
+            display: inline-block;
+            background: var(--red);
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            padding: 0.42rem 1.2rem;
+            border-radius: 2rem;
+            margin-bottom: 1.4rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.7s 0.2s forwards;
+        }
+
+        .slide-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.4rem, 6vw, 5rem);
+            font-weight: 900;
+            color: #fff;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.8s 0.4s forwards;
+            text-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .slide-title span {
+            color: var(--gold-lt);
+            /* font-style: italic; */
+        }
+
+        .slide-sub {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            color: rgba(255, 255, 255, 0.88);
+            margin-bottom: 2.2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s 0.6s forwards;
+        }
+
+        .promo-enquire-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: var(--red);
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.06em;
+            padding: 0.9rem 2.2rem;
+            border-radius: 3rem;
+            border: 2px solid transparent;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s 0.8s forwards;
+            box-shadow: 0 8px 32px rgba(192, 57, 43, 0.45);
+        }
+
+        .promo-enquire-btn:hover {
+            background: transparent;
+            border-color: #fff;
+            color: #fff;
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* price chips in slide */
+        .slide-prices {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 1.8rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s 0.7s forwards;
+        }
+
+        .price-chip {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 1rem;
+            padding: 0.45rem 1rem;
+            color: #fff;
+            font-size: 0.82rem;
+            font-weight: 500;
+        }
+
+        .price-chip strong {
+            color: var(--gold-lt);
+            font-size: 1rem;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* carousel controls */
+        .promo-carousel .carousel-control-prev,
+        .promo-carousel .carousel-control-next {
+            width: 3.5rem;
+            height: 3.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0 1rem;
+            background: rgba(192, 57, 43, 0.7);
+            border-radius: 50%;
+            opacity: 1;
+        }
+
+        .promo-carousel .carousel-indicators [data-bs-target] {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            border: none;
+        }
+
+        .promo-carousel .carousel-indicators .active {
+            background: var(--gold-lt);
+            width: 24px;
+            border-radius: 4px;
+        }
+
+        /* scroll hint */
+        .scroll-hint {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.78rem;
+            letter-spacing: 0.1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.4rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            50% {
+                transform: translateX(-50%) translateY(8px);
+            }
+        }
+
+        /* ─── SECTION TITLE ─── */
+        .section-label {
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--red);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 900;
+            color: var(--navy);
+            line-height: 1.2;
+        }
+
+        .section-heading span {
+            color: var(--red);
+            /* font-style: italic; */
+        }
+
+        /* ─── OVERVIEW STRIP ─── */
+        .overview-strip {
+            background: var(--red);
+            color: #fff;
+            padding: 1.2rem 0;
+        }
+
+        .strip-items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .strip-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+
+        .strip-item i {
+            color: var(--gold-lt);
+            font-size: 1rem;
+        }
+
+        .strip-divider {
+            width: 1px;
+            height: 1.4rem;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* ─── PRICING SECTION ─── */
+        .pricing-section {
+            padding: 5rem 0;
+            background: var(--cream);
+        }
+
+        .pricing-card {
+            background: #fff;
+            border-radius: 1.2rem;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(192, 57, 43, 0.08);
+            border: 1.5px solid var(--sand);
+            transition: all 0.35s ease;
+            position: relative;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(192, 57, 43, 0.18);
+            border-color: var(--red-pale);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--red);
+            box-shadow: 0 8px 40px rgba(192, 57, 43, 0.22);
+        }
+
+        .featured-tag {
+            position: absolute;
+            top: 1.2rem;
+            right: -2.2rem;
+            background: var(--red);
+            color: #fff;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 0.3rem 2.8rem;
+            transform: rotate(45deg);
+            display: none;
+        }
+
+        .card-header-bar {
+            background: linear-gradient(135deg, var(--red-dark), var(--red));
+            padding: 1.5rem 1.5rem 1rem;
+            color: #fff;
+        }
+
+        .card-pax {
+            font-size: 0.78rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 0.3rem;
+        }
+
+        .card-price {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .card-price sup {
+            font-size: 1.1rem;
+            vertical-align: top;
+            margin-top: 0.5rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            display: none;
+        }
+
+        .card-price sub {
+            font-size: 0.8rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            opacity: 0.85;
+        }
+
+        .card-body-content {
+            padding: 1.5rem;
+        }
+
+        .saving-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: var(--red-pale);
+            color: var(--red-dark);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-enquire {
+            display: block;
+            width: 100%;
+            background: var(--red);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            padding: 0.8rem;
+            border-radius: 0.8rem;
+            border: 2px solid var(--red);
+            cursor: pointer;
+            transition: all 0.25s ease;
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .card-enquire:hover {
+            background: transparent;
+            color: var(--red);
+        }
+
+        /* ─── ITINERARY ─── */
+        .itinerary-section {
+            padding: 5rem 0;
+            background: linear-gradient(180deg, var(--sand) 0%, var(--cream) 100%);
+        }
+
+        /* New image-card itinerary */
+        .itin-card {
+            background: #fff;
+            border-radius: 1.4rem;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(192, 57, 43, 0.08);
+            border: 1.5px solid var(--sand);
+            margin-bottom: 2rem;
+            display: flex;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+
+        .itin-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(192, 57, 43, 0.15);
+        }
+
+        /* Alternate: odd cards image-left, even cards image-right */
+        .itin-card.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .itin-img-wrap {
+            width: 38%;
+            min-height: 260px;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .itin-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .itin-card:hover .itin-img-wrap img {
+            transform: scale(1.07);
+        }
+
+        .itin-day-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: var(--red);
+            color: #fff;
+            border-radius: 0.8rem;
+            padding: 0.4rem 0.9rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            line-height: 1.3;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+
+        .itin-day-badge span {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .itin-img-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, rgba(192, 57, 43, 0.15), transparent);
+        }
+
+        .itin-card.reverse .itin-img-overlay {
+            background: linear-gradient(to left, rgba(192, 57, 43, 0.15), transparent);
+        }
+
+        .itin-content {
+            padding: 2rem 1.8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .day-tag {
+            display: inline-block;
+            background: var(--red-pale);
+            color: var(--red-dark);
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.7rem;
+            border-radius: 0.4rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .itin-content h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 0.7rem;
+            line-height: 1.3;
+        }
+
+        .itin-content p {
+            font-size: 0.88rem;
+            color: var(--muted);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .itin-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .itin-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: var(--sand);
+            border: 1px solid var(--red-pale);
+            border-radius: 2rem;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem;
+            color: var(--red-dark);
+            font-weight: 500;
+        }
+
+        .itin-pill i {
+            font-size: 0.7rem;
+            color: var(--red);
+        }
+
+        @media(max-width: 767px) {
+
+            .itin-card,
+            .itin-card.reverse {
+                flex-direction: column;
+            }
+
+            .itin-img-wrap {
+                width: 100%;
+                min-height: 200px;
+            }
+
+            .itin-img-overlay {
+                background: linear-gradient(to top, rgba(192, 57, 43, 0.2), transparent) !important;
+            }
+        }
+
+        /* old classes kept for safety */
+        .day-card {
+            display: none;
+        }
+
+        .day-num {
+            display: none;
+        }
+
+        /* ─── INCLUSIONS ─── */
+        .inclusions-section {
+            padding: 5rem 0;
+            background: var(--cream);
+        }
+
+        .inclusion-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.2rem;
+        }
+
+        .inclusion-item {
+            background: #fff;
+            border-radius: 1rem;
+            padding: 1.4rem;
+            border: 1.5px solid var(--sand);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            transition: all 0.25s ease;
+        }
+
+        .inclusion-item:hover {
+            border-color: var(--red-pale);
+            box-shadow: 0 8px 24px rgba(192, 57, 43, 0.1);
+            transform: translateY(-3px);
+        }
+
+        .incl-icon {
+            width: 2.4rem;
+            height: 2.4rem;
+            background: var(--red-pale);
+            border-radius: 0.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: var(--red);
+            font-size: 1rem;
+        }
+
+        .incl-text {
+            font-size: 0.88rem;
+            color: var(--text);
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        /* ─── HIGHLIGHT CARDS ─── */
+        .highlights-section {
+            padding: 5rem 0;
+            background: var(--sand);
+        }
+
+        .highlight-card {
+            border-radius: 1.2rem;
+            overflow: hidden;
+            position: relative;
+            height: 280px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .highlight-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .highlight-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .highlight-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 60%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.5rem;
+            color: #fff;
+        }
+
+        .highlight-overlay h5 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .highlight-overlay p {
+            font-size: 0.82rem;
+            opacity: 0.88;
+        }
+
+        /* ─── BOTTOM CTA ─── */
+        .cta-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--red-dark) 0%, var(--red) 60%, #E8563A 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '✈';
+            position: absolute;
+            font-size: 20rem;
+            opacity: 0.04;
+            right: -3rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .cta-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 3rem);
+            color: #fff;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-btn-white {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: #fff;
+            color: var(--red);
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 0.9rem 2.4rem;
+            border-radius: 3rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-btn-white:hover {
+            transform: translateY(-3px) scale(1.04);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* limited seats ribbon */
+        .limited-ribbon {
+            background: var(--gold);
+            color: #fff;
+            text-align: center;
+            padding: 0.7rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .limited-ribbon i {
+            animation: pulse-icon 1.2s infinite;
+        }
+
+        @keyframes pulse-icon {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.4;
+            }
+        }
+
+        /* ─── ENQUIRY POPUP ─── */
+        .promo-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(26, 10, 10, 0.72);
+            backdrop-filter: blur(6px);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            animation: fadeInOverlay 0.3s;
+        }
+
+        .promo-overlay.active {
+            display: flex;
+        }
+
+        @keyframes fadeInOverlay {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .promo-modal {
+            background: #fff;
+            border-radius: 1.4rem;
+            width: 100%;
+            max-width: 560px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+            animation: slideUpModal 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            position: relative;
+        }
+
+        @keyframes slideUpModal {
+            from {
+                opacity: 0;
+                transform: translateY(60px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .modal-header-bar {
+            background: linear-gradient(135deg, var(--red-dark), var(--red));
+            padding: 2rem 2rem 1.5rem;
+            color: #fff;
+            position: relative;
+        }
+
+        .modal-header-bar .close-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 2rem;
+            height: 2rem;
+            background: rgba(255, 255, 255, 0.15);
+            border: none;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .modal-header-bar .close-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .modal-header-bar h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 900;
+            margin-bottom: 0.3rem;
+        }
+
+        .modal-header-bar p {
+            font-size: 0.88rem;
+            opacity: 0.85;
+        }
+
+        .modal-body-content {
+            padding: 2rem;
+        }
+
+        .promo-form-group {
+            margin-bottom: 1.1rem;
+        }
+
+        .promo-form-group label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--muted);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 0.4rem;
+        }
+
+        .promo-form-control {
+            width: 100%;
+            border: 1.5px solid var(--sand);
+            border-radius: 0.7rem;
+            padding: 0.72rem 1rem;
+            font-size: 0.92rem;
+            font-family: 'Roboto', sans-serif;
+            background: var(--cream);
+            color: var(--text);
+            transition: all 0.2s;
+            outline: none;
+        }
+
+        .promo-form-control:focus {
+            border-color: var(--red);
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.1);
+        }
+
+        .promo-form-control::placeholder {
+            color: #bbb;
+        }
+
+        .promo-select {
+            appearance: none;
+        }
+
+        .promo-submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, var(--red-dark), var(--red));
+            color: #fff;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+            padding: 0.9rem;
+            border-radius: 0.9rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+        }
+
+        .promo-submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(192, 57, 43, 0.4);
+        }
+
+        .modal-contact-row {
+            display: flex;
+            gap: 0.8rem;
+            margin-top: 1.2rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid var(--sand);
+            flex-wrap: wrap;
+        }
+
+        .modal-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .modal-contact-item i {
+            color: var(--red);
+        }
+
+        .modal-contact-item:hover {
+            color: var(--red);
+        }
+
+        /* ─── SUCCESS STATE ─── */
+        .success-state {
+            text-align: center;
+            padding: 3rem 2rem;
+            display: none;
+        }
+
+        .success-state.active {
+            display: block;
+        }
+
+        .modal-body-content.hidden {
+            display: none;
+        }
+
+        .success-icon {
+            width: 4rem;
+            height: 4rem;
+            background: var(--red-pale);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.2rem;
+            color: var(--red);
+            font-size: 1.8rem;
+        }
+
+        /* ─── FOOTER ─── */
+        .promo-footer {
+            background: var(--navy);
+            color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.82rem;
+        }
+
+        .promo-footer strong {
+            color: var(--gold-lt);
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media(max-width: 576px) {
+            .strip-divider {
+                display: none;
+            }
+
+            .modal-contact-row {
+                flex-direction: column;
+            }
+        }
+
+
+        /* ================= RELATED PACKAGES ================= */
+
+        .rp-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .rp-small-title {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #D62828;
+            margin-bottom: 8px;
+        }
+
+        .rp-main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            font-weight: 800;
+        }
+
+        .rp-main-title span {
+            color: #D62828;
+        }
+
+        .rp-line {
+            width: 60px;
+            height: 4px;
+            background: #D62828;
+            margin: 15px auto 50px;
+            border-radius: 4px;
+        }
+
+        /* GRID - 3 CARDS */
+        .rp-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        /* CARD */
+        .rp-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.35s ease;
+        }
+
+        .rp-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        /* IMAGE */
+        .rp-img {
+            height: 230px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .rp-img::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 60%);
+        }
+
+        .rp-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #D62828;
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            z-index: 2;
+        }
+
+        /* BODY */
+        .rp-body {
+            padding: 22px;
+        }
+
+        .rp-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .rp-hotel {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .rp-hotel i {
+            color: #D62828;
+            margin-right: 5px;
+        }
+
+        .rp-price {
+            font-size: 22px;
+            font-weight: 800;
+            color: #D62828;
+            margin-bottom: 18px;
+        }
+
+        .rp-price span {
+            font-size: 13px;
+            color: #777;
+            font-weight: 500;
+            margin-right: 5px;
+        }
+
+        .rp-price small {
+            font-size: 13px;
+            color: #777;
+        }
+
+        /* BUTTON */
+        .rp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            background: #D62828;
+            color: #fff;
+            padding: 10px 22px;
+            border-radius: 40px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .rp-btn:hover {
+            background: #A01818;
+            color: #fff;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 992px) {
+            .rp-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .rp-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="help-container">
+                <button class="help-btn">Help &#9662;</button>
+                <div class="help-dropdown">
+                    <span onclick="window.location.href='tel:+97143922959'" style="cursor:pointer;">
+                        <i class="fas fa-phone"></i> +971 4 392 2959
+                    </span>
+                    <!-- <span>
+                            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+                                <i class="fas fa-envelope"></i> info@cityonetours.com
+                            </a>
+                        </span> -->
+                </div>
+            </div>
+            <div class="right">
+                <span><i i class="fas fa-envelope"></i> info@cityonetours.com</span>
+            </div>
+            <div id="enquiryModal" class="modal">
+                <div class="modal-content">
+                    <div class="display-flex">
+                        <h2 class="text-colour">Enquiry Form</h2>
+                        <span class="close">&times;</span>
+                    </div>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+
+                        <input type="hidden" name="subject" value="✈️ IITM Ahmedabad Enquiry Form">
+                        <input type="hidden" name="from_name" value="IITM Ahmedabad Website">
+
+                        <label>Name</label>
+                        <input type="text" name="name" required>
+
+                        <label>Email</label>
+                        <input type="email" name="email" required>
+
+                        <label>Phone</label>
+                        <input type="tel" name="phone" required>
+
+                        <!-- Reply To Customer Email -->
+                        <input type="hidden" name="replyto" value="">
+
+                        <button type="submit">Submit</button>
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+      <div class="logo"> <a href="/">
+          <img src="images/image 8916.png" alt="" class="logo"> </a></div>
+      </div>
+            <div class="menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="destination.html"><i class="fas fa-search-location"></i> Destination</a>
+                <a href="hotdeal.html"><i class="fas fa-suitcase-rolling"></i> Hot Deal</a>
+                <div class="dropdown">
+                    <a href="themes.html" class="dropbtn">
+                        <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="themes.html">Adventure</a>
+                        <a href="themes.html">Luxury Tours</a>
+                        <a href="themes.html">Honey moon</a>
+                        <a href="themes.html">Family with Kids</a>
+                        <a href="themes.html">Safari</a>
+                        <a href="themes.html">Family with Kids</a>
+                        <a href="themes.html">Nature</a>
+                        <a href="themes.html">Wild Life</a>
+                        <a href="">Beach</a>
+                    </div>
+                </div>
+                <a href="visa.html"><i class="fas fa-passport"></i> Visa</a>
+                <a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
+                <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                <a href="contact.html"><i class="fas fa-users"></i> Contact</a>
+                <!-- <select id="currencySelect">
+            <option value="AED">AED</option>
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            </select> -->
+            </div>
+        </nav>
+    </header>
+    <!-- LIMITED SEATS RIBBON -->
+    <div class="limited-ribbon">
+        <i class="fas fa-fire me-2"></i> LIMITED SEATS AVAILABLE — BOOK NOW TO SECURE YOUR SPOT <i
+            class="fas fa-fire ms-2"></i>
+    </div>
+
+    <!-- ─── HERO CAROUSEL ─── -->
+    <section class="promo-hero">
+        <div id="promoCarousel" class="carousel slide promo-carousel" data-bs-ride="carousel" data-bs-interval="4500">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="3"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active slide-1">
+                    <div class="slide-bg"></div>
+                    <div class="slide-content">
+                        <div class="slide-badge">☀️ Summer Promotion 2025 — IITM Ahmedabad</div>
+                        <h1 class="slide-title">Enjoy Summer in<br><span>Dubai & Abu Dhabi</span></h1>
+                        <p class="slide-sub">4 Nights · 5 Days · All-inclusive holiday package</p>
+                        <div class="slide-prices">
+                            <div class="price-chip">2 Pax: <strong>₹53,899</strong>/pp</div>
+                            <div class="price-chip">4 Pax: <strong>₹47,010</strong>/pp</div>
+                            <div class="price-chip">6 Pax: <strong>₹44,699</strong>/pp</div>
+                        </div>
+                        <button class="promo-enquire-btn" onclick="openEnquiry()">
+                            <i class="fas fa-paper-plane"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item slide-2">
+                    <div class="slide-bg"></div>
+                    <div class="slide-content">
+                        <div class="slide-badge">🌊 Iconic Experience</div>
+                        <h1 class="slide-title">Marina <span>Dhow Cruise</span><br>& Desert Safari</h1>
+                        <p class="slide-sub">Evening cruise with dinner + Red Dunes 4x4 Adventure</p>
+                        <button class="promo-enquire-btn" onclick="openEnquiry()">
+                            <i class="fas fa-paper-plane"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item slide-3">
+                    <div class="slide-bg"></div>
+                    <div class="slide-content">
+                        <div class="slide-badge">🗼 Sky High Views</div>
+                        <h1 class="slide-title">Burj Khalifa<br><span>124th & 125th Floor</span></h1>
+                        <p class="slide-sub">At the Top experience — non-peak hours included</p>
+                        <button class="promo-enquire-btn" onclick="openEnquiry()">
+                            <i class="fas fa-paper-plane"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item slide-4">
+                    <div class="slide-bg"></div>
+                    <div class="slide-content">
+                        <div class="slide-badge">🕌 Abu Dhabi Wonders</div>
+                        <h1 class="slide-title">Grand Mosque<br>& <span>Yas Island</span> Park</h1>
+                        <p class="slide-sub">BAPS Temple · Yas Island · Abu Dhabi City Tour</p>
+                        <button class="promo-enquire-btn" onclick="openEnquiry()">
+                            <i class="fas fa-paper-plane"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+            </div><!-- .carousel-inner -->
+
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </button> -->
+        </div>
+
+        <div class="scroll-hint">
+            <span>EXPLORE</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ─── OVERVIEW STRIP ─── -->
+    <div class="overview-strip">
+        <div class="strip-items">
+            <div class="strip-item"><i class="fas fa-moon"></i> 4 Nights Stay</div>
+            <div class="strip-divider"></div>
+            <div class="strip-item"><i class="fas fa-plane"></i> UAE Visa Included</div>
+            <div class="strip-divider"></div>
+            <div class="strip-item"><i class="fas fa-utensils"></i> 2 Dinners + BB</div>
+            <div class="strip-divider"></div>
+            <div class="strip-item"><i class="fas fa-receipt"></i> VAT Included</div>
+            <div class="strip-divider"></div>
+            <div class="strip-item"><i class="fas fa-ticket-alt"></i> 1 Yas Island Park</div>
+        </div>
+    </div>
+
+    <!-- ─── PRICING ─── -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-label">Summer Special Pricing</div>
+                <h2 class="section-heading">Choose Your <span>Group Size</span></h2>
+                <p class="text-muted mt-2">Per person on double sharing basis — the more you travel together, the more
+                    you save!</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- 2 Pax -->
+                <div class="col-md-4">
+                    <div class="pricing-card h-100">
+                        <div class="card-header-bar">
+                            <div class="card-pax"><i class="fas fa-user-friends me-1"></i> 2 Persons</div>
+                            <div class="card-price"><sup>₹</sup>53,899<sub>/person</sub></div>
+                        </div>
+                        <div class="card-body-content">
+                            <div class="saving-badge"><i class="fas fa-tag"></i> Couple / Duo Package</div>
+                            <p style="font-size:0.88rem;color:var(--muted);line-height:1.6;">Perfect for couples and duo
+                                travellers seeking a premium Dubai experience.</p>
+                            <ul class="list-unstyled mt-3" style="font-size:0.86rem;color:var(--text);">
+                                <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>3 nights Majestic
+                                    Premier / City Retreat Bur Dubai</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>1 night Radisson
+                                    Blu / Crowne Plaza Yas Island</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>All inclusions
+                                    covered</li>
+                            </ul>
+                            <button class="card-enquire" onclick="openEnquiry('2 Persons')">Enquire Now <i
+                                    class="fas fa-arrow-right ms-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 Pax — Featured -->
+                <div class="col-md-4">
+                    <div class="pricing-card featured h-100" style="overflow:hidden;">
+                        <div class="featured-tag">Most Popular</div>
+                        <div class="card-header-bar">
+                            <div class="card-pax"><i class="fas fa-users me-1"></i> 4 Persons</div>
+                            <div class="card-price"><sup>₹</sup>47,010<sub>/person</sub></div>
+                        </div>
+                        <div class="card-body-content">
+                            <div class="saving-badge"><i class="fas fa-fire"></i> Save ₹6,889 vs 2 Pax</div>
+                            <p style="font-size:0.88rem;color:var(--muted);line-height:1.6;">The sweet spot for families
+                                and small groups — best value for the experience.</p>
+                            <ul class="list-unstyled mt-3" style="font-size:0.86rem;color:var(--text);">
+                                <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>3 nights Majestic
+                                    Premier / City Retreat Bur Dubai</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>1 night Radisson
+                                    Blu / Crowne Plaza Yas Island</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>All inclusions
+                                    covered</li>
+                            </ul>
+                            <button class="card-enquire" onclick="openEnquiry('4 Persons')">Enquire Now <i
+                                    class="fas fa-arrow-right ms-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 Pax -->
+                <div class="col-md-4">
+                    <div class="pricing-card h-100">
+                        <div class="card-header-bar" style="background:linear-gradient(135deg,#7B1A10,#C0392B);">
+                            <div class="card-pax"><i class="fas fa-user-group me-1"></i> 6 Persons</div>
+                            <div class="card-price"><sup>₹</sup>44,699<sub>/person</sub></div>
+                        </div>
+                        <div class="card-body-content">
+                            <div class="saving-badge"><i class="fas fa-star"></i> Best Price — Save ₹9,200</div>
+                            <p style="font-size:0.88rem;color:var(--muted);line-height:1.6;">Maximum savings for larger
+                                groups — ideal for friends & extended family.</p>
+                            <ul class="list-unstyled mt-3" style="font-size:0.86rem;color:var(--text);">
+                                <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>3 nights Majestic
+                                    Premier / City Retreat Bur Dubai</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>1 night Radisson
+                                    Blu / Crowne Plaza Yas Island</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>All inclusions
+                                    covered</li>
+                            </ul>
+                            <button class="card-enquire" onclick="openEnquiry('6 Persons')">Enquire Now <i
+                                    class="fas fa-arrow-right ms-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- .row -->
+        </div>
+    </section>
+
+    <!-- ─── ITINERARY ─── -->
+    <section class="itinerary-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-label">Day by Day</div>
+                <h2 class="section-heading">Your <span>Itinerary</span></h2>
+                <p class="text-muted mt-2">5 unforgettable days across Dubai & Abu Dhabi</p>
+            </div>
+
+            <!-- DAY 1 -->
+            <div class="itin-card">
+                <div class="itin-img-wrap">
+                    <img src="https://cdn.pixabay.com/photo/2019/09/05/15/25/airbus-4454338_640.jpg"
+                        alt="Dubai Marina Dhow Cruise" loading="lazy">
+                    <div class="itin-img-overlay"></div>
+                    <div class="itin-day-badge">DAY<span>1</span></div>
+                </div>
+                <div class="itin-content">
+                    <div class="day-tag">🛬 Dubai Arrival</div>
+                    <h4>Dubai Airport Arrival & Marina Dhow Cruise</h4>
+                    <p>Arrive at Dubai Airport and transfer to Majestic Premier / City Retreat Hotel Bur Dubai for
+                        check-in. Spend a magical evening gliding along the illuminated Dubai Marina on a traditional
+                        Dhow Cruise, complete with a lavish dinner and live entertainment shows.</p>
+                    <div class="itin-highlights">
+                        <span class="itin-pill"><i class="fas fa-plane-arrival"></i> Airport Transfer</span>
+                        <span class="itin-pill"><i class="fas fa-hotel"></i> Hotel Check-In</span>
+                        <span class="itin-pill"><i class="fas fa-ship"></i> Marina Dhow Cruise</span>
+                        <span class="itin-pill"><i class="fas fa-utensils"></i> Dinner Included</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 2 -->
+            <div class="itin-card reverse">
+                <div class="itin-img-wrap">
+                    <img src="https://www.egypttoursplus.com/wp-content/uploads/2025/07/Burj-Khalifa-in-Dubai.jpg"
+                        alt="Burj Khalifa" loading="lazy">
+                    <div class="itin-img-overlay"></div>
+                    <div class="itin-day-badge">DAY<span>2</span></div>
+                </div>
+                <div class="itin-content">
+                    <div class="day-tag">🏙️ City & Heights</div>
+                    <h4>Dubai City Tour + Burj Khalifa At the Top</h4>
+                    <p>Explore Dubai's iconic landmarks on a guided half-day city tour. Then soar to the top of the
+                        world at Burj Khalifa — visit the breathtaking 124th & 125th observation floors during exclusive
+                        non-peak hours (0800–1130 hrs or 2030–2300 hrs).</p>
+                    <div class="itin-highlights">
+                        <span class="itin-pill"><i class="fas fa-bus"></i> Half-Day City Tour</span>
+                        <span class="itin-pill"><i class="fas fa-tower-observation"></i> Burj Khalifa 124F & 125F</span>
+                        <span class="itin-pill"><i class="fas fa-clock"></i> Non-Peak Hours</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 3 -->
+            <div class="itin-card">
+                <div class="itin-img-wrap">
+                    <img src="images/desaert safari background.jpg.jpeg" alt="Desert Safari Red Dunes" loading="lazy">
+                    <div class="itin-img-overlay"></div>
+                    <div class="itin-day-badge">DAY<span>3</span></div>
+                </div>
+                <div class="itin-content">
+                    <div class="day-tag">🏜️ Desert Adventure</div>
+                    <h4>Afternoon Red Dunes Desert Safari</h4>
+                    <p>Buckle up for an exhilarating Red Dunes Desert Safari in powerful 4×4 vehicles. Experience the
+                        thrill of dune bashing, then settle in at a traditional desert camp for a sumptuous BBQ dinner
+                        under a canopy of stars with belly dance, tanoura & fire shows.</p>
+                    <div class="itin-highlights">
+                        <span class="itin-pill"><i class="fas fa-jeep"></i> 4×4 Dune Bashing</span>
+                        <span class="itin-pill"><i class="fas fa-fire"></i> BBQ Dinner</span>
+                        <span class="itin-pill"><i class="fas fa-music"></i> Live Entertainment</span>
+                        <span class="itin-pill"><i class="fas fa-campground"></i> Standard Camp</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 4 -->
+            <div class="itin-card reverse">
+                <div class="itin-img-wrap">
+                    <img src="https://cdn.excelproperties.ae/media/blog/meta/Yas_Island__1_1200x630.webp?width=1200&height=630&format=jpeg&quality=15"
+                        alt="Yas Island Abu Dhabi" loading="lazy">
+                    <div class="itin-img-overlay"></div>
+                    <div class="itin-day-badge">DAY<span>4</span></div>
+                </div>
+                <div class="itin-content">
+                    <div class="day-tag">🎢 Yas Island</div>
+                    <h4>Transfer to Yas Island + Free Theme Park</h4>
+                    <p>Check out from your Dubai hotel and transfer to the thrilling Yas Island, Abu Dhabi. Check in to
+                        the stunning Radisson Blu or Crowne Plaza Yas Island hotel and enjoy entry to 1 complimentary
+                        world-class theme park of your choice — Ferrari World, Yas Waterworld, or Warner Bros. World!
+                    </p>
+                    <div class="itin-highlights">
+                        <span class="itin-pill"><i class="fas fa-car"></i> Hotel Transfer</span>
+                        <span class="itin-pill"><i class="fas fa-hotel"></i> Radisson Blu / Crowne Plaza</span>
+                        <span class="itin-pill"><i class="fas fa-ticket-alt"></i> 1 Free Theme Park</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 5 -->
+            <div class="itin-card" style="border-color:var(--gold);box-shadow:0 8px 32px rgba(201,168,76,0.15);">
+                <div class="itin-img-wrap">
+                    <img src="https://media.istockphoto.com/id/515378568/photo/white-mosque.jpg?s=612x612&w=0&k=20&c=Me6d_eUxc7ung_xg8rrOhczAnuUC9nt5qU6bQaguIYQ="
+                        alt="Sheikh Zayed Grand Mosque Abu Dhabi" loading="lazy">
+                    <div class="itin-img-overlay"></div>
+                    <div class="itin-day-badge" style="background:var(--gold);">DAY<span>5</span></div>
+                </div>
+                <div class="itin-content">
+                    <div class="day-tag" style="background:#FFF3CD;color:#8B6914;">🕌 Abu Dhabi & Departure</div>
+                    <h4>Abu Dhabi City Tour → Grand Mosque, BAPS Temple & Airport Drop</h4>
+                    <p>Check out and embark on a captivating Abu Dhabi City Tour. Marvel at the grandeur of the Sheikh
+                        Zayed Grand Mosque — one of the world's most magnificent mosques — and visit the stunning BAPS
+                        Hindu Mandir. Conclude your journey with a comfortable transfer to Dubai Airport for departure.
+                    </p>
+                    <div class="itin-highlights">
+                        <span class="itin-pill" style="border-color:#FFE08A;color:#8B6914;"><i class="fas fa-mosque"
+                                style="color:var(--gold);"></i> Grand Mosque</span>
+                        <span class="itin-pill" style="border-color:#FFE08A;color:#8B6914;"><i class="fas fa-om"
+                                style="color:var(--gold);"></i> BAPS Temple</span>
+                        <span class="itin-pill" style="border-color:#FFE08A;color:#8B6914;"><i class="fas fa-city"
+                                style="color:var(--gold);"></i> Abu Dhabi Tour</span>
+                        <span class="itin-pill" style="border-color:#FFE08A;color:#8B6914;"><i
+                                class="fas fa-plane-departure" style="color:var(--gold);"></i> Airport Drop</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ─── INCLUSIONS ─── -->
+    <section class="inclusions-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-label">What's Included</div>
+                <h2 class="section-heading">Everything You <span>Need</span></h2>
+            </div>
+
+            <div class="inclusion-grid">
+                <div class="inclusion-item">
+                    <div class="incl-icon"><i class="fas fa-hotel"></i></div>
+                    <div class="incl-text">3N at Majestic Premier / City Retreat Hotel Bur Dubai with breakfast</div>
+                </div>
+                <div class="inclusion-item">
+                    <div class="incl-icon"><i class="fas fa-building"></i></div>
+                    <div class="incl-text">1N at Radisson Blu / Crowne Plaza Yas Island with breakfast</div>
+                </div>
+                <div class="inclusion-item">
+                    <div class="incl-icon"><i class="fas fa-plane-arrival"></i></div>
+                    <div class="incl-text">Dubai airport arrival transfer & hotel check-in assistance</div>
+                </div>
+                <div class="inclusion-item">
+                    <div class="incl-icon"><i class="fas fa-ship"></i></div>
+                    <div class="incl-text">Evening Marina Dhow Cruise with dinner & entertainment</div>
+                </div>
+                <div class="inclusion-item">
+                    <div class="incl-icon"><i class="fas fa-city"></i></div>
+                    <div class="incl-text">Half-day Dubai City Tour with guide</div>
+                </div>
+                <div class="inclusion-item">
+                    <div class="incl-icon"><i class="fas fa-tower-observation"></i></div>
+                    <div class="incl-text">Burj Khalifa At the Top — 124th & 125th Floor (non-peak hours)</div>
+                </div>
+                <div class="inclusion-item">
+                    <div class="incl-icon"><i class="fas fa-jeep"></i></div>
+                    <div class="incl-text">Afternoon Red Dunes Desert Safari in 4×4 — Standard Camp</div>
+                </div>
+                <div class="inclusion-item">
+                    <div class="incl-icon"><i class="fas fa-drumstick-bite"></i></div>
+                    <div class="incl-text">BBQ Dinner with Desert Entertainment Shows</div>
+                </div>
+                <div class="inclusion-item">
+                    <div class="incl-icon"><i class="fas fa-ticket-alt"></i></div>
+                    <div class="incl-text">1 Free Yas Island Theme Park Entry</div>
+                </div>
+                <div class="inclusion-item">
+                    <div class="incl-icon"><i class="fas fa-mosque"></i></div>
+                    <div class="incl-text">Abu Dhabi City Tour — Grand Mosque & BAPS Temple</div>
+                </div>
+                <div class="inclusion-item">
+                    <div class="incl-icon"><i class="fas fa-plane-departure"></i></div>
+                    <div class="incl-text">Abu Dhabi tour + Dubai Airport drop-off</div>
+                </div>
+                <div class="inclusion-item">
+                    <div class="incl-icon"><i class="fas fa-passport"></i></div>
+                    <div class="incl-text">UAE Visa included</div>
+                </div>
+                <div class="inclusion-item">
+                    <div class="incl-icon"><i class="fas fa-receipt"></i></div>
+                    <div class="incl-text">VAT included — no hidden charges</div>
+                </div>
+                <div class="inclusion-item">
+                    <div class="incl-icon"><i class="fas fa-utensils"></i></div>
+                    <div class="incl-text">2 Dinners included (Dhow Cruise + Desert Safari)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── HIGHLIGHTS GALLERY ─── -->
+    <section class="highlights-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-label">Experience Awaits</div>
+                <h2 class="section-heading">Highlights of the <span>Journey</span></h2>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="highlight-card">
+                        <img src="https://media.istockphoto.com/id/2217498324/photo/aerial-view-of-dubai-skyline-at-sunset.jpg?s=612x612&w=0&k=20&c=w6c-FYum9XWegLX7IsC1CdTu7QurcEMrcbhBTxqfHOA="
+                            alt="Dubai Skyline" loading="lazy">
+                        <div class="highlight-overlay">
+                            <h5>Dubai Skyline</h5>
+                            <p>Iconic skyline & city experiences</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="highlight-card">
+                        <img src="images/desaert safari background.jpg.jpeg" alt="Desert Safari" loading="lazy">
+                        <div class="highlight-overlay">
+                            <h5>Red Dunes Desert Safari</h5>
+                            <p>4×4 dune bashing & BBQ under stars</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="highlight-card">
+                        <img src="https://media.istockphoto.com/id/515378568/photo/white-mosque.jpg?s=612x612&w=0&k=20&c=Me6d_eUxc7ung_xg8rrOhczAnuUC9nt5qU6bQaguIYQ="
+                            alt="Grand Mosque" loading="lazy">
+                        <div class="highlight-overlay">
+                            <h5>Sheikh Zayed Grand Mosque</h5>
+                            <p>One of the world's most beautiful mosques</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="highlight-card">
+                        <img src="https://staybook.in/_next/image?url=https%3A%2F%2Fcdn-imgix.headout.com%2Fmedia%2Fimages%2F68a2a3a6764fcaa3156b1a9cc80d7921-31721-dubai-from-dubai-marina-2-hour-luxury-dhow-dinner-cruise-with-5-star-dinner--entertainment---unlimited-drinks-11.jpg%3Fw%3D1120%26h%3D630%26crop%3Dfaces%26auto%3Dcompress%252Cformat%26fit%3Dmin&w=1080&q=75"
+                            alt="Marina Cruise" loading="lazy">
+                        <div class="highlight-overlay">
+                            <h5>Marina Dhow Cruise</h5>
+                            <p>Magical evening on Dubai Marina with dinner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="highlight-card">
+                        <img src="https://media.arcadis.com/-/media/project/arcadiscom/com/projects/middle-east/united-arab-emirates/burj-khalifa-and-downtown-dubai/burj-khalifa-final-image-1.png?rev=574d1d00ccfa49f1bbd5a8813b015ccb"
+                            alt="Burj Khalifa" loading="lazy">
+                        <div class="highlight-overlay">
+                            <h5>Burj Khalifa At the Top</h5>
+                            <p>124th & 125th floor — world's tallest building</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ─── CTA ─── -->
+    <section class="cta-section">
+        <div class="container position-relative" style="z-index:1;">
+            <h2>Ready to Make Memories?</h2>
+            <p>Limited seats available. Don't miss this summer exclusive deal for IITM Ahmedabad.</p>
+            <button class="cta-btn-white" onclick="openEnquiry()">
+                <i class="fas fa-paper-plane"></i> Send Enquiry Now
+            </button>
+            <div class="mt-4" style="color:rgba(255,255,255,0.7);font-size:0.82rem;letter-spacing:0.05em;">
+                *Terms & Conditions Apply &nbsp;|&nbsp; Prices per person on double sharing basis
+            </div>
+        </div>
+    </section>
+<!-- ================= RELATED PACKAGES ================= -->
+    <section class="rp-section">
+        <div class="container">
+            <div class="rp-head text-center">
+                <div class="rp-small-title">You May Also Like</div>
+                <h2 class="rp-main-title">Related <span>Dubai Packages</span></h2>
+                <div class="rp-line"></div>
+            </div>
+
+            <div class="rp-grid">
+
+                <!-- CARD 1 -->
+                <div class="rp-card">
+                    <div class="rp-img" style="background-image:url('images/desaert safari background.jpg.jpeg');">
+                        <div class="rp-badge">04N / 05D</div>
+                    </div>
+                    <div class="rp-body">
+                        <h3 class="rp-title">Super Summer Saver Dubai</h3>
+                        <p class="rp-hotel">
+                            <i class="fa-solid fa-hotel"></i>
+                            Majestic Premier / City Retreat
+                        </p>
+
+                        <div class="rp-price">
+                            <span>From</span>
+                            ₹32,000
+                            <small>/person</small>
+                        </div>
+
+                        <a href="package1.html" class="rp-btn">
+                            View Package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="rp-card">
+                    <div class="rp-img"
+                        style="background-image:url('https://cdn.wallpapersafari.com/9/78/9I0ucG.jpg');">
+                        <div class="rp-badge">04N / 05D</div>
+                    </div>
+                    <div class="rp-body">
+                        <h3 class="rp-title">Lapita Resort & Water Park</h3>
+                        <p class="rp-hotel">
+                            <i class="fa-solid fa-hotel"></i>
+                            Fortune Pearl + Lapita Resort
+                        </p>
+
+                        <div class="rp-price">
+                            <span>From</span>
+                            ₹36,799
+                            <small>/person</small>
+                        </div>
+
+                        <a href="package3.html" class="rp-btn">
+                            View Package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="rp-card">
+                    <div class="rp-img"
+                        style="background-image:url('https://uae.luxeglamp.com/wp-content/uploads/2025/07/image-11-scaled.png');">
+                        <div class="rp-badge">04N / 05D</div>
+                    </div>
+                    <div class="rp-body">
+                        <h3 class="rp-title">Summer Delights 3★ & 4★</h3>
+                        <p class="rp-hotel">
+                            <i class="fa-solid fa-hotel"></i>
+                            Fortune Pearl / Omega
+                        </p>
+
+                        <div class="rp-price">
+                            <span>From</span>
+                            ₹31,799
+                            <small>/person</small>
+                        </div>
+
+                        <a href="package4.html" class="rp-btn">
+                            View Package
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ─── FOOTER ─── -->
+    <div class="promo-footer">
+        <strong>IITM Ahmedabad</strong> — Summer Dubai & Abu Dhabi Promotion &copy; 2025<br>
+        <span style="font-size:0.75rem;opacity:0.7;">Terms & Conditions Apply. Limited Seats Only.</span>
+    </div>
+
+    <!-- ════════════════════════════════════════
+        ENQUIRY POPUP OVERLAY
+    ════════════════════════════════════════ -->
+    <div class="promo-overlay" id="enquiryOverlay" onclick="closeOnBackdrop(event)">
+  <div class="promo-modal" id="enquiryModal">
+
+    <div class="modal-header-bar">
+      <button class="close-btn" onclick="closeEnquiry()">
+        <i class="fas fa-times"></i>
+      </button>
+      <div style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;opacity:0.75;margin-bottom:0.4rem;">
+        ☀️ Summer Promotion — IITM Ahmedabad
+      </div>
+    </div>
+
+    <div class="modal-body-content">
+
+      <!-- WEB3FORMS DIRECT FORM -->
+      <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Web3Forms Key -->
+        <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+
+        <!-- Optional -->
+        <input type="hidden" name="subject" value="Dubai Summer Enquiry - City One Website">
+
+        <!-- Honeypot -->
+        <input type="checkbox" name="botcheck" style="display:none;">
+
+        <div class="promo-form-group">
+          <label>First Name *</label>
+          <input type="text" name="name" class="promo-form-control" placeholder="Rahul" required>
+        </div>
+
+        <div class="promo-form-group">
+          <label>Mobile Number *</label>
+          <input type="tel" name="phone" class="promo-form-control" placeholder="+91 98765 43210" required>
+        </div>
+
+        <div class="promo-form-group">
+          <label>Email Address *</label>
+          <input type="email" name="email" class="promo-form-control" placeholder="rahul@email.com" required>
+        </div>
+
+        <div class="promo-form-group">
+          <label>Group Size *</label>
+          <select name="group_size" class="promo-form-control" required>
+            <option value="">Select</option>
+            <option>2 Persons — ₹53,899/pp</option>
+            <option>4 Persons — ₹47,010/pp</option>
+            <option>6 Persons — ₹44,699/pp</option>
+          </select>
+        </div>
+
+        <div class="promo-form-group">
+          <label>Travel Month</label>
+          <select name="travel_month" class="promo-form-control">
+            <option value="">Select</option>
+            <option>April 2025</option>
+            <option>May 2025</option>
+            <option>June 2025</option>
+            <option>July 2025</option>
+          </select>
+        </div>
+
+        <div class="promo-form-group">
+          <label>Message</label>
+          <textarea name="message" class="promo-form-control"
+            placeholder="Any special requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="promo-submit-btn">
+          Send Enquiry
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+</div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
+    <script>
+        //  IITM Ahmedabad — Dubai Summer Promo | promo.js
+        // ════════════════════════════════════════════════
+
+        // ────────────────────────────────────────────────
+        // ✅ PROMO ENQUIRY POPUP (overlay modal)
+        // ────────────────────────────────────────────────
+
+        /**
+         * Opens the enquiry popup overlay.
+         * @param {string} [groupSize] - Optional: pre-select group size ('2 Persons', '4 Persons', '6 Persons')
+         */
+        function openEnquiry(groupSize) {
+            const overlay = document.getElementById('enquiryOverlay');
+            if (!overlay) return;
+
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+
+            // Auto-select group size if passed (e.g. from pricing cards)
+            if (groupSize) {
+                const sel = document.getElementById('groupSizeSelect');
+                if (sel) {
+                    for (let opt of sel.options) {
+                        if (opt.value === groupSize) {
+                            sel.value = groupSize;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        /**
+         * Closes the enquiry popup overlay and resets its state.
+         */
+        function closeEnquiry() {
+            const overlay = document.getElementById('enquiryOverlay');
+            if (!overlay) return;
+
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+
+            // Reset success/form states after close animation finishes
+            setTimeout(() => {
+                const successState = document.getElementById('successState');
+                const formWrapper = document.getElementById('enquiryFormWrapper');
+                if (successState) successState.classList.remove('active');
+                if (formWrapper) formWrapper.classList.remove('hidden');
+            }, 400);
+        }
+
+        /**
+         * Closes the overlay when the user clicks directly on the backdrop.
+         * @param {MouseEvent} e
+         */
+        function closeOnBackdrop(e) {
+            const overlay = document.getElementById('enquiryOverlay');
+            if (!overlay) return;
+            if (e.target === overlay) closeEnquiry();
+        }
+
+        /**
+         * Handles enquiry form submission.
+         * Shows success state on valid submit.
+         * Replace the body of this function with your actual API/WhatsApp call.
+         * @param {SubmitEvent} e
+         */
+        function submitForm(e) {
+            e.preventDefault();
+
+            const formWrapper = document.getElementById('enquiryFormWrapper');
+            const successState = document.getElementById('successState');
+
+            // ── Optional: collect form data ──────────────────
+            // const form = document.getElementById('enquiryForm');
+            // const data = Object.fromEntries(new FormData(form));
+            // console.log('Enquiry submitted:', data);
+            // fetch('/api/enquiry', { method:'POST', body: JSON.stringify(data) });
+            // ─────────────────────────────────────────────────
+
+            if (formWrapper) formWrapper.classList.add('hidden');
+            if (successState) successState.classList.add('active');
+        }
+
+        // ────────────────────────────────────────────────
+        // ✅ TOP BAR ENQUIRY MODAL (small modal in header)
+        // IMPORTANT: your HTML must have these IDs:
+        // #topEnquiryBtn, #topEnquiryModal, #topEnquiryClose
+        // ────────────────────────────────────────────────
+        (function initTopBarEnquiryModal() {
+            document.addEventListener('DOMContentLoaded', () => {
+                const btn = document.getElementById('topEnquiryBtn');
+                const modal = document.getElementById('topEnquiryModal');
+                const closeBtn = document.getElementById('topEnquiryClose');
+
+                if (btn && modal) {
+                    btn.addEventListener('click', () => {
+                        modal.style.display = 'block';
+                    });
+                }
+
+                if (closeBtn && modal) {
+                    closeBtn.addEventListener('click', () => {
+                        modal.style.display = 'none';
+                    });
+                }
+
+                // close when clicking outside modal-content
+                window.addEventListener('click', (e) => {
+                    if (e.target === modal) modal.style.display = 'none';
+                });
+            });
+        })();
+
+        // ────────────────────────────────────────────────
+        // ✅ KEYBOARD ACCESSIBILITY
+        // ────────────────────────────────────────────────
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeEnquiry();
+        });
+
+        // ────────────────────────────────────────────────
+        // ✅ SCROLL-BASED ANIMATIONS
+        // Fades in elements as they enter the viewport.
+        // ────────────────────────────────────────────────
+        (function initScrollAnimations() {
+            const targets = document.querySelectorAll(
+                '.itin-card, .pricing-card, .inclusion-item, .highlight-card'
+            );
+
+            if (!targets.length || !('IntersectionObserver' in window)) return;
+
+            // Start invisible
+            targets.forEach((el) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
+            });
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.12 }
+            );
+
+            targets.forEach((el) => observer.observe(el));
+        })();
+
+        // ────────────────────────────────────────────────
+        // ✅ CAROUSEL PAUSE ON HOVER
+        // Stops Bootstrap carousel auto-play when user hovers.
+        // ────────────────────────────────────────────────
+        (function initCarouselHoverPause() {
+            const carouselEl = document.getElementById('promoCarousel');
+            if (!carouselEl || !window.bootstrap) return;
+
+            const carousel = bootstrap.Carousel.getOrCreateInstance(carouselEl);
+
+            carouselEl.addEventListener('mouseenter', () => carousel.pause());
+            carouselEl.addEventListener('mouseleave', () => carousel.cycle());
+        })();
+
+        // ────────────────────────────────────────────────
+        // ✅ SMOOTH SCROLL FOR ANCHOR LINKS
+        // ────────────────────────────────────────────────
+        (function initSmoothAnchors() {
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener('click', (e) => {
+                    const href = anchor.getAttribute('href');
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        })();
+
+        // ────────────────────────────────────────────────
+        // ✅ STICKY ENQUIRE BUTTON (optional)
+        // Shows a floating button after scrolling past the hero.
+        // ────────────────────────────────────────────────
+        (function initStickyEnquireBtn() {
+            const hero = document.querySelector('.promo-hero');
+            if (!hero) return;
+
+            // Create button
+            const btn = document.createElement('button');
+            btn.innerHTML = '<i class="fas fa-paper-plane"></i> Enquire Now';
+            btn.className = 'sticky-enq-btn';
+            btn.setAttribute('aria-label', 'Open enquiry form');
+            btn.onclick = () => openEnquiry();
+
+            // Inline minimal styles (can be moved to CSS)
+            Object.assign(btn.style, {
+                position: 'fixed',
+                bottom: '1.5rem',
+                right: '1.5rem',
+                zIndex: '8000',
+                background: 'var(--red, #C0392B)',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '3rem',
+                padding: '0.85rem 1.6rem',
+                fontFamily: "'Roboto', sans-serif",
+                fontWeight: '700',
+                fontSize: '0.92rem',
+                cursor: 'pointer',
+                boxShadow: '0 8px 28px rgba(192,57,43,0.45)',
+                transition: 'opacity 0.3s, transform 0.3s',
+                opacity: '0',
+                pointerEvents: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+            });
+
+            document.body.appendChild(btn);
+
+            // Show after scrolling past hero
+            const heroBottom = () => hero.getBoundingClientRect().bottom + window.scrollY;
+
+            window.addEventListener(
+                'scroll',
+                () => {
+                    const visible = window.scrollY > heroBottom() - 100;
+                    btn.style.opacity = visible ? '1' : '0';
+                    btn.style.pointerEvents = visible ? 'auto' : 'none';
+                    btn.style.transform = visible ? 'translateY(0)' : 'translateY(12px)';
+                },
+                { passive: true }
+            );
+
+            btn.addEventListener('mouseenter', () => {
+                btn.style.transform = 'translateY(-3px) scale(1.04)';
+                btn.style.boxShadow = '0 14px 36px rgba(192,57,43,0.5)';
+            });
+
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'translateY(0) scale(1)';
+                btn.style.boxShadow = '0 8px 28px rgba(192,57,43,0.45)';
+            });
+        })();
+    </script>

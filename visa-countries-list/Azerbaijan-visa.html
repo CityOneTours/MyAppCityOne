@@ -176,80 +176,78 @@
             </div>
         </div>
 
-        <!-- Form Section -->
-        <div class="form-container">
+         <!-- Form Section -->
+        <form class="form-container" action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- Web3Forms Hidden Fields -->
+            <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+            <input type="hidden" name="subject" value="General Enquiry - City One Website">
+            <input type="hidden" name="from_name" value="City One Visa Website">
+
             <h2>Simplifying your Visa process with City One!</h2>
             <p>Our team will Contact you shortly to plan your trip.</p>
 
             <div class="form-group">
                 <label>Name</label>
-                <input type="text" placeholder="First name">
+                <input type="text" name="name" placeholder="First name" required>
             </div>
 
             <div class="form-group">
                 <label>Mobile Number</label>
                 <div class="mobile-input">
-                    <!-- <span class="country-code">🇮🇳 +91</span> -->
-                    <input type="tel" placeholder="Enter your 10 digit Mobile number">
+                    <input type="tel" name="phone" placeholder="Enter your 10 digit Mobile number" required>
                 </div>
             </div>
 
-            <!-- <div class="form-group">
-                <label>Address</label>
-                <input type="text" placeholder="From">
-            </div> -->
-
             <div class="form-group">
                 <label>Looking for</label>
-                <select>
-                    <option>Select visa type</option>
-                    <option>Tourist Visa</option>
-                    <option>Business Visa</option>
-                    <option>Transit Visa</option>
-                    <option>Multiple Entry Visa</option>
+                <select name="visa_type" required>
+                    <option value="">Select visa type</option>
+                    <option value="Tourist Visa">Tourist Visa</option>
+                    <option value="Transit Visa">Transit Visa</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="visaCountry">Visa for</label>
-                <input list="countries" id="visaCountry" name="visaCountry" placeholder="Type or select a country">
-                <datalist id="countries">
-                    <option value="India"></option>
-                    <option value="Georgia"></option>
-                    <option value="Albania"></option>
-                    <option value="Armenia"></option>
-                    <option value="Azerbaijan"></option>
-                    <option value="Seychelles"></option>
-                    <option value="Thailand"></option>
-                    <option value="Oman"></option>
-                    <option value="Saudi Arabia"></option>
-                    <option value="Bahrain"></option>
-                    <option value="Uganda"></option>
-                    <option value="Tanzania"></option>
-                    <option value="Indonesia"></option>
-                    <option value="Nepal"></option>
-                    <option value="Ethiopia"></option>
-                    <option value="Nigeria"></option>
-                    <option value="Egypt"></option>
-                    <option value="Turkey"></option>
-                    <option value="Uzbekistan"></option>
-                    <option value="Vietnam"></option>
-                    <option value="Sri Lanka"></option>
-                    <option value="Qatar"></option>
-                    <option value="Tajikistan"></option>
-                    <option value="Moldova"></option>
-                    <option value="Kenya"></option>
-                    <option value="Singapore"></option>
-                    <option value="Japan"></option>
-                    <option value="Colombia"></option>
-                    <option value="Australia"></option>
+                <input list="countries" id="visaCountry" name="country" placeholder="Type or select a country" required>
 
+                <datalist id="countries">
+                    <option value="Dubai">
+                    <option value="Georgia">
+                    <option value="Albania">
+                    <option value="Armenia">
+                    <option value="Azerbaijan">
+                    <option value="Seychelles">
+                    <option value="Thailand">
+                    <option value="Oman">
+                    <option value="Saudi Arabia">
+                    <option value="Bahrain">
+                    <option value="Uganda">
+                    <option value="Tanzania">
+                    <option value="Indonesia">
+                    <option value="Nepal">
+                    <option value="Ethiopia">
+                    <option value="Nigeria">
+                    <option value="Egypt">
+                    <option value="Turkey">
+                    <option value="Uzbekistan">
+                    <option value="Vietnam">
+                    <option value="Sri Lanka">
+                    <option value="Qatar">
+                    <option value="Tajikistan">
+                    <option value="Moldova">
+                    <option value="Kenya">
+                    <option value="Singapore">
+                    <option value="Japan">
+                    <option value="Colombia">
+                    <option value="Australia">
                 </datalist>
             </div>
 
+            <button type="submit" class="submit-btn">Continue</button>
 
-            <button class="submit-btn">Continue</button>
-        </div>
+        </form>
     </section>
 
 
@@ -614,6 +612,7 @@ Murooshed AImheiri Building 307, Oud Metha, Dubai - U.A.E</p> -->
             <li><a href="../hotdeal.html">Hot Deal</a></li>
             <li><a href="../themes.html">Themes</a></li>
             <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../privacy-terms.html">Privacy & Terms</a></li>
           </ul>
         </div>
 

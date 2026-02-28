@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dubai Summer Delights – IITM Ahmedabad</title>
-        <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1232,15 +1232,19 @@
                 height: 36px;
                 font-size: .8rem;
             }
-            .h-enq{
+
+            .h-enq {
                 display: none;
             }
-            .urg-enq{
+
+            .urg-enq {
                 display: none;
             }
-            .mhd{
+
+            .mhd {
                 display: none;
             }
+
             .btn-eq {
                 display: none;
             }
@@ -1511,7 +1515,7 @@
         }
 
         .footer {
-            background: var(--navy);
+            background: var(--navy) !important;
             padding: 34px 16px;
             text-align: center;
         }
@@ -1649,99 +1653,258 @@
                 font-size: .92rem;
             }
         }
+
+
+        /* ================= RELATED PACKAGES ================= */
+
+.rp-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.rp-small-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #D62828;
+    margin-bottom: 8px;
+}
+
+.rp-main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.rp-main-title span {
+    color: #D62828;
+}
+
+.rp-line {
+    width: 60px;
+    height: 4px;
+    background: #D62828;
+    margin: 15px auto 50px;
+    border-radius: 4px;
+}
+
+/* GRID - 3 CARDS */
+.rp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.rp-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
+}
+
+.rp-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* IMAGE */
+.rp-img {
+    height: 230px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.rp-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), transparent 60%);
+}
+
+.rp-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #D62828;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+/* BODY */
+.rp-body {
+    padding: 22px;
+}
+
+.rp-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.rp-hotel {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.rp-hotel i {
+    color: #D62828;
+    margin-right: 5px;
+}
+
+.rp-price {
+    font-size: 22px;
+    font-weight: 800;
+    color: #D62828;
+    margin-bottom: 18px;
+}
+
+.rp-price span {
+    font-size: 13px;
+    color: #777;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.rp-price small {
+    font-size: 13px;
+    color: #777;
+}
+
+/* BUTTON */
+.rp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    background: #D62828;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.rp-btn:hover {
+    background: #A01818;
+    color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .rp-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .rp-grid {
+        grid-template-columns: 1fr;
+    }
+}
     </style>
 </head>
 
 <body>
-<header>
-    <div class="top-bar">
-      <div class="help-container">
-        <button class="help-btn">Help &#9662;</button>
-        <div class="help-dropdown">
-          <span onclick="window.location.href='tel:+97143922959'" style="cursor:pointer;">
-            <i class="fas fa-phone"></i> +971 4 392 2959
-          </span>
-          <span>
-            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
-              <i class="fas fa-envelope"></i> info@cityonetours.com
-            </a>
-          </span>
+    <header>
+        <div class="top-bar">
+            <div class="help-container">
+                <button class="help-btn">Help &#9662;</button>
+                <div class="help-dropdown">
+                    <span onclick="window.location.href='tel:+97143922959'" style="cursor:pointer;">
+                        <i class="fas fa-phone"></i> +971 4 392 2959
+                    </span>
+                    <span>
+                        <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+                            <i class="fas fa-envelope"></i> info@cityonetours.com
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="right">
+                <span id="enquiryBtn"><i class="fas fa-envelope"></i> Enquiry now</span>
+            </div>
+            <div id="enquiryModal" class="modal">
+                <div class="modal-content">
+                    <div class="display-flex">
+                        <h2 class="text-colour">Enquiry Form</h2>
+                        <span class="close">&times;</span>
+                    </div>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+
+                        <input type="hidden" name="subject" value="✈️ IITM Ahmedabad Enquiry Form">
+                        <input type="hidden" name="from_name" value="IITM Ahmedabad Website">
+
+                        <label>Name</label>
+                        <input type="text" name="name" required>
+
+                        <label>Email</label>
+                        <input type="email" name="email" required>
+
+                        <label>Phone</label>
+                        <input type="tel" name="phone" required>
+
+                        <!-- Reply To Customer Email -->
+                        <input type="hidden" name="replyto" value="">
+
+                        <button type="submit">Submit</button>
+
+                    </form>
+
+
+                </div>
+            </div>
         </div>
+        <nav class="navbar">
+      <div class="logo"> <a href="/">
+          <img src="images/image 8916.png" alt="" class="logo"> </a></div>
       </div>
-      <div class="right">
-        <span id="enquiryBtn"><i class="fas fa-envelope"></i> Enquiry now</span>
-      </div>
-      <div id="enquiryModal" class="modal">
-        <div class="modal-content">
-          <div class="display-flex">
-            <h2 class="text-colour">Enquiry Form</h2>
-            <span class="close">&times;</span>
-          </div>
-<form action="https://api.web3forms.com/submit" method="POST">
+            <div class="menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
 
-  <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
-
-  <input type="hidden" name="subject" value="✈️ IITM Ahmedabad Enquiry Form">
-  <input type="hidden" name="from_name" value="IITM Ahmedabad Website">
-
-  <label>Name</label>
-  <input type="text" name="name" required>
-
-  <label>Email</label>
-  <input type="email" name="email" required>
-
-  <label>Phone</label>
-  <input type="tel" name="phone" required>
-
-  <!-- Reply To Customer Email -->
-  <input type="hidden" name="replyto" value="">
-
-  <button type="submit">Submit</button>
-
-</form>
-
-
-        </div>
-      </div>
-    </div>
-    <nav class="navbar">
-      <div class="logo"><img src="images/CT1 logo High resolution.png" alt="" class="logo" loading="lazy"></div>
-      </div>
-      <div class="menu-btn" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-      </div>
-
-      <div class="nav-links" id="navLinks">
-        <a href="destination.html"><i class="fas fa-search-location"></i> Destination</a>
-        <a href="hotdeal.html"><i class="fas fa-suitcase-rolling"></i> Hot Deal</a>
-        <div class="dropdown">
-          <a href="themes.html" class="dropbtn">
-            <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
-          </a>
-          <div class="dropdown-menu">
-            <a href="themes.html">Adventure</a>
-            <a href="themes.html">Luxury Tours</a>
-            <a href="themes.html">Honey moon</a>
-            <a href="themes.html">Family with Kids</a>
-            <a href="themes.html">Safari</a>
-            <a href="themes.html">Family with Kids</a>
-            <a href="themes.html">Nature</a>
-            <a href="themes.html">Wild Life</a>
-            <a href="">Beach</a>
-          </div>
-        </div>
-        <a href="visa.html"><i class="fas fa-passport"></i> Visa</a>
-        <a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
-        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
-        <a href="contact.html"><i class="fas fa-users"></i> Contact</a>
-        <!-- <select id="currencySelect">
+            <div class="nav-links" id="navLinks">
+                <a href="destination.html"><i class="fas fa-search-location"></i> Destination</a>
+                <a href="hotdeal.html"><i class="fas fa-suitcase-rolling"></i> Hot Deal</a>
+                <div class="dropdown">
+                    <a href="themes.html" class="dropbtn">
+                        <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="themes.html">Adventure</a>
+                        <a href="themes.html">Luxury Tours</a>
+                        <a href="themes.html">Honey moon</a>
+                        <a href="themes.html">Family with Kids</a>
+                        <a href="themes.html">Safari</a>
+                        <a href="themes.html">Family with Kids</a>
+                        <a href="themes.html">Nature</a>
+                        <a href="themes.html">Wild Life</a>
+                        <a href="">Beach</a>
+                    </div>
+                </div>
+                <a href="visa.html"><i class="fas fa-passport"></i> Visa</a>
+                <a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
+                <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                <a href="contact.html"><i class="fas fa-users"></i> Contact</a>
+                <!-- <select id="currencySelect">
           <option value="AED">AED</option>
           <option value="INR">INR</option>
           <option value="USD">USD</option>
         </select> -->
-      </div>
-    </nav>
-  </header>
+            </div>
+        </nav>
+    </header>
     <!-- TICKER -->
 
 
@@ -1757,70 +1920,70 @@
                 <button class="mclose" onclick="closeEnq()">✕</button>
             </div>
             <div class="mgold"></div>
- <form action="https://api.web3forms.com/submit" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST">
 
-    <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
-    <input type="hidden" name="subject" value="✈️ Dubai Trip Enquiry">
-    <input type="hidden" name="from_name" value="City One Website">
+                <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+                <input type="hidden" name="subject" value="✈️ Dubai Trip Enquiry">
+                <input type="hidden" name="from_name" value="City One Website">
 
-    <div class="frow">
-        <div class="fg">
-            <label>Full Name *</label>
-            <input type="text" name="name" placeholder="Your name" required>
-        </div>
-        <div class="fg">
-            <label>Mobile / WhatsApp *</label>
-            <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required>
-        </div>
-    </div>
+                <div class="frow">
+                    <div class="fg">
+                        <label>Full Name *</label>
+                        <input type="text" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="fg">
+                        <label>Mobile / WhatsApp *</label>
+                        <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+                </div>
 
-    <div class="fg">
-        <label>Email Address</label>
-        <input type="email" name="email" placeholder="your@email.com">
-    </div>
+                <div class="fg">
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="your@email.com">
+                </div>
 
-    <div class="frow">
-        <div class="fg">
-            <label>Package Interest</label>
-            <select name="package">
-                <option value="">Select Package</option>
-                <option value="3star">3★ Classic – Fortune Pearl Deira</option>
-                <option value="4star">4★ Premium – Omega / Jacobs Garden</option>
-                <option value="both">Both Options</option>
-            </select>
-        </div>
-        <div class="fg">
-            <label>Group Size</label>
-            <select name="group_size">
-                <option value="">Select</option>
-                <option>2 Persons</option>
-                <option>4 Persons</option>
-                <option>6 Persons</option>
-                <option>More than 6</option>
-            </select>
-        </div>
-    </div>
+                <div class="frow">
+                    <div class="fg">
+                        <label>Package Interest</label>
+                        <select name="package">
+                            <option value="">Select Package</option>
+                            <option value="3star">3★ Classic – Fortune Pearl Deira</option>
+                            <option value="4star">4★ Premium – Omega / Jacobs Garden</option>
+                            <option value="both">Both Options</option>
+                        </select>
+                    </div>
+                    <div class="fg">
+                        <label>Group Size</label>
+                        <select name="group_size">
+                            <option value="">Select</option>
+                            <option>2 Persons</option>
+                            <option>4 Persons</option>
+                            <option>6 Persons</option>
+                            <option>More than 6</option>
+                        </select>
+                    </div>
+                </div>
 
-    <div class="fg">
-        <label>Travel Month</label>
-        <select name="travel_month">
-            <option value="">Select Month</option>
-            <option>April 2025</option>
-            <option>May 2025</option>
-            <option>June 2025</option>
-            <option>July 2025</option>
-            <option>August 2025</option>
-        </select>
-    </div>
+                <div class="fg">
+                    <label>Travel Month</label>
+                    <select name="travel_month">
+                        <option value="">Select Month</option>
+                        <option>April 2025</option>
+                        <option>May 2025</option>
+                        <option>June 2025</option>
+                        <option>July 2025</option>
+                        <option>August 2025</option>
+                    </select>
+                </div>
 
-    <div class="fg">
-        <label>Message / Special Requirements</label>
-        <textarea name="message" placeholder="Any questions or special requests..."></textarea>
-    </div>
+                <div class="fg">
+                    <label>Message / Special Requirements</label>
+                    <textarea name="message" placeholder="Any questions or special requests..."></textarea>
+                </div>
 
-    <button type="submit" class="fsubmit">🚀 Submit Enquiry</button>
+                <button type="submit" class="fsubmit">🚀 Submit Enquiry</button>
 
-</form>
+            </form>
 
         </div>
     </div>
@@ -1843,9 +2006,9 @@
 
     <!-- HERO -->
     <section class="hero">
-<video autoplay muted loop playsinline width="100%">
-    <source src="https://www.pexels.com/download/video/33335887/" type="video/mp4">
-</video>
+        <video autoplay muted loop playsinline width="100%">
+            <source src="https://www.pexels.com/download/video/33335887/" type="video/mp4">
+        </video>
 
         <div class="hero-ov"></div>
         <div class="hero-c">
@@ -1988,8 +2151,7 @@
                     </div>
                 </div>
                 <div class="htl-card fiu">
-                    <div class="htl-img-w"><img
-                            src="https://dubaitraveldmc.com/wp-content/uploads/2023/05/Omega-1.jpg"
+                    <div class="htl-img-w"><img src="https://dubaitraveldmc.com/wp-content/uploads/2023/05/Omega-1.jpg"
                             alt="4 Star Hotel" loading="lazy"><span class="htl-sb"
                             style="color:var(--gold-lt);border-color:var(--gold-lt);">⭐⭐⭐⭐ 4-Star</span></div>
                     <div class="htl-info">
@@ -2097,8 +2259,7 @@
                     </div>
                     <div class="itin-card">
                         <div class="itin-img">
-                            <img src="images/desaert safari background.jpg.jpeg"
-                                alt="Desert Safari" loading="lazy">
+                            <img src="images/desaert safari background.jpg.jpeg" alt="Desert Safari" loading="lazy">
                         </div>
                         <div class="itin-cnt">
                             <div>
@@ -2333,7 +2494,95 @@
             </div>
         </div>
     </section>
+<!-- ================= RELATED PACKAGES ================= -->
+<section class="rp-section">
+    <div class="container">
+        <div class="rp-head text-center">
+            <div class="rp-small-title">You May Also Like</div>
+            <h2 class="rp-main-title">Related <span>Dubai Packages</span></h2>
+            <div class="rp-line"></div>
+        </div>
 
+        <div class="rp-grid">
+
+            <!-- CARD 1 -->
+            <div class="rp-card">
+                <div class="rp-img" style="background-image:url('images/desaert safari background.jpg.jpeg');">
+                    <div class="rp-badge">04N / 05D</div>
+                </div>
+                <div class="rp-body">
+                    <h3 class="rp-title">Super Summer Saver Dubai</h3>
+                    <p class="rp-hotel">
+                        <i class="fa-solid fa-hotel"></i>
+                        Majestic Premier / City Retreat
+                    </p>
+
+                    <div class="rp-price">
+                        <span>From</span>
+                        ₹32,000
+                        <small>/person</small>
+                    </div>
+
+                    <a href="package1.html" class="rp-btn">
+                        View Package
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="rp-card">
+                <div class="rp-img" style="background-image:url('https://cdn.wallpapersafari.com/9/78/9I0ucG.jpg');">
+                    <div class="rp-badge">04N / 05D</div>
+                </div>
+                <div class="rp-body">
+                    <h3 class="rp-title">Lapita Resort & Water Park</h3>
+                    <p class="rp-hotel">
+                        <i class="fa-solid fa-hotel"></i>
+                        Fortune Pearl + Lapita Resort
+                    </p>
+
+                    <div class="rp-price">
+                        <span>From</span>
+                        ₹36,799
+                        <small>/person</small>
+                    </div>
+
+                    <a href="package3.html" class="rp-btn">
+                        View Package
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="rp-card">
+                <div class="rp-img" style="background-image:url('https://uae.luxeglamp.com/wp-content/uploads/2025/07/image-11-scaled.png');">
+                    <div class="rp-badge">04N / 05D</div>
+                </div>
+                <div class="rp-body">
+                    <h3 class="rp-title">Summer Delights 3★ & 4★</h3>
+                    <p class="rp-hotel">
+                        <i class="fa-solid fa-hotel"></i>
+                        Fortune Pearl / Omega
+                    </p>
+
+                    <div class="rp-price">
+                        <span>From</span>
+                        ₹31,799
+                        <small>/person</small>
+                    </div>
+
+                    <a href="package4.html" class="rp-btn">
+                        View Package
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
     <!-- TERMS -->
     <section class="terms">
         <div class="terms-w">
@@ -2428,8 +2677,8 @@
         }, { threshold: 0.1, rootMargin: '0px 0px -45px 0px' });
         document.querySelectorAll('.fiu,.inc-card').forEach(el => io.observe(el));
     </script>
-        <script src="contact.js"></script>
-    
+    <script src="contact.js"></script>
+
 </body>
 
 </html>
