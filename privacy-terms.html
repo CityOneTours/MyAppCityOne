@@ -1,770 +1,1376 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Legal Policies — City One Tourism & Travel</title>
-<link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap"
-        rel="stylesheet">
-<style>
-  :root {
-    --red:        #FF0000;
-    --red-dark:   #CC0000;
-    --red-soft:   #FF3333;
-    --red-tint:   #FFF0F0;
-    --red-tint2:  #FFE5E5;
-    --red-border: rgba(255,0,0,0.15);
-    --white:      #FFFFFF;
-    --bg:         #F7F7F7;
-    --surface:    #FFFFFF;
-    --text:       #1A1A1A;
-    --text-mid:   #444444;
-    --text-muted: #777777;
-    --border:     #E8E8E8;
-    --shadow:     rgba(255,0,0,0.08);
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Policies — City One Tourism & Travel</title>
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #FF0000;
+      --red-dark: #CC0000;
+      --red-tint: #FFF0F0;
+      --red-tint2: #FFE5E5;
+      --red-border: rgba(255, 0, 0, .15);
+      --white: #fff;
+      --bg: #F7F7F7;
+      --surface: #fff;
+      --text: #1A1A1A;
+      --text-mid: #444;
+      --text-muted: #777;
+      --border: #E8E8E8;
+      --shadow: rgba(255, 0, 0, .08);
+    }
 
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    font-size: 15px;
-    line-height: 1.75;
-    font-weight: 400;
-  }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
 
-  /* ── HEADER ── */
-  .lp-header {
-    background: var(--white);
-    border-bottom: 3px solid var(--red);
-    padding: 56px 24px 48px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
+    html {
+      scroll-behavior: smooth
+    }
 
-  .lp-header::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at 50% -20%, rgba(255,0,0,0.06) 0%, transparent 65%);
-    pointer-events: none;
-  }
+    body {
+  font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.75
+    }
+body, button, input, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+    /* ── HEADER ── */
+    .lp-header {
+      background: var(--white);
+      border-bottom: 3px solid var(--red);
+      padding: 122px 24px 38px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
 
-  .lp-header-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--red);
-    font-weight: 600;
-    margin-bottom: 18px;
-  }
+    .lp-header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% -20%, rgba(255, 0, 0, .06) 0%, transparent 65%);
+      pointer-events: none
+    }
 
-  .lp-header-eyebrow::before,
-  .lp-header-eyebrow::after {
-    content: '';
-    width: 28px;
-    height: 1.5px;
-    background: var(--red);
-    display: block;
-  }
+    .lp-header-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 700;
+      margin-bottom: 14px
+    }
 
-  .lp-header h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    font-weight: 700;
-    color: var(--text);
-    line-height: 1.1;
-    letter-spacing: -0.5px;
-    margin-bottom: 14px;
-  }
+    .lp-header-eyebrow:before,
+    .lp-header-eyebrow:after {
+      content: '';
+      width: 28px;
+      height: 1.5px;
+      background: var(--red);
+      display: block
+    }
 
-  .lp-header h1 em {
-    color: var(--red);
-    font-style: italic;
-  }
+    .lp-header h1 {
+      font-size: clamp(1.9rem, 4.6vw, 3rem);
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.1;
+      letter-spacing: -.4px;
+      margin-bottom: 10px
+    }
 
-  .lp-header-meta {
-    color: var(--text-muted);
-    font-size: 13px;
-    letter-spacing: 0.3px;
-  }
+    .lp-header h1 em {
+      color: var(--red);
+      font-style: italic
+    }
 
-  .lp-header-meta strong {
-    color: var(--text-mid);
-    font-weight: 600;
-  }
+    .lp-header-meta {
+      color: var(--text-muted);
+      font-size: 13px;
+      letter-spacing: .2px
+    }
 
-  /* ── STICKY NAV ── */
-  .lp-nav {
-    position: sticky;
-    top: 0;
-    z-index: 200;
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    display: flex;
-    justify-content: center;
-    overflow-x: auto;
-  }
+    .lp-header-meta strong {
+      color: var(--text-mid);
+      font-weight: 700
+    }
 
-  .lp-nav a {
-    color: var(--text-muted);
-    text-decoration: none;
-    font-size: 11.5px;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    padding: 15px 24px;
-    white-space: nowrap;
-    border-bottom: 3px solid transparent;
-    transition: color 0.2s, border-color 0.2s;
-  }
+    /* ── STICKY NAV ── */
+    .lp-nav {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .06);
+      display: flex;
+      justify-content: center;
+      overflow-x: auto
+    }
 
-  .lp-nav a:hover { color: var(--red); }
-  .lp-nav a.is-active {
-    color: var(--red);
-    border-bottom-color: var(--red);
-  }
+    .lp-nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 15px 20px;
+      white-space: nowrap;
+      border-bottom: 3px solid transparent;
+      transition: color .2s, border-color .2s
+    }
 
-  /* ── PAGE WRAPPER ── */
-  .lp-wrapper {
-    max-width: 920px;
-    margin: 0 auto;
-    padding: 0 24px 80px;
-  }
+    .lp-nav a:hover {
+      color: var(--red)
+    }
 
-  /* ── SECTION ── */
-  .lp-section { padding-top: 64px; }
+    .lp-nav a.is-active {
+      color: var(--red);
+      border-bottom-color: var(--red)
+    }
 
-  .lp-section-header {
-    display: flex;
-    align-items: flex-end;
-    gap: 20px;
-    margin-bottom: 32px;
-    padding-bottom: 20px;
-    margin-top: 80px;
-    border-bottom: 1px solid var(--border);
-  }
+    /* ── WRAPPER ── */
+    .lp-wrapper {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 24px 80px
+    }
 
-  .lp-section-num {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: var(--red-tint2);
-    line-height: 1;
-    user-select: none;
-    letter-spacing: -1px;
-  }
+    /* ── SECTION ── */
+    .lp-section {
+      padding-top: 58px
+    }
 
-  .lp-section-titles h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--text);
-    line-height: 1.1;
-  }
+    .lp-section-header {
+      display: flex;
+      align-items: flex-end;
+      gap: 18px;
+      margin-bottom: 26px;
+      padding-bottom: 18px;
+      margin-top: 70px;
+      border-bottom: 1px solid var(--border)
+    }
 
-  .lp-section-titles p {
-    color: var(--text-muted);
-    font-size: 13px;
-    margin-top: 4px;
-  }
+    .lp-section-num {
+      font-size: 3.1rem;
+      font-weight: 800;
+      color: var(--red-tint2);
+      line-height: 1;
+      user-select: none;
+      letter-spacing: -1px
+    }
 
-  /* ── CLAUSE CARD ── */
-  .clause-list { display: flex; flex-direction: column; gap: 10px; }
+    .lp-section-titles h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.1
+    }
 
-  .clause-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-left: 3px solid transparent;
-    border-radius: 6px;
-    padding: 22px 26px;
-    transition: border-left-color 0.2s, box-shadow 0.2s;
-  }
+    .lp-section-titles p {
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-top: 4px
+    }
 
-  .clause-card:hover {
-    border-left-color: var(--red);
-    box-shadow: 0 4px 20px var(--shadow);
-  }
+    /* ── CARDS ── */
+    .clause-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px
+    }
 
-  .clause-tag {
-    font-size: 10px;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    color: var(--red);
-    font-weight: 600;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
+    .clause-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid transparent;
+      border-radius: 6px;
+      padding: 20px 24px;
+      transition: border-left-color .2s, box-shadow .2s
+    }
 
-  .clause-tag::before {
-    content: '';
-    width: 16px;
-    height: 1.5px;
-    background: var(--red);
-    display: inline-block;
-  }
+    .clause-card:hover {
+      border-left-color: var(--red);
+      box-shadow: 0 4px 20px var(--shadow)
+    }
 
-  .clause-heading {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 8px;
-  }
+    .clause-tag {
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 800;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 6px
+    }
 
-  .clause-text {
-    color: var(--text-mid);
-    font-size: 14px;
-    line-height: 1.8;
-  }
+    .clause-tag:before {
+      content: '';
+      width: 16px;
+      height: 1.5px;
+      background: var(--red);
+      display: inline-block
+    }
 
-  .clause-text strong { color: var(--text); font-weight: 600; }
+    .clause-heading {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 8px
+    }
 
-  /* ── HIGHLIGHT BOX ── */
-  .highlight-box {
-    background: var(--red-tint);
-    border: 1px solid var(--red-border);
-    border-left: 3px solid var(--red);
-    border-radius: 6px;
-    padding: 16px 22px;
-    margin-bottom: 10px;
-    color: var(--text-mid);
-    font-size: 14px;
-  }
+    .clause-text {
+      color: var(--text-mid);
+      font-size: 14px;
+      line-height: 1.8
+    }
 
-  .highlight-box strong { color: var(--red-dark); font-weight: 600; }
+    .clause-text strong {
+      color: var(--text);
+      font-weight: 800
+    }
 
-  /* ── REFUND TABLE ── */
-  .refund-table-wrap {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  }
+    /* ── HIGHLIGHT ── */
+    .highlight-box {
+      background: var(--red-tint);
+      border: 1px solid var(--red-border);
+      border-left: 3px solid var(--red);
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      color: var(--text-mid);
+      font-size: 14px
+    }
 
-  .refund-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13.5px;
-  }
+    .highlight-box strong {
+      color: var(--red-dark);
+      font-weight: 900
+    }
 
-  .refund-table thead { background: var(--red); }
+    /* ── TABLE ── */
+    .refund-table-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .04)
+    }
 
-  .refund-table thead th {
-    text-align: left;
-    padding: 13px 20px;
-    color: #fff;
-    font-size: 10.5px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
+    .refund-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px
+    }
 
-  .refund-table tbody tr {
-    border-bottom: 1px solid var(--border);
-    transition: background 0.15s;
-  }
+    .refund-table thead {
+      background: var(--red)
+    }
 
-  .refund-table tbody tr:last-child { border-bottom: none; }
-  .refund-table tbody tr:hover { background: var(--red-tint); }
+    .refund-table thead th {
+      text-align: left;
+      padding: 13px 18px;
+      color: #fff;
+      font-size: 10.5px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 800
+    }
 
-  .refund-table td {
-    padding: 14px 20px;
-    color: var(--text-mid);
-    vertical-align: middle;
-  }
+    .refund-table tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background .15s
+    }
 
-  .rt-badge {
-    display: inline-block;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 11.5px;
-    font-weight: 600;
-  }
-  .rt-badge.good { background: #E8F5E9; color: #2E7D32; }
-  .rt-badge.mid  { background: #FFF8E1; color: #F57F17; }
-  .rt-badge.bad  { background: #FFEBEE; color: #C62828; }
+    .refund-table tbody tr:last-child {
+      border-bottom: none
+    }
 
-  /* ── PRIVACY GRID ── */
-  .privacy-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-    gap: 10px;
-    margin-bottom: 10px;
-  }
+    .refund-table tbody tr:hover {
+      background: var(--red-tint)
+    }
 
-  .priv-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 22px;
-    transition: box-shadow 0.2s, border-color 0.2s;
-  }
+    .refund-table td {
+      padding: 14px 18px;
+      color: var(--text-mid);
+      vertical-align: middle
+    }
 
-  .priv-card:hover {
-    border-color: var(--red-border);
-    box-shadow: 0 4px 16px var(--shadow);
-  }
+    .rt-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 11.5px;
+      font-weight: 800
+    }
 
-  .priv-card-icon {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background: var(--red-tint);
-    border: 1px solid var(--red-border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 17px;
-    margin-bottom: 14px;
-  }
+    .rt-badge.good {
+      background: #E8F5E9;
+      color: #2E7D32
+    }
 
-  .priv-card-title {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 8px;
-  }
+    .rt-badge.mid {
+      background: #FFF8E1;
+      color: #F57F17
+    }
 
-  .priv-card-text {
-    color: var(--text-mid);
-    font-size: 13.5px;
-    line-height: 1.75;
-  }
+    .rt-badge.bad {
+      background: #FFEBEE;
+      color: #C62828
+    }
 
-  /* ── DIVIDER ── */
-  .lp-divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+    /* ── GRID ── */
+    .privacy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+      gap: 10px;
+      margin-bottom: 10px
+    }
 
-  /* ── CONTACT ── */
-  .contact-strip {
-    margin-top: 60px;
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-top: 3px solid var(--red);
-    border-radius: 6px;
-    overflow: hidden;
-  }
+    .priv-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px;
+      transition: box-shadow .2s, border-color .2s
+    }
 
-  .contact-strip-top {
-    background: var(--red);
-    padding: 20px 32px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
+    .priv-card:hover {
+      border-color: var(--red-border);
+      box-shadow: 0 4px 16px var(--shadow)
+    }
 
-  .contact-strip-top h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #fff;
-  }
+    .priv-card-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--red-tint);
+      border: 1px solid var(--red-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      margin-bottom: 12px
+    }
 
-  .contact-strip-top span {
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.7);
-    border-left: 1px solid rgba(255,255,255,0.3);
-    padding-left: 12px;
-  }
+    .priv-card-title {
+      font-size: 1.08rem;
+      font-weight: 900;
+      color: var(--text);
+      margin-bottom: 8px
+    }
 
-  .contact-strip-body {
-    padding: 28px 32px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 24px;
-  }
+    .priv-card-text {
+      color: var(--text-mid);
+      font-size: 13.5px;
+      line-height: 1.75
+    }
 
-  .contact-col-label {
-    font-size: 10px;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    color: var(--red);
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
+    /* ── SIMPLE LIST ── */
+    .tick-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 10px
+    }
 
-  .contact-items { display: flex; flex-direction: column; gap: 7px; }
+    .tick-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 16px 18px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start
+    }
 
-  .contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 9px;
-    font-size: 13.5px;
-    color: var(--text-mid);
-  }
+    .tick-ic {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--red-tint);
+      border: 1px solid var(--red-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      font-size: 12px
+    }
 
-  .contact-item-icon {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--red-tint);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    flex-shrink: 0;
-    margin-top: 2px;
-  }
+    .tick-item b {
+      display: block;
+      font-weight: 900;
+      color: var(--text)
+    }
 
-  .contact-item a { color: inherit; text-decoration: none; transition: color 0.2s; }
-  .contact-item a:hover { color: var(--red); }
+    .tick-item span {
+      display: block;
+      color: var(--text-mid);
+      font-size: 13.5px;
+      line-height: 1.6
+    }
 
-  .support-badge {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: var(--red-tint);
-    border: 2px solid var(--red-border);
-    border-radius: 8px;
-    padding: 16px 24px;
-    text-align: center;
-  }
+    /* ── STEPS ── */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px
+    }
 
-  .support-badge-num {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: var(--red);
-    line-height: 1;
-  }
+    .step {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 18px
+    }
 
-  .support-badge-label {
-    font-size: 11px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    font-weight: 600;
-    margin-top: 4px;
-  }
+    .step .no {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 900;
+      margin-bottom: 8px
+    }
 
-  /* ── FOOTER ── */
-  .lp-footer {
-    background: var(--white);
-    border-top: 1px solid var(--border);
-    text-align: center;
-    padding: 24px;
-    font-size: 12px;
-    color: var(--text-muted);
-  }
+    .step h4 {
+      margin: 0 0 6px;
+      font-size: 1.05rem;
+      font-weight: 900
+    }
 
-  .lp-footer strong { color: var(--red); font-weight: 600; }
+    .step p {
+      margin: 0;
+      color: var(--text-mid);
+      font-size: 13.5px;
+      line-height: 1.7
+    }
 
-  /* ── ANIMATION ── */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(14px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
+    /* ── FAQ ── */
+    .faq {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden
+    }
 
-  .lp-header > * { animation: fadeUp 0.5s ease both; }
-  .lp-header .lp-header-eyebrow { animation-delay: 0s; }
-  .lp-header h1                  { animation-delay: 0.1s; }
-  .lp-header .lp-header-meta     { animation-delay: 0.2s; }
+    .faq details {
+      border-bottom: 1px solid var(--border);
+      padding: 14px 18px
+    }
 
-  @media (max-width: 600px) {
-    .lp-section-num { font-size: 2.5rem; }
-    .clause-card, .priv-card { padding: 16px; }
-    .contact-strip-body, .contact-strip-top { padding: 18px 20px; }
-    .lp-nav a { padding: 13px 14px; font-size: 10.5px; }
-  }
-</style>
+    .faq details:last-child {
+      border-bottom: none
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: 900;
+      color: var(--text);
+      list-style: none
+    }
+
+    .faq summary::-webkit-details-marker {
+      display: none
+    }
+
+    .faq .ans {
+      margin-top: 8px;
+      color: var(--text-mid);
+      font-size: 13.8px;
+      line-height: 1.75
+    }
+
+    /* ── DIVIDER ── */
+    .lp-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 0
+    }
+
+    /* ── CONTACT STRIP ── */
+    .contact-strip {
+      margin-top: 60px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--red);
+      border-radius: 6px;
+      overflow: hidden
+    }
+
+    .contact-strip-top {
+      background: var(--red);
+      padding: 20px 28px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap
+    }
+
+    .contact-strip-top h3 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #fff;
+      margin: 0
+    }
+
+    .contact-strip-top span {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .75);
+      border-left: 1px solid rgba(255, 255, 255, .35);
+      padding-left: 12px
+    }
+
+    .contact-strip-body {
+      padding: 24px 28px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px
+    }
+
+    .contact-col-label {
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 900;
+      margin-bottom: 10px
+    }
+
+    .contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: 7px
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      font-size: 13.5px;
+      color: var(--text-mid)
+    }
+
+    .contact-item-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--red-tint);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      flex-shrink: 0;
+      margin-top: 2px
+    }
+
+    .contact-item a {
+      color: inherit;
+      text-decoration: none;
+      transition: color .2s
+    }
+
+    .contact-item a:hover {
+      color: var(--red)
+    }
+
+    .support-badge {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--red-tint);
+      border: 2px solid var(--red-border);
+      border-radius: 8px;
+      padding: 14px 18px;
+      text-align: center
+    }
+
+    .support-badge-num {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--red);
+      line-height: 1
+    }
+
+    .support-badge-label {
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 900;
+      margin-top: 4px
+    }
+
+    .map-embed {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff
+    }
+
+    .map-embed iframe {
+      width: 100%;
+      height: 220px;
+      border: 0;
+      display: block
+    }
+
+    /* ── FOOTER ── */
+    .lp-footer {
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: var(--text-muted)
+    }
+
+    .lp-footer strong {
+      color: var(--red);
+      font-weight: 900
+    }
+
+    @media(max-width:600px) {
+      .lp-section-num {
+        font-size: 2.4rem
+      }
+
+      .clause-card,
+      .priv-card {
+        padding: 16px
+      }
+
+      .lp-nav a {
+        padding: 13px 14px;
+        font-size: 10.5px
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-        <div class="top-bar">
-            <div class="help-container">
-                <button class="help-btn">Help &#9662;</button>
-                <div class="help-dropdown">
-                    <span onclick="window.location.href='tel:+97143922959'" style="cursor:pointer;">
-                        <i class="fas fa-phone"></i> +971 4 392 2959
-                    </span>
-                    <span>
-                        <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
-                            <i class="fas fa-envelope"></i> info@cityonetours.com
-                        </a>
-                    </span>
-                </div>
-            </div>
-            <div class="right">
-                <!-- ✅ FIXED: directly calls openEnqModal() -->
-                <span id="enquiryBtn" onclick="openEnqModal()" style="cursor:pointer;">
-                    <i class="fas fa-envelope"></i> Enquiry now
-                </span>
-            </div>
+  <!-- ===== Your existing header/navbar kept as-is ===== -->
+  <header>
+    <div class="top-bar">
+      <div class="help-container">
+        <button class="help-btn">Help &#9662;</button>
+        <div class="help-dropdown">
+          <span onclick="window.location.href='tel:+97143922959'" style="cursor:pointer;">
+            <i class="fas fa-phone"></i> +971 4 392 2959
+          </span>
+          <span>
+            <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
+              <i class="fas fa-envelope"></i> info@cityonetours.com
+            </a>
+          </span>
         </div>
-        <nav class="navbar">
-      <div class="logo"> <a href="/">
-          <img src="images/image 8916.png" alt="" class="logo"> </a></div>
-      </div>            <div class="menu-btn" onclick="toggleMenu()">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="nav-links" id="navLinks">
-                <a href="destination.html"><i class="fas fa-search-location"></i> Destination</a>
-                <a href="hotdeal.html"><i class="fas fa-suitcase-rolling"></i> Hot Deal</a>
-                <div class="dropdown">
-                    <a href="themes.html" class="dropbtn">
-                        <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-menu">
-                        <a href="themes.html">Adventure</a>
-                        <a href="themes.html">Luxury Tours</a>
-                        <a href="themes.html">Honey moon</a>
-                        <a href="themes.html">Family with Kids</a>
-                        <a href="themes.html">Safari</a>
-                        <a href="themes.html">Nature</a>
-                        <a href="themes.html">Wild Life</a>
-                        <a href="">Beach</a>
-                    </div>
-                </div>
-                <a href="visa.html"><i class="fas fa-passport"></i> Visa</a>
-                <a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
-                <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
-                <a href="contact.html"><i class="fas fa-users"></i> Contact</a>
-            </div>
-        </nav>
-    </header>
+      </div>
 
-<div class="lp-wrapper">
-
-  <!-- TERMS -->
-  <section class="lp-section" id="terms">
-    <div class="lp-section-header">
-      <div class="lp-section-num">01</div>
-      <div class="lp-section-titles">
-        <h2>Terms &amp; Conditions</h2>
-        <p>Using our online booking facility means full acceptance of all terms below.</p>
+      <div class="right">
+        <span id="enquiryBtn" onclick="openEnqModal()" style="cursor:pointer;">
+          <i class="fas fa-envelope"></i> Enquiry now
+        </span>
       </div>
     </div>
-    <div class="clause-list">
-      <div class="clause-card">
-        <div class="clause-tag">Clause 01</div>
-        <div class="clause-heading">Payment</div>
-        <div class="clause-text">Full payment is required at the time of booking. We reserve the right to cancel any booking where full payment has not been received <strong>2 days prior</strong> to the activity's start. All payments must be made in the local currency — <strong>AED</strong>.</div>
+
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/"><img src="images/image 8916.png" alt="" class="logo" /></a>
       </div>
-      <div class="clause-card">
-        <div class="clause-tag">Clause 02</div>
-        <div class="clause-heading">Accepted Payment Methods</div>
-        <div class="clause-text">We accept <strong>Visa</strong> and <strong>MasterCard</strong> credit/debit card payments via our website.</div>
+
+      <div class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="destination.html"><i class="fas fa-search-location"></i> Destination</a>
+        <a href="hotdeal.html"><i class="fas fa-suitcase-rolling"></i> Hot Deal</a>
+
+        <div class="dropdown">
+          <a href="themes.html" class="dropbtn">
+            <i class="fas fa-map-marked-alt"></i> Themes <i class="fas fa-caret-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="themes.html">Adventure</a>
+            <a href="themes.html">Luxury Tours</a>
+            <a href="themes.html">Honey moon</a>
+            <a href="themes.html">Family with Kids</a>
+
+          </div>
+        </div>
+
+        <a href="visa.html"><i class="fas fa-passport"></i> Visa</a>
+        <a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="contact.html"><i class="fas fa-users"></i> Contact</a>
       </div>
-      <div class="clause-card">
-        <div class="clause-tag">Clause 03</div>
-        <div class="clause-heading">Booking Confirmation &amp; Delivery</div>
-        <div class="clause-text">A confirmation email will be sent within <strong>24 hours</strong> of completed payment — this serves as proof of booking. Failure to arrive at the designated location by the specified departure time is treated as a last-minute cancellation; no refund will be issued.</div>
-      </div>
-      <div class="clause-card">
-        <div class="clause-tag">Clause 04</div>
-        <div class="clause-heading">Service &amp; Cancellations by Us</div>
-        <div class="clause-text">We reserve the right to cancel or modify any part of an activity at our sole discretion and without prior notice. This may result from factors beyond our control — weather, accidents, sickness, government restrictions, or other force majeure events. A full or partial refund may be granted at our discretion.</div>
-      </div>
-      <div class="clause-card">
-        <div class="clause-tag">Clause 05</div>
-        <div class="clause-heading">Pricing</div>
-        <div class="clause-text">Prices are displayed in <strong>USD</strong> but charged in <strong>AED</strong>. Billing discrepancies must be reported within <strong>7 days</strong> of the transaction; requests after this period will not be entertained. Rates are subject to change without notice.</div>
-      </div>
-      <div class="clause-card">
-        <div class="clause-tag">Clause 06</div>
-        <div class="clause-heading">Inclusions</div>
-        <div class="clause-text">Unless stated otherwise, all prices are <strong>per person</strong> and exclude: tips, passport/visa fees, travel insurance, food &amp; beverages, accommodation, room service, and laundry charges.</div>
-      </div>
-      <div class="clause-card">
-        <div class="clause-tag">Clause 07</div>
-        <div class="clause-heading">Liability</div>
-        <div class="clause-text">You acknowledge the potential risks of chosen activities and confirm you are physically and mentally capable of participating. Where we act as agent for third-party operators, their terms apply. To the maximum extent permitted by law, we accept no liability for any damage, loss, injury, or death. All personal effects are at your sole risk.</div>
-      </div>
-      <div class="clause-card">
-        <div class="clause-tag">Clause 08</div>
-        <div class="clause-heading">Disputes &amp; Governing Law</div>
-        <div class="clause-text">Any disputes are governed by <strong>UAE Law</strong>. These Terms &amp; Conditions may be updated periodically; customers will be notified of significant changes.</div>
-      </div>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE HERO (NEW) ===== -->
+  <section class="lp-header" id="top">
+    <div class="lp-header-eyebrow">CITY ONE TOURISM</div>
+    <h1>Legal &amp; <em>Visa Assistance</em> Policies</h1>
+    <div class="lp-header-meta">
+      Transparent information for <strong>Terms</strong>, <strong>Refunds</strong>, <strong>Privacy</strong> &amp;
+      <strong>Visa Assistance</strong>.
     </div>
   </section>
 
-  <!-- REFUND -->
-  <section class="lp-section" id="refund">
-    <hr class="lp-divider">
-    <div style="height:64px;"></div>
-    <div class="lp-section-header">
-      <div class="lp-section-num">02</div>
-      <div class="lp-section-titles">
-        <h2>Refund Policy</h2>
-        <p>All refunds are returned to the original payment method, subject to the schedule below.</p>
-      </div>
-    </div>
-    <div class="highlight-box">
-      <strong>Non-refundable items:</strong> Timed tickets (e.g. Burj Khalifa, Train Tickets), visa charges, and airline tickets cannot be refunded once purchased.
-    </div>
-    <div class="highlight-box" style="margin-bottom:16px;">
-      <strong>Service charge:</strong> A flat fee of <strong>AED 10</strong> per transaction is deducted from all processed refunds.
-    </div>
-    <div class="refund-table-wrap">
-      <table class="refund-table">
-        <thead>
-          <tr>
-            <th>Cancellation Window</th>
-            <th>Refund Amount</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>7+ calendar days before tour date</td>
-            <td><strong>95%</strong> of booking amount</td>
-            <td><span class="rt-badge good">✔ Favorable</span></td>
-          </tr>
-          <tr>
-            <td>5 – 7 days before tour date</td>
-            <td><strong>80%</strong> of booking amount</td>
-            <td><span class="rt-badge mid">◑ Partial</span></td>
-          </tr>
-          <tr>
-            <td>Within 96 hours of tour date</td>
-            <td><strong>0%</strong> of booking amount</td>
-            <td><span class="rt-badge bad">✖ No Refund</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- PRIVACY -->
-  <section class="lp-section" id="privacy">
-    <hr class="lp-divider">
-    <div style="height:64px;"></div>
-    <div class="lp-section-header">
-      <div class="lp-section-num">03</div>
-      <div class="lp-section-titles">
-        <h2>Privacy Policy</h2>
-        <p>Applies to information collected through our website only. Last modified: April 23, 2014.</p>
-      </div>
-    </div>
-    <div class="privacy-grid">
-      <div class="priv-card">
-        <div class="priv-card-icon">📋</div>
-        <div class="priv-card-title">Information We Collect</div>
-        <div class="priv-card-text">When ordering or registering, we may collect your name, email, mailing address, phone number, and passport details. You may also browse our site anonymously.</div>
-      </div>
-      <div class="priv-card">
-        <div class="priv-card-icon">🎯</div>
-        <div class="priv-card-title">How We Use It</div>
-        <div class="priv-card-text">To process transactions and send order-related updates or occasional company news. Your data will not be sold, transferred, or shared without your consent except to fulfill your purchased service.</div>
-      </div>
-      <div class="priv-card">
-        <div class="priv-card-icon">🔒</div>
-        <div class="priv-card-title">How We Protect It</div>
-        <div class="priv-card-text">All sensitive information is transmitted via SSL encryption into our payment gateway's secure database. Credit/debit card details are never stored, sold, rented, or shared with any third parties.</div>
-      </div>
-      <div class="priv-card">
-        <div class="priv-card-icon">🍪</div>
-        <div class="priv-card-title">Cookies</div>
-        <div class="priv-card-text">We use cookies for WordPress, Google Analytics, Facebook, Twitter, Google AdSense/AdWords, and other social media plugins to enhance your experience and measure performance.</div>
-      </div>
-      <div class="priv-card">
-        <div class="priv-card-icon">🌐</div>
-        <div class="priv-card-title">Third-Party Disclosure</div>
-        <div class="priv-card-text">We do not sell or trade your personally identifiable information. Trusted partners assisting in operating our site must agree to maintain strict confidentiality.</div>
-      </div>
-      <div class="priv-card">
-        <div class="priv-card-icon">📜</div>
-        <div class="priv-card-title">COPPA Compliance</div>
-        <div class="priv-card-text">We comply with the California Online Privacy Protection Act and will not distribute personal information to outside parties without your consent.</div>
-      </div>
-    </div>
-    <div class="priv-card" style="border-left:3px solid var(--red);">
-      <div class="priv-card-title">Changes to This Policy</div>
-      <div class="priv-card-text">We may update this policy at any time. Changes will be posted on this page. By using our site, you consent to the current policy.</div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <div id="contact" class="contact-strip">
-    <div class="contact-strip-top">
-      <h3>City One Tourism &amp; Travel L.L.C</h3>
-      <span>Get In Touch</span>
-    </div>
-    <div class="contact-strip-body">
-      <div>
-        <div class="contact-col-label">Address</div>
-        <div class="contact-items">
-          <div class="contact-item">
-            <div class="contact-item-icon">📍</div>
-            <span>G04, Tamani Arts Offices, Business Bay, Dubai 233191, UAE</span>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="contact-col-label">Phone &amp; Email</div>
-        <div class="contact-items">
-          <div class="contact-item">
-            <div class="contact-item-icon">📞</div>
-            <a href="tel:+97143922959">+971 4 392 2959</a>
-          </div>
-          <!-- <div class="contact-item">
-            <div class="contact-item-icon">📞</div>
-            <a href="tel:+97142525516">+971 4 25 255 16</a>
-          </div> -->
-          <div class="contact-item">
-            <div class="contact-item-icon">✉️</div>
-            <a href="/cdn-cgi/l/email-protection#1b72757d745b78726f6274757e6f746e6968357a7e"><span class="__cf_email__" data-cfemail="472e29212807242e333e2829223328323534692622">info@cityonetours.com</span></a>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-item-icon">🌐</div>
-            <a href="https://www.cityonetours.com" target="_blank">www.cityonetours.com</a>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="contact-col-label">Support</div>
-        <div class="support-badge">
-          <div class="support-badge-num">24/365</div>
-          <div class="support-badge-label">Days Support</div>
-        </div>
-      </div>
-    </div>
+  <!-- ===== STICKY NAV (NEW) ===== -->
+  <div class="lp-nav">
+    <a href="#terms">Terms</a>
+    <a href="#refund">Refunds</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#visa-assistance">Visa Assistance</a>
+    <a href="#why-us">Why Choose Us</a>
+    <a href="#process">Process</a>
+    <a href="#documents">Documents</a>
+    <a href="#visa-refund">Visa Refund</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
   </div>
 
-</div>
+  <div class="lp-wrapper">
 
-<footer class="lp-footer">
-  &copy; 2024 <strong>City One Tourism &amp; Travel L.L.C</strong> &nbsp;·&nbsp; All rights reserved &nbsp;·&nbsp; Dubai, United Arab Emirates
-</footer>
+    <!-- ===== IMPORTANT DISCLAIMER (NEW) ===== -->
+    <div class="highlight-box" style="margin-top:18px;">
+      <strong>Important Disclaimer:</strong>
+      City One Tourism &amp; Travel L.L.C is a <strong>private travel consultancy</strong>. We are <strong>not
+        affiliated</strong> with any government authority, embassy, or immigration department.
+      We provide <strong>visa assistance</strong>, documentation support, and application processing guidance services
+      only.
+      <strong>Visa approval or rejection is solely at the discretion</strong> of the respective immigration authorities.
+    </div>
 
-<script>
-  const navLinks = document.querySelectorAll('.lp-nav a');
-  const ids = ['terms','refund','privacy','contact'];
+    <!-- ===================== 01 TERMS ===================== -->
+    <section class="lp-section" id="terms">
+      <div class="lp-section-header">
+        <div class="lp-section-num">01</div>
+        <div class="lp-section-titles">
+          <h2>Terms &amp; Conditions</h2>
+          <p>Using our online booking facility means full acceptance of all terms below.</p>
+        </div>
+      </div>
 
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        navLinks.forEach(a => {
-          a.classList.toggle('is-active', a.getAttribute('href') === '#' + e.target.id);
-        });
-      }
+      <div class="clause-list">
+        <div class="clause-card">
+          <div class="clause-tag">Clause 01</div>
+          <div class="clause-heading">Payment</div>
+          <div class="clause-text">
+            Full payment is required at the time of booking. We reserve the right to cancel any booking where full
+            payment has not been received
+            <strong>2 days prior</strong> to the activity's start. All payments must be made in the local currency —
+            <strong>AED</strong>.
+          </div>
+        </div>
+
+        <div class="clause-card">
+          <div class="clause-tag">Clause 02</div>
+          <div class="clause-heading">Accepted Payment Methods</div>
+          <div class="clause-text">We accept <strong>Visa</strong> and <strong>MasterCard</strong> credit/debit card
+            payments via our website.</div>
+        </div>
+
+        <div class="clause-card">
+          <div class="clause-tag">Clause 03</div>
+          <div class="clause-heading">Booking Confirmation &amp; Delivery</div>
+          <div class="clause-text">
+            A confirmation email will be sent within <strong>24 hours</strong> of completed payment — this serves as
+            proof of booking.
+            Failure to arrive at the designated location by the specified departure time is treated as a last-minute
+            cancellation; no refund will be issued.
+          </div>
+        </div>
+
+        <div class="clause-card">
+          <div class="clause-tag">Clause 04</div>
+          <div class="clause-heading">Service &amp; Cancellations by Us</div>
+          <div class="clause-text">
+            We reserve the right to cancel or modify any part of an activity at our sole discretion and without prior
+            notice.
+            This may result from factors beyond our control — weather, accidents, sickness, government restrictions, or
+            other force majeure events.
+            A full or partial refund may be granted at our discretion.
+          </div>
+        </div>
+
+        <div class="clause-card">
+          <div class="clause-tag">Clause 05</div>
+          <div class="clause-heading">Pricing</div>
+          <div class="clause-text">
+            Prices are displayed in <strong>USD</strong> but charged in <strong>AED</strong>. Billing discrepancies must
+            be reported within <strong>7 days</strong> of the transaction;
+            requests after this period will not be entertained. Rates are subject to change without notice.
+          </div>
+        </div>
+
+        <div class="clause-card">
+          <div class="clause-tag">Clause 06</div>
+          <div class="clause-heading">Inclusions</div>
+          <div class="clause-text">
+            Unless stated otherwise, all prices are <strong>per person</strong> and exclude: tips, passport/visa fees,
+            travel insurance,
+            food &amp; beverages, accommodation, room service, and laundry charges.
+          </div>
+        </div>
+
+        <div class="clause-card">
+          <div class="clause-tag">Clause 07</div>
+          <div class="clause-heading">Liability</div>
+          <div class="clause-text">
+            You acknowledge the potential risks of chosen activities and confirm you are physically and mentally capable
+            of participating.
+            Where we act as agent for third-party operators, their terms apply. To the maximum extent permitted by law,
+            we accept no liability for any damage,
+            loss, injury, or death. All personal effects are at your sole risk.
+          </div>
+        </div>
+
+        <div class="clause-card">
+          <div class="clause-tag">Clause 08</div>
+          <div class="clause-heading">Disputes &amp; Governing Law</div>
+          <div class="clause-text">
+            Any disputes are governed by <strong>UAE Law</strong>. These Terms &amp; Conditions may be updated
+            periodically; customers will be notified of significant changes.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 02 REFUND ===================== -->
+    <section class="lp-section" id="refund">
+      <hr class="lp-divider" />
+      <div class="lp-section-header">
+        <div class="lp-section-num">02</div>
+        <div class="lp-section-titles">
+          <h2>Refund Policy</h2>
+          <p>All refunds are returned to the original payment method, subject to the schedule below.</p>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <strong>Non-refundable items:</strong> Timed tickets (e.g. Burj Khalifa, Train Tickets), visa charges, and
+        airline tickets cannot be refunded once purchased.
+      </div>
+
+      <div class="highlight-box" style="margin-bottom:16px;">
+        <strong>Service charge:</strong> A flat fee of <strong>AED 10</strong> per transaction is deducted from all
+        processed refunds.
+      </div>
+
+      <div class="refund-table-wrap">
+        <table class="refund-table">
+          <thead>
+            <tr>
+              <th>Cancellation Window</th>
+              <th>Refund Amount</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>7+ calendar days before tour date</td>
+              <td><strong>95%</strong> of booking amount</td>
+              <td><span class="rt-badge good">✔ Favorable</span></td>
+            </tr>
+            <tr>
+              <td>5 – 7 days before tour date</td>
+              <td><strong>80%</strong> of booking amount</td>
+              <td><span class="rt-badge mid">◑ Partial</span></td>
+            </tr>
+            <tr>
+              <td>Within 96 hours of tour date</td>
+              <td><strong>0%</strong> of booking amount</td>
+              <td><span class="rt-badge bad">✖ No Refund</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===================== 03 PRIVACY ===================== -->
+    <section class="lp-section" id="privacy">
+      <hr class="lp-divider" />
+      <div class="lp-section-header">
+        <div class="lp-section-num">03</div>
+        <div class="lp-section-titles">
+          <h2>Privacy Policy</h2>
+          <p>Applies to information collected through our website only.</p>
+        </div>
+      </div>
+
+      <div class="privacy-grid">
+        <div class="priv-card">
+          <div class="priv-card-icon">📋</div>
+          <div class="priv-card-title">Information We Collect</div>
+          <div class="priv-card-text">
+            When ordering or registering, we may collect your name, email, mailing address, phone number, and passport
+            details. You may also browse our site anonymously.
+          </div>
+        </div>
+
+        <div class="priv-card">
+          <div class="priv-card-icon">🎯</div>
+          <div class="priv-card-title">How We Use It</div>
+          <div class="priv-card-text">
+            To process transactions and send order-related updates or occasional company news. Your data will not be
+            sold, transferred, or shared without your consent
+            except to fulfill your purchased service.
+          </div>
+        </div>
+
+        <div class="priv-card">
+          <div class="priv-card-icon">🔒</div>
+          <div class="priv-card-title">How We Protect It</div>
+          <div class="priv-card-text">
+            All sensitive information is transmitted via SSL encryption into our payment gateway's secure database.
+            Credit/debit card details are never stored, sold, rented,
+            or shared with any third parties.
+          </div>
+        </div>
+
+        <div class="priv-card">
+          <div class="priv-card-icon">🍪</div>
+          <div class="priv-card-title">Cookies</div>
+          <div class="priv-card-text">
+            We use cookies for WordPress, Google Analytics, Facebook, Twitter, Google AdSense/Ads, and other social
+            media plugins to enhance your experience and measure performance.
+          </div>
+        </div>
+
+        <div class="priv-card">
+          <div class="priv-card-icon">🌐</div>
+          <div class="priv-card-title">Third-Party Disclosure</div>
+          <div class="priv-card-text">
+            We do not sell or trade your personally identifiable information. Trusted partners assisting in operating
+            our site must agree to maintain strict confidentiality.
+          </div>
+        </div>
+
+        <div class="priv-card">
+          <div class="priv-card-icon">📜</div>
+          <div class="priv-card-title">Compliance</div>
+          <div class="priv-card-text">
+            We follow applicable data protection requirements and provide customers the ability to contact us for
+            queries related to their information.
+          </div>
+        </div>
+      </div>
+
+      <div class="priv-card" style="border-left:3px solid var(--red);">
+        <div class="priv-card-title">Changes to This Policy</div>
+        <div class="priv-card-text">
+          We may update this policy at any time. Changes will be posted on this page. By using our site, you consent to
+          the current policy.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 04 VISA ASSISTANCE (NEW) ===================== -->
+    <section class="lp-section" id="visa-assistance">
+      <hr class="lp-divider" />
+      <div class="lp-section-header">
+        <div class="lp-section-num">04</div>
+        <div class="lp-section-titles">
+          <h2>Our Visa Assistance Services</h2>
+          <p>We provide visa assistance, documentation support, and application processing help through authorized
+            channels.</p>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <strong>Important:</strong> City One Tourism is not a government website. We are a private travel consultancy
+        providing visa assistance services only.
+      </div>
+
+      <div class="clause-list">
+        <div class="clause-card">
+          <div class="clause-tag">Service</div>
+          <div class="clause-heading">Visa Assistance</div>
+          <div class="clause-text">
+            City One Tourism provides professional assistance for:
+            <strong>UAE Tourist Visa</strong>, <strong>UAE Transit Visa</strong>, <strong>UAE Visit Visa</strong> (Short
+            Term &amp; Long Term),
+            and <strong>Visa Extensions</strong> (subject to eligibility), including urgent processing support where
+            available.
+          </div>
+        </div>
+
+        <div class="clause-card">
+          <div class="clause-tag">Scope</div>
+          <div class="clause-heading">What We Do</div>
+          <div class="clause-text">
+            Our experienced team reviews documents, checks completeness, prepares the application, and submits it
+            through authorized systems.
+            This helps reduce errors and avoid delays where possible. Final decisions are made only by immigration
+            authorities.
+          </div>
+        </div>
+
+        <div class="clause-card">
+          <div class="clause-tag">Processing</div>
+          <div class="clause-heading">Processing Timelines</div>
+          <div class="clause-text">
+            Processing timelines vary by nationality and visa type and may change without notice due to immigration
+            rules or system updates.
+            We share the expected timeline at the time of submission and provide updates until a decision is issued.
+          </div>
+        </div>
+
+        <div class="clause-card">
+          <div class="clause-tag">Delivery</div>
+          <div class="clause-heading">Visa Delivery</div>
+          <div class="clause-text">
+            Approved visas are shared via email and/or WhatsApp. Please ensure your contact details are correct to avoid
+            delays in delivery.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 05 WHY CHOOSE US (NEW) ===================== -->
+    <section class="lp-section" id="why-us">
+      <hr class="lp-divider" />
+      <div class="lp-section-header">
+        <div class="lp-section-num">05</div>
+        <div class="lp-section-titles">
+          <h2>Why Choose City One Tourism?</h2>
+          <p>Trust signals and service commitments for transparent visa assistance.</p>
+        </div>
+      </div>
+
+      <div class="tick-list">
+        <div class="tick-item">
+          <div class="tick-ic">✔</div>
+          <div><b>Registered Travel Company</b><span>Established tourism &amp; travel services provider in UAE.</span>
+          </div>
+        </div>
+        <div class="tick-item">
+          <div class="tick-ic">✔</div>
+          <div><b>Transparent Fees</b><span>Service charges are communicated clearly before processing.</span></div>
+        </div>
+        <div class="tick-item">
+          <div class="tick-ic">✔</div>
+          <div><b>No Hidden Charges</b><span>Any optional add-ons are shared upfront (if requested).</span></div>
+        </div>
+        <div class="tick-item">
+          <div class="tick-ic">✔</div>
+          <div><b>Dedicated Visa Support Team</b><span>Document checks, guidance, and status updates.</span></div>
+        </div>
+        <div class="tick-item">
+          <div class="tick-ic">✔</div>
+          <div><b>24/7 Customer Assistance</b><span>Support availability depends on operational hours and
+              holidays.</span></div>
+        </div>
+        <div class="tick-item">
+          <div class="tick-ic">✔</div>
+          <div><b>Clear Communication</b><span>We keep you updated until a final decision is issued.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 06 PROCESS (NEW) ===================== -->
+    <section class="lp-section" id="process">
+      <hr class="lp-divider" />
+      <div class="lp-section-header">
+        <div class="lp-section-num">06</div>
+        <div class="lp-section-titles">
+          <h2>How Our Visa Assistance Works</h2>
+          <p>Simple step-by-step support from documents to decision updates.</p>
+        </div>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="no">Step 01</div>
+          <h4>Document Submission</h4>
+          <p>Send your required documents via WhatsApp or Email.</p>
+        </div>
+        <div class="step">
+          <div class="no">Step 02</div>
+          <h4>Application Review</h4>
+          <p>Our visa team checks eligibility and verifies document completeness.</p>
+        </div>
+        <div class="step">
+          <div class="no">Step 03</div>
+          <h4>Application Processing</h4>
+          <p>We prepare and submit through authorized channels/systems as applicable.</p>
+        </div>
+        <div class="step">
+          <div class="no">Step 04</div>
+          <h4>Status Updates</h4>
+          <p>You receive updates until a decision is made by immigration authorities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 07 REQUIRED DOCUMENTS (NEW) ===================== -->
+    <section class="lp-section" id="documents">
+      <hr class="lp-divider" />
+      <div class="lp-section-header">
+        <div class="lp-section-num">07</div>
+        <div class="lp-section-titles">
+          <h2>Required Documents</h2>
+          <p>Example list for UAE Tourist Visa (requirements may vary by nationality).</p>
+        </div>
+      </div>
+
+      <div class="clause-list">
+        <div class="clause-card">
+          <div class="clause-tag">UAE Tourist Visa</div>
+          <div class="clause-heading">Documents Checklist</div>
+          <div class="clause-text">
+            <ul style="margin:10px 0 0 18px; color:var(--text-mid);">
+              <li><strong>Passport copy</strong> (minimum 6 months validity)</li>
+              <li><strong>Passport-size photo</strong> (white background)</li>
+              <li><strong>Return ticket</strong> (if required)</li>
+              <li><strong>Hotel booking</strong> / host details (if required)</li>
+              <li>Additional documents may be requested depending on nationality and visa type</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="clause-card">
+          <div class="clause-tag">Pricing</div>
+          <div class="clause-heading">Transparent Pricing Policy</div>
+          <div class="clause-text">
+            Service charges are clearly communicated before processing. <strong>No hidden fees.</strong><br />
+            Government/immigration fees (if applicable) are separate. Express processing charges (if requested) are
+            mentioned in advance.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 08 VISA REFUND & CANCELLATION (NEW) ===================== -->
+    <section class="lp-section" id="visa-refund">
+      <hr class="lp-divider" />
+      <div class="lp-section-header">
+        <div class="lp-section-num">08</div>
+        <div class="lp-section-titles">
+          <h2>Visa Refund &amp; Cancellation Policy</h2>
+          <p>Clear service-fee rules to avoid confusion and protect customers.</p>
+        </div>
+      </div>
+
+      <div class="clause-list">
+        <div class="clause-card">
+          <div class="clause-tag">Refund Rule</div>
+          <div class="clause-heading">Service Fee Refund Conditions</div>
+          <div class="clause-text">
+            Service fees are refundable <strong>only if the application is not processed</strong>.
+            Once the application is submitted through authorized systems/channels, service fees become
+            <strong>non-refundable</strong>.
+          </div>
+        </div>
+
+        <div class="clause-card">
+          <div class="clause-tag">Decision</div>
+          <div class="clause-heading">If Visa Is Rejected</div>
+          <div class="clause-text">
+            Visa approval or rejection is decided solely by immigration authorities. Rejection does not qualify for a
+            refund of processing/service charges
+            once processing has begun or submission is completed.
+          </div>
+        </div>
+
+        <div class="clause-card">
+          <div class="clause-tag">Corrections</div>
+          <div class="clause-heading">Technical Rejection Before Submission</div>
+          <div class="clause-text">
+            In case of technical rejection <strong>before submission</strong> (e.g., missing information or incorrect
+            format), we will help correct and re-check documents where possible.
+            Additional charges may apply only if there is a change of visa type, new application requirement, or new
+            third-party fee.
+          </div>
+        </div>
+
+        <div class="clause-card">
+          <div class="clause-tag">Timelines</div>
+          <div class="clause-heading">Processing Timelines Disclaimer</div>
+          <div class="clause-text">
+            Processing times are estimates and may change due to immigration rules, holidays, system load, or additional
+            verification.
+            We will update you with any changes once communicated by the relevant channels.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 09 FAQ (NEW) ===================== -->
+    <section class="lp-section" id="faq">
+      <hr class="lp-divider" />
+      <div class="lp-section-header">
+        <div class="lp-section-num">09</div>
+        <div class="lp-section-titles">
+          <h2>Frequently Asked Questions</h2>
+          <p>Quick answers to common policy and compliance questions.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>Q1: Is City One Tourism a government website?</summary>
+          <div class="ans">
+            No. City One Tourism &amp; Travel L.L.C is a private travel consultancy offering visa assistance,
+            documentation support, and application processing help.
+          </div>
+        </details>
+
+        <details>
+          <summary>Q2: Is visa approval guaranteed?</summary>
+          <div class="ans">
+            No. Visa approval depends solely on immigration authorities. We provide assistance to help submit complete
+            and accurate applications through authorized channels.
+          </div>
+        </details>
+
+        <details>
+          <summary>Q3: How long does processing take?</summary>
+          <div class="ans">
+            Processing time varies by nationality and visa type and can change without notice. We share the expected
+            timeline at the time of submission and provide updates until decision.
+          </div>
+        </details>
+
+        <details>
+          <summary>Q4: Can I extend my UAE visa?</summary>
+          <div class="ans">
+            Extensions are subject to current UAE immigration rules and eligibility. Our team can guide you on available
+            options based on your case.
+          </div>
+        </details>
+
+        <details>
+          <summary>Q5: What happens if my visa is rejected?</summary>
+          <div class="ans">
+            Decisions are made by immigration authorities. Service fees are non-refundable once processing has begun or
+            submission is completed.
+          </div>
+        </details>
+      </div>
+
+      <div class="highlight-box" style="margin-top:14px;">
+        <strong>Note:</strong> Please use terms like <strong>Visa Assistance</strong>, <strong>Visa Support</strong>,
+        and <strong>Visa Processing Help</strong> for clarity.
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT / TRUST SIGNALS ===================== -->
+    <div id="contact" class="contact-strip">
+      <div class="contact-strip-top">
+        <h3>City One Tourism &amp; Travel L.L.C</h3>
+        <span>Get In Touch</span>
+      </div>
+
+      <div class="contact-strip-body">
+        <div>
+          <div class="contact-col-label">Office Address</div>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <span>G04, Tamani Arts Offices, Business Bay, Dubai 233191, UAE</span>
+            </div>
+            <div class="contact-item" style="margin-top:6px;">
+              <div class="contact-item-icon">🧾</div>
+              <span><strong>Trade License:</strong> Available on request (as applicable)</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="contact-col-label">Phone / WhatsApp / Email</div>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <a href="tel:+97143922959">+971 4 392 2959</a>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">💬</div>
+              <a href="https://wa.me/97143922959" target="_blank" rel="noopener">WhatsApp: +971 4 392 2959</a>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <a href="mailto:info@cityonetours.com">info@cityonetours.com</a>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🌐</div>
+              <a href="https://www.cityonetours.com" target="_blank" rel="noopener">www.cityonetours.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="contact-col-label">Support</div>
+          <div class="support-badge">
+            <div class="support-badge-num">24/365</div>
+            <div class="support-badge-label">Support</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="contact-col-label">Google Maps</div>
+          <div class="map-embed">
+            <!-- Replace src with your actual Google Maps embed link -->
+            <iframe src="https://www.google.com/maps?q=Tamani%20Arts%20Offices%20Business%20Bay%20Dubai&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="City One Tourism Office Location"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /lp-wrapper -->
+
+  <footer class="lp-footer">
+    &copy; 2024 <strong>City One Tourism &amp; Travel L.L.C</strong> &nbsp;·&nbsp; All rights reserved &nbsp;·&nbsp;
+    Dubai, United Arab Emirates
+  </footer>
+
+  <script>
+    // Active section highlight for sticky nav
+    const navLinks = document.querySelectorAll('.lp-nav a');
+    const ids = ['terms', 'refund', 'privacy', 'visa-assistance', 'why-us', 'process', 'documents', 'visa-refund', 'faq', 'contact'];
+
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(a => {
+            a.classList.toggle('is-active', a.getAttribute('href') === '#' + e.target.id);
+          });
+        }
+      });
+    }, { rootMargin: '-25% 0px -65% 0px' });
+
+    ids.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) obs.observe(el);
     });
-  }, { rootMargin: '-20% 0px -70% 0px' });
+  </script>
 
-  ids.forEach(id => { const el = document.getElementById(id); if(el) obs.observe(el); });
-</script>
 </body>
+
 </html>

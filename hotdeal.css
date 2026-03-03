@@ -1997,9 +1997,7 @@ footer {
         }
 
         @media (max-width: 768px) {
-            body {
-                padding: 30px 15px;
-            }
+
 
             .primary-heading {
                 font-size: 2rem;
