@@ -651,7 +651,7 @@ header {
 
 .visa-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 8px 12px;
     background: #fff;
     border-radius: 0 0 10px 10px;
@@ -1542,3 +1542,104 @@ footer {
      .close {
        color: #000;
      }
+
+
+     /* ===== VISA INFO SECTION ===== */
+
+.vx-info-section {
+    padding: 80px 20px;
+    background: #fff6f6;
+    border-top: 1px solid #ecd4d4;
+}
+
+.vx-info-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.vx-section-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1a1008;
+}
+
+.vx-disclaimer-box {
+    background: #ffffff;
+    padding: 35px;
+    border-left: 5px solid #e11d1d;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.vx-disclaimer-box p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #5f4a42;
+}
+
+.vx-content-block {
+    margin-bottom: 45px;
+}
+
+.vx-sub-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #c51e1e;
+}
+
+.vx-content-block p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #5f4a42;
+    margin-bottom: 10px;
+}
+
+.vx-list {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.vx-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #4f3e37;
+}
+
+.vx-note {
+    font-size: 13px;
+    color: #8a6a60;
+    margin-top: 10px;
+}
+
+.vx-faq-item {
+    margin-bottom: 15px;
+}
+
+.vx-faq-item h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #1a1008;
+}
+
+.vx-faq-item p {
+    font-size: 14px;
+    color: #6b5a52;
+}
+
+.vx-trust-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #ecd4d4;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.vx-trust-box p {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #4f3e37;
+}

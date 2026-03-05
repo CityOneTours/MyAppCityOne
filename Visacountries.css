@@ -844,3 +844,74 @@ footer {
 .close {
     color: #000;
 }
+
+
+
+
+
+/* ===== VISA LEGAL SECTION ===== */
+
+.visa-legal-wrap {
+    background: #f8eaea;
+    padding: 70px 20px;
+    border-top: 1px solid #e5caca;
+}
+
+.visa-legal-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.visa-legal-block {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid #e5caca;
+    margin-bottom: 50px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.visa-legal-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1A1008;
+}
+
+.visa-legal-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #5a4a42;
+}
+
+.visa-legal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.visa-legal-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #e5caca;
+    transition: 0.3s ease;
+}
+
+.visa-legal-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.visa-legal-card h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #c21d1d;
+}
+
+.visa-legal-card p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #6b5a52;
+}

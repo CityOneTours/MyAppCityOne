@@ -310,7 +310,7 @@ position: absolute;
 
 @media screen and (max-width: 768px) {
   .carousel-caption-custom h1 {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   /* .carousel-item img {
@@ -519,6 +519,12 @@ h4 {
 
   .tourist-doc-list {
     font-size: 15px;
+  }
+  h4{
+    width: 240px;
+  }
+  .destination-grid{
+    display: none !important;
   }
 }
 
