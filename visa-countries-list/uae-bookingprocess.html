@@ -1,0 +1,2741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Apply UAE Visa | City One Tourism</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --red: #d32f2f;
+      --red2: #b71c1c;
+      --red-pale: #fff5f5;
+      --red-border: #ffcdd2;
+      --dark: #1a1a1a;
+      --body: #444;
+      --muted: #888;
+      --light: #bbb;
+      --bg: #f5f5f5;
+      --white: #fff;
+      --border: #e0e0e0;
+      --border2: #ececec;
+      --green: #2e7d32;
+      --green-bg: #e8f5e9;
+      --green-border: #a5d6a7;
+      --blue: #1565c0;
+      --blue-bg: #e3f2fd;
+      --sh: 0 2px 8px rgba(0, 0, 0, .08);
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      font-size: 14px;
+      line-height: 1.5
+    }
+
+    .hdr {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 40px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      box-shadow: var(--sh)
+    }
+
+    .hdr-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none
+    }
+
+    .hdr-logo-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--red);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 16px
+    }
+
+    .hdr-brand {
+      /* font-family: 'Cormorant Garamond', serif; */
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--dark)
+    }
+
+    .hdr-brand small {
+      display: block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 10px;
+      color: var(--muted);
+      font-weight: 400
+    }
+
+    .hdr-right {
+      display: flex;
+      align-items: center;
+      gap: 16px
+    }
+
+    .hdr-phone {
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 5px
+    }
+
+    .hdr-phone i {
+      color: var(--red)
+    }
+
+    .hdr-back {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 7px 14px;
+      font-size: 13px;
+      color: var(--body);
+      text-decoration: none;
+      font-weight: 500;
+      transition: .2s
+    }
+
+    .hdr-back:hover {
+      background: var(--border)
+    }
+
+    .prog-bar {
+      height: 3px;
+      background: var(--border);
+      position: fixed;
+      top: 60px;
+      left: 0;
+      right: 0;
+      z-index: 199
+    }
+
+    .prog-fill {
+      height: 100%;
+      background: var(--red);
+      transition: width .5s ease
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1a0000 0%, #2d0a0a 60%, #1a0000 100%);
+      padding: 36px 40px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 25% 50%, rgba(211, 47, 47, .2) 0%, transparent 65%)
+    }
+
+    .hero-dots {
+      position: absolute;
+      inset: 0;
+      opacity: .03;
+      background-image: radial-gradient(circle, #fff 1px, transparent 1px);
+      background-size: 24px 24px
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap
+    }
+
+    .hero-flag {
+      font-size: 40px;
+      display: block;
+      margin-bottom: 10px
+    }
+
+    .hero-title {
+      /* font-family: 'Cormorant Garamond', serif; */
+      font-size: 32px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 6px
+    }
+
+    .hero-title em {
+      color: #f6a623;
+      font-style: normal
+    }
+
+    .hero-sub {
+      font-size: 13px;
+      color: rgba(255, 255, 255, .6);
+      margin-bottom: 14px
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px
+    }
+
+    .htag {
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 11px;
+      color: rgba(255, 255, 255, .8);
+      display: flex;
+      align-items: center;
+      gap: 5px
+    }
+
+    .htag i {
+      color: #f6a623;
+      font-size: 10px
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 16px
+    }
+
+    .hstat {
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 12px;
+      padding: 16px 22px;
+      text-align: center
+    }
+
+    .hstat-n {
+      /* font-family: 'Cormorant Garamond', serif; */
+      font-size: 30px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1
+    }
+
+    .hstat-n em {
+      color: #f6a623;
+      font-style: normal
+    }
+
+    .hstat-l {
+      font-size: 11px;
+      color: rgba(255, 255, 255, .45);
+      margin-top: 3px
+    }
+
+    .stepper {
+      background: var(--white);
+      border-bottom: 1px solid var(--border)
+    }
+
+    .stepper-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: flex
+    }
+
+    .stp {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 0;
+      position: relative
+    }
+
+    .stp:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 30px;
+      background: var(--border)
+    }
+
+    .stp-dot {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      flex-shrink: 0;
+      transition: .3s
+    }
+
+    .stp.active .stp-dot {
+      background: var(--red-pale);
+      border-color: var(--red);
+      color: var(--red)
+    }
+
+    .stp.done .stp-dot {
+      background: var(--red);
+      border-color: var(--red);
+      color: #fff
+    }
+
+    .stp-lbl {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      transition: .2s
+    }
+
+    .stp.active .stp-lbl {
+      color: var(--red)
+    }
+
+    .stp.done .stp-lbl {
+      color: var(--dark)
+    }
+
+    .stp-sub {
+      font-size: 10px;
+      color: var(--light)
+    }
+
+    .layout {
+      max-width: 1100px;
+      margin: 28px auto 60px;
+      padding: 0 40px;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 24px;
+      align-items: start
+    }
+
+    .page {
+      display: none
+    }
+
+    .page.show {
+      display: block;
+      animation: fadeUp .4s ease both
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(16px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    .panel {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: var(--sh)
+    }
+
+    .panel-hdr {
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      user-select: none;
+      background: var(--white)
+    }
+
+    .panel-hdr i.ch {
+      margin-left: auto;
+      color: var(--muted);
+      font-size: 11px;
+      transition: .2s
+    }
+
+    .panel-hdr.open i.ch {
+      transform: rotate(180deg)
+    }
+
+    .panel-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--red)
+    }
+
+    .panel-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      background: var(--red-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      color: var(--red)
+    }
+
+    .panel-body {
+      padding: 4px 18px 18px;
+      border-top: 1px solid var(--border2)
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px;
+      box-shadow: var(--sh);
+      margin-bottom: 12px
+    }
+
+    .card-tag {
+      display: inline-block;
+      background: var(--red-pale);
+      border: 1px solid var(--red-border);
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 10px
+    }
+
+    .card-title {
+      /* font-family: 'Cormorant Garamond', serif; */
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 4px
+    }
+
+    .card-sub {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 0
+    }
+
+    .frow {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px
+    }
+
+    .frow3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px
+    }
+
+    .fg {
+      margin-bottom: 12px
+    }
+
+    .fg:last-child {
+      margin-bottom: 0
+    }
+
+    .flbl {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 5px
+    }
+
+    .req {
+      color: var(--red)
+    }
+
+    .fc {
+      width: 100%;
+      padding: 10px 12px;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 7px;
+      color: var(--dark);
+      font-size: 13px;
+      font-family: 'DM Sans', sans-serif;
+      outline: none;
+      transition: .2s
+    }
+
+    .fc:focus {
+      border-color: var(--red);
+      box-shadow: 0 0 0 3px rgba(211, 47, 47, .07)
+    }
+
+    .fc::placeholder {
+      color: #ccc
+    }
+
+    .fc[readonly] {
+      background: #f9f9f9;
+      cursor: default
+    }
+
+    select.fc {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath fill='%23888' d='M5 7L0 0h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 32px
+    }
+
+    /* ── PAYMENT LAYOUT ── */
+    .pay-section {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: var(--sh);
+      margin-bottom: 12px
+    }
+
+    .pay-section-hdr {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px
+    }
+
+    .pay-section-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--dark)
+    }
+
+    .note-bar {
+      background: #fff8e1;
+      border: 1px solid #ffe082;
+      border-radius: 6px;
+      padding: 7px 12px;
+      font-size: 11px;
+      color: #795548;
+      display: flex;
+      align-items: center;
+      gap: 7px
+    }
+
+    .note-tag {
+      background: #f57f17;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 700;
+      border-radius: 3px;
+      padding: 2px 6px;
+      letter-spacing: .5px;
+      flex-shrink: 0
+    }
+
+    .pay-split {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      min-height: 280px
+    }
+
+    .pay-tabs {
+      border-right: 1px solid var(--border2)
+    }
+
+    .pay-tab {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 16px;
+      border-bottom: 1px solid var(--border2);
+      cursor: pointer;
+      transition: .15s;
+      position: relative
+    }
+
+    .pay-tab:hover {
+      background: var(--bg)
+    }
+
+    .pay-tab.sel {
+      background: var(--blue-bg);
+      border-left: 3px solid var(--blue)
+    }
+
+    .pay-tab.sel .pay-tab-name {
+      color: var(--blue)
+    }
+
+    .pay-tab-img {
+      width: 28px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0
+    }
+
+    .pay-tab-name {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--dark)
+    }
+
+    .pay-content {
+      padding: 20px 22px
+    }
+
+    .pay-det-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 7px
+    }
+
+    .pay-det-title i {
+      color: var(--red)
+    }
+
+    .total-bar {
+      background: var(--red);
+      border-radius: 8px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px
+    }
+
+    .total-bar-lbl {
+      font-size: 11px;
+      color: rgba(255, 255, 255, .7)
+    }
+
+    .total-bar-amt {
+      /* font-family: 'Cormorant Garamond', serif; */
+      font-size: 26px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1
+    }
+
+    .total-bar-cur {
+      font-size: 13px;
+      color: rgba(255, 255, 255, .8);
+      margin-right: 3px
+    }
+
+    .total-bar-type {
+      font-size: 10px;
+      color: rgba(255, 255, 255, .55);
+      margin-top: 2px
+    }
+
+    .card-logos {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 14px
+    }
+
+    .card-logo {
+      height: 22px;
+      object-fit: contain
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: .2s;
+      margin-top: 8px
+    }
+
+    .btn-red {
+      background: var(--red);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(211, 47, 47, .22)
+    }
+
+    .btn-red:hover:not(:disabled) {
+      background: var(--red2);
+      transform: translateY(-1px)
+    }
+
+    .btn-red:disabled {
+      opacity: .6;
+      cursor: not-allowed;
+      transform: none
+    }
+
+    .btn-outline {
+      background: var(--white);
+      color: var(--red);
+      border: 1.5px solid var(--red-border)
+    }
+
+    .btn-outline:hover {
+      background: var(--red-pale)
+    }
+
+    .btn-pay {
+      background: #1565c0;
+      color: #fff;
+      font-size: 14px;
+      padding: 13px;
+      box-shadow: 0 4px 12px rgba(21, 101, 192, .25)
+    }
+
+    .btn-pay:hover:not(:disabled) {
+      background: #1976d2;
+      transform: translateY(-1px)
+    }
+
+    .btn-pay:disabled {
+      opacity: .6;
+      cursor: not-allowed
+    }
+
+    .alert {
+      padding: 10px 14px;
+      border-radius: 7px;
+      font-size: 12px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+      display: none
+    }
+
+    .alert.show {
+      display: block
+    }
+
+    .alert-err {
+      background: #fdecea;
+      border: 1px solid #ffcdd2;
+      color: #c62828
+    }
+
+    .alert-ok {
+      background: var(--green-bg);
+      border: 1px solid var(--green-border);
+      color: var(--green)
+    }
+
+    .alert-info {
+      background: var(--blue-bg);
+      border: 1px solid #90caf9;
+      color: var(--blue)
+    }
+
+    .spin {
+      width: 15px;
+      height: 15px;
+      border: 2px solid rgba(255, 255, 255, .3);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: rot .7s linear infinite;
+      display: inline-block;
+      flex-shrink: 0
+    }
+
+    @keyframes rot {
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    .doc-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 14px
+    }
+
+    .doc-box {
+      display: block;
+      border: 2px dashed var(--border);
+      border-radius: 10px;
+      padding: 16px 10px;
+      text-align: center;
+      cursor: pointer;
+      background: var(--bg);
+      transition: .2s;
+      overflow: hidden;
+      position: relative
+    }
+
+    .doc-box:hover {
+      border-color: var(--red);
+      background: var(--red-pale)
+    }
+
+    .doc-box.ready {
+      border-color: var(--green);
+      background: var(--green-bg);
+      border-style: solid
+    }
+
+    .doc-box input[type=file] {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+      width: 100%;
+      height: 100%
+    }
+
+    .doc-emoji {
+      font-size: 22px;
+      margin-bottom: 6px;
+      display: block
+    }
+
+    .doc-name {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 2px;
+      line-height: 1.3
+    }
+
+    .doc-hint {
+      font-size: 10px;
+      color: var(--muted)
+    }
+
+    .doc-req {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-top: 4px
+    }
+
+    /* Photo Guide Modal */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .65);
+      z-index: 2000;
+      padding: 16px;
+      overflow-y: auto;
+      backdrop-filter: blur(4px)
+    }
+
+    .modal-overlay.open {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center
+    }
+
+    .modal-box {
+      background: #fff;
+      border-radius: 16px;
+      width: 100%;
+      max-width: 700px;
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .3);
+      margin: auto
+    }
+
+    .modal-head {
+      background: linear-gradient(135deg, #1a0000, #2d0a0a);
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .modal-head-info span {
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: rgba(255, 255, 255, .5);
+      text-transform: uppercase;
+      margin-bottom: 4px
+    }
+
+    .modal-head-info h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin: 0
+    }
+
+    .modal-close-btn {
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .2);
+      border-radius: 8px;
+      color: #fff;
+      width: 34px;
+      height: 34px;
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .modal-close-btn:hover {
+      background: rgba(255, 255, 255, .2)
+    }
+
+    .modal-body {
+      padding: 24px
+    }
+
+    .photo-examples {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 18px
+    }
+
+    .photo-ex {
+      border-radius: 10px;
+      overflow: hidden
+    }
+
+    .photo-ex.correct {
+      border: 2px solid #a5d6a7
+    }
+
+    .photo-ex.wrong {
+      border: 2px solid #ffcdd2
+    }
+
+    .photo-ex-head {
+      padding: 9px 14px;
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px
+    }
+
+    .photo-ex.correct .photo-ex-head {
+      background: #e8f5e9;
+      color: #2e7d32;
+      border-bottom: 1px solid #c8e6c9
+    }
+
+    .photo-ex.wrong .photo-ex-head {
+      background: #ffebee;
+      color: #c62828;
+      border-bottom: 1px solid #ffcdd2
+    }
+
+    .photo-ex-body {
+      padding: 12px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start
+    }
+
+    .photo-rules {
+      font-size: 11px;
+      line-height: 2.1
+    }
+
+    .photo-ex.correct .photo-rules {
+      color: #2e7d32
+    }
+
+    .photo-ex.wrong .photo-rules {
+      color: #c62828
+    }
+
+    .specs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      background: #f5f5f5;
+      border-radius: 10px;
+      padding: 14px;
+      margin-bottom: 18px
+    }
+
+    .spec-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      color: var(--body)
+    }
+
+    .spec-item i {
+      color: var(--red);
+      font-size: 11px;
+      width: 14px;
+      text-align: center
+    }
+
+    .pp-scan-box {
+      background: #f0f4f8;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+      margin-bottom: 16px
+    }
+
+    .pp-scan-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px
+    }
+
+    .pp-scan-title i {
+      color: var(--red)
+    }
+
+    .pp-scan-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px
+    }
+
+    .pp-scan-card {
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center
+    }
+
+    .pp-scan-label {
+      background: var(--red);
+      color: #fff;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 4px 8px;
+      letter-spacing: 1px;
+      text-transform: uppercase
+    }
+
+    @media(max-width:600px) {
+      .photo-examples {
+        grid-template-columns: 1fr
+      }
+
+      .pp-scan-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .doc-ok {
+      font-size: 10px;
+      color: var(--green);
+      font-weight: 700;
+      margin-top: 4px;
+      display: none
+    }
+
+    .doc-box.ready .doc-ok {
+      display: block
+    }
+
+    .doc-box.ready .doc-req {
+      display: none
+    }
+
+    .upload-progress {
+      display: none;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 12px
+    }
+
+    .up-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 8px
+    }
+
+    .up-bar-bg {
+      height: 5px;
+      background: var(--border);
+      border-radius: 3px;
+      overflow: hidden
+    }
+
+    .up-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: var(--red);
+      border-radius: 3px;
+      transition: width .3s
+    }
+
+    .up-files {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px
+    }
+
+    .up-file-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--muted)
+    }
+
+    .up-file-name {
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-right: 8px
+    }
+
+    .up-file-status {
+      font-weight: 700;
+      font-size: 10px
+    }
+
+    .up-file-status.done {
+      color: var(--green)
+    }
+
+    .up-file-status.uploading {
+      color: var(--red)
+    }
+
+    .sumbox {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 12px
+    }
+
+    .sum-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 9px 14px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border)
+    }
+
+    .sum-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 14px;
+      font-size: 13px;
+      border-bottom: 1px solid var(--border2)
+    }
+
+    .sum-row:last-child {
+      border-bottom: none
+    }
+
+    .sum-k {
+      color: var(--muted)
+    }
+
+    .sum-v {
+      font-weight: 600;
+      color: var(--dark);
+      text-align: right;
+      max-width: 220px
+    }
+
+    .doc-check-list {
+      list-style: none
+    }
+
+    .doc-check-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 14px;
+      font-size: 12px;
+      border-bottom: 1px solid var(--border2)
+    }
+
+    .doc-check-list li:last-child {
+      border-bottom: none
+    }
+
+    .ck {
+      font-size: 12px;
+      font-weight: 700
+    }
+
+    .ck.ok {
+      color: var(--green)
+    }
+
+    .ck.no {
+      color: #e53e3e
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: sticky;
+      top: 80px
+    }
+
+    .sb-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px;
+      box-shadow: var(--sh)
+    }
+
+    .sb-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border2)
+    }
+
+    .order-summ {
+      background: var(--red-pale);
+      border: 1.5px solid var(--red-border);
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 12px
+    }
+
+    .os-name {
+      /* font-family: 'Cormorant Garamond', serif; */
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 2px
+    }
+
+    .os-type {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 10px
+    }
+
+    .os-price {
+      display: flex;
+      align-items: baseline;
+      gap: 4px
+    }
+
+    .os-cur {
+      font-size: 13px;
+      color: var(--red);
+      font-weight: 700
+    }
+
+    .os-amt {
+      /* font-family: 'Cormorant Garamond', serif; */
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1
+    }
+
+    .os-per {
+      font-size: 11px;
+      color: var(--muted)
+    }
+
+    .sec-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border2)
+    }
+
+    .sec-item:last-child {
+      border-bottom: none
+    }
+
+    .sec-icon-wrap {
+      width: 36px;
+      height: 36px;
+      flex-shrink: 0
+    }
+
+    .sec-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 3px;
+      display: flex;
+      align-items: center;
+      gap: 6px
+    }
+
+    .sec-name::before {
+      content: '';
+      width: 3px;
+      height: 13px;
+      background: var(--red);
+      border-radius: 2px;
+      flex-shrink: 0
+    }
+
+    .sec-desc {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.5
+    }
+
+    .cont-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border2);
+      font-size: 13px
+    }
+
+    .cont-item:last-child {
+      border-bottom: none
+    }
+
+    .cont-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: var(--red-pale);
+      border: 1px solid var(--red-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      color: var(--red);
+      flex-shrink: 0
+    }
+
+    .cont-lbl {
+      font-size: 10px;
+      color: var(--muted)
+    }
+
+    .cont-val {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--dark)
+    }
+
+    .wa-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #25d366;
+      color: #fff;
+      padding: 10px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 13px;
+      margin-top: 12px;
+      transition: .2s
+    }
+
+    .wa-btn:hover {
+      background: #1ebe5d
+    }
+
+    .success-wrap {
+      text-align: center;
+      padding: 10px 0
+    }
+
+    .success-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--green-bg);
+      border: 2px solid var(--green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      margin: 0 auto 18px;
+      animation: popIn .5s cubic-bezier(.175, .885, .32, 1.275) both
+    }
+
+    @keyframes popIn {
+      from {
+        opacity: 0;
+        transform: scale(.3)
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1)
+      }
+    }
+
+    .success-title {
+      /* font-family: 'Cormorant Garamond', serif; */
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 8px
+    }
+
+    .success-sub {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 18px
+    }
+
+    .ref-box {
+      background: var(--red-pale);
+      border: 1.5px solid var(--red-border);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 12px
+    }
+
+    .ref-lbl {
+      font-size: 10px;
+      color: var(--muted);
+      margin-bottom: 4px
+    }
+
+    .ref-id {
+      /* font-family: 'Cormorant Garamond', serif; */
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--dark)
+    }
+
+    .info-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 18px;
+      text-align: left
+    }
+
+    .info-box strong {
+      color: var(--dark)
+    }
+
+    .bank-detail-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 14px
+    }
+
+    .bank-detail-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 10px
+    }
+
+    .bank-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      font-size: 12px;
+      border-bottom: 1px solid var(--border2)
+    }
+
+    .bank-row:last-child {
+      border-bottom: none
+    }
+
+    .bank-k {
+      color: var(--muted)
+    }
+
+    .bank-v {
+      font-weight: 600;
+      color: var(--dark)
+    }
+
+    @media(max-width:900px) {
+      .layout {
+        grid-template-columns: 1fr;
+        padding: 0 16px 60px
+      }
+
+      .sidebar {
+        position: static
+      }
+
+      .hdr {
+        padding: 0 16px
+      }
+
+      .hero {
+        padding: 28px 16px
+      }
+
+      .stepper-inner {
+        padding: 0 16px;
+        overflow-x: auto
+      }
+
+      .stp-sub {
+        display: none
+      }
+
+      .frow,
+      .frow3 {
+        grid-template-columns: 1fr
+      }
+
+      .doc-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .pay-split {
+        grid-template-columns: 1fr
+      }
+
+      .pay-tabs {
+        border-right: none;
+        border-bottom: 1px solid var(--border2);
+        display: flex;
+        overflow-x: auto
+      }
+
+      .pay-tab {
+        border-bottom: none;
+        min-width: 120px
+      }
+
+      .hero-stats {
+        display: none
+      }
+    }
+
+    @media(max-width:540px) {
+      .doc-grid {
+        grid-template-columns: 1fr
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══════════ PHOTO GUIDE MODAL ══════════ -->
+  <div class="modal-overlay" id="photoModal" onclick="if(event.target===this)closePhotoGuide()">
+    <div class="modal-box">
+      <div class="modal-head">
+        <div class="modal-head-info">
+          <span>📸 Upload Requirements</span>
+          <h3>Passport Photo &amp; Document Guide</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closePhotoGuide()">✕</button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Correct vs Wrong -->
+        <div class="photo-examples">
+          <div class="photo-ex correct">
+            <div class="photo-ex-head"><i class="fas fa-check-circle"></i> CORRECT PHOTO</div>
+            <div class="photo-ex-body">
+              <div style="flex-shrink:0">
+                <svg viewBox="0 0 90 115" width="88" height="112" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="90" height="115" fill="#ffffff" stroke="#a5d6a7" stroke-width="2" rx="4" />
+                  <ellipse cx="45" cy="26" rx="24" ry="14" fill="#4a3728" />
+                  <ellipse cx="45" cy="46" rx="22" ry="24" fill="#FDBCB4" />
+                  <ellipse cx="23" cy="40" rx="5" ry="12" fill="#4a3728" />
+                  <ellipse cx="67" cy="40" rx="5" ry="12" fill="#4a3728" />
+                  <ellipse cx="36" cy="42" rx="4.5" ry="5" fill="#fff" stroke="#ddd" stroke-width=".5" />
+                  <ellipse cx="54" cy="42" rx="4.5" ry="5" fill="#fff" stroke="#ddd" stroke-width=".5" />
+                  <circle cx="36" cy="42" r="2.8" fill="#333" />
+                  <circle cx="54" cy="42" r="2.8" fill="#333" />
+                  <circle cx="37.5" cy="40.5" r="1" fill="#fff" opacity=".8" />
+                  <circle cx="55.5" cy="40.5" r="1" fill="#fff" opacity=".8" />
+                  <path d="M30 34 Q36 31 42 34" stroke="#4a3728" stroke-width="1.5" fill="none"
+                    stroke-linecap="round" />
+                  <path d="M48 34 Q54 31 60 34" stroke="#4a3728" stroke-width="1.5" fill="none"
+                    stroke-linecap="round" />
+                  <path d="M42 50 Q45 56 48 50" stroke="#d4967a" stroke-width="1" fill="none" />
+                  <path d="M38 58 Q45 61 52 58" stroke="#c07060" stroke-width="1.5" fill="none"
+                    stroke-linecap="round" />
+                  <ellipse cx="23" cy="48" rx="3" ry="4.5" fill="#FDBCB4" />
+                  <ellipse cx="67" cy="48" rx="3" ry="4.5" fill="#FDBCB4" />
+                  <path d="M10 115 Q12 88 32 82 Q38 80 45 80 Q52 80 58 82 Q78 88 80 115Z" fill="#1565c0" />
+                  <circle cx="74" cy="18" r="9" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="1" />
+                  <path d="M69 18 L73 22 L79 13" stroke="#2e7d32" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" fill="none" />
+                </svg>
+              </div>
+              <div class="photo-rules">
+                ✓ White background<br>
+                ✓ Front-facing<br>
+                ✓ No glasses<br>
+                ✓ Eyes open &amp; clear<br>
+                ✓ Neutral expression<br>
+                ✓ Even lighting<br>
+                ✓ Taken recently
+              </div>
+            </div>
+          </div>
+          <div class="photo-ex wrong">
+            <div class="photo-ex-head"><i class="fas fa-times-circle"></i> NOT ACCEPTED</div>
+            <div class="photo-ex-body">
+              <div style="flex-shrink:0;position:relative">
+                <svg viewBox="0 0 90 115" width="88" height="112" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="90" height="115" fill="#87CEEB" rx="4" />
+                  <g transform="rotate(-10 45 65)">
+                    <ellipse cx="45" cy="26" rx="24" ry="14" fill="#4a3728" />
+                    <ellipse cx="45" cy="46" rx="22" ry="24" fill="#FDBCB4" />
+                    <ellipse cx="23" cy="40" rx="5" ry="12" fill="#4a3728" />
+                    <ellipse cx="67" cy="40" rx="5" ry="12" fill="#4a3728" />
+                    <rect x="27" y="37" width="14" height="10" rx="4" fill="rgba(200,230,255,.5)" stroke="#555"
+                      stroke-width="1.8" />
+                    <rect x="46" y="37" width="14" height="10" rx="4" fill="rgba(200,230,255,.5)" stroke="#555"
+                      stroke-width="1.8" />
+                    <line x1="41" y1="42" x2="46" y2="42" stroke="#555" stroke-width="1.5" />
+                    <circle cx="34" cy="42" r="2.5" fill="#333" />
+                    <circle cx="53" cy="42" r="2.5" fill="#333" />
+                    <path d="M36 58 Q45 68 54 58" stroke="#c07060" stroke-width="1.5" fill="#ffb3a0"
+                      stroke-linecap="round" />
+                    <ellipse cx="23" cy="48" rx="3" ry="4.5" fill="#FDBCB4" />
+                    <ellipse cx="67" cy="48" rx="3" ry="4.5" fill="#FDBCB4" />
+                    <path d="M10 115 Q12 88 32 82 Q38 80 45 80 Q52 80 58 82 Q78 88 80 115Z" fill="#e53935" />
+                  </g>
+                  <line x1="4" y1="4" x2="86" y2="111" stroke="#c62828" stroke-width="4" opacity=".45"
+                    stroke-linecap="round" />
+                  <line x1="86" y1="4" x2="4" y2="111" stroke="#c62828" stroke-width="4" opacity=".45"
+                    stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="photo-rules">
+                ✗ Colored background<br>
+                ✗ Wearing glasses<br>
+                ✗ Head tilted<br>
+                ✗ Smiling with teeth<br>
+                ✗ Shadows on face<br>
+                ✗ Bright clothing<br>
+                ✗ Old or blurry photo
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Passport scan guide -->
+        <div class="pp-scan-box">
+          <div class="pp-scan-title"><i class="fas fa-passport"></i> How to Scan Your Passport</div>
+          <div class="pp-scan-grid">
+            <div class="pp-scan-card">
+              <div class="pp-scan-label">Front Data Page (Required)</div>
+              <div style="padding:10px">
+                <svg viewBox="0 0 200 125" width="100%" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="200" height="125" rx="6" fill="#1a237e" />
+                  <rect x="4" y="4" width="192" height="117" rx="4" fill="#283593" />
+                  <text x="100" y="17" text-anchor="middle" fill="rgba(255,255,255,.55)" font-size="7"
+                    font-family="sans-serif" letter-spacing="2">PASSPORT · جواز السفر</text>
+                  <rect x="8" y="22" width="48" height="60" rx="3" fill="#e0e0e0" />
+                  <ellipse cx="32" cy="44" rx="13" ry="15" fill="#FDBCB4" />
+                  <ellipse cx="32" cy="34" rx="13" ry="8" fill="#4a3728" />
+                  <path d="M14 82 Q32 74 50 82 Z" fill="#1565c0" />
+                  <rect x="62" y="22" width="130" height="7" rx="2" fill="rgba(255,255,255,.25)" />
+                  <text x="127" y="28" text-anchor="middle" fill="rgba(255,255,255,.6)" font-size="5.5"
+                    font-family="sans-serif">SURNAME / LAST NAME</text>
+                  <rect x="62" y="32" width="90" height="5" rx="1" fill="rgba(255,255,255,.15)" />
+                  <rect x="62" y="40" width="130" height="5" rx="1" fill="rgba(255,255,255,.1)" />
+                  <rect x="62" y="48" width="100" height="5" rx="1" fill="rgba(255,255,255,.1)" />
+                  <rect x="62" y="56" width="115" height="5" rx="1" fill="rgba(255,255,255,.1)" />
+                  <rect x="62" y="64" width="80" height="5" rx="1" fill="rgba(255,255,255,.1)" />
+                  <rect x="8" y="90" width="184" height="7" rx="2" fill="rgba(255,255,255,.08)" />
+                  <text x="100" y="96" text-anchor="middle" fill="rgba(255,255,255,.4)" font-size="5"
+                    font-family="monospace"
+                    letter-spacing=".8">P&lt;IND&lt;&lt;SURNAME&lt;&lt;&lt;GIVEN&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</text>
+                  <rect x="8" y="100" width="184" height="7" rx="2" fill="rgba(255,255,255,.08)" />
+                  <text x="100" y="106" text-anchor="middle" fill="rgba(255,255,255,.4)" font-size="5"
+                    font-family="monospace" letter-spacing=".8">A1234567&lt;8IND8001011M2812310&lt;&lt;&lt;&lt;</text>
+                  <circle cx="183" cy="14" r="8" fill="#e8f5e9" stroke="#a5d6a7" />
+                  <path d="M178 14 L182 18 L188 10" stroke="#2e7d32" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" fill="none" />
+                </svg>
+                <div style="font-size:10px;color:var(--muted);margin-top:6px">Must show full data page including MRZ
+                  (machine-readable zone) at bottom</div>
+              </div>
+            </div>
+            <div class="pp-scan-card">
+              <div class="pp-scan-label">External Cover Page (Required)</div>
+              <div style="padding:10px">
+                <svg viewBox="0 0 200 125" width="100%" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="200" height="125" rx="6" fill="#1a237e" />
+                  <rect x="4" y="4" width="192" height="117" rx="4" fill="#283593" stroke="rgba(255,255,255,.1)"
+                    stroke-width="1" />
+                  <circle cx="100" cy="52" r="26" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1.5" />
+                  <circle cx="100" cy="52" r="18" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="1" />
+                  <ellipse cx="100" cy="47" rx="9" ry="11" fill="rgba(255,215,0,.35)" />
+                  <path d="M85 55 Q100 44 115 55" fill="rgba(255,215,0,.25)" stroke="rgba(255,215,0,.5)"
+                    stroke-width="1" />
+                  <circle cx="100" cy="43" r="5" fill="rgba(255,215,0,.45)" />
+                  <text x="100" y="88" text-anchor="middle" fill="rgba(255,255,255,.7)" font-size="9"
+                    font-family="sans-serif" letter-spacing="3">PASSPORT</text>
+                  <text x="100" y="100" text-anchor="middle" fill="rgba(255,255,255,.45)" font-size="7"
+                    font-family="sans-serif" letter-spacing="1">جواز سفر · পাসপোর্ট</text>
+                  <text x="100" y="112" text-anchor="middle" fill="rgba(255,255,255,.35)" font-size="6"
+                    font-family="sans-serif">INDIA / PAKISTAN / NEPAL / ETC.</text>
+                  <circle cx="183" cy="14" r="8" fill="#e8f5e9" stroke="#a5d6a7" />
+                  <path d="M178 14 L182 18 L188 10" stroke="#2e7d32" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" fill="none" />
+                </svg>
+                <div style="font-size:10px;color:var(--muted);margin-top:6px">Photograph the outer cover clearly — all
+                  four corners must be visible</div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="background:#fff3e0;border-radius:6px;padding:8px 12px;margin-top:10px;font-size:11px;color:#5d4037;display:flex;align-items:flex-start;gap:6px">
+            <i class="fas fa-exclamation-triangle" style="color:#f57f17;margin-top:1px;flex-shrink:0"></i>
+            <span>Scan must be <strong>clear, flat &amp; fully visible</strong>. No blur, glare or cut edges. All text
+              must be readable. Min 200 DPI. Max file size: 5 MB.</span>
+          </div>
+        </div>
+
+        <!-- Specs -->
+        <div class="specs-grid">
+          <div class="spec-item"><i class="fas fa-ruler-combined"></i> Photo size: 35mm × 45mm</div>
+          <div class="spec-item"><i class="fas fa-palette"></i> Background: Pure white only</div>
+          <div class="spec-item"><i class="fas fa-eye"></i> Eyes open, no glasses</div>
+          <div class="spec-item"><i class="fas fa-calendar-alt"></i> Taken within 6 months</div>
+          <div class="spec-item"><i class="fas fa-smile"></i> Neutral / slight closed smile</div>
+          <div class="spec-item"><i class="fas fa-lightbulb"></i> Even lighting, no shadows</div>
+          <div class="spec-item"><i class="fas fa-tshirt"></i> Plain attire, no uniforms</div>
+          <div class="spec-item"><i class="fas fa-file-image"></i> JPG or PNG · Max 5 MB</div>
+        </div>
+
+        <button onclick="closePhotoGuide()" class="btn btn-red" style="max-width:220px;margin:0 auto">
+          <i class="fas fa-check"></i>&nbsp; Got it, understood!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="prog-bar"><div class="prog-fill" id="topProg" style="width:25%"></div></div>
+
+<header class="hdr">
+  <a href="UAE-visa.html" class="hdr-logo">
+    <div class="hdr-logo-icon">✈️</div>
+    <div class="hdr-brand">City One Tourism<small>UAE Visa Services</small></div>
+  </a>
+  <div class="hdr-right">
+    <div class="hdr-phone"><i class="fas fa-phone"></i> +971 4 392 2959</div>
+    <a href="UAE-visa.html" class="hdr-back"><i class="fas fa-arrow-left"></i> Back to Visa</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-dots"></div>
+  <div class="hero-inner">
+    <div>
+      <span class="hero-flag">🇦🇪</span>
+      <h1 class="hero-title">Apply for Your <em>UAE Visa</em> Online</h1>
+      <p class="hero-sub">Complete your application in 4 easy steps — fast approval, secure processing.</p>
+      <div class="hero-tags">
+        <span class="htag"><i class="fas fa-shield-alt"></i> Secure &amp; Encrypted</span>
+        <span class="htag"><i class="fas fa-bolt"></i> 24–48 Hr Processing</span>
+        <span class="htag"><i class="fas fa-check-circle"></i> 99% Approval Rate</span>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><div class="hstat-n">99<em>%</em></div><div class="hstat-l">Approval Rate</div></div>
+      <div class="hstat"><div class="hstat-n">24<em>h</em></div><div class="hstat-l">Express Option</div></div>
+      <div class="hstat"><div class="hstat-n">10<em>k+</em></div><div class="hstat-l">Visas Issued</div></div>
+    </div>
+  </div>
+</div> -->
+
+  <div class="stepper">
+    <div class="stepper-inner">
+      <div class="stp active" id="s1">
+        <div class="stp-dot">1</div>
+        <div>
+          <div class="stp-lbl">Details</div>
+          <div class="stp-sub">Personal info</div>
+        </div>
+      </div>
+      <div class="stp" id="s2">
+        <div class="stp-dot">2</div>
+        <div>
+          <div class="stp-lbl">Documents</div>
+          <div class="stp-sub">Upload files</div>
+        </div>
+      </div>
+      <div class="stp" id="s3">
+        <div class="stp-dot">3</div>
+        <div>
+          <div class="stp-lbl">Review</div>
+          <div class="stp-sub">Verify details</div>
+        </div>
+      </div>
+      <div class="stp" id="s4">
+        <div class="stp-dot">4</div>
+        <div>
+          <div class="stp-lbl">Payment</div>
+          <div class="stp-sub">Secure checkout</div>
+        </div>
+      </div>
+      <div class="stp" id="s5">
+        <div class="stp-dot">✓</div>
+        <div>
+          <div class="stp-lbl">Done</div>
+          <div class="stp-sub">Confirmed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div>
+
+      <!-- PAGE 1 -->
+      <div class="page show" id="page1">
+        <div class="card">
+          <div class="card-tag">Step 1 of 4</div>
+          <h2 class="card-title">Personal Details</h2>
+          <p class="card-sub" style="margin-bottom:20px">Enter your passport and travel details exactly as they appear
+            on your documents.</p>
+        </div>
+
+        <div class="panel">
+          <div class="panel-hdr open" onclick="togglePanel(this)">
+            <div class="panel-icon"><i class="fas fa-user"></i></div>
+            <span class="panel-title">Personal Information</span>
+            <i class="fas fa-chevron-up ch"></i>
+          </div>
+          <div class="panel-body" style="padding-top:14px">
+            <div class="frow" style="margin-bottom:12px">
+              <div class="fg"><label class="flbl">First Name <span class="req">*</span></label><input class="fc"
+                  id="p1_fname" placeholder="First name"></div>
+              <div class="fg"><label class="flbl">Last Name <span class="req">*</span></label><input class="fc"
+                  id="p1_lname" placeholder="Last name"></div>
+            </div>
+            <div class="frow" style="margin-bottom:12px">
+              <div class="fg"><label class="flbl">Email Address <span class="req">*</span></label><input class="fc"
+                  type="email" id="p1_email" placeholder="your@email.com"></div>
+              <div class="fg"><label class="flbl">Mobile Number <span class="req">*</span></label><input class="fc"
+                  type="tel" id="p1_phone" placeholder="+971 50 000 0000"></div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label class="flbl">Nationality <span class="req">*</span></label>
+                <select class="fc" id="p1_nat" onchange="onNatChange()">
+                  <option value="">— Select your nationality —</option>
+                  <optgroup label="Group A — Standard Documents">
+                    <option value="Indian">Indian</option>
+                    <option value="Sri Lankan">Sri Lankan</option>
+                    <option value="Filipino">Filipino</option>
+                    <option value="Indonesian">Indonesian</option>
+                    <option value="Thai">Thai</option>
+                    <option value="Malaysian">Malaysian</option>
+                    <option value="Other">Other Nationality</option>
+                  </optgroup>
+                  <optgroup label="Group B — Extended Documents">
+                    <option value="Pakistani">Pakistani</option>
+                    <option value="Bangladeshi">Bangladeshi</option>
+                    <option value="Ethiopian">Ethiopian</option>
+                    <option value="Nepali">Nepali</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="fg"><label class="flbl">Date of Birth <span class="req">*</span></label><input class="fc"
+                  type="date" id="p1_dob"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-hdr open" onclick="togglePanel(this)">
+            <div class="panel-icon"><i class="fas fa-passport"></i></div>
+            <span class="panel-title">Passport Details</span>
+            <i class="fas fa-chevron-up ch"></i>
+          </div>
+          <div class="panel-body" style="padding-top:14px">
+            <div class="frow">
+              <div class="fg"><label class="flbl">Passport Number <span class="req">*</span></label><input class="fc"
+                  id="p1_pp" placeholder="A1234567"></div>
+              <div class="fg"><label class="flbl">Passport Expiry Date <span class="req">*</span></label><input
+                  class="fc" type="date" id="p1_ppexp"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-hdr open" onclick="togglePanel(this)">
+            <div class="panel-icon"><i class="fas fa-id-card"></i></div>
+            <span class="panel-title">Visa Selection</span>
+            <i class="fas fa-chevron-up ch"></i>
+          </div>
+          <div class="panel-body" style="padding-top:14px">
+            <div class="frow">
+              <div class="fg">
+                <label class="flbl">Visa Type <span class="req">*</span></label>
+                <select class="fc" id="p1_visa" onchange="onVisaChange()">
+                  <option value="">— Choose your visa type —</option>
+                  <option value="30 Days Single|1">30 Days Single Entry — AED 1</option>
+                  <option value="30 Days Multiple|975">30 Days Multiple Entry — AED 975</option>
+                  <option value="60 Days Single|975">60 Days Single Entry — AED 975</option>
+                  <option value="60 Days Multiple|1300">60 Days Multiple Entry — AED 1,300</option>
+                </select>
+              </div>
+              <div class="fg"><label class="flbl">Expected Travel Date <span class="req">*</span></label><input
+                  class="fc" type="date" id="p1_travel"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert-err" id="p1_err"></div>
+        <button class="btn btn-red" onclick="step1Next()">Continue to Document Upload &nbsp;<i
+            class="fas fa-arrow-right"></i></button>
+      </div>
+
+      <!-- PAGE 2 -->
+      <div class="page" id="page2">
+        <div class="card">
+          <div class="card-tag">Step 2 of 4</div>
+          <h2 class="card-title">Upload Documents</h2>
+          <p class="card-sub">All files encrypted &amp; stored securely. Accepted: JPG, PNG, PDF — max 5 MB each.</p>
+        </div>
+
+        <!-- Nationality Group Banner -->
+        <div id="nat_banner"
+          style="display:none;background:linear-gradient(135deg,#e3f2fd,#ede7f6);border:1px solid #90caf9;border-radius:10px;padding:14px 18px;margin-bottom:12px;align-items:center;gap:14px;flex-wrap:wrap">
+          <div style="font-size:36px;flex-shrink:0" id="nat_flag">🌍</div>
+          <div style="flex:1;min-width:160px">
+            <div style="font-size:14px;font-weight:700;color:var(--dark)" id="nat_group_label">Document Group</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:2px" id="nat_group_sub">Based on your nationality
+            </div>
+          </div>
+          <div id="nat_doc_badge"
+            style="background:var(--blue);color:#fff;border-radius:20px;padding:4px 12px;font-size:11px;font-weight:700;flex-shrink:0">
+            5 documents</div>
+        </div>
+
+        <!-- Photo Guide Banner -->
+        <div
+          style="background:#fffde7;border:1px solid #ffe082;border-radius:10px;padding:14px 18px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div
+              style="width:44px;height:44px;background:#fff3e0;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">
+              📸</div>
+            <div>
+              <div style="font-size:13px;font-weight:700;color:#5d4037">Passport Photo Requirements</div>
+              <div style="font-size:11px;color:#795548;margin-top:2px">White background · No glasses · Front-facing ·
+                Taken within 6 months</div>
+            </div>
+          </div>
+          <button onclick="openPhotoGuide()"
+            style="background:#f57f17;color:#fff;border:none;border-radius:7px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:6px;flex-shrink:0;white-space:nowrap"><i
+              class="fas fa-eye"></i> View Photo Guide</button>
+        </div>
+
+        <!-- Dynamic Documents Panel -->
+        <div class="panel" id="doc_panel">
+          <div class="panel-hdr open" onclick="togglePanel(this)">
+            <div class="panel-icon" style="background:#ffebee;color:#c62828"><i class="fas fa-file-alt"></i></div>
+            <span class="panel-title" id="doc_panel_title">Required Documents</span>
+            <i class="fas fa-chevron-up ch"></i>
+          </div>
+          <div class="panel-body" style="padding-top:14px">
+            <div
+              style="background:var(--green-bg);border:1px solid var(--green-border);border-radius:7px;padding:9px 14px;font-size:12px;color:var(--green);margin-bottom:14px;display:flex;align-items:center;gap:7px">
+              <i class="fas fa-lock"></i> Files uploaded securely · Max 5 MB per file · JPG, PNG, PDF only
+            </div>
+            <div class="doc-grid" id="doc_grid">
+              <!-- Populated dynamically by JS based on nationality -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Terms & Conditions -->
+        <div class="panel">
+          <div class="panel-hdr open" onclick="togglePanel(this)">
+            <div class="panel-icon" style="background:#f3e5f5;color:#7b1fa2"><i class="fas fa-file-contract"></i></div>
+            <span class="panel-title">Terms &amp; Conditions</span>
+            <i class="fas fa-chevron-up ch"></i>
+          </div>
+          <div class="panel-body" style="padding-top:14px">
+            <div style="background:#fff8e1;border:1px solid #ffe082;border-radius:8px;padding:14px">
+              <div
+                style="font-weight:700;font-size:13px;color:#e65100;margin-bottom:10px;display:flex;align-items:center;gap:6px">
+                <i class="fas fa-exclamation-triangle"></i> Please Read Carefully Before Submitting
+              </div>
+              <div style="font-size:12px;color:#5d4037;line-height:1.9">
+                <p style="margin-bottom:8px">• Visa approval is at the <strong>sole discretion of the UAE Immigration
+                    Officials</strong> and not in City One Tourism &amp; Travel L.L.C. We cannot guarantee that all
+                  applications will be approved.</p>
+                <p>• Once your Visa Application is submitted to the Immigration Department, the <strong>Visa Application
+                    Fee / charges are non-refundable</strong> under any circumstances.</p>
+              </div>
+            </div>
+            <div style="margin-top:12px;display:flex;align-items:flex-start;gap:10px">
+              <input type="checkbox" id="terms_check"
+                style="width:16px;height:16px;margin-top:2px;cursor:pointer;accent-color:var(--red);flex-shrink:0">
+              <label for="terms_check" style="font-size:13px;color:var(--body);cursor:pointer;line-height:1.5">I have
+                read and agree to the <strong>Terms &amp; Conditions</strong>. I understand visa approval is at the
+                discretion of Immigration Officials and fees are non-refundable.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="upload-progress" id="uploadProgress">
+          <div class="up-header"><span>Uploading to Secure Storage…</span><span id="upPct">0%</span></div>
+          <div class="up-bar-bg">
+            <div class="up-bar-fill" id="upFill"></div>
+          </div>
+          <div class="up-files" id="upFileList"></div>
+        </div>
+
+        <div class="alert alert-err" id="p2_err"></div>
+        <button class="btn btn-red" id="p2_btn" onclick="step2Upload()">Save Documents &amp; Continue &nbsp;<i
+            class="fas fa-arrow-right"></i></button>
+        <button class="btn btn-outline" onclick="goPage(1)"><i class="fas fa-arrow-left"></i>&nbsp; Back</button>
+      </div>
+
+      <!-- PAGE 3 -->
+      <div class="page" id="page3">
+        <div class="card">
+          <div class="card-tag">Step 3 of 4</div>
+          <h2 class="card-title">Review Application</h2>
+          <p class="card-sub" style="margin-bottom:0">Verify all details carefully before proceeding to payment.</p>
+        </div>
+
+        <div class="sumbox" style="margin-top:0">
+          <div class="sum-title">Personal Information</div>
+          <div class="sum-row"><span class="sum-k">Full Name</span><span class="sum-v" id="rv_name">–</span></div>
+          <div class="sum-row"><span class="sum-k">Email</span><span class="sum-v" id="rv_email">–</span></div>
+          <div class="sum-row"><span class="sum-k">Mobile</span><span class="sum-v" id="rv_phone">–</span></div>
+          <div class="sum-row"><span class="sum-k">Nationality</span><span class="sum-v" id="rv_nat">–</span></div>
+          <div class="sum-row"><span class="sum-k">Passport No.</span><span class="sum-v" id="rv_pp">–</span></div>
+          <div class="sum-row"><span class="sum-k">Passport Expiry</span><span class="sum-v" id="rv_ppexp">–</span>
+          </div>
+          <div class="sum-row"><span class="sum-k">Date of Birth</span><span class="sum-v" id="rv_dob">–</span></div>
+          <div class="sum-row"><span class="sum-k">Visa Type</span><span class="sum-v" id="rv_visa">–</span></div>
+          <div class="sum-row"><span class="sum-k">Travel Date</span><span class="sum-v" id="rv_travel">–</span></div>
+        </div>
+        <div class="sumbox">
+          <div class="sum-title">Uploaded Documents</div>
+          <ul class="doc-check-list" id="rv_docs"></ul>
+        </div>
+
+        <div class="alert alert-err" id="p3_err"></div>
+        <button class="btn btn-red" onclick="step3Next()">Confirm &amp; Proceed to Payment &nbsp;<i
+            class="fas fa-arrow-right"></i></button>
+        <button class="btn btn-outline" onclick="goPage(2)"><i class="fas fa-arrow-left"></i>&nbsp; Back</button>
+      </div>
+
+      <!-- PAGE 4: PAYMENT (Travel Utility style) -->
+      <div class="page" id="page4">
+
+        <div class="card" style="margin-bottom:0;border-radius:10px 10px 0 0;border-bottom:none">
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
+            <div>
+              <div class="card-tag">Step 4 of 4</div>
+              <h2 class="card-title" style="margin-bottom:0">Make Payment</h2>
+            </div>
+            <div style="font-size:12px;color:var(--muted);text-align:right;line-height:1.7">Powered by <strong
+                style="color:var(--dark)">PayTabs</strong><br><span style="color:var(--green)"><i
+                  class="fas fa-check-circle"></i> PCI DSS Level 1 Certified</span></div>
+          </div>
+        </div>
+
+        <!-- Info text -->
+        <div
+          style="background:var(--white);border:1px solid var(--border);border-top:none;padding:14px 22px;font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:1px">
+          Payment is processed securely via PayTabs. You can pay using your Credit / Debit card or digital wallets. All
+          payments are in UAE Dirhams (AED).
+        </div>
+
+        <!-- Payment Details accordion -->
+        <div class="panel" style="border-radius:0;margin-bottom:1px">
+          <div class="panel-hdr open" onclick="togglePanel(this)">
+            <div class="panel-icon"><i class="fas fa-receipt"></i></div>
+            <span class="panel-title">Payment Details</span>
+            <i class="fas fa-chevron-up ch"></i>
+          </div>
+          <div class="panel-body" style="padding-top:14px">
+            <div class="frow3">
+              <div class="fg"><label class="flbl">Service</label><input class="fc" value="UAE Tourist Visa" readonly>
+              </div>
+              <div class="fg"><label class="flbl">Reference No</label><input class="fc" id="pay_ref" value="–" readonly>
+              </div>
+              <div class="fg"><label class="flbl">Net Fare (AED)</label><input class="fc" id="pay_fare" value="–"
+                  readonly style="font-weight:700;color:var(--red)"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Details accordion -->
+        <div class="panel" style="border-radius:0;margin-bottom:1px">
+          <div class="panel-hdr open" onclick="togglePanel(this)">
+            <div class="panel-icon"><i class="fas fa-user"></i></div>
+            <span class="panel-title">Contact Details</span>
+            <i class="fas fa-chevron-up ch"></i>
+          </div>
+          <div class="panel-body" style="padding-top:14px">
+            <div class="frow">
+              <div class="fg"><label class="flbl">Email</label><input class="fc" id="pay_email" readonly></div>
+              <div class="fg"><label class="flbl">Mobile</label><input class="fc" id="pay_phone" readonly></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Make Payment section -->
+        <div class="pay-section" style="border-radius:0 0 10px 10px">
+          <div class="pay-section-hdr">
+            <span class="pay-section-title">Select Payment Method</span>
+            <div class="note-bar"><span class="note-tag">NOTE</span>All fees are non-refundable once the visa
+              application is submitted.</div>
+          </div>
+          <div class="pay-split">
+            <div class="pay-tabs">
+              <div class="pay-tab sel" id="pm_card" onclick="selectPM(this,'card')">
+                <div class="pay-tab-img">💳</div>
+                <div class="pay-tab-name">Credit / Debit Card</div>
+              </div>
+              <!-- <div class="pay-tab" id="pm_apple" onclick="selectPM(this,'apple')">
+                <div class="pay-tab-img">🍎</div>
+                <div class="pay-tab-name">Apple Pay</div>
+              </div>
+              <div class="pay-tab" id="pm_samsung" onclick="selectPM(this,'samsung')">
+                <div class="pay-tab-img">📱</div>
+                <div class="pay-tab-name">Samsung Pay</div>
+              </div>
+              <div class="pay-tab" id="pm_bank" onclick="selectPM(this,'bank')">
+                <div class="pay-tab-img">🏦</div>
+                <div class="pay-tab-name">Bank Transfer</div>
+              </div> -->
+            </div>
+
+            <div class="pay-content">
+              <!-- Card -->
+              <div id="det_card">
+                <div class="pay-det-title"><i class="fas fa-credit-card"></i> Pay via PayTabs Secure Gateway</div>
+                <div class="card-logos">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" class="card-logo"
+                    alt="Mastercard">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" class="card-logo"
+                    alt="Visa">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg"
+                    class="card-logo" alt="Amex">
+                </div>
+                <div
+                  style="background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:12px;font-size:12px;color:var(--muted);margin-bottom:14px;display:flex;align-items:flex-start;gap:8px">
+                  <i class="fas fa-lock" style="color:var(--green);margin-top:1px;flex-shrink:0"></i>
+                  You'll be securely redirected to PayTabs to complete your payment. Your card details are never stored
+                  on our servers.
+                </div>
+                <div class="total-bar">
+                  <div>
+                    <div class="total-bar-lbl">Total Amount Due</div>
+                    <div class="total-bar-amt"><span class="total-bar-cur">AED</span><span id="pay_amount_show">–</span>
+                    </div>
+                    <div class="total-bar-type" id="pay_type_show">–</div>
+                  </div>
+                  <div style="font-size:28px">🔐</div>
+                </div>
+                <div class="alert alert-err" id="p4_err"></div>
+                <button class="btn btn-pay" id="payBtn" onclick="doPayment()">
+                  <i class="fas fa-lock"></i>&nbsp; Pay Securely via PayTabs
+                </button>
+                <p style="text-align:center;font-size:11px;color:var(--muted);margin-top:10px">
+                  🔐 256-bit SSL &nbsp;|&nbsp; 🛡️ PCI DSS Certified &nbsp;|&nbsp; ✅ Secure Payments
+                </p>
+              </div>
+
+              <!-- Apple Pay -->
+              <div id="det_apple" style="display:none">
+                <div class="pay-det-title"><i class="fab fa-apple"></i> Apple Pay</div>
+                <div style="text-align:center;padding:20px">
+                  <div style="font-size:48px;margin-bottom:10px">🍎</div>
+                  <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Apple Pay is processed via PayTabs.
+                    You'll complete payment on the secure checkout page.</p>
+                  <div class="total-bar" style="max-width:260px;margin:0 auto 14px">
+                    <div>
+                      <div class="total-bar-lbl">Total</div>
+                      <div class="total-bar-amt"><span class="total-bar-cur">AED</span><span
+                          class="pay-amt-ref">–</span></div>
+                    </div>
+                    <div style="font-size:22px">🍎</div>
+                  </div>
+                  <button class="btn btn-pay" style="max-width:260px;margin:0 auto" onclick="doPayment()"><i
+                      class="fab fa-apple"></i>&nbsp; Pay with Apple Pay</button>
+                </div>
+              </div>
+
+              <!-- Samsung Pay -->
+              <div id="det_samsung" style="display:none">
+                <div class="pay-det-title"><i class="fas fa-mobile-alt"></i> Samsung Pay</div>
+                <div style="text-align:center;padding:20px">
+                  <div style="font-size:48px;margin-bottom:10px">📱</div>
+                  <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Samsung Pay is processed via PayTabs.
+                    You'll complete payment on the secure checkout page.</p>
+                  <div class="total-bar" style="max-width:260px;margin:0 auto 14px">
+                    <div>
+                      <div class="total-bar-lbl">Total</div>
+                      <div class="total-bar-amt"><span class="total-bar-cur">AED</span><span
+                          class="pay-amt-ref">–</span></div>
+                    </div>
+                    <div style="font-size:22px">📱</div>
+                  </div>
+                  <button class="btn btn-pay" style="max-width:260px;margin:0 auto" onclick="doPayment()"><i
+                      class="fas fa-mobile-alt"></i>&nbsp; Pay with Samsung Pay</button>
+                </div>
+              </div>
+
+              <!-- Bank Transfer -->
+              <div id="det_bank" style="display:none">
+                <div class="pay-det-title"><i class="fas fa-university"></i> Bank Transfer</div>
+                <p style="font-size:12px;color:var(--muted);margin-bottom:14px">Transfer the exact amount to our account
+                  and send the payment proof on WhatsApp with your reference number.</p>
+                <div class="bank-detail-box">
+                  <div class="bank-detail-label">Bank Account Details</div>
+                  <div class="bank-row"><span class="bank-k">Bank Name</span><span class="bank-v">Emirates NBD</span>
+                  </div>
+                  <div class="bank-row"><span class="bank-k">Account Name</span><span class="bank-v">City One Tourism
+                      &amp; Travel</span></div>
+                  <div class="bank-row"><span class="bank-k">IBAN</span><span class="bank-v">AE XX XXXX XXXX XXXX XXXX
+                      XX</span></div>
+                  <div class="bank-row"><span class="bank-k">Your Reference</span><span class="bank-v" id="bank_ref"
+                      style="color:var(--red)">–</span></div>
+                  <div class="bank-row"><span class="bank-k">Amount (AED)</span><span class="bank-v" id="bank_amt"
+                      style="color:var(--red);font-size:15px">–</span></div>
+                </div>
+                <a href="https://wa.me/97143922959" class="wa-btn" target="_blank"><i class="fab fa-whatsapp"></i> Send
+                  Payment Proof via WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-outline" style="margin-top:12px" onclick="goPage(3)"><i
+            class="fas fa-arrow-left"></i>&nbsp; Back to Review</button>
+      </div>
+
+      <!-- PAGE 5 -->
+      <div class="page" id="page5">
+        <div class="card">
+          <div class="success-wrap">
+            <div class="success-icon">✅</div>
+            <h2 class="success-title">Application Submitted!</h2>
+            <p class="success-sub">Your documents are securely stored and payment has been received.<br>Our visa team
+              will contact you within <strong>24 hours</strong>.</p>
+            <div class="ref-box">
+              <div class="ref-lbl">Your Application Reference Number</div>
+              <div class="ref-id" id="suc_ref">–</div>
+            </div>
+            <div class="info-box">
+              📧 Confirmation sent to <strong id="suc_email">–</strong><br>
+              📱 Our team will WhatsApp you on <strong id="suc_phone">–</strong><br>
+              🗂️ All documents are securely saved in our system.<br>
+              ⏱️ Expected processing: <strong>24–48 business hours</strong>
+            </div>
+            <a href="UAE-visa.html" class="btn btn-red" style="text-decoration:none;margin-top:0"><i
+                class="fas fa-home"></i>&nbsp; Back to UAE Visa Page</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end left -->
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sb-card">
+        <div class="sb-title">Order Summary</div>
+        <div id="sb_empty" style="font-size:12px;color:var(--muted);padding:4px 0">No visa selected yet.</div>
+        <div class="order-summ" id="sb_visa" style="display:none">
+          <div class="os-name" id="sb_name">–</div>
+          <div class="os-type" id="sb_dur">–</div>
+          <div class="os-price"><span class="os-cur">AED</span><span class="os-amt" id="sb_price">–</span><span
+              class="os-per">/ person</span></div>
+        </div>
+        <ul id="sb_feats" style="list-style:none;margin-top:4px"></ul>
+      </div>
+
+      <div class="sb-card">
+        <div class="sb-title">Payment Security</div>
+        <div class="sec-item">
+          <div class="sec-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="18" stroke="#ffcdd2" stroke-width="1.5" />
+              <path d="M20 10l7 4v7c0 4.2-3.1 7.8-7 9.2C16.1 28.8 13 25.2 13 21v-7l7-4z" fill="#ffcdd2" stroke="#d32f2f"
+                stroke-width="1.5" />
+              <path d="M16.5 20.5l2.5 2.5 4.5-4.5" stroke="#d32f2f" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div>
+            <div class="sec-name">Secure Payment</div>
+            <div class="sec-desc">Secure Server Technology providing 100% safe online payment via Debit/Credit Card or
+              Internet Banking.</div>
+          </div>
+        </div>
+        <div class="sec-item">
+          <div class="sec-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="18" stroke="#ffcdd2" stroke-width="1.5" />
+              <rect x="12" y="16" width="16" height="12" rx="2" fill="#ffcdd2" stroke="#d32f2f" stroke-width="1.5" />
+              <path d="M15 16v-3a5 5 0 0110 0v3" stroke="#d32f2f" stroke-width="1.5" stroke-linecap="round" />
+              <circle cx="20" cy="22" r="1.5" fill="#d32f2f" />
+            </svg>
+          </div>
+          <div>
+            <div class="sec-name">10 Million+ Transactions</div>
+            <div class="sec-desc">All our transactions are fast, secure and reliable with 99.9% uptime guarantee.</div>
+          </div>
+        </div>
+        <div class="sec-item">
+          <div class="sec-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="18" stroke="#ffcdd2" stroke-width="1.5" />
+              <rect x="11" y="14" width="18" height="13" rx="2" fill="#ffcdd2" stroke="#d32f2f" stroke-width="1.5" />
+              <path d="M11 19h18" stroke="#d32f2f" stroke-width="1.5" />
+              <circle cx="15" cy="23.5" r="1.5" fill="#d32f2f" />
+              <rect x="18" y="22.5" width="7" height="2" rx="1" fill="#d32f2f" />
+            </svg>
+          </div>
+          <div>
+            <div class="sec-name">256 Bit Encryption</div>
+            <div class="sec-desc">Top encryption hardware &amp; software to protect your personal information at all
+              times.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sb-card">
+        <div class="sb-title">Need Help?</div>
+        <div class="cont-item">
+          <div class="cont-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <div class="cont-lbl">Phone</div>
+            <div class="cont-val">+971 4 392 2959</div>
+          </div>
+        </div>
+        <div class="cont-item">
+          <div class="cont-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div class="cont-lbl">Email</div>
+            <div class="cont-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                data-cfemail="c0a9aea6af80a3a9b4b9afaea5b4afb5b2b3eea3afad">info@cityonetours.com</a></div>
+          </div>
+        </div>
+        <a href="https://wa.me/97143922959" class="wa-btn" target="_blank"><i class="fab fa-whatsapp"></i> Chat on
+          WhatsApp</a>
+      </div>
+    </aside>
+  </div>
+
+  <a href="https://wa.me/97143922959" style="position:fixed;bottom:24px;right:24px;z-index:999" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+      style="width:46px;height:46px;filter:drop-shadow(0 3px 8px rgba(0,0,0,.2))">
+  </a>
+
+  <!-- FIREBASE -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getFirestore, collection, addDoc, doc, updateDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+    const cfg = { apiKey: "AIzaSyDLsNLKnQgcrqve-KHHL-VrSFm7xZVFDdw", authDomain: "cityonetours-uaevisa.firebaseapp.com", projectId: "cityonetours-uaevisa", storageBucket: "cityonetours-uaevisa.firebasestorage.app", messagingSenderId: "317988993041", appId: "1:317988993041:web:51e79c5e859116cdd699b0" };
+    const app = initializeApp(cfg); const db = getFirestore(app);
+    window.__fb = { db, collection, addDoc, doc, updateDoc }; window.__fbReady = true;
+    document.dispatchEvent(new Event('fbReady'));
+  </script>
+
+  <script>
+    const BACKEND_URL = 'http://localhost:3000/create-payment';
+    const CLOUDINARY_CLOUD = 'deqfjemsw';
+    const CLOUDINARY_PRESET = 'visa-docs-unsigned';
+
+    const APP = { applicant: {}, docs: {}, appId: null, amount: 0, visaLabel: '', payMethod: 'card' };
+
+    /* ─── COUNTRY-BASED DOCUMENT GROUPS ─── */
+    const GROUP_B = ['Pakistani', 'Bangladeshi', 'Ethiopian', 'Nepali'];
+    const DOC_CONFIGS = {
+      A: {
+        groupName: 'Standard Documents', flag: '🌏', countries: 'India & Other Nationalities',
+        docs: [
+          { key: 'passport_front', emoji: '🛂', name: 'Passport Front', hint: 'Data page (photo side)', isPhoto: false, badge: 'FRONT' },
+          { key: 'passport_back', emoji: '📋', name: 'Passport Back', hint: 'Last page / back cover', isPhoto: false, badge: 'BACK' },
+          { key: 'photo', emoji: '📸', name: 'Passport Photo', hint: 'White bg · No glasses', isPhoto: true },
+          { key: 'airticket', emoji: '✈️', name: 'Air Ticket', hint: 'Confirmed flight booking', isPhoto: false },
+          { key: 'hotel', emoji: '🏨', name: 'Hotel Reservation', hint: 'Confirmed booking', isPhoto: false },
+          { key: 'passext', emoji: '📔', name: 'Passport Cover Page', hint: 'External cover (outside)', isPhoto: false },
+        ]
+      },
+      B: {
+        groupName: 'Extended Documents', flag: '🌍', countries: 'Pakistan, Bangladesh, Ethiopia & Nepal',
+        docs: [
+          { key: 'passport_front', emoji: '🛂', name: 'Passport Front', hint: 'Data page (photo side)', isPhoto: false, badge: 'FRONT' },
+          // {key:'passport_back',  emoji:'📋',name:'Passport Back',           hint:'Last page / back cover',  isPhoto:false, badge:'BACK'},
+          { key: 'photo', emoji: '📸', name: 'Passport Photo (Color)', hint: 'White bg · No glasses', isPhoto: true },
+          { key: 'airticket', emoji: '✈️', name: 'Confirm Flight Ticket', hint: 'Return ticket required', isPhoto: false },
+          { key: 'hotel', emoji: '🏨', name: 'Hotel Booking', hint: 'Confirmed reservation', isPhoto: false },
+          { key: 'passext', emoji: '📔', name: 'Passport Cover Page', hint: 'External cover (outside)', isPhoto: false },
+          { key: 'bankstmt', emoji: '🏦', name: 'Bank Statement', hint: 'Last 6 months required', isPhoto: false },
+          // {key:'natid_front',    emoji:'🪪', name:'National ID Front',      hint:'CNIC / NID — front side', isPhoto:false, badge:'FRONT'},
+          // {key:'natid_back',     emoji:'🪪', name:'National ID Back',       hint:'CNIC / NID — back side',  isPhoto:false, badge:'BACK'},
+        ]
+      }
+    };
+    const DOC_LABELS = {
+      passport_front: 'Passport Front (Data Page)', passport_back: 'Passport Back Page',
+      photo: 'Passport Photo', airticket: 'Air Ticket', hotel: 'Hotel Reservation',
+      passext: 'Passport Cover Page', bankstmt: 'Bank Statement',
+      natid_front: 'National ID Front', natid_back: 'National ID Back'
+    };
+    const VISA_FEATURES = { '30 Days Single': ['Single entry only', '30-day stay duration', '48-hr processing', 'Email delivery'], '30 Days Multiple': ['Multiple entries allowed', '30 days per entry', '48-hr processing', 'Email delivery'], '60 Days Single': ['Single entry only', '60-day stay duration', 'Express 24h option', 'Email + WhatsApp', 'Priority support'], '60 Days Multiple': ['Multiple entries allowed', '60 days per entry', '48-hr processing', 'Email + WhatsApp'] };
+    let currentGroup = 'A';
+
+    let fbOK = false;
+    document.addEventListener('fbReady', () => { fbOK = true; });
+    window.addEventListener('load', () => { if (window.__fbReady && window.__fb) fbOK = true; });
+
+    /* ─── PHOTO GUIDE MODAL ─── */
+    function openPhotoGuide() { document.getElementById('photoModal').classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closePhotoGuide() { document.getElementById('photoModal').classList.remove('open'); document.body.style.overflow = ''; }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closePhotoGuide(); });
+
+    /* ─── NATIONALITY CHANGE → SET GROUP ─── */
+    function onNatChange() {
+      const nat = document.getElementById('p1_nat').value;
+      if (!nat) return;
+      currentGroup = GROUP_B.includes(nat) ? 'B' : 'A';
+    }
+
+    /* ─── HELPER: render a single doc upload box ─── */
+    function renderDocBox(doc) {
+      const isReady = !!APP.docs[doc.key];
+      const okName = isReady ? (APP.docs[doc.key].name.length > 18 ? APP.docs[doc.key].name.substring(0, 18) + '…' : APP.docs[doc.key].name) : '✓ Attached';
+      const guideBtn = doc.isPhoto ? `<button onclick="event.preventDefault();event.stopPropagation();openPhotoGuide()" style="background:#f57f17;color:#fff;border:none;border-radius:4px;padding:3px 8px;font-size:9px;font-weight:700;cursor:pointer;margin-top:4px;display:inline-flex;align-items:center;gap:3px;position:relative;z-index:3"><i class='fas fa-eye'></i> Photo Guide</button>` : '';
+      const sideBadge = doc.badge ? `<span style="display:inline-block;background:${doc.badge === 'FRONT' ? '#1565c0' : '#455a64'};color:#fff;font-size:8px;font-weight:800;letter-spacing:1px;padding:2px 8px;border-radius:3px;margin-top:4px">${doc.badge} SIDE</span>` : '';
+      return `<label class="doc-box${isReady ? ' ready' : ''}" id="box_${doc.key}"><input type="file" id="file_${doc.key}" accept=".jpg,.jpeg,.png,.pdf" onchange="pickDoc(this,'${doc.key}')"><span class="doc-emoji">${doc.emoji}</span><div class="doc-name">${doc.name}</div>${sideBadge}<div class="doc-hint" style="margin-top:3px">${doc.hint}</div>${guideBtn}<div class="doc-req">REQUIRED</div><div class="doc-ok" id="ok_${doc.key}">${isReady ? '✓ ' + okName : '✓ Attached'}</div></label>`;
+    }
+
+    /* ─── BUILD DYNAMIC DOC GRID ─── */
+    function buildDocGrid() {
+
+      const cfg = DOC_CONFIGS[currentGroup];
+      const grid = document.getElementById('doc_grid');
+      if (!grid) return;
+      const nat = document.getElementById('p1_nat') ? document.getElementById('p1_nat').value : '';
+      // Remove stale doc keys
+      const validKeys = cfg.docs.map(d => d.key);
+      Object.keys(APP.docs).forEach(k => { if (!validKeys.includes(k)) delete APP.docs[k]; });
+      // Update nationality banner
+      const banner = document.getElementById('nat_banner');
+      if (banner) {
+        banner.style.display = nat ? 'flex' : 'none';
+        if (nat) {
+          document.getElementById('nat_flag').textContent = cfg.flag;
+          document.getElementById('nat_group_label').textContent = cfg.groupName + ' — ' + cfg.countries;
+          document.getElementById('nat_group_sub').textContent = cfg.docs.length + ' documents required for your nationality';
+          const badge = document.getElementById('nat_doc_badge'); if (badge) badge.textContent = cfg.docs.length + ' documents';
+          const title = document.getElementById('doc_panel_title'); if (title) title.textContent = 'Required Documents (' + cfg.docs.length + ')';
+        }
+      }
+      // Render doc boxes — group paired items (front/back) visually
+      const pairs = currentGroup === 'B'
+        ? { natid_front: 'natid_back' }
+        : { passport_front: 'passport_back', natid_front: 'natid_back' }; const pairBackKeys = new Set(Object.values(pairs));
+      let html = '';
+      const rendered = new Set();
+      cfg.docs.forEach(doc => {
+        if (rendered.has(doc.key)) return;
+        if (pairs[doc.key]) {
+          // Render as paired group
+          const backKey = pairs[doc.key];
+          const backDoc = cfg.docs.find(d => d.key === backKey);
+          if (backDoc) {
+            rendered.add(doc.key); rendered.add(backKey);
+            const groupLabel = doc.key.startsWith('passport') ? 'Passport Scan (both sides required)' : 'National ID (both sides required)';
+            html += `<div style="grid-column:1/-1;background:linear-gradient(135deg,#e3f2fd,#ede7f6);border:1.5px solid #90caf9;border-radius:12px;padding:12px 14px;margin-bottom:2px">
+          <div style="font-size:11px;font-weight:700;color:#1565c0;margin-bottom:10px;display:flex;align-items:center;gap:6px">
+            <i class="fas fa-copy" style="font-size:10px"></i> ${groupLabel}
+            <span style="background:#e3f2fd;color:#1565c0;font-size:9px;border:1px solid #90caf9;border-radius:10px;padding:2px 8px;margin-left:auto">2 files needed</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            ${renderDocBox(doc)}
+            ${renderDocBox(backDoc)}
+          </div>
+        </div>`;
+          }
+        } else if (!pairBackKeys.has(doc.key)) {
+          rendered.add(doc.key);
+          html += renderDocBox(doc);
+        }
+      });
+      grid.innerHTML = html;
+      window._reqDocKeys = cfg.docs.map(d => d.key);
+    }
+
+    function togglePanel(hdr) {
+      const body = hdr.nextElementSibling;
+      const isOpen = hdr.classList.contains('open');
+      if (isOpen) { body.style.display = 'none'; hdr.classList.remove('open'); }
+      else { body.style.display = ''; hdr.classList.add('open'); }
+    }
+
+    const PROG = [25, 50, 75, 90, 100];
+    function goPage(n) {
+      for (let i = 1; i <= 5; i++) {
+        document.getElementById('page' + i).className = 'page' + (i === n ? ' show' : '');
+        const s = document.getElementById('s' + i);
+        s.className = 'stp' + (i < n ? ' done' : i === n ? ' active' : '');
+        s.querySelector('.stp-dot').textContent = i < n ? '✓' : i;
+      }
+      const tp = document.getElementById('topProg'); if (tp) tp.style.width = PROG[n - 1] + '%';
+      if (n === 2) buildDocGrid();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function onVisaChange() {
+      const val = document.getElementById('p1_visa').value; if (!val) return;
+      const [label, price] = val.split('|');
+      document.getElementById('sb_visa').style.display = 'block';
+      document.getElementById('sb_empty').style.display = 'none';
+      document.getElementById('sb_name').textContent = label;
+      document.getElementById('sb_dur').textContent = label.includes('Multiple') ? 'Multiple entries allowed' : 'Single entry';
+      document.getElementById('sb_price').textContent = parseInt(price).toLocaleString();
+      const feats = VISA_FEATURES[label] || [];
+      document.getElementById('sb_feats').innerHTML = feats.map(f => `<li style="display:flex;align-items:center;gap:7px;padding:5px 0;font-size:12px;border-bottom:1px solid var(--border2);color:var(--body)"><span style="width:15px;height:15px;border-radius:50%;background:var(--green-bg);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0">✓</span>${f}</li>`).join('');
+    }
+
+    const P1 = [['p1_fname', 'First Name'], ['p1_lname', 'Last Name'], ['p1_email', 'Email'], ['p1_phone', 'Mobile Number'], ['p1_nat', 'Nationality'], ['p1_dob', 'Date of Birth'], ['p1_pp', 'Passport Number'], ['p1_ppexp', 'Passport Expiry'], ['p1_visa', 'Visa Type'], ['p1_travel', 'Travel Date']];
+    function step1Next() {
+      const e = document.getElementById('p1_err'); e.className = 'alert alert-err';
+      for (const [id, lbl] of P1) { if (!document.getElementById(id).value.trim()) { showErr(e, '⚠️ Please fill in: ' + lbl); return; } }
+      const [visaLabel, price] = document.getElementById('p1_visa').value.split('|');
+      APP.applicant = { firstName: document.getElementById('p1_fname').value.trim(), lastName: document.getElementById('p1_lname').value.trim(), email: document.getElementById('p1_email').value.trim(), phone: document.getElementById('p1_phone').value.trim(), nationality: document.getElementById('p1_nat').value.trim(), passportNo: document.getElementById('p1_pp').value.trim(), passportExpiry: document.getElementById('p1_ppexp').value, dob: document.getElementById('p1_dob').value, visaType: visaLabel, travelDate: document.getElementById('p1_travel').value };
+      APP.amount = parseInt(price); APP.visaLabel = visaLabel;
+      goPage(2);
+    }
+
+    function pickDoc(input, key) {
+      const file = input.files[0]; if (!file) return;
+      if (file.size > 5 * 1024 * 1024) { alert('File too large! Max 5 MB.'); input.value = ''; return; }
+      if (!['image/jpeg', 'image/png', 'image/jpg', 'application/pdf'].includes(file.type)) { alert('Invalid type. Use JPG, PNG or PDF.'); input.value = ''; return; }
+      APP.docs[key] = { file, name: file.name, url: null };
+      document.getElementById('box_' + key).classList.add('ready');
+      const ok = document.getElementById('ok_' + key);
+      ok.textContent = '✓ ' + (file.name.length > 18 ? file.name.substring(0, 18) + '…' : file.name); ok.style.display = 'block';
+    }
+
+    async function step2Upload() {
+      const errEl = document.getElementById('p2_err'); errEl.className = 'alert alert-err';
+      if (!document.getElementById('terms_check').checked) { showErr(errEl, '⚠️ Please read and accept the Terms & Conditions to continue.'); return; }
+      const reqKeys = window._reqDocKeys || DOC_CONFIGS[currentGroup].docs.map(d => d.key);
+      for (const key of reqKeys) { if (!APP.docs[key]) { showErr(errEl, '⚠️ Please attach: ' + (DOC_LABELS[key] || key)); return; } }
+      const btn = document.getElementById('p2_btn'); btn.disabled = true; btn.innerHTML = '<span class="spin"></span> Uploading…';
+      const prog = document.getElementById('uploadProgress'); prog.style.display = 'block';
+      try {
+        let appId = 'COT-' + Date.now();
+        if (fbOK && window.__fb) { const { db, collection, addDoc } = window.__fb; const ref = await addDoc(collection(db, 'visa_applications'), { ...APP.applicant, amount: APP.amount, status: 'documents_pending', createdAt: new Date().toISOString(), documents: {} }); appId = ref.id; }
+        APP.appId = appId;
+        const docKeys = Object.keys(APP.docs); const fileList = document.getElementById('upFileList'); fileList.innerHTML = '';
+        docKeys.forEach(key => { const row = document.createElement('div'); row.className = 'up-file-row'; row.innerHTML = `<span class="up-file-name">${DOC_LABELS[key] || key}: ${APP.docs[key].name}</span><span class="up-file-status" id="fstat_${key}">Waiting…</span>`; fileList.appendChild(row); });
+        const urlMap = {}; let done = 0;
+        for (const key of docKeys) {
+          const s = document.getElementById('fstat_' + key); s.textContent = 'Uploading…'; s.className = 'up-file-status uploading';
+          const fd = new FormData(); fd.append('file', APP.docs[key].file); fd.append('upload_preset', CLOUDINARY_PRESET); fd.append('folder', `visa_applications/${APP.appId}`); fd.append('public_id', `${key}_${Date.now()}`);
+          const url = await new Promise((res, rej) => {
+            const xhr = new XMLHttpRequest(); xhr.open('POST', `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD}/auto/upload`);
+            xhr.upload.onprogress = e => { if (e.lengthComputable) { const p = (done + e.loaded / e.total) / docKeys.length * 100; document.getElementById('upFill').style.width = Math.round(p) + '%'; document.getElementById('upPct').textContent = Math.round(p) + '%'; } };
+            xhr.onload = () => { if (xhr.status === 200) res(JSON.parse(xhr.responseText).secure_url); else rej(new Error('Upload failed (' + xhr.status + ')')); };
+            xhr.onerror = () => rej(new Error('Network error')); xhr.send(fd);
+          });
+          APP.docs[key].url = url; urlMap[key] = { url, name: APP.docs[key].name }; done++; s.textContent = '✓ Uploaded'; s.className = 'up-file-status done';
+        }
+        if (fbOK && window.__fb && APP.appId && !APP.appId.startsWith('COT-')) { const { db, doc, updateDoc } = window.__fb; await updateDoc(doc(db, 'visa_applications', APP.appId), { documents: urlMap, status: 'documents_uploaded' }); }
+        buildReview(); goPage(3);
+      } catch (err) { showErr(errEl, '❌ ' + err.message); btn.disabled = false; btn.innerHTML = 'Save Documents & Continue &nbsp;<i class="fas fa-arrow-right"></i>'; prog.style.display = 'none'; }
+    }
+
+    function buildReview() {
+      const a = APP.applicant;
+      ['name', 'email', 'phone', 'nat', 'pp', 'ppexp', 'dob', 'visa', 'travel'].forEach((k, i) => {
+        const vals = [a.firstName + ' ' + a.lastName, a.email, a.phone, a.nationality, a.passportNo, a.passportExpiry, a.dob, a.visaType + ' — AED ' + APP.amount, a.travelDate];
+        document.getElementById('rv_' + k).textContent = vals[i];
+      });
+      const ul = document.getElementById('rv_docs'); ul.innerHTML = '';
+      const allDocKeys = window._reqDocKeys || DOC_CONFIGS[currentGroup].docs.map(d => d.key);
+      allDocKeys.forEach(key => { const has = !!APP.docs[key]; const li = document.createElement('li'); li.innerHTML = `<span class="ck ${has ? 'ok' : 'no'}">${has ? '✓' : '✗'}</span><span>${DOC_LABELS[key] || key}${has ? '<span style="color:var(--muted);font-size:11px;margin-left:5px;">' + APP.docs[key].name.substring(0, 24) + '</span>' : '<span style="color:#e53e3e;font-size:11px;"> — Not uploaded</span>'}</span>`; ul.appendChild(li); });
+    }
+
+    function step3Next() {
+      const ref = APP.appId || ('COT-' + Date.now());
+      document.getElementById('pay_ref').value = ref;
+      document.getElementById('pay_fare').value = 'AED ' + APP.amount.toLocaleString() + '.00';
+      document.getElementById('pay_email').value = APP.applicant.email;
+      document.getElementById('pay_phone').value = APP.applicant.phone;
+      document.getElementById('pay_amount_show').textContent = APP.amount.toLocaleString() + '.00';
+      document.getElementById('pay_type_show').textContent = APP.visaLabel + ' Entry Visa';
+      document.getElementById('bank_ref').textContent = ref;
+      document.getElementById('bank_amt').textContent = 'AED ' + APP.amount.toLocaleString() + '.00';
+      document.querySelectorAll('.pay-amt-ref').forEach(el => el.textContent = APP.amount.toLocaleString() + '.00');
+      goPage(4);
+    }
+
+    function selectPM(el, method) {
+      document.querySelectorAll('.pay-tab').forEach(t => t.classList.remove('sel'));
+      el.classList.add('sel'); APP.payMethod = method;
+      ['card', 'apple', 'samsung', 'bank'].forEach(m => { const d = document.getElementById('det_' + m); if (d) d.style.display = m === method ? '' : ' none'; });
+      document.getElementById('det_' + method).style.display = '';
+      // hide all others
+      ['card', 'apple', 'samsung', 'bank'].filter(m => m !== method).forEach(m => { const d = document.getElementById('det_' + m); if (d) d.style.display = 'none'; });
+    }
+
+    async function doPayment() {
+      const errEl = document.getElementById('p4_err');
+      const btn = document.getElementById('payBtn');
+      errEl.className = 'alert alert-err'; btn.disabled = true;
+      btn.innerHTML = '<span class="spin"></span> Connecting to PayTabs…';
+      try {
+        if (fbOK && APP.appId) { const { db, doc, updateDoc } = window.__fb; await updateDoc(doc(db, 'visa_applications', APP.appId), { status: 'payment_initiated', paymentMethod: APP.payMethod, initiatedAt: new Date().toISOString() }); }
+        const res = await fetch(BACKEND_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ cartId: APP.appId || ('COT-' + Date.now()), amount: APP.amount, visaType: APP.visaLabel, customerName: APP.applicant.firstName + ' ' + APP.applicant.lastName, customerEmail: APP.applicant.email, customerPhone: APP.applicant.phone, applicationId: APP.appId }) });
+        const data = await res.json();
+        if (data.redirect_url) { window.location.href = data.redirect_url; }
+        else throw new Error(data.error || 'No redirect URL from PayTabs');
+      } catch (err) { showErr(errEl, '❌ ' + err.message); btn.disabled = false; btn.innerHTML = '<i class="fas fa-lock"></i>&nbsp; Pay Securely via PayTabs'; }
+    }
+
+    async function checkPaymentReturn() {
+      const p = new URLSearchParams(window.location.search);
+      const payment = p.get('payment');
+      const respStatus = p.get('respStatus');
+      const appId = p.get('appId') || p.get('cart_id');
+
+      const isSuccess = payment === 'success' || respStatus === 'A';
+      const isFail = payment === 'fail' || (respStatus && respStatus !== 'A');
+
+      if (isSuccess) {
+        if (fbOK && appId) {
+          try {
+            const { db, doc, updateDoc } = window.__fb;
+            await updateDoc(doc(db, 'visa_applications', appId), {
+              status: 'paid',
+              paidAt: new Date().toISOString(),
+              tranRef: p.get('tran_ref') || ''
+            });
+          } catch (e) { }
+        }
+        document.getElementById('suc_ref').textContent = appId || ('COT-' + Date.now());
+        document.getElementById('suc_email').textContent = p.get('email') || APP.applicant.email || '–';
+        document.getElementById('suc_phone').textContent = APP.applicant.phone || '–';
+        goPage(5);
+      } else if (isFail) {
+        goPage(4);
+        showErr(document.getElementById('p4_err'), '❌ Payment was declined or cancelled. Please try again.');
+      }
+    }
+    function showErr(el, msg) { el.textContent = msg; el.className = 'alert alert-err show'; }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      checkPaymentReturn();
+      const p = new URLSearchParams(window.location.search), v = p.get('type');
+      if (v) { const sel = document.getElementById('p1_visa'); for (const o of sel.options) { if (o.value.startsWith(v)) { sel.value = o.value; onVisaChange(); break; } } }
+    });
+  </script>
+</body>
+
+</html>

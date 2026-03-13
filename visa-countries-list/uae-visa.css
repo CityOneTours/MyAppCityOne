@@ -487,6 +487,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(388px, 1fr));
     gap: 22px;
 }
+
 .visa-types {
     display: flex;
     justify-content: center;
@@ -554,6 +555,7 @@ body {
 .visa-btn:hover {
     transform: translateY(-2px);
 }
+
 .vcard {
     background: var(--white);
     border: 1.5px solid var(--sand-border);
@@ -638,7 +640,7 @@ body {
 }
 
 .cname {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Segoe UI', sans-serif;
     font-size: 24px;
     font-weight: 700;
     color: var(--text-dark);
@@ -666,7 +668,7 @@ body {
 }
 
 .pamt {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Segoe UI', sans-serif;
     font-size: 30px;
     font-weight: 700;
     color: var(--text-dark);
@@ -1466,183 +1468,913 @@ textarea.fc {
     }
 
     .vgrid {
-    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
-}
+        grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+    }
 }
 
 
 
 /* ===== UAE VISA SEO SECTION ===== */
 
-.uaeVisaSeoWrap{
-padding:40px 0 20px;
+.uaeVisaSeoWrap {
+    padding: 40px 0 20px;
 }
 
-.uaeVisaSeoBox{
-background:#f7e3e1;
-border-radius:18px;
-padding:28px;
-box-shadow:0 6px 24px rgba(0,0,0,0.05);
-border:1px solid rgba(0,0,0,0.05);
+.uaeVisaSeoBox {
+    background: #f7e3e1;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 
 /* Title */
 
-.uaeVisaSeoTitle{
-font-size:32px;
-font-weight:600;
-line-height:1.3;
-color:#1a1a1a;
-margin-bottom:14px;
+.uaeVisaSeoTitle {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #1a1a1a;
+    margin-bottom: 14px;
 }
 
 
 /* paragraph */
 
-.uaeVisaSeoText{
-font-size:16px;
-line-height:1.7;
-color:#555;
-margin-bottom:24px;
-font-weight:400;
+.uaeVisaSeoText {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 24px;
+    font-weight: 400;
 }
 
-.seoHighlight{
-font-weight:500;
-color:#111;
+.seoHighlight {
+    font-weight: 500;
+    color: #111;
 }
 
 
 /* grid */
 
-.uaeVisaSeoGrid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
+.uaeVisaSeoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 
 /* cards */
 
-.uaeVisaSeoCard{
-background:#fafafa;
-border-radius:14px;
-padding:20px;
+.uaeVisaSeoCard {
+    background: #fafafa;
+    border-radius: 14px;
+    padding: 20px;
 
-border:2px solid rgba(0, 0, 0, 0.152);
+    border: 2px solid rgba(0, 0, 0, 0.152);
 }
 
 
 /* headings */
 
-.uaeVisaSeoHeading{
-font-size:18px;
-font-weight:600;
-margin-bottom:12px;
-color:#222;
+.uaeVisaSeoHeading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #222;
 }
 
 
 /* list */
 
-.uaeVisaSeoList{
-padding-left:18px;
-margin:0;
+.uaeVisaSeoList {
+    padding-left: 18px;
+    margin: 0;
 }
 
-.uaeVisaSeoList li{
-font-size:15px;
-line-height:1.6;
-color:#444;
-margin-bottom:6px;
+.uaeVisaSeoList li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 6px;
 }
 
 
 /* buttons */
 
-.uaeVisaSeoBtnWrap{
-margin-top:16px;
-display:flex;
-gap:10px;
-flex-wrap:wrap;
+.uaeVisaSeoBtnWrap {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-.uaeVisaBtnPrimary{
-background:#f7b500;
-color:#111;
-padding:10px 16px;
-border-radius:10px;
-font-size:14px;
-font-weight:500;
-text-decoration:none;
+.uaeVisaBtnPrimary {
+    background: #f7b500;
+    color: #111;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
-.uaeVisaBtnPrimary:hover{
-background:#e5a800;
+.uaeVisaBtnPrimary:hover {
+    background: #e5a800;
 }
 
 
-.uaeVisaBtnWhatsapp{
-background:#25D366;
-color:#fff;
-padding:10px 16px;
-border-radius:10px;
-font-size:14px;
-font-weight:500;
-text-decoration:none;
+.uaeVisaBtnWhatsapp {
+    background: #25D366;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
-.uaeVisaBtnWhatsapp:hover{
-background:#1ebe5d;
+.uaeVisaBtnWhatsapp:hover {
+    background: #1ebe5d;
 }
 
 
 /* ================= MOBILE ================= */
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-.uaeVisaSeoWrap{
-padding:20px 12px;
+    .uaeVisaSeoWrap {
+        padding: 20px 12px;
+    }
+
+    .uaeVisaSeoBox {
+        padding: 18px;
+    }
+
+    .uaeVisaSeoTitle {
+        font-size: 22px;
+    }
+
+    .uaeVisaSeoText {
+        font-size: 14px;
+    }
+
+    .uaeVisaSeoGrid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .uaeVisaSeoCard {
+        padding: 16px;
+    }
+
+    .uaeVisaSeoHeading {
+        font-size: 16px;
+    }
+
+    .uaeVisaSeoList li {
+        font-size: 14px;
+    }
+
+    .uaeVisaSeoBtnWrap {
+        flex-direction: column;
+    }
+
+    .uaeVisaBtnPrimary,
+    .uaeVisaBtnWhatsapp {
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
-.uaeVisaSeoBox{
-padding:18px;
+
+
+/* ══════════════════════ PROGRESS STEPPER ══════════════════════ */
+.stepper {
+    background: var(--white);
+    border-bottom: 1px solid var(--sand3);
+    padding: 22px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.uaeVisaSeoTitle{
-font-size:22px;
+.step-row {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    max-width: 700px;
+    width: 100%;
 }
 
-.uaeVisaSeoText{
-font-size:14px;
+.step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
-.uaeVisaSeoGrid{
-grid-template-columns:1fr;
-gap:14px;
+.step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: calc(50% + 22px);
+    right: calc(-50% + 22px);
+    height: 2px;
+    background: var(--sand3);
+    z-index: 0;
+    transition: background .4s;
 }
 
-.uaeVisaSeoCard{
-padding:16px;
+.step.done:not(:last-child)::after {
+    background: var(--red);
 }
 
-.uaeVisaSeoHeading{
-font-size:16px;
+.step-dot {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--sand2);
+    border: 2px solid var(--sand3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--muted);
+    transition: all .3s;
+    z-index: 1;
+    margin-bottom: 7px;
 }
 
-.uaeVisaSeoList li{
-font-size:14px;
+.step.active .step-dot {
+    background: var(--red-pale);
+    border-color: var(--red);
+    color: var(--red);
 }
 
-.uaeVisaSeoBtnWrap{
-flex-direction:column;
+.step.done .step-dot {
+    background: var(--red);
+    border-color: var(--red);
+    color: #fff;
+    font-size: 18px;
 }
 
-.uaeVisaBtnPrimary,
-.uaeVisaBtnWhatsapp{
-width:100%;
-text-align:center;
+.step-lbl {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    text-align: center;
+    letter-spacing: .4px;
 }
 
+.step.active .step-lbl {
+    color: var(--red);
+}
+
+.step.done .step-lbl {
+    color: var(--dark);
+}
+
+/* ══════════════════════ PAGES ══════════════════════ */
+.page {
+    display: none;
+    animation: fadeUp .5s ease both;
+}
+
+.page.show {
+    display: block;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+/* ══════════════════════ CARD ══════════════════════ */
+.card {
+    max-width: 700px;
+    margin: 36px auto 60px;
+    background: var(--white);
+    border: 1.5px solid var(--sand3);
+    border-radius: 22px;
+    padding: 44px;
+    box-shadow: var(--sh);
+}
+
+.card-head {
+    margin-bottom: 28px;
+}
+
+.card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 4px;
+}
+
+.card-sub {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.section-tag {
+    display: inline-block;
+    background: var(--red-pale);
+    border: 1px solid var(--red-border);
+    border-radius: 50px;
+    padding: 4px 14px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 12px;
+}
+
+/* ══════════════════════ FORM CONTROLS ══════════════════════ */
+.frow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.fg {
+    margin-bottom: 15px;
+}
+
+.flbl {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+}
+
+.fc {
+    width: 100%;
+    padding: 12px 15px;
+    background: var(--sand);
+    border: 1.5px solid var(--sand3);
+    border-radius: 10px;
+    color: var(--dark);
+    font-size: 14px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.fc:focus {
+    border-color: var(--red);
+    box-shadow: 0 0 0 3px rgba(246, 8, 8, .07);
+    background: var(--cream);
+}
+
+.fc::placeholder {
+    color: rgba(139, 109, 74, .45);
+}
+
+select.fc {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='%23B8860B' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 13px center;
+    padding-right: 36px;
+}
+
+/* ══════════════════════ DOCUMENT UPLOAD BOXES ══════════════════════ */
+.doc-section-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--dark);
+    margin: 24px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--sand3);
+}
+
+.doc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.doc-box {
+    position: relative;
+    border: 2px dashed var(--sand3);
+    border-radius: 14px;
+    padding: 20px 14px;
+    text-align: center;
+    cursor: pointer;
+    background: var(--sand);
+    transition: all .25s;
+    overflow: hidden;
+}
+
+.doc-box:hover {
+    border-color: var(--red);
+    background: var(--red-pale);
+}
+
+.doc-box.ready {
+    border-color: var(--green);
+    background: var(--green-bg);
+    border-style: solid;
+}
+
+.doc-box.error-box {
+    border-color: #e53e3e;
+    background: #fff5f5;
+    border-style: solid;
+}
+
+.doc-box input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.doc-emoji {
+    font-size: 26px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+.doc-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 3px;
+}
+
+.doc-hint {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.doc-req {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-top: 4px;
+}
+
+.doc-ok {
+    font-size: 11px;
+    color: var(--green);
+    font-weight: 700;
+    margin-top: 5px;
+    display: none;
+}
+
+.doc-box.ready .doc-ok {
+    display: block;
+}
+
+.doc-box.ready .doc-req {
+    display: none;
+}
+
+/* ══════════════════════ UPLOAD PROGRESS ══════════════════════ */
+.upload-progress {
+    display: none;
+    margin: 18px 0;
+    background: var(--sand2);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.up-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.up-bar-bg {
+    height: 8px;
+    background: var(--sand3);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.up-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--red2), var(--red));
+    border-radius: 4px;
+    transition: width .3s;
+}
+
+.up-files {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.up-file-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.up-file-name {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+}
+
+.up-file-status {
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.up-file-status.done {
+    color: var(--green);
+}
+
+.up-file-status.wait {
+    color: var(--muted);
+}
+
+.up-file-status.uploading {
+    color: var(--red);
+}
+
+/* ══════════════════════ REVIEW SUMMARY ══════════════════════ */
+.sumbox {
+    background: var(--sand);
+    border: 1px solid var(--sand3);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 14px;
+}
+
+.sum-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+}
+
+.sum-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    font-size: 14px;
+    border-bottom: 1px solid var(--sand3);
+}
+
+.sum-row:last-child {
+    border-bottom: none;
+}
+
+.sum-k {
+    color: var(--muted);
+}
+
+.sum-v {
+    font-weight: 600;
+    color: var(--dark);
+    text-align: right;
+    max-width: 260px;
+}
+
+.doc-check-list {
+    list-style: none;
+}
+
+.doc-check-list li {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 6px 0;
+    font-size: 13px;
+    border-bottom: 1px solid var(--sand3);
+}
+
+.doc-check-list li:last-child {
+    border-bottom: none;
+}
+
+.ck {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.ck.ok {
+    color: var(--green);
+}
+
+.ck.no {
+    color: #e53e3e;
+}
+
+/* ══════════════════════ PRICE BOX ══════════════════════ */
+.price-box {
+    background: var(--red-pale);
+    border: 1.5px solid var(--red-border);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-lbl {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.price-val {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.price-cur {
+    font-size: 18px;
+    color: var(--red);
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+.price-type {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 2px;
+}
+
+/* ══════════════════════ PAY METHODS ══════════════════════ */
+.pay-methods {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.pay-opt {
+    flex: 1;
+    min-width: 110px;
+    border: 2px solid var(--sand3);
+    border-radius: 12px;
+    padding: 14px 10px;
+    text-align: center;
+    cursor: pointer;
+    background: var(--sand);
+    transition: all .2s;
+}
+
+.pay-opt:hover {
+    border-color: var(--red);
+    background: var(--red-pale);
+}
+
+.pay-opt.sel {
+    border-color: var(--red);
+    background: var(--red-pale);
+}
+
+.pay-opt-icon {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.pay-opt-lbl {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+/* ══════════════════════ BUTTONS ══════════════════════ */
+.btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    transition: all .25s;
+    margin-top: 8px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--red2), var(--red));
+    color: #fff;
+    box-shadow: var(--sh-red);
+}
+
+.btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 36px rgba(246, 8, 8, .28);
+}
+
+.btn-primary:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-ghost {
+    background: var(--white);
+    color: var(--red);
+    border: 1.5px solid var(--red-border);
+    box-shadow: 0 2px 8px rgba(90, 50, 10, .06);
+}
+
+.btn-ghost:hover {
+    background: var(--red-pale);
+    border-color: var(--red);
+}
+
+/* ══════════════════════ ALERTS ══════════════════════ */
+.alert {
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+    display: none;
+}
+
+.alert.show {
+    display: block;
+}
+
+.alert-err {
+    background: #fdecea;
+    border: 1px solid #feb2b2;
+    color: #c53030;
+}
+
+.alert-info {
+    background: var(--green-bg);
+    border: 1px solid #9ae6b4;
+    color: #276749;
+}
+
+.alert-warn {
+    background: #fffbeb;
+    border: 1px solid #f6e05e;
+    color: #744210;
+}
+
+/* ══════════════════════ SPINNER ══════════════════════ */
+.spin {
+    width: 18px;
+    height: 18px;
+    border: 3px solid rgba(255, 255, 255, .3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: rot .7s linear infinite;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+@keyframes rot {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+/* ══════════════════════ SUCCESS PAGE ══════════════════════ */
+.success-wrap {
+    text-align: center;
+    padding: 16px 0;
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--green-bg);
+    border: 2px solid var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 auto 20px;
+}
+
+.success-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.success-sub {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.ref-box {
+    background: var(--red-pale);
+    border: 1px solid var(--red-border);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 14px;
+}
+
+.ref-id {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.ref-lbl {
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 4px;
+}
+
+.info-box {
+    background: var(--sand2);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.info-box strong {
+    color: var(--dark);
+}
+
+
+
+/* ══════════════════════ RESPONSIVE ══════════════════════ */
+@media(max-width:640px) {
+    .card {
+        padding: 24px 18px;
+        margin: 20px 12px 40px;
+    }
+
+    .frow {
+        grid-template-columns: 1fr;
+    }
+
+    .doc-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stepper {
+        padding: 16px 10px;
+    }
+
+    .step-lbl {
+        font-size: 10px;
+    }
+
+    .app-header {
+        padding: 14px 18px;
+    }
+
+    .pay-methods {
+        flex-direction: column;
+    }
 }

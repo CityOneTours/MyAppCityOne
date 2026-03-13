@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>City One Tourism — Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        :root {
+            --bg: #f4f6f9;
+            --surface: #ffffff;
+            --surface2: #f8f9fb;
+            --surface3: #f0f2f5;
+            --border: #e2e6ea;
+            --border2: #d0d5dd;
+            --red: #dc2626;
+            --red2: #b91c1c;
+            --red-dim: rgba(220, 38, 38, .08);
+            --gold: #d97706;
+            --gold-dim: rgba(217, 119, 6, .09);
+            --green: #16a34a;
+            --green-dim: rgba(22, 163, 74, .09);
+            --blue: #2563eb;
+            --blue-dim: rgba(37, 99, 235, .09);
+            --orange: #ea580c;
+            --text: #111827;
+            --text2: #6b7280;
+            --text3: #9ca3af;
+            --sh: 0 1px 4px rgba(0, 0, 0, .08);
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 14px;
+            min-height: 100vh;
+            overflow-x: hidden
+        }
+
+        /* ── HEADER ── */
+        .hdr {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #ffffff;
+            border-bottom: 1px solid var(--border);
+            padding: 0 32px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, .06)
+        }
+
+        .hdr-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .hdr-logo {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0
+        }
+
+        .hdr-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+
+        .hdr-name {
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--text)
+        }
+
+        .hdr-name small {
+            display: block;
+            font-size: 10px;
+            color: var(--text2);
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase
+        }
+
+        .hdr-right {
+            display: flex;
+            align-items: center;
+            gap: 16px
+        }
+
+        .hdr-badge {
+            background: var(--red-dim);
+            border: 1px solid rgba(220, 38, 38, .25);
+            border-radius: 20px;
+            padding: 5px 14px;
+            font-size: 12px;
+            color: var(--red);
+            font-weight: 600
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--green);
+            box-shadow: 0 0 8px rgba(22, 163, 74, .5);
+            animation: pulse 2s infinite
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: .4
+            }
+        }
+
+        /* ── STATS ── */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            padding: 24px 32px 0
+        }
+
+        .stat {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            transition: .2s;
+            box-shadow: var(--sh)
+        }
+
+        .stat:hover {
+            border-color: var(--border2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, .1)
+        }
+
+        .stat-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            margin-bottom: 14px
+        }
+
+        .stat.red .stat-icon {
+            background: var(--red-dim);
+            color: var(--red)
+        }
+
+        .stat.gold .stat-icon {
+            background: var(--gold-dim);
+            color: var(--gold)
+        }
+
+        .stat.green .stat-icon {
+            background: var(--green-dim);
+            color: var(--green)
+        }
+
+        .stat.blue .stat-icon {
+            background: var(--blue-dim);
+            color: var(--blue)
+        }
+
+        .stat-n {
+            font-family: 'Roboto', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 4px
+        }
+
+        .stat.red .stat-n {
+            color: var(--red)
+        }
+
+        .stat.gold .stat-n {
+            color: var(--gold)
+        }
+
+        .stat.green .stat-n {
+            color: var(--green)
+        }
+
+        .stat.blue .stat-n {
+            color: var(--blue)
+        }
+
+        .stat-l {
+            font-size: 12px;
+            color: var(--text2)
+        }
+
+        /* ── CONTROLS ── */
+        .controls {
+            padding: 20px 32px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+
+        .search-wrap {
+            flex: 1;
+            min-width: 220px;
+            position: relative
+        }
+
+        .search-wrap i {
+            position: absolute;
+            left: 13px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text3);
+            font-size: 13px
+        }
+
+        .search-input {
+            width: 100%;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px 14px 10px 36px;
+            color: var(--text);
+            font-size: 13px;
+            font-family: 'Roboto', sans-serif;
+            outline: none;
+            transition: .2s;
+            box-shadow: var(--sh)
+        }
+
+        .search-input:focus {
+            border-color: var(--red);
+            box-shadow: 0 0 0 3px var(--red-dim)
+        }
+
+        .search-input::placeholder {
+            color: var(--text3)
+        }
+
+        .filter-select {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px 14px;
+            color: var(--text);
+            font-size: 13px;
+            font-family: 'Roboto', sans-serif;
+            outline: none;
+            cursor: pointer;
+            appearance: none;
+            padding-right: 32px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath fill='%239ca3af' d='M5 7L0 0h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            transition: .2s;
+            box-shadow: var(--sh)
+        }
+
+        .filter-select:focus {
+            border-color: var(--red)
+        }
+
+        .refresh-btn {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px 18px;
+            color: var(--text2);
+            font-size: 13px;
+            font-family: 'Roboto', sans-serif;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            transition: .2s;
+            white-space: nowrap;
+            box-shadow: var(--sh)
+        }
+
+        .refresh-btn:hover {
+            border-color: var(--border2);
+            color: var(--text);
+            background: var(--surface2)
+        }
+
+        .count-badge {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 9px 14px;
+            font-size: 12px;
+            color: var(--text2);
+            white-space: nowrap;
+            box-shadow: var(--sh)
+        }
+
+        /* ── TABLE ── */
+        .table-wrap {
+            padding: 0 32px 32px;
+            overflow-x: auto
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 4px;
+            min-width: 900px
+        }
+
+        .table thead th {
+            padding: 10px 14px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text3);
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            white-space: nowrap
+        }
+
+        .table tbody tr {
+            background: var(--surface);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .15s
+        }
+
+        .table tbody tr:hover {
+            background: #fef2f2
+        }
+
+        .table tbody td {
+            padding: 14px;
+            font-size: 13px;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border)
+        }
+
+        .table tbody td:first-child {
+            border-left: 1px solid var(--border);
+            border-radius: 10px 0 0 10px
+        }
+
+        .table tbody td:last-child {
+            border-right: 1px solid var(--border);
+            border-radius: 0 10px 10px 0
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700
+        }
+
+        .badge-paid {
+            background: rgba(22, 163, 74, .1);
+            border: 1px solid rgba(22, 163, 74, .25);
+            color: var(--green)
+        }
+
+        .badge-pending {
+            background: rgba(217, 119, 6, .1);
+            border: 1px solid rgba(217, 119, 6, .25);
+            color: var(--gold)
+        }
+
+        .badge-init {
+            background: rgba(37, 99, 235, .1);
+            border: 1px solid rgba(37, 99, 235, .25);
+            color: var(--blue)
+        }
+
+        .badge-uploaded {
+            background: rgba(124, 58, 237, .1);
+            border: 1px solid rgba(124, 58, 237, .25);
+            color: #7c3aed
+        }
+
+        .avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            background: var(--red-dim);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--red);
+            flex-shrink: 0;
+            text-transform: uppercase;
+            border: 1px solid rgba(220, 38, 38, .15)
+        }
+
+        .doc-pills {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap
+        }
+
+        .doc-pill {
+            background: var(--surface3);
+            border: 1px solid var(--border2);
+            border-radius: 5px;
+            padding: 2px 7px;
+            font-size: 10px;
+            color: var(--text2);
+            white-space: nowrap
+        }
+
+        .btn-view {
+            background: var(--red-dim);
+            border: 1px solid rgba(220, 38, 38, .2);
+            border-radius: 8px;
+            color: var(--red);
+            padding: 6px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            transition: .15s;
+            white-space: nowrap
+        }
+
+        .btn-view:hover {
+            background: var(--red);
+            color: #fff
+        }
+
+        /* ── LOADING ── */
+        .loading-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 32px;
+            gap: 16px
+        }
+
+        .spinner {
+            width: 36px;
+            height: 36px;
+            border: 3px solid var(--border);
+            border-top-color: var(--red);
+            border-radius: 50%;
+            animation: spin .8s linear infinite
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        .loading-text {
+            font-size: 13px;
+            color: var(--text2)
+        }
+
+        /* ── EMPTY ── */
+        .empty-wrap {
+            text-align: center;
+            padding: 80px 32px
+        }
+
+        .empty-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+            opacity: .3
+        }
+
+        .empty-text {
+            font-size: 14px;
+            color: var(--text2)
+        }
+
+        /* ── MODAL ── */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .4);
+            z-index: 1000;
+            padding: 20px;
+            overflow-y: auto;
+            backdrop-filter: blur(6px)
+        }
+
+        .modal-overlay.open {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center
+        }
+
+        .modal {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            width: 100%;
+            max-width: 680px;
+            margin: auto;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .2)
+        }
+
+        .modal-head {
+            background: linear-gradient(135deg, #dc2626, #991b1b);
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .modal-head-left {
+            display: flex;
+            align-items: center;
+            gap: 14px
+        }
+
+        .modal-avatar {
+            width: 46px;
+            height: 46px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, .2);
+            border: 1px solid rgba(255, 255, 255, .3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff
+        }
+
+        .modal-name {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff
+        }
+
+        .modal-ref {
+            font-size: 11px;
+            color: rgba(255, 255, 255, .65);
+            margin-top: 2px
+        }
+
+        .modal-close {
+            background: rgba(255, 255, 255, .15);
+            border: 1px solid rgba(255, 255, 255, .25);
+            border-radius: 8px;
+            width: 34px;
+            height: 34px;
+            color: rgba(255, 255, 255, .8);
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .15s
+        }
+
+        .modal-close:hover {
+            background: rgba(255, 255, 255, .25);
+            color: #fff
+        }
+
+        .modal-body {
+            padding: 24px
+        }
+
+        .modal-section {
+            margin-bottom: 20px
+        }
+
+        .modal-section-title {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text3);
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border)
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px
+        }
+
+        .detail-item {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px
+        }
+
+        .detail-label {
+            font-size: 10px;
+            color: var(--text3);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px
+        }
+
+        .detail-value {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text);
+            word-break: break-all
+        }
+
+        .doc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px
+        }
+
+        .doc-item {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px
+        }
+
+        .doc-item-left {
+            display: flex;
+            align-items: center;
+            gap: 10px
+        }
+
+        .doc-item-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: var(--red-dim);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0
+        }
+
+        .doc-item-name {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text)
+        }
+
+        .doc-item-file {
+            font-size: 10px;
+            color: var(--text2);
+            margin-top: 2px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 220px
+        }
+
+        .doc-open-btn {
+            background: var(--surface);
+            border: 1px solid var(--border2);
+            border-radius: 7px;
+            padding: 6px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--text2);
+            text-decoration: none;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: .15s;
+            flex-shrink: 0
+        }
+
+        .doc-open-btn:hover {
+            background: var(--red-dim);
+            border-color: rgba(220, 38, 38, .25);
+            color: var(--red)
+        }
+
+        @media(max-width:700px) {
+            .stats {
+                grid-template-columns: 1fr 1fr;
+                padding: 16px
+            }
+
+            .controls {
+                padding: 12px 16px
+            }
+
+            .table-wrap {
+                padding: 0 16px 24px
+            }
+
+            .hdr {
+                padding: 0 16px
+            }
+
+            .detail-grid {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hdr">
+        <div class="hdr-brand">
+            <div class="hdr-logo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAEYUlEQVR4nO3cXU4jORiGUTPqnQxK9r+cjmAtzE2jpunhpX7sqrJ9zjVKbOl74qoiUAoAAAAAAAAA8NvTWW/8cru9nfXe9On58Th8Xpu/oRBorWU4zV5YGBytRSjVX1AYnK1mKNVeSBhcTY1Q/qmxEHFwRTXmcncg4uDK9s7nrkDEQQ/2zOnmQMRBT7bOa5V7EBjVpkCcHvRoy9w6QSBYHYjTg56tnV8nCASrAnF6MII1c+wEgUAgEAgEAoFAIBAIFgfiCRYjWTrPThAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCGci/P3+evYThCGQQ4mhDIAMQRzsC6dznOMRSl0A6Job2BNIpcRxDIB0Sx3EEAoFAOuP0OJZAOrI0DhHVI5BOGPpzCKQD4jiPQC5OHOcaOpDeh6v39Y9g6EBe7/duh2zvunvd99X8OHsBrb1H8nq/n72UUorB7c3wgZRyTiRCGMMUgZRyTCSiGM/T0h98ud3eWi7kKLUj6SGKq1xeXs3z4/Ht/E8XSCn7I+khiq+I5bclgQz9FOsre55u9RxHKf2v/2jT3IP8n/dhWfKpOtJgrdn37KY8QUr5czi+G/6R4vho1H3VNG0gpSyLZPQhGn1/e00dSCk5klmGZ5Z9bjF9IKWsu9xiLgL55XMks4Uy236XmvL3IIlBaetKT86W/B5k6se87HOlYW9FIB/MfnrMMPBruQf55WMcr/f7dMMy236XEkj5Ow54J5APPscxSyyz7HOL6QP57ntJow/P6Pvba+pAln5pb9QhGnVfNU37FGvtN1rff26EJ13CWG7KE2TP1713H67e13+06U6QGn8L0dt3t0Sx3VSBtPhDoSvHIoz9pgnkiL+iu3IsbDNNIKUc+4n61XsJpy9TBHKl/6y4dB1Cuobhn2JdKY819q65xz1f0dCB9BrHu57XPoqhAxlhwEbYQ8+GDmQUIjmPQDohknMIpCNrvzfGfgLpjOE/lkAgEEiHnCLHEUinRHIMgXRMJO0JpHOz/qOJowhkAKJoRyCDEEkbAhmISOoTCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBALB4kCeH4+nlguBIy2dZycIBAKBQCAQCAQCgUCwKhBPshjBmjl2gkCwOhCnCD1bO79OEAg2BeIUoUdb5tYJAsHmQJwi9GTrvO46QURCD/bM6e5LLJFwZXvns8o9iEi4ohpzWX2wX263t9qvCWvU/MBu9skvFI7W4kqm+aWRUGit5SX+afcOwmEt97oAAAAAAADAIf4DGK1DXRvj8nAAAAAASUVORK5CYII="
+                    alt="City One Tourism Logo">
+            </div>
+            <div class="hdr-name">City One Tourism<small>Visa Admin Dashboard</small></div>
+        </div>
+        <div class="hdr-right">
+            <div class="live-dot"></div>
+            <div class="hdr-badge" id="hdr_count">Loading…</div>
+        </div>
+    </header>
+
+    <!-- STATS -->
+    <div class="stats">
+        <div class="stat red">
+            <div class="stat-icon"><i class="fas fa-file-alt"></i></div>
+            <div class="stat-n" id="st_total">—</div>
+            <div class="stat-l">Total Applications</div>
+        </div>
+        <div class="stat green">
+            <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+            <div class="stat-n" id="st_paid">—</div>
+            <div class="stat-l">Paid</div>
+        </div>
+        <div class="stat gold">
+            <div class="stat-icon"><i class="fas fa-clock"></i></div>
+            <div class="stat-n" id="st_pending">—</div>
+            <div class="stat-l">Pending</div>
+        </div>
+        <div class="stat blue">
+            <div class="stat-icon"><i class="fas fa-coins"></i></div>
+            <div class="stat-n" id="st_rev">—</div>
+            <div class="stat-l">Total Revenue (AED)</div>
+        </div>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="controls">
+        <div class="search-wrap">
+            <i class="fas fa-search"></i>
+            <input class="search-input" id="searchInput" placeholder="Search by name, email, passport, phone…"
+                oninput="filterTable()">
+        </div>
+        <select class="filter-select" id="statusFilter" onchange="filterTable()">
+            <option value="">All Statuses</option>
+            <option value="paid">Paid ✅</option>
+            <option value="payment_initiated">Payment Initiated</option>
+            <option value="documents_uploaded">Docs Uploaded</option>
+            <option value="documents_pending">Pending</option>
+        </select>
+        <select class="filter-select" id="visaFilter" onchange="filterTable()">
+            <option value="">All Visa Types</option>
+            <option value="30 Days Single">30 Days Single</option>
+            <option value="30 Days Multiple">30 Days Multiple</option>
+            <option value="60 Days Single">60 Days Single</option>
+            <option value="60 Days Multiple">60 Days Multiple</option>
+        </select>
+        <select class="filter-select" id="dateFilter" onchange="filterTable()">
+            <option value="">All Time</option>
+            <option value="today">Today</option>
+            <option value="week">This Week</option>
+            <option value="month">This Month</option>
+        </select>
+        <button class="refresh-btn" onclick="loadData()"><i class="fas fa-sync-alt"></i> Refresh</button>
+        <div class="count-badge" id="showingCount">—</div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-wrap" id="tableWrap">
+        <div class="loading-wrap" id="loadingWrap">
+            <div class="spinner"></div>
+            <div class="loading-text">Loading applications from Firebase…</div>
+        </div>
+        <table class="table" id="mainTable" style="display:none">
+            <thead>
+                <tr>
+                    <th>Date & Time</th>
+                    <th>Applicant</th>
+                    <th>Contact</th>
+                    <th>Nationality</th>
+                    <th>Passport No.</th>
+                    <th>Visa Type</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Docs</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+        <div class="empty-wrap" id="emptyWrap" style="display:none">
+            <div class="empty-icon">📭</div>
+            <div class="empty-text">No applications found matching your filters.</div>
+        </div>
+    </div>
+
+    <!-- DETAIL MODAL -->
+    <div class="modal-overlay" id="detailModal" onclick="if(event.target===this)closeModal()">
+        <div class="modal">
+            <div class="modal-head">
+                <div class="modal-head-left">
+                    <div class="modal-avatar" id="m_avatar">?</div>
+                    <div>
+                        <div class="modal-name" id="m_name">—</div>
+                        <div class="modal-ref" id="m_ref">—</div>
+                    </div>
+                </div>
+                <button class="modal-close" onclick="closeModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <div class="modal-section-title">Personal Details</div>
+                    <div class="detail-grid" id="m_personal"></div>
+                </div>
+                <div class="modal-section">
+                    <div class="modal-section-title">Visa & Travel</div>
+                    <div class="detail-grid" id="m_visa"></div>
+                </div>
+                <div class="modal-section" id="m_docs_section">
+                    <div class="modal-section-title">Uploaded Documents</div>
+                    <div class="doc-list" id="m_docs"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIREBASE -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+        import { getFirestore, collection, getDocs, orderBy, query } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+        const cfg = {
+            apiKey: "AIzaSyDLsNLKnQgcrqve-KHHL-VrSFm7xZVFDdw",
+            authDomain: "cityonetours-uaevisa.firebaseapp.com",
+            projectId: "cityonetours-uaevisa",
+            storageBucket: "cityonetours-uaevisa.firebasestorage.app",
+            messagingSenderId: "317988993041",
+            appId: "1:317988993041:web:51e79c5e859116cdd699b0"
+        };
+
+        const app = initializeApp(cfg);
+        const db = getFirestore(app);
+
+        const DOC_LABELS = {
+            passport_front: 'Passport Front (Data Page)',
+            passport_back: 'Passport Back Page',
+            photo: 'Passport Photo',
+            airticket: 'Air Ticket',
+            hotel: 'Hotel Reservation',
+            passext: 'Passport Cover Page',
+            bankstmt: 'Bank Statement',
+            natid_front: 'National ID Front',
+            natid_back: 'National ID Back'
+        };
+        const DOC_EMOJIS = {
+            passport_front: '🛂', passport_back: '📋', photo: '📸',
+            airticket: '✈️', hotel: '🏨', passext: '📔',
+            bankstmt: '🏦', natid_front: '🪪', natid_back: '🪪'
+        };
+
+        let allApps = [];
+
+        function fmtDate(val) {
+            if (!val) return '—';
+            let d;
+            if (val.toDate) d = val.toDate();
+            else if (val.seconds) d = new Date(val.seconds * 1000);
+            else d = new Date(val);
+            if (isNaN(d)) return val;
+            return d.toLocaleString('en-AE', {
+                timeZone: 'Asia/Dubai',
+                day: '2-digit', month: 'short', year: 'numeric',
+                hour: '2-digit', minute: '2-digit', hour12: true
+            });
+        }
+
+        function fmtDateShort(val) {
+            if (!val) return '—';
+            let d;
+            if (val.toDate) d = val.toDate();
+            else if (val.seconds) d = new Date(val.seconds * 1000);
+            else d = new Date(val);
+            if (isNaN(d)) return val;
+            return d.toLocaleString('en-AE', {
+                timeZone: 'Asia/Dubai',
+                day: '2-digit', month: 'short',
+                hour: '2-digit', minute: '2-digit', hour12: true
+            });
+        }
+
+        function getDateObj(val) {
+            if (!val) return null;
+            if (val.toDate) return val.toDate();
+            if (val.seconds) return new Date(val.seconds * 1000);
+            return new Date(val);
+        }
+
+        function statusBadge(s) {
+            if (!s) return `<span class="badge badge-pending"><i class="fas fa-circle"></i> Unknown</span>`;
+            if (s === 'paid') return `<span class="badge badge-paid"><i class="fas fa-check-circle"></i> Paid</span>`;
+            if (s === 'payment_initiated') return `<span class="badge badge-init"><i class="fas fa-spinner"></i> Initiated</span>`;
+            if (s === 'documents_uploaded') return `<span class="badge badge-uploaded"><i class="fas fa-upload"></i> Docs Uploaded</span>`;
+            return `<span class="badge badge-pending"><i class="fas fa-clock"></i> Pending</span>`;
+        }
+
+        function initials(first, last) {
+            return ((first || '?')[0] + (last || '?')[0]).toUpperCase();
+        }
+
+        function renderRow(app, idx) {
+            const a = app.data;
+            const docs = a.documents || {};
+            const docCount = Object.keys(docs).length;
+            const docPills = Object.keys(docs).slice(0, 3).map(k => `<span class="doc-pill">${DOC_EMOJIS[k] || '📄'} ${k.replace(/_/g, ' ')}</span>`).join('');
+            const extraDocs = docCount > 3 ? `<span class="doc-pill">+${docCount - 3}</span>` : '';
+
+            return `<tr onclick="openModal(${idx})">
+    <td>
+      <div style="font-size:12px;font-weight:500;color:var(--text)">${fmtDateShort(a.createdAt)}</div>
+    </td>
+    <td>
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="avatar">${initials(a.firstName, a.lastName)}</div>
+        <div>
+          <div style="font-weight:500;color:var(--text)">${a.firstName || '—'} ${a.lastName || ''}</div>
+          <div style="font-size:11px;color:var(--text2)">${a.nationality || '—'}</div>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div style="font-size:12px;color:var(--text)">${a.email || '—'}</div>
+      <div style="font-size:11px;color:var(--text2)">${a.phone || '—'}</div>
+    </td>
+    <td><span style="font-size:12px">${a.nationality || '—'}</span></td>
+    <td><span style="font-family:monospace;font-size:12px;color:var(--gold);font-weight:600">${a.passportNo || '—'}</span></td>
+    <td>
+      <div style="font-size:12px;font-weight:500;color:var(--text)">${a.visaType || '—'}</div>
+      <div style="font-size:10px;color:var(--text2)">${a.travelDate || ''}</div>
+    </td>
+    <td><span style="font-family:'Roboto',sans-serif;font-size:15px;font-weight:700;color:var(--gold)">AED ${(a.amount || 0).toLocaleString()}</span></td>
+    <td>${statusBadge(a.status)}</td>
+    <td>
+      <div class="doc-pills">${docPills}${extraDocs}</div>
+      ${docCount === 0 ? `<span style="font-size:11px;color:var(--text3)">None</span>` : ''}
+    </td>
+    <td><button class="btn-view"><i class="fas fa-eye"></i> View</button></td>
+  </tr>`;
+        }
+
+        function detailItem(label, value) {
+            return `<div class="detail-item"><div class="detail-label">${label}</div><div class="detail-value">${value || '—'}</div></div>`;
+        }
+
+        window.openModal = function (idx) {
+            const app = allApps[idx]; const a = app.data;
+            document.getElementById('m_avatar').textContent = initials(a.firstName, a.lastName);
+            document.getElementById('m_name').textContent = (a.firstName || '') + (a.lastName ? ' ' + a.lastName : '');
+            document.getElementById('m_ref').textContent = 'Ref: ' + app.id + ' · ' + fmtDate(a.createdAt);
+
+            document.getElementById('m_personal').innerHTML =
+                detailItem('First Name', a.firstName) +
+                detailItem('Last Name', a.lastName) +
+                detailItem('Email', a.email) +
+                detailItem('Mobile', a.phone) +
+                detailItem('Nationality', a.nationality) +
+                detailItem('Date of Birth', a.dob) +
+                detailItem('Passport No.', a.passportNo) +
+                detailItem('Passport Expiry', a.passportExpiry);
+
+            document.getElementById('m_visa').innerHTML =
+                detailItem('Visa Type', a.visaType) +
+                detailItem('Amount', 'AED ' + (a.amount || 0).toLocaleString()) +
+                detailItem('Travel Date', a.travelDate) +
+                detailItem('Status', (a.status || 'unknown').replace(/_/g, ' ').toUpperCase()) +
+                detailItem('Created At', fmtDate(a.createdAt)) +
+                detailItem('Paid At', a.paidAt ? fmtDate(a.paidAt) : 'Not paid yet');
+
+            const docs = a.documents || {};
+            const docKeys = Object.keys(docs);
+            const docsEl = document.getElementById('m_docs');
+            if (docKeys.length === 0) {
+                docsEl.innerHTML = '<div style="font-size:13px;color:var(--text2);padding:10px 0">No documents uploaded yet.</div>';
+            } else {
+                docsEl.innerHTML = docKeys.map(key => {
+                    const d = docs[key];
+                    const url = typeof d === 'object' ? d.url : d;
+                    const name = typeof d === 'object' ? (d.name || key) : '';
+                    const label = DOC_LABELS[key] || key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+                    const emoji = DOC_EMOJIS[key] || '📄';
+                    return `<div class="doc-item">
+        <div class="doc-item-left">
+          <div class="doc-item-icon">${emoji}</div>
+          <div>
+            <div class="doc-item-name">${label}</div>
+            ${name ? `<div class="doc-item-file">${name}</div>` : ''}
+          </div>
+        </div>
+        <a href="${url}" target="_blank" class="doc-open-btn"><i class="fas fa-external-link-alt"></i> Open</a>
+      </div>`;
+                }).join('');
+            }
+
+            document.getElementById('detailModal').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        };
+
+        window.closeModal = function () {
+            document.getElementById('detailModal').classList.remove('open');
+            document.body.style.overflow = '';
+        };
+
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+        window.filterTable = function () {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const statusF = document.getElementById('statusFilter').value;
+            const visaF = document.getElementById('visaFilter').value;
+            const dateF = document.getElementById('dateFilter').value;
+            const now = new Date();
+
+            const filtered = allApps.filter((app, idx) => {
+                const a = app.data;
+                const searchable = [a.firstName, a.lastName, a.email, a.phone, a.passportNo, a.nationality].join(' ').toLowerCase();
+                if (search && !searchable.includes(search)) return false;
+                if (statusF && a.status !== statusF) return false;
+                if (visaF && !(a.visaType || '').includes(visaF)) return false;
+                if (dateF) {
+                    const d = getDateObj(a.createdAt);
+                    if (!d) return false;
+                    if (dateF === 'today') {
+                        if (d.toDateString() !== now.toDateString()) return false;
+                    } else if (dateF === 'week') {
+                        const weekAgo = new Date(now); weekAgo.setDate(weekAgo.getDate() - 7);
+                        if (d < weekAgo) return false;
+                    } else if (dateF === 'month') {
+                        const monthAgo = new Date(now); monthAgo.setMonth(monthAgo.getMonth() - 1);
+                        if (d < monthAgo) return false;
+                    }
+                }
+                return true;
+            });
+
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = filtered.map(app => {
+                const idx = allApps.indexOf(app);
+                return renderRow(app, idx);
+            }).join('');
+
+            document.getElementById('showingCount').textContent = `Showing ${filtered.length} of ${allApps.length}`;
+            document.getElementById('mainTable').style.display = filtered.length ? '' : 'none';
+            document.getElementById('emptyWrap').style.display = filtered.length ? 'none' : 'block';
+        };
+
+        window.loadData = async function () {
+            document.getElementById('loadingWrap').style.display = 'flex';
+            document.getElementById('mainTable').style.display = 'none';
+            document.getElementById('emptyWrap').style.display = 'none';
+
+            try {
+                const q = query(collection(db, 'visa_applications'), orderBy('createdAt', 'desc'));
+                const snap = await getDocs(q);
+                allApps = snap.docs.map(d => ({ id: d.id, data: d.data() }));
+            } catch (e) {
+                console.warn('Ordered query failed, falling back:', e.message);
+                try {
+                    const snap = await getDocs(collection(db, 'visa_applications'));
+                    allApps = snap.docs.map(d => ({ id: d.id, data: d.data() }));
+                    allApps.sort((a, b) => {
+                        const da = getDateObj(a.data.createdAt) || new Date(0);
+                        const db2 = getDateObj(b.data.createdAt) || new Date(0);
+                        return db2 - da;
+                    });
+                } catch (e2) {
+                    document.getElementById('loadingWrap').innerHTML = `<div style="color:var(--red);font-size:14px">❌ Failed to load: ${e2.message}</div>`;
+                    return;
+                }
+            }
+
+            const total = allApps.length;
+            const paid = allApps.filter(a => a.data.status === 'paid').length;
+            const pending = allApps.filter(a => a.data.status !== 'paid').length;
+            const rev = allApps.filter(a => a.data.status === 'paid').reduce((s, a) => s + (a.data.amount || 0), 0);
+            document.getElementById('st_total').textContent = total;
+            document.getElementById('st_paid').textContent = paid;
+            document.getElementById('st_pending').textContent = pending;
+            document.getElementById('st_rev').textContent = rev.toLocaleString();
+            document.getElementById('hdr_count').textContent = total + ' Applications';
+
+            document.getElementById('loadingWrap').style.display = 'none';
+            filterTable();
+        };
+
+        loadData();
+    </script>
+</body>
+
+</html>
