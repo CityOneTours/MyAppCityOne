@@ -15,7 +15,7 @@ const packages = [
 
   // { title: 'Dubai', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 140, duration: 5, country: 'Dubai', img: 'https://4.bp.blogspot.com/-XAAQT_6hDbQ/WYwHsXaYj_I/AAAAAAAAAY8/BPvO6ppggr8sLtyzUtx2Gz8mTy4dRT0nACLcBGAs/s1600/Atlantis-the-palm-best-5-places-to-visit-in-Dubai-ammartours.jpg' },
   // { title: 'Bali', themes: ['Adventure', 'Nature', 'Safari'], price: 140, duration: 7, country: 'Vietnam', img: 'http://makesmarttrips.com/wp-content/uploads/2023/03/Vietnam-Is-Becoming-More-Popular-Among-American-Tourists-Heres-Why.jpg', },
-  // { title: 'Switzerland', themes: ['Honey Moon', 'Luxury'], price: 160, country: 'Bali', duration: 6, country: 'Bali', img: 'http://dalinfotour.ru/uploads/26-Pura-Besakih.jpg', link: 'Dubai-packagess/Dubai-packages-two.html' },
+  // { title: 'Switzerland', themes: ['Honey Moon', 'Luxury'], price: 160, country: 'Bali', duration: 6, country: 'Bali', img: 'http://dalinfotour.ru/uploads/26-Pura-Besakih.jpg', link: 'Dubai-packagess/dubai-4-days-itinerary.htmll' },
   // { title: 'Greece', themes: ['Honey Moon', 'Luxury'], price: 160, country: 'Bali', duration: 6, country: 'Bali', img: 'http://dalinfotour.ru/uploads/26-Pura-Besakih.jpg' },
   // { title: 'Thailand', themes: ['Honey Moon', 'Luxury'], price: 160, country: 'Bali', duration: 6, country: 'Bali', img: 'http://dalinfotour.ru/uploads/26-Pura-Besakih.jpg' },
   // { title: 'Maldives', themes: ['Adventure', 'Nature', 'Safari'], price: 140, duration: 7, country: 'Vietnam', img: 'http://makesmarttrips.com/wp-content/uploads/2023/03/Vietnam-Is-Becoming-More-Popular-Among-American-Tourists-Heres-Why.jpg' },
@@ -24,20 +24,20 @@ const packages = [
 
 
 
-  { title: 'Dubai city tour', themes: ['Luxury', 'Honey Moon', 'Family With Kids'], price: 4499, duration: 8, country: 'Dubai', img: 'Dubai Images/dubai-2057583_1920.webp', link: 'Dubai-packagess/Dubai-packages-one.html' },
-  { title: 'Museum of the Future', themes: ['Adventure', 'Family With Kids'], price: 4279, duration: 5, country: 'Dubai', img: 'Dubai Images/the-palm-962785_1920.webp', link: 'Dubai-packagess/Dubai-packages-three.html' },
+  { title: 'Dubai city tour', themes: ['Luxury', 'Honey Moon', 'Family With Kids'], price: 4499, duration: 8, country: 'Dubai', img: 'Dubai Images/dubai-2057583_1920.webp', link: 'Dubai-packagess/dubai-city-tour-package.html' },
+  { title: 'Museum of the Future', themes: ['Adventure', 'Family With Kids'], price: 4279, duration: 5, country: 'Dubai', img: 'Dubai Images/the-palm-962785_1920.webp', link: 'Dubai-packagess/dubai-desert-safari-city-tour.html' },
   { title: 'Vietnam At Glimpse', themes: ['Honey Moon', 'Adventure', 'Family With Kids'], price: 2699, country: 'Vietnam', duration: 6, country: 'Vietnam', img: 'Vietnam-images/Depositphotos_66882175_L.webp', link: 'Vietnam-Packages-List/Vietnam-one.html' },
-  { title: 'Armenia', themes: ['Honey Moon', 'Luxury'], price: 1682, country: 'Armenia', duration: 5, img: 'Armenia-images/1.webp', link: 'Armenia-packages-list/Armenia-two.html' },
-  { title: 'Armenia', themes: ['Honey Moon', 'Luxury', 'Family With Kids'], price: 2500, country: 'Armenia', duration: 7, img: 'Armenia-images/armenia 1.webp', link: 'Armenia-packages-list/Armenia-four.html' },
+  { title: 'Armenia', themes: ['Honey Moon', 'Luxury'], price: 1682, country: 'Armenia', duration: 5, img: 'Armenia-images/1.webp', link: 'Armenia-packages-list/yerevan-garni-geghard-tour.html' },
+  { title: 'Armenia', themes: ['Honey Moon', 'Luxury', 'Family With Kids'], price: 2500, country: 'Armenia', duration: 7, img: 'Armenia-images/armenia 1.webp', link: 'Armenia-packages-list/yerevan-dilijan-lake-sevan-tsaghkadzor-tour.html' },
   { title: 'kenya - Mara Safari', themes: ['Adventure', 'Family With Kids'], price: 2830, duration: 4, country: 'Kenya', img: 'Kenya-images/Depositphotos_294059094_L.webp', link: 'Kenya-Packages-list/Kenya-one.html' },
   { title: 'Maldives-Package', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 7680, duration: 5, country: 'Maldives', img: 'Maldives-images/maldives-1991877_1920.webp', link: 'Maldives-Packages-list/Maldives-two.html' },
 
-  { title: 'Explore Georgia', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 920, duration: 6, country: ' Georgia', img: 'Georgia-images/giorgi-gvilava-ZTTjG9CS0c0-unsplash.webp', link: 'Georgia-packages-list/Georgia-two.html' },
-  { title: 'Georgia - Tbilisi With Bakuriani', themes: ['Adventure', 'Honey Moon',], price: 1685, duration: 6, country: 'Georgia', img: 'Georgia-images/georgia-3706946_1920.webp', link: 'Georgia-packages-list/Georgia-four.html' },
-  { title: 'Romantic Bali', themes: ['Honey Moon', 'Luxury', 'Family With Kids'], price: 1250, country: 'Bali', duration: 4, country: 'Bali', img: 'Bali-images/BALI 1.webp', link: 'Bali-packages-list/Bali-one.html' },
-  { title: 'Exotic Bali - Villa Stay', themes: ['Honey Moon', 'Luxury', 'Family With Kids'], price: 1730, country: 'Bali', duration: 5, country: 'Bali', img: 'Bali-images/Depositphotos_48098009_L.webp', link: 'Bali-packages-list/Bali-three.html' },
-  { title: 'Explore Azerbaijan', themes: ['Adventure', 'Luxury', 'Family With Kids'], price: 3350, duration: 5, country: 'Azerbaijan', img: 'Azerbaijan-images/Baku-Boulevar-Caspian-1024x509.webp', link: 'Azerbaijan-packages-list/Azerbaijan-one.html' },
-  { title: 'Baku', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 1260, duration: 5, country: 'Azerbaijan', img: 'Azerbaijan-images/xan satayi.webp', link: 'Azerbaijan-packages-list/Azerbaijan-four.html' },
+  { title: 'Explore Georgia', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 920, duration: 6, country: ' Georgia', img: 'Georgia-images/giorgi-gvilava-ZTTjG9CS0c0-unsplash.webp', link: 'Georgia-packages-list/tbilisi-gudauri-tour.html' },
+  { title: 'Georgia - Tbilisi With Bakuriani', themes: ['Adventure', 'Honey Moon',], price: 1685, duration: 6, country: 'Georgia', img: 'Georgia-images/georgia-3706946_1920.webp', link: 'Georgia-packages-list/tbilisi-kazbegi-tour.html' },
+  { title: 'Romantic Bali', themes: ['Honey Moon', 'Luxury', 'Family With Kids'], price: 1250, country: 'Bali', duration: 4, country: 'Bali', img: 'Bali-images/BALI 1.webp', link: 'Bali-packages-list/bali-honeymoon-package.html' },
+  { title: 'Exotic Bali - Villa Stay', themes: ['Honey Moon', 'Luxury', 'Family With Kids'], price: 1730, country: 'Bali', duration: 5, country: 'Bali', img: 'Bali-images/Depositphotos_48098009_L.webp', link: 'Bali-packages-list/bali-family-tour.html' },
+  { title: 'Explore Azerbaijan', themes: ['Adventure', 'Luxury', 'Family With Kids'], price: 3350, duration: 5, country: 'Azerbaijan', img: 'Azerbaijan-images/Baku-Boulevar-Caspian-1024x509.webp', link: 'Azerbaijan-packages-list/baku-city-tour.html' },
+  { title: 'Baku', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 1260, duration: 5, country: 'Azerbaijan', img: 'Azerbaijan-images/xan satayi.webp', link: 'Azerbaijan-packages-list/baku-shahdag-tour.html' },
 
 
 
@@ -57,16 +57,16 @@ const packages = [
   { title: 'Kyrgystan', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 3195, duration: 7, country: 'Kyrgystan', img: 'Kyrgyzstan-packages-list/Kyrgyzstan-images/20250428163923_Kyrgyzstannewgallery3.webp', link: 'Kyrgyzstan-packages-list/Kyrgyzstan-three.html' },
   { title: 'Uzbekistan Budget Friendly', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 1599, duration: 5, country: 'Uzbekistan ', img: 'Uzbekistan-packages-list/Uzbekistan-images/20241104111907_Uzbekistan Itineraries 1.webp', link: 'Uzbekistan-packages-list/Uzbekistan-one.html' },
   { title: 'Uzbekistan', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 3340, duration: 7, country: 'Uzbekistan', img: 'Uzbekistan-packages-list/Uzbekistan-images/20250429181921_Uzbakistannewgallery5.webp', link: 'Uzbekistan-packages-list/Uzbekistan-four.html' },
-  { title: 'Egypt-Exclusive Cairo', themes: ['Adventure', 'Luxury', 'Family with kids'], price: 1530, duration: 4, country: 'Egypt-Exclusive Cairo', img: 'Egypt-packages-list/Egypt-images/Depositphotos_2446172_L.webp', link: 'Egypt-packages-list/Egypt-one.html' },
-  { title: 'Cairo with Nile Cruise', themes: ['Family with kids', 'Luxury', 'Honey Moon'], price: 3799, duration: 7, country: 'Egypt', img: 'Egypt-packages-list/Egypt-images/Depositphotos_23268152_L.webp', link: 'Egypt-packages-list/Egypt-three.html' },
+  { title: 'Egypt-Exclusive Cairo', themes: ['Adventure', 'Luxury', 'Family with kids'], price: 1530, duration: 4, country: 'Egypt-Exclusive Cairo', img: 'Egypt-packages-list/Egypt-images/Depositphotos_2446172_L.webp', link: 'Egypt-packages-list/cairo-pyramids-tour.html' },
+  { title: 'Cairo with Nile Cruise', themes: ['Family with kids', 'Luxury', 'Honey Moon'], price: 3799, duration: 7, country: 'Egypt', img: 'Egypt-packages-list/Egypt-images/Depositphotos_23268152_L.webp', link: 'Egypt-packages-list/cairo-luxor-aswan-tour.html' },
   { title: 'Malaysia', themes: ['Adventure', 'Luxury', 'Family with kids'], price: 1200, duration: 5, country: 'Malaysia', img: 'Malaysia-packages-list/Malaysia-images/Depositphotos_5477401_L.webp', link: 'Malaysia-packages-list/Malaysia-one.html' },
   { title: 'Malaysia', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 1196, duration: 6, country: 'Malaysia', img: 'Malaysia-packages-list/Malaysia-images/Depositphotos_62769361_L.webp', link: 'Malaysia-packages-list/Malaysia-three.html' },
   { title: 'Best of Singapore', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 2100, duration: 5, country: 'Singapore', img: '../Singapore-packages-list/Singapore-images/sc4.webp', link: 'Singapore-packages-list/Singapore-one.html' },
   { title: 'Marvellous Japan Tour', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 1599, duration: 6, country: 'Japan', img: 'Japan-images/Depositphotos_8607019_L.webp', link: 'Japan-packages-list/Japan-one.html' },
   { title: 'India-Eastern Delight', themes: ['Adventure', 'Luxury', 'Family with kids'], price: 1720, duration: 8, country: 'India', img: 'India-packages-list/India-images/Depositphotos_1940059_L.webp', link: 'India-packages-list/India-one.html' },
   { title: 'Gods Own Kerala', themes: ['Adventure', 'Luxury', 'Family with kids'], price: 1620, duration: 9, country: 'India', img: 'India-packages-list/India-images/Depositphotos_45916055_L.webp', link: 'India-packages-list/India-three.html' },
-  { title: 'Croatia_Adventure', themes: ['Adventure', 'Luxury', 'Family with kids'], price: 7260, duration: 8, country: 'Croatia', img: 'croatia-packages-list/Croatia-images/20220619095455_Px_CroatiaGallery4.webp', link: 'croatia-packages-list/croatia-one.html' },
-  { title: 'Croatia_Zagreb – Split', themes: ['Adventure', 'Luxury', 'Family with kids'], price: 5650, duration: 7, country: 'Croatia', img: 'croatia-packages-list/Croatia-images/20220620021437_Pb_CroatiaListing3.webp', link: 'croatia-packages-list/croatia-three.html' },
+  { title: 'Croatia_Adventure', themes: ['Adventure', 'Luxury', 'Family with kids'], price: 7260, duration: 8, country: 'Croatia', img: 'croatia-packages-list/Croatia-images/20220619095455_Px_CroatiaGallery4.webp', link: 'croatia-packages-list/dubrovnik-split-tour.html' },
+  { title: 'Croatia_Zagreb – Split', themes: ['Adventure', 'Luxury', 'Family with kids'], price: 5650, duration: 7, country: 'Croatia', img: 'croatia-packages-list/Croatia-images/20220620021437_Pb_CroatiaListing3.webp', link: 'croatia-packages-list/dubrovnik-split-hvar-tour.html' },
   { title: 'Greece_Athens ', themes: ['Adventure', 'Honey Moon', 'Family with kids'], price: 1840, duration: 4, country: 'Greece', img: 'Greece-packages-list/Greece-images/20220620074110_Pb_GreeceIti5.webp', link: 'Greece-packages-list/Greece-one.html' },
 
   { title: 'Greece_Athens – Mykonos ', themes: ['Adventure', 'Honey Moon', 'Family with kids'], price: 5190, duration: 7, country: 'Greece', img: 'Greece-packages-list/Greece-images/20220620062310_Pb_GreeceIti3.webp', link: 'Greece-packages-list/Greece-two.html' },

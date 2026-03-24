@@ -15,7 +15,7 @@ const destinations = [
     name: "Dubai",
     rating: "5.0",
     image: "images/Home image/dubai-2057583_1920.webp",
-    url: "/Dubai-Packages.html"
+    url: "/dubai-Packages.html"
   },
   {
     name: "Vietnam",
@@ -27,7 +27,7 @@ const destinations = [
     name: "Armenia",
     rating: "4.9",
     image: "images/Home image/armenia-3716853_1920.webp",
-    url: "/Armenia-packages.html"
+    url: "/armenia-tour-packages.html"
   },
 
   {
@@ -47,14 +47,14 @@ const destinations = [
     name: "Georgia",
     rating: "4.7",
     image: "images/Home image/9.webp",
-    url: "/Georgia-packages.html"
+    url: "/georgia-packages.html"
   },
 
   {
     name: "Bali",
     rating: "5.0",
     image: "images/Home image/Depositphotos_3587328_L.webp",
-    url: "/Bali-packages.html"
+    url: "/bali-tour-packages"
   },
   {
     name: "Azerbaijan",
@@ -117,7 +117,7 @@ const destinations = [
     name: "Egypt",
     rating: "4.3",
     image: "images/Home image/Depositphotos_23268152_L.webp",
-    url: "/Egypt-packages.html"
+    url: "/egypt-packages.html"
   },
   {
     name: "Malaysia",
