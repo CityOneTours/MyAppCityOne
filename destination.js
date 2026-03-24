@@ -34,20 +34,20 @@ const destinations = [
     name: "Kenya",
     rating: "4.2",
     image: "images/Home image/Depositphotos_3964728_L.webp",
-    url: "/kenya-packages.html"
+    url: "/kenya-tour-packages.html"
     
   },
   {
     name: "Maldives",
     rating: "4.8",
     image: "images/Home image/Depositphotos_4474251_L (2).webp",
-    url: "/maldives-packages.html"
+    url: "/maldives-tour-packages.html"
   },
   {
     name: "Georgia",
     rating: "4.7",
     image: "images/Home image/9.webp",
-    url: "/georgia-packages.html"
+    url: "/georgia-tour-packages.html"
   },
 
   {
@@ -117,13 +117,13 @@ const destinations = [
     name: "Egypt",
     rating: "4.3",
     image: "images/Home image/Depositphotos_23268152_L.webp",
-    url: "/egypt-packages.html"
+    url: "/egypt-tour-packages.html"
   },
   {
     name: "Malaysia",
     rating: "4.5",
     image: "images/Home image/Depositphotos_5477401_L.webp",
-    url: "malaysia-packages.html"
+    url: "malaysia-tour-packages.html"
   },
   {
     name: "Singapore ",
