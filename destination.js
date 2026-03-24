@@ -15,7 +15,7 @@ const destinations = [
     name: "Dubai",
     rating: "5.0",
     image: "images/Home image/dubai-2057583_1920.webp",
-    url: "/dubai-Packages.html"
+    url: "/dubai-tour-packages.html"
   },
   {
     name: "Vietnam",
@@ -34,14 +34,14 @@ const destinations = [
     name: "Kenya",
     rating: "4.2",
     image: "images/Home image/Depositphotos_3964728_L.webp",
-    url: "/Kenya-packages.html"
+    url: "/kenya-packages.html"
     
   },
   {
     name: "Maldives",
     rating: "4.8",
     image: "images/Home image/Depositphotos_4474251_L (2).webp",
-    url: "/Maldives-packages.html"
+    url: "/maldives-packages.html"
   },
   {
     name: "Georgia",
@@ -54,7 +54,7 @@ const destinations = [
     name: "Bali",
     rating: "5.0",
     image: "images/Home image/Depositphotos_3587328_L.webp",
-    url: "/bali-tour-packages"
+    url: "bali-tour-packages.html"
   },
   {
     name: "Azerbaijan",
@@ -87,7 +87,7 @@ const destinations = [
     name: "Jordan",
     rating: "4.7",
     image: "images/Home image/20240302100402_Jordaniti2.webp",
-    url: "/Jordan-packages.html"
+    url: "/jordan-tour-packages.html"
   },
   {
     name: "Thailand",
@@ -123,7 +123,7 @@ const destinations = [
     name: "Malaysia",
     rating: "4.5",
     image: "images/Home image/Depositphotos_5477401_L.webp",
-    url: "Malaysia-packages.html"
+    url: "malaysia-packages.html"
   },
   {
     name: "Singapore ",
