@@ -50,7 +50,7 @@ const cardData = {
       img: "images/Home image/armenia-3716853_1920.webp",
       info: "7 days 6 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
       priceAED: "2500",
-      link: "armenia-tours-package-list/yerevan-dilijan-lake-sevan-tsaghkadzor-tour.html"
+      link: "armenia-tour-packages-list/yerevan-dilijan-lake-sevan-tsaghkadzor-tour.html"
     }
   ],
   luxury: [
@@ -221,7 +221,7 @@ const monthData = {
   Mar: [
     { image: 'images/Home image/Depositphotos_3587328_L.webp', country: 'Bali', link: 'bali-tour-packages' },
     { image: 'images/Home image/BKU_510_aspect16x9.webp', country: 'Azerbaijan', link: 'Azerbaijan-packages.html' },
-    { image: 'images/Home image/Depositphotos_94663096_L.webp', country: 'Turkey', link: 'turkey-packages.html' },
+    { image: 'images/Home image/Depositphotos_94663096_L.webp', country: 'Turkey', link: 'turkey-tour-packages.html' },
     { image: 'images/Home image/Depositphotos_25885511_L.webp', country: 'Morocco', link: 'morocco-packages.html' },
 
   ],
@@ -233,7 +233,7 @@ const monthData = {
 
   ],
   May: [
-    { image: 'images/Home image/Depositphotos_312559308_L.webp', country: 'Singapore', link: 'singapore-packages.html' },
+    { image: 'images/Home image/Depositphotos_312559308_L.webp', country: 'Singapore', link: 'singapore-tour-packages.html' },
     { image: 'images/Home image/Depositphotos_8607019_L.webp', country: 'japan', link: 'japan-packages.html' },
     { image: 'images/Home image/Depositphotos_7932088_L.webp', country: 'India', link: 'india-packages.html' },
     { image: 'images/Home image/20220619084845_Px_CroatiaListing.webp', country: 'croatia', link: 'croatia-packages.html' },
@@ -248,8 +248,8 @@ const monthData = {
   ],
   Jul: [
     { image: 'images/Home image/Depositphotos_13890331_L.webp', country: 'south africa', link: 'southafrica-packages.html' },
-    { image: 'images/Home image/dambulla-2516649_1920.webp', country: 'Sri Lanka', link: 'srilanka-packages.html' },
-    { image: 'images/Home image/20230107052216_Pb_SaudiRiyadhIti5.webp', country: 'saudi arabia', link: 'saudiarabia-packages.html' },
+    { image: 'images/Home image/dambulla-2516649_1920.webp', country: 'Sri Lanka', link: 'srilanka-tour-packages.html' },
+    { image: 'images/Home image/20230107052216_Pb_SaudiRiyadhIti5.webp', country: 'saudi arabia', link: 'saudiarabia-tour-packages.html' },
     { image: 'images/Home image/Depositphotos_58674555_XL.webp', country: 'switzerland', link: 'switzerland-packages.html' },
   ],
   Aug: [
@@ -285,7 +285,7 @@ const monthData = {
     { image: 'images/Home image/Depositphotos_3587328_L.webp', country: 'Bali', link: 'bali-tour-packages' },
     { image: 'images/Home image/BKU_510_aspect16x9.webp', country: 'Azerbaijan', link: 'Azerbaijan-packages.html' },
     { image: 'images/Home image/Depositphotos_13890331_L.webp', country: 'south africa', link: 'southafrica-packages.html' },
-    { image: 'images/Home image/Depositphotos_94663096_L.webp', country: 'Turkey', link: 'turkey-packages.html' },
+    { image: 'images/Home image/Depositphotos_94663096_L.webp', country: 'Turkey', link: 'turkey-tour-packages.html' },
 
   ]
 };

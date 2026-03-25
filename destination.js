@@ -34,7 +34,7 @@ const destinations = [
     name: "Kenya",
     rating: "4.2",
     image: "images/Home image/Depositphotos_3964728_L.webp",
-    url: "/kenya-tours-packages.html"
+    url: "/kenya-tour-packages.html"
     
   },
   {
@@ -47,7 +47,7 @@ const destinations = [
     name: "Georgia",
     rating: "4.7",
     image: "images/Home image/9.webp",
-    url: "/georgia-tour-packages.html"
+    url: "/georgia-tours-packages.html"
   },
 
   {
@@ -66,7 +66,7 @@ const destinations = [
     name: "Turkey",
     rating: "4.4",
     image: "images/Home image/Depositphotos_94663096_L.webp",
-    url: "/turkey-packages.html"
+    url: "/turkey-tour-packages.html"
   },
 
 
@@ -99,7 +99,7 @@ const destinations = [
     name: "Sri Lanka ",
     rating: "4.2",
     image: "images/Home image/dambulla-2516649_1920.webp",
-    url: "/srilanka-packages.html"
+    url: "/srilanka-tour-packages.html"
   },
   {
     name: "Kyrgyzstan",
@@ -129,7 +129,7 @@ const destinations = [
     name: "Singapore ",
     rating: "4.7",
     image: "images/Home image/Depositphotos_312559308_L.webp",
-    url: "/singapore-packages.html"
+    url: "/singapore-tour-packages.html"
   },
 
   {
@@ -193,7 +193,7 @@ const destinations = [
     name: "Saudi arabia",
     rating: "4.9",
     image: "images/Home image/20230107052216_Pb_SaudiRiyadhIti5.webp",
-    url: "/saudiarabia-packages.html"
+    url: "/saudiarabia-tour-packages.html"
   },
 
 ];
