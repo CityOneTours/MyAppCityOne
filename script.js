@@ -328,10 +328,10 @@ loadCards('Sep');
 
 const visaData = {
   Dubai: [
-    { title: 'Georgia', image: 'Georgia-images/9.webp', link: 'visa-countries-list/georgia-visa.html' },
-    { title: 'Armenia', image: 'Armenia-images/1.webp', link: 'visa-countries-list/armenia-visa.html' },
-    { title: 'Azerbaijan', image: 'Azerbaijan-images/BKU_510_aspect16x9.webp', link: 'visa-countries-list/azerbaijan-visa.html' },
-    { title: 'Vietnam', image: 'Vietnam-images/Depositphotos_66882175_L.webp', link: 'visa-countries-list/vietnam-visa.html' }
+    { title: 'Georgia', image: 'Georgia-images/9.webp', link: 'visa-countries-list/georgia-countrie-visa.html' },
+    { title: 'Armenia', image: 'Armenia-images/1.webp', link: 'visa-countries-list/armenia-countrie-visa.html' },
+    { title: 'Azerbaijan', image: 'Azerbaijan-images/BKU_510_aspect16x9.webp', link: 'visa-countries-list/azerbaijan-countrie-visa.html' },
+    { title: 'Vietnam', image: 'Vietnam-images/Depositphotos_66882175_L.webp', link: 'visa-countries-list/vietnam-countrie-visa.html' }
 
 
   ],
