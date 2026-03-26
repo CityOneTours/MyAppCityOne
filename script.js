@@ -32,7 +32,7 @@ const cardData = {
       img: "images/Home image/9.webp",
       info: "6 days 5 nights | <i class='fas fa-hotel'></i> 3*/4*/5* Hotels",
       priceAED: "1685",
-      link: "georgia-packages-list/tbilisi-kazbegi-tour.html"
+      link: "georgia-tours-packages-list/tbilisi-kazbegi-tour.html"
 
     },
     {
@@ -60,7 +60,7 @@ const cardData = {
       img: "images/Home image/Depositphotos_37768795_L.webp",
       info: "6 days 5 nights | <i class='fas fa-hotel'></i> 5* Resort",
       priceAED: "2699",
-      link: "vietnam-tour-Packages-List/hanoi-halong-bay-da-nang-ho-chi-minh-tour.html"
+      link: "vietnam-tours-packages-list/hanoi-halong-bay-da-nang-ho-chi-minh-tour.html"
 
     },
     {
@@ -115,7 +115,7 @@ const cardData = {
       img: "images/Home image/Depositphotos_37768795_L.webp",
       info: " days  nights | <i class='fas fa-hotel'></i> 5* Resort",
       priceAED: "2699",
-      link: "vietnam-tour-Packages-List/hanoi-halong-bay-da-nang-ho-chi-minh-tour.html"
+      link: "vietnam-tours-packages-list/hanoi-halong-bay-da-nang-ho-chi-minh-tour.html"
 
     },
     {
@@ -152,7 +152,7 @@ const cardData = {
       img: "images/Home image/20230107052216_Pb_SaudiRiyadhIti5.webp",
       info: "4 days 3 nights | <i class='fas fa-hotel'></i> Water Villas",
       priceAED: "3130",
-      link: "Saudi-tour-packages-list/riyadh-jeddah-tour.html"
+      link: "saudiarabia-tour-packages-list/riyadh-jeddah-tour.html"
 
     },
     {
@@ -328,7 +328,7 @@ loadCards('Sep');
 
 const visaData = {
   Dubai: [
-    { title: 'Georgia', image: 'Georgia-images/9.webp', link: 'visa-countries-list/georgia-countrie-visa.html' },
+    { title: 'Georgia', image: 'Georgia-images/9.webp', link: 'visa-countries-list/georgia-countries-visa.html' },
     { title: 'Armenia', image: 'Armenia-images/1.webp', link: 'visa-countries-list/armenia-countrie-visa.html' },
     { title: 'Azerbaijan', image: 'Azerbaijan-images/BKU_510_aspect16x9.webp', link: 'visa-countries-list/azerbaijan-countrie-visa.html' },
     { title: 'Vietnam', image: 'Vietnam-images/Depositphotos_66882175_L.webp', link: 'visa-countries-list/vietnam-countrie-visa.html' }
