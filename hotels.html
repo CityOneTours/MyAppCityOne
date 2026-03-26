@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Hotel Booking Deals Worldwide | City One Tours</title>
-     <!-- SEO Meta Tags -->
-  <meta name="description" content="Find the best hotel booking deals worldwide with City One Tours. Affordable hotels, luxury stays & exclusive travel accommodation offers.">
-  
-  <meta name="keywords" content="hotel booking deals, best hotels worldwide, travel hotels booking, luxury hotels, cheap hotels booking"> 
+    <meta name="description"
+        content="Find the best hotel booking deals worldwide with City One Tours. Affordable hotels, luxury stays & exclusive travel accommodation offers.">
+    <meta name="keywords"
+        content="hotel booking deals, best hotels worldwide, travel hotels booking, luxury hotels, cheap hotels booking">
     <link rel="stylesheet" href="hotels.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -673,52 +676,50 @@
             margin: 64px 0;
         }
 
-        /* ══ 5-STAR ══ */
-        .g5 {
+        /* ══════════════════════════════════════
+           5-STAR NEW LAYOUT — 10 HOTELS
+        ══════════════════════════════════════ */
+
+        /* ROW 1: Hero mosaic — 3 cards spanning full width */
+        .g5-row1 {
             display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr;
-            grid-template-rows: 300px 300px;
-            gap: 18px;
+            grid-template-columns: 1.6fr 1fr 1fr;
+            grid-template-rows: 380px;
+            gap: 16px;
+            margin-bottom: 16px;
         }
 
-        .g5-a {
-            grid-column: 1;
-            grid-row: 1/3;
+        /* ROW 2: 4 equal cards */
+        .g5-row2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 260px;
+            gap: 16px;
+            margin-bottom: 16px;
         }
 
-        .g5-b {
-            grid-column: 2;
-            grid-row: 1;
+        /* ROW 3: 3 equal cards */
+        .g5-row3 {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr 1fr;
+            grid-template-rows: 300px;
+            gap: 16px;
         }
 
-        .g5-c {
-            grid-column: 3;
-            grid-row: 1;
-        }
-
-        .g5-d {
-            grid-column: 2;
-            grid-row: 2;
-        }
-
-        .g5-e {
-            grid-column: 3;
-            grid-row: 2;
-        }
-
+        /* Base hotel card */
         .hcard {
             position: relative;
             border-radius: 18px;
             overflow: hidden;
             background: #0f0f0f;
             cursor: pointer;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, .10);
-            transition: transform .35s cubic-bezier(.22, .61, .36, 1), box-shadow .35s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, .13);
+            transition: transform .38s cubic-bezier(.22, .61, .36, 1), box-shadow .38s ease;
         }
 
         .hcard:hover {
-            transform: translateY(-8px) scale(1.01);
-            box-shadow: 0 24px 56px rgba(0, 0, 0, .18);
+            transform: translateY(-8px) scale(1.012);
+            box-shadow: 0 28px 60px rgba(0, 0, 0, .22);
         }
 
         .hcard-img {
@@ -726,17 +727,25 @@
             inset: 0;
             background-size: cover;
             background-position: center;
-            transition: transform .7s ease;
+            transition: transform .75s ease;
         }
 
         .hcard:hover .hcard-img {
-            transform: scale(1.08);
+            transform: scale(1.09);
         }
 
+        /* Gradient overlays — slightly varied per card type */
         .hcard-grad {
             position: absolute;
             inset: 0;
-            background: linear-gradient(0deg, rgba(5, 5, 15, .92) 0%, rgba(5, 5, 15, .55) 45%, rgba(5, 5, 15, .05) 100%);
+            background: linear-gradient(0deg, rgba(5, 5, 15, .94) 0%, rgba(5, 5, 15, .55) 42%, rgba(5, 5, 15, .05) 100%);
+        }
+
+        /* Extra side gradient for tall/feature card */
+        .hcard-grad-side {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(160deg, rgba(5, 5, 15, .80) 0%, rgba(5, 5, 15, .50) 50%, rgba(5, 5, 15, .10) 100%);
         }
 
         .hcard-top {
@@ -750,6 +759,7 @@
             z-index: 3;
         }
 
+        /* Star chips */
         .star-chip {
             padding: 5px 13px;
             border-radius: 20px;
@@ -758,6 +768,9 @@
             letter-spacing: 1px;
             text-transform: uppercase;
             backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
 
         .sc-g {
@@ -770,6 +783,33 @@
             color: #fff;
         }
 
+        .sc-new {
+            background: rgba(255, 255, 255, .18);
+            border: 1px solid rgba(255, 255, 255, .3);
+            color: #fff;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Wishlist / heart icon top-right */
+        .hcard-wish {
+            width: 30px;
+            height: 30px;
+            background: rgba(255, 255, 255, .15);
+            border: 1px solid rgba(255, 255, 255, .2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background .2s;
+        }
+
+        .hcard-wish:hover {
+            background: rgba(235, 34, 42, .8);
+        }
+
         .hcard-body {
             position: absolute;
             bottom: 0;
@@ -780,27 +820,44 @@
         }
 
         .hcard-cat {
-            font-size: 10px;
+            font-size: 9px;
             font-weight: 800;
-            letter-spacing: 2.5px;
+            letter-spacing: 3px;
             text-transform: uppercase;
-            margin-bottom: 5px;
-        }
-
-        .hc-g {
+            margin-bottom: 4px;
             color: #FFD166;
         }
 
         .hcard-name {
-            font-size: 1rem;
-            font-weight: 800;
+            /* font-family: 'Cormorant Garamond', Georgia, serif; */
+            font-size: 1.15rem;
+            font-weight: 700;
             color: #fff;
-            line-height: 1.25;
-            margin-bottom: 5px;
+            line-height: 1.2;
+            margin-bottom: 6px;
+            letter-spacing: 0.2px;
         }
 
         .hcard-tall .hcard-name {
-            font-size: 1.35rem;
+            font-size: 1.55rem;
+        }
+
+        .hcard-mid .hcard-name {
+            font-size: 1.25rem;
+        }
+
+        .hcard-loc {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 11px;
+            color: rgba(255, 255, 255, .6);
+            margin-bottom: 8px;
+        }
+
+        .hcard-loc i {
+            font-size: 9px;
+            color: #FFD166;
         }
 
         .hcard-tags {
@@ -813,19 +870,38 @@
         .htag {
             font-size: 10px;
             font-weight: 600;
-            color: rgba(255, 255, 255, .7);
+            color: rgba(255, 255, 255, .75);
             background: rgba(255, 255, 255, .10);
-            border: 1px solid rgba(255, 255, 255, .12);
+            border: 1px solid rgba(255, 255, 255, .14);
             padding: 3px 9px;
             border-radius: 5px;
             backdrop-filter: blur(4px);
+        }
+
+        /* Rating pill */
+        .hcard-rating {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(255, 209, 70, .18);
+            border: 1px solid rgba(255, 209, 70, .3);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: 700;
+            color: #FFD166;
+            margin-bottom: 10px;
+        }
+
+        .hcard-rating i {
+            font-size: 8px;
         }
 
         .hcard-foot {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-top: 12px;
+            padding-top: 10px;
             border-top: 1px solid rgba(255, 255, 255, .10);
         }
 
@@ -835,10 +911,7 @@
         }
 
         .stars-mini i {
-            font-size: 10px;
-        }
-
-        .sm-g {
+            font-size: 9px;
             color: #FFD166;
         }
 
@@ -847,19 +920,21 @@
             border: none;
             border-radius: 8px;
             font-family: 'Segoe UI', sans-serif;
-            font-size: 11px;
+            font-size: 10px;
             font-weight: 800;
-            letter-spacing: .5px;
+            letter-spacing: .8px;
             text-transform: uppercase;
             cursor: pointer;
-            transition: all .2s;
-            background: #eb222a;
+            transition: all .25s;
+            background: linear-gradient(135deg, #eb222a, #c81c22);
             color: #fff;
+            box-shadow: 0 4px 14px rgba(235, 34, 42, .35);
         }
 
         .enq-btn-5:hover {
-            background: #c81c22;
-            transform: translateY(-1px);
+            background: linear-gradient(135deg, #c81c22, #a01418);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(235, 34, 42, .45);
         }
 
         /* ══ 4-STAR ══ */
@@ -1320,25 +1395,40 @@
             font-weight: 600;
         }
 
-        /* ══════════════════════════════════════════
-           MOBILE FIXES ONLY
-        ══════════════════════════════════════════ */
+        /* ══ MOBILE ══ */
         @media(max-width:1100px) {
             .g4 {
                 grid-template-columns: 1fr;
             }
+
+            .g5-row2 {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 260px 260px;
+            }
         }
 
         @media(max-width:900px) {
-            .g5 {
+            .g5-row1 {
                 grid-template-columns: 1fr;
                 grid-template-rows: auto;
             }
 
-            .g5>* {
-                grid-column: auto;
-                grid-row: auto;
+            .g5-row1>* {
                 height: 280px !important;
+            }
+
+            .g5-row2 {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 240px 240px;
+            }
+
+            .g5-row3 {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+
+            .g5-row3>* {
+                height: 260px !important;
             }
 
             .g3 {
@@ -1347,8 +1437,6 @@
         }
 
         @media(max-width:768px) {
-
-            /* header */
             .top-bar {
                 padding: 0 10px;
                 font-size: 12px;
@@ -1405,7 +1493,6 @@
                 display: block;
             }
 
-            /* ── HERO FIX ── */
             .hero-carousel-wrap {
                 height: 100svh;
                 min-height: 500px;
@@ -1464,7 +1551,6 @@
                 font-size: 11px;
             }
 
-            /* ── FILTER STRIP FIX ── */
             .filter-inner {
                 padding: 0;
                 overflow-x: auto;
@@ -1490,12 +1576,10 @@
                 padding: 1px 5px;
             }
 
-            /* ── CONTENT FIX ── */
             .content-area {
                 padding: 28px 14px 60px;
             }
 
-            /* ── TIER HEADER FIX ── */
             .tier-header {
                 flex-wrap: wrap;
                 gap: 12px;
@@ -1532,7 +1616,6 @@
                 margin-top: 2px;
             }
 
-            /* hide the horizontal line & count on mobile — they cause layout issues */
             .tier-divider {
                 display: none;
             }
@@ -1542,10 +1625,32 @@
                 color: #9CA3AF;
                 flex: 0 0 100%;
                 padding-left: 52px;
-                /* aligns under the text */
             }
 
-            /* ── 4-STAR MOBILE ── */
+            .g5-row1 {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                margin-bottom: 12px;
+            }
+
+            .g5-row1>* {
+                height: 260px !important;
+                min-height: unset !important;
+            }
+
+            .g5-row2 {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 200px 200px;
+                gap: 12px;
+                margin-bottom: 12px;
+            }
+
+            .g5-row3 {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 200px;
+                gap: 12px;
+            }
+
             .card4 {
                 flex-direction: column;
                 min-height: auto;
@@ -1565,7 +1670,6 @@
                 font-size: .92rem;
             }
 
-            /* ── 3-STAR MOBILE ── */
             .g3 {
                 grid-template-columns: 1fr;
             }
@@ -1578,7 +1682,6 @@
                 height: 200px;
             }
 
-            /* sec divider spacing */
             .sec-divider {
                 margin: 36px 0;
             }
@@ -1599,20 +1702,22 @@
                 font-size: clamp(1.6rem, 8vw, 2.2rem);
             }
 
+            .g5-row2 {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 200px);
+            }
+
+            .g5-row3 {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 200px);
+            }
+
             .card3-img {
                 height: 170px;
             }
 
             .tier-count {
                 padding-left: 0;
-            }
-        }
-
-        /* ── 5-STAR TALL CARD MOBILE FIX ── */
-        @media(max-width:768px) {
-            .hcard.hcard-tall.g5-a {
-                min-height: 280px !important;
-                height: 280px !important;
             }
         }
     </style>
@@ -1667,12 +1772,6 @@
                 <div class="dropdown">
                     <a href="themes.html" class="dropbtn"><i class="fas fa-map-marked-alt"></i> Themes <i
                             class="fas fa-caret-down"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="themes.html">Adventure</a><a href="themes.html">Luxury Tours</a>
-                        <a href="themes.html">Honey moon</a><a href="themes.html">Family with Kids</a>
-                        <a href="themes.html">Safari</a><a href="themes.html">Nature</a>
-                        <a href="themes.html">Wild Life</a><a href="">Beach</a>
-                    </div>
                 </div>
                 <a href="visa.html"><i class="fas fa-passport"></i> Visa</a>
                 <a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
@@ -1700,7 +1799,7 @@
             <p class="hero-sub">Handpicked hotels across every star tier — from iconic luxury palaces to smart city
                 escapes.</p>
             <div class="hero-pills">
-                <div class="hero-pill"><span class="pill-dot pd-gold"></span> 5-Star Luxury · 5 Hotels</div>
+                <div class="hero-pill"><span class="pill-dot pd-gold"></span> 5-Star Luxury · 10 Hotels</div>
                 <div class="hero-pill"><span class="pill-dot pd-blue"></span> 4-Star Superior · 8 Hotels</div>
                 <div class="hero-pill"><span class="pill-dot pd-green"></span> 3-Star Comfort · 9 Hotels</div>
             </div>
@@ -1721,9 +1820,9 @@
     <div class="filter-strip">
         <div class="filter-inner">
             <button class="ftab active-g" onclick="filterTab('all',this)"><i class="fas fa-border-all"></i> All Hotels
-                <span class="cnt">22</span></button>
+                <span class="cnt">27</span></button>
             <button class="ftab" onclick="filterTab('5',this)"><i class="fas fa-crown"></i> 5-Star <span
-                    class="cnt">5</span></button>
+                    class="cnt">10</span></button>
             <button class="ftab" onclick="filterTab('4',this)"><i class="fas fa-gem"></i> 4-Star <span
                     class="cnt">8</span></button>
             <button class="ftab" onclick="filterTab('3',this)"><i class="fas fa-leaf"></i> 3-Star <span
@@ -1734,7 +1833,7 @@
     <!-- MAIN CONTENT -->
     <div class="content-area">
 
-        <!-- ███ 5-STAR ███ -->
+        <!-- ███ 5-STAR — 10 HOTELS ███ -->
         <div id="sec-5" class="tier-section">
             <div class="tier-header reveal">
                 <div class="tier-icon ti-gold"><i class="fas fa-crown"></i></div>
@@ -1743,102 +1842,228 @@
                     <p>The finest addresses in Dubai — impeccable service &amp; world-class amenities</p>
                 </div>
                 <div class="tier-divider"></div>
-                <span class="tier-count">5 Properties</span>
+                <span class="tier-count">10 Properties</span>
             </div>
-            <div class="g5">
-                <div class="hcard hcard-tall g5-a reveal" style="min-height:618px">
+
+            <!-- ROW 1 — 3 cards: 1 tall feature + 2 standard -->
+            <div class="g5-row1">
+
+                <!-- Card 1 — FEATURE (tall) -->
+                <div class="hcard hcard-tall reveal" style="min-height:380px">
                     <div class="hcard-img"
-                        style="background-image:url('https://refineddubai.com/images/large/khalidia-palace-hotel-exterior_10_27_2025_01a7bb41-f6dc-4407-afa1-e82031facb0b.webp')">
+                        style="background-image:url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/99/ed/7b/swimming-pool.jpg?w=1400&h=-1&s=1')">
                     </div>
-                    <div class="hcard-grad"></div>
-                    <div class="hcard-top"><span class="star-chip sc-feat"><i class="fas fa-crown"></i> Flagship</span>
-                    </div>
+                    <div class="hcard-grad-side"></div>
+
                     <div class="hcard-body">
-                        <div class="hcard-cat hc-g">Five Star</div>
-                        <div class="hcard-name">Khalidia Palace</div>
+                        <div class="hcard-name">Swissotel Al Murooj Dubai </div>
+                        <div class="hcard-loc"><i class="fas fa-map-marker-alt"></i> Dubai, 1.5 km to City center</div>
                         <div class="hcard-tags"><span class="htag">Luxury Spa</span><span class="htag">Fine
-                                Dining</span><span class="htag">Concierge</span></div>
+                                Dining</span><span class="htag">Concierge</span><span class="htag">Pool</span></div>
                         <div class="hcard-foot">
-                            <div class="stars-mini"><i class="fas fa-star sm-g"></i><i class="fas fa-star sm-g"></i><i
-                                    class="fas fa-star sm-g"></i><i class="fas fa-star sm-g"></i><i
-                                    class="fas fa-star sm-g"></i></div><button class="enq-btn-5"
-                                onclick="showInquiryPopup('Khalidia Palace')">Enquire Now</button>
+                            <div class="stars-mini"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-5" onclick="showInquiryPopup('Swissotel Al Murooj Dubai ')">Enquire
+                                Now</button>
                         </div>
                     </div>
                 </div>
-                <div class="hcard g5-b reveal" style="transition-delay:.06s">
+
+                <!-- Card 2 -->
+                <div class="hcard reveal" style="transition-delay:.07s">
                     <div class="hcard-img"
                         style="background-image:url('https://cache.marriott.com/is/image/marriotts7prod/ak-dxbch-dxbch-10-estrella-19389:Wide-Hor?wid=1336&fit=constrain')">
                     </div>
                     <div class="hcard-grad"></div>
-                    <div class="hcard-top"><span class="star-chip sc-g">5 Star</span></div>
+
                     <div class="hcard-body">
                         <div class="hcard-name">The Canvas Hotel Dubai</div>
+                        <div class="hcard-loc"><i class="fas fa-map-marker-alt"></i> Downtown, Dubai</div>
                         <div class="hcard-tags"><span class="htag">Rooftop Pool</span><span class="htag">Fine
                                 Dining</span></div>
                         <div class="hcard-foot">
-                            <div class="stars-mini"><i class="fas fa-star sm-g"></i><i class="fas fa-star sm-g"></i><i
-                                    class="fas fa-star sm-g"></i><i class="fas fa-star sm-g"></i><i
-                                    class="fas fa-star sm-g"></i></div><button class="enq-btn-5"
+                            <div class="stars-mini"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-5"
                                 onclick="showInquiryPopup('The Canvas Hotel Dubai')">Enquire</button>
                         </div>
                     </div>
                 </div>
-                <div class="hcard g5-c reveal" style="transition-delay:.12s">
+
+                <!-- Card 3 -->
+                <div class="hcard reveal" style="transition-delay:.14s">
                     <div class="hcard-img"
                         style="background-image:url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/824661531.jpg?k=99583f1121cb3f28b92ed83cb931acb7ba207d7bb86efebc6921e195a650d8a9&o=')">
                     </div>
                     <div class="hcard-grad"></div>
-                    <div class="hcard-top"><span class="star-chip sc-g">5 Star</span></div>
+
                     <div class="hcard-body">
                         <div class="hcard-name">The Tower Plaza Hotel</div>
+                        <div class="hcard-loc"><i class="fas fa-map-marker-alt"></i> Sheikh Zayed Rd, Dubai</div>
                         <div class="hcard-tags"><span class="htag">Infinity Pool</span><span class="htag">Spa</span>
                         </div>
                         <div class="hcard-foot">
-                            <div class="stars-mini"><i class="fas fa-star sm-g"></i><i class="fas fa-star sm-g"></i><i
-                                    class="fas fa-star sm-g"></i><i class="fas fa-star sm-g"></i><i
-                                    class="fas fa-star sm-g"></i></div><button class="enq-btn-5"
+                            <div class="stars-mini"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-5"
                                 onclick="showInquiryPopup('The Tower Plaza Hotel')">Enquire</button>
                         </div>
                     </div>
                 </div>
-                <div class="hcard g5-d reveal" style="transition-delay:.18s">
+            </div>
+
+            <!-- ROW 2 — 4 equal cards -->
+            <div class="g5-row2">
+
+                <!-- Card 4 -->
+                <div class="hcard reveal" style="transition-delay:.05s">
                     <div class="hcard-img"
                         style="background-image:url('https://gos3.ibcdn.com/3eab56e2328811e989bf0242ac110002.jpg')">
                     </div>
                     <div class="hcard-grad"></div>
-                    <div class="hcard-top"><span class="star-chip sc-g">5 Star</span></div>
+
                     <div class="hcard-body">
                         <div class="hcard-name">Avani Deira Dubai</div>
+                        <div class="hcard-loc"><i class="fas fa-map-marker-alt"></i> Deira, Dubai</div>
                         <div class="hcard-tags"><span class="htag">Gym</span><span class="htag">Pool</span></div>
                         <div class="hcard-foot">
-                            <div class="stars-mini"><i class="fas fa-star sm-g"></i><i class="fas fa-star sm-g"></i><i
-                                    class="fas fa-star sm-g"></i><i class="fas fa-star sm-g"></i><i
-                                    class="fas fa-star sm-g"></i></div><button class="enq-btn-5"
-                                onclick="showInquiryPopup('Avani Deira Dubai')">Enquire</button>
+                            <div class="stars-mini"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-5" onclick="showInquiryPopup('Avani Deira Dubai')">Enquire</button>
                         </div>
                     </div>
                 </div>
-                <div class="hcard g5-e reveal" style="transition-delay:.24s">
+
+                <!-- Card 5 -->
+                <div class="hcard reveal" style="transition-delay:.10s">
                     <div class="hcard-img"
                         style="background-image:url('https://concordehotelfujairah.com/wp-content/uploads/2024/07/Panorama-2-1.webp')">
                     </div>
                     <div class="hcard-grad"></div>
-                    <div class="hcard-top"><span class="star-chip sc-g">5 Star</span></div>
+
                     <div class="hcard-body">
                         <div class="hcard-name">Concorde Hotel Fujairah</div>
+                        <div class="hcard-loc"><i class="fas fa-map-marker-alt"></i> Fujairah, UAE</div>
                         <div class="hcard-tags"><span class="htag">City View</span><span class="htag">Lounge</span>
                         </div>
                         <div class="hcard-foot">
-                            <div class="stars-mini"><i class="fas fa-star sm-g"></i><i class="fas fa-star sm-g"></i><i
-                                    class="fas fa-star sm-g"></i><i class="fas fa-star sm-g"></i><i
-                                    class="fas fa-star sm-g"></i></div><button class="enq-btn-5"
+                            <div class="stars-mini"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-5"
                                 onclick="showInquiryPopup('Concorde Hotel Fujairah')">Enquire</button>
                         </div>
                     </div>
                 </div>
+
+                <!-- Card 6 -->
+                <div class="hcard reveal" style="transition-delay:.15s">
+                    <div class="hcard-img"
+                        style="background-image:url('https://www.hoteliermiddleeast.com/2021/05/Doa2UTiE-Crowne-Plaza-Dubai-Marina.jpg')">
+                    </div>
+                    <div class="hcard-grad"></div>
+
+                    <div class="hcard-body">
+                        <div class="hcard-name">Crowne Plaza Dubai Marina </div>
+                        <div class="hcard-loc"><i class="fas fa-map-marker-alt"></i> Dubai, 6.2 km to Crowne Plaza Dubai Deira by IHG</div>
+                        <div class="hcard-tags"><span class="htag">Luxury spa</span><span class="htag">Pool</span></div>
+                        <div class="hcard-foot">
+                            <div class="stars-mini"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-5"
+                                onclick="showInquiryPopup('Crowne Plaza Dubai Marina')">Enquire</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="hcard reveal" style="transition-delay:.20s">
+                    <div class="hcard-img"
+                        style="background-image:url('https://media.cntraveler.com/photos/68d2e3fd9a4e451c3c43e38a/16:9/w_2560,c_limit/092325-Atlantis%20Palm-PR-Global-atp-hero08v3webres-final.jpg')">
+                    </div>
+                    <div class="hcard-grad"></div>
+                    
+                    <div class="hcard-body">
+                        <div class="hcard-name">Atlantis The Palm</div>
+                        <div class="hcard-loc"><i class="fas fa-map-marker-alt"></i> Palm Jumeirah, Dubai</div>
+                        <div class="hcard-tags"><span class="htag">Waterpark</span><span class="htag">Aquarium</span>
+                        </div>
+                        <div class="hcard-foot">
+                            <div class="stars-mini"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-5" onclick="showInquiryPopup('Atlantis The Palm')">Enquire</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+
+            <!-- ROW 3 — 3 cards: narrow · wide · narrow -->
+            <div class="g5-row3">
+
+                <!-- Card 8 -->
+                <!-- <div class="hcard reveal" style="transition-delay:.06s">
+                    <div class="hcard-img"
+                        style="background-image:url('https://assets.minorhotels.com/image/upload/q_auto,f_auto,c_limit,w_1045/media/minor/nh/images/nh-collection-dubai-the-palm/04_offers__ok_2/02_advance_purchase/ndpj_offer_advance-purchase_945x510.jpg')">
+                    </div>
+                    <div class="hcard-grad"></div>
+                   
+                    <div class="hcard-body">
+                        <div class="hcard-name">NH Collection Dubai The Palm</div>
+                        <div class="hcard-loc"><i class="fas fa-map-marker-alt"></i> The Palm, Dubai</div>
+                        <div class="hcard-tags"><span class="htag">Infinity Pool</span><span class="htag">Sea
+                                View</span></div>
+                        <div class="hcard-foot">
+                            <div class="stars-mini"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-5"
+                                onclick="showInquiryPopup('NH Collection Dubai The Palm')">Enquire</button>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Card 9 — wide centre -->
+                <div class="hcard hcard-mid reveal" style="transition-delay:.12s">
+                    <div class="hcard-img"
+                        style="background-image:url('https://media-cdn.holidaycheck.com/w_1280,h_720,c_fill,q_80/ugc/images/cc7c8e38-1ddb-38e0-b3c8-e40f4778a9c0'); background-position: center 30%">
+                    </div>
+                    <div class="hcard-grad-side"></div>
+                    
+                    <div class="hcard-body">
+                        <div class="hcard-name">Amwaj Rotana - Jumeirah Beach Residence
+</div>
+                        <div class="hcard-loc"><i class="fas fa-map-marker-alt"></i> Jumeirah, Dubai</div>
+                        <div class="hcard-tags"><span class="htag">Private Beach</span><span class="htag">Burj
+                                View</span><span class="htag">Fine Dining</span></div>
+                        <div class="hcard-foot">
+                            <div class="stars-mini"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-5" onclick="showInquiryPopup('Jumeirah Beach Hotel')">Enquire
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="hcard reveal" style="transition-delay:.18s">
+                    <div class="hcard-img"
+                        style="background-image:url('https://static.deluxea.sk/data/gallery/original/dubaj-hotel-hilton-dubai-palm-jumeirah-034.jpg')">
+                    </div>
+                    <div class="hcard-grad"></div>
+                    
+                    <div class="hcard-body">
+                        <div class="hcard-name">Hilton Dubai Jumeirah</div>
+                        <div class="hcard-loc"><i class="fas fa-map-marker-alt"></i> JBR, Dubai</div>
+                        <div class="hcard-tags"><span class="htag">Pool</span><span class="htag"> fitness center</span></div>
+                        <div class="hcard-foot">
+                            <div class="stars-mini"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-5"
+                                onclick="showInquiryPopup('The Ritz-Carlton Dubai')">Enquire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /sec-5 -->
 
         <hr class="sec-divider">
 
@@ -1868,7 +2093,8 @@
                         </div>
                         <div class="card4-foot">
                             <div class="stars4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i></div><button class="enq-btn-4"
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-4"
                                 onclick="showInquiryPopup('Grand Excelsior Hotel')">Enquire</button>
                         </div>
                     </div>
@@ -1887,7 +2113,8 @@
                         </div>
                         <div class="card4-foot">
                             <div class="stars4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i></div><button class="enq-btn-4"
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-4"
                                 onclick="showInquiryPopup('Omega Hotel Bur Dubai')">Enquire</button>
                         </div>
                     </div>
@@ -1906,7 +2133,8 @@
                         </div>
                         <div class="card4-foot">
                             <div class="stars4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i></div><button class="enq-btn-4"
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-4"
                                 onclick="showInquiryPopup('Fortune Grand – Deira')">Enquire</button>
                         </div>
                     </div>
@@ -1925,7 +2153,8 @@
                         </div>
                         <div class="card4-foot">
                             <div class="stars4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i></div><button class="enq-btn-4"
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-4"
                                 onclick="showInquiryPopup('La Quinta By Wyndham Jumeirah')">Enquire</button>
                         </div>
                     </div>
@@ -1944,8 +2173,8 @@
                         </div>
                         <div class="card4-foot">
                             <div class="stars4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i></div><button class="enq-btn-4"
-                                onclick="showInquiryPopup('Carlton Tower Hotel')">Enquire</button>
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-4" onclick="showInquiryPopup('Carlton Tower Hotel')">Enquire</button>
                         </div>
                     </div>
                 </div>
@@ -1963,7 +2192,8 @@
                         </div>
                         <div class="card4-foot">
                             <div class="stars4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i></div><button class="enq-btn-4"
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-4"
                                 onclick="showInquiryPopup('Carlton Dubai Creek Hotel')">Enquire</button>
                         </div>
                     </div>
@@ -1982,7 +2212,8 @@
                         </div>
                         <div class="card4-foot">
                             <div class="stars4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i></div><button class="enq-btn-4"
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-4"
                                 onclick="showInquiryPopup('Grayton Hotel Bur Dubai')">Enquire</button>
                         </div>
                     </div>
@@ -2001,64 +2232,8 @@
                         </div>
                         <div class="card4-foot">
                             <div class="stars4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i></div><button class="enq-btn-4"
-                                onclick="showInquiryPopup('Raviz Center Point')">Enquire</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card4 reveal" style="transition-delay:.36s">
-                    <div class="card4-img"><img src="https://jacobsgardenhotel.com/assets/img/home/gallery/4.jpg"
-                            onerror="this.src='https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=500&q=80'"
-                            alt="Jacob's Garden"><span class="card4-badge">4 Star</span></div>
-                    <div class="card4-info">
-                        <div>
-                            <div class="card4-name">Jacob's Garden Hotel</div>
-                            <div class="card4-loc"><i class="fas fa-map-marker-alt"></i> Dubai</div>
-                            <div class="card4-tags"><span class="c4tag">Gym</span><span class="c4tag">Restaurant</span>
-                            </div>
-                        </div>
-                        <div class="card4-foot">
-                            <div class="stars4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i></div><button class="enq-btn-4"
-                                onclick="showInquiryPopup('Jacobs Garden Hotel')">Enquire</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card4 reveal" style="transition-delay:.40s">
-                    <div class="card4-img"><img
-                            src="https://www.savoydubai.com/wp-content/uploads/sites/183/2020/07/Savoy_Dubai_Savoy-Park_homeslide04-2200x1200.jpg"
-                            onerror="this.src='https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=500&q=80'"
-                            alt="Savoy Park"><span class="card4-badge">4 Star</span></div>
-                    <div class="card4-info">
-                        <div>
-                            <div class="card4-name">Savoy Park Hotel Apartments</div>
-                            <div class="card4-loc"><i class="fas fa-map-marker-alt"></i> Dubai</div>
-                            <div class="card4-tags"><span class="c4tag">Gym</span><span class="c4tag">Restaurant</span>
-                            </div>
-                        </div>
-                        <div class="card4-foot">
-                            <div class="stars4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i></div><button class="enq-btn-4"
-                                onclick="showInquiryPopup('Savoy Park Hotel Apartments')">Enquire</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card4 reveal" style="transition-delay:.44s">
-                    <div class="card4-img"><img
-                            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/9b/1c/76/savoy-central-hotel-apartments.jpg?w=500&h=400&s=1"
-                            onerror="this.src='https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=500&q=80'"
-                            alt="Savoy Central"><span class="card4-badge">4 Star</span></div>
-                    <div class="card4-info">
-                        <div>
-                            <div class="card4-name">Savoy Central Hotel Apartments</div>
-                            <div class="card4-loc"><i class="fas fa-map-marker-alt"></i> Dubai</div>
-                            <div class="card4-tags"><span class="c4tag">Gym</span><span class="c4tag">Restaurant</span>
-                            </div>
-                        </div>
-                        <div class="card4-foot">
-                            <div class="stars4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i></div><button class="enq-btn-4"
-                                onclick="showInquiryPopup('Savoy Central Hotel Apartments')">Enquire</button>
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <button class="enq-btn-4" onclick="showInquiryPopup('Raviz Center Point')">Enquire</button>
                         </div>
                     </div>
                 </div>
@@ -2094,8 +2269,8 @@
                         </div>
                         <div class="card3-foot">
                             <div class="stars3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i></div><button class="enq-btn-3"
-                                onclick="showInquiryPopup('Gateway Hotel Dubai')">Enquire</button>
+                                    class="fas fa-star"></i></div>
+                            <button class="enq-btn-3" onclick="showInquiryPopup('Gateway Hotel Dubai')">Enquire</button>
                         </div>
                     </div>
                 </div>
@@ -2114,7 +2289,8 @@
                         </div>
                         <div class="card3-foot">
                             <div class="stars3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i></div><button class="enq-btn-3"
+                                    class="fas fa-star"></i></div>
+                            <button class="enq-btn-3"
                                 onclick="showInquiryPopup('Admiral Plaza Hotel Dubai')">Enquire</button>
                         </div>
                     </div>
@@ -2133,8 +2309,8 @@
                         <div class="card3-tags"><span class="c3tag">Garden</span><span class="c3tag">Café</span></div>
                         <div class="card3-foot">
                             <div class="stars3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i></div><button class="enq-btn-3"
-                                onclick="showInquiryPopup('Lewana Hotel')">Enquire</button>
+                                    class="fas fa-star"></i></div>
+                            <button class="enq-btn-3" onclick="showInquiryPopup('Lewana Hotel')">Enquire</button>
                         </div>
                     </div>
                 </div>
@@ -2152,14 +2328,16 @@
                         <div class="card3-tags"><span class="c3tag">Central</span><span class="c3tag">WiFi</span></div>
                         <div class="card3-foot">
                             <div class="stars3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i></div><button class="enq-btn-3"
+                                    class="fas fa-star"></i></div>
+                            <button class="enq-btn-3"
                                 onclick="showInquiryPopup('Concorde Palace Hotel')">Enquire</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+    </div><!-- /content-area -->
 
     <!-- ENQUIRY POPUP -->
     <div class="popup-backdrop" id="popupBackdrop">
