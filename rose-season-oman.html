@@ -1,0 +1,2353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Season in Oman – Jabal Akhdar | CityOne Tourism</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --rose: #E8336A;
+            --rose-dark: #C0185A;
+            --rose-light: #F7719A;
+            --rose-pale: #FDE8EF;
+            --rose-blush: #FDF0F4;
+            --gold: #C49A3C;
+            --gold-light: #E8C06A;
+            --cream: #FBF7F4;
+            --text: #2A1208;
+            --text2: #5C3D2E;
+            --muted: #9A7B6E;
+            --border: #F0D8DE;
+            --white: #FFFFFF;
+            --dark-rose: #1A0810;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--cream);
+            color: var(--text);
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* PROGRESS */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            z-index: 9999;
+            background: linear-gradient(90deg, var(--rose-light), var(--rose), var(--gold));
+            width: 0%;
+            transition: width .1s;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 800;
+            background: rgba(251, 247, 244, .95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 0 32px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 24px rgba(232, 51, 106, .08);
+        }
+
+        .logo-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-text .brand {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: 1px;
+        }
+
+        .logo-text .brand span {
+            color: var(--rose);
+        }
+
+        .logo-text .sub {
+            font-size: .6rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: var(--gold);
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: .82rem;
+            font-weight: 600;
+            color: var(--text2);
+            transition: color .2s;
+            letter-spacing: .5px;
+        }
+
+        .nav-links a:hover {
+            color: var(--rose);
+        }
+
+        .nav-cta {
+            background: linear-gradient(135deg, var(--rose), var(--rose-dark));
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: .82rem;
+            text-decoration: none;
+            letter-spacing: .5px;
+            box-shadow: 0 4px 18px rgba(232, 51, 106, .35);
+            transition: all .25s;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(232, 51, 106, .45);
+        }
+
+        @media(max-width:700px) {
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 640px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1.4s ease;
+            transform: scale(1.04);
+            animation-fill-mode: both;
+        }
+
+        .slide.active {
+            opacity: 1;
+            animation: zoomSlow 8s ease forwards;
+        }
+
+        @keyframes zoomSlow {
+            from {
+                transform: scale(1.06)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        .slide::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(26, 8, 16, .15) 0%, rgba(26, 8, 16, .05) 30%, rgba(26, 8, 16, .55) 70%, rgba(26, 8, 16, .80) 100%);
+        }
+
+        .slide:nth-child(1) {
+            background-image: url('https://images.unsplash.com/photo-1591543620767-582b2e76369e?w=1600&q=85');
+        }
+
+        .slide:nth-child(2) {
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230924/pngtree-roses-in-bloom-in-the-mountains-image_13324694.jpg');
+        }
+
+        .slide:nth-child(3) {
+            background-image: url('https://www.epicgardening.com/wp-content/uploads/2023/09/rose-growth-stages.jpeg');
+        }
+
+        .slide:nth-child(4) {
+            background-image: url('https://images.prismic.io/teleport-blog/Z8Bi157c43Q3gT6P_BlogHeroImage-2025-02-27T164255.312.png?auto=format,compress');
+        }
+
+        .petals-wrap {
+            position: absolute;
+            inset: 0;
+            z-index: 3;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .petal {
+            position: absolute;
+            width: 12px;
+            height: 16px;
+            background: radial-gradient(ellipse at 40% 40%, rgba(247, 113, 154, .9), rgba(232, 51, 106, .6));
+            border-radius: 50% 0 50% 0;
+            animation: petalFall linear infinite;
+            opacity: 0;
+        }
+
+        @keyframes petalFall {
+            0% {
+                transform: translateY(-60px) rotate(0deg) translateX(0);
+                opacity: 0
+            }
+
+            10% {
+                opacity: .8
+            }
+
+            90% {
+                opacity: .6
+            }
+
+            100% {
+                transform: translateY(110vh) rotate(720deg) translateX(60px);
+                opacity: 0
+            }
+        }
+
+        .hero-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            background: rgba(255, 255, 255, .12);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, .25);
+            color: #fff;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s;
+        }
+
+        .hero-arrow:hover {
+            background: rgba(232, 51, 106, .55);
+            border-color: var(--rose-light);
+        }
+
+        .hero-arrow.prev {
+            left: 24px;
+        }
+
+        .hero-arrow.next {
+            right: 24px;
+        }
+
+        .hero-dots {
+            position: absolute;
+            bottom: 32px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .hero-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .4);
+            cursor: pointer;
+            transition: all .35s;
+            border: 1.5px solid rgba(255, 255, 255, .5);
+        }
+
+        .hero-dot.active {
+            background: var(--rose-light);
+            width: 28px;
+            border-radius: 4px;
+            border-color: var(--rose-light);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 5;
+            text-align: center;
+            padding: 40px 24px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, .12);
+            border: 1px solid rgba(255, 255, 255, .3);
+            color: rgba(255, 255, 255, .9);
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            padding: 8px 20px;
+            border-radius: 100px;
+            margin-bottom: 28px;
+            animation: fadeDown .8s ease both;
+            backdrop-filter: blur(8px);
+        }
+
+        .hero-pretitle {
+            font-size: clamp(.9rem, 2vw, 1.1rem);
+            font-weight: 400;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .75);
+            margin-bottom: 10px;
+            animation: fadeUp .8s .15s ease both;
+        }
+
+        .hero-title {
+            font-family: 'Great Vibes', cursive;
+            font-size: clamp(4rem, 13vw, 10rem);
+            color: #fff;
+            line-height: .9;
+            text-shadow: 0 4px 40px rgba(232, 51, 106, .5);
+            animation: fadeUp .9s .25s ease both;
+            margin-bottom: 8px;
+        }
+
+        .hero-subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(1.6rem, 4.5vw, 3.2rem);
+            font-weight: 300;
+            font-style: italic;
+            color: rgba(255, 255, 255, .92);
+            letter-spacing: 1px;
+            animation: fadeUp .9s .35s ease both;
+            margin-bottom: 20px;
+        }
+
+        .hero-loc {
+            font-size: .82rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: var(--rose-light);
+            text-transform: uppercase;
+            animation: fadeUp .9s .45s ease both;
+            margin-bottom: 36px;
+        }
+
+        .hero-cta-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeUp .9s .6s ease both;
+        }
+
+        .btn-rose {
+            background: linear-gradient(135deg, var(--rose-light), var(--rose));
+            color: #fff;
+            font-weight: 700;
+            font-size: .9rem;
+            letter-spacing: .5px;
+            padding: 15px 38px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 28px rgba(232, 51, 106, .5);
+            transition: all .3s;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .btn-rose:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 40px rgba(232, 51, 106, .6);
+        }
+
+        .btn-ghost-white {
+            background: transparent;
+            color: #fff;
+            font-weight: 600;
+            font-size: .9rem;
+            padding: 14px 34px;
+            border: 1.5px solid rgba(255, 255, 255, .55);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all .3s;
+            letter-spacing: .3px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-ghost-white:hover {
+            border-color: var(--rose-light);
+            color: var(--rose-light);
+        }
+
+        .scroll-hint {
+            position: absolute;
+            bottom: 84px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            animation: fadeUp 1s 1.2s ease both;
+        }
+
+        .scroll-hint span {
+            font-size: .62rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .5);
+        }
+
+        .scroll-mouse {
+            width: 22px;
+            height: 36px;
+            border: 1.5px solid rgba(255, 255, 255, .35);
+            border-radius: 11px;
+            display: flex;
+            justify-content: center;
+            padding-top: 6px;
+        }
+
+        .scroll-mouse::after {
+            content: '';
+            width: 3px;
+            height: 8px;
+            background: rgba(255, 255, 255, .6);
+            border-radius: 2px;
+            animation: scrollPulse 1.6s ease-in-out infinite;
+        }
+
+        @keyframes scrollPulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: translateY(0)
+            }
+
+            50% {
+                opacity: .3;
+                transform: translateY(6px)
+            }
+        }
+
+        .hero-badge {
+            position: absolute;
+            top: 22px;
+            right: 22px;
+            z-index: 10;
+            background: linear-gradient(135deg, var(--rose), var(--rose-dark));
+            color: #fff;
+            font-weight: 800;
+            font-size: .78rem;
+            letter-spacing: 1px;
+            padding: 8px 18px;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(232, 51, 106, .5);
+            animation: pulseBadge 2s ease-in-out infinite;
+        }
+
+        @keyframes pulseBadge {
+
+            0%,
+            100% {
+                box-shadow: 0 4px 20px rgba(232, 51, 106, .5)
+            }
+
+            50% {
+                box-shadow: 0 4px 34px rgba(232, 51, 106, .8)
+            }
+        }
+
+        /* STATS */
+        .stats-strip {
+            background: linear-gradient(135deg, var(--rose-dark), #8C0F38);
+            padding: 28px 40px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            flex: 1;
+            min-width: 150px;
+            max-width: 220px;
+            text-align: center;
+            padding: 16px 20px;
+            border-right: 1px solid rgba(255, 255, 255, .12);
+        }
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+        .stat-num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--gold-light);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: .7rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .65);
+            margin-top: 4px;
+            font-weight: 600;
+        }
+
+        /* TICKER */
+        .ticker {
+            background: var(--rose);
+            overflow: hidden;
+            padding: 10px 0;
+            white-space: nowrap;
+        }
+
+        .ticker-inner {
+            display: inline-flex;
+            gap: 48px;
+            animation: tickScroll 24s linear infinite;
+        }
+
+        .ticker-inner span {
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .9);
+        }
+
+        .ticker-inner span::before {
+            content: '🌹 ';
+        }
+
+        @keyframes tickScroll {
+            from {
+                transform: translateX(0)
+            }
+
+            to {
+                transform: translateX(-50%)
+            }
+        }
+
+        /* ABOUT */
+        .about-section {
+            padding: 100px 24px;
+            background: var(--cream);
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        @media(max-width:820px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+        }
+
+        .about-img-stack {
+            position: relative;
+        }
+
+        .about-img-main {
+            width: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            border-radius: 24px 24px 80px 24px;
+            box-shadow: 0 24px 60px rgba(232, 51, 106, .2);
+        }
+
+        .about-img-inset {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            width: 55%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 5px solid var(--white);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, .15);
+        }
+
+        .about-img-badge {
+            position: absolute;
+            top: 24px;
+            left: -20px;
+            background: linear-gradient(135deg, var(--rose), var(--rose-dark));
+            color: #fff;
+            border-radius: 14px;
+            padding: 14px 20px;
+            box-shadow: 0 8px 28px rgba(232, 51, 106, .4);
+            text-align: center;
+        }
+
+        .about-img-badge .big {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .about-img-badge .sm {
+            font-size: .65rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: .85;
+        }
+
+        .about-text {
+            padding-bottom: 30px;
+        }
+
+        .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--rose-pale);
+            border: 1px solid var(--border);
+            color: var(--rose);
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            padding: 7px 16px;
+            border-radius: 100px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.2rem, 5vw, 3.4rem);
+            font-weight: 700;
+            color: var(--text);
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+
+        .section-title em {
+            color: var(--rose);
+            font-style: italic;
+        }
+
+        .section-body {
+            color: var(--text2);
+            font-size: .94rem;
+            line-height: 1.85;
+            margin-bottom: 24px;
+        }
+
+        .highlights-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 36px;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+
+        .highlight-icon {
+            width: 38px;
+            height: 38px;
+            flex-shrink: 0;
+            background: var(--rose-pale);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .highlight-text h4 {
+            font-size: .9rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 2px;
+        }
+
+        .highlight-text p {
+            font-size: .82rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        /* EXPERIENCES */
+        .exp-section {
+            background: var(--rose-blush);
+            padding: 100px 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .exp-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cpath d='M40 0c0 22-18 40-40 40 22 0 40 18 40 40 0-22 18-40 40-40-22 0-40-18-40-40z' fill='%23E8336A' fill-opacity='0.04'/%3E%3C/g%3E%3C/svg%3E") repeat;
+        }
+
+        .exp-header {
+            text-align: center;
+            margin-bottom: 64px;
+            position: relative;
+        }
+
+        .exp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            position: relative;
+        }
+
+        .exp-card {
+            background: var(--white);
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: all .35s;
+            box-shadow: 0 4px 20px rgba(232, 51, 106, .06);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .exp-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity .6s ease, transform .6s ease, box-shadow .3s;
+        }
+
+        .exp-card:hover {
+            transform: translateY(-8px) !important;
+            box-shadow: 0 20px 56px rgba(232, 51, 106, .18);
+            border-color: var(--rose-light);
+        }
+
+        .exp-img {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .exp-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .5s ease;
+            filter: saturate(1.15);
+        }
+
+        .exp-card:hover .exp-img img {
+            transform: scale(1.08);
+        }
+
+        .exp-img-tag {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: rgba(232, 51, 106, .9);
+            backdrop-filter: blur(6px);
+            color: #fff;
+            font-size: .68rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            border-radius: 100px;
+        }
+
+        .exp-body {
+            padding: 24px 26px;
+        }
+
+        .exp-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .exp-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+
+        .exp-desc {
+            font-size: .84rem;
+            color: var(--muted);
+            line-height: 1.75;
+            margin-bottom: 16px;
+        }
+
+        .exp-tag-row {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .exp-chip {
+            background: var(--rose-pale);
+            color: var(--rose-dark);
+            font-size: .68rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 100px;
+            letter-spacing: .5px;
+        }
+
+        /* GALLERY */
+        .gallery-section {
+            padding: 100px 24px;
+            background: var(--cream);
+        }
+
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 52px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 220px 280px;
+            gap: 14px;
+        }
+
+        @media(max-width:768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+            }
+        }
+
+        @media(max-width:480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .g-cell {
+            border-radius: 18px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .g-cell:nth-child(1) {
+            grid-column: 1;
+            grid-row: 1
+        }
+
+        .g-cell:nth-child(2) {
+            grid-column: 2/4;
+            grid-row: 1
+        }
+
+        .g-cell:nth-child(3) {
+            grid-column: 4;
+            grid-row: 1
+        }
+
+        .g-cell:nth-child(4) {
+            grid-column: 1/3;
+            grid-row: 2
+        }
+
+        .g-cell:nth-child(5) {
+            grid-column: 3;
+            grid-row: 2
+        }
+
+        .g-cell:nth-child(6) {
+            grid-column: 4;
+            grid-row: 2
+        }
+
+        .g-cell img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .6s ease, filter .4s;
+            filter: saturate(1.1);
+        }
+
+        .g-cell:hover img {
+            transform: scale(1.07);
+            filter: saturate(1.3) brightness(1.05);
+        }
+
+        .g-cell::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 50%, rgba(26, 8, 16, .5));
+            opacity: 0;
+            transition: opacity .3s;
+        }
+
+        .g-cell:hover::after {
+            opacity: 1;
+        }
+
+        .g-cell-label {
+            position: absolute;
+            bottom: 14px;
+            left: 14px;
+            z-index: 2;
+            color: #fff;
+            font-size: .75rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            opacity: 0;
+            transform: translateY(6px);
+            transition: all .3s;
+        }
+
+        .g-cell:hover .g-cell-label {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* COUNTDOWN */
+        .countdown-bar {
+            background: linear-gradient(135deg, var(--rose), var(--rose-dark));
+            padding: 40px 24px;
+            text-align: center;
+        }
+
+        .cd-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, .9);
+            margin-bottom: 4px;
+            font-style: italic;
+        }
+
+        .cd-sub {
+            font-size: .78rem;
+            letter-spacing: 2px;
+            color: rgba(255, 255, 255, .65);
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+
+        .cd-blocks {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cd-b {
+            background: rgba(0, 0, 0, .25);
+            border: 1px solid rgba(255, 255, 255, .2);
+            border-radius: 16px;
+            padding: 18px 28px;
+            min-width: 90px;
+            text-align: center;
+        }
+
+        .cd-n {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--gold-light);
+            line-height: 1;
+        }
+
+        .cd-l {
+            font-size: .6rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .6);
+            margin-top: 4px;
+        }
+
+        .cd-b.flip .cd-n {
+            animation: numFlip .3s ease;
+        }
+
+        @keyframes numFlip {
+
+            0%,
+            100% {
+                transform: rotateX(0)
+            }
+
+            50% {
+                transform: rotateX(90deg);
+                opacity: .2
+            }
+        }
+
+        /* PRICING */
+        .pricing-section {
+            background: var(--dark-rose);
+            padding: 100px 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-section::before {
+            content: 'ROSE';
+            position: absolute;
+            font-family: 'Great Vibes', cursive;
+            font-size: clamp(12rem, 30vw, 22rem);
+            color: rgba(232, 51, 106, .06);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 64px;
+            position: relative;
+        }
+
+        .pricing-header .section-title {
+            color: #fff;
+        }
+
+        .pricing-header .section-title em {
+            color: var(--rose-light);
+        }
+
+        .pricing-eyebrow {
+            color: var(--rose-light) !important;
+            border-color: rgba(247, 113, 154, .3) !important;
+            background: rgba(247, 113, 154, .1) !important;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 28px;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .price-card {
+            background: rgba(255, 255, 255, .05);
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 28px;
+            padding: 44px 36px;
+            text-align: center;
+            transition: all .35s;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(28px);
+        }
+
+        .price-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+
+        .price-card:hover {
+            background: rgba(255, 255, 255, .09);
+            border-color: rgba(232, 51, 106, .4);
+            transform: translateY(-6px) !important;
+        }
+
+        .price-card.featured {
+            background: linear-gradient(160deg, rgba(232, 51, 106, .25), rgba(192, 24, 90, .15));
+            border-color: var(--rose-light);
+            box-shadow: 0 0 60px rgba(232, 51, 106, .2);
+        }
+
+        .price-card.featured::before {
+            content: '⭐ MOST POPULAR';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--rose);
+            color: #fff;
+            font-size: .65rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            padding: 6px 20px;
+            border-radius: 0 0 14px 14px;
+        }
+
+        .price-type {
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--rose-light);
+            margin-bottom: 18px;
+            margin-top: 16px;
+        }
+
+        .price-icon {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .price-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .price-divider {
+            height: 1px;
+            background: rgba(255, 255, 255, .1);
+            margin-bottom: 28px;
+        }
+
+        .price-includes {
+            list-style: none;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .price-includes li {
+            font-size: .84rem;
+            color: rgba(255, 255, 255, .75);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .price-includes li::before {
+            content: '🌹';
+            font-size: .75rem;
+            flex-shrink: 0;
+        }
+
+        .price-btn {
+            width: 100%;
+            background: linear-gradient(135deg, var(--rose-light), var(--rose));
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 14px;
+            font-weight: 700;
+            font-size: .9rem;
+            cursor: pointer;
+            box-shadow: 0 6px 24px rgba(232, 51, 106, .4);
+            transition: all .3s;
+            letter-spacing: .3px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .price-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 32px rgba(232, 51, 106, .55);
+        }
+
+        .price-btn.outline {
+            background: transparent;
+            border: 1.5px solid rgba(255, 255, 255, .35);
+            box-shadow: none;
+        }
+
+        .price-btn.outline:hover {
+            border-color: var(--rose-light);
+            background: rgba(232, 51, 106, .15);
+        }
+
+        /* TESTIMONIALS */
+        .testi-section {
+            padding: 100px 24px;
+            background: var(--rose-blush);
+        }
+
+        .testi-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .testi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .testi-card {
+            background: var(--white);
+            border-radius: 22px;
+            padding: 36px 30px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 20px rgba(232, 51, 106, .06);
+            transition: all .3s;
+            opacity: 0;
+            transform: translateY(22px);
+        }
+
+        .testi-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .testi-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 48px rgba(232, 51, 106, .14);
+        }
+
+        .testi-quote-icon {
+            font-size: 3rem;
+            line-height: 1;
+            margin-bottom: 10px;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            color: var(--rose-light);
+        }
+
+        .testi-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--text2);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .testi-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .testi-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--border);
+        }
+
+        .testi-name {
+            font-weight: 700;
+            font-size: .88rem;
+            color: var(--text);
+        }
+
+        .testi-loc {
+            font-size: .75rem;
+            color: var(--muted);
+        }
+
+        .testi-stars {
+            color: var(--rose);
+            font-size: .8rem;
+            margin-bottom: 4px;
+        }
+
+        /* FOOTER CTA */
+        .footer-cta {
+            background: linear-gradient(160deg, #3A1F10, var(--dark-rose));
+            text-align: center;
+            padding: 100px 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-cta::before {
+            content: '🌹';
+            font-size: clamp(14rem, 36vw, 28rem);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: .04;
+            pointer-events: none;
+        }
+
+        .footer-cta h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 5vw, 3.8rem);
+            color: #fff;
+            margin-bottom: 14px;
+            position: relative;
+        }
+
+        .footer-cta h2 em {
+            color: var(--rose-light);
+            font-style: italic;
+        }
+
+        .footer-cta p {
+            color: rgba(255, 255, 255, .6);
+            font-size: .95rem;
+            margin-bottom: 40px;
+            position: relative;
+            line-height: 1.75;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-contact-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 36px;
+            position: relative;
+        }
+
+        .contact-pill {
+            background: rgba(255, 255, 255, .08);
+            border: 1px solid rgba(255, 255, 255, .15);
+            border-radius: 50px;
+            padding: 10px 22px;
+            font-size: .84rem;
+            color: rgba(255, 255, 255, .8);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+        }
+
+        /* FLOATING CTA */
+        .floating-cta {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 700;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+        }
+
+        .float-pill {
+            background: var(--rose-pale);
+            color: var(--rose-dark);
+            border-radius: 50px;
+            padding: 6px 16px;
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .5px;
+            animation: bounceIn .8s 1.8s cubic-bezier(.34, 1.56, .64, 1) both;
+        }
+
+        .float-btn {
+            background: linear-gradient(135deg, var(--rose-light), var(--rose));
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 14px 26px;
+            font-weight: 700;
+            font-size: .88rem;
+            cursor: pointer;
+            box-shadow: 0 8px 28px rgba(232, 51, 106, .5);
+            transition: all .25s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            animation: bounceIn .8s 1.5s cubic-bezier(.34, 1.56, .64, 1) both;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .float-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 40px rgba(232, 51, 106, .6);
+        }
+
+        @keyframes bounceIn {
+            from {
+                transform: translateY(80px);
+                opacity: 0
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1
+            }
+        }
+
+        /* ═══════════════════════════════
+           POPUP STYLES (your structure)
+        ═══════════════════════════════ */
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(26, 8, 16, .75);
+            backdrop-filter: blur(10px);
+            z-index: 900;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .35s ease;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .popup-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -46%) scale(.95);
+            z-index: 901;
+            background: var(--white);
+            border-radius: 24px;
+            width: 100%;
+            max-width: 490px;
+            max-height: 92vh;
+            overflow-y: auto;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, .3);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .38s ease, transform .4s cubic-bezier(.34, 1.56, .64, 1);
+        }
+
+        .popup-container.active {
+            opacity: 1;
+            pointer-events: all;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        /* Popup top bar — styled to match the rose brand */
+        .popup-top {
+            background: linear-gradient(135deg, var(--rose), var(--rose-dark));
+            border-radius: 24px 24px 0 0;
+            padding: 26px 28px 22px 28px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .popup-top::before {
+            content: '🌹';
+            font-size: 2rem;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+
+        .popup-heading {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.55rem;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.2;
+        }
+
+        .popup-heading small {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .68rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .7);
+            margin-top: 3px;
+        }
+
+        .close-icon {
+            position: absolute;
+            top: 13px;
+            right: 15px;
+            background: rgba(255, 255, 255, .18);
+            border: 1.5px solid rgba(255, 255, 255, .3);
+            color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            font-size: 1.05rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background .2s;
+            line-height: 1;
+        }
+
+        .close-icon:hover {
+            background: rgba(255, 255, 255, .32);
+        }
+
+        /* Form section */
+        .popup-main {
+            padding: 26px 28px 32px;
+        }
+
+        .input-wrapper {
+            margin-bottom: 16px;
+        }
+
+        .input-title {
+            display: block;
+            font-size: .72rem;
+            font-weight: 700;
+            color: var(--muted);
+            letter-spacing: .8px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .text-field {
+            width: 100%;
+            background: var(--cream);
+            border: 1.5px solid var(--border);
+            border-radius: 11px;
+            padding: 12px 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .91rem;
+            color: var(--text);
+            outline: none;
+            transition: border-color .25s, background .25s, box-shadow .25s;
+        }
+
+        .text-field:focus {
+            border-color: var(--rose);
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(232, 51, 106, .1);
+        }
+
+        .message-field {
+            resize: vertical;
+            min-height: 88px;
+        }
+
+        .send-button {
+            width: 100%;
+            background: linear-gradient(135deg, var(--rose-light), var(--rose));
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: .93rem;
+            letter-spacing: .4px;
+            cursor: pointer;
+            margin-top: 6px;
+            box-shadow: 0 8px 28px rgba(232, 51, 106, .4);
+            transition: all .3s;
+        }
+
+        .send-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 40px rgba(232, 51, 106, .55);
+        }
+
+        .send-button:disabled {
+            opacity: .65;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Inline error */
+        .form-err {
+            background: #fff0f3;
+            border: 1px solid #ffb3c6;
+            color: var(--rose-dark);
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-size: .82rem;
+            margin-bottom: 14px;
+            display: none;
+        }
+
+        /* Success view inside popup */
+        .success-view {
+            text-align: center;
+            padding: 16px 0 6px;
+            display: none;
+        }
+
+        .success-circle {
+            width: 78px;
+            height: 78px;
+            background: var(--rose-pale);
+            border: 2px solid var(--rose);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.1rem;
+            margin: 0 auto 16px;
+            animation: popIn .5s cubic-bezier(.34, 1.56, .64, 1);
+        }
+
+        @keyframes popIn {
+            from {
+                transform: scale(0);
+                opacity: 0
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1
+            }
+        }
+
+        .success-view h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.75rem;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+
+        .success-view p {
+            color: var(--muted);
+            font-size: .9rem;
+            line-height: 1.75;
+            margin-bottom: 20px;
+        }
+
+        @media(max-width:540px) {
+            .popup-container {
+                max-width: calc(100% - 20px);
+                border-radius: 18px;
+            }
+
+            .popup-top {
+                border-radius: 18px 18px 0 0;
+                padding: 20px 18px 16px;
+            }
+
+            .popup-main {
+                padding: 20px 18px 26px;
+            }
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-18px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(26px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        [data-scroll] {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity .7s ease, transform .7s ease;
+        }
+
+        [data-scroll].visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        [data-delay="1"] {
+            transition-delay: .1s
+        }
+
+        [data-delay="2"] {
+            transition-delay: .2s
+        }
+
+        [data-delay="3"] {
+            transition-delay: .3s
+        }
+
+        [data-delay="4"] {
+            transition-delay: .4s
+        }
+
+        @media(max-width:600px) {
+            .floating-cta {
+                bottom: 18px;
+                right: 14px
+            }
+
+            .stats-strip {
+                padding: 20px
+            }
+
+            .hero-title {
+                font-size: clamp(3.2rem, 16vw, 6rem)
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="progress-bar" id="progress"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-wrap">
+            <img src="../images/image 8916.png" alt="CityOne Logo" class="logo-icon">
+        </a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#packages">Packages</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#" class="nav-cta" onclick="showPopup('Rose Season Tour'); return false;">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+        <div class="slide active"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="petals-wrap" id="petals"></div>
+        <button class="hero-arrow prev" onclick="prevSlide()">&#8592;</button>
+        <button class="hero-arrow next" onclick="nextSlide()">&#8594;</button>
+        <div class="hero-dots" id="heroDots"></div>
+        <div class="hero-badge">🌹 LIMITED SEASON — BOOK NOW</div>
+        <div class="hero-content">
+            <div class="hero-eyebrow">🌿 Jabal Akhdar · April – May 2025</div>
+            <p class="hero-pretitle">Experience the Magic of</p>
+            <h1 class="hero-title">Rose Season</h1>
+            <p class="hero-subtitle">in Oman</p>
+            <p class="hero-loc">📍 Jabal Akhdar, Al Dakhiliyah · Sultanate of Oman</p>
+            <div class="hero-cta-row">
+                <button class="btn-rose" onclick="showPopup('Rose Season Tour')">🌹 Book Your Experience</button>
+                <a href="#experiences" class="btn-ghost-white">Discover More ↓</a>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <div class="scroll-mouse"></div><span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-strip">
+        <div class="stat-item">
+            <div class="stat-num">3,000m</div>
+            <div class="stat-label">Altitude in Jabal Akhdar</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Rose Varieties</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Pure Rose Water</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">500+</div>
+            <div class="stat-label">Happy Travellers</div>
+        </div>
+    </div>
+
+    <!-- TICKER -->
+    <div class="ticker">
+        <div class="ticker-inner">
+            <span>Rose Season Oman</span><span>Jabal Akhdar Tours</span><span>Guided Rose Trail</span>
+            <span>Pick Roses with Farmers</span><span>Traditional Distillation</span><span>Local Coffee &amp; Tea</span>
+            <span>Private &amp; Group Tours</span><span>Book Now — Limited Slots</span>
+            <span>Rose Season Oman</span><span>Jabal Akhdar Tours</span><span>Guided Rose Trail</span>
+            <span>Pick Roses with Farmers</span><span>Traditional Distillation</span><span>Local Coffee &amp; Tea</span>
+            <span>Private &amp; Group Tours</span><span>Book Now — Limited Slots</span>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img-stack" data-scroll>
+                    <div class="about-img-badge">
+                        <div class="big">April</div>
+                        <div class="sm">Rose Season</div>
+                    </div>
+                    <img class="about-img-main"
+                        src="https://images.unsplash.com/photo-1591543620767-582b2e76369e?w=800&q=85"
+                        alt="Rose Fields Oman">
+                    <img class="about-img-inset"
+                        src="https://png.pngtree.com/thumb_back/fh260/background/20230924/pngtree-roses-in-bloom-in-the-mountains-image_13324694.jpg"
+                        alt="Rose Water Distillation">
+                </div>
+                <div class="about-text" data-scroll data-delay="2">
+                    <div class="section-eyebrow">🌹 Why Jabal Akhdar</div>
+                    <h2 class="section-title">Where the <em>Mountains Bloom</em> with Roses</h2>
+                    <p class="section-body">Every spring, the terraced mountain villages of Jabal Akhdar in Oman's Al
+                        Dakhiliyah region transform into a breathtaking sea of pink and red Damask roses. This
+                        centuries-old tradition sees local farmers harvesting the prized flowers before dawn, distilling
+                        them into the world-famous Omani rose water.</p>
+                    <p class="section-body">CityOne Tourism offers you an exclusive, intimate experience — walk through
+                        fragrant rose gardens, meet the farmers, and witness the ancient art of rose distillation, all
+                        high in the cool mountain air.</p>
+                    <div class="highlights-list">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🏔️</div>
+                            <div class="highlight-text">
+                                <h4>Private &amp; Group Tours in Jabal Akhdar</h4>
+                                <p>Tailored itineraries for couples, families and groups through the scenic mountain
+                                    trails.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🌿</div>
+                            <div class="highlight-text">
+                                <h4>Guided Rose Trail Experience</h4>
+                                <p>Walk the ancient terraced gardens with an expert local guide explaining the rose
+                                    harvest.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">☕</div>
+                            <div class="highlight-text">
+                                <h4>Free Entry · Local Coffee &amp; Rose Tea</h4>
+                                <p>Complimentary welcome drink of traditional Omani kahwa and rose-infused tea on
+                                    arrival.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-rose" onclick="showPopup('Guided Rose Trail')">🌹 Enquire About Tours</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCES -->
+    <section class="exp-section" id="experiences">
+        <div class="container">
+            <div class="exp-header" data-scroll>
+                <div class="section-eyebrow">✦ What You'll Do</div>
+                <h2 class="section-title">Unforgettable <em>Rose Experiences</em></h2>
+                <p style="color:var(--muted);max-width:480px;margin:0 auto;font-size:.93rem;line-height:1.8;">
+                    Handcrafted moments that bring you closer to the ancient magic of Oman's rose harvest.</p>
+            </div>
+            <div class="exp-grid">
+                <div class="exp-card" data-scroll data-delay="1">
+                    <div class="exp-img"><img
+                            src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/13/eb/7d/69.jpg"
+                            alt="Rose Trail"><span class="exp-img-tag">🌿 Guided Walk</span></div>
+                    <div class="exp-body">
+                        <div class="exp-title">Guided Rose Trail</div>
+                        <p class="exp-desc">Follow winding mountain paths through ancient terraced rose gardens with a
+                            knowledgeable local guide sharing centuries of tradition.</p>
+                        <div class="exp-tag-row"><span class="exp-chip">2–3 Hours</span><span class="exp-chip">All
+                                Levels</span><span class="exp-chip">Guide Included</span></div>
+                    </div>
+                </div>
+                <div class="exp-card" data-scroll data-delay="2">
+                    <div class="exp-img"><img
+                            src="https://thumbs.dreamstime.com/b/crafting-tradition-rose-water-distillation-rustic-timeless-environment-traditional-process-unfolds-outdoor-setting-where-353858890.jpg?w=576"
+                            alt="Distillation"><span class="exp-img-tag">⚗️ Traditional Craft</span></div>
+                    <div class="exp-body">
+                        <div class="exp-title">Rose Water Distillation</div>
+                        <p class="exp-desc">Watch master distillers transform thousands of petals into the legendary
+                            Omani rose water using traditional copper stills passed down through generations.</p>
+                        <div class="exp-tag-row"><span class="exp-chip">Artisan Demo</span><span
+                                class="exp-chip">Photography</span><span class="exp-chip">Tasting</span></div>
+                    </div>
+                </div>
+                <div class="exp-card" data-scroll data-delay="3">
+                    <div class="exp-img"><img
+                            src="https://img.freepik.com/premium-photo/there-is-cup-coffee-with-pink-roses-table_1034043-108898.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt="Coffee"><span class="exp-img-tag">☕ Complimentary</span></div>
+                    <div class="exp-body"><span class="exp-icon">🫖</span>
+                        <div class="exp-title">Local Coffee &amp; Rose Tea</div>
+                        <p class="exp-desc">Relax with traditional Omani kahwa spiced with cardamom and a glass of pure
+                            rose water tea, served fresh in a village setting with mountain views.</p>
+                        <div class="exp-tag-row"><span class="exp-chip">Complimentary</span><span
+                                class="exp-chip">Village Setting</span><span class="exp-chip">Mountain Views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="gallery-header" data-scroll>
+                <div class="section-eyebrow">📸 Rose Season in Pictures</div>
+                <h2 class="section-title">A World <em>Painted in Pink</em></h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="g-cell"><img src="https://images.unsplash.com/photo-1591543620767-582b2e76369e?w=600&q=85"
+                        alt="Rose Fields">
+                    <div class="g-cell-label">Rose Fields · Jabal Akhdar</div>
+                </div>
+                <div class="g-cell"><img
+                        src="https://png.pngtree.com/thumb_back/fh260/background/20230924/pngtree-roses-in-bloom-in-the-mountains-image_13324694.jpg"
+                        alt="Rose Garden">
+                    <div class="g-cell-label">Morning Harvest</div>
+                </div>
+                <div class="g-cell"><img
+                        src="https://www.epicgardening.com/wp-content/uploads/2023/09/rose-growth-stages.jpeg"
+                        alt="Rose Petals">
+                    <div class="g-cell-label">Rose Petals · Pure Pink</div>
+                </div>
+                <div class="g-cell"><img
+                        src="https://images.prismic.io/teleport-blog/Z8Bi157c43Q3gT6P_BlogHeroImage-2025-02-27T164255.312.png?auto=format,compress"
+                        alt="Mountains">
+                    <div class="g-cell-label">Jabal Akhdar Mountains</div>
+                </div>
+                <div class="g-cell"><img
+                        src="https://thumbs.dreamstime.com/b/crafting-tradition-rose-water-distillation-rustic-timeless-environment-traditional-process-unfolds-outdoor-setting-where-353858890.jpg?w=576"
+                        alt="Rose Tea">
+                    <div class="g-cell-label">Rose Water &amp; Tea</div>
+                </div>
+                <div class="g-cell"><img
+                        src="https://fsn1.your-objectstorage.com/aradbranding-en-uploads/topics/f99ff67130f5d1815aed43923831dd7bf00d73e8.webp"
+                        alt="Rose Water">
+                    <div class="g-cell-label">Distillation · Ancient Craft</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <div class="countdown-bar">
+        <div class="cd-title">🌹 Rose Season is Almost Here</div>
+        <div class="cd-sub">Limited slots available · Book before it's too late</div>
+        <div class="cd-blocks">
+            <div class="cd-b">
+                <div class="cd-n" id="cd-d">00</div>
+                <div class="cd-l">Days</div>
+            </div>
+            <div class="cd-b">
+                <div class="cd-n" id="cd-h">00</div>
+                <div class="cd-l">Hours</div>
+            </div>
+            <div class="cd-b">
+                <div class="cd-n" id="cd-m">00</div>
+                <div class="cd-l">Mins</div>
+            </div>
+            <div class="cd-b">
+                <div class="cd-n" id="cd-s">00</div>
+                <div class="cd-l">Secs</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PACKAGES -->
+    <section class="pricing-section" id="packages">
+        <div class="container">
+            <div class="pricing-header" data-scroll>
+                <div class="section-eyebrow pricing-eyebrow">🌹 Tour Packages</div>
+                <h2 class="section-title" style="color:#fff;">Choose Your <em>Rose Journey</em></h2>
+                <p
+                    style="color:rgba(255,255,255,.5);max-width:460px;margin:10px auto 0;font-size:.9rem;line-height:1.8;">
+                    All packages include guided tour, rose picking, distillation demo &amp; complimentary refreshments.
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card" data-scroll data-delay="1">
+                    <span class="price-icon">👥</span>
+                    <div class="price-type">Group Experience</div>
+                    <div class="price-name">Rose Valley Tour</div>
+                    <div class="price-divider"></div>
+                    <ul class="price-includes">
+                        <li>Guided Rose Trail Walk (2 hrs)</li>
+                        <li>Rose Picking Experience</li>
+                        <li>Distillation Show &amp; Demo</li>
+                        <li>Local Coffee &amp; Rose Tea</li>
+                        <li>Group Transport (shared)</li>
+                    </ul>
+                    <button class="price-btn outline" onclick="showPopup('Group Rose Valley Tour')">Enquire Now
+                        →</button>
+                </div>
+                <div class="price-card featured" data-scroll data-delay="2">
+                    <span class="price-icon">💎</span>
+                    <div class="price-type">Private Experience</div>
+                    <div class="price-name">Exclusive Rose Day</div>
+                    <div class="price-divider"></div>
+                    <ul class="price-includes">
+                        <li>Private Guided Rose Trail</li>
+                        <li>Sunrise Rose Picking</li>
+                        <li>Traditional Distillation Master Class</li>
+                        <li>Village Lunch with Local Family</li>
+                        <li>Private AC Vehicle Transfer</li>
+                        <li>Rose Water Gift Set</li>
+                    </ul>
+                    <button class="price-btn" onclick="showPopup('Private Exclusive Rose Day')">🌹 Book Private
+                        Tour</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testi-section">
+        <div class="container">
+            <div class="testi-header" data-scroll>
+                <div class="section-eyebrow">💬 Traveller Stories</div>
+                <h2 class="section-title">Loved by <em>Every Guest</em></h2>
+            </div>
+            <div class="testi-grid">
+                <div class="testi-card" data-scroll data-delay="1">
+                    <div class="testi-quote-icon">"</div>
+                    <p class="testi-text">The rose fields at sunrise were the most beautiful thing I've ever witnessed.
+                        Picking roses with the local farmers was an experience that made me feel truly connected to
+                        Oman's culture.</p>
+                    <div class="testi-author"><img class="testi-avatar" src="https://i.pravatar.cc/80?img=47"
+                            alt="Sarah M">
+                        <div>
+                            <div class="testi-stars">★★★★★</div>
+                            <div class="testi-name">Sarah M.</div>
+                            <div class="testi-loc">Dubai, UAE</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card" data-scroll data-delay="2">
+                    <div class="testi-quote-icon">"</div>
+                    <p class="testi-text">CityOne organised everything perfectly. The private tour with the distillation
+                        master class was extraordinary. We went home with rose water and memories that will last
+                        forever.</p>
+                    <div class="testi-author"><img class="testi-avatar" src="https://i.pravatar.cc/80?img=32"
+                            alt="Arjun P">
+                        <div>
+                            <div class="testi-stars">★★★★★</div>
+                            <div class="testi-name">Arjun P.</div>
+                            <div class="testi-loc">Mumbai, India</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card" data-scroll data-delay="3">
+                    <div class="testi-quote-icon">"</div>
+                    <p class="testi-text">We brought our kids and they absolutely loved picking roses! The guide was
+                        wonderful and the traditional coffee was delicious. A magical family experience we'll treasure
+                        always.</p>
+                    <div class="testi-author"><img class="testi-avatar" src="https://i.pravatar.cc/80?img=25"
+                            alt="Fatima">
+                        <div>
+                            <div class="testi-stars">★★★★★</div>
+                            <div class="testi-name">Fatima Al-Rashidi</div>
+                            <div class="testi-loc">Abu Dhabi, UAE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CTA -->
+    <section class="footer-cta">
+        <div data-scroll>
+            <div class="section-eyebrow"
+                style="background:rgba(247,113,154,.15);border-color:rgba(247,113,154,.3);color:var(--rose-light);display:inline-flex;align-items:center;gap:8px;font-size:.7rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;padding:7px 16px;border-radius:100px;margin-bottom:20px;">
+                🌹 Limited Season — Book Now</div>
+            <h2>Don't Miss <em>Rose Season</em><br>in Oman</h2>
+            <p>Slots are extremely limited during the short rose season. Secure your spot with CityOne Tourism and
+                create memories that bloom forever.</p>
+            <button class="btn-rose" style="font-size:1rem;padding:17px 50px;"
+                onclick="showPopup('Rose Season Tour')">🌹 Book Your Experience Today</button>
+            <div class="footer-contact-row">
+                <div class="contact-pill">📞 +971 4 392 2959</div>
+                <div class="contact-pill">🌐 cityonetours.com</div>
+                <div class="contact-pill">📲 WhatsApp Us</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOATING CTA -->
+    <div class="floating-cta">
+        <div class="float-pill">🌹 Rose Season · Limited Slots</div>
+        <button class="float-btn" onclick="showPopup('Rose Season Tour')">📋 Quick Enquiry</button>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         MODAL OVERLAY  (your exact structure)
+    ═══════════════════════════════════════════ -->
+    <div class="overlay" id="modalOverlay" onclick="hidePopup()"></div>
+
+    <!-- Modal Popup (your exact structure) -->
+    <div class="popup-container" id="enquiryPopup">
+
+        <div class="popup-top">
+            <button class="close-icon" onclick="hidePopup()" type="button">&times;</button>
+            <h3 class="popup-heading" id="chosenPackage">
+                Rose Season Tour
+                <small>Jabal Akhdar, Oman · 2025</small>
+            </h3>
+        </div>
+
+        <div class="popup-main">
+
+            <!-- Form state -->
+            <div id="formView">
+                <div class="form-err" id="formErrMsg"></div>
+
+                <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+
+                    <!-- Package Name — updated dynamically -->
+                    <input type="hidden" name="package" id="packageField">
+
+                    <!-- Extra meta -->
+                    <input type="hidden" name="subject" value="Rose Tour Enquiry – CityOne Tourism">
+                    <input type="hidden" name="from_name" value="CityOne Rose Season Website">
+
+                    <!-- Honeypot spam protection -->
+                    <input type="checkbox" name="botcheck" style="display:none">
+
+                    <div class="input-wrapper">
+                        <label class="input-title">Full Name</label>
+                        <input type="text" name="name" class="text-field" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label class="input-title">Phone Number</label>
+                        <input type="tel" name="phone" class="text-field" placeholder="Enter your mobile number"
+                            required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label class="input-title">Email ID</label>
+                        <input type="email" name="email" class="text-field" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label class="input-title">Message</label>
+                        <textarea name="message" class="text-field message-field"
+                            placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="send-button" id="sendBtn">Submit Enquiry</button>
+                </form>
+            </div>
+
+            <!-- Success state -->
+            <div class="success-view" id="successView">
+                <div class="success-circle">🌹</div>
+                <h3>Enquiry Received!</h3>
+                <p>Thank you! Our team will call you within 30 minutes to confirm your Rose Tour booking.</p>
+                <button class="send-button" onclick="hidePopup()" type="button">Close</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        /* PETALS */
+        const petalsWrap = document.getElementById('petals');
+        for (let i = 0; i < 22; i++) {
+            const p = document.createElement('div');
+            p.className = 'petal';
+            const sz = 8 + Math.random() * 10;
+            p.style.cssText = `left:${Math.random() * 100}%;width:${sz}px;height:${sz * 1.3}px;animation-duration:${5 + Math.random() * 9}s;animation-delay:${Math.random() * 10}s;opacity:${.4 + Math.random() * .5};transform:rotate(${Math.random() * 360}deg);`;
+            petalsWrap.appendChild(p);
+        }
+
+        /* CAROUSEL */
+        const slides = document.querySelectorAll('.slide');
+        const dotsWrap = document.getElementById('heroDots');
+        let cur = 0, autoT;
+        slides.forEach((_, i) => {
+            const d = document.createElement('div');
+            d.className = 'hero-dot' + (i === 0 ? ' active' : '');
+            d.onclick = () => goTo(i);
+            dotsWrap.appendChild(d);
+        });
+        function goTo(n) {
+            slides[cur].classList.remove('active'); dotsWrap.children[cur].classList.remove('active');
+            cur = (n + slides.length) % slides.length;
+            slides[cur].classList.add('active'); dotsWrap.children[cur].classList.add('active');
+            clearInterval(autoT); autoT = setInterval(() => goTo(cur + 1), 5500);
+        }
+        function nextSlide() { goTo(cur + 1); }
+        function prevSlide() { goTo(cur - 1); }
+        autoT = setInterval(() => goTo(cur + 1), 5500);
+
+        /* COUNTDOWN */
+        (function () {
+            const end = new Date('2025-04-10T00:00:00');
+            const pad = n => String(n).padStart(2, '0');
+            function tick() {
+                const diff = end - new Date();
+                if (diff <= 0) { document.querySelector('.countdown-bar').innerHTML = '<div class="cd-title">🌹 Rose Season is Here — Book Now!</div>'; return; }
+                const d = Math.floor(diff / 86400000), h = Math.floor((diff % 86400000) / 3600000),
+                    m = Math.floor((diff % 3600000) / 60000), s = Math.floor((diff % 60000) / 1000);
+                const set = (id, val) => {
+                    const el = document.getElementById(id);
+                    if (el && el.textContent !== pad(val)) {
+                        el.closest('.cd-b').classList.add('flip');
+                        setTimeout(() => el.closest('.cd-b').classList.remove('flip'), 320);
+                        el.textContent = pad(val);
+                    }
+                };
+                set('cd-d', d); set('cd-h', h); set('cd-m', m); set('cd-s', s);
+            }
+            tick(); setInterval(tick, 1000);
+        })();
+
+        /* SCROLL ANIMATIONS */
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('[data-scroll], .exp-card, .price-card, .testi-card').forEach(el => obs.observe(el));
+
+        /* PROGRESS BAR */
+        window.addEventListener('scroll', () => {
+            const max = document.body.scrollHeight - window.innerHeight;
+            document.getElementById('progress').style.width = (window.scrollY / max * 100) + '%';
+        });
+
+        /* ═══ POPUP LOGIC ═══ */
+        function showPopup(packageName) {
+            // Dynamically set the heading & hidden package field
+            document.getElementById('chosenPackage').innerHTML =
+                (packageName || 'Rose Season Tour') +
+                '<small>Jabal Akhdar, Oman · 2025</small>';
+            document.getElementById('packageField').value = packageName || 'Rose Season Tour';
+
+            // Reset to form view
+            document.getElementById('formView').style.display = 'block';
+            document.getElementById('successView').style.display = 'none';
+            const err = document.getElementById('formErrMsg');
+            err.style.display = 'none'; err.textContent = '';
+            const btn = document.getElementById('sendBtn');
+            btn.textContent = 'Submit Enquiry'; btn.disabled = false;
+
+            document.getElementById('modalOverlay').classList.add('active');
+            document.getElementById('enquiryPopup').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function hidePopup() {
+            document.getElementById('modalOverlay').classList.remove('active');
+            document.getElementById('enquiryPopup').classList.remove('active');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                document.getElementById('contactForm').reset();
+                document.getElementById('formView').style.display = 'block';
+                document.getElementById('successView').style.display = 'none';
+            }, 420);
+        }
+
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') hidePopup(); });
+
+        /* WEB3FORMS — AJAX (no page reload) */
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const btn = document.getElementById('sendBtn');
+            const err = document.getElementById('formErrMsg');
+            err.style.display = 'none';
+            btn.textContent = '⏳ Sending…';
+            btn.disabled = true;
+
+            try {
+                const res = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: new FormData(this)
+                });
+                const data = await res.json();
+
+                if (data.success) {
+                    document.getElementById('formView').style.display = 'none';
+                    document.getElementById('successView').style.display = 'block';
+                    this.reset();
+                } else {
+                    err.textContent = data.message || 'Something went wrong. Please try again.';
+                    err.style.display = 'block';
+                    btn.textContent = 'Submit Enquiry';
+                    btn.disabled = false;
+                }
+            } catch (_) {
+                err.textContent = 'Network error. Please check your connection and try again.';
+                err.style.display = 'block';
+                btn.textContent = 'Submit Enquiry';
+                btn.disabled = false;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
