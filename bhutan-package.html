@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhutan 2026 | CityOne Tourism & Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700;800;900&family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -2052,11 +2055,61 @@
                 opacity: 1;
             }
         }
+
         .nav-logo-img {
-    height: 40px; /* adjust as needed */
-    width: auto;
-    display: block;
-}
+            height: 40px;
+            /* adjust as needed */
+            width: auto;
+            display: block;
+        }
+
+        /* .mobile-bottom-nav {
+    display: none !important;
+} */
+
+        /* Show only on mobile */
+        @media (max-width: 768px) {
+            .float {
+                display: none;
+            }
+
+            .mobile-bottom-nav {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.85);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 8px 0;
+                z-index: 9999;
+                border-radius: 12px 12px 0 0;
+                display: flex;
+            }
+
+            .mobile-bottom-nav .nav-item {
+                color: #fff;
+                text-align: center;
+                flex: 1;
+                text-decoration: none;
+                font-family: sans-serif;
+            }
+
+            .mobile-bottom-nav .nav-item i {
+                font-size: 20px;
+                display: block;
+                margin-bottom: 4px;
+            }
+
+            .mobile-bottom-nav .nav-item span {
+                font-size: 14px;
+            }
+
+            .whatsapp-float {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -2068,9 +2121,9 @@
 
     <!-- NAV -->
     <nav class="nav" id="nav">
-<a class="nav-logo" href="index.html">
-    <img src="images/image 8916.png" alt="CityOne Logo" class="nav-logo-img">
-</a>
+        <a class="nav-logo" href="index.html">
+            <img src="images/image 8916.png" alt="CityOne Logo" class="nav-logo-img">
+        </a>
         <div class="nav-links">
             <a href="#includes">Included</a>
             <a href="#pricing">Pricing</a>
@@ -2113,8 +2166,7 @@
         </div>
         <div class="hero-right">
             <!-- Tiger's Nest Monastery - most iconic Bhutan image -->
-            <img src="images/BHUTAN 1 111.jpg.jpeg"
-                alt="Tiger's Nest Monastery Bhutan Paro">
+            <img src="images/BHUTAN 1 111.jpg.jpeg" alt="Tiger's Nest Monastery Bhutan Paro">
         </div>
         <div class="hero-line"></div>
         <div class="hero-vtext">Taktsang Monastery · Paro · Bhutan 2026</div>
@@ -2146,7 +2198,8 @@
             <div class="bento">
                 <!-- Big card with real Bhutan prayer flags image -->
                 <div class="bc big" data-r data-d="1">
-                    <img src="https://images.unsplash.com/photo-1637550667967-9edc9f4e892a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bhutan prayer flags Himalaya">
+                    <img src="https://images.unsplash.com/photo-1637550667967-9edc9f4e892a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Bhutan prayer flags Himalaya">
                     <div class="binner">
                         <span class="btag">✈ Flights</span>
                         <div class="bn">Return Flights Included</div>
@@ -2548,8 +2601,7 @@
             <div class="why-grid">
                 <div class="why-img" data-r>
                     <!-- Bhutan monk prayer image -->
-                    <img src="images/BHUTAN 1 111.jpg.jpeg"
-                        alt="Bhutan monk praying Himalaya">
+                    <img src="images/BHUTAN 1 111.jpg.jpeg" alt="Bhutan monk praying Himalaya">
                     <div class="why-stats">
                         <div class="wstat">
                             <div class="wsn">500+</div>
@@ -2672,6 +2724,7 @@
         </div>
     </section>
 
+
     <!-- ENQUIRY -->
     <section class="enq-section" id="enquiry">
         <div class="container">
@@ -2702,60 +2755,93 @@
                 </div>
                 <div data-r data-d="2">
                     <div class="enq-form">
+
+                        <!-- ── FORM VIEW ── -->
                         <div id="fV">
                             <div class="ft">
                                 <h3>Enquire Now</h3>
                                 <p>Bhutan 2026 · From <strong style="color:var(--rust);">₹68,000/person</strong> · 3
                                     Batches</p>
                             </div>
-                            <div class="f2">
-                                <div class="fr"><label>First Name *</label><input type="text" id="fn"
-                                        placeholder="Your name"></div>
-                                <div class="fr"><label>Last Name</label><input type="text" id="ln"
-                                        placeholder="Last name"></div>
+
+                            <!-- Error message box -->
+                            <div id="fErrMsg"
+                                style="display:none;color:var(--rust);font-size:.76rem;margin-bottom:12px;background:rgba(184,74,26,.07);border:1px solid rgba(184,74,26,.22);border-radius:7px;padding:9px 13px;">
                             </div>
-                            <div class="fr"><label>WhatsApp *</label><input type="tel" id="ph"
-                                    placeholder="+91 98765 43210"></div>
-                            <div class="fr"><label>Email</label><input type="email" id="em"
-                                    placeholder="you@example.com"></div>
-                            <div class="f2">
-                                <div class="fr"><label>Departure City</label>
-                                    <select id="cy">
-                                        <option>Delhi</option>
-                                        <option>Hyderabad</option>
-                                        <option>Bangalore</option>
-                                        <option>Mumbai</option>
-                                        <option>Chennai</option>
-                                        <option>Ahmedabad</option>
-                                        <option>Pune</option>
-                                        <option>Nagpur</option>
-                                    </select>
+
+                            <!-- ── WEB3FORMS AJAX FORM ── -->
+                            <form id="bhutanForm" action="https://api.web3forms.com/submit" method="POST">
+
+                                <!-- Web3Forms required fields -->
+                                <input type="hidden" name="access_key" value="bd611aba-8d9a-4b92-940e-374a669b9b48">
+                                <input type="hidden" name="subject" value="Bhutan 2026 Enquiry – CityOne Tourism">
+                                <input type="hidden" name="from_name" value="CityOne Bhutan Package Website">
+
+                                <!-- Departure batch — updated dynamically by departure selector -->
+                                <input type="hidden" name="selected_departure" id="departureDateField"
+                                    value="15 – 21 May 2026">
+
+                                <!-- Honeypot anti-spam -->
+                                <input type="checkbox" name="botcheck" style="display:none">
+
+                                <div class="f2">
+                                    <div class="fr"><label>First Name *</label><input type="text" name="first_name"
+                                            id="fn" placeholder="Your name" required></div>
+                                    <div class="fr"><label>Last Name</label><input type="text" name="last_name" id="ln"
+                                            placeholder="Last name"></div>
                                 </div>
-                                <div class="fr"><label>Travellers</label>
-                                    <select id="tv">
-                                        <option>1</option>
-                                        <option selected>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5+</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="fr">
-                                <label>Select Departure *</label>
-                                <div class="dsr">
-                                    <div class="dsb active" id="d1" onclick="sD('d1',['d2','d3'])">15–21 May<br>2026
+
+                                <div class="fr"><label>WhatsApp *</label><input type="tel" name="phone" id="ph"
+                                        placeholder="+91 98765 43210" required></div>
+                                <div class="fr"><label>Email</label><input type="email" name="email" id="em"
+                                        placeholder="you@example.com"></div>
+
+                                <div class="f2">
+                                    <div class="fr"><label>Departure City</label>
+                                        <select name="departure_city" id="cy">
+                                            <option>Delhi</option>
+                                            <option>Hyderabad</option>
+                                            <option>Bangalore</option>
+                                            <option>Mumbai</option>
+                                            <option>Chennai</option>
+                                            <option>Ahmedabad</option>
+                                            <option>Pune</option>
+                                            <option>Nagpur</option>
+                                        </select>
                                     </div>
-                                    <div class="dsb" id="d2" onclick="sD('d2',['d1','d3'])">21–27 May<br>2026</div>
-                                    <div class="dsb" id="d3" onclick="sD('d3',['d1','d2'])">27 May–<br>02 Jun</div>
+                                    <div class="fr"><label>Travellers</label>
+                                        <select name="travellers" id="tv">
+                                            <option>1</option>
+                                            <option selected>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5+</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="fr"><label>Special Requests</label><textarea id="nt"
-                                    placeholder="Dietary needs, room preference, medical requirements…"></textarea>
-                            </div>
-                            <div id="fErr"></div>
-                            <button class="btn-sub" onclick="subF()">🙏 Submit — Get Callback in 30 mins</button>
+
+                                <div class="fr">
+                                    <label>Select Departure *</label>
+                                    <div class="dsr">
+                                        <div class="dsb active" id="d1" onclick="sD('d1',['d2','d3'])">15–21 May<br>2026
+                                        </div>
+                                        <div class="dsb" id="d2" onclick="sD('d2',['d1','d3'])">21–27 May<br>2026</div>
+                                        <div class="dsb" id="d3" onclick="sD('d3',['d1','d2'])">27 May–<br>02 Jun</div>
+                                    </div>
+                                </div>
+
+                                <div class="fr"><label>Special Requests</label>
+                                    <textarea name="message" id="nt"
+                                        placeholder="Dietary needs, room preference, medical requirements…"></textarea>
+                                </div>
+
+                                <div id="fErr"></div>
+                                <button type="submit" class="btn-sub" id="submitBtn">🙏 Submit — Get Callback in 30
+                                    mins</button>
+                            </form>
                         </div>
+
+                        <!-- ── SUCCESS VIEW ── -->
                         <div class="succ" id="sV">
                             <div class="succ-icon">🇧🇹</div>
                             <h3>Enquiry Received!</h3>
@@ -2766,18 +2852,34 @@
                                 style="width:100%;background:linear-gradient(135deg,var(--rust),var(--rust2));color:#fff;border:none;border-radius:8px;padding:13px;font-weight:700;cursor:none;margin-top:18px;"
                                 onclick="cF()">Close ✕</button>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <div class="mobile-bottom-nav">
+        <a href="/" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="https://wa.me/97143922959" target="_blank" class="nav-item">
+            <i class="fab fa-whatsapp"></i>
+            <span>Whatsapp</span>
+        </a>
+        <a href="tel:+97143922959" class="nav-item">
+            <i class="fas fa-phone"></i>
+            <span>Contact</span>
+        </a>
+    </div>
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-inner">
-<a class="nav-logo" href="#top">
-    <img src="images/image 8916.png" alt="CityOne Logo" class="nav-logo-img">
-</a>
+            <div class="fb" data-r>
+                <div class="flb">C1</div>
+                <div class="fn">CityOne Tourism</div>
+                <p>Reliable travel experiences crafted with care. Your journey, our commitment.</p>
+            </div>
             <div class="fc" data-r data-d="2">
                 <h4>Quick Links</h4>
                 <a href="#includes">What's Included</a><a href="#pricing">City Pricing</a>
@@ -2845,26 +2947,79 @@
         }
 
         /* departures */
-        function sD(a, others) { document.getElementById(a).classList.add('active'); others.forEach(id => document.getElementById(id).classList.remove('active')); }
         function pb(a, others) { gE(); setTimeout(() => sD(a, others), 700); }
 
         /* utils */
         function gE() { document.getElementById('enquiry').scrollIntoView({ behavior: 'smooth' }); }
 
-        /* form */
-        function subF() {
-            const fn = document.getElementById('fn').value.trim(), ph = document.getElementById('ph').value.trim(), err = document.getElementById('fErr');
-            if (!fn) { err.textContent = '⚠ Please enter your name.'; err.style.display = 'block'; return; }
-            if (!ph) { err.textContent = '⚠ Please enter your WhatsApp number.'; err.style.display = 'block'; return; }
-            err.style.display = 'none';
-            const btn = document.querySelector('.btn-sub'); btn.textContent = 'Sending…'; btn.disabled = true;
-            setTimeout(() => {
-                document.getElementById('fV').style.display = 'none';
-                document.getElementById('sV').style.display = 'block';
-                btn.textContent = '🙏 Submit — Get Callback in 30 mins'; btn.disabled = false;
-                ['fn', 'ln', 'ph', 'em', 'nt'].forEach(id => document.getElementById(id).value = '');
-            }, 1500);
+        /* ── WEB3FORMS AJAX SUBMIT ── */
+        document.getElementById('bhutanForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const btn = document.getElementById('submitBtn');
+            const errBox = document.getElementById('fErrMsg');
+            const fn = document.getElementById('fn').value.trim();
+            const ph = document.getElementById('ph').value.trim();
+
+            // Front-end validation
+            if (!fn) {
+                errBox.textContent = '⚠ Please enter your first name.';
+                errBox.style.display = 'block';
+                return;
+            }
+            if (!ph) {
+                errBox.textContent = '⚠ Please enter your WhatsApp number.';
+                errBox.style.display = 'block';
+                return;
+            }
+
+            errBox.style.display = 'none';
+            btn.textContent = '⏳ Sending…';
+            btn.disabled = true;
+
+            try {
+                const res = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: new FormData(this)
+                });
+                const data = await res.json();
+
+                if (data.success) {
+                    // Show success state
+                    document.getElementById('fV').style.display = 'none';
+                    document.getElementById('sV').style.display = 'block';
+                    this.reset();
+                    // Reset departure selection to default
+                    document.getElementById('d1').classList.add('active');
+                    document.getElementById('d2').classList.remove('active');
+                    document.getElementById('d3').classList.remove('active');
+                    document.getElementById('departureDateField').value = '15 – 21 May 2026';
+                } else {
+                    errBox.textContent = '⚠ ' + (data.message || 'Something went wrong. Please try again.');
+                    errBox.style.display = 'block';
+                }
+            } catch (_) {
+                errBox.textContent = '⚠ Network error. Please check your connection and try again.';
+                errBox.style.display = 'block';
+            } finally {
+                btn.textContent = '🙏 Submit — Get Callback in 30 mins';
+                btn.disabled = false;
+            }
+        });
+
+        /* Update hidden departure field when batch button clicked */
+        function sD(a, others) {
+            document.getElementById(a).classList.add('active');
+            others.forEach(id => document.getElementById(id).classList.remove('active'));
+            // Sync hidden field with selected departure label
+            const labels = {
+                'd1': '15 – 21 May 2026',
+                'd2': '21 – 27 May 2026',
+                'd3': '27 May – 02 Jun 2026'
+            };
+            document.getElementById('departureDateField').value = labels[a];
         }
+
         function cF() { document.getElementById('sV').style.display = 'none'; document.getElementById('fV').style.display = 'block'; }
         document.addEventListener('keydown', e => { if (e.key === 'Escape') cF(); });
     </script>
