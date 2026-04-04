@@ -1,0 +1,40 @@
+# robots.txt for cityonetours.com
+
+User-agent: *
+# Allow all public content
+Allow: /
+
+# Block sensitive/system directories
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /cgi-bin/
+Disallow: /core/
+Disallow: /vendor/
+Disallow: /protected/
+Disallow: /runtime/
+Disallow: /tmp/
+
+# Block technical/internal files
+Disallow: /*.php$
+Disallow: /*?*
+Disallow: /*&*
+
+# Allow important assets for SEO rendering
+Allow: /assets/*.css
+Allow: /assets/*.js
+Allow: /images/
+Allow: /uploads/
+
+# Block duplicate or low-value pages (if applicable)
+Disallow: /search/
+Disallow: /filter/
+Disallow: /tag/
+Disallow: /author/
+Disallow: /cart/
+Disallow: /checkout/
+
+# Sitemap location
+Sitemap: https://cityonetours.com/sitemap.xml
+
+# Crawl-delay (optional for heavy bots)
+Crawl-delay: 10
