@@ -258,14 +258,14 @@
     </div>
 
     <div class="details">
-      <!-- <div class="row">
-        <span class="key">Transaction ID</span>
-        <span class="val">#TXN8823</span>
+      <div class="row" id="ref-row" style="display:none">
+        <span class="key">Reference No.</span>
+        <span class="val" id="ref-no"></span>
       </div>
-      <div class="row">
-        <span class="key">Payment Method</span>
-        <span class="val">UPI</span>
-      </div> -->
+      <div class="row" id="tran-row" style="display:none">
+        <span class="key">Transaction Ref</span>
+        <span class="val" id="tran-ref"></span>
+      </div>
       <div class="row">
         <span class="key">Date &amp; Time</span>
         <span class="val" id="datetime"></span>
@@ -281,8 +281,7 @@
     </div>
 
     <div class="actions">
-      <button class="btn btn-secondary" onclick="downloadReceipt()">Download</button>
-      <button class="btn btn-primary" onclick="goHome()">Done</button>
+      <button class="btn btn-primary" onclick="goHome()" style="flex:1">Done</button>
     </div>
 
     <p class="footer-note">A confirmation email has been sent to your registered address.</p>
@@ -293,10 +292,17 @@
     // ── Set current date/time ──
     const dtEl = document.getElementById('datetime');
     const now = new Date();
-    dtEl.textContent = now.toLocaleString('en-IN', {
+    dtEl.textContent = now.toLocaleString('en-AE', {
       day: '2-digit', month: 'short', year: 'numeric',
       hour: '2-digit', minute: '2-digit'
     });
+
+    // ── Show reference / transaction id from the URL (?appId=...&tran_ref=...) ──
+    const qs = new URLSearchParams(location.search);
+    const appId  = qs.get('appId') || qs.get('cart_id') || qs.get('cartId');
+    const tranId = qs.get('tran_ref') || qs.get('tranRef');
+    if (appId)  { document.getElementById('ref-no').textContent  = appId;  document.getElementById('ref-row').style.display  = 'flex'; }
+    if (tranId) { document.getElementById('tran-ref').textContent = tranId; document.getElementById('tran-row').style.display = 'flex'; }
 
     // ── Confetti ──
     const colors = ['#22c55e','#16a34a','#4ade80','#bbf7d0','#facc15','#60a5fa','#f472b6'];
@@ -320,12 +326,8 @@
     launchConfetti();
 
     // ── Buttons ──
-    function downloadReceipt() {
-      alert('Receipt download started!');
-    }
-
     function goHome() {
-      alert('Redirecting to home...');
+      window.location.href = 'https://cityonetours.com/visa.html';
     }
   </script>
 

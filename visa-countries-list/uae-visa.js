@@ -1,4 +1,3 @@
-
 function switchVisa(t,btn){
   document.querySelectorAll('.tbtn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
@@ -95,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Your PayTabs backend URL (server.js / Netlify function / PHP file)
 // After deploying server.js or paytabs-php.php, paste the URL here:
-const BACKEND_URL = 'https://YOUR-BACKEND.com/create-payment';
+const BACKEND_URL = 'http://localhost:3000/create-payment';
 
 // PayTabs Profile ID (safe to keep in frontend)
 const PAYTABS_PROFILE_ID = '48159';
