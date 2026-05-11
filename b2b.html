@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corporate & MICE Travel | City One Tourism</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --red: #f5393d;
+  --red-dark: #d42e32;
+  --navy: #1a1a2e;
+  --navy2: #16213e;
+  --dark: #222;
+  --grey: #f7f7f7;
+  --grey2: #f0f0f0;
+  --text: #333;
+  --muted: #777;
+  --border: #e5e5e5;
+  --white: #fff;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* ── HERO ── */
+.hero {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 0;
+  min-height: 560px;
+}
+.hero-left {
+  padding: 70px 50px 70px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245,57,61,0.15);
+  border: 1px solid rgba(245,57,61,0.4);
+  border-radius: 4px;
+  padding: 5px 14px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ff7275;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  width: fit-content;
+}
+.hero h1 {
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.12;
+  margin-bottom: 18px;
+}
+.hero h1 span { color: var(--red); }
+.hero p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.65);
+  font-weight: 300;
+  max-width: 480px;
+  margin-bottom: 32px;
+  line-height: 1.75;
+}
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.btn-red {
+  background: var(--red);
+  color: white;
+  padding: 13px 28px;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s, transform 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn-red:hover { background: var(--red-dark); transform: translateY(-2px); }
+.btn-ghost {
+  border: 1.5px solid rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.85);
+  padding: 13px 28px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: border-color 0.2s, color 0.2s;
+}
+.btn-ghost:hover { border-color: var(--red); color: #ff7275; }
+.hero-bg-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  background-image: radial-gradient(circle, white 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+/* form side */
+.hero-right {
+  background: white;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.hero-right::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 4px;
+  background: var(--red);
+}
+.hero-right h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.hero-right .sub {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+.form-group { margin-bottom: 13px; }
+.form-group label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 13px;
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  color: var(--text);
+  background: #fafafa;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--red);
+  background: white;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.btn-submit-full {
+  width: 100%;
+  margin-top: 4px;
+}
+
+/* ── STATS BAR ── */
+.stats-bar {
+  background: var(--red);
+}
+.stats-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.stat-item {
+  padding: 22px 16px;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+.stat-item:last-child { border-right: none; }
+.stat-num {
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  line-height: 1;
+}
+.stat-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 0.5px;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+/* ── SECTIONS ── */
+.section { padding: 72px 40px; }
+.section-inner { max-width: 1200px; margin: 0 auto; }
+.section-grey { background: var(--grey); }
+.section-white { background: var(--white); }
+.section-dark { background: var(--navy2); }
+
+.sec-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 8px;
+}
+.sec-title {
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+.sec-title-white { color: white; }
+.sec-sub {
+  font-size: 15px;
+  color: var(--muted);
+  max-width: 540px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 48px;
+}
+.sec-sub-white { color: rgba(255,255,255,0.55); }
+.red-line {
+  width: 48px;
+  height: 4px;
+  background: var(--red);
+  border-radius: 2px;
+  margin: 14px 0 40px;
+}
+
+/* ── SERVICES GRID ── */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.service-card {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 32px 26px;
+  transition: box-shadow 0.25s, transform 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+.service-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--red);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+  transform-origin: left;
+}
+.service-card:hover { box-shadow: 0 12px 36px rgba(0,0,0,0.1); transform: translateY(-4px); }
+.service-card:hover::after { transform: scaleX(1); }
+.svc-icon {
+  width: 50px; height: 50px;
+  background: rgba(245,57,61,0.08);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+.service-card h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 9px;
+}
+.service-card p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.svc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.svc-list li {
+  font-size: 13px;
+  color: var(--text);
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+.svc-list li::before {
+  content: '✓';
+  color: var(--red);
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 1px;
+  flex-shrink: 0;
+}
+
+/* ── MICE TABS ── */
+.mice-tabs-row {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 36px;
+}
+.m-tab {
+  padding: 13px 26px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: color 0.2s, border-color 0.2s;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.m-tab:hover { color: var(--red); }
+.m-tab.on { color: var(--red); border-bottom-color: var(--red); }
+.mice-pane { display: none; }
+.mice-pane.on {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.mice-photo {
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+.mice-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.mice-text h3 {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+.mice-text p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+.mice-feats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+.mfeat {
+  font-size: 13px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: 500;
+}
+.mfeat::before { content: '→'; color: var(--red); font-weight: 700; }
+
+/* ── WHY US ── */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.why-card {
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 28px 24px;
+  background: rgba(255,255,255,0.04);
+  transition: background 0.25s;
+}
+.why-card:hover { background: rgba(245,57,61,0.08); border-color: rgba(245,57,61,0.25); }
+.why-num {
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--red);
+  opacity: 0.35;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.why-card h4 { font-size: 16px; font-weight: 700; color: white; margin-bottom: 8px; }
+.why-card p { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.65; }
+
+/* ── PROCESS ── */
+.process-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  position: relative;
+  margin-top: 48px;
+}
+.process-row::before {
+  content: '';
+  position: absolute;
+  top: 28px; left: 10%; right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--red), rgba(245,57,61,0.2));
+  z-index: 0;
+}
+.pstep { text-align: center; position: relative; z-index: 1; padding: 0 10px; }
+.pstep-circle {
+  width: 56px; height: 56px;
+  background: white;
+  border: 3px solid var(--red);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 20px;
+}
+.pstep h5 { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 5px; }
+.pstep p { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+/* ── TESTIMONIALS ── */
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 48px;
+}
+.test-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 26px;
+  position: relative;
+}
+.test-card::before {
+  content: '"';
+  font-size: 64px;
+  color: var(--red);
+  opacity: 0.12;
+  position: absolute;
+  top: 10px; left: 18px;
+  line-height: 1;
+  font-family: Georgia, serif;
+}
+.stars { color: var(--red); font-size: 14px; margin-bottom: 12px; }
+.test-text {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 18px;
+}
+.test-author { display: flex; align-items: center; gap: 11px; }
+.t-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--red);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700;
+  color: white;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+.t-name { font-size: 14px; font-weight: 700; color: var(--navy); }
+.t-role { font-size: 12px; color: var(--muted); }
+
+/* ── INDUSTRIES ── */
+.industries { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+.ind-pill {
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: 30px;
+  padding: 8px 18px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: border-color 0.2s, color 0.2s;
+}
+.ind-pill:hover { border-color: var(--red); color: var(--red); }
+
+/* ── CTA BAND ── */
+.cta-band {
+  background: var(--red);
+  padding: 64px 40px;
+  text-align: center;
+}
+.cta-band h2 {
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 800;
+  color: white;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+.cta-band p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.8);
+  max-width: 540px;
+  margin: 0 auto 32px;
+  font-weight: 300;
+}
+.cta-btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+.btn-white {
+  background: white;
+  color: var(--red);
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: inline-block;
+}
+.btn-white:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.2); transform: translateY(-2px); }
+.btn-outline-white {
+  border: 2px solid rgba(255,255,255,0.6);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: border-color 0.2s, background 0.2s;
+}
+.btn-outline-white:hover { border-color: white; background: rgba(255,255,255,0.1); }
+
+/* ── ENQUIRY MODAL SECTION ── */
+.enquiry-section { background: var(--grey); padding: 72px 40px; }
+.enquiry-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+  display: grid;
+  grid-template-columns: 320px 1fr;
+}
+.enq-left {
+  background: var(--navy2);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.enq-left h3 { font-size: 24px; font-weight: 800; color: white; margin-bottom: 10px; line-height: 1.2; }
+.enq-left p { font-size: 13px; color: rgba(255,255,255,0.55); margin-bottom: 32px; }
+.enq-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.enq-icon {
+  width: 36px; height: 36px;
+  background: rgba(245,57,61,0.15);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+.enq-contact-item span { font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.5; }
+.enq-contact-item a { color: rgba(255,255,255,0.7); text-decoration: none; }
+.enq-contact-item a:hover { color: var(--red); }
+.enq-right { padding: 40px 36px; }
+.enq-right h4 { font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.enq-right .hint { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+
+/* ── REVEAL ── */
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.vis { opacity: 1; transform: none; }
+
+/* ── FLOATING WA ── */
+.wa-float {
+  position: fixed;
+  bottom: 28px; right: 28px;
+  z-index: 999;
+  background: #25d366;
+  color: white;
+  width: 54px; height: 54px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+.wa-float:hover { transform: scale(1.1); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-right { display: none; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .why-grid { grid-template-columns: 1fr 1fr; }
+  .mice-pane.on { grid-template-columns: 1fr; }
+  .mice-photo { display: none; }
+  .process-row { grid-template-columns: 1fr 1fr; }
+  .process-row::before { display: none; }
+  .test-grid { grid-template-columns: 1fr; }
+  .enquiry-inner { grid-template-columns: 1fr; }
+  .enq-left { padding: 32px; }
+  .stats-inner { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .section { padding: 52px 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag">Corporate &amp; MICE Travel Specialists</div>
+      <h1>Business Travel &amp;<br><span>MICE Solutions</span><br>for Enterprises</h1>
+      <p>End-to-end corporate travel management, group visa services, and MICE event execution across 40+ countries — delivered by Dubai's trusted travel experts since 2012.</p>
+      <div class="hero-actions">
+        <a href="#enquiry" class="btn-red">Request a Proposal</a>
+        <a href="https://wa.me/97143922959" class="btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+    <!-- Enquiry form panel -->
+    <div class="hero-right">
+      <h3>Quick Corporate Enquiry</h3>
+      <p class="sub">We respond within 4 business hours.</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="John Smith">
+        </div>
+        <div class="form-group">
+          <label>Company</label>
+          <input type="text" placeholder="Company Name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Work Email</label>
+        <input type="email" placeholder="you@company.com">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone / WhatsApp</label>
+          <input type="tel" placeholder="+971 xx xxx xxxx">
+        </div>
+        <div class="form-group">
+          <label>Service Type</label>
+          <select>
+            <option value="">Select Service</option>
+            <option>Corporate Travel Management</option>
+            <option>MICE / Events & Conferences</option>
+            <option>Incentive Travel</option>
+            <option>Group Visa Services</option>
+            <option>Team Building</option>
+            <option>Executive Retreats</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Group Size & Destination</label>
+        <input type="text" placeholder="e.g. 60 pax to Thailand, Nov 2025">
+      </div>
+      <button class="btn-red btn-submit-full" onclick="submitHero(this)">Send Enquiry →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS BAR ══ -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-num">120K+</div>
+      <div class="stat-label">Happy Clients</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">40+</div>
+      <div class="stat-label">Countries Covered</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">140K+</div>
+      <div class="stat-label">Visa Approvals</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">12+</div>
+      <div class="stat-label">Years in Dubai</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SERVICES ══ -->
+<section class="section section-grey">
+  <div class="section-inner">
+    <p class="sec-label reveal">What We Offer</p>
+    <h2 class="sec-title reveal">Complete B2B Travel Solutions</h2>
+    <div class="red-line reveal"></div>
+    <p class="sec-sub reveal">Whether you're moving executives across continents or orchestrating a 500-delegate conference — we have the infrastructure, network, and expertise to deliver flawlessly.</p>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="svc-icon">✈️</div>
+        <h4>Corporate Travel Management</h4>
+        <p>Streamline all business travel with a dedicated account manager, priority access, and consolidated monthly billing.</p>
+        <ul class="svc-list">
+          <li>Business &amp; economy class flights</li>
+          <li>Hotel contracting &amp; room blocks</li>
+          <li>Airport transfers &amp; ground transport</li>
+          <li>24/7 emergency traveler support</li>
+          <li>Monthly spend reports &amp; analytics</li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <div class="svc-icon">🎪</div>
+        <h4>MICE — Events &amp; Conferences</h4>
+        <p>Full-service event management for meetings, incentives, conferences, and exhibitions worldwide.</p>
+        <ul class="svc-list">
+          <li>Venue sourcing &amp; site inspections</li>
+          <li>AV, stage &amp; décor management</li>
+          <li>Speaker &amp; gala dinner coordination</li>
+          <li>Delegate management &amp; registration</li>
+          <li>Post-event reporting &amp; feedback</li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <div class="svc-icon">🏆</div>
+        <h4>Incentive Travel Programs</h4>
+        <p>Reward your top performers with bespoke incentive trips that inspire, motivate, and create lasting memories.</p>
+        <ul class="svc-list">
+          <li>Custom itinerary design</li>
+          <li>Luxury resort &amp; villa sourcing</li>
+          <li>Team-building activities</li>
+          <li>Private dining &amp; experiences</li>
+          <li>Branded welcome kits &amp; merch</li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <div class="svc-icon">🌍</div>
+        <h4>Group Visa Services</h4>
+        <p>Fast-tracked group visa processing for corporate delegations, with dedicated document management.</p>
+        <ul class="svc-list">
+          <li>Bulk visa applications</li>
+          <li>Document checklist &amp; verification</li>
+          <li>Embassy appointment coordination</li>
+          <li>Express processing available</li>
+          <li>Coverage for 40+ countries</li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <div class="svc-icon">🏨</div>
+        <h4>Hotel &amp; Accommodation</h4>
+        <p>Preferred corporate rates at 5-star hotels, negotiated room blocks, and dedicated hosting for delegations.</p>
+        <ul class="svc-list">
+          <li>Negotiated corporate rates</li>
+          <li>Room block management</li>
+          <li>Meeting rooms &amp; breakout spaces</li>
+          <li>F&amp;B arrangement</li>
+          <li>VIP check-in management</li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <div class="svc-icon">🤝</div>
+        <h4>Agency &amp; B2B Partnerships</h4>
+        <p>Signed SLAs, volume pricing, co-branding, and white-label solutions for travel agencies and corporates.</p>
+        <ul class="svc-list">
+          <li>Dedicated account manager</li>
+          <li>Signed SLA &amp; KPI reporting</li>
+          <li>Volume-based pricing tiers</li>
+          <li>Co-branding opportunities</li>
+          <li>White-label travel solutions</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MICE TABS ══ -->
+<section class="section section-white">
+  <div class="section-inner">
+    <p class="sec-label reveal">MICE Excellence</p>
+    <h2 class="sec-title reveal">Every Event, Flawlessly Executed</h2>
+    <div class="red-line reveal"></div>
+
+    <div class="mice-tabs-row">
+      <div class="m-tab on" onclick="mTab(this,'m1')">Meetings</div>
+      <div class="m-tab" onclick="mTab(this,'m2')">Incentives</div>
+      <div class="m-tab" onclick="mTab(this,'m3')">Conferences</div>
+      <div class="m-tab" onclick="mTab(this,'m4')">Exhibitions</div>
+    </div>
+
+    <div class="mice-pane on" id="m1">
+      <div class="mice-photo">
+        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80" alt="Meetings" loading="lazy">
+      </div>
+      <div class="mice-text">
+        <h3>Strategic Business Meetings</h3>
+        <p>From boardroom sessions to regional sales kick-offs, we arrange every detail — venues, catering, AV, and executive transfers — so your team focuses on the agenda, not logistics.</p>
+        <div class="mice-feats">
+          <span class="mfeat">Venue Sourcing</span>
+          <span class="mfeat">AV Equipment</span>
+          <span class="mfeat">Catering &amp; F&amp;B</span>
+          <span class="mfeat">Accommodation</span>
+          <span class="mfeat">Airport Transfers</span>
+          <span class="mfeat">Secretariat Support</span>
+        </div>
+        <a href="#enquiry" class="btn-red">Enquire for Meetings</a>
+      </div>
+    </div>
+    <div class="mice-pane" id="m2">
+      <div class="mice-photo">
+        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&q=80" alt="Incentives" loading="lazy">
+      </div>
+      <div class="mice-text">
+        <h3>Incentive Travel Experiences</h3>
+        <p>Design bespoke reward journeys for top performers — from private villas in the Maldives to cultural immersions in Japan. We craft experiences money alone cannot replicate.</p>
+        <div class="mice-feats">
+          <span class="mfeat">Luxury Resorts</span>
+          <span class="mfeat">Private Experiences</span>
+          <span class="mfeat">Gala Dinners</span>
+          <span class="mfeat">Adventure Activities</span>
+          <span class="mfeat">Branded Materials</span>
+          <span class="mfeat">Travel Insurance</span>
+        </div>
+        <a href="#enquiry" class="btn-red">Design an Incentive Trip</a>
+      </div>
+    </div>
+    <div class="mice-pane" id="m3">
+      <div class="mice-photo">
+        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" alt="Conferences" loading="lazy">
+      </div>
+      <div class="mice-text">
+        <h3>Large-Scale Conferences</h3>
+        <p>We manage 50 to 5,000 delegate conferences end-to-end — international speaker logistics, live streaming, delegate management apps, and full exhibition floor design.</p>
+        <div class="mice-feats">
+          <span class="mfeat">Capacity Planning</span>
+          <span class="mfeat">Delegate Management</span>
+          <span class="mfeat">Stage &amp; Production</span>
+          <span class="mfeat">Translation Services</span>
+          <span class="mfeat">Sponsorship Packages</span>
+          <span class="mfeat">Post-Event Reports</span>
+        </div>
+        <a href="#enquiry" class="btn-red">Plan a Conference</a>
+      </div>
+    </div>
+    <div class="mice-pane" id="m4">
+      <div class="mice-photo">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" alt="Exhibitions" loading="lazy">
+      </div>
+      <div class="mice-text">
+        <h3>Exhibitions &amp; Trade Shows</h3>
+        <p>Attending GITEX, Arabian Travel Market, or any global trade show? We manage your team's full logistics — flights, hotels, booth coordination, and evening event programs.</p>
+        <div class="mice-feats">
+          <span class="mfeat">Group Flights</span>
+          <span class="mfeat">Hotel Room Blocks</span>
+          <span class="mfeat">Booth Logistics</span>
+          <span class="mfeat">Networking Dinners</span>
+          <span class="mfeat">Visa — All Nationalities</span>
+          <span class="mfeat">Ground Transport</span>
+        </div>
+        <a href="#enquiry" class="btn-red">Enquire for Exhibitions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY US ══ -->
+<section class="section section-dark">
+  <div class="section-inner">
+    <p class="sec-label reveal">Why City One Tourism</p>
+    <h2 class="sec-title sec-title-white reveal">The Corporate Travel Partner<br>Built for the UAE Market</h2>
+    <div class="red-line reveal"></div>
+    <p class="sec-sub sec-sub-white reveal">Trusted by enterprises across the GCC for over a decade of reliable, results-driven travel management.</p>
+
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-num">01</div>
+        <h4>Dubai-Based, Globally Connected</h4>
+        <p>Licensed in UAE with direct GSA & airline contracts, IATA accreditation, and on-ground presence at every key destination.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">02</div>
+        <h4>Dedicated Corporate Desk</h4>
+        <p>A named account manager — not a call centre. One contact for flights, hotels, visa, and on-ground emergency support.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">03</div>
+        <h4>Multi-Currency &amp; Invoicing</h4>
+        <p>Accept AED, USD, INR. Monthly consolidated invoices, credit facilities, and clean expense reports for your finance team.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">04</div>
+        <h4>Award-Winning &amp; Recognised</h4>
+        <p>TripAdvisor Certificate of Excellence holder and World Travel Awards nominee. Quality you can present to stakeholders.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">05</div>
+        <h4>24/7 Crisis Support</h4>
+        <p>Flight delays, visa issues, hotel problems — our emergency line is always live. Your travelers are never left stranded.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">06</div>
+        <h4>40+ Countries, One Partner</h4>
+        <p>No juggling multiple agencies across regions. We coordinate everything — from Dubai to Tokyo to London — under one roof.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESS ══ -->
+<section class="section section-grey">
+  <div class="section-inner">
+    <p class="sec-label reveal">How It Works</p>
+    <h2 class="sec-title reveal">From Enquiry to Departure in 5 Steps</h2>
+    <div class="red-line reveal"></div>
+
+    <div class="process-row">
+      <div class="pstep reveal">
+        <div class="pstep-circle">📋</div>
+        <h5>Submit Brief</h5>
+        <p>Share your travel requirement, dates, group size &amp; budget via our form or WhatsApp</p>
+      </div>
+      <div class="pstep reveal">
+        <div class="pstep-circle">🎯</div>
+        <h5>Tailored Proposal</h5>
+        <p>Receive a detailed itinerary and cost proposal within 24 hours</p>
+      </div>
+      <div class="pstep reveal">
+        <div class="pstep-circle">✅</div>
+        <h5>Approval &amp; Sign-Off</h5>
+        <p>Review, revise, and confirm — we handle all paperwork and SLAs</p>
+      </div>
+      <div class="pstep reveal">
+        <div class="pstep-circle">🛫</div>
+        <h5>Execution</h5>
+        <p>Our team manages bookings, visas, on-ground logistics &amp; real-time support</p>
+      </div>
+      <div class="pstep reveal">
+        <div class="pstep-circle">📊</div>
+        <h5>Post-Trip Report</h5>
+        <p>Consolidated invoice, trip report, and debrief for your records</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section class="section section-white">
+  <div class="section-inner">
+    <p class="sec-label reveal">Client Voices</p>
+    <h2 class="sec-title reveal">What Corporate Clients Say</h2>
+    <div class="red-line reveal"></div>
+
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="test-text">"City One managed our annual sales conference for 180 delegates in Thailand. Flights, hotel, team-building, gala dinner — all flawless. Our CEO was genuinely impressed."</p>
+        <div class="test-author">
+          <div class="t-avatar">RK</div>
+          <div>
+            <div class="t-name">Rajan K.</div>
+            <div class="t-role">HR Director — FMCG Group, Dubai</div>
+          </div>
+        </div>
+      </div>
+      <div class="test-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="test-text">"We've used City One for group visa processing for 3 years. Fast, reliable, zero rejections. The dedicated desk means I never chase anyone — they follow up proactively."</p>
+        <div class="test-author">
+          <div class="t-avatar">SA</div>
+          <div>
+            <div class="t-name">Sara A.</div>
+            <div class="t-role">Admin Manager — Tech Firm, Abu Dhabi</div>
+          </div>
+        </div>
+      </div>
+      <div class="test-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="test-text">"Our incentive trip to the Maldives for 40 top performers was beyond expectations — private island dinner, snorkelling, branded kits. The team still talks about it."</p>
+        <div class="test-author">
+          <div class="t-avatar">FM</div>
+          <div>
+            <div class="t-name">Faisal M.</div>
+            <div class="t-role">Sales Director — Real Estate Group, Dubai</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ INDUSTRIES ══ -->
+<section class="section section-grey" style="padding-top:40px;padding-bottom:52px;">
+  <div class="section-inner">
+    <p class="sec-label reveal" style="margin-bottom:20px;">Industries We Serve</p>
+    <div class="industries">
+      <span class="ind-pill">Banking &amp; Finance</span>
+      <span class="ind-pill">Real Estate</span>
+      <span class="ind-pill">Technology</span>
+      <span class="ind-pill">FMCG &amp; Retail</span>
+      <span class="ind-pill">Oil &amp; Gas</span>
+      <span class="ind-pill">Healthcare</span>
+      <span class="ind-pill">Hospitality</span>
+      <span class="ind-pill">Logistics</span>
+      <span class="ind-pill">Government &amp; Semi-Gov</span>
+      <span class="ind-pill">Education</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FULL ENQUIRY FORM ══ -->
+<section class="enquiry-section" id="enquiry">
+  <div class="enquiry-inner">
+    <div class="enq-left">
+      <div>
+        <h3>Let's Plan Your Corporate Travel</h3>
+        <p>Fill in your details and our corporate desk will get back to you within 4 hours.</p>
+      </div>
+      <div>
+        <div class="enq-contact-item">
+          <div class="enq-icon">📞</div>
+          <div><span><a href="tel:+97143922959">+971 4 392 2959</a></span></div>
+        </div>
+        <div class="enq-contact-item">
+          <div class="enq-icon">✉️</div>
+          <div><span><a href="mailto:info@cityonetours.com">info@cityonetours.com</a></span></div>
+        </div>
+        <div class="enq-contact-item">
+          <div class="enq-icon">💬</div>
+          <div><span><a href="https://wa.me/97143922959">WhatsApp: +971 4 392 2959</a></span></div>
+        </div>
+        <div class="enq-contact-item">
+          <div class="enq-icon">📍</div>
+          <div><span>Dubai, United Arab Emirates</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="enq-right">
+      <h4>Corporate &amp; MICE Enquiry</h4>
+      <p class="hint">Tell us about your requirement — we'll send a tailored proposal.</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" placeholder="John Smith" id="enq-name">
+        </div>
+        <div class="form-group">
+          <label>Company Name *</label>
+          <input type="text" placeholder="Company LLC">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Work Email *</label>
+          <input type="email" placeholder="you@company.com">
+        </div>
+        <div class="form-group">
+          <label>Phone / WhatsApp *</label>
+          <input type="tel" placeholder="+971 xx xxx xxxx">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Service Required *</label>
+          <select>
+            <option value="">Select Service</option>
+            <option>Corporate Travel Management</option>
+            <option>MICE / Events &amp; Conferences</option>
+            <option>Incentive Travel</option>
+            <option>Group Visa Services</option>
+            <option>Team Building</option>
+            <option>Executive Retreats</option>
+            <option>Hotel Contracting</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Approx. Group Size</label>
+          <input type="text" placeholder="e.g. 50 pax">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Destination(s)</label>
+          <input type="text" placeholder="e.g. Thailand, Maldives">
+        </div>
+        <div class="form-group">
+          <label>Travel / Event Date</label>
+          <input type="text" placeholder="e.g. Nov 2025">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Additional Requirements</label>
+        <textarea rows="3" placeholder="Any special requests, budget range, or details you'd like us to know..."></textarea>
+      </div>
+      <button class="btn-red btn-submit-full" onclick="submitEnq(this)">Send Enquiry to Corporate Desk →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BAND ══ -->
+<section class="cta-band">
+  <div>
+    <h2>Ready to Elevate Your Corporate Travel?</h2>
+    <p>Talk to our B2B specialists today — no obligation, just a quick conversation about how we can streamline your travel and events.</p>
+    <div class="cta-btns">
+      <a href="#enquiry" class="btn-white">Request a Proposal</a>
+      <a href="tel:+97143922959" class="btn-outline-white">📞 +971 4 392 2959</a>
+      <a href="https://wa.me/97143922959" class="btn-outline-white">💬 WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/97143922959" class="wa-float" title="WhatsApp City One Tourism">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  // MICE tabs
+  function mTab(el, id) {
+    document.querySelectorAll('.m-tab').forEach(t => t.classList.remove('on'));
+    document.querySelectorAll('.mice-pane').forEach(p => p.classList.remove('on'));
+    el.classList.add('on');
+    document.getElementById(id).classList.add('on');
+  }
+
+  // Scroll reveal
+  const ro = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); ro.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+  // Smooth scroll to enquiry
+  document.querySelectorAll('a[href="#enquiry"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      document.getElementById('enquiry').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  // Hero form submit
+  function submitHero(btn) {
+    btn.textContent = '✓ Sent! Our team will call you shortly.';
+    btn.style.background = '#1a1a2e';
+    btn.disabled = true;
+  }
+
+  // Full enquiry form submit
+  function submitEnq(btn) {
+    const name = document.getElementById('enq-name').value.trim();
+    if (!name) { document.getElementById('enq-name').focus(); return; }
+    btn.textContent = '✓ Enquiry Received! We\'ll respond within 4 hours.';
+    btn.style.background = '#1a1a2e';
+    btn.disabled = true;
+  }
+</script>
+</html>

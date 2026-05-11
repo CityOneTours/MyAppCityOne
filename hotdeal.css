@@ -12,6 +12,65 @@ header {
     z-index: 9999;
 
 }
+  #eu-popup-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);
+    z-index: 99999; justify-content: center; align-items: center;
+    animation: euFadeIn 0.4s ease;
+  }
+  #eu-popup-overlay.active { display: flex; }
+  @keyframes euFadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes euSlideUp {
+    from { opacity:0; transform: translateY(60px) scale(0.95); }
+    to   { opacity:1; transform: translateY(0) scale(1); }
+  }
+  #eu-popup-box {
+    position: relative; width: min(680px, 95vw); border-radius: 20px;
+    overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+    animation: euSlideUp 0.5s cubic-bezier(0.34,1.56,0.64,1); background:#0a1628;
+  }
+  .eu-timer-bar { height:3px; background: linear-gradient(90deg,#25D366,#4fc3f7);
+    width:100%; animation: euShrink 5s linear forwards; transform-origin:left; }
+  @keyframes euShrink { from{transform:scaleX(1);} to{transform:scaleX(0);} }
+  .eu-landmark-strip { display:flex; height:180px; overflow:hidden; }
+  .eu-landmark-strip .lm { flex:1; position:relative; overflow:hidden; border-right:2px solid rgba(255,255,255,0.15); }
+  .eu-landmark-strip .lm:last-child { border-right:none; }
+  .eu-landmark-strip .lm img { width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease; }
+  .eu-landmark-strip .lm:hover img { transform:scale(1.1); }
+  .eu-popup-content { padding:24px 28px 28px; display:flex; gap:20px; align-items:center;
+    background: linear-gradient(135deg,#0a1628 0%,#1a3a5c 100%); }
+  .eu-popup-text .tag { display:inline-block; background:rgba(255,165,0,0.2); border:1px solid rgba(255,165,0,0.5);
+    color:#ffa500; font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase;
+    padding:4px 12px; border-radius:20px; margin-bottom:10px; font-family:'Poppins',sans-serif; }
+  .eu-popup-text h2 { font-family:'Poppins',sans-serif; font-size:clamp(1.4rem,4vw,2rem); font-weight:900;
+    color:#fff; line-height:1.1; margin:0 0 6px; }
+  .eu-popup-text h2 span { color:#4fc3f7; }
+  .eu-popup-text .sub { font-size:13px; color:rgba(255,255,255,0.7); margin-bottom:14px; font-family:'Poppins',sans-serif; }
+  .eu-price-badge { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.08);
+    border:1px dashed rgba(255,255,255,0.3); border-radius:10px; padding:8px 16px; margin-bottom:18px; }
+  .eu-price-badge .label { font-size:11px; color:rgba(255,255,255,0.6); font-family:'Poppins',sans-serif; }
+  .eu-price-badge .amount { font-family:'Poppins',sans-serif; font-size:1.5rem; font-weight:900; color:#ffd700; }
+  .eu-price-badge .pp { font-size:11px; color:rgba(255,255,255,0.6); font-family:'Poppins',sans-serif; }
+  .eu-cta-buttons { display:flex; gap:10px; flex-wrap:wrap; }
+  .eu-btn-wa { display:inline-flex; align-items:center; gap:8px; background:#25D366; color:white;
+    font-family:'Poppins',sans-serif; font-weight:700; font-size:13px; padding:12px 20px;
+    border-radius:10px; text-decoration:none; border:none; cursor:pointer; transition:all 0.25s ease;
+    box-shadow:0 4px 15px rgba(37,211,102,0.4); }
+  .eu-btn-wa:hover { background:#1ebe5d; transform:translateY(-2px); color:white; text-decoration:none; }
+  .eu-btn-wa svg { width:18px; height:18px; fill:white; }
+  .eu-btn-enquire { display:inline-flex; align-items:center; gap:8px;
+    background:linear-gradient(135deg,#e63946,#c1121f); color:white; font-family:'Poppins',sans-serif;
+    font-weight:700; font-size:13px; padding:12px 20px; border-radius:10px; border:none; cursor:pointer;
+    transition:all 0.25s ease; box-shadow:0 4px 15px rgba(230,57,70,0.4); text-decoration:none; }
+  .eu-btn-enquire:hover { transform:translateY(-2px); color:white; text-decoration:none; }
+  .eu-girl-wrap { width:130px; flex-shrink:0; align-self:flex-end; }
+  .eu-girl-wrap img { width:100%; display:block; }
+  #eu-popup-close { position:absolute; top:12px; right:14px; width:30px; height:30px; border-radius:50%;
+    background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.3); color:white; font-size:18px;
+    display:flex; align-items:center; justify-content:center; cursor:pointer; z-index:10;
+    transition:background 0.2s; }
+  #eu-popup-close:hover { background:rgba(255,255,255,0.3); }
+  @media(max-width:480px) { .eu-girl-wrap{display:none;} .eu-popup-content{padding:16px;} }
 
 /* Top bar */
 .top-bar {

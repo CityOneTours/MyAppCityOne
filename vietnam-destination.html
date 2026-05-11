@@ -1,0 +1,2630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vietnam Tour Packages | City One Tours</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    :root {
+      --red: #C0392B;
+      --gold: #C9891A;
+      --gold-light: #F0C84A;
+      --green: #1A6B3C;
+      --teal: #0D6E6E;
+      --navy: #0B1F3A;
+      --navy2: #163558;
+      --cream: #FDFAF5;
+      --sand: #F5EDD8;
+      --white: #FFFFFF;
+      --border: #E2DDD4;
+      --border2: #D5CFC6;
+      --text: #1A2634;
+      --muted: #6B7E8F;
+      --muted2: #9AAAB8;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--white);
+      color: var(--text);
+      overflow-x: hidden
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 0 48px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(255, 255, 255, .96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: .3s
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none
+    }
+
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      background: var(--navy);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-light);
+      font-size: 16px;
+      font-weight: 700;
+      font-family: 'Cormorant Garamond', serif
+    }
+
+    .logo-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--navy)
+    }
+
+    .logo-text span {
+      color: var(--red)
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 4px
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .83rem;
+      font-weight: 500;
+      padding: 7px 14px;
+      border-radius: 7px;
+      transition: .2s
+    }
+
+    nav a:hover {
+      color: var(--navy);
+      background: #F0EDE8
+    }
+
+    .nav-cta {
+      background: var(--red) !important;
+      color: #fff !important;
+      padding: 8px 20px !important;
+      border-radius: 7px
+    }
+
+    .nav-cta:hover {
+      background: #a93226 !important
+    }
+
+    /* ===== HERO — VIDEO ===== */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 650px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end
+    }
+
+    .hero-video-wrap {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      background: #071828
+    }
+
+    .hero-video-wrap iframe {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 177.78vh;
+      /* 16:9 ratio */
+      min-width: 100vw;
+      height: 100vh;
+      min-height: 56.25vw;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      border: none;
+    }
+
+    /* Fallback bg image when video not loaded */
+    .hero-video-fallback {
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1800&q=85') center/cover no-repeat;
+      z-index: 1;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: linear-gradient(180deg, rgba(7, 24, 40, .35) 0%, rgba(7, 24, 40, .15) 40%, rgba(7, 24, 40, .82) 85%, rgba(7, 24, 40, .97) 100%)
+    }
+
+    /* mute toggle */
+    .hero-mute {
+      position: absolute;
+      top: 90px;
+      right: 28px;
+      z-index: 5;
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .25);
+      color: #fff;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+      backdrop-filter: blur(6px);
+      transition: .2s
+    }
+
+    .hero-mute:hover {
+      background: rgba(255, 255, 255, .22)
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      padding: 0 60px 80px;
+      max-width: 900px
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(240, 200, 74, .15);
+      border: 1px solid rgba(240, 200, 74, .35);
+      color: #F0C84A;
+      font-size: .7rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 22px;
+      animation: fadeUp .8s ease .1s both
+    }
+
+    .blink {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #F0C84A;
+      animation: blink 2s infinite
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: .3
+      }
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.2rem, 7vw, 6.2rem);
+      color: #fff;
+      font-weight: 400;
+      line-height: 1.02;
+      margin-bottom: 18px;
+      animation: fadeUp .8s ease .25s both
+    }
+
+    .hero h1 em {
+      color: #F0C84A;
+      font-style: italic
+    }
+
+    .hero-desc {
+      color: rgba(255, 255, 255, .78);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      max-width: 540px;
+      margin-bottom: 36px;
+      animation: fadeUp .8s ease .4s both
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      animation: fadeUp .8s ease .55s both
+    }
+
+    .btn-red {
+      background: var(--red);
+      color: #fff;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: .25s;
+      text-decoration: none;
+      display: inline-block
+    }
+
+    .btn-red:hover {
+      background: #a93226;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(192, 57, 43, .4)
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: #fff;
+      border: 1.5px solid rgba(255, 255, 255, .45);
+      padding: 13px 28px;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: .25s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, .1);
+      border-color: #fff
+    }
+
+    .hero-stats {
+      position: absolute;
+      right: 60px;
+      bottom: 80px;
+      z-index: 3;
+      display: flex;
+      gap: 40px;
+      animation: fadeUp .8s ease .65s both
+    }
+
+    .h-stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      color: #F0C84A;
+      font-weight: 600;
+      line-height: 1
+    }
+
+    .h-stat-label {
+      font-size: .65rem;
+      color: rgba(255, 255, 255, .45);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-top: 4px
+    }
+
+    .scroll-cue {
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      animation: bounce 2.5s ease infinite
+    }
+
+    .scroll-cue span {
+      font-size: .62rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .35)
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, .3), transparent)
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0)
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(8px)
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    /* ===== STRIP ===== */
+    .strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: var(--navy)
+    }
+
+    .strip-item {
+      padding: 22px 28px;
+      border-right: 1px solid rgba(255, 255, 255, .07);
+      display: flex;
+      align-items: center;
+      gap: 14px
+    }
+
+    .strip-item:last-child {
+      border: none
+    }
+
+    .strip-icon {
+      width: 42px;
+      height: 42px;
+      background: rgba(240, 200, 74, .12);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 19px;
+      flex-shrink: 0
+    }
+
+    .strip-label {
+      font-size: .65rem;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .35);
+      margin-bottom: 3px
+    }
+
+    .strip-val {
+      font-size: .87rem;
+      color: #fff;
+      font-weight: 500
+    }
+
+    /* ===== COMMON SECTION ===== */
+    .section {
+      padding: 90px 48px
+    }
+
+    .section-inner {
+      max-width: 1200px;
+      margin: 0 auto
+    }
+
+    .eyebrow {
+      font-size: .68rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 600;
+      margin-bottom: 10px
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.5vw, 2.9rem);
+      color: var(--navy);
+      font-weight: 600;
+      line-height: 1.18;
+      margin-bottom: 16px
+    }
+
+    .section-sub {
+      color: var(--muted);
+      font-size: .93rem;
+      line-height: 1.8;
+      max-width: 600px
+    }
+
+    /* ===== ABOUT ===== */
+    .about {
+      background: var(--white)
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: center
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 32px
+    }
+
+    .hl-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      transition: .25s;
+      cursor: default
+    }
+
+    .hl-card:hover {
+      border-color: var(--gold);
+      background: #FFFBF0;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(201, 137, 26, .12)
+    }
+
+    .hl-icon {
+      font-size: 22px;
+      margin-bottom: 8px
+    }
+
+    .hl-title {
+      font-size: .85rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 4px
+    }
+
+    .hl-desc {
+      font-size: .74rem;
+      color: var(--muted);
+      line-height: 1.55
+    }
+
+    /* Real image grid */
+    .about-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 220px 220px;
+      gap: 10px
+    }
+
+    .about-img {
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative
+    }
+
+    .about-img.tall {
+      grid-row: span 2
+    }
+
+    .about-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease
+    }
+
+    .about-img:hover img {
+      transform: scale(1.05)
+    }
+
+    .img-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px 14px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, .6));
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .3px
+    }
+
+    /* ===== DESTINATIONS ===== */
+    .destinations {
+      background: var(--sand)
+    }
+
+    .dest-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 44px
+    }
+
+    .dest-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px
+    }
+
+    .dest-card {
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: .35s;
+      box-shadow: 0 2px 12px rgba(11, 31, 58, .05)
+    }
+
+    .dest-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 22px 55px rgba(11, 31, 58, .12);
+      border-color: var(--gold)
+    }
+
+    .dest-img {
+      height: 200px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .dest-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease
+    }
+
+    .dest-card:hover .dest-img img {
+      transform: scale(1.07)
+    }
+
+    .dest-body {
+      padding: 18px 20px 20px
+    }
+
+    .dest-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.22rem;
+      color: var(--navy);
+      font-weight: 600;
+      margin-bottom: 6px
+    }
+
+    .dest-desc {
+      font-size: .77rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 10px
+    }
+
+    .dest-tags {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap
+    }
+
+    .dtag {
+      font-size: .64rem;
+      font-weight: 600;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 4px;
+      background: #EAF4F0;
+      color: var(--teal)
+    }
+
+    /* ===== EXPERIENCES ===== */
+    .experiences {
+      background: var(--white)
+    }
+
+    .exp-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 48px
+    }
+
+    .exp-card {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--white);
+      transition: .3s;
+      box-shadow: 0 2px 10px rgba(11, 31, 58, .04)
+    }
+
+    .exp-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 40px rgba(11, 31, 58, .1);
+      border-color: var(--gold)
+    }
+
+    .exp-img {
+      height: 160px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .exp-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease
+    }
+
+    .exp-card:hover .exp-img img {
+      transform: scale(1.08)
+    }
+
+    .exp-body {
+      padding: 16px 18px 18px
+    }
+
+    .exp-title {
+      font-weight: 600;
+      color: var(--navy);
+      font-size: .9rem;
+      margin-bottom: 5px
+    }
+
+    .exp-desc {
+      font-size: .74rem;
+      color: var(--muted);
+      line-height: 1.65
+    }
+
+    /* ===== GALLERY STRIP ===== */
+    .gallery-strip {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 6px;
+      height: 220px;
+      overflow: hidden
+    }
+
+    .gallery-strip-item {
+      overflow: hidden;
+      cursor: pointer;
+      position: relative
+    }
+
+    .gallery-strip-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease
+    }
+
+    .gallery-strip-item:hover img {
+      transform: scale(1.1)
+    }
+
+    .gallery-strip-item::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(11, 31, 58, 0);
+      transition: .3s
+    }
+
+    .gallery-strip-item:hover::after {
+      background: rgba(11, 31, 58, .2)
+    }
+
+    /* ===== BEST TIME ===== */
+    .best-time {
+      background: var(--navy);
+      color: #fff
+    }
+
+    .best-time .section-title {
+      color: #fff
+    }
+
+    .best-time .section-sub {
+      color: rgba(255, 255, 255, .5);
+      max-width: 100%
+    }
+
+    .bt-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 6px;
+      margin-top: 40px
+    }
+
+    .month-col {
+      text-align: center
+    }
+
+    .month-name {
+      font-size: .62rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .4);
+      margin-bottom: 8px
+    }
+
+    .month-bar-wrap {
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-bottom: 6px
+    }
+
+    .month-bar {
+      border-radius: 4px 4px 0 0;
+      width: 100%;
+      transition: .3s
+    }
+
+    .month-col.best .month-bar {
+      background: #1A8A4A
+    }
+
+    .month-col.ok .month-bar {
+      background: #C9891A
+    }
+
+    .month-col.low .month-bar {
+      background: rgba(255, 255, 255, .1)
+    }
+
+    .month-col:hover .month-bar {
+      opacity: .75;
+      transform: scaleX(1.06)
+    }
+
+    .month-label {
+      font-size: .63rem;
+      color: rgba(255, 255, 255, .35)
+    }
+
+    .month-col.best .month-label {
+      color: #4ABA7A
+    }
+
+    .month-col.ok .month-label {
+      color: #E8A835
+    }
+
+    .bt-legend {
+      display: flex;
+      gap: 24px;
+      margin-top: 28px;
+      flex-wrap: wrap
+    }
+
+    .bt-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: .75rem;
+      color: rgba(255, 255, 255, .45)
+    }
+
+    .bt-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 2px
+    }
+
+    /* ===== PACKAGES ===== */
+    .packages {
+      background: var(--cream)
+    }
+
+    .filter-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 20px
+    }
+
+    .ftab {
+      padding: 8px 20px;
+      border-radius: 20px;
+      border: 1.5px solid var(--border2);
+      background: var(--white);
+      font-size: .8rem;
+      font-weight: 500;
+      color: var(--muted);
+      cursor: pointer;
+      transition: .22s;
+      font-family: 'DM Sans', sans-serif
+    }
+
+    .ftab:hover,
+    .ftab.active {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy)
+    }
+
+    .pkg-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 36px
+    }
+
+    .pkg-card {
+      background: var(--white);
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: .4s;
+      opacity: 0;
+      transform: translateY(24px);
+      box-shadow: 0 2px 12px rgba(11, 31, 58, .05)
+    }
+
+    .pkg-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity .6s ease, transform .6s ease, box-shadow .3s, border-color .3s
+    }
+
+    .pkg-card:hover {
+      transform: translateY(-7px) !important;
+      box-shadow: 0 28px 70px rgba(11, 31, 58, .13);
+      border-color: var(--gold)
+    }
+
+    .pkg-img {
+      height: 210px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .pkg-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease
+    }
+
+    .pkg-card:hover .pkg-img img {
+      transform: scale(1.07)
+    }
+
+    .pkg-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      z-index: 2;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: .67rem;
+      font-weight: 600;
+      letter-spacing: .6px;
+      text-transform: uppercase
+    }
+
+    .b-adventure {
+      background: rgba(26, 107, 60, .92);
+      color: #fff
+    }
+
+    .b-luxury {
+      background: rgba(11, 31, 58, .9);
+      color: #F0C84A
+    }
+
+    .b-honeymoon {
+      background: rgba(192, 57, 43, .9);
+      color: #fff
+    }
+
+    .b-family {
+      background: rgba(13, 110, 110, .9);
+      color: #fff
+    }
+
+    .b-cultural {
+      background: rgba(100, 40, 120, .9);
+      color: #fff
+    }
+
+    .pkg-saving {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      z-index: 2;
+      background: var(--red);
+      color: #fff;
+      font-size: .68rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px
+    }
+
+    .pkg-body {
+      padding: 20px 22px 22px
+    }
+
+    .pkg-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.22rem;
+      color: var(--navy);
+      font-weight: 600;
+      margin-bottom: 6px;
+      line-height: 1.25
+    }
+
+    .pkg-rating {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 10px
+    }
+
+    .stars {
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 1px
+    }
+
+    .rating-count {
+      font-size: .72rem;
+      color: var(--muted)
+    }
+
+    .pkg-meta {
+      display: flex;
+      gap: 12px;
+      font-size: .73rem;
+      color: var(--muted);
+      margin-bottom: 12px;
+      flex-wrap: wrap
+    }
+
+    .pkg-meta span {
+      display: flex;
+      align-items: center;
+      gap: 4px
+    }
+
+    .pkg-includes {
+      margin-bottom: 14px;
+      padding: 10px 13px;
+      background: var(--cream);
+      border-radius: 8px;
+      border-left: 3px solid var(--gold)
+    }
+
+    .pkg-includes ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px
+    }
+
+    .pkg-includes li {
+      font-size: .74rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 6px
+    }
+
+    .pkg-includes li::before {
+      content: '✓';
+      color: var(--green);
+      font-weight: 700;
+      font-size: .8rem
+    }
+
+    .pkg-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid var(--border)
+    }
+
+    .price-label {
+      font-size: .65rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin-bottom: 2px
+    }
+
+    .price-old {
+      font-size: .78rem;
+      color: #aaa;
+      text-decoration: line-through;
+      margin-bottom: 1px
+    }
+
+    .price-val {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.65rem;
+      color: var(--navy);
+      font-weight: 700;
+      line-height: 1
+    }
+
+    .price-per {
+      font-size: .7rem;
+      font-weight: 400;
+      color: var(--muted);
+      font-family: 'DM Sans', sans-serif
+    }
+
+    .pkg-btn {
+      background: var(--navy);
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: .78rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: .22s;
+      font-family: 'DM Sans', sans-serif;
+      text-decoration: none;
+      display: inline-block
+    }
+
+    .pkg-btn:hover {
+      background: var(--red)
+    }
+
+    .pkg-wa {
+      background: transparent;
+      border: 1.5px solid var(--border2);
+      color: var(--muted);
+      padding: 9px 12px;
+      border-radius: 8px;
+      font-size: .78rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: .22s;
+      font-family: 'DM Sans', sans-serif;
+      margin-right: 7px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px
+    }
+
+    .pkg-wa:hover {
+      border-color: #25D366;
+      color: #25D366
+    }
+
+    /* ===== FOOD SECTION ===== */
+    .food-section {
+      background: var(--white);
+      padding: 90px 48px
+    }
+
+    .food-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 48px
+    }
+
+    .food-card {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: .3s;
+      box-shadow: 0 2px 10px rgba(11, 31, 58, .05)
+    }
+
+    .food-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 40px rgba(11, 31, 58, .1);
+      border-color: var(--gold)
+    }
+
+    .food-img {
+      height: 170px;
+      overflow: hidden;
+      position: relative
+    }
+
+    .food-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease
+    }
+
+    .food-card:hover .food-img img {
+      transform: scale(1.08)
+    }
+
+    .food-body {
+      padding: 14px 16px 16px
+    }
+
+    .food-name {
+      font-weight: 600;
+      color: var(--navy);
+      font-size: .88rem;
+      margin-bottom: 4px
+    }
+
+    .food-desc {
+      font-size: .73rem;
+      color: var(--muted);
+      line-height: 1.55
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials {
+      background: var(--cream)
+    }
+
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 48px
+    }
+
+    .testi-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 26px;
+      transition: .25s;
+      box-shadow: 0 2px 10px rgba(11, 31, 58, .04)
+    }
+
+    .testi-card:hover {
+      box-shadow: 0 10px 32px rgba(11, 31, 58, .09);
+      border-color: var(--gold);
+      transform: translateY(-3px)
+    }
+
+    .testi-stars {
+      color: var(--gold);
+      font-size: 13px;
+      margin-bottom: 12px;
+      letter-spacing: 2px
+    }
+
+    .testi-text {
+      font-size: .84rem;
+      color: var(--text);
+      line-height: 1.78;
+      margin-bottom: 18px;
+      font-style: italic
+    }
+
+    .testi-person {
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .testi-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 2px solid var(--sand)
+    }
+
+    .testi-name {
+      font-size: .83rem;
+      font-weight: 600;
+      color: var(--navy)
+    }
+
+    .testi-loc {
+      font-size: .7rem;
+      color: var(--muted)
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      background: var(--navy);
+      text-align: center;
+      padding: 96px 48px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .cta::before,
+    .cta::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      opacity: .07
+    }
+
+    .cta::before {
+      width: 420px;
+      height: 420px;
+      top: -130px;
+      right: -90px;
+      background: var(--gold-light)
+    }
+
+    .cta::after {
+      width: 320px;
+      height: 320px;
+      bottom: -110px;
+      left: -70px;
+      background: var(--red)
+    }
+
+    .cta-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 0 auto
+    }
+
+    .cta .eyebrow {
+      color: var(--gold-light)
+    }
+
+    .cta .section-title {
+      color: #fff;
+      max-width: 640px;
+      margin: 0 auto 14px
+    }
+
+    .cta .section-sub {
+      color: rgba(255, 255, 255, .55);
+      margin: 0 auto 40px;
+      text-align: center
+    }
+
+    .cta-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap
+    }
+
+    .btn-wa {
+      background: #25D366;
+      color: #fff;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: .25s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none
+    }
+
+    .btn-wa:hover {
+      background: #1fba57;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(37, 211, 102, .3)
+    }
+
+    .btn-call {
+      background: transparent;
+      color: #fff;
+      border: 1.5px solid rgba(255, 255, 255, .4);
+      padding: 13px 28px;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: .25s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none
+    }
+
+    .btn-call:hover {
+      background: rgba(255, 255, 255, .08);
+      border-color: #fff
+    }
+
+    .cta-trust {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      margin-top: 40px;
+      flex-wrap: wrap
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: .75rem;
+      color: rgba(255, 255, 255, .45)
+    }
+
+    .trust-check {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: rgba(37, 211, 102, .2);
+      border: 1px solid rgba(37, 211, 102, .35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .6rem;
+      color: #4ADA80;
+      flex-shrink: 0
+    }
+
+    /* ===== WA FLOAT ===== */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 26px;
+      box-shadow: 0 6px 25px rgba(37, 211, 102, .5);
+      z-index: 9999;
+      text-decoration: none;
+      transition: .3s
+    }
+
+    .wa-float:hover {
+      transform: scale(1.12);
+      box-shadow: 0 10px 35px rgba(37, 211, 102, .6)
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: #060F1A;
+      padding: 40px 48px 24px
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto 36px
+    }
+
+    .footer-col-title {
+      font-size: .68rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .32);
+      margin-bottom: 14px;
+      font-weight: 500
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 9px
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, .48);
+      text-decoration: none;
+      font-size: .8rem;
+      transition: .2s
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light)
+    }
+
+    .footer-about {
+      font-size: .78rem;
+      color: rgba(255, 255, 255, .35);
+      line-height: 1.75;
+      margin-top: 12px;
+      max-width: 270px
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      border-top: 1px solid rgba(255, 255, 255, .07);
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px
+    }
+
+    .footer-copy {
+      font-size: .73rem;
+      color: rgba(255, 255, 255, .28)
+    }
+
+    .footer-copy a {
+      color: var(--gold-light);
+      text-decoration: none
+    }
+
+    /* ===== ANIMATIONS ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity .75s ease, transform .75s ease
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-32px);
+      transition: opacity .75s ease, transform .75s ease
+    }
+
+    .reveal-left.visible {
+      opacity: 1;
+      transform: translateX(0)
+    }
+
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(32px);
+      transition: opacity .75s ease, transform .75s ease
+    }
+
+    .reveal-right.visible {
+      opacity: 1;
+      transform: translateX(0)
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width:1024px) {
+
+      .pkg-grid,
+      .dest-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .exp-grid,
+      .food-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 44px
+      }
+
+      .about-images {
+        grid-template-rows: 200px 200px
+      }
+
+      .hero-stats {
+        display: none
+      }
+
+      .gallery-strip {
+        grid-template-columns: repeat(3, 1fr);
+        height: 160px
+      }
+    }
+
+    @media(max-width:768px) {
+      .header {
+        padding: 0 20px
+      }
+
+      nav {
+        display: none
+      }
+
+      .hero-content {
+        padding: 0 24px 64px
+      }
+
+      .section {
+        padding: 60px 20px
+      }
+
+      .strip {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .strip-item:nth-child(2) {
+        border-right: none
+      }
+
+      .strip-item:nth-child(3) {
+        border-top: 1px solid rgba(255, 255, 255, .07)
+      }
+
+      .strip-item:nth-child(4) {
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, .07)
+      }
+
+      .pkg-grid,
+      .dest-grid,
+      .testi-grid,
+      .footer-grid {
+        grid-template-columns: 1fr
+      }
+
+      .exp-grid,
+      .food-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .bt-grid {
+        grid-template-columns: repeat(6, 1fr)
+      }
+
+      .cta {
+        padding: 60px 20px
+      }
+
+      .footer {
+        padding: 40px 20px 20px
+      }
+
+      .about-images {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto
+      }
+
+      .about-img.tall {
+        grid-row: span 1
+      }
+
+      .hero h1 {
+        font-size: 2.8rem
+      }
+
+      .gallery-strip {
+        grid-template-columns: repeat(3, 1fr);
+        height: 130px
+      }
+
+      .food-section {
+        padding: 60px 20px
+      }
+    }
+
+    @media(max-width:480px) {
+
+      .exp-grid,
+      .food-grid {
+        grid-template-columns: 1fr
+      }
+
+      .gallery-strip {
+        grid-template-columns: repeat(2, 1fr);
+        height: 120px
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="mainHeader">
+    <a href="/" class="logo">
+      <div class="logo-mark">C</div>
+      <div class="logo-text">CityOne <span>Tours</span></div>
+    </a>
+    <nav>
+      <a href="destination.html">Destinations</a>
+      <a href="hotdeal.html">Hot Deals</a>
+      <a href="themes.html">Themes</a>
+      <a href="visa.html">Visa</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="about.html">About</a>
+      <a href="https://wa.me/97143922959" class="nav-cta" target="_blank">Enquire Now</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO — YouTube Video ===== -->
+  <section class="hero">
+    <!-- Video background -->
+    <div class="hero-video-wrap">
+      <!-- Fallback image shown until video loads -->
+      <div class="hero-video-fallback" id="heroFallback"></div>
+      <iframe id="heroVideo"
+        src="https://www.youtube.com/embed/hvbplGO3Njc?autoplay=1&mute=1&loop=1&playlist=hvbplGO3Njc&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=1"
+        allow="autoplay; encrypted-media" allowfullscreen title="Vietnam landscape video"></iframe>
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <!-- Mute toggle -->
+    <button class="hero-mute" id="muteBtn" title="Toggle sound" onclick="toggleMute()">
+      <i class="fas fa-volume-mute" id="muteIcon"></i>
+    </button>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow"><span class="blink"></span> City One Tours — Vietnam Collection</div>
+      <h1>Discover the<br><em>Soul of Vietnam</em></h1>
+      <p class="hero-desc">From Ha Long Bay's emerald karsts to Hội An's golden lanterns — a land of breathtaking
+        landscapes, ancient heritage, and flavours that will change your life forever.</p>
+      <div class="hero-btns">
+        <a href="#packages" class="btn-red">Explore Packages</a>
+        <a href="https://wa.me/97143922959" class="btn-ghost" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <div class="h-stat-num">12+</div>
+        <div class="h-stat-label">Packages</div>
+      </div>
+      <div>
+        <div class="h-stat-num">500+</div>
+        <div class="h-stat-label">Travellers Sent</div>
+      </div>
+      <div>
+        <div class="h-stat-num">4.9★</div>
+        <div class="h-stat-label">Avg Rating</div>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== QUICK INFO STRIP ===== -->
+  <div class="strip">
+    <div class="strip-item">
+      <div class="strip-icon">🌡️</div>
+      <div>
+        <div class="strip-label">Climate</div>
+        <div class="strip-val">Tropical — 24°C to 35°C</div>
+      </div>
+    </div>
+    <div class="strip-item">
+      <div class="strip-icon">💰</div>
+      <div>
+        <div class="strip-label">Currency</div>
+        <div class="strip-val">Vietnamese Dong (VND)</div>
+      </div>
+    </div>
+    <div class="strip-item">
+      <div class="strip-icon">✈️</div>
+      <div>
+        <div class="strip-label">Flight from Dubai</div>
+        <div class="strip-val">~7 hours direct</div>
+      </div>
+    </div>
+    <div class="strip-item">
+      <div class="strip-icon">🗺️</div>
+      <div>
+        <div class="strip-label">Best Duration</div>
+        <div class="strip-val">8 – 14 days recommended</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT VIETNAM ===== -->
+  <section class="section about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="reveal-left">
+          <div class="eyebrow">About Vietnam</div>
+          <h2 class="section-title">Where Ancient Culture<br>Meets Adventure</h2>
+          <p class="section-sub">Vietnam stretches 1,650 km along the eastern edge of mainland Southeast Asia — a land
+            of contrasts. Misty mountains in the north, lantern-lit ancient towns in the centre, and bustling cities in
+            the south, all woven together by a cuisine that will change your life.</p>
+          <div class="about-highlights">
+            <div class="hl-card">
+              <div class="hl-icon">🏯</div>
+              <div class="hl-title">UNESCO Heritage</div>
+              <div class="hl-desc">8 UNESCO World Heritage Sites including Ha Long Bay and Hội An Ancient Town</div>
+            </div>
+            <div class="hl-card">
+              <div class="hl-icon">🍜</div>
+              <div class="hl-title">World-Class Cuisine</div>
+              <div class="hl-desc">Phở, Bánh Mì, Cao Lầu — Vietnam's food is legendary worldwide</div>
+            </div>
+            <div class="hl-card">
+              <div class="hl-icon">🛵</div>
+              <div class="hl-title">Vibrant Culture</div>
+              <div class="hl-desc">54 ethnic groups, colourful festivals, silk villages, and ancient temples</div>
+            </div>
+            <div class="hl-card">
+              <div class="hl-icon">🏖️</div>
+              <div class="hl-title">Stunning Beaches</div>
+              <div class="hl-desc">Over 3,200 km of coastline from Đà Nẵng to Phú Quốc island paradise</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <div class="about-images">
+            <!-- Main tall image -->
+            <div class="about-img tall">
+              <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=700&q=85"
+                alt="Ha Long Bay Vietnam" loading="lazy">
+              <div class="img-caption">Ha Long Bay — UNESCO World Heritage</div>
+            </div>
+            <!-- Two smaller images -->
+            <div class="about-img">
+              <img src="https://images.unsplash.com/photo-1557750255-c76072a7aad1?w=500&q=80" alt="Hoi An Lanterns"
+                loading="lazy">
+              <div class="img-caption">Hội An — Ancient Town</div>
+            </div>
+            <div class="about-img">
+              <img src="https://images.unsplash.com/photo-1605096066386-e2f8c1a1b7a3?w=500&q=80"
+                alt="Vietnam Rice Terraces Sapa" loading="lazy"
+                onerror="this.src='https://images.unsplash.com/photo-1540611025311-01df3cef54b5?w=500&q=80'">
+              <div class="img-caption">Sapa — Rice Terraces</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY STRIP ===== -->
+  <div class="gallery-strip">
+    <div class="gallery-strip-item"><img src="https://images.unsplash.com/photo-1570366583862-f91883984fde?w=400&q=75"
+        alt="Ho Chi Minh City" loading="lazy"></div>
+    <div class="gallery-strip-item"><img src="https://images.unsplash.com/photo-1553532434-5ab5b6b84993?w=400&q=75"
+        alt="Vietnam Street" loading="lazy"></div>
+    <div class="gallery-strip-item"><img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=400&q=75"
+        alt="Vietnamese Pho" loading="lazy"
+        onerror="this.src='https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=75'"></div>
+    <div class="gallery-strip-item"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=75"
+        alt="Da Nang Vietnam" loading="lazy"></div>
+    <div class="gallery-strip-item"><img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&q=75"
+        alt="Banh Mi Vietnam" loading="lazy"
+        onerror="this.src='https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=75'"></div>
+    <div class="gallery-strip-item"><img src="https://images.unsplash.com/photo-1540611025311-01df3cef54b5?w=400&q=75"
+        alt="Hanoi Vietnam" loading="lazy"></div>
+  </div>
+
+  <!-- ===== TOP DESTINATIONS ===== -->
+  <section class="section destinations">
+    <div class="section-inner">
+      <div class="dest-header">
+        <div>
+          <div class="eyebrow">Explore</div>
+          <h2 class="section-title">Top Destinations</h2>
+          <p class="section-sub" style="margin-top:0">Six unmissable places that define Vietnam's magic</p>
+        </div>
+        <a href="#packages" class="btn-red" style="align-self:flex-end">View All Packages →</a>
+      </div>
+      <div class="dest-grid">
+        <div class="dest-card reveal" style="transition-delay:.0s">
+          <div class="dest-img">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80" alt="Ha Long Bay"
+              loading="lazy">
+            <div class="img-caption">Quảng Ninh Province</div>
+          </div>
+          <div class="dest-body">
+            <div class="dest-name">Ha Long Bay</div>
+            <div class="dest-desc">Over 1,600 limestone islands rising from emerald waters. Cruise through caves, kayak
+              past karsts, and watch sunsets paint the sky gold.</div>
+            <div class="dest-tags"><span class="dtag">UNESCO</span><span class="dtag">Cruise</span><span
+                class="dtag">Scenic</span></div>
+          </div>
+        </div>
+
+        <div class="dest-card reveal" style="transition-delay:.08s">
+          <div class="dest-img">
+            <img src="https://images.unsplash.com/photo-1557750255-c76072a7aad1?w=600&q=80" alt="Hoi An" loading="lazy">
+            <div class="img-caption">Quảng Nam Province</div>
+          </div>
+          <div class="dest-body">
+            <div class="dest-name">Hội An</div>
+            <div class="dest-desc">A perfectly preserved trading port lit by thousands of colourful lanterns. Tailor
+              shops, ancient temples, and the finest Cao Lầu you'll ever taste.</div>
+            <div class="dest-tags"><span class="dtag">UNESCO</span><span class="dtag">Culture</span><span
+                class="dtag">Lanterns</span></div>
+          </div>
+        </div>
+
+        <div class="dest-card reveal" style="transition-delay:.16s">
+          <div class="dest-img">
+            <img src="https://images.unsplash.com/photo-1540611025311-01df3cef54b5?w=600&q=80" alt="Hanoi"
+              loading="lazy">
+            <div class="img-caption">Capital City</div>
+          </div>
+          <div class="dest-body">
+            <div class="dest-name">Hanoi</div>
+            <div class="dest-desc">Vietnam's 1,000-year-old capital. French colonial architecture, iconic Hoan Kiem
+              Lake, Old Quarter street food, and the Temple of Literature.</div>
+            <div class="dest-tags"><span class="dtag">History</span><span class="dtag">Food</span><span
+                class="dtag">Capital</span></div>
+          </div>
+        </div>
+
+        <div class="dest-card reveal" style="transition-delay:.24s">
+          <div class="dest-img">
+            <img src="https://images.unsplash.com/photo-1570366583862-f91883984fde?w=600&q=80" alt="Ho Chi Minh City"
+              loading="lazy">
+            <div class="img-caption">Southern Vietnam</div>
+          </div>
+          <div class="dest-body">
+            <div class="dest-name">Ho Chi Minh City</div>
+            <div class="dest-desc">Vietnam's dynamic economic heart. War Remnants Museum, Reunification Palace, Ben
+              Thanh Market, and rooftop bars with skyline views.</div>
+            <div class="dest-tags"><span class="dtag">Urban</span><span class="dtag">History</span><span
+                class="dtag">Nightlife</span></div>
+          </div>
+        </div>
+
+        <div class="dest-card reveal" style="transition-delay:.32s">
+          <div class="dest-img">
+            <img src="https://images.unsplash.com/photo-1553532434-5ab5b6b84993?w=600&q=80" alt="Ninh Binh"
+              loading="lazy">
+            <div class="img-caption">Ninh Bình Province</div>
+          </div>
+          <div class="dest-body">
+            <div class="dest-name">Ninh Bình</div>
+            <div class="dest-desc">Called "Ha Long Bay on Land." Boat through flooded rice paddies beneath towering
+              limestone cliffs, past ancient pagodas and hidden temples.</div>
+            <div class="dest-tags"><span class="dtag">Scenic</span><span class="dtag">Temples</span><span
+                class="dtag">Boat Tours</span></div>
+          </div>
+        </div>
+
+        <div class="dest-card reveal" style="transition-delay:.4s">
+          <div class="dest-img">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Phu Quoc"
+              loading="lazy">
+            <div class="img-caption">Gulf of Thailand</div>
+          </div>
+          <div class="dest-body">
+            <div class="dest-name">Phú Quốc Island</div>
+            <div class="dest-desc">Vietnam's largest island. White sand beaches, coral reefs for snorkelling, pepper
+              plantations, and spectacular sunsets over the Gulf.</div>
+            <div class="dest-tags"><span class="dtag">Beach</span><span class="dtag">Island</span><span
+                class="dtag">Resort</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCES ===== -->
+  <section class="section experiences">
+    <div class="section-inner">
+      <div style="text-align:center" class="reveal">
+        <div class="eyebrow">What Awaits You</div>
+        <h2 class="section-title" style="max-width:600px;margin:0 auto 12px">Unforgettable Experiences</h2>
+        <p class="section-sub" style="max-width:500px;margin:0 auto">Every trip to Vietnam leaves a mark on your soul
+        </p>
+      </div>
+      <div class="exp-grid">
+        <div class="exp-card reveal" style="transition-delay:.0s">
+          <div class="exp-img">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=500&q=80" alt="Ha Long Bay Cruise"
+              loading="lazy">
+          </div>
+          <div class="exp-body">
+            <div class="exp-title">Ha Long Bay Cruise</div>
+            <div class="exp-desc">Sail through 1,600 limestone islands, explore glowing caves, and kayak through hidden
+              lagoons on an overnight luxury cruise.</div>
+          </div>
+        </div>
+        <div class="exp-card reveal" style="transition-delay:.08s">
+          <div class="exp-img">
+            <img src="https://images.unsplash.com/photo-1557750255-c76072a7aad1?w=500&q=80" alt="Hoi An Lanterns"
+              loading="lazy">
+          </div>
+          <div class="exp-body">
+            <div class="exp-title">Lantern Festival, Hội An</div>
+            <div class="exp-desc">Release a paper lantern onto the river during the full moon festival — one of the most
+              magical experiences in Southeast Asia.</div>
+          </div>
+        </div>
+        <div class="exp-card reveal" style="transition-delay:.16s">
+          <div class="exp-img">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=500&q=80" alt="Vietnamese Cooking"
+              loading="lazy">
+          </div>
+          <div class="exp-body">
+            <div class="exp-title">Vietnamese Cooking Class</div>
+            <div class="exp-desc">Visit a morning market, pick fresh ingredients, and learn to make Phở, Bánh Mì, and
+              spring rolls from a local chef.</div>
+          </div>
+        </div>
+        <div class="exp-card reveal" style="transition-delay:.24s">
+          <div class="exp-img">
+            <img src="https://images.unsplash.com/photo-1540611025311-01df3cef54b5?w=500&q=80" alt="Sapa Trekking"
+              loading="lazy">
+          </div>
+          <div class="exp-body">
+            <div class="exp-title">Sapa Trekking</div>
+            <div class="exp-desc">Trek through emerald terraced rice fields, visit hill tribe villages, and sleep in a
+              cosy mountain homestay under the stars.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BEST TIME ===== -->
+  <section class="section best-time">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="eyebrow">Planning Your Trip</div>
+        <h2 class="section-title">Best Time to Visit Vietnam</h2>
+        <p class="section-sub">Vietnam has distinct climates in north, centre, and south — here's when to go</p>
+      </div>
+      <div class="bt-grid reveal">
+        <div class="month-col best">
+          <div class="month-name">Jan</div>
+          <div class="month-bar-wrap">
+            <div class="month-bar" style="height:85%"></div>
+          </div>
+          <div class="month-label">Best</div>
+        </div>
+        <div class="month-col best">
+          <div class="month-name">Feb</div>
+          <div class="month-bar-wrap">
+            <div class="month-bar" style="height:92%"></div>
+          </div>
+          <div class="month-label">Best</div>
+        </div>
+        <div class="month-col best">
+          <div class="month-name">Mar</div>
+          <div class="month-bar-wrap">
+            <div class="month-bar" style="height:96%"></div>
+          </div>
+          <div class="month-label">Best</div>
+        </div>
+        <div class="month-col ok">
+          <div class="month-name">Apr</div>
+          <div class="month-bar-wrap">
+            <div class="month-bar" style="height:68%"></div>
+          </div>
+          <div class="month-label">Good</div>
+        </div>
+        <div class="month-col low">
+          <div class="month-name">May</div>
+          <div class="month-bar-wrap">
+            <div class="month-bar" style="height:38%"></div>
+          </div>
+          <div class="month-label">Rainy</div>
+        </div>
+        <div class="month-col low">
+          <div class="month-name">Jun</div>
+          <div class="month-bar-wrap">
+            <div class="month-bar" style="height:32%"></div>
+          </div>
+          <div class="month-label">Rainy</div>
+        </div>
+        <div class="month-col low">
+          <div class="month-name">Jul</div>
+          <div class="month-bar-wrap">
+            <div class="month-bar" style="height:32%"></div>
+          </div>
+          <div class="month-label">Rainy</div>
+        </div>
+        <div class="month-col ok">
+          <div class="month-name">Aug</div>
+          <div class="month-bar-wrap">
+            <div class="month-bar" style="height:52%"></div>
+          </div>
+          <div class="month-label">Ok</div>
+        </div>
+        <div class="month-col ok">
+          <div class="month-name">Sep</div>
+          <div class="month-bar-wrap">
+            <div class="month-bar" style="height:58%"></div>
+          </div>
+          <div class="month-label">Ok</div>
+        </div>
+        <div class="month-col best">
+          <div class="month-name">Oct</div>
+          <div class="month-bar-wrap">
+            <div class="month-bar" style="height:82%"></div>
+          </div>
+          <div class="month-label">Best</div>
+        </div>
+        <div class="month-col best">
+          <div class="month-name">Nov</div>
+          <div class="month-bar-wrap">
+            <div class="month-bar" style="height:93%"></div>
+          </div>
+          <div class="month-label">Best</div>
+        </div>
+        <div class="month-col best">
+          <div class="month-name">Dec</div>
+          <div class="month-bar-wrap">
+            <div class="month-bar" style="height:88%"></div>
+          </div>
+          <div class="month-label">Best</div>
+        </div>
+      </div>
+      <div class="bt-legend reveal">
+        <div class="bt-legend-item">
+          <div class="bt-dot" style="background:#1A8A4A"></div>Best time to visit
+        </div>
+        <div class="bt-legend-item">
+          <div class="bt-dot" style="background:#C9891A"></div>Good — manageable weather
+        </div>
+        <div class="bt-legend-item">
+          <div class="bt-dot" style="background:rgba(255,255,255,.15)"></div>Rainy / monsoon season
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PACKAGES ===== -->
+  <section class="section packages" id="packages">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="eyebrow">Tour Packages</div>
+        <h2 class="section-title">Choose Your Vietnam Journey</h2>
+        <p class="section-sub">All packages include flights, hotels, breakfast, guided tours, and 24/7 support</p>
+        <div class="filter-bar">
+          <button class="ftab active" onclick="filterPkg('all',this)">All Packages</button>
+          <button class="ftab" onclick="filterPkg('adventure',this)">🏕️ Adventure</button>
+          <button class="ftab" onclick="filterPkg('luxury',this)">✨ Luxury</button>
+          <button class="ftab" onclick="filterPkg('honeymoon',this)">💑 Honeymoon</button>
+          <button class="ftab" onclick="filterPkg('family',this)">👨‍👩‍👧 Family</button>
+          <button class="ftab" onclick="filterPkg('cultural',this)">🏛️ Cultural</button>
+        </div>
+      </div>
+      <div class="pkg-grid" id="pkgGrid">
+
+        <div class="pkg-card" data-theme="adventure">
+          <div class="pkg-img">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=700&q=80" alt="Ha Long Bay cruise"
+              loading="lazy">
+            <span class="pkg-badge b-adventure">Adventure</span>
+            <span class="pkg-saving">Save AED 300</span>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-name">Vietnam Discovery — North to South</div>
+            <div class="pkg-rating"><span class="stars">★★★★★</span><span class="rating-count">(148 reviews)</span>
+            </div>
+            <div class="pkg-meta"><span>📅 8D / 7N</span><span>✈️ Flights Incl.</span><span>🏨 4-Star Hotels</span>
+            </div>
+            <div class="pkg-includes">
+              <ul>
+                <li>Hanoi Old Quarter guided walk</li>
+                <li>Ha Long Bay overnight cruise</li>
+                <li>Hội An lantern festival evening</li>
+                <li>Ho Chi Minh City full day</li>
+              </ul>
+            </div>
+            <div class="pkg-footer">
+              <div>
+                <div class="price-label">From</div>
+                <div class="price-old">AED 2,199</div>
+                <div><span class="price-val">AED 1,899</span><span class="price-per"> / person</span></div>
+              </div>
+              <div>
+                <button class="pkg-wa"
+                  onclick="window.open('https://wa.me/97143922959?text=Hi! I am interested in Vietnam Discovery package.','_blank')"><i
+                    class="fab fa-whatsapp"></i></button>
+                <a class="pkg-btn"
+                  href="https://wa.me/97143922959?text=Hi! I want to book the Vietnam Discovery package."
+                  target="_blank">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pkg-card" data-theme="honeymoon">
+          <div class="pkg-img">
+            <img src="https://images.unsplash.com/photo-1557750255-c76072a7aad1?w=700&q=80" alt="Hoi An Honeymoon"
+              loading="lazy">
+            <span class="pkg-badge b-honeymoon">Honeymoon</span>
+            <span class="pkg-saving">Most Popular</span>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-name">Vietnam Romantic Escape</div>
+            <div class="pkg-rating"><span class="stars">★★★★★</span><span class="rating-count">(212 reviews)</span>
+            </div>
+            <div class="pkg-meta"><span>📅 9D / 8N</span><span>✈️ Flights Incl.</span><span>🏨 5-Star Resorts</span>
+            </div>
+            <div class="pkg-includes">
+              <ul>
+                <li>Private Ha Long Bay cruise suite</li>
+                <li>Romantic Hội An lantern dinner</li>
+                <li>Phú Quốc beach resort 3 nights</li>
+                <li>Couples spa treatment</li>
+              </ul>
+            </div>
+            <div class="pkg-footer">
+              <div>
+                <div class="price-label">From</div>
+                <div class="price-old">AED 3,199</div>
+                <div><span class="price-val">AED 2,699</span><span class="price-per"> / person</span></div>
+              </div>
+              <div>
+                <button class="pkg-wa"
+                  onclick="window.open('https://wa.me/97143922959?text=Hi! Interested in Vietnam Romantic Escape.','_blank')"><i
+                    class="fab fa-whatsapp"></i></button>
+                <a class="pkg-btn" href="https://wa.me/97143922959?text=Hi! I want to book Vietnam Romantic Escape."
+                  target="_blank">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pkg-card" data-theme="luxury">
+          <div class="pkg-img">
+            <img src="https://images.unsplash.com/photo-1570366583862-f91883984fde?w=700&q=80" alt="Vietnam Luxury"
+              loading="lazy">
+            <span class="pkg-badge b-luxury">Luxury</span>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-name">Vietnam Luxury Indulgence</div>
+            <div class="pkg-rating"><span class="stars">★★★★★</span><span class="rating-count">(89 reviews)</span></div>
+            <div class="pkg-meta"><span>📅 10D / 9N</span><span>✈️ Business Class</span><span>🏨 5★ Villas</span></div>
+            <div class="pkg-includes">
+              <ul>
+                <li>Private 5-star Ha Long cruise</li>
+                <li>Heritage boutique hotels</li>
+                <li>Private guide & transfers</li>
+                <li>Fine dining experiences</li>
+              </ul>
+            </div>
+            <div class="pkg-footer">
+              <div>
+                <div class="price-label">From</div>
+                <div class="price-old">AED 5,499</div>
+                <div><span class="price-val">AED 4,499</span><span class="price-per"> / person</span></div>
+              </div>
+              <div>
+                <button class="pkg-wa"
+                  onclick="window.open('https://wa.me/97143922959?text=Hi! Interested in Vietnam Luxury package.','_blank')"><i
+                    class="fab fa-whatsapp"></i></button>
+                <a class="pkg-btn" href="https://wa.me/97143922959?text=Hi! Vietnam Luxury Indulgence enquiry."
+                  target="_blank">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pkg-card" data-theme="family">
+          <div class="pkg-img">
+            <img src="https://images.unsplash.com/photo-1553532434-5ab5b6b84993?w=700&q=80" alt="Vietnam Family"
+              loading="lazy">
+            <span class="pkg-badge b-family">Family</span>
+            <span class="pkg-saving">Save AED 450</span>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-name">Vietnam Family Fun Adventure</div>
+            <div class="pkg-rating"><span class="stars">★★★★☆</span><span class="rating-count">(176 reviews)</span>
+            </div>
+            <div class="pkg-meta"><span>📅 10D / 9N</span><span>✈️ Flights Incl.</span><span>🏨 4★ Family Rooms</span>
+            </div>
+            <div class="pkg-includes">
+              <ul>
+                <li>Ha Long Bay family cruise</li>
+                <li>Cooking class for kids</li>
+                <li>Vinpearl Land amusement park</li>
+                <li>Phú Quốc beach resort</li>
+              </ul>
+            </div>
+            <div class="pkg-footer">
+              <div>
+                <div class="price-label">From</div>
+                <div class="price-old">AED 3,549</div>
+                <div><span class="price-val">AED 3,099</span><span class="price-per"> / person</span></div>
+              </div>
+              <div>
+                <button class="pkg-wa"
+                  onclick="window.open('https://wa.me/97143922959?text=Hi! Interested in Vietnam Family package.','_blank')"><i
+                    class="fab fa-whatsapp"></i></button>
+                <a class="pkg-btn" href="https://wa.me/97143922959?text=Hi! Vietnam Family Fun enquiry."
+                  target="_blank">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pkg-card" data-theme="cultural">
+          <div class="pkg-img">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="Vietnam Heritage"
+              loading="lazy">
+            <span class="pkg-badge b-cultural">Cultural</span>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-name">Vietnam Heritage Trail</div>
+            <div class="pkg-rating"><span class="stars">★★★★★</span><span class="rating-count">(93 reviews)</span></div>
+            <div class="pkg-meta"><span>📅 12D / 11N</span><span>✈️ Flights Incl.</span><span>🏨 Boutique Hotels</span>
+            </div>
+            <div class="pkg-includes">
+              <ul>
+                <li>Hanoi & Temple of Literature</li>
+                <li>Ninh Bình boat caves</li>
+                <li>Mỹ Sơn Hindu sanctuary</li>
+                <li>Imperial Huế citadel</li>
+              </ul>
+            </div>
+            <div class="pkg-footer">
+              <div>
+                <div class="price-label">From</div>
+                <div class="price-old">AED 2,799</div>
+                <div><span class="price-val">AED 2,299</span><span class="price-per"> / person</span></div>
+              </div>
+              <div>
+                <button class="pkg-wa"
+                  onclick="window.open('https://wa.me/97143922959?text=Hi! Interested in Vietnam Heritage Trail.','_blank')"><i
+                    class="fab fa-whatsapp"></i></button>
+                <a class="pkg-btn" href="https://wa.me/97143922959?text=Hi! Vietnam Heritage Trail enquiry."
+                  target="_blank">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pkg-card" data-theme="adventure">
+          <div class="pkg-img">
+            <img src="https://images.unsplash.com/photo-1540611025311-01df3cef54b5?w=700&q=80" alt="Sapa Trekking"
+              loading="lazy">
+            <span class="pkg-badge b-adventure">Adventure</span>
+            <span class="pkg-saving">New Package</span>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-name">Sapa Trekking & North Vietnam</div>
+            <div class="pkg-rating"><span class="stars">★★★★★</span><span class="rating-count">(67 reviews)</span></div>
+            <div class="pkg-meta"><span>📅 7D / 6N</span><span>✈️ Flights Incl.</span><span>🏨 Eco Lodges</span></div>
+            <div class="pkg-includes">
+              <ul>
+                <li>2-day Sapa rice terrace trek</li>
+                <li>H'mong village homestay</li>
+                <li>Ha Long Bay day cruise</li>
+                <li>Hanoi street food night tour</li>
+              </ul>
+            </div>
+            <div class="pkg-footer">
+              <div>
+                <div class="price-label">From</div>
+                <div class="price-old">AED 1,999</div>
+                <div><span class="price-val">AED 1,699</span><span class="price-per"> / person</span></div>
+              </div>
+              <div>
+                <button class="pkg-wa"
+                  onclick="window.open('https://wa.me/97143922959?text=Hi! Interested in Sapa Trekking package.','_blank')"><i
+                    class="fab fa-whatsapp"></i></button>
+                <a class="pkg-btn" href="https://wa.me/97143922959?text=Hi! Sapa Trekking enquiry." target="_blank">Book
+                  Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOD SECTION ===== -->
+  <section class="food-section">
+    <div class="section-inner">
+      <div style="text-align:center" class="reveal">
+        <div class="eyebrow">Vietnamese Cuisine</div>
+        <h2 class="section-title" style="max-width:600px;margin:0 auto 12px">A Food Lover's Paradise</h2>
+        <p class="section-sub" style="max-width:500px;margin:0 auto">Vietnam's street food scene is legendary worldwide
+          — here are the iconic dishes you must try</p>
+      </div>
+      <div class="food-grid">
+        <div class="food-card reveal" style="transition-delay:0s">
+          <div class="food-img"><img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=500&q=80"
+              alt="Pho Vietnam" loading="lazy"
+              onerror="this.src='https://images.unsplash.com/photo-1547592180-85f173990554?w=500&q=80'"></div>
+          <div class="food-body">
+            <div class="food-name">Phở</div>
+            <div class="food-desc">Vietnam's iconic rice noodle soup with fragrant broth, fresh herbs, and your choice
+              of beef or chicken</div>
+          </div>
+        </div>
+        <div class="food-card reveal" style="transition-delay:.1s">
+          <div class="food-img"><img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=500&q=80"
+              alt="Banh Mi" loading="lazy"
+              onerror="this.src='https://images.unsplash.com/photo-1547592180-85f173990554?w=500&q=80'"></div>
+          <div class="food-body">
+            <div class="food-name">Bánh Mì</div>
+            <div class="food-desc">The legendary Vietnamese baguette sandwich — crispy bread stuffed with pâté, pickled
+              vegetables, and fresh herbs</div>
+          </div>
+        </div>
+        <div class="food-card reveal" style="transition-delay:.2s">
+          <div class="food-img"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=500&q=80"
+              alt="Vietnamese Coffee" loading="lazy"></div>
+          <div class="food-body">
+            <div class="food-name">Cà Phê Trứng</div>
+            <div class="food-desc">Hanoi's famous egg coffee — a rich, creamy blend of egg yolks and condensed milk over
+              strong Vietnamese drip coffee</div>
+          </div>
+        </div>
+        <div class="food-card reveal" style="transition-delay:.3s">
+          <div class="food-img"><img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=500&q=80"
+              alt="Spring Rolls" loading="lazy"
+              onerror="this.src='https://images.unsplash.com/photo-1547592180-85f173990554?w=500&q=80'"></div>
+          <div class="food-body">
+            <div class="food-name">Gỏi Cuốn</div>
+            <div class="food-desc">Fresh Vietnamese spring rolls wrapped in delicate rice paper with shrimp, herbs, rice
+              noodles, and hoisin sauce</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials">
+    <div class="section-inner">
+      <div style="text-align:center" class="reveal">
+        <div class="eyebrow">Guest Reviews</div>
+        <h2 class="section-title">What Our Travellers Say</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal" style="transition-delay:.0s">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text">"Ha Long Bay was absolutely breathtaking. City One Tours arranged everything perfectly
+            — the cruise, guides, and transfers. We had zero stress the entire trip. Highly recommended!"</div>
+          <div class="testi-person">
+            <img class="testi-avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah" loading="lazy">
+            <div>
+              <div class="testi-name">Sarah Ahmed</div>
+              <div class="testi-loc">Dubai, UAE</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal" style="transition-delay:.1s">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text">"Our honeymoon to Vietnam was magical. The romantic Hội An evening, the Phú Quốc
+            resort, the private cruise — every detail was perfect. City One Tours understood exactly what we wanted."
+          </div>
+          <div class="testi-person">
+            <img class="testi-avatar" src="https://randomuser.me/api/portraits/women/65.jpg" alt="Priya" loading="lazy">
+            <div>
+              <div class="testi-name">Priya & Karan</div>
+              <div class="testi-loc">Mumbai, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal" style="transition-delay:.2s">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text">"Took the family package and the kids are still talking about it! The cooking class,
+            Ha Long Bay cruise, and Vinpearl were unforgettable. Worth every penny — truly world-class service."</div>
+          <div class="testi-person">
+            <img class="testi-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mohammed"
+              loading="lazy">
+            <div>
+              <div class="testi-name">Mohammed Al-Rashid</div>
+              <div class="testi-loc">Abu Dhabi, UAE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta">
+    <div class="cta-inner reveal">
+      <div class="eyebrow">Start Your Journey</div>
+      <h2 class="section-title">Ready to Explore Vietnam?</h2>
+      <p class="section-sub">Talk to our Vietnam specialists. Get a custom itinerary built around your dates, budget,
+        and dream experiences — no obligation, no pressure.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/97143922959?text=Hi! I would like to enquire about Vietnam tour packages." class="btn-wa"
+          target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          WhatsApp Us Now
+        </a>
+        <a href="tel:+97143922959" class="btn-call">📞 +971 4 392 2959</a>
+      </div>
+      <div class="cta-trust">
+        <div class="trust-item">
+          <div class="trust-check">✓</div>Free itinerary planning
+        </div>
+        <div class="trust-item">
+          <div class="trust-check">✓</div>No hidden charges
+        </div>
+        <div class="trust-item">
+          <div class="trust-check">✓</div>24/7 on-trip support
+        </div>
+        <div class="trust-item">
+          <div class="trust-check">✓</div>TripAdvisor certified
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <div
+            style="width:32px;height:32px;background:var(--gold);border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:14px">
+            C</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:#fff">CityOne <span
+              style="color:var(--gold-light)">Tours</span></div>
+        </div>
+        <div class="footer-about">Award-winning travel agency based in Dubai. Crafting unforgettable journeys to 40+
+          countries for over 12,000 happy travellers.</div>
+      </div>
+      <div>
+        <div class="footer-col-title">Useful Links</div>
+        <ul class="footer-links">
+          <li><a href="destination.html">All Destinations</a></li>
+          <li><a href="hotdeal.html">Hot Deals</a></li>
+          <li><a href="themes.html">Themes</a></li>
+          <li><a href="visa.html">Visa Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="privacy-terms.html">Privacy & Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Vietnam Packages</div>
+        <ul class="footer-links">
+          <li><a href="#packages">Discovery Tour</a></li>
+          <li><a href="#packages">Honeymoon Escape</a></li>
+          <li><a href="#packages">Luxury Indulgence</a></li>
+          <li><a href="#packages">Family Adventure</a></li>
+          <li><a href="#packages">Heritage Trail</a></li>
+          <li><a href="#packages">Sapa Trekking</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <ul class="footer-links" style="list-style:none">
+          <li
+            style="color:rgba(255,255,255,.45);font-size:.78rem;margin-bottom:7px;display:flex;align-items:flex-start;gap:6px;line-height:1.5">
+            <span style="color:var(--gold-light)">📍</span>Shop S-006, Saeed Mohammed Saeed Bldg, Oud Metha, Dubai</li>
+          <li style="margin-bottom:7px"><a href="tel:+97143922959" style="color:var(--gold-light);font-size:.78rem">📞
+              +971 4 392 2959</a></li>
+          <li style="margin-bottom:7px"><a href="mailto:info@cityonetours.com"
+              style="color:var(--gold-light);font-size:.78rem">✉️ info@cityonetours.com</a></li>
+          <li><a href="https://wa.me/97143922959" style="color:#4ADA80;font-size:.78rem">💬 WhatsApp Chat</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 <a href="https://cityonetours.com">cityonetours.com</a> — All rights reserved
+      </div>
+      <div class="footer-copy">Designed with ❤️ for travellers</div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/97143922959" target="_blank" class="wa-float" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    // ── MUTE TOGGLE ─────────────────────────────────
+    let muted = true;
+    function toggleMute() {
+      const iframe = document.getElementById('heroVideo');
+      const icon = document.getElementById('muteIcon');
+      muted = !muted;
+      const src = iframe.src;
+      if (muted) {
+        iframe.src = src.replace('mute=0', 'mute=1');
+        icon.className = 'fas fa-volume-mute';
+      } else {
+        iframe.src = src.replace('mute=1', 'mute=0');
+        icon.className = 'fas fa-volume-up';
+      }
+    }
+
+    // ── SCROLL REVEAL ───────────────────────────────
+    const revealEls = document.querySelectorAll('.reveal,.reveal-left,.reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const delay = parseFloat(entry.target.style.transitionDelay || 0) * 1000;
+          setTimeout(() => entry.target.classList.add('visible'), delay);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => observer.observe(el));
+
+    // ── PACKAGE CARDS ANIMATE ON LOAD ──────────────
+    const pkgCards = document.querySelectorAll('.pkg-card');
+    pkgCards.forEach((card, i) => {
+      card.style.transitionDelay = (i * 0.1) + 's';
+      setTimeout(() => card.classList.add('visible'), 300 + i * 100);
+    });
+
+    // ── PACKAGE FILTER ──────────────────────────────
+    function filterPkg(theme, btn) {
+      document.querySelectorAll('.ftab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      const cards = document.querySelectorAll('.pkg-card');
+      cards.forEach((card, i) => {
+        if (theme === 'all' || card.dataset.theme === theme) {
+          card.style.display = '';
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 50 + i * 60);
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // ── HEADER SHADOW ───────────────────────────────
+    window.addEventListener('scroll', () => {
+      document.getElementById('mainHeader').style.boxShadow =
+        window.scrollY > 50 ? '0 2px 24px rgba(11,31,58,.1)' : 'none';
+    });
+  </script>
+</body>
+
+</html>

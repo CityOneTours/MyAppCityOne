@@ -10,22 +10,8 @@ let hasCounted = false;
 
 const packages = [
 
-
-
-
-  // { title: 'Dubai', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 140, duration: 5, country: 'Dubai', img: 'https://4.bp.blogspot.com/-XAAQT_6hDbQ/WYwHsXaYj_I/AAAAAAAAAY8/BPvO6ppggr8sLtyzUtx2Gz8mTy4dRT0nACLcBGAs/s1600/Atlantis-the-palm-best-5-places-to-visit-in-Dubai-ammartours.jpg' },
-  // { title: 'Bali', themes: ['Adventure', 'Nature', 'Safari'], price: 140, duration: 7, country: 'Vietnam', img: 'http://makesmarttrips.com/wp-content/uploads/2023/03/Vietnam-Is-Becoming-More-Popular-Among-American-Tourists-Heres-Why.jpg', },
-  // { title: 'Switzerland', themes: ['Honey Moon', 'Luxury'], price: 160, country: 'Bali', duration: 6, country: 'Bali', img: 'http://dalinfotour.ru/uploads/26-Pura-Besakih.jpg', link: 'dubai-packages/dubai-4-days-itinerary.html' },
-  // { title: 'Greece', themes: ['Honey Moon', 'Luxury'], price: 160, country: 'Bali', duration: 6, country: 'Bali', img: 'http://dalinfotour.ru/uploads/26-Pura-Besakih.jpg' },
-  // { title: 'Thailand', themes: ['Honey Moon', 'Luxury'], price: 160, country: 'Bali', duration: 6, country: 'Bali', img: 'http://dalinfotour.ru/uploads/26-Pura-Besakih.jpg' },
-  // { title: 'Maldives', themes: ['Adventure', 'Nature', 'Safari'], price: 140, duration: 7, country: 'Vietnam', img: 'http://makesmarttrips.com/wp-content/uploads/2023/03/Vietnam-Is-Becoming-More-Popular-Among-American-Tourists-Heres-Why.jpg' },
-  // { title: 'Japan', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 140, duration: 5, country: 'Dubai', img: 'https://4.bp.blogspot.com/-XAAQT_6hDbQ/WYwHsXaYj_I/AAAAAAAAAY8/BPvO6ppggr8sLtyzUtx2Gz8mTy4dRT0nACLcBGAs/s1600/Atlantis-the-palm-best-5-places-to-visit-in-Dubai-ammartours.jpg' },
-  // { title: 'Turkey', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 140, duration: 5, country: 'Dubai', img: 'https://4.bp.blogspot.com/-XAAQT_6hDbQ/WYwHsXaYj_I/AAAAAAAAAY8/BPvO6ppggr8sLtyzUtx2Gz8mTy4dRT0nACLcBGAs/s1600/Atlantis-the-palm-best-5-places-to-visit-in-Dubai-ammartours.jpg' },
-
-
-
   { title: 'Dubai city tour', themes: ['Luxury',], price: 4499, duration: 8, country: 'Dubai', img: 'Dubai Images/dubai-2057583_1920.webp', link: 'dubai-packages/dubai-city-tour-package.html' },
-  { title: 'Discover Dubai Tour', themes: ['Adventure', 'Family With Kids'], price: 4279, duration: 5, country: 'Dubai', img: 'Dubai Images/the-palm-962785_1920.webp', link: 'dubai-packages/dubai-desert-safari-city-tour.html' },
+  { title: 'Discover Dubai tour', themes: ['Adventure', 'Family With Kids'], price: 4279, duration: 5, country: 'Dubai', img: 'Dubai Images/the-palm-962785_1920.webp', link: 'dubai-packages/dubai-desert-safari-city-tour.html' },
   { title: 'Vietnam at glimpse', themes: ['Honey Moon', 'Adventure', 'Family With Kids'], price: 2699, country: 'Vietnam', duration: 6, country: 'Vietnam', img: 'Vietnam-images/Depositphotos_66882175_L.webp', link: 'vietnam-tours-packages-list/hanoi-halong-bay-da-nang-ho-chi-minh-tour.html' },
   { title: 'Armenia', themes: ['Honey Moon', 'Luxury'], price: 1682, country: 'Armenia', duration: 5, img: 'Armenia-images/1.webp', link: 'armenia-tour-packages-list/yerevan-garni-geghard-tour.html' },
   { title: 'Armenia', themes: ['Honey Moon', 'Luxury', 'Family With Kids'], price: 2500, country: 'Armenia', duration: 7, img: 'Armenia-images/armenia 1.webp', link: 'armenia-tour-packages-list/yerevan-dilijan-lake-sevan-tsaghkadzor-tour.html' },
@@ -38,8 +24,6 @@ const packages = [
   { title: 'Exotic Bali - villa stay', themes: ['Honey Moon', 'Luxury', 'Family With Kids'], price: 1730, country: 'Bali', duration: 5, country: 'Bali', img: 'Bali-images/Depositphotos_48098009_L.webp', link: 'bali-tour-packages-list/bali-family-tour.html' },
   { title: 'Explore Azerbaijan', themes: ['Adventure', 'Luxury', 'Family With Kids'], price: 3350, duration: 5, country: 'Azerbaijan', img: 'Azerbaijan-images/Baku-Boulevar-Caspian-1024x509.webp', link: 'azerbaijan-tour-packages-list/baku-city-tour.html' },
   { title: 'Baku', themes: ['Adventure', 'Luxury', 'Honey Moon'], price: 1260, duration: 5, country: 'Azerbaijan', img: 'Azerbaijan-images/xan satayi.webp', link: 'azerbaijan-tour-packages-list/baku-shahdag-tour.html' },
-
-
 
 
   { title: 'Turkey', themes: ['Family With Kids', 'Luxury', 'Honey Moon'], price: 1500, duration: 4, country: 'Turkey', img: 'Turkey-images/Depositphotos_198370150_L.webp',  link: 'turkey-tour-packages-list/istanbul-cappadocia-pamukkale-tour-package.html' },
@@ -124,7 +108,6 @@ function renderCards(data) {
   // After creating the cards, immediately format them in the saved currency
   if (typeof updateAllPrices === 'function') updateAllPrices();
 }
-
 
 
 

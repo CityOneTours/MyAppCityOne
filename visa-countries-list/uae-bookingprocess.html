@@ -2120,7 +2120,7 @@
         </div>
 
         <div class="alert alert-err" id="p3_err"></div>
-        <button class="btn btn-red" onclick="step3Next()">Confirm &amp; Proceed to Payment &nbsp;<i
+        <button class="btn btn-red" onclick="step3Next()">Confirm &amp; Proceed to Payment satyish &nbsp;<i
             class="fas fa-arrow-right"></i></button>
         <button class="btn btn-outline" onclick="goPage(2)"><i class="fas fa-arrow-left"></i>&nbsp; Back</button>
       </div>
@@ -2569,6 +2569,7 @@
       window._reqDocKeys = cfg.docs.map(d => d.key);
     }
 
+
     function togglePanel(hdr) {
       const body = hdr.nextElementSibling;
       const isOpen = hdr.classList.contains('open');
@@ -2700,12 +2701,22 @@
     }
 
     async function checkPaymentReturn() {
+      alert('checkPaymentReturn called');
+      console.log('payment return check--2704----');
       const p = new URLSearchParams(window.location.search);
+      console.log('payment return check--2706 p----', p.toString());
       const payment = p.get('payment');
       const respStatus = p.get('respStatus');
       const appId = p.get('appId') || p.get('cart_id');
+console.log('payment -2710-payment---', payment);
+
+
+
 
       const isSuccess = payment === 'success' || respStatus === 'A';
+
+      console.log('isSuccess -2710-isSuccess---', isSuccess);
+
       const isFail = payment === 'fail' || (respStatus && respStatus !== 'A');
 
       if (isSuccess) {
@@ -2724,6 +2735,7 @@
         document.getElementById('suc_phone').textContent = APP.applicant.phone || '–';
         goPage(5);
       } else if (isFail) {
+        console.log('isFail -2737-isFail---', isFail);
         goPage(4);
         showErr(document.getElementById('p4_err'), '❌ Payment was declined or cancelled. Please try again.');
       }

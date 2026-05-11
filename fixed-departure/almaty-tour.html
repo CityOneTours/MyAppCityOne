@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Timeless Treasures of Egypt | 26–31 May</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Segoe+UI:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --gold: #c9912a;
+    --gold-light: #e8b84b;
+    --navy: #1a2744;
+    --navy-dark: #111b35;
+    --cream: #fdf8f0;
+    --white: #ffffff;
+    --gray-100: #f5f4f0;
+    --gray-200: #e8e5de;
+    --gray-400: #9a9690;
+    --gray-600: #5c5a55;
+    --gray-800: #2e2d2a;
+    --text: #1e1d1a;
+    --text-muted: #6b6860;
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  /* ── NAVBAR ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(17, 27, 53, 0.92);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 40px;
+    border-bottom: 1px solid rgba(201,145,42,0.25);
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold-light);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: rgba(255,255,255,0.78);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.25s;
+  }
+  .nav-links a:hover { color: var(--gold-light); }
+  .nav-cta {
+    background: var(--gold);
+    color: #fff !important;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600 !important;
+  }
+
+  /* ── HERO CAROUSEL ── */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 560px;
+    overflow: hidden;
+  }
+  .slides-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.85s cubic-bezier(0.77,0,0.18,1);
+  }
+  .slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .slide-img {
+    width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 8s ease;
+  }
+  .slide.active .slide-img {
+    transform: scale(1.06);
+  }
+  .slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(17,27,53,0.75) 0%, rgba(0,0,0,0.35) 60%, transparent 100%);
+  }
+  .slide-content {
+    position: absolute;
+    bottom: 14%;
+    left: 7%;
+    max-width: 580px;
+    animation: fadeUp 0.9s ease both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .slide-badge {
+    display: inline-block;
+    background: rgba(201,145,42,0.9);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 16px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+  }
+  .slide-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 58px);
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.1;
+    text-shadow: 0 3px 20px rgba(0,0,0,0.45);
+    margin-bottom: 14px;
+  }
+  .slide-content p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.65;
+    margin-bottom: 24px;
+    max-width: 480px;
+  }
+  .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--gold);
+    color: #fff;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background 0.25s, transform 0.2s;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.7);
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: border-color 0.25s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn-secondary:hover { border-color: var(--gold-light); transform: translateY(-2px); }
+
+  /* carousel controls */
+  .c-arrow {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    background: rgba(255,255,255,0.12);
+    border: 1.5px solid rgba(255,255,255,0.3);
+    color: #fff;
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    z-index: 10;
+    transition: background 0.25s;
+    backdrop-filter: blur(4px);
+  }
+  .c-arrow:hover { background: rgba(201,145,42,0.6); }
+  .c-arrow.left { left: 28px; }
+  .c-arrow.right { right: 28px; }
+
+  .c-dots {
+    position: absolute;
+    bottom: 24px; right: 40px;
+    display: flex; gap: 10px;
+    z-index: 10;
+  }
+  .c-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.35);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  .c-dot.active { background: var(--gold-light); transform: scale(1.3); }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: 26px; left: 50%;
+    transform: translateX(-50%);
+    display: flex; flex-direction: column;
+    align-items: center; gap: 6px;
+    color: rgba(255,255,255,0.55);
+    font-size: 11px; letter-spacing: 1.5px;
+    text-transform: uppercase;
+    animation: bounce 2s infinite;
+    z-index: 10;
+  }
+  @keyframes bounce {
+    0%,100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(6px); }
+  }
+  .hero-scroll::after {
+    content: '';
+    display: block;
+    width: 1px; height: 36px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
+  }
+
+  /* ── INFO STRIP ── */
+  .info-strip {
+    background: var(--navy);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--gold);
+  }
+  .info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    transition: background 0.2s;
+  }
+  .info-item:last-child { border-right: none; }
+  .info-item:hover { background: rgba(255,255,255,0.04); }
+  .info-icon { font-size: 20px; }
+  .info-label { font-size: 10px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 1.5px; }
+  .info-val { font-size: 13px; font-weight: 700; color: #fff; }
+
+  /* ── SECTIONS ── */
+  .section {
+    padding: 64px 40px;
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+  .section-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid rgba(201,145,42,0.4);
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+  .section-sub {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 36px;
+    line-height: 1.6;
+  }
+  .gold-divider {
+    width: 56px; height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    border-radius: 2px;
+    margin-bottom: 10px;
+  }
+
+  /* ── ITINERARY ── */
+  .itinerary { display: flex; flex-direction: column; gap: 14px; }
+  .day-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: box-shadow 0.25s;
+  }
+  .day-card:hover { box-shadow: 0 4px 24px rgba(26,39,68,0.09); }
+  .day-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 22px;
+    cursor: pointer;
+    user-select: none;
+    background: var(--white);
+    transition: background 0.2s;
+  }
+  .day-header:hover { background: #faf9f5; }
+  .day-num {
+    background: var(--navy);
+    color: var(--gold-light);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 6px;
+    white-space: nowrap;
+    min-width: 64px;
+    text-align: center;
+  }
+  .day-title { font-size: 15px; font-weight: 700; flex: 1; color: var(--navy); }
+  .day-date { font-size: 12px; color: var(--text-muted); white-space: nowrap; }
+  .day-toggle {
+    font-size: 20px;
+    color: var(--gold);
+    transition: transform 0.35s;
+    line-height: 1;
+  }
+  .day-toggle.open { transform: rotate(180deg); }
+  .day-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.45s ease;
+  }
+  .day-body.open { max-height: 600px; }
+  .day-body-inner {
+    padding: 0 22px 18px 22px;
+    border-top: 1px solid var(--gray-200);
+  }
+  .day-body ul { list-style: none; padding-top: 12px; }
+  .day-body li {
+    font-size: 13.5px;
+    color: var(--text-muted);
+    padding: 7px 0 7px 22px;
+    position: relative;
+    line-height: 1.55;
+    border-bottom: 1px solid var(--gray-100);
+  }
+  .day-body li:last-child { border-bottom: none; }
+  .day-body li::before {
+    content: '';
+    position: absolute;
+    left: 5px; top: 14px;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--gold);
+  }
+
+  /* ── FLIGHT & HOTEL TABLES ── */
+  .alt-bg { background: #f0ede6; }
+  .table-wrap { overflow-x: auto; }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    min-width: 520px;
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .data-table thead tr { background: var(--navy); }
+  .data-table th {
+    color: var(--gold-light);
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .data-table td {
+    padding: 11px 16px;
+    border-bottom: 1px solid var(--gray-200);
+    color: var(--gray-600);
+    background: var(--white);
+  }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:nth-child(even) td { background: #faf9f5; }
+
+  /* ── INCLUSIONS ── */
+  .inc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 14px;
+  }
+  .inc-item {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    padding: 16px 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .inc-item:hover { box-shadow: 0 4px 16px rgba(26,39,68,0.08); transform: translateY(-2px); }
+  .inc-item .i-icon { font-size: 22px; }
+  .inc-item .i-text { font-size: 13px; color: var(--text-muted); line-height: 1.45; }
+  .exc-list { display: flex; flex-direction: column; gap: 0; margin-top: 20px; }
+  .exc-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray-200);
+    font-size: 13.5px;
+    color: var(--text-muted);
+  }
+  .exc-item:last-child { border-bottom: none; }
+  .exc-x { color: #c0392b; font-weight: 800; font-size: 14px; margin-top: 1px; }
+
+  /* ── POLICY ── */
+  .policy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .policy-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+  }
+  .policy-head {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--gold);
+    display: inline-block;
+  }
+  .p-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--gray-100);
+    font-size: 13px;
+  }
+  .p-row:last-child { border-bottom: none; }
+  .p-label { color: var(--text-muted); }
+  .p-val { font-weight: 700; color: var(--navy); text-align: right; }
+  .badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 12px;
+  }
+  .b-green { background: #e6f4ea; color: #1e7c34; }
+  .b-orange { background: #fff3e0; color: #b85c00; }
+  .b-red { background: #fdecea; color: #b71c1c; }
+  .b-gray { background: #f0ede6; color: #5c5a55; }
+
+  /* ── NOTES ── */
+  .notes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .note-item {
+    background: var(--white);
+    border-left: 3px solid var(--gold);
+    border-top: 1px solid var(--gray-200);
+    border-right: 1px solid var(--gray-200);
+    border-bottom: 1px solid var(--gray-200);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 12px 16px;
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    display: flex; align-items: flex-start; gap: 10px;
+  }
+  .note-icon { font-size: 15px; margin-top: 1px; flex-shrink: 0; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy-dark);
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 44px 24px 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  footer::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--navy), var(--gold), var(--gold-light), var(--gold), var(--navy));
+  }
+  footer .tagline {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--gold-light);
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  footer .f-tour { font-size: 13px; color: rgba(255,255,255,0.55); margin-bottom: 20px; }
+  footer .f-divider { width: 48px; height: 1px; background: rgba(201,145,42,0.4); margin: 16px auto; }
+  footer .f-copy { font-size: 11px; color: rgba(255,255,255,0.3); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    nav { padding: 12px 20px; }
+    .nav-links { display: none; }
+    .section { padding: 44px 20px; }
+    .section-title { font-size: 26px; }
+    .policy-grid, .notes-grid { grid-template-columns: 1fr; }
+    .info-item { padding: 12px 16px; }
+    .c-arrow { width: 38px; height: 38px; font-size: 18px; }
+    .c-arrow.left { left: 12px; }
+    .c-arrow.right { right: 12px; }
+    .c-dots { right: 20px; }
+    .hero-scroll { display: none; }
+  }
+  @media (max-width: 480px) {
+    .slide-content { left: 5%; right: 5%; max-width: 100%; bottom: 12%; }
+    .slide-content h1 { font-size: 26px; }
+    .slide-content p { font-size: 13px; }
+    .inc-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">✦ Egypt Tours</div>
+  <ul class="nav-links">
+    <li><a href="#itinerary">Itinerary</a></li>
+    <li><a href="#flights">Flights</a></li>
+    <li><a href="#inclusions">Inclusions</a></li>
+    <li><a href="#policy">Policy</a></li>
+    <li><a href="#itinerary" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<!-- HERO CAROUSEL -->
+<div class="hero" id="hero">
+  <div class="slides-track" id="slidesTrack">
+
+    <div class="slide active">
+      <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1568322445389-f64ac2515020?w=1400&q=85');"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-badge">✈ Dubai → Cairo · 26–31 May</span>
+        <h1>Timeless Treasures<br>of Egypt</h1>
+        <p>Ancient wonders, desert skies, and the eternal Nile await. A 5-day odyssey through one of the world's greatest civilizations.</p>
+        <div class="hero-btns">
+          <button class="btn-primary">Book Now</button>
+          <a href="#itinerary" class="btn-secondary">View Itinerary ↓</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1608835291093-394b0c943a75?w=1400&q=85');"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-badge">Day 4 Highlight</span>
+        <h1>The Great Pyramids<br>& Sphinx</h1>
+        <p>Walk in the footsteps of pharaohs. The Giza Plateau — one of the Seven Wonders of the Ancient World — awaits you.</p>
+        <div class="hero-btns">
+          <button class="btn-primary">Explore Day 4</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=1400&q=85');"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-badge">Day 2 Experience</span>
+        <h1>Nile Dinner Cruise<br>Aboard Nile Crystal</h1>
+        <p>Drift along the world's greatest river with an open buffet, belly dancing, folklore shows and Tanoura performances.</p>
+        <div class="hero-btns">
+          <button class="btn-primary">See Day 2</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=1400&q=85');"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-badge">Day 3 Excursion</span>
+        <h1>Alexandria —<br>Pearl of the Mediterranean</h1>
+        <p>Catacombs of Kom El Shoqafa, Pompey's Pillar, the Citadel of Qaitbay & the legendary Bibliotheca Alexandrina.</p>
+        <div class="hero-btns">
+          <button class="btn-primary">Discover Alexandria</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="c-arrow left" id="prevBtn">&#8249;</button>
+  <button class="c-arrow right" id="nextBtn">&#8250;</button>
+
+  <div class="c-dots" id="dotsContainer">
+    <div class="c-dot active" data-i="0"></div>
+    <div class="c-dot" data-i="1"></div>
+    <div class="c-dot" data-i="2"></div>
+    <div class="c-dot" data-i="3"></div>
+  </div>
+
+  <div class="hero-scroll">Scroll</div>
+</div>
+
+<!-- INFO STRIP -->
+<div class="info-strip">
+  <div class="info-item">
+    <span class="info-icon">📅</span>
+    <div><div class="info-label">Tour Dates</div><div class="info-val">26 May – 31 May</div></div>
+  </div>
+  <div class="info-item">
+    <span class="info-icon">🌙</span>
+    <div><div class="info-label">Duration</div><div class="info-val">5 Days / 4 Nights</div></div>
+  </div>
+  <div class="info-item">
+    <span class="info-icon">✈</span>
+    <div><div class="info-label">Airline</div><div class="info-val">Fly Dubai</div></div>
+  </div>
+  <div class="info-item">
+    <span class="info-icon">🏨</span>
+    <div><div class="info-label">Hotel</div><div class="info-val">4-Star Cairo</div></div>
+  </div>
+  <div class="info-item">
+    <span class="info-icon">🧳</span>
+    <div><div class="info-label">Baggage</div><div class="info-val">20 + 7 KG</div></div>
+  </div>
+  <div class="info-item">
+    <span class="info-icon">🎙</span>
+    <div><div class="info-label">Guide</div><div class="info-val">English Speaking</div></div>
+  </div>
+</div>
+
+<!-- ITINERARY -->
+<section id="itinerary">
+<div class="section">
+  <div class="section-tag">Full Itinerary</div>
+  <div class="gold-divider"></div>
+  <div class="section-title">Day-by-Day Journey</div>
+  <div class="section-sub">5 days of curated experiences across Cairo and Alexandria — history, culture, cuisine and spectacle.</div>
+
+  <div class="itinerary">
+
+    <div class="day-card">
+      <div class="day-header" onclick="toggleDay(this)">
+        <span class="day-num">Day 1</span>
+        <span class="day-title">Arrival in Cairo</span>
+        <span class="day-date">26 May</span>
+        <span class="day-toggle open">▾</span>
+      </div>
+      <div class="day-body open">
+        <div class="day-body-inner">
+          <ul>
+            <li>Arrival at Cairo International Airport</li>
+            <li>Clear immigration and customs formalities</li>
+            <li>Warm welcome by our dedicated representative</li>
+            <li>Transfer to hotel with guaranteed early check-in</li>
+            <li>Free time to relax and recover from your journey</li>
+            <li>Overnight stay at the hotel in Cairo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header" onclick="toggleDay(this)">
+        <span class="day-num">Day 2</span>
+        <span class="day-title">Cairo City Tour & Nile Dinner Cruise</span>
+        <span class="day-date">27 May</span>
+        <span class="day-toggle">▾</span>
+      </div>
+      <div class="day-body">
+        <div class="day-body-inner">
+          <ul>
+            <li>Breakfast at the hotel</li>
+            <li>Half-day Cairo city tour</li>
+            <li>Visit Tahrir Square, drive past the Cairo Citadel, and visit the Mosque of Mohamed Ali</li>
+            <li>Explore areas reflecting both modern and historic Cairo</li>
+            <li>Evening transfer for Nile Dinner Cruise aboard the Nile Crystal</li>
+            <li>Open buffet of international and Egyptian cuisine</li>
+            <li>Live entertainment: belly dancing, traditional folklore shows & Tanoura performances</li>
+            <li>Transfer back to hotel — overnight in Cairo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header" onclick="toggleDay(this)">
+        <span class="day-num">Day 3</span>
+        <span class="day-title">Full-Day Tour to Alexandria</span>
+        <span class="day-date">28 May</span>
+        <span class="day-toggle">▾</span>
+      </div>
+      <div class="day-body">
+        <div class="day-body-inner">
+          <ul>
+            <li>Breakfast at the hotel</li>
+            <li>Full-day excursion to Alexandria — Egypt's beautiful Mediterranean city</li>
+            <li>Catacombs of Kom El Shoqafa — one of the Seven Wonders of the Middle Ages</li>
+            <li>Historic Pompey's Pillar</li>
+            <li>Photo stop at the Citadel of Qaitbay — built on the site of the ancient Lighthouse of Alexandria</li>
+            <li>Visit the Bibliotheca Alexandrina (outside or inside, subject to time)</li>
+            <li>Return to Cairo — overnight stay</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header" onclick="toggleDay(this)">
+        <span class="day-num">Day 4</span>
+        <span class="day-title">Pyramids, Sphinx & Grand Egyptian Museum</span>
+        <span class="day-date">29 May</span>
+        <span class="day-toggle">▾</span>
+      </div>
+      <div class="day-body">
+        <div class="day-body-inner">
+          <ul>
+            <li>Breakfast at the hotel</li>
+            <li>Full-day guided tour of Cairo's most iconic landmarks</li>
+            <li>Giza Plateau — Great Pyramids of Cheops, Chephren & Mykerinos (Seven Wonders of the Ancient World)</li>
+            <li>Explore the Great Sphinx and the Valley Temple</li>
+            <li>Grand Egyptian Museum (GEM) — Egypt's most extensive collection of ancient artifacts and Pharaonic treasures</li>
+            <li>Transfer back to hotel — overnight in Cairo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header" onclick="toggleDay(this)">
+        <span class="day-num">Day 5</span>
+        <span class="day-title">Khan El Khalili & Old Cairo | Departure</span>
+        <span class="day-date">30–31 May</span>
+        <span class="day-toggle">▾</span>
+      </div>
+      <div class="day-body">
+        <div class="day-body-inner">
+          <ul>
+            <li>Breakfast at the hotel and check-out</li>
+            <li>Explore Old Cairo — historic churches and mosques (subject to time and accessibility)</li>
+            <li>Visit the famous Khan El Khalili Bazaar — one of the oldest and most vibrant markets in the Middle East</li>
+            <li>Free time for shopping: souvenirs, spices, perfumes, jewelry & handicrafts</li>
+            <li>Transfer to Cairo International Airport for departure</li>
+            <li>Departure flight CAI → DXB at 01:40 (31 May) — arrives Dubai 06:20</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- FLIGHT & HOTEL -->
+<section id="flights" class="alt-bg">
+<div class="section">
+  <div class="section-tag">Travel Details</div>
+  <div class="gold-divider"></div>
+  <div class="section-title">Flight Details</div>
+  <div class="section-sub">Fly Dubai — Round trip from Dubai International Airport (DXB) to Cairo (CAI)</div>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Airline</th><th>Sector</th><th>Date</th><th>Departure</th><th>Arrival</th><th>Flight No.</th><th>Duration</th><th>Baggage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Fly Dubai</strong></td>
+          <td>DXB → CAI</td><td>26 May</td><td>21:55</td><td>00:40 (+1)</td><td>FZ 191</td><td>4h 05m</td><td>20 + 7 KG</td>
+        </tr>
+        <tr>
+          <td><strong>Fly Dubai</strong></td>
+          <td>CAI → DXB</td><td>31 May</td><td>01:40</td><td>06:20</td><td>FZ 192</td><td>3h 15m</td><td>20 + 7 KG</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="margin-top: 44px;">
+    <div class="section-tag">Accommodation</div>
+    <div class="gold-divider"></div>
+    <div class="section-title">Hotel Details</div>
+    <div class="section-sub">4-star accommodation with Half Board (HB) meal plan. Similar category guaranteed if property changes.</div>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>City</th><th>Hotel</th><th>Check-In</th><th>Check-Out</th><th>Meal Plan</th><th>Check-In Time</th><th>Check-Out Time</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Cairo</strong></td>
+            <td>Azal Pyramids / Similar</td><td>27 May</td><td>30 May</td>
+            <td><span class="badge b-green">HB</span></td><td>15:00</td><td>12:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- INCLUSIONS -->
+<section id="inclusions">
+<div class="section">
+  <div class="section-tag">What's Included</div>
+  <div class="gold-divider"></div>
+  <div class="section-title">Package Inclusions & Exclusions</div>
+  <div class="section-sub">Everything you need to know about what's covered in your tour package.</div>
+
+  <div class="inc-grid">
+    <div class="inc-item"><span class="i-icon">✈</span><div class="i-text">Two-way airfare on Fly Dubai with 20 KG check-in + 7 KG hand carry</div></div>
+    <div class="inc-item"><span class="i-icon">🚌</span><div class="i-text">Airport transfers in Cairo — arrival and departure</div></div>
+    <div class="inc-item"><span class="i-icon">🏨</span><div class="i-text">4 nights 4-star hotel accommodation in Cairo</div></div>
+    <div class="inc-item"><span class="i-icon">🍳</span><div class="i-text">Daily breakfast at the hotel + 1 dinner included</div></div>
+    <div class="inc-item"><span class="i-icon">🛳</span><div class="i-text">Nile Dinner Cruise aboard the Nile Crystal with live entertainment</div></div>
+    <div class="inc-item"><span class="i-icon">🏛</span><div class="i-text">Cairo city tour — Tahrir Square, Cairo Citadel, Mosque of Mohamed Ali</div></div>
+    <div class="inc-item"><span class="i-icon">🌊</span><div class="i-text">Full-day Alexandria excursion — Catacombs, Citadel, Bibliotheca</div></div>
+    <div class="inc-item"><span class="i-icon">🔺</span><div class="i-text">Giza Pyramids, Sphinx, Valley Temple & Grand Egyptian Museum</div></div>
+    <div class="inc-item"><span class="i-icon">🛍</span><div class="i-text">Khan El Khalili Bazaar & Old Cairo cultural tour</div></div>
+    <div class="inc-item"><span class="i-icon">🎙</span><div class="i-text">English-speaking guide (dedicated for groups of 10+)</div></div>
+    <div class="inc-item"><span class="i-icon">🛡</span><div class="i-text">Travel insurance included for the entire duration</div></div>
+  </div>
+
+  <div style="margin-top: 36px;">
+    <div style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 4px;">Package Exclusions</div>
+    <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px;">The following are not covered and will need to be arranged separately.</div>
+    <div class="exc-list">
+      <div class="exc-item"><span class="exc-x">✕</span>Meals not mentioned in the itinerary</div>
+      <div class="exc-item"><span class="exc-x">✕</span>Monument entrance and activity tickets (payable directly on-site)</div>
+      <div class="exc-item"><span class="exc-x">✕</span>Tourist Visa Fee for Egypt</div>
+      <div class="exc-item"><span class="exc-x">✕</span>Anything not explicitly mentioned in inclusions above</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- PAYMENT & REFUND POLICY -->
+<section id="policy" class="alt-bg">
+<div class="section">
+  <div class="section-tag">Booking Policy</div>
+  <div class="gold-divider"></div>
+  <div class="section-title">Payment & Refund Policy</div>
+  <div class="section-sub">Flexible payment options available in up to 4 instalments. Full payment must be settled 30 days prior to departure.</div>
+
+  <div class="policy-grid">
+    <div class="policy-card">
+      <div class="policy-head">Payment Policy</div>
+      <div class="p-row"><span class="p-label">Booking deposit (per person)</span><span class="p-val">Min. AED 500 <span style="font-size:11px; font-weight:400; color:#b71c1c;">(Non-refundable)</span></span></div>
+      <div class="p-row"><span class="p-label">Balance payment</span><span class="p-val">30 days before departure</span></div>
+      <div class="p-row"><span class="p-label">Instalment options</span><span class="p-val">Up to 4 instalments</span></div>
+      <div class="p-row"><span class="p-label">Full payment deadline</span><span class="p-val">30 days prior to departure</span></div>
+      <div class="p-row"><span class="p-label">Booking documents</span><span class="p-val">Passport + Emirates ID</span></div>
+      <div class="p-row"><span class="p-label">Validity required</span><span class="p-val">Min. 6 months</span></div>
+    </div>
+    <div class="policy-card">
+      <div class="policy-head">Refund Policy</div>
+      <div class="p-row"><span class="p-label">45–30 days before departure</span><span class="p-val"><span class="badge b-orange">AED 500 deducted</span></span></div>
+      <div class="p-row"><span class="p-label">44–30 days before departure</span><span class="p-val"><span class="badge b-green">50% refunded</span></span></div>
+      <div class="p-row"><span class="p-label">Within 30 days of departure</span><span class="p-val"><span class="badge b-red">Nil Refund</span></span></div>
+      <div class="p-row"><span class="p-label">No-show</span><span class="p-val"><span class="badge b-red">Non-refundable</span></span></div>
+      <div class="p-row" style="background: #fef9f0; border-radius: 6px; padding: 10px 12px; margin-top: 8px; border: none;">
+        <span style="font-size: 12px; color: #b85c00;">⚠ Non-payment of instalments will auto-release the booking as per refund policy.</span>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- IMPORTANT NOTES -->
+<section>
+<div class="section">
+  <div class="section-tag">Before You Travel</div>
+  <div class="gold-divider"></div>
+  <div class="section-title">Important Notes & Key Reminders</div>
+  <div class="section-sub">Please read all notes carefully before booking and before travel.</div>
+
+  <div class="notes-grid">
+    <div class="note-item"><span class="note-icon">🪪</span>Passport and Emirates ID required — minimum 6 months validity for Egypt travel.</div>
+    <div class="note-item"><span class="note-icon">💵</span>Carry USD 500 as hard cash show money at immigration.</div>
+    <div class="note-item"><span class="note-icon">👥</span>Dedicated tour guide allocated for groups of 10 or more guests.</div>
+    <div class="note-item"><span class="note-icon">🏨</span>Hotel subject to change — a similar 4-star category property will always be provided.</div>
+    <div class="note-item"><span class="note-icon">🚗</span>Airport pickup is valid for 90 minutes after flight arrival time.</div>
+    <div class="note-item"><span class="note-icon">🍽</span>Continental breakfast (veg & non-veg) served 7:30 AM – 10:00 AM at hotels.</div>
+    <div class="note-item"><span class="note-icon">🛏</span>Room preferences (views, connecting rooms, balconies) subject to availability.</div>
+    <div class="note-item"><span class="note-icon">⏰</span>Early check-in and late check-out subject to availability — additional fee may apply.</div>
+    <div class="note-item"><span class="note-icon">🎟</span>Entrance tickets to monuments are payable directly on-site — not included.</div>
+    <div class="note-item"><span class="note-icon">🌤</span>Pack clothes according to season and weather forecast for Egypt in late May.</div>
+    <div class="note-item"><span class="note-icon">📋</span>Itinerary sequence subject to change based on operational requirements.</div>
+    <div class="note-item"><span class="note-icon">⚡</span>Force majeure: package may be modified or cancelled due to unforeseen circumstances.</div>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="tagline">"Stop dreaming, Start packing."</div>
+  <div class="f-tour">Timeless Treasures of Egypt &nbsp;·&nbsp; 26 May – 31 May &nbsp;·&nbsp; Dubai ✈ Cairo</div>
+  <div class="f-divider"></div>
+  <div class="f-copy">Itinerary sequence is subject to change to ensure the smoothest and most enjoyable operational experience.<br>The travel company does not bear responsibility for refusals of boarding by airport or emigration authorities.</div>
+</footer>
+
+<script>
+  // ── CAROUSEL ──
+  let cur = 0;
+  const total = 4;
+  const track = document.getElementById('slidesTrack');
+  const allSlides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.c-dot');
+
+  function goTo(n) {
+    allSlides[cur].classList.remove('active');
+    cur = (n + total) % total;
+    track.style.transform = 'translateX(-' + (cur * 100) + '%)';
+    allSlides[cur].classList.add('active');
+    dots.forEach((d, i) => d.classList.toggle('active', i === cur));
+  }
+
+  document.getElementById('nextBtn').onclick = () => goTo(cur + 1);
+  document.getElementById('prevBtn').onclick = () => goTo(cur - 1);
+  dots.forEach(d => d.addEventListener('click', () => goTo(+d.dataset.i)));
+
+  let autoPlay = setInterval(() => goTo(cur + 1), 5000);
+  const heroEl = document.getElementById('hero');
+  heroEl.addEventListener('mouseenter', () => clearInterval(autoPlay));
+  heroEl.addEventListener('mouseleave', () => { autoPlay = setInterval(() => goTo(cur + 1), 5000); });
+
+  // touch swipe
+  let touchStartX = 0;
+  heroEl.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; });
+  heroEl.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) goTo(diff > 0 ? cur + 1 : cur - 1);
+  });
+
+  // ── ITINERARY ACCORDION ──
+  function toggleDay(header) {
+    const body = header.nextElementSibling;
+    const arrow = header.querySelector('.day-toggle');
+    const isOpen = body.classList.contains('open');
+    body.classList.toggle('open', !isOpen);
+    arrow.classList.toggle('open', !isOpen);
+  }
+
+  // ── NAVBAR SCROLL EFFECT ──
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 80) {
+      nav.style.background = 'rgba(17, 27, 53, 0.98)';
+    } else {
+      nav.style.background = 'rgba(17, 27, 53, 0.92)';
+    }
+  });
+</script>
+</body>
+</html>

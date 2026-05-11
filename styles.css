@@ -2098,65 +2098,79 @@
 
 
 
-/* Hero Section */
-.hero-section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  min-height: 600px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
+      /* Hero Section */
+      .hero-section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        min-height: 600px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
 
-/* Background Carousel Wrapper */
-.hero-bg-carousel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
+      /* Background Carousel Wrapper */
+      .hero-bg-carousel {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
 
-/* Individual Slides */
-.hero-bg-slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: bgFade 18s infinite;
-}
+      /* Individual Slides */
+      .hero-bg-slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        animation: bgFade 18s infinite;
+      }
 
-/* Add Your Background Images */
-.hero-bg-slide:nth-child(1) {
-  background-image: url("images/Home image/Group.webp");
-  animation-delay: 0s;
-}
+      /* Add Your Background Images */
+      .hero-bg-slide:nth-child(1) {
+        background-image: url("images/Home image/Group.webp");
+        animation-delay: 0s;
+      }
 
-.hero-bg-slide:nth-child(2) {
-  background-image: url("images/Home image/Group (5).webp");
-  animation-delay: 6s;
-}
+      .hero-bg-slide:nth-child(2) {
+        background-image: url("images/Home image/Group (5).webp");
+        animation-delay: 6s;
+      }
 
-.hero-bg-slide:nth-child(3) {
-  background-image: url("images/Home image/beach.webp");
-  animation-delay: 12s;
-}
+      .hero-bg-slide:nth-child(3) {
+        background-image: url("images/Home image/beach.webp");
+        animation-delay: 12s;
+      }
 
-/* Animation */
-@keyframes bgFade {
-  0% { opacity: 0; }
-  5% { opacity: 1; }
-  30% { opacity: 1; }
-  35% { opacity: 0; }
-  100% { opacity: 0; }
-}
+      /* Animation */
+      @keyframes bgFade {
+        0% {
+          opacity: 0;
+        }
+
+        5% {
+          opacity: 1;
+        }
+
+        30% {
+          opacity: 1;
+        }
+
+        35% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
 
       /* Content Wrapper */
       .hero-content {
@@ -2495,217 +2509,218 @@
       }
 
       /* Hide on Desktop */
-.mobile-banner-wrapper {
-  display: none;
-}
+      .mobile-banner-wrapper {
+        display: none;
+      }
 
-/* Show Only on Mobile */
-@media (max-width: 768px) {
-  .mobile-banner-wrapper {
-    display: block;
-    width: 100%;
-    padding: 0px;
-    border-radius: 0px !important;
-            padding-top: 100px;
-  }
+      /* Show Only on Mobile */
+      @media (max-width: 768px) {
+        .mobile-banner-wrapper {
+          display: block;
+          width: 100%;
+          padding: 0px;
+          border-radius: 0px !important;
+          padding-top: 100px;
+        }
 
-  .mobile-banner-carousel {
-    position: relative;
-    width: 100%;
-    height: 220px;
-    overflow: hidden;
-    border-radius: 0px;
-  }
-.mobile-slide.active {
-  position: relative;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;   /* Only active slide clickable */
-}
-  .mobile-slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-      pointer-events: none;   /* Prevent hidden slides click */
+        .mobile-banner-carousel {
+          position: relative;
+          width: 100%;
+          height: 220px;
+          overflow: hidden;
+          border-radius: 0px;
+        }
 
-    transition: opacity 0.6s ease-in-out;
-  }
+        .mobile-slide.active {
+          position: relative;
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+          /* Only active slide clickable */
+        }
 
-  .mobile-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0px;
-  }
+        .mobile-slide {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          pointer-events: none;
+          /* Prevent hidden slides click */
 
-  .mobile-slide.active {
-    opacity: 1;
-  }
+          transition: opacity 0.6s ease-in-out;
+        }
 
-  /* Dots */
-  .mobile-dots {
-    position: absolute;
-    bottom: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 6px;
-  }
+        .mobile-slide img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 0px;
+        }
 
-  .mobile-dot {
-    width: 8px;
-    height: 8px;
-    background: #fff;
-    opacity: 0.6;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+        .mobile-slide.active {
+          opacity: 1;
+        }
 
-  .mobile-dot.active {
-    background: red;
-    opacity: 1;
-  }
-}
+        /* Dots */
+        .mobile-dots {
+          position: absolute;
+          bottom: 12px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          gap: 6px;
+        }
+
+        .mobile-dot {
+          width: 8px;
+          height: 8px;
+          background: #fff;
+          opacity: 0.6;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+
+        .mobile-dot.active {
+          background: red;
+          opacity: 1;
+        }
+      }
 
 
 
 
       .promo-section-wrapper {
-            max-width: 1400px;
-            margin: 0 auto;
-            position: relative;
-            margin-top: 50px;
-            margin-bottom: 50PX;
-        }
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 50PX;
+      }
 
+      .promo-carousel-container {
+        position: relative;
+        padding: 0 60px;
+      }
+
+      .promo-scroll-area {
+        display: flex;
+        gap: 24px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding: 10px 5px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      .promo-scroll-area::-webkit-scrollbar {
+        display: none;
+      }
+
+      .offer-card-item {
+        min-width: 350px;
+        height: 220px;
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+        flex-shrink: 0;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .offer-card-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      }
+
+      .card-background-image {
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+
+
+      .nav-arrow-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #333;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+        z-index: 10;
+      }
+
+      .nav-arrow-button:hover {
+        background-color: #c43512;
+        color: white;
+        transform: translateY(-50%) scale(1.1);
+      }
+
+      .nav-arrow-button:active {
+        transform: translateY(-50%) scale(0.95);
+      }
+
+      .nav-prev-button {
+        left: 0;
+      }
+
+      .nav-next-button {
+        right: 0;
+      }
+
+      @media (max-width: 768px) {
         .promo-carousel-container {
-            position: relative;
-            padding: 0 60px;
-        }
-
-        .promo-scroll-area {
-            display: flex;
-            gap: 24px;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-            padding: 10px 5px;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-        }
-
-        .promo-scroll-area::-webkit-scrollbar {
-            display: none;
+          padding: 0 50px;
         }
 
         .offer-card-item {
-            min-width: 350px;
-            height: 220px;
-            border-radius: 16px;
-            overflow: hidden;
-            position: relative;
-            flex-shrink: 0;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          min-width: 280px;
+          height: 160px;
         }
 
-        .offer-card-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        .promo-heading-text {
+          font-size: 22px;
         }
-
-        .card-background-image {
-            width: 100%;
-            height: 100%;
-            /* object-fit: cover; */
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-
 
         .nav-arrow-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background-color: white;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            color: #333;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            transition: all 0.3s ease;
-            z-index: 10;
+          width: 38px;
+          height: 38px;
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .promo-carousel-container {
+          padding: 0 45px;
         }
 
-        .nav-arrow-button:hover {
-            background-color: #c43512;
-            color: white;
-            transform: translateY(-50%) scale(1.1);
+        .offer-card-item {
+          min-width: 240px;
+          height: 140px;
         }
 
-        .nav-arrow-button:active {
-            transform: translateY(-50%) scale(0.95);
+        .promo-scroll-area {
+          gap: 16px;
         }
 
-        .nav-prev-button {
-            left: 0;
+        .nav-arrow-button {
+          width: 35px;
+          height: 35px;
+          font-size: 14px !important;
         }
-
-        .nav-next-button {
-            right: 0;
-        }
-
-        @media (max-width: 768px) {
-            .promo-carousel-container {
-                padding: 0 50px;
-            }
-
-            .offer-card-item {
-                min-width: 280px;
-                height: 160px;
-            }
-
-            .promo-heading-text {
-                font-size: 22px;
-            }
-
-            .nav-arrow-button {
-                width: 38px;
-                height: 38px;
-                font-size: 16px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .promo-carousel-container {
-                padding: 0 45px;
-            }
-
-            .offer-card-item {
-                min-width: 240px;
-                height: 140px;
-            }
-
-            .promo-scroll-area {
-                gap: 16px;
-            }
-
-            .nav-arrow-button {
-                width: 35px;
-                height: 35px;
-                font-size: 14px !important;
-            }
-        }
-
-
-
+      }

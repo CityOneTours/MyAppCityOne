@@ -562,8 +562,8 @@ app.post("/create-payment", async (req, res) => {
     if (!data.redirect_url) {
       return res.status(500).json({ error: "PayTabs did not return redirect_url", details: data });
     }
-
-    return res.json({ success: true, redirect_url: data.redirect_url, tran_ref: data.tran_ref || null, cart_id: finalCartId });
+  console.log("JSON res data---",  data.redirect_url, '---',data.tran_ref,'---',finalCartId);
+  return res.json({ success: true, redirect_url: data.redirect_url, tran_ref: data.tran_ref || null, cart_id: finalCartId });
 
   } catch (error) {
     console.error("create-payment error:", error);
