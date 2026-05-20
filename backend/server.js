@@ -88,7 +88,7 @@ async function sendAdminEmail(payload, isSuccess) {
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>New UAE Visa Application</title>
+  <title>New UAE Visa Application</title> 
 </head>
 <body style="margin:0;padding:0;background:#f4f4f4;font-family:'Segoe UI',Arial,sans-serif;">
   <table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f4;padding:30px 0;">
@@ -604,7 +604,6 @@ app.post("/paytabs-callback", async (req, res) => {
     return res.status(500).json({ error: error.message });
   }
 });
-
 // ── PAYMENT RETURN (browser redirect after payment) ───────────────────────────
 app.get("/payment-return", (req, res) => {
   try {
