@@ -816,3 +816,31 @@ promoScrollElement.dispatchEvent(new Event('scroll'));
   scroller.addEventListener("mouseenter", () => { isPaused = true; });
   scroller.addEventListener("mouseleave", () => { isPaused = false; });
 })();
+
+
+// Open after 5 seconds
+setTimeout(function(){
+  document.getElementById('overlay').classList.add('show');
+}, 5000);
+ 
+// Close on outside click
+document.getElementById('overlay').addEventListener('click', function(e){
+  if(e.target === this) closePopup();
+});
+ 
+// Close on ESC
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape') closePopup();
+});
+ 
+function closePopup(){
+  document.getElementById('overlay').classList.remove('show');
+}
+ 
+function enquireNow(e){
+  e.preventDefault();
+  closePopup();
+  // navigate to your enquiry page here
+  // window.location.href = '/enquire';
+  alert('Redirecting to enquiry page...');
+}
