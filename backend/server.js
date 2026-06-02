@@ -213,8 +213,7 @@ f.parentNode.insertBefore(j,f);
 height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
-<meta name="msvalidate.01" content="D13FDD3E89BA69DC6FAE90C2A7E53284" />
-</body>
+ </body>
 </html>`;
 
   const text = `
@@ -400,8 +399,7 @@ f.parentNode.insertBefore(j,f);
 height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
-<meta name="msvalidate.01" content="D13FDD3E89BA69DC6FAE90C2A7E53284" />
-</body>
+ </body>
 </html>`;
 
   try {
