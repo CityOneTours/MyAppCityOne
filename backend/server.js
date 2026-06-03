@@ -104,7 +104,7 @@ f.parentNode.insertBefore(j,f);
 <!-- End Google Tag Manager -->
 
 <meta charset="UTF-8">
-<title>City One Tourism</title>
+ 
 </head>
 <body style="margin:0;padding:0;background:#f4f4f4;font-family:'Segoe UI',Arial,sans-serif;">
   <table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f4;padding:30px 0;">
@@ -301,7 +301,7 @@ f.parentNode.insertBefore(j,f);
 <!-- End Google Tag Manager -->
 
 <meta charset="UTF-8">
-<title>City One Tourism</title>
+ 
 </head>
 <body style="margin:0;padding:0;background:#f4f4f4;font-family:'Segoe UI',Arial,sans-serif;">
   <table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f4;padding:30px 0;">
