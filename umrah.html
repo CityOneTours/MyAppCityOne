@@ -4,17 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Umrah Packages | City One Tours</title>
+  <title>Umrah Air Package | City One Tours</title>
   <link rel="stylesheet" href="hotdeal.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="Book your Umrah package with City One Tours. Flights, visa, meals, ziyarat and experienced guidance included. Economy and Deluxe options available.">
+    content="Book the City One Tours Umrah Air Package — Saudia direct flight, 2 nights Madinah, 3 nights Makkah, Haramain train, visa, meals and Ziyarat included. Economy, Standard, Deluxe and VIP tiers available.">
   <meta name="keywords"
-    content="umrah package, umrah tour, umrah visa, city one tours umrah, makkah madinah package">
+    content="umrah package, umrah air package, umrah tour dubai, city one tours umrah, makkah madinah package, saudia umrah flight">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VYMPTPGB3"></script>
   <script>
@@ -38,79 +40,151 @@ f.parentNode.insertBefore(j,f);
 <!-- End Google Tag Manager -->
 
   <style>
-    /* ===== Umrah page — built on City One Tours' existing palette (btn-danger red / bg-success green / dark nav) ===== */
+    /* ============================================================
+       UMRAH AIR PACKAGE — signature palette layered onto the
+       existing City One brand (red CTAs kept for site cohesion;
+       deep masjid-green + antique gold introduced as this page's
+       own identity, echoing the poster's stonework + ribbon).
+       Display face: Marcellus (carved, monumental, architectural)
+       Body/utility face: Inter
+       Signature element: the "boarding pass" departure stub —
+       this is specifically an AIR package, so the flight info
+       is treated like a real ticket, torn edge and all.
+    ============================================================ */
     :root{
       --co-red:#dc3545;
       --co-red-dark:#b32233;
-      --co-dark:#1b1b1b;
-      --co-dark-2:#2c2c2c;
-      --co-green:#198754;
-      --co-gray-bg:#f7f7f8;
-      --co-border:#e7e7e9;
-      --co-text:#333333;
-      --co-text-mid:#666666;
-      --co-radius:10px;
-      --co-shadow:0 8px 30px rgba(0,0,0,.08);
+      --co-dark:#141412;
+      --co-dark-2:#232320;
+      --u-green:#12492c;
+      --u-green-dark:#0b2f1c;
+      --u-gold:#c9a227;
+      --u-gold-soft:#e7cf8a;
+      --co-gray-bg:#f7f6f2;
+      --co-border:#e6e3da;
+      --co-text:#2b2b28;
+      --co-text-mid:#66655e;
+      --co-radius:12px;
+      --co-shadow:0 10px 34px rgba(18,73,44,.10);
       --co-transition:.3s ease;
+      --font-display:'Marcellus', serif;
+      --font-body:'Inter', sans-serif;
     }
 
+    .umrah-page{ font-family:var(--font-body); color:var(--co-text); }
+    .umrah-page h1, .umrah-page h2, .umrah-page h3, .umrah-page .u-serif{ font-family:var(--font-display); }
+
+    /* ---------- Hero ---------- */
     .umrah-hero{
       position:relative;
-      height:340px;
+      min-height:460px;
       margin-top:0;
       display:flex;
       align-items:center;
       justify-content:center;
-      background:linear-gradient(135deg, rgba(15,15,15,.78), rgba(179,34,51,.55)),
-        url('https://images.unsplash.com/photo-1588987278192-09fd57dd55ad?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+      background:
+        linear-gradient(160deg, rgba(11,47,28,.86), rgba(20,20,18,.72)),
+        url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?q=80&w=1600&auto=format&fit=crop') center 30%/cover no-repeat;
       text-align:center;
       color:#fff;
+      overflow:hidden;
+      padding:60px 20px 70px;
     }
+    .umrah-hero::before{
+      content:"";
+      position:absolute; inset:0;
+      background:
+        repeating-linear-gradient(90deg, rgba(201,162,39,.08) 0 1px, transparent 1px 64px);
+      pointer-events:none;
+    }
+    .umrah-hero-eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-size:.72rem;
+      font-weight:700;
+      letter-spacing:3px;
+      text-transform:uppercase;
+      color:var(--u-gold-soft);
+      margin-bottom:18px;
+    }
+    .umrah-hero-eyebrow::before,
+    .umrah-hero-eyebrow::after{ content:""; width:26px; height:1px; background:var(--u-gold-soft); opacity:.7; }
     .umrah-hero h1{
-      font-size:clamp(2rem,5vw,3rem);
-      font-weight:800;
-      margin-bottom:10px;
-      letter-spacing:.3px;
+      font-size:clamp(2.4rem,6vw,4rem);
+      font-weight:400;
+      line-height:1.1;
+      margin-bottom:14px;
+      letter-spacing:.5px;
     }
-    .umrah-hero h1 span{ color:#ff8a94; }
+    .umrah-hero h1 span{ color:var(--u-gold-soft); }
+    .umrah-hero p.tag{
+      font-size:1rem;
+      color:rgba(255,255,255,.82);
+      max-width:520px;
+      margin:0 auto 22px;
+      line-height:1.7;
+    }
+    .umrah-hero-badges{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:12px;
+      margin-bottom:22px;
+    }
+    .umrah-hero-badge{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(231,207,138,.35);
+      padding:8px 16px;
+      border-radius:999px;
+      font-size:.8rem;
+      font-weight:600;
+      color:#fff;
+    }
+    .umrah-hero-badge i{ color:var(--u-gold-soft); }
     .umrah-breadcrumb{
       display:flex;
       align-items:center;
       justify-content:center;
       gap:8px;
-      font-size:.85rem;
-      color:rgba(255,255,255,.85);
+      font-size:.8rem;
+      color:rgba(255,255,255,.7);
     }
     .umrah-breadcrumb a{ color:#fff; text-decoration:none; font-weight:600; }
-    .umrah-breadcrumb a:hover{ color:var(--co-red); }
-    .umrah-breadcrumb i{ font-size:.6rem; }
+    .umrah-breadcrumb a:hover{ color:var(--u-gold-soft); }
+    .umrah-breadcrumb i{ font-size:.55rem; }
 
-    .umrah-section{
-      padding:70px 6%;
-    }
+    .umrah-section{ padding:80px 6%; }
     .umrah-section.alt{ background:var(--co-gray-bg); }
+    .umrah-section.dark{ background:var(--u-green-dark); color:#fff; }
 
     .umrah-eyebrow{
       display:inline-block;
       font-size:.72rem;
       font-weight:700;
-      color:var(--co-red);
+      color:var(--u-green);
       letter-spacing:2.5px;
       text-transform:uppercase;
       margin-bottom:10px;
     }
+    .umrah-section.dark .umrah-eyebrow{ color:var(--u-gold-soft); }
     .umrah-title{
-      font-size:clamp(1.7rem,3.2vw,2.4rem);
-      font-weight:800;
+      font-size:clamp(1.8rem,3.3vw,2.5rem);
+      font-weight:400;
       color:var(--co-dark);
       line-height:1.25;
       margin-bottom:14px;
     }
-    .umrah-title span{ color:var(--co-red); }
+    .umrah-section.dark .umrah-title{ color:#fff; }
+    .umrah-title span{ color:var(--u-green); }
+    .umrah-section.dark .umrah-title span{ color:var(--u-gold-soft); }
     .umrah-rule{
       width:56px;
-      height:3px;
-      background:var(--co-red);
+      height:2px;
+      background:var(--u-gold);
       border-radius:2px;
       margin:14px 0;
     }
@@ -119,39 +193,46 @@ f.parentNode.insertBefore(j,f);
       display:flex;
       flex-direction:column;
       align-items:center;
-      margin-bottom:46px;
+      margin-bottom:50px;
     }
     .umrah-header-center .umrah-rule{ margin:14px auto; }
 
-    /* Intro */
+    /* ---------- Intro ---------- */
     .umrah-intro{
       display:grid;
       grid-template-columns:1fr 1fr;
-      gap:50px;
+      gap:56px;
       align-items:center;
     }
     .umrah-intro-img{
+      position:relative;
       border-radius:var(--co-radius);
       overflow:hidden;
-      height:380px;
+      height:420px;
       box-shadow:var(--co-shadow);
     }
     .umrah-intro-img img{ width:100%; height:100%; object-fit:cover; }
+    .umrah-intro-img::after{
+      content:"";
+      position:absolute; inset:0;
+      box-shadow:inset 0 0 0 1px rgba(201,162,39,.35);
+      border-radius:inherit;
+    }
     .umrah-list{
       display:flex;
       flex-direction:column;
-      gap:12px;
-      margin:22px 0 26px;
+      gap:13px;
+      margin:22px 0 28px;
     }
     .umrah-list-item{
       display:flex;
       align-items:flex-start;
       gap:12px;
-      font-size:.92rem;
+      font-size:.94rem;
       color:var(--co-text-mid);
       line-height:1.6;
     }
-    .umrah-list-item i{ color:var(--co-red); margin-top:3px; }
+    .umrah-list-item i{ color:var(--u-green); margin-top:3px; }
 
     .btn-co-primary{
       display:inline-block;
@@ -166,12 +247,107 @@ f.parentNode.insertBefore(j,f);
     }
     .btn-co-primary:hover{ background:var(--co-red-dark); color:#fff; }
 
-    /* Package tiers */
+    .btn-co-outline-gold{
+      display:inline-block;
+      background:transparent;
+      border:1px solid var(--u-gold-soft);
+      color:#fff;
+      font-weight:600;
+      font-size:.9rem;
+      padding:11px 26px;
+      border-radius:6px;
+      text-decoration:none;
+      transition:var(--co-transition);
+    }
+    .btn-co-outline-gold:hover{ background:rgba(231,207,138,.12); color:#fff; }
+
+    /* ---------- Boarding pass / departure stub (signature element) ---------- */
+    .u-ticket{
+      max-width:920px;
+      margin:0 auto;
+      background:#fff;
+      border-radius:var(--co-radius);
+      box-shadow:var(--co-shadow);
+      display:grid;
+      grid-template-columns:1fr auto 1.15fr;
+      overflow:visible;
+      position:relative;
+    }
+    .u-ticket-stub{
+      background:var(--u-green);
+      color:#fff;
+      padding:30px 26px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      border-radius:var(--co-radius) 0 0 var(--co-radius);
+    }
+    .u-ticket-stub .u-airline{
+      font-size:.7rem;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:var(--u-gold-soft);
+      margin-bottom:8px;
+      font-weight:700;
+    }
+    .u-ticket-stub .u-serif{ font-size:1.5rem; margin-bottom:4px; }
+    .u-ticket-stub small{ color:rgba(255,255,255,.75); font-size:.78rem; }
+    .u-ticket-perf{
+      position:relative;
+      background:
+        radial-gradient(circle at center, transparent 5px, var(--co-gray-bg) 5.5px) top / 100% 20px repeat-y;
+      width:1px;
+    }
+    .u-ticket-perf::before{
+      content:"";
+      position:absolute; top:0; bottom:0; left:0;
+      border-left:2px dashed var(--co-border);
+    }
+    .u-ticket-body{
+      padding:26px 30px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:14px;
+    }
+    .u-flight-row{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      font-size:.9rem;
+      color:var(--co-text);
+    }
+    .u-flight-route{
+      font-weight:700;
+      min-width:110px;
+      font-family:var(--font-display);
+      font-size:1.05rem;
+      color:var(--u-green);
+    }
+    .u-flight-meta{ color:var(--co-text-mid); font-size:.84rem; }
+    .u-flight-icon{ color:var(--u-gold); }
+    .u-ticket-note{
+      margin-top:4px;
+      font-size:.78rem;
+      color:var(--co-text-mid);
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .u-ticket-note i{ color:var(--u-green); }
+
+    @media(max-width:820px){
+      .u-ticket{ grid-template-columns:1fr; }
+      .u-ticket-stub{ border-radius:var(--co-radius) var(--co-radius) 0 0; }
+      .u-ticket-perf{ display:none; }
+    }
+
+    /* ---------- Package tiers ---------- */
     .umrah-tiers{
       display:grid;
-      grid-template-columns:repeat(2,minmax(280px,1fr));
-      gap:26px;
-      max-width:960px;
+      grid-template-columns:repeat(4,minmax(240px,1fr));
+      gap:22px;
+      max-width:1200px;
       margin:0 auto;
     }
     .umrah-tier-card{
@@ -181,61 +357,54 @@ f.parentNode.insertBefore(j,f);
       overflow:hidden;
       position:relative;
       transition:var(--co-transition);
+      display:flex;
+      flex-direction:column;
     }
     .umrah-tier-card:hover{
       transform:translateY(-6px);
       box-shadow:var(--co-shadow);
     }
-    .umrah-tier-card.featured{ border-color:var(--co-red); }
-    .umrah-tier-tag{
-      position:absolute;
-      top:14px;
-      right:-30px;
-      background:var(--co-red);
-      color:#fff;
-      font-size:.65rem;
-      font-weight:700;
-      padding:5px 40px;
-      letter-spacing:1px;
-      text-transform:uppercase;
-      transform:rotate(35deg);
-      z-index:2;
-    }
+    .umrah-tier-card.vip{ border-color:var(--u-gold); }
     .umrah-tier-head{
-      padding:28px 22px;
+      padding:26px 20px;
       text-align:center;
       color:#fff;
     }
     .umrah-tier-card.economy .umrah-tier-head{ background:var(--co-dark-2); }
-    .umrah-tier-card.deluxe .umrah-tier-head{ background:linear-gradient(135deg,var(--co-red),var(--co-red-dark)); }
+    .umrah-tier-card.standard .umrah-tier-head{ background:#7a2b3d; }
+    .umrah-tier-card.deluxe .umrah-tier-head{ background:var(--u-green); }
+    .umrah-tier-card.vip .umrah-tier-head{ background:linear-gradient(135deg,#8a6d1a,var(--u-gold)); }
     .umrah-tier-badge{
       display:block;
-      font-size:.7rem;
+      font-size:.68rem;
       font-weight:700;
       letter-spacing:2px;
       text-transform:uppercase;
-      opacity:.8;
+      opacity:.85;
       margin-bottom:8px;
     }
-    .umrah-tier-name{ font-size:1.5rem; font-weight:800; }
-    .umrah-tier-price{ font-size:1.9rem; font-weight:900; margin-top:6px; }
-    .umrah-tier-price sup{ font-size:.95rem; font-weight:500; }
-    .umrah-tier-price sub{ font-size:.78rem; font-weight:400; opacity:.85; }
-    .umrah-tier-body{ padding:22px; }
+    .umrah-tier-name{ font-size:1.35rem; font-family:var(--font-display); }
+    .umrah-tier-price{ font-size:1.7rem; font-weight:800; margin-top:8px; font-family:var(--font-body); }
+    .umrah-tier-price sup{ font-size:.85rem; font-weight:600; margin-right:2px; }
+    .umrah-tier-price sub{ font-size:.72rem; font-weight:400; opacity:.85; }
+    .umrah-tier-body{ padding:20px; display:flex; flex-direction:column; flex:1; }
     .umrah-tier-features{
       display:flex;
       flex-direction:column;
       gap:9px;
-      margin-bottom:22px;
+      margin-bottom:20px;
+      flex:1;
     }
     .umrah-tier-feature{
       display:flex;
-      align-items:center;
+      align-items:flex-start;
       gap:9px;
-      font-size:.86rem;
+      font-size:.82rem;
       color:var(--co-text-mid);
+      line-height:1.4;
     }
-    .umrah-tier-feature i{ color:var(--co-red); font-size:.8rem; min-width:14px; }
+    .umrah-tier-feature i{ color:var(--u-green); font-size:.75rem; min-width:14px; margin-top:2px; }
+    .umrah-tier-card.vip .umrah-tier-feature i{ color:var(--u-gold); }
     .umrah-tier-book{
       display:block;
       width:100%;
@@ -245,13 +414,59 @@ f.parentNode.insertBefore(j,f);
       background:var(--co-red);
       color:#fff;
       font-weight:700;
-      font-size:.92rem;
+      font-size:.88rem;
       text-decoration:none;
       transition:var(--co-transition);
     }
     .umrah-tier-book:hover{ background:var(--co-red-dark); }
+    .umrah-tier-card.vip .umrah-tier-book{ background:var(--u-green); }
+    .umrah-tier-card.vip .umrah-tier-book:hover{ background:var(--u-green-dark); }
 
-    /* Info grid */
+    @media(max-width:1024px){
+      .umrah-tiers{ grid-template-columns:repeat(2,1fr); }
+    }
+    @media(max-width:560px){
+      .umrah-tiers{ grid-template-columns:1fr; }
+    }
+
+    /* ---------- Package includes strip ---------- */
+    .umrah-includes-strip{
+      max-width:1180px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:20px;
+    }
+    .u-include-item{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:10px;
+      text-align:center;
+      padding:22px 12px;
+      background:#fff;
+      border:1px solid var(--co-border);
+      border-radius:var(--co-radius);
+      transition:var(--co-transition);
+    }
+    .u-include-item:hover{ border-color:var(--u-gold); transform:translateY(-3px); }
+    .u-include-item .u-icon-circle{
+      width:52px; height:52px;
+      border-radius:50%;
+      background:var(--co-gray-bg);
+      display:flex; align-items:center; justify-content:center;
+      font-size:1.15rem;
+      color:var(--u-green);
+    }
+    .u-include-item span{
+      font-size:.8rem;
+      font-weight:600;
+      color:var(--co-text);
+      line-height:1.35;
+    }
+    @media(max-width:900px){ .umrah-includes-strip{ grid-template-columns:repeat(2,1fr); } }
+
+    /* ---------- Stay info grid ---------- */
     .umrah-info-grid{
       display:grid;
       grid-template-columns:repeat(3,1fr);
@@ -264,11 +479,11 @@ f.parentNode.insertBefore(j,f);
       border:1px solid var(--co-border);
       border-radius:var(--co-radius);
       padding:28px;
-      box-shadow:0 6px 20px rgba(0,0,0,.05);
+      box-shadow:0 6px 20px rgba(0,0,0,.04);
     }
     .umrah-info-card h3{
-      font-size:1.2rem;
-      font-weight:800;
+      font-size:1.15rem;
+      font-weight:400;
       color:var(--co-dark);
       margin-bottom:16px;
     }
@@ -276,28 +491,29 @@ f.parentNode.insertBefore(j,f);
     .umrah-info-card li{
       display:flex;
       gap:10px;
-      font-size:.9rem;
+      font-size:.88rem;
       color:var(--co-text-mid);
       line-height:1.5;
     }
-    .umrah-info-card li i{ color:var(--co-red); margin-top:3px; min-width:16px; }
+    .umrah-info-card li i{ color:var(--u-green); margin-top:3px; min-width:16px; }
 
-    /* Contact box */
+    /* ---------- Contact box ---------- */
     .umrah-contact-box{
       max-width:900px;
       margin:0 auto;
       background:var(--co-dark);
       color:#fff;
       border-radius:var(--co-radius);
-      padding:34px;
+      padding:36px;
       text-align:center;
       box-shadow:var(--co-shadow);
+      border:1px solid rgba(201,162,39,.25);
     }
     .umrah-contact-box h3{
       font-size:1.7rem;
-      font-weight:800;
+      font-weight:400;
       margin-bottom:14px;
-      color:#ff8a94;
+      color:var(--u-gold-soft);
     }
     .umrah-contact-box > p{ color:#ccc; font-size:.92rem; }
     .umrah-contact-list{
@@ -313,10 +529,10 @@ f.parentNode.insertBefore(j,f);
       padding:16px;
       line-height:1.6;
     }
-    .umrah-contact-item strong{ display:block; color:#ff8a94; margin-bottom:4px; font-size:.88rem; }
+    .umrah-contact-item strong{ display:block; color:var(--u-gold-soft); margin-bottom:4px; font-size:.86rem; }
     .umrah-contact-item small{ display:block; margin-bottom:4px; color:#bbb; }
     .umrah-contact-item a{ color:#fff; font-weight:700; text-decoration:none; }
-    .umrah-contact-item a:hover{ color:var(--co-red); }
+    .umrah-contact-item a:hover{ color:var(--u-gold-soft); }
 
     @media(max-width:1024px){
       .umrah-info-grid{ grid-template-columns:1fr; }
@@ -324,13 +540,19 @@ f.parentNode.insertBefore(j,f);
     }
     @media(max-width:768px){
       .umrah-intro{ grid-template-columns:1fr; }
-      .umrah-tiers{ grid-template-columns:1fr; }
-      .umrah-section{ padding:50px 5%; }
+      .umrah-section{ padding:56px 5%; }
+    }
+
+    /* scroll reveal */
+    .u-reveal{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
+    .u-reveal.is-visible{ opacity:1; transform:translateY(0); }
+    @media (prefers-reduced-motion: reduce){
+      .u-reveal{ opacity:1; transform:none; transition:none; }
     }
   </style>
 </head>
 
-<body>
+<body class="umrah-page">
   <header>
     <!-- Top Bar -->
     <div class="top-bar">
@@ -340,7 +562,6 @@ f.parentNode.insertBefore(j,f);
           <span onclick="window.location.href='tel:+97143922959'" style="cursor:pointer;">
             <i class="fas fa-phone"></i> +971 4 392 2959
           </span>
-          <!-- Working mailto link -->
           <span>
             <a href="mailto:info@cityonetours.com" style="text-decoration:none; color:inherit;">
               <i class="fas fa-envelope"></i> info@cityonetours.com
@@ -354,7 +575,6 @@ f.parentNode.insertBefore(j,f);
           <i class="fas fa-envelope" style="margin-right:6px;"></i> Enquiry Now
         </a>
       </div>
-
 
       <!-- Popup Modal -->
       <div id="enquiryBox" class="popup-overlay">
@@ -378,7 +598,6 @@ f.parentNode.insertBefore(j,f);
           </form>
         </div>
       </div>
-
     </div>
 
     <!-- Main Nav -->
@@ -403,7 +622,6 @@ f.parentNode.insertBefore(j,f);
             <a href="themes.html">Luxury Tours</a>
             <a href="themes.html">Honey moon</a>
             <a href="themes.html">Family with Kids</a>
-
           </div>
         </div>
         <a href="visa.html"><i class="fas fa-passport"></i> Visa</a>
@@ -445,12 +663,19 @@ f.parentNode.insertBefore(j,f);
   <main>
     <!-- Hero -->
     <div class="umrah-hero">
-      <div>
-        <h1><span>Umrah</span> Packages</h1>
+      <div style="position:relative; z-index:1;">
+        <div class="umrah-hero-eyebrow">Saudia Direct Flight</div>
+        <h1>Umrah <span>Air Package</span></h1>
+        <p class="tag">A complete, guided Umrah journey from Dubai — direct flights, Haramain train travel between the Holy Cities, and every detail arranged so you can focus on your ibadah.</p>
+        <div class="umrah-hero-badges">
+          <span class="umrah-hero-badge"><i class="fas fa-plane"></i> Direct DXB–JED Flight</span>
+          <span class="umrah-hero-badge"><i class="fas fa-train"></i> Haramain Speed Train</span>
+          <span class="umrah-hero-badge"><i class="fas fa-mosque"></i> 2N Madinah · 3N Makkah</span>
+        </div>
         <div class="umrah-breadcrumb">
           <a href="/">Home</a>
           <i class="fas fa-chevron-right"></i>
-          <span>Umrah</span>
+          <span>Umrah Air Package</span>
         </div>
       </div>
     </div>
@@ -458,114 +683,193 @@ f.parentNode.insertBefore(j,f);
     <!-- Intro -->
     <section class="umrah-section">
       <div class="umrah-intro">
-        <div>
+        <div class="u-reveal">
           <span class="umrah-eyebrow">Sacred Journey</span>
           <h2 class="umrah-title">Perform Umrah with <span>Peace &amp; Ease</span></h2>
           <div class="umrah-rule"></div>
           <p style="color:var(--co-text-mid);line-height:1.8;margin-bottom:6px;font-size:.95rem">
-            Experience your blessed Umrah journey with City One Tours. Our packages are carefully planned with
-            flights, visa, meals, transport, ziyarat and experienced guidance throughout the tour.
+            Fly direct with Saudia and let City One Tours handle the rest — visa, hotels, meals, transfers and
+            Ziyarat — while an experienced Rehbar travels with your group from departure to return.
           </p>
 
           <div class="umrah-list">
-            <div class="umrah-list-item"><i class="fas fa-check-circle"></i><span>Return air ticket included</span></div>
-            <div class="umrah-list-item"><i class="fas fa-check-circle"></i><span>19–20 days complete Umrah package</span></div>
-            <div class="umrah-list-item"><i class="fas fa-check-circle"></i><span>03 times meals daily during the tour</span></div>
-            <div class="umrah-list-item"><i class="fas fa-check-circle"></i><span>Local Ziyarat in Makkah Sharif &amp; Madinah Sharif</span></div>
-            <div class="umrah-list-item"><i class="fas fa-check-circle"></i><span>Tayef &amp; Badar Ziyarat included</span></div>
-            <div class="umrah-list-item"><i class="fas fa-check-circle"></i><span>Experienced Umrah Rehbar with the group</span></div>
-            <div class="umrah-list-item"><i class="fas fa-check-circle"></i><span>Total 04 Umrah from our tour</span></div>
+            <div class="umrah-list-item"><i class="fas fa-check-circle"></i><span>Direct Saudia flight, departing every Monday</span></div>
+            <div class="umrah-list-item"><i class="fas fa-check-circle"></i><span>2 nights in Madinah, 3 nights in Makkah</span></div>
+            <div class="umrah-list-item"><i class="fas fa-check-circle"></i><span>Haramain speed train journey between the Holy Cities</span></div>
+            <div class="umrah-list-item"><i class="fas fa-check-circle"></i><span>Umrah visa and transfers in KSA included</span></div>
+            <div class="umrah-list-item"><i class="fas fa-check-circle"></i><span>Guided Umrah lecture and Juma at Makkah</span></div>
+            <div class="umrah-list-item"><i class="fas fa-check-circle"></i><span>Visits to the holy places and experienced group guide</span></div>
           </div>
 
           <a class="btn-co-primary" href="contact.html">Enquire Now &nbsp;<i class="fas fa-arrow-right"></i></a>
         </div>
 
-        <div class="umrah-intro-img">
+        <div class="umrah-intro-img u-reveal">
           <img
-            src="https://images.unsplash.com/photo-1713239060784-e6ed820a0715?q=80&w=900&auto=format&fit=crop"
-            alt="Makkah Kaaba">
+            src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?q=80&w=900&auto=format&fit=crop"
+            alt="Masjid an-Nabawi, Madinah">
+        </div>
+      </div>
+    </section>
+
+    <!-- Flight / departure boarding-pass stub -->
+    <section class="umrah-section alt">
+      <div class="umrah-header-center u-reveal">
+        <span class="umrah-eyebrow">Departures</span>
+        <h2 class="umrah-title">Every <span>Monday</span></h2>
+        <div class="umrah-rule"></div>
+      </div>
+
+      <div class="u-ticket u-reveal">
+        <div class="u-ticket-stub">
+          <div class="u-airline">Saudia · Direct Flight</div>
+          <div class="u-serif">Departure</div>
+          <div class="u-serif" style="color:var(--u-gold-soft);">Every Monday</div>
+          <small>Group check-in with your Umrah Rehbar</small>
+        </div>
+        <div class="u-ticket-perf"></div>
+        <div class="u-ticket-body">
+          <div class="u-flight-row">
+            <i class="fas fa-plane-departure u-flight-icon"></i>
+            <span class="u-flight-route">DXB → JED</span>
+            <span class="u-flight-meta">SV591 · Mon · 12:30 – 14:25</span>
+          </div>
+          <div class="u-flight-row">
+            <i class="fas fa-plane-arrival u-flight-icon"></i>
+            <span class="u-flight-route">JED → DXB</span>
+            <span class="u-flight-meta">SV594 · Sat · 18:10 – 22:00</span>
+          </div>
+          <div class="u-ticket-note"><i class="fas fa-suitcase-rolling"></i> 19–20 day complete Umrah package, 04 Umrah performed during the tour</div>
         </div>
       </div>
     </section>
 
     <!-- Package Tiers -->
-    <section class="umrah-section alt">
-      <div class="umrah-header-center">
+    <section class="umrah-section">
+      <div class="umrah-header-center u-reveal">
         <span class="umrah-eyebrow">Choose Your Plan</span>
         <h2 class="umrah-title">Umrah <span>Package Tiers</span></h2>
         <div class="umrah-rule"></div>
       </div>
 
-      <div class="umrah-tiers">
+      <div class="umrah-tiers u-reveal">
+        <!-- Economy -->
         <div class="umrah-tier-card economy">
           <div class="umrah-tier-head">
             <span class="umrah-tier-badge">Economy</span>
             <div class="umrah-tier-name">Economy</div>
-            <div class="umrah-tier-price"><sup>₹</sup>90,000<sub>/person</sub></div>
+            <div class="umrah-tier-price"><sup>AED</sup>3,000<sub>/pp</sub></div>
           </div>
           <div class="umrah-tier-body">
             <div class="umrah-tier-features">
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> 19–20 Days Package</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Return Air Ticket</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Umrah Visa</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> 03 Times Meals Daily</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Welcome Kit with Traveling &amp; Passport Bag</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Local Ziyarat Makkah &amp; Madinah Sharif</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Tayef &amp; Badar Ziyarat</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> AC Bus Transport Services</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Laundry Service</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> 5 Liter Zamzam Water</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> 19–20 days complete package</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Return Saudia air ticket</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Umrah visa processing</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Transfer in KSA</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Haramain train journey</div>
               <div class="umrah-tier-feature"><i class="fas fa-check"></i> Experienced Umrah Rehbar</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Total 04 Umrah from Our Tour</div>
             </div>
             <a class="umrah-tier-book" href="contact.html">Book Now</a>
           </div>
         </div>
 
-        <div class="umrah-tier-card deluxe featured">
-          <div class="umrah-tier-tag">Popular</div>
+        <!-- Standard -->
+        <div class="umrah-tier-card standard">
           <div class="umrah-tier-head">
-            <span class="umrah-tier-badge">Deluxe</span>
-            <div class="umrah-tier-name">Deluxe</div>
-            <div class="umrah-tier-price"><sup>₹</sup>1,10,000<sub>/person</sub></div>
+            <span class="umrah-tier-badge">Standard</span>
+            <div class="umrah-tier-name">Standard</div>
+            <div class="umrah-tier-price"><sup>AED</sup>3,200<sub>/pp</sub></div>
           </div>
           <div class="umrah-tier-body">
             <div class="umrah-tier-features">
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> 19–20 Days Package</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Return Air Ticket</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Umrah Visa</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> 03 Times Meals Daily</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Welcome Kit with Traveling &amp; Passport Bag</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Local Ziyarat Makkah &amp; Madinah Sharif</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Everything in Economy, plus:</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> 03 times meals daily</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Laundry service</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Local Ziyarat, Makkah &amp; Madinah</div>
               <div class="umrah-tier-feature"><i class="fas fa-check"></i> Tayef &amp; Badar Ziyarat</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> AC Bus Transport Services</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Laundry Service</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> 5 Liter Zamzam Water</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Experienced Umrah Rehbar</div>
-              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Total 04 Umrah from Our Tour</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> 5 litre Zamzam water</div>
+            </div>
+            <a class="umrah-tier-book" href="contact.html">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Deluxe -->
+        <div class="umrah-tier-card deluxe">
+          <div class="umrah-tier-head">
+            <span class="umrah-tier-badge">Deluxe</span>
+            <div class="umrah-tier-name">Deluxe</div>
+            <div class="umrah-tier-price"><sup>AED</sup>3,600<sub>/pp</sub></div>
+          </div>
+          <div class="umrah-tier-body">
+            <div class="umrah-tier-features">
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Everything in Standard, plus:</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Welcome kit — travel &amp; passport bag</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Upgraded hotel category</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Priority AC bus transport</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Total 04 Umrah from our tour</div>
+            </div>
+            <a class="umrah-tier-book" href="contact.html">Book Now</a>
+          </div>
+        </div>
+
+        <!-- VIP -->
+        <div class="umrah-tier-card vip">
+          <div class="umrah-tier-head">
+            <span class="umrah-tier-badge">VIP</span>
+            <div class="umrah-tier-name">VIP</div>
+            <div class="umrah-tier-price"><sup>AED</sup>4,600<sub>/pp</sub></div>
+          </div>
+          <div class="umrah-tier-body">
+            <div class="umrah-tier-features">
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Everything in Deluxe, plus:</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Haram-facing hotel rooms</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Private transfers in KSA</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Dedicated personal Rehbar</div>
+              <div class="umrah-tier-feature"><i class="fas fa-check"></i> Priority Juma seating at Makkah</div>
             </div>
             <a class="umrah-tier-book" href="contact.html">Book Now</a>
           </div>
         </div>
       </div>
+      <p style="text-align:center;color:var(--co-text-mid);font-size:.8rem;margin-top:18px;">Prices shown in AED per person, twin sharing. Switch currency above to view in INR or USD.</p>
     </section>
 
-    <!-- Includes -->
-    <section class="umrah-section">
-      <div class="umrah-header-center">
+    <!-- Package Includes -->
+    <section class="umrah-section dark">
+      <div class="umrah-header-center u-reveal">
         <span class="umrah-eyebrow">Complete Facilities</span>
         <h2 class="umrah-title">Package <span>Includes</span></h2>
         <div class="umrah-rule"></div>
       </div>
 
-      <div class="umrah-info-grid">
+      <div class="umrah-includes-strip u-reveal">
+        <div class="u-include-item"><div class="u-icon-circle"><i class="fas fa-file-signature"></i></div><span>Umrah Visa</span></div>
+        <div class="u-include-item"><div class="u-icon-circle"><i class="fas fa-plane"></i></div><span>Airlines Return Ticket</span></div>
+        <div class="u-include-item"><div class="u-icon-circle"><i class="fas fa-car"></i></div><span>Transfer in KSA</span></div>
+        <div class="u-include-item"><div class="u-icon-circle"><i class="fas fa-book-open"></i></div><span>Umrah Lecture</span></div>
+        <div class="u-include-item"><div class="u-icon-circle"><i class="fas fa-train"></i></div><span>Haramain Train Journey</span></div>
+        <div class="u-include-item"><div class="u-icon-circle"><i class="fas fa-user-tie"></i></div><span>Experienced Guide</span></div>
+        <div class="u-include-item"><div class="u-icon-circle"><i class="fas fa-kaaba"></i></div><span>Juma at Makkah</span></div>
+        <div class="u-include-item"><div class="u-icon-circle"><i class="fas fa-mosque"></i></div><span>Holy Places Visit</span></div>
+      </div>
+    </section>
+
+    <!-- Stay & Ziyarat info -->
+    <section class="umrah-section">
+      <div class="umrah-header-center u-reveal">
+        <span class="umrah-eyebrow">On Tour</span>
+        <h2 class="umrah-title">Stay &amp; <span>Ziyarat</span></h2>
+        <div class="umrah-rule"></div>
+      </div>
+
+      <div class="umrah-info-grid u-reveal">
         <div class="umrah-info-card">
-          <h3>Travel &amp; Visa</h3>
+          <h3>Travel &amp; Stay</h3>
           <ul>
-            <li><i class="fas fa-plane"></i> Return air ticket</li>
-            <li><i class="fas fa-passport"></i> Umrah visa processing</li>
-            <li><i class="fas fa-bus"></i> AC bus transport services</li>
-            <li><i class="fas fa-suitcase"></i> Welcome kit including traveling &amp; passport bag</li>
+            <li><i class="fas fa-plane"></i> Direct Saudia return flight, DXB–JED</li>
+            <li><i class="fas fa-bed"></i> 2 nights Madinah, 3 nights Makkah</li>
+            <li><i class="fas fa-train"></i> Haramain speed train between cities</li>
+            <li><i class="fas fa-suitcase"></i> Welcome kit with travel &amp; passport bag</li>
           </ul>
         </div>
 
@@ -574,15 +878,15 @@ f.parentNode.insertBefore(j,f);
           <ul>
             <li><i class="fas fa-utensils"></i> 03 times meals daily</li>
             <li><i class="fas fa-shirt"></i> Laundry services</li>
-            <li><i class="fas fa-bottle-water"></i> 5 liter Zamzam water included</li>
-            <li><i class="fas fa-user-tie"></i> Experienced Umrah Rehbar</li>
+            <li><i class="fas fa-bottle-water"></i> 5 litre Zamzam water included</li>
+            <li><i class="fas fa-user-tie"></i> Experienced Umrah Rehbar with the group</li>
           </ul>
         </div>
 
         <div class="umrah-info-card">
           <h3>Ziyarat &amp; Umrah</h3>
           <ul>
-            <li><i class="fas fa-kaaba"></i> Local Ziyarat Makkah &amp; Madinah Sharif</li>
+            <li><i class="fas fa-kaaba"></i> Local Ziyarat, Makkah &amp; Madinah Sharif</li>
             <li><i class="fas fa-mosque"></i> Tayef &amp; Badar Ziyarat</li>
             <li><i class="fas fa-check-circle"></i> Total 04 Umrah from our tour</li>
             <li><i class="fas fa-star"></i> Spiritual guidance throughout the journey</li>
@@ -593,7 +897,7 @@ f.parentNode.insertBefore(j,f);
 
     <!-- Contact -->
     <section class="umrah-section alt">
-      <div class="umrah-header-center">
+      <div class="umrah-header-center u-reveal">
         <span class="umrah-eyebrow">Important Information</span>
         <h2 class="umrah-title">Limited <span>Seats Available</span></h2>
         <div class="umrah-rule"></div>
@@ -602,7 +906,7 @@ f.parentNode.insertBefore(j,f);
         </p>
       </div>
 
-      <div class="umrah-contact-box">
+      <div class="umrah-contact-box u-reveal">
         <h3>For More Information</h3>
         <p>Contact City One Tours for booking and package details.</p>
 
@@ -632,10 +936,8 @@ f.parentNode.insertBefore(j,f);
         <div class="custom-social-icons">
           <a href="https://www.facebook.com/cityonetours"><i class="fab fa-facebook-f"></i></a>
           <a href="https://x.com/cityonetourism"><i class="fab fa-twitter"></i></a>
-          <!-- <a href=""><i class="fab fa-google"></i></a> -->
           <a href="https://www.instagram.com/cityonetours/"><i class="fab fa-instagram"></i></a>
           <a href="https://www.linkedin.com/company/cityonetourism/"><i class="fab fa-linkedin"></i></a>
-          <!-- <a href="#"><i class="fab fa-github"></i></a> -->
         </div>
       </div>
 
@@ -644,10 +946,7 @@ f.parentNode.insertBefore(j,f);
           <img src="images/image 8916.png" alt="Company Logo" class="footer-logo" />
           <h2 style="font-size: 18px; padding-bottom: 15px;" class="font-awesome">
             City One Tourism and Travel</h2>
-          <!-- <p>Address: Shop S-006, Saeed Mohammed Saeed
-Murooshed AImheiri Building 307, Oud Metha, Dubai - U.A.E</p> -->
         </div>
-
 
         <div class="footer-box">
           <h5 class="footer-title">Useful Links</h5>
@@ -670,7 +969,6 @@ Murooshed AImheiri Building 307, Oud Metha, Dubai - U.A.E</p> -->
             <li><a href="../georgia-tour-packages.html">Georgia</a></li>
             <li><a href="../kenya-tours-packages.html">Kenya</a></li>
             <li><a href="../destination.html">More</a></li>
-
           </ul>
         </div>
 
@@ -692,6 +990,26 @@ Murooshed AImheiri Building 307, Oud Metha, Dubai - U.A.E</p> -->
   </footer>
   <script src="hotdeal.js"></script>
   <script src="../currency.js"></script>
+
+  <script>
+    // Scroll-reveal for umrah sections
+    document.addEventListener('DOMContentLoaded', function () {
+      var items = document.querySelectorAll('.u-reveal');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.15 });
+        items.forEach(function (el) { io.observe(el); });
+      } else {
+        items.forEach(function (el) { el.classList.add('is-visible'); });
+      }
+    });
+  </script>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
